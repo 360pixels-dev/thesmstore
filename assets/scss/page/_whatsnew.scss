@@ -1,0 +1,105 @@
+.whats-new{
+
+    &__intro {
+        padding-top: 42px;
+        padding-bottom: 80px;
+        position: relative;
+        min-height: 618px;
+        display: flex;
+
+        &--image {
+            position: relative;
+            z-index: 50;
+            height: 448px;
+
+            & img {
+                height: 100%;
+            }
+
+            @include respond(tablet) {
+                height: 205px;
+                position: absolute;
+            }
+        }
+
+        &--description {
+            height: 446px;
+            width: 684px;
+            background-color: $cream;
+            position: absolute;
+            top: 92px;
+            right: 0;
+            display: flex;
+            justify-content: center;
+
+            @include respond(tablet) {
+                left: 32px;
+                position: relative;
+                top: 0px;
+            }
+
+            &-text {
+                width: 411px;
+                margin: 85px 0 0 120px;
+
+                @include respond(tablet) {
+                    margin: 269px 0 0 30px;
+                    width: 328px;
+                }
+
+                & h1 {
+                    @include respond(mobile) {
+                        font-size: 24px;
+                        line-height: 32px;
+                    }
+                }
+
+                & p {
+                    &:nth-of-type(1) {
+                        color: $gray;
+                        margin-bottom: 12px;
+                    }
+
+                    &:nth-of-type(2) {
+                        color: #2C2E2F;
+
+                        @include respond(mobile) {
+                            font-size: 14px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+
+    &__promos {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        position: relative;
+        min-height: 759px;
+        background-color: $blush;
+
+        &-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-cards {
+            display: flex;
+
+            & .card--promo {
+                margin-right: 24px;
+
+                @include respond(mobile) {
+                    margin-right: 8px;
+                }
+            }
+        }
+
+        &-controls {
+            margin-left: auto;
+        }
+    }
+
+}

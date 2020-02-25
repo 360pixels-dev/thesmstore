@@ -1,0 +1,11 @@
+header {
+    position: relative;
+    z-index: 99;
+}
+
+
+.background {
+    &--coral {
+        background-color: $coral;
+    }
+}

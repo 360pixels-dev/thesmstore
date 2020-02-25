@@ -1,0 +1,43 @@
+/*.womens {
+
+    &-sale {
+        min-height: 346px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-events {
+        min-height: 656px;
+        background-color: $light-gray;
+    }
+
+    &-blog {
+        &__header {
+            text-align: center;
+
+            & p {
+                letter-spacing: 3px;
+            }
+        }
+    }
+}
+*/
+
+.new-arrival {
+    &__container {
+        background-color: $light-gray;
+        padding: 48px 0;
+    }
+
+    &__content {
+
+        &__h2 {
+            margin-bottom: 28px;
+        }
+    }
+}
+
+
+
+
