@@ -8,6 +8,7 @@
     padding: 0 $gutter-desktop;
     margin: 0 auto;
 
+
     @include respond(tablet) {
         max-width: 600px;
         padding: 0 $gutter-tablet; 
@@ -29,15 +30,27 @@
     width: 1236px;
     margin: 0 auto;
 
+    @include respond(1200px) {
+        width: 80%;
+        padding: 0 $gutter-tablet; 
+    }
+
+    @include respond(1200px) {
+        width: 80%;
+        padding: 0 $gutter-tablet; 
+    }
+
     @include respond(tablet) {
-        max-width: 600px;
+        width: 600px;
+        
         padding: 0 $gutter-tablet; 
     }
 
     @include respond(mobile) {    
-        max-width: 360px;
+        width: 360px;
         padding: 0 $gutter-mobile;
     }
+    
 }
 
 
@@ -60,4 +73,16 @@
 
 .main-section {
     padding-top: 88px;
+}
+
+.container-colored {
+    width: 1014px;
+    margin: -400px auto 40px auto;
+    z-index: 8;
+    min-height: 500px;
+    background: $white;
+
+    &--pink {
+        border: 15px solid $pink;
+    }
 }

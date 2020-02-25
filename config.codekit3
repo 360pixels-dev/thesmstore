@@ -9,12 +9,12 @@
 	],
 "creatorBuild": "31934",
 "files": {
-	"/.gitignore": {
+	"/advocacy.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/.gitignore",
+		"oAP": "/advocacy.html",
 		"oF": 0
 		},
 	"/assets/css/style.min.css": {
@@ -96,6 +96,16 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/assets/images/arrow-right.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/arrow-right.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/assets/images/arrow-tail-left.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -116,6 +126,72 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/assets/images/banner-advocacy-m.png": {
+		"ft": 32768,
+		"iS": 69598,
+		"oA": 0,
+		"oAP": "/assets/images/banner-advocacy-m.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/banner-advocacy.png": {
+		"ft": 32768,
+		"iS": 173942,
+		"oA": 0,
+		"oAP": "/assets/images/banner-advocacy.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/banner-advocacy@2x.png": {
+		"ft": 32768,
+		"iS": 355361,
+		"oA": 0,
+		"oAP": "/assets/images/banner-advocacy@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/banner-beauty-trends-m.jpg": {
+		"ft": 16384,
+		"iS": 480959,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/banner-beauty-trends-m.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/banner-beauty-trends.jpg": {
+		"ft": 16384,
+		"iS": 2185381,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/banner-beauty-trends.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/banner-events.png": {
+		"ft": 32768,
+		"iS": 288309,
+		"oA": 0,
+		"oAP": "/assets/images/banner-events.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/assets/images/banner-pattern.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -125,6 +201,105 @@
 		"opt": 0,
 		"plM": 52780316221407,
 		"prP": 0
+		},
+	"/assets/images/banner-services.jpg": {
+		"ft": 16384,
+		"iS": 155534,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/banner-services.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/banner-stories-m.jpg": {
+		"ft": 16384,
+		"iS": 46498,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/banner-stories-m.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/banner-stories.jpg": {
+		"ft": 16384,
+		"iS": 637722,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/banner-stories.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/banner-stories.png": {
+		"ft": 32768,
+		"iS": 1497825,
+		"oA": 0,
+		"oAP": "/assets/images/banner-stories.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/banner-whatsnew-m.png": {
+		"ft": 32768,
+		"iS": 76243,
+		"oA": 0,
+		"oAP": "/assets/images/banner-whatsnew-m.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/banner-whatsnew.png": {
+		"ft": 32768,
+		"iS": 379686,
+		"oA": 0,
+		"oAP": "/assets/images/banner-whatsnew.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/banner-womens-blog-m.png": {
+		"ft": 32768,
+		"iS": 124110,
+		"oA": 0,
+		"oAP": "/assets/images/banner-womens-blog-m.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/banner-womens-blog.png": {
+		"ft": 32768,
+		"iS": 668823,
+		"oA": 0,
+		"oAP": "/assets/images/banner-womens-blog.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/banner-womens-blog@2x.png": {
+		"ft": 32768,
+		"iS": 1528213,
+		"oA": 0,
+		"oAP": "/assets/images/banner-womens-blog@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"/assets/images/banner.png": {
 		"ft": 32768,
@@ -156,6 +331,28 @@
 		"opt": 0,
 		"plM": 52780316221407,
 		"prP": 0
+		},
+	"/assets/images/blog-thumnail-01.jpg": {
+		"ft": 16384,
+		"iS": 114162,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/blog-thumnail-01.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/blog-thumnail-01@2x.jpg": {
+		"ft": 16384,
+		"iS": 309308,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/blog-thumnail-01@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"/assets/images/burger-menu.svg": {
 		"ft": 2097152,
@@ -331,59 +528,300 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/assets/images/cards/card-menu-advocacy.png": {
+	"/assets/images/cards/card-menu-advocacy1.png": {
 		"ft": 32768,
 		"iS": 35850,
 		"oA": 0,
-		"oAP": "/assets/images/cards/card-menu-advocacy.png",
+		"oAP": "/assets/images/cards/card-menu-advocacy1.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/assets/images/cards/card-menu-categories.png": {
+	"/assets/images/cards/card-menu-advocacy2.png": {
+		"ft": 32768,
+		"iS": 42779,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-menu-advocacy2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/cards/card-menu-advocacy3.png": {
+		"ft": 32768,
+		"iS": 57688,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-menu-advocacy3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/cards/card-menu-advocacy4.png": {
+		"ft": 32768,
+		"iS": 35769,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-menu-advocacy4.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/cards/card-menu-categories1.png": {
 		"ft": 32768,
 		"iS": 26857,
 		"oA": 0,
-		"oAP": "/assets/images/cards/card-menu-categories.png",
+		"oAP": "/assets/images/cards/card-menu-categories1.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/assets/images/cards/card-menu-event.png": {
+	"/assets/images/cards/card-menu-categories2.png": {
+		"ft": 32768,
+		"iS": 29862,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-menu-categories2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/cards/card-menu-categories3.png": {
+		"ft": 32768,
+		"iS": 38252,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-menu-categories3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/cards/card-menu-categories4.png": {
+		"ft": 32768,
+		"iS": 39327,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-menu-categories4.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/cards/card-menu-categories5.png": {
+		"ft": 32768,
+		"iS": 35038,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-menu-categories5.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/cards/card-menu-categories6.png": {
+		"ft": 32768,
+		"iS": 38263,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-menu-categories6.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/cards/card-menu-categories7.png": {
+		"ft": 32768,
+		"iS": 41235,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-menu-categories7.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/cards/card-menu-categories8.png": {
+		"ft": 32768,
+		"iS": 21121,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-menu-categories8.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/cards/card-menu-event1.png": {
 		"ft": 32768,
 		"iS": 89660,
 		"oA": 0,
-		"oAP": "/assets/images/cards/card-menu-event.png",
+		"oAP": "/assets/images/cards/card-menu-event1.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/assets/images/cards/card-menu-stories.png": {
+	"/assets/images/cards/card-menu-stories1.png": {
 		"ft": 32768,
 		"iS": 29791,
 		"oA": 0,
-		"oAP": "/assets/images/cards/card-menu-stories.png",
+		"oAP": "/assets/images/cards/card-menu-stories1.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/assets/images/cards/card-menu-whatsnew.png": {
+	"/assets/images/cards/card-menu-stories2.png": {
 		"ft": 32768,
-		"iS": 55633,
+		"iS": 43755,
 		"oA": 0,
-		"oAP": "/assets/images/cards/card-menu-whatsnew.png",
+		"oAP": "/assets/images/cards/card-menu-stories2.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/cards/card-menu-stories3.png": {
+		"ft": 32768,
+		"iS": 31937,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-menu-stories3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/cards/card-menu-stories4.png": {
+		"ft": 32768,
+		"iS": 36957,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-menu-stories4.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/cards/card-menu-whatsnew1.png": {
+		"ft": 32768,
+		"iS": 55633,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-menu-whatsnew1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/cards/card-menu-whatsnew2.png": {
+		"ft": 32768,
+		"iS": 37946,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-menu-whatsnew2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/cards/card-menu-whatsnew3.png": {
+		"ft": 32768,
+		"iS": 36634,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-menu-whatsnew3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/cards/card-menu-whatsnew4.png": {
+		"ft": 32768,
+		"iS": 194412,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-menu-whatsnew4.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/cards/card-womens-landing-sale.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/cards/card-womens-landing-sale.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/cards/card-womens-landing1.png": {
+		"ft": 32768,
+		"iS": 179708,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-womens-landing1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/cards/card-womens-landing2.png": {
+		"ft": 32768,
+		"iS": 194257,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-womens-landing2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/cards/card-womens-landing3.png": {
+		"ft": 32768,
+		"iS": 272163,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-womens-landing3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/carousel-thumnail-01.jpg": {
+		"ft": 16384,
+		"iS": 63969,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/carousel-thumnail-01.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/carousel-thumnail-01@2x.jpg": {
+		"ft": 16384,
+		"iS": 182958,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/carousel-thumnail-01@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"/assets/images/clock.svg": {
@@ -427,6 +865,327 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/assets/images/hero.banner.jpg": {
+		"ft": 16384,
+		"iS": 397332,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/hero.banner.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/icons/Advocacy.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/Advocacy.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/BillsPayment.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/BillsPayment.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/CardGift.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/CardGift.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/ClickAndCollect.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/ClickAndCollect.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/ConsolidatedGift.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/ConsolidatedGift.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/CreateRegistry.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/CreateRegistry.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/FindRegistry.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/FindRegistry.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/Forex.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/Forex.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/FreeDelivery.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/FreeDelivery.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/General.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/General.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/Gift.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/Gift.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/Giftcards.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/Giftcards.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/GiftEmailNotif.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/GiftEmailNotif.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/GiftRegistry.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/GiftRegistry.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/GiftTracker.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/GiftTracker.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/GiftWrapping.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/GiftWrapping.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/InStore.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/InStore.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/NoGiftDuplicate.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/NoGiftDuplicate.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/OFF.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/OFF.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/Online.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/Online.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/Package.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/Package.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/PrepaidLoad.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/PrepaidLoad.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/Promos.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/Promos.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/PSA.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/PSA.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/Quiz.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/Quiz.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/RegistryChecklist.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/RegistryChecklist.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/SMAC.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/SMAC.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/SMPrestige.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/SMPrestige.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/SMStoreNationwide.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/SMStoreNationwide.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/SMTickets.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/SMTickets.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/Stores.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/Stores.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/assets/images/instagram.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -457,11 +1216,63 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/assets/images/long-arrow-left.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/long-arrow-left.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/magazine-thumbnail-01.jpg": {
+		"ft": 16384,
+		"iS": 96945,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/magazine-thumbnail-01.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/assets/images/messenger.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/assets/images/messenger.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/mobile-menu-category.png": {
+		"ft": 32768,
+		"iS": 29503,
+		"oA": 0,
+		"oAP": "/assets/images/mobile-menu-category.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/Navigation-red.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/Navigation-red.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/Navigation.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/Navigation.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 52780316221407,
@@ -530,6 +1341,61 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/assets/images/video-thumbnail-01.jpg": {
+		"ft": 16384,
+		"iS": 85459,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/video-thumbnail-01.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/whatsnew-featured.png": {
+		"ft": 32768,
+		"iS": 160941,
+		"oA": 0,
+		"oAP": "/assets/images/whatsnew-featured.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/whatsnew-promo1.png": {
+		"ft": 32768,
+		"iS": 67560,
+		"oA": 0,
+		"oAP": "/assets/images/whatsnew-promo1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/whatsnew-promo2.png": {
+		"ft": 32768,
+		"iS": 87461,
+		"oA": 0,
+		"oAP": "/assets/images/whatsnew-promo2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/widget-event-icon.png": {
+		"ft": 32768,
+		"iS": 17723,
+		"oA": 0,
+		"oAP": "/assets/images/widget-event-icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/assets/images/youtube.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -539,6 +1405,39 @@
 		"opt": 0,
 		"plM": 52780316221407,
 		"prP": 0
+		},
+	"/assets/js/jquery.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/assets/js/jquery-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/assets/js/main.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/assets/js/main-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/assets/js/slimscroll.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/assets/js/slimscroll.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"/assets/scss/.sass-cache/74d6d363a40474210524de40c470a18124ed2df1/_banner.scssc": {
 		"cB": 0,
@@ -694,6 +1593,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/assets/scss/base/_alignment.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/base/_alignment.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/assets/scss/base/_colors.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -746,6 +1658,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/assets/scss/component/_breadcrumbs.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/component/_breadcrumbs.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/assets/scss/component/_button.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -785,6 +1710,32 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/assets/scss/component/_gradient.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/component/_gradient.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/assets/scss/component/_headings.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/component/_headings.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/assets/scss/component/_input.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -794,6 +1745,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/assets/scss/component/_input.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/assets/scss/component/_link.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/component/_link.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -837,6 +1801,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/assets/scss/component/_widgets.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/component/_widgets.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/assets/scss/layout/_container.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -863,6 +1840,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/assets/scss/layout/_grid.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/layout/_grid.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/assets/scss/layout/_header.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -872,6 +1862,32 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/assets/scss/layout/_header.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/assets/scss/page/_category-landing.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/page/_category-landing.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/assets/scss/page/_events.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/page/_events.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -889,15 +1905,57 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/assets/scss/style.css": {
-		"aP": 1,
+	"/assets/scss/page/_services.scss": {
+		"aP": 0,
 		"bl": 0,
-		"ft": 16,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
 		"ma": 0,
-		"oA": 0,
-		"oAP": "/assets/scss/style-min.css",
+		"oA": 1,
+		"oAP": "/assets/scss/page/_services.css",
 		"oF": 0,
-		"oS": 3
+		"oS": 0,
+		"uL": 1
+		},
+	"/assets/scss/page/_stories.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/page/_stories.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/assets/scss/page/_whatsnew.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/page/_whatsnew.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/assets/scss/page/_womens-blog.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/page/_womens-blog.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
 		},
 	"/assets/scss/style.scss": {
 		"aP": 1,
@@ -909,15 +1967,57 @@
 		"oA": 0,
 		"oAP": "/assets/css/style.min.css",
 		"oF": 3,
+		"oS": 3,
+		"uL": 1
+		},
+	"/assets/scss/template/_blog.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/template/_blog.css",
+		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/homepage.html": {
+	"/assets/scss/template/_carousel.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/template/_carousel.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/beauty-trends.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/homepage.html",
+		"oAP": "/beauty-trends.html",
+		"oF": 0
+		},
+	"/category-landing.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/category-landing.html",
+		"oF": 0
+		},
+	"/events.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/events.html",
 		"oF": 0
 		},
 	"/index.html": {
@@ -928,12 +2028,60 @@
 		"oAP": "/index.html",
 		"oF": 0
 		},
+	"/robots.txt": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/robots.txt",
+		"oF": 0
+		},
+	"/services.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/services.html",
+		"oF": 0
+		},
+	"/stories.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/stories.html",
+		"oF": 0
+		},
 	"/template.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/template.html",
+		"oF": 0
+		},
+	"/whats-new.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/whats-new.html",
+		"oF": 0
+		},
+	"/womens-blog.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/womens-blog.html",
+		"oF": 0
+		},
+	"/womens-landing.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/womens-landing.html",
 		"oF": 0
 		}
 	},
@@ -943,7 +2091,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 603637067.34576702,
-	"displayValue": "SM.Store.Frontend",
+	"displayValue": "smstore",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets-pink",
 	"iconImageWasSetByUser": 0
