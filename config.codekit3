@@ -9,6 +9,14 @@
 	],
 "creatorBuild": "31934",
 "files": {
+	"/about-us.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/about-us.html",
+		"oF": 0
+		},
 	"/advocacy.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -23,8 +31,8 @@
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "/assets/css/style.min.css",
-		"oF": 2,
+		"oAP": "/assets/css/style.min-min.css",
+		"oF": 0,
 		"oS": 3
 		},
 	"/assets/fonts/Verlag-Black.ttf": {
@@ -74,6 +82,28 @@
 		"oA": 0,
 		"oAP": "/assets/fonts/Verlag-BookItalic.ttf",
 		"oF": 0
+		},
+	"/assets/images/about-main.png": {
+		"ft": 32768,
+		"iS": 561769,
+		"oA": 0,
+		"oAP": "/assets/images/about-main.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/about-sm-cares.jpg": {
+		"ft": 16384,
+		"iS": 398747,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/about-sm-cares.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"/assets/images/advocacy1.png": {
 		"ft": 32768,
@@ -125,6 +155,28 @@
 		"opt": 0,
 		"plM": 52780316221407,
 		"prP": 0
+		},
+	"/assets/images/banner-about-m.png": {
+		"ft": 32768,
+		"iS": 91363,
+		"oA": 0,
+		"oAP": "/assets/images/banner-about-m.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/banner-about.png": {
+		"ft": 32768,
+		"iS": 463191,
+		"oA": 0,
+		"oAP": "/assets/images/banner-about.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"/assets/images/banner-advocacy-m.png": {
 		"ft": 32768,
@@ -660,11 +712,110 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/assets/images/cards/card-menu-category-mobile1.png": {
+		"ft": 32768,
+		"iS": 20031,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-menu-category-mobile1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/cards/card-menu-category-mobile2.png": {
+		"ft": 32768,
+		"iS": 18779,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-menu-category-mobile2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/cards/card-menu-category-mobile3.png": {
+		"ft": 32768,
+		"iS": 30403,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-menu-category-mobile3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/cards/card-menu-category-mobile4.png": {
+		"ft": 32768,
+		"iS": 20982,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-menu-category-mobile4.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/cards/card-menu-category-mobile5.png": {
+		"ft": 32768,
+		"iS": 31407,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-menu-category-mobile5.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/cards/card-menu-category-mobile6.png": {
+		"ft": 32768,
+		"iS": 30835,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-menu-category-mobile6.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/assets/images/cards/card-menu-event1.png": {
 		"ft": 32768,
 		"iS": 89660,
 		"oA": 0,
 		"oAP": "/assets/images/cards/card-menu-event1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/cards/card-menu-events-mobile1.png": {
+		"ft": 32768,
+		"iS": 15421,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-menu-events-mobile1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/cards/card-menu-events-mobile2.png": {
+		"ft": 32768,
+		"iS": 10961,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-menu-events-mobile2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/cards/card-menu-events-mobile3.png": {
+		"ft": 32768,
+		"iS": 9390,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-menu-events-mobile3.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -753,6 +904,50 @@
 		"iS": 194412,
 		"oA": 0,
 		"oAP": "/assets/images/cards/card-menu-whatsnew4.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/cards/card-whatsnew-mobile1.png": {
+		"ft": 32768,
+		"iS": 18892,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-whatsnew-mobile1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/cards/card-whatsnew-mobile2.png": {
+		"ft": 32768,
+		"iS": 12467,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-whatsnew-mobile2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/cards/card-whatsnew-mobile3.png": {
+		"ft": 32768,
+		"iS": 44940,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-whatsnew-mobile3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/cards/card-whatsnew-mobile4.png": {
+		"ft": 32768,
+		"iS": 55475,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-whatsnew-mobile4.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -865,6 +1060,16 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/assets/images/Headlinefacebook.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/Headlinefacebook.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/assets/images/hero.banner.jpg": {
 		"ft": 16384,
 		"iS": 397332,
@@ -875,6 +1080,26 @@
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
+		},
+	"/assets/images/icon-facebook.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icon-facebook.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icon-twitter.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icon-twitter.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
 		},
 	"/assets/images/icons/Advocacy.svg": {
 		"ft": 2097152,
@@ -1290,7 +1515,7 @@
 		},
 	"/assets/images/press-release.png": {
 		"ft": 32768,
-		"iS": 1116374,
+		"iS": 1148690,
 		"oA": 0,
 		"oAP": "/assets/images/press-release.png",
 		"oF": 0,
@@ -1671,6 +1896,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/assets/scss/component/_break.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/component/_break.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/assets/scss/component/_button.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1801,6 +2039,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/assets/scss/component/_social.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/component/_social.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/assets/scss/component/_widgets.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1862,6 +2113,32 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/assets/scss/layout/_header.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/assets/scss/page/_about.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/page/_about.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/assets/scss/page/_blog.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/page/_blog.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1958,16 +2235,16 @@
 		"uL": 1
 		},
 	"/assets/scss/style.scss": {
-		"aP": 1,
-		"bl": 1,
+		"aP": 0,
+		"bl": 0,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "/assets/css/style.min.css",
-		"oF": 3,
-		"oS": 3,
+		"oAP": "/assets/scss/style.css",
+		"oF": 0,
+		"oS": 0,
 		"uL": 1
 		},
 	"/assets/scss/template/_blog.scss": {

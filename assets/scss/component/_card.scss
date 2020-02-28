@@ -2,17 +2,38 @@
     width: 275px;
     height: 375px;
 
+    @include respond(1160px) {
+        height: 203.8px;
+        width: 144px;
+    }
+
     &-whatsnew {
+        text-decoration: none;
+        
+        @include respond(1160px) {
+            display: inline-block;
+            margin-bottom: 16px;
+        }
 
         & .card__image {
             position: relative;
             height: 313px;
+
+            @include respond(1160px) {
+                height: 163.8px;
+                width: 144px;
+            }
         }
 
         & .card__label {
             height: 62px;
             background-color: $white;
             padding: 16px 0 0 16px;
+            
+            @include respond(1160px) {
+                height: 40px;
+                width: 144px;
+            }
 
             & a {
                 display: block;
@@ -395,6 +416,7 @@
 .card--sale {
     width: 1236px;
     height: 250px;
+    margin-top: 48px;
     position: relative;
     display: flex;
     justify-content: flex-end;
@@ -431,6 +453,36 @@
 
         & a {
             width: min-content;
+        }
+    }
+}
+
+.card-mobile--events {
+    width: 312px;
+    height: 80px;
+    display: flex;
+    text-decoration: none;
+    margin-bottom: 16px;
+
+    &-text {
+        padding: 0 8px;
+
+        & p {
+            letter-spacing: 1.6px;
+        }
+
+        & ul {
+            margin-top: 8px;
+            
+            & li {
+                color: $dark-gray;
+                // margin-bottom: 9px;
+
+                & img {
+                    vertical-align: middle;
+                }
+
+            }
         }
     }
 }
