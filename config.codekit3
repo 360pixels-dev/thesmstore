@@ -25,6 +25,16 @@
 		"oAP": "/advocacy.html",
 		"oF": 0
 		},
+	"/assets/css/owl.carousel.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/assets/css/owl.carousel.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/assets/css/style.min.css": {
 		"aP": 1,
 		"bl": 0,
@@ -340,6 +350,17 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/banner-services-forex.jpg": {
+		"ft": 16384,
+		"iS": 159385,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/banner-services-forex.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"/assets/images/banner-services.jpg": {
@@ -1192,6 +1213,17 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/assets/images/event_img.jpg": {
+		"ft": 16384,
+		"iS": 247891,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/event_img.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/assets/images/facebook.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1305,6 +1337,16 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/assets/images/icons/close.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/close.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/assets/images/icons/ConsolidatedGift.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1341,6 +1383,156 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/assets/images/icons/FindRegistry.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/flags/flag-australia.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/flags/flag-australia.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/flags/flag-brunei.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/flags/flag-brunei.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/flags/flag-canada.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/flags/flag-canada.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/flags/flag-china.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/flags/flag-china.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/flags/flag-euro.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/flags/flag-euro.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/flags/flag-hongkong.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/flags/flag-hongkong.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/flags/flag-japan.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/flags/flag-japan.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/flags/flag-korea.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/flags/flag-korea.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/flags/flag-saudi.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/flags/flag-saudi.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/flags/flag-singapore.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/flags/flag-singapore.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/flags/flag-switzerland.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/flags/flag-switzerland.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/flags/flag-taiwan.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/flags/flag-taiwan.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/flags/flag-thailand.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/flags/flag-thailand.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/flags/flag-uk.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/flags/flag-uk.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/flags/flag-usa.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/flags/flag-usa.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 52780316221407,
@@ -1468,6 +1660,16 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"/assets/images/icons/info.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/info.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
 		},
 	"/assets/images/icons/instagram-alt.png": {
 		"ft": 32768,
@@ -1724,6 +1926,28 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/assets/images/modal-img1.png": {
+		"ft": 32768,
+		"iS": 102289,
+		"oA": 0,
+		"oAP": "/assets/images/modal-img1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/modal-img2.png": {
+		"ft": 32768,
+		"iS": 51195,
+		"oA": 0,
+		"oAP": "/assets/images/modal-img2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/assets/images/Navigation-red.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1784,6 +2008,17 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/sale-banner-m.jpg": {
+		"ft": 16384,
+		"iS": 39141,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/sale-banner-m.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"/assets/images/sale-banner.png": {
@@ -2136,6 +2371,32 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/assets/scss/animation/_animate.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/animation/_animate.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/assets/scss/animation/_custom.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/animation/_custom.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/assets/scss/base/_alignment.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -2353,6 +2614,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/assets/scss/component/_list.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/assets/scss/component/_modal.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/component/_modal.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -2669,17 +2943,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/assets/voucher-horizontal.png": {
-		"ft": 32768,
-		"iS": 48924,
-		"oA": 0,
-		"oAP": "/assets/voucher-horizontal.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"/beauty-trends.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -2728,6 +2991,14 @@
 		"oAP": "/events.html",
 		"oF": 0
 		},
+	"/index-sale.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/index-sale.html",
+		"oF": 0
+		},
 	"/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -2766,6 +3037,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/robots.txt",
+		"oF": 0
+		},
+	"/services-forex.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/services-forex.html",
 		"oF": 0
 		},
 	"/services.html": {
