@@ -363,6 +363,28 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/assets/images/banner-press-release-m.jpg": {
+		"ft": 16384,
+		"iS": 34387,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/banner-press-release-m.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/banner-press-release.jpg": {
+		"ft": 16384,
+		"iS": 141681,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/banner-press-release.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/assets/images/banner-services-forex.jpg": {
 		"ft": 16384,
 		"iS": 159385,
@@ -1661,6 +1683,16 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/assets/images/icons/icon-mail.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/icon-mail.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/assets/images/icons/icon-message.png": {
 		"ft": 32768,
 		"iS": 322,
@@ -1693,6 +1725,16 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"/assets/images/icons/icon-work.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/icon-work.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
 		},
 	"/assets/images/icons/info.svg": {
 		"ft": 2097152,
@@ -2021,6 +2063,94 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/assets/images/press-blog1.jpg": {
+		"ft": 16384,
+		"iS": 119607,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/press-blog1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/press-blog2.jpg": {
+		"ft": 16384,
+		"iS": 128717,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/press-blog2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/press-blog3.jpg": {
+		"ft": 16384,
+		"iS": 123969,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/press-blog3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/press-blog4.jpg": {
+		"ft": 16384,
+		"iS": 97656,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/press-blog4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/press-blog5.jpg": {
+		"ft": 16384,
+		"iS": 121650,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/press-blog5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/press-blog6.jpg": {
+		"ft": 16384,
+		"iS": 89197,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/press-blog6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/press-blog7.jpg": {
+		"ft": 16384,
+		"iS": 111419,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/press-blog7.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/press-blog8.jpg": {
+		"ft": 16384,
+		"iS": 132829,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/press-blog8.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/assets/images/press-release-blog1.png": {
 		"ft": 32768,
 		"iS": 725116,
@@ -2030,6 +2160,17 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/press-release-slide1.jpg": {
+		"ft": 16384,
+		"iS": 198624,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/press-release-slide1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"/assets/images/press-release.png": {
@@ -2855,19 +2996,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/assets/scss/page/_blog.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/assets/scss/page/_blog.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"/assets/scss/page/_category-landing.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -3045,6 +3173,14 @@
 		"oAP": "/beauty-trends.html",
 		"oF": 0
 		},
+	"/blank.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blank.html",
+		"oF": 0
+		},
 	"/category-landing.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -3085,6 +3221,14 @@
 		"oAP": "/events.html",
 		"oF": 0
 		},
+	"/index-animated.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/index-animated.html",
+		"oF": 0
+		},
 	"/index-sale.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -3107,6 +3251,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/press-release-blog.html",
+		"oF": 0
+		},
+	"/press-release.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/press-release.html",
 		"oF": 0
 		},
 	"/promo-registration-success.html": {
