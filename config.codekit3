@@ -136,6 +136,16 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/assets/images/arrow-right-dark.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/arrow-right-dark.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/assets/images/arrow-right.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -243,6 +253,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/assets/images/banner-beauty-m.jpg": {
+		"ft": 16384,
+		"iS": 49708,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/banner-beauty-m.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/assets/images/banner-beauty-trends-m.jpg": {
 		"ft": 16384,
 		"iS": 480959,
@@ -260,6 +281,17 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/assets/images/banner-beauty-trends.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/banner-beauty.jpg": {
+		"ft": 16384,
+		"iS": 208657,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/banner-beauty.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -342,6 +374,50 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/assets/images/banner-home-m.jpg": {
+		"ft": 16384,
+		"iS": 41806,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/banner-home-m.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/banner-home.jpg": {
+		"ft": 16384,
+		"iS": 212691,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/banner-home.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/banner-kids-m.jpg": {
+		"ft": 16384,
+		"iS": 92199,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/banner-kids-m.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/banner-kids.jpg": {
+		"ft": 16384,
+		"iS": 352541,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/banner-kids.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/assets/images/banner-mens-m.jpg": {
 		"ft": 16384,
 		"iS": 52385,
@@ -386,6 +462,28 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/assets/images/banner-other-m.jpg": {
+		"ft": 16384,
+		"iS": 59442,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/banner-other-m.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/banner-other.jpg": {
+		"ft": 16384,
+		"iS": 206556,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/banner-other.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/assets/images/banner-pattern.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -424,6 +522,28 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/assets/images/banner-press-release.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/banner-quiz-m.jpg": {
+		"ft": 16384,
+		"iS": 136731,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/banner-quiz-m.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/banner-quiz.jpg": {
+		"ft": 16384,
+		"iS": 1588141,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/banner-quiz.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -734,6 +854,567 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/assets/images/cards/card-beauty-sale1.jpg": {
+		"ft": 16384,
+		"iS": 304005,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-beauty-sale1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-beauty-sale2.jpg": {
+		"ft": 16384,
+		"iS": 59222,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-beauty-sale2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-beauty-sale3.jpg": {
+		"ft": 16384,
+		"iS": 120072,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-beauty-sale3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-beauty1.jpg": {
+		"ft": 16384,
+		"iS": 80350,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-beauty1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-beauty2.jpg": {
+		"ft": 16384,
+		"iS": 85766,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-beauty2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-beauty3.jpg": {
+		"ft": 16384,
+		"iS": 104498,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-beauty3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-beauty4.jpg": {
+		"ft": 16384,
+		"iS": 131790,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-beauty4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-beauty5.jpg": {
+		"ft": 16384,
+		"iS": 130118,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-beauty5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-beauty6.jpg": {
+		"ft": 16384,
+		"iS": 101628,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-beauty6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-beauty7.jpg": {
+		"ft": 16384,
+		"iS": 105258,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-beauty7.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-beauty8.jpg": {
+		"ft": 16384,
+		"iS": 78826,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-beauty8.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-home1.jpg": {
+		"ft": 16384,
+		"iS": 84152,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-home1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-home2.jpg": {
+		"ft": 16384,
+		"iS": 102874,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-home2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-home3.jpg": {
+		"ft": 16384,
+		"iS": 149394,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-home3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-home4.jpg": {
+		"ft": 16384,
+		"iS": 108832,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-home4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-home5.jpg": {
+		"ft": 16384,
+		"iS": 127327,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-home5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-home6.jpg": {
+		"ft": 16384,
+		"iS": 102296,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-home6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-home7.jpg": {
+		"ft": 16384,
+		"iS": 90954,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-home7.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-home8.jpg": {
+		"ft": 16384,
+		"iS": 127273,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-home8.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-kids1.jpg": {
+		"ft": 16384,
+		"iS": 119373,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-kids1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-kids2.jpg": {
+		"ft": 16384,
+		"iS": 113644,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-kids2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-kids3.jpg": {
+		"ft": 16384,
+		"iS": 81364,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-kids3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-kids4.jpg": {
+		"ft": 16384,
+		"iS": 118488,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-kids4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-kids5.jpg": {
+		"ft": 16384,
+		"iS": 98430,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-kids5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-kids6.jpg": {
+		"ft": 16384,
+		"iS": 88707,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-kids6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-kids7.jpg": {
+		"ft": 16384,
+		"iS": 54703,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-kids7.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-kids8.jpg": {
+		"ft": 16384,
+		"iS": 169144,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-kids8.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-mens1.jpg": {
+		"ft": 16384,
+		"iS": 116824,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-mens1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-mens2.jpg": {
+		"ft": 16384,
+		"iS": 96307,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-mens2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-mens3.jpg": {
+		"ft": 16384,
+		"iS": 199380,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-mens3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-mens4.jpg": {
+		"ft": 16384,
+		"iS": 118755,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-mens4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-mens5.jpg": {
+		"ft": 16384,
+		"iS": 140327,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-mens5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-mens6.jpg": {
+		"ft": 16384,
+		"iS": 108853,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-mens6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-mens7.jpg": {
+		"ft": 16384,
+		"iS": 146185,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-mens7.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-mens8.jpg": {
+		"ft": 16384,
+		"iS": 124714,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-mens8.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-others1.jpg": {
+		"ft": 16384,
+		"iS": 114274,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-others1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-others2.jpg": {
+		"ft": 16384,
+		"iS": 98404,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-others2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-others3.jpg": {
+		"ft": 16384,
+		"iS": 104048,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-others3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-others4.jpg": {
+		"ft": 16384,
+		"iS": 120099,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-others4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-others5.jpg": {
+		"ft": 16384,
+		"iS": 110318,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-others5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-others6.jpg": {
+		"ft": 16384,
+		"iS": 58157,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-others6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-others7.jpg": {
+		"ft": 16384,
+		"iS": 67169,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-others7.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-others8.jpg": {
+		"ft": 16384,
+		"iS": 99671,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-others8.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-youth1.jpg": {
+		"ft": 16384,
+		"iS": 122698,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-youth1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-youth2.jpg": {
+		"ft": 16384,
+		"iS": 101817,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-youth2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-youth3.jpg": {
+		"ft": 16384,
+		"iS": 116728,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-youth3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-youth4.jpg": {
+		"ft": 16384,
+		"iS": 88605,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-youth4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-youth5.jpg": {
+		"ft": 16384,
+		"iS": 86568,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-youth5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-youth6.jpg": {
+		"ft": 16384,
+		"iS": 88865,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-youth6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-youth7.jpg": {
+		"ft": 16384,
+		"iS": 95277,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-youth7.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-blog-youth8.jpg": {
+		"ft": 16384,
+		"iS": 96541,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-blog-youth8.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/assets/images/cards/card-blog.png": {
 		"ft": 32768,
 		"iS": 98181,
@@ -886,6 +1567,72 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/cards/card-home-sale-1.jpg": {
+		"ft": 16384,
+		"iS": 91132,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-home-sale-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-home-sale-2.jpg": {
+		"ft": 16384,
+		"iS": 205391,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-home-sale-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-home-sale-3.jpg": {
+		"ft": 16384,
+		"iS": 55599,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-home-sale-3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-home-sale-4.jpg": {
+		"ft": 16384,
+		"iS": 31276,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-home-sale-4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-kids-sale1.jpg": {
+		"ft": 16384,
+		"iS": 88247,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-kids-sale1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-kids-sale2.jpg": {
+		"ft": 16384,
+		"iS": 60761,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-kids-sale2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"/assets/images/cards/card-mens-sale.jpg": {
@@ -1229,6 +1976,50 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/assets/images/cards/card-other-sale1.jpg": {
+		"ft": 16384,
+		"iS": 190270,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-other-sale1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-other-sale2.jpg": {
+		"ft": 16384,
+		"iS": 71364,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-other-sale2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-other-sale3.jpg": {
+		"ft": 16384,
+		"iS": 82338,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-other-sale3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/card-other-sale4.jpg": {
+		"ft": 16384,
+		"iS": 51717,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/card-other-sale4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/assets/images/cards/card-whatsnew-mobile1.png": {
 		"ft": 32768,
 		"iS": 18892,
@@ -1546,6 +2337,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/assets/images/icon-facebook.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icon-quiz.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icon-quiz.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 52780316221407,
@@ -2641,6 +3442,50 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/assets/images/thumbnail-blog-fashion-02.jpg": {
+		"ft": 16384,
+		"iS": 90721,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/thumbnail-blog-fashion-02.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/thumbnail-blog-fashion.jpg": {
+		"ft": 16384,
+		"iS": 165784,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/thumbnail-blog-fashion.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/thumbnail-blog-men.jpg": {
+		"ft": 16384,
+		"iS": 77112,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/thumbnail-blog-men.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/thumbnail-blog-women.jpg": {
+		"ft": 16384,
+		"iS": 174065,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/thumbnail-blog-women.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/assets/images/twitter.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -3263,6 +4108,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/assets/scss/component/_quiz.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/component/_quiz.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/assets/scss/component/_social.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -3549,6 +4407,14 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/beauty-landing.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/beauty-landing.html",
+		"oF": 0
+		},
 	"/beauty-trends.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -3581,6 +4447,14 @@
 		"oAP": "/contact-us.html",
 		"oF": 0
 		},
+	"/deleted.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deleted.html",
+		"oF": 0
+		},
 	"/events-fashion-lifestyle.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -3603,6 +4477,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/events.html",
+		"oF": 0
+		},
+	"/home-landing.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/home-landing.html",
 		"oF": 0
 		},
 	"/index-animated.html": {
@@ -3629,6 +4511,14 @@
 		"oAP": "/index.html",
 		"oF": 0
 		},
+	"/kids-landing.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/kids-landing.html",
+		"oF": 0
+		},
 	"/mens-landing.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -3643,6 +4533,30 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/omnibus-campaign.html",
+		"oF": 0
+		},
+	"/online-quiz-01.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/online-quiz-01.html",
+		"oF": 0
+		},
+	"/online-quiz-02.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/online-quiz-02.html",
+		"oF": 0
+		},
+	"/others-landing.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/others-landing.html",
 		"oF": 0
 		},
 	"/press-release-blog.html": {
