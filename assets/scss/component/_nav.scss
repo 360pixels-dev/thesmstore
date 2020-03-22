@@ -51,6 +51,12 @@
 
                 & li {
                     margin: 0 12px;
+
+                    & > img {
+                        vertical-align: middle;
+                        margin-left: -12px;
+                        cursor: pointer;
+                    }
                 }
             }
 
@@ -165,6 +171,8 @@
 
                     & > .nav__dropdown {
                         display: flex;
+                        padding-left: 24px;
+                        padding-right: 24px;
                     }
                 }
 
