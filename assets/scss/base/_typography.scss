@@ -96,7 +96,6 @@ p {
             font-size: 20px;
             line-height: 28px;
             letter-spacing: 1.6px;
-            text-transform: uppercase;
         }
     }
 
@@ -106,6 +105,7 @@ p {
         font-weight: 600;
         line-height: 40px;
         letter-spacing: 1.6px;
+        text-transform: uppercase;
 
         &-hero {
             font-family: $font-heading1;
@@ -114,19 +114,20 @@ p {
             line-height: 40px;
             letter-spacing: 1.6px;
             text-transform: uppercase;
+           
             
 
-            br {
+            /*br {
                 display: none;
-            }
+            }*/
 
             @include respond(mobile) {
                 font-size: 24px;
                 line-height: 32px;
-                margin-right: auto;
-                br {
+                //margin-right: auto;
+                /*br {
                     display: block;
-                }
+                }*/
             }
         }
 
@@ -229,10 +230,29 @@ p {
 
     &-eyebrow {
         font-family: $font-base;
-        font-size: 16px;
+        /*font-size: 16px;
         font-weight: bold;
         line-height: 24px;
-        text-transform: uppercase;
+        text-transform: uppercase;*/
+        
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 3px;
+        text-transform: uppercase; 
+        
+        &--gray{
+            color: $gray;
+        }
+
+        &--hero {
+            line-height: 24px;
+            margin-bottom: 6px;
+            display: block;
+        }
+
+
 
         @include respond(tablet) {
             font-weight: 600;
@@ -337,6 +357,10 @@ p {
 
     &-left {
         text-align: left;
+    }
+
+    &-center {
+        text-align: center;
     }
 }
 

@@ -108,6 +108,20 @@
         background-size: cover;
         background-position: center right; 
         align-items: center;
+        height: 350px;
+
+        @include respond(tablet) {
+            justify-content: flex-start;
+            align-items: flex-end;
+            padding-bottom: 40px;
+            padding-left: 10%;
+            height: 200px;
+            background-position: 81% 50%; 
+        }
+
+        @include respond(tablet) {
+            
+        }
 
         & h1 {
             margin-top: 30px;
@@ -115,9 +129,14 @@
             border-bottom: 8px solid $lemon;
             color: $white;
 
-            @include respond(mobile) {
-                border-bottom: none;
+            @include respond(tablet) {
+                font-size: 32px;
+                line-height: 40px;
+                padding-bottom: 5px;
+                border-bottom: 4px solid $lemon;
+                justify-content: start;
             }
+
         }
     }
     
@@ -457,8 +476,18 @@
         }
 
         @include respond(mobile) {
-            background: url('../../assets/images/banner-services.jpg') no-repeat;
+            background: url('../../assets/images/banner-services-m.jpg') no-repeat;
             @include bgcover;
+            flex-direction: column;
+
+            & > div {
+                width: 90%;
+    
+                & h1 {
+                    color: $white;
+                    margin-top: 100px;
+                }
+            }
         }
     }
 
@@ -504,6 +533,65 @@
         @include respond(mobile) {
             background: url('../../assets/images/banner-omnibus-m.jpg') no-repeat;
             @include bgcover;
+        }
+    }
+
+    &--all-blogs {
+        background: url('../../assets/images/banner-all-blogs.jpg') no-repeat;
+        @include bgcover;
+        min-height: 350px;
+        
+        & > div {
+
+            &:nth-of-type(2) {
+                margin-top: 20px;
+                margin-left: 10%;
+
+                @include respond(tablet) {
+                    margin-left: 0;
+                }
+            }
+
+            & h1 {
+                display: block;
+                color: $white;
+                width: 780px;
+
+                @include respond(tablet) {
+                    font-weight: bold;
+                    font-size: 32px;
+                    line-height: 40px;
+                    width: 100%;
+                }
+            }
+        }
+
+        @include respond(mobile) {
+            background: url('../../assets/images/banner-all-blogs-m.jpg') no-repeat;
+            @include bgcover;
+            background-position: center right; 
+        }
+    }
+
+    &--all-magazine {
+        background: url('../../assets/images/banner-all-magazine.jpg') no-repeat;
+        @include bgcover;
+        height: 350px;
+        
+        & > div {
+            width: 90%;
+
+            & h1 {
+                color: $white;
+                margin-top: 50px;
+                width: 70%;
+            }
+        }
+
+        @include respond(mobile) {
+            background: url('../../assets/images/banner-all-magazine-m.jpg') no-repeat;
+            @include bgcover;
+            background-position: center right; 
         }
     }
 }
