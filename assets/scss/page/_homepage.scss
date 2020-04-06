@@ -7,7 +7,9 @@
         padding-bottom: 76px;
 
         @include respond(mobile) {
-            min-height: 500px;
+            min-height: 1141px;
+            padding-top: 24px;
+            padding-bottom: 80px;
         }
 
         &__title {
@@ -49,6 +51,10 @@
                 width: min-content;
                 text-align: center;
                 margin: 0 auto 40px auto;
+            }
+
+            @include respond(mobile) {
+                display: none;
             }
         }
 
@@ -136,12 +142,17 @@
                 margin-top: 24px;
             }
         }
+
+        & > button {
+            display: block;
+            margin: 24px auto 0 auto;
+        }
     }
 
     &-video {
         position: relative;
         min-height: 584px;
-        background-color:$lightyellow;
+        background-color: $lightyellow;
         
         
         @include respond(tablet) {
@@ -191,38 +202,31 @@
 
         &__video {
             position: relative;
-            width: 808px;
             height: 456px;
-            flex: 0 0 64%;
+            flex: 0 0 65%;
 
             @include respond(1280px) {
                 position: absolute;
-                width: 640px;
-                height: 480px;
-                top: 0;
-                left: 34%;
-                transform: translateX(-50%);
-            }
-
-            @include respond(1030px) {
-                position: absolute;
                 width: 500px;
-                height: 480px;
-                top: 0;
-                left: 30%;
+                height: 300px;
+                left: 40%;
                 transform: translateX(-50%);
             }
 
-           /* @include respond(1000px) {
+            @include respond(1000px) {
                 left: 30%;
                 width: 335px;
                 height: 215px;
-            }*/
+            }
 
             @include respond(tablet) {
                 top: 30%;
                 left: 50%;
                 transform: translate(-50%, -50%);
+            }
+
+            @include respond(mobile) {
+                top: 28%;  
             }
             
             &-file {
@@ -230,9 +234,9 @@
                 z-index: 50;
                 height: 100%;
                 width: 100%;
-                //top: 50%;
-                //left: 50%;
-                //transform: translate(-50%, -50%);
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
             }
             
             &-btn {
@@ -252,7 +256,11 @@
             z-index: 99;
 
             @include respond(mobile) {
-                flex: 0 0 60%;
+                flex: 0 0 250px;
+            }
+
+            @include respond(340px) {
+                flex: 0 0 200px;
             }
 
             & span {
@@ -265,6 +273,10 @@
                 @include respond(tablet) {
                     letter-spacing: 2px;
                 }
+
+                @include respond(mobile) {
+                    text-align: right;
+                }
             }
 
             & h1 {
@@ -273,7 +285,11 @@
                 @include respond(tablet) {
                     font-size: 32px;
                     line-height: 40px;
-                    margin-top: 200px;
+                    margin-top: 270px;
+                }
+
+                @include respond(mobile) {
+                    margin-top: 240px;
                 }
 
                 & span {
@@ -283,17 +299,25 @@
                         @include respond(1290px) {
                             text-align: left;
                         }
+
+                        @include respond(mobile) {
+                            color: $dark-gray;
+                        }
                     }
 
                     &:nth-of-type(2) {
                         color: $coral;
                         text-align: right;
+
+                        @include respond(mobile) {
+                            margin-right: 30px;
+                        }
                     }
                 }
             }
 
             & p {
-                color: #2C2E2F;
+                color: $white;
             
                 @include respond(1290px) {
                     
@@ -320,6 +344,7 @@
 
         }
     }
+
 
     &-stories {
         position: relative;
@@ -370,9 +395,20 @@
             position: relative;
             padding-top: 128px !important;
             z-index: 99;
+            width: 1200px;
+            margin: auto;
+
+            @include respond(1250px) {
+                width: 98%;
+                padding: 24px;
+            }
 
             @include respond(tablet) {
                 padding-top: 80px !important;
+            }
+
+            @include respond(mobile) {
+                padding: 0 12px;
             }
         }
 
@@ -447,11 +483,13 @@
             }
                 
             @include respond(mobile) {
-                height: 184px;
-                width: 350px;
+                height: 200px;
+                width: 348px;
             }
             
             & img {
+                height: 528px;
+                width: 808px;
                 
                 @include respond(tablet) {
                     opacity: 0.5;
@@ -460,7 +498,7 @@
                 }
                 
                 @include respond(mobile) {
-                    height: 184px;
+                    height: 200px;
                 }
             }
         }
@@ -471,11 +509,12 @@
             z-index: 90;
 
             @include respond(tablet) {
-                width: 100%;
+                width: 540px;
             }
 
             @include respond(mobile) {
                 text-align: center;
+                width: 348px;
             }
         }
 
@@ -554,15 +593,62 @@
     &-events {
         position: relative;
         min-height: 656px;
-        background-color: $white;
-        // padding: 80px 0;
+        background-color: $light-periwinkle;
         display: flex;
         flex-direction: column;
 
-        &__header {
+        @include respond(mobile) {
+            padding: 20px 0 0 0;
+            // padding: 0 0 0 24px;
+            width: 100%;
+            max-width: 100%;
+            min-height: 830px;
+        }
+
+        & .container {
+            max-width: 100%;
+            width: 1224px;
+
+            @include respond(1224px) {
+                padding-left: 100px;
+            }
+
+            @include respond(tablet) {
+                padding: 0 0 0 24px;
+                margin: 0;
+            }
+
+            @include respond(mobile) {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        &__btn {
             height: 33px;
             text-align: right;
             margin-top: 48px;
+
+            @include respond(mobile) {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                bottom: 40px;
+                margin-top: 0;
+                width: 100%;
+            }
+
+            & a {
+                @include respond(mobile) {
+                    text-align: center;
+                    border: 1px solid #161720;
+                    padding: 16px 24px;
+                    color: $black;
+                    width: 221px;
+                    height: 48px;
+                }
+            }
         }
 
         &__content {
@@ -571,24 +657,29 @@
             flex-wrap: nowrap;
             position: relative;
             margin-top: 24px;
+            flex-direction: column;
+
+            @include respond(mobile) {
+                margin-left: 12px;
+            }
         }
 
-
-        &__details {
-            display: flex;
-            flex-direction: column;
-            width: 370px;
-            margin-top: 25px;
-
+        &__title {
+            
             & > h2 {
                 font-family: $font-heading1;
-                font-weight: 600;
+                font-weight: bold;
                 font-size: 32px;
                 line-height: 40px;
                 letter-spacing: 1.6px;
                 text-transform: uppercase;
                 color: $black;
                 margin-bottom: 8px;
+
+                @include respond(mobile) {
+                    font-size: 24px;
+                    line-height: 32px;
+                }
             }
 
             &-month {
@@ -600,6 +691,30 @@
                 text-transform: uppercase;
                 color: $dark-gray;
                 margin-bottom: 48px;
+
+                @include respond(mobile) {
+                    margin-bottom: 19px;
+                }
+            }
+        }
+
+        &__details {
+            display: flex;
+            flex-direction: column;
+            width: 370px;
+            margin-top: 25px;
+
+            @include respond(mobile) {
+                position: absolute;
+                top: 356px;
+                right: 0px;
+                z-index: 50;
+                background: #FFFFFF;
+                box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
+                height: 259px;
+                width: 327px;
+                margin-top: 0;
+                padding: 22px 16px;
             }
 
             & > h3 {
@@ -611,6 +726,12 @@
                 text-transform: uppercase;
                 color: #FF4E4E;
                 margin-left: 29px;
+
+                @include respond(mobile) {
+                    margin-left: 0px;
+                    font-size: 20px;
+                    line-height: 30px;
+                }
             }
 
             &-description {
@@ -621,12 +742,22 @@
                 line-height: 24px;
                 color: $dark-gray;
                 margin-bottom: 21px;
+
+                @include respond(mobile) {
+                    margin-left: 0px;
+                    margin-bottom: 9px;
+                }
             }
 
             &-datetime {
                 display: flex;
                 align-items: flex-start;
                 margin-left: 29px;
+
+                @include respond(mobile) {
+                    margin-left: 0px;
+                    margin-bottom: 12px;
+                }
         
                 & > img {
                     vertical-align: middle;
@@ -641,6 +772,12 @@
                     @include respond(tablet) {
                         font-size: 16px;
                     }
+        
+                    @include respond(mobile) {
+                        font-size: 14px;
+                        line-height: 20px;
+                        letter-spacing: 1.6px;
+                    }
                 }
             }
         
@@ -650,17 +787,32 @@
                 // margin-top: 16px;
                 // margin-left: 29px;
                 margin: 16px 0 65px 29px;
+
+                @include respond(mobile) {
+                    margin: 0px;
+                }
                 
                 & > p {
                     margin-left: 4px;
                     font-family: $font-base;
                     font-size: 16px;
                     line-height: 24px;
+        
+                    @include respond(mobile) {
+                        font-size: 14px;
+                        line-height: 20px;
+                        letter-spacing: 1.6px;
+                    }
                 }
             }
 
             & > .btn--text-link {
                 margin-left: 29px;
+
+                @include respond(mobile) {
+                    margin-top: 17px;
+                    margin-left: 0px;
+                }
             }
         }
 
@@ -671,15 +823,62 @@
             //height: 400px;
             width: 1500px !important;
 
+            @include respond(mobile) {
+                position: relative;
+                margin-left: 0;
+            }
+
             &-event {
                 margin-right: 24px;
                 position: relative;
+
+                & > img {
+                    height: 432px;
+                    width: 648px;
+
+                    @include respond(mobile) {
+                        height: 320px;
+                        width: 348px;
+                        object-fit: cover;
+                    }
+                }
+
+                & > div {
+                    position: absolute;
+                    top: 24px;
+                    left: 24px;
+                    height: 72px;
+                    width: 62px;
+                    background: rgba(255, 255, 255, 0.8);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    & > p {
+                        &:nth-of-type(1) {
+                            color: $black;
+                        }
+                        &:nth-of-type(2) {
+                            color: $coral;
+                        }
+                    }
+                }
             }
         }
 
         &__footer {
             text-align: right;
             margin-top: 49px;
+            padding-right: 24px;
+
+            @include respond(mobile) {
+                z-index: 50;
+                position: absolute;
+                bottom: 136px;
+                right: 24px;
+                margin-top: 0px;
+            }
 
             & > button {
                 background-color: transparent;

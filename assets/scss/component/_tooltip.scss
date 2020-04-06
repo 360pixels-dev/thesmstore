@@ -5,7 +5,7 @@
     text-align: left;
     
     & .bottom {
-        min-width: 371px;
+        width: 371px;
         top: 40px;
         left: 50%;
         transform: translate(-10%, 0);
@@ -25,8 +25,8 @@
         }
 
         @include respond(mobile) {
-            min-width: 336px;
-            left: -268px;
+            width: 320px;
+            left: -254px;
         }
 
         & > i {

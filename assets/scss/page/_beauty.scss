@@ -84,6 +84,15 @@
                 justify-content: flex-start;
             }
 
+            & > h2 {
+                @include respond(mobile) {
+                    font-size: 24px;
+                    line-height: 32px;
+                    align-items: center;
+                    letter-spacing: 1.6px;
+                }
+            }
+
             & > a {
                 @include respond(mobile) {
                     display: none;
@@ -134,8 +143,8 @@
         }
 
         @include respond(mobile) {
-            height: 578px;
-            margin-bottom: 24px;
+            min-height: 578px;
+            padding: 24px 0 !important;
         }
 
         &__content {
@@ -143,7 +152,7 @@
             display: flex;
             flex-wrap: nowrap;
             position: relative;
-            margin: 24px auto;
+            margin: 0 auto;
             width: 1224px;
 
             @include respond(tablet) {
@@ -165,7 +174,7 @@
 
             @include respond(mobile) {
                 justify-content: flex-start;
-                height: 578px;
+                height: 554px;
                 position: relative;
                 align-items: flex-start;
                 width: 100%;
@@ -242,7 +251,7 @@
             }
 
             @include respond(mobile) {
-                margin-top: 72px;
+                margin-top: 48px;
                 margin-left: 0px;
                 height: 304px;
             }

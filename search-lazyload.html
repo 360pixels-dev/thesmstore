@@ -3,16 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Other Products | SM Store</title>
+        <title>Search - SM Store</title>
 
         <link rel="stylesheet" href="./assets/css/style.min.css">
+
     </head>
     <body>
         <div class="wrapper">
-
+            
             <!-- HEADER -->
             <header>
-                <nav class="nav__upper nav__upper--default container-fluid">
+                <nav class="nav__upper nav__upper--default nav__upper--index container-fluid">
                     <ul class="nav__upper-list nav__upper-list-menu">
                         <li><a href="" class="font-fineprint">About Us</a></li>
                         <li><a href="" class="font-fineprint">Stores</a></li>
@@ -39,7 +40,7 @@
                     </ul> 
                 </nav>
                 
-                <nav class="nav__lower nav_lower--default container-fluid dark-gradient">
+                <nav class="nav__lower nav_lower--default nav__lower--index container-fluid hide">
                     <div class="nav__lower-burger">
                         <img class="burger-menu burger-menu-default" src="./assets/images/burger-menu.svg" alt="">
                         <img class="burger-menu burger-menu-close" src="./assets/images/close.svg" alt="" hidden>
@@ -280,14 +281,14 @@
                                                 <p class="font-eyebrow">Billie Eilish Tour</p>
                                                 <p class="font-eyebrow">Billie Eilish Tour</p>
                                                 <ul>
-                                                    <li><a class="font-caption text-semibold" href="">
+                                                    <li><span class="font-caption text-semibold" href="">
                                                         <img src="./assets/images/icons/icon-clock.svg" alt="">
                                                         11: 00 AM - 5:00 PM <br>Sat - Sun, January 13-14
-                                                    </a></li>
-                                                    <li><a class="font-caption text-semibold" href="">
+                                                    </span></li>
+                                                    <li><span class="font-caption text-semibold" href="">
                                                         <img src="./assets/images/icons/icon-location.svg" alt="">
                                                         SM Makati
-                                                    </a></li>
+                                                    </span></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -299,14 +300,14 @@
                                                 <p class="font-eyebrow">Billie Eilish Tour</p>
                                                 <p class="font-eyebrow">Billie Eilish Tour</p>
                                                 <ul>
-                                                    <li><a class="font-caption text-semibold" href="">
+                                                    <li><span class="font-caption text-semibold" href="">
                                                         <img src="./assets/images/icons/icon-clock.svg" alt="">
                                                         11: 00 AM - 5:00 PM <br>Sat - Sun, January 13-14
-                                                    </a></li>
-                                                    <li><a class="font-caption text-semibold" href="">
+                                                    </span></li>
+                                                    <li><span class="font-caption text-semibold" href="">
                                                         <img src="./assets/images/icons/icon-location.svg" alt="">
                                                         SM Makati
-                                                    </a></li>
+                                                    </span></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -318,19 +319,19 @@
                                                 <p class="font-eyebrow">Billie Eilish Tour</p>
                                                 <p class="font-eyebrow">Billie Eilish Tour</p>
                                                 <ul>
-                                                    <li><a class="font-caption text-semibold" href="">
+                                                    <li><span class="font-caption text-semibold" href="">
                                                         <img src="./assets/images/icons/icon-clock.svg" alt="">
                                                         11: 00 AM - 5:00 PM <br>Sat - Sun, January 13-14
-                                                    </a></li>
-                                                    <li><a class="font-caption text-semibold" href="">
+                                                    </span></li>
+                                                    <li><span class="font-caption text-semibold" href="">
                                                         <img src="./assets/images/icons/icon-location.svg" alt="">
                                                         SM Makati
-                                                    </a></li>
+                                                    </span></li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
-
+                                    <a href="" class="btn--primary button--black font-cta nav__dropdown-btn">View all</a>
                                 </div>
 
                                 <div class="nav__dropdown-right">
@@ -430,9 +431,97 @@
                     </div>
                 </nav>
 
+
+               <div class="container-search">
+                    <div class="search">
+
+                        <a href="#" class="search__btn"> <img src="./assets/images/icon-search.svg" alt="Search"></a>
+                        
+                        <span class="search__vl">  </span>
+                        
+                        <input type="text" class="search__input" placeholder="Search The SM Store...">
+
+                        <a href="#" class="search__close"><img src="./assets/images/icon-close.svg" alt="Search"></a>
+                        
+                    </div>
+
+                    <div class="search-hint">
+                        <label class="search-hint__label-heading search-hint__label-heading--1">TOP SEARCHES</label>
+
+                       <!-- <div class="search-hint__top-searches">
+                            <a href="#" class="search-hint__top-searches__category">2020 Beauty Trends</a>
+                            <a href="#" class="search-hint__top-searches__category">Fashion Outfit</a>
+                            <a href="#" class="search-hint__top-searches__category">Make Up</a>
+                            <a href="#" class="search-hint__top-searches__category">Parisian Shoes</a>
+                            <a href="#" class="search-hint__top-searches__category">#SpottedAtSM</a>
+                        </div>
+                        -->
+
+                        <div class="search-hint__top-searches">
+                            <a href="#" class="search-hint__top-searches__category search-hint__top-searches__category--lazy-load"></a>
+                            <a href="#" class="search-hint__top-searches__category search-hint__top-searches__category--lazy-load"></a>
+                            <a href="#" class="search-hint__top-searches__category search-hint__top-searches__category--lazy-load"></a>
+                            <a href="#" class="search-hint__top-searches__category search-hint__top-searches__category--lazy-load"></a>
+                        </div>
+
+                        <label class="search-hint__label-heading search-hint__label-heading--1">TRENDING BLOGS</label>
+
+                        <div class="search-hint__container">
+                            <div class="search-hint__trending">
+                                <div class="search-hint__trending__image-container search-hint__trending__image-container--lazy-load">
+
+                                </div>
+
+                                <div class="search-hint__trending__info-text-container">
+                                    <span class="search-hint__trending__info-text-container--lazy-load search-hint__trending__info-text-container--lazy-load--small"></span>
+                                    <span class="search-hint__trending__info-text-container--lazy-load search-hint__trending__info-text-container--lazy-load--medium"></span>
+                                    <span class="search-hint__trending__info-text-container--lazy-load search-hint__trending__info-text-container--lazy-load--large"></span>
+                                </div>
+                            </div>
+
+                            <div class="search-hint__trending">
+                                <div class="search-hint__trending__image-container search-hint__trending__image-container--lazy-load">
+
+                                </div>
+
+                                <div class="search-hint__trending__info-text-container">
+                                    <span class="search-hint__trending__info-text-container--lazy-load search-hint__trending__info-text-container--lazy-load--small"></span>
+                                    <span class="search-hint__trending__info-text-container--lazy-load search-hint__trending__info-text-container--lazy-load--medium"></span>
+                                    <span class="search-hint__trending__info-text-container--lazy-load search-hint__trending__info-text-container--lazy-load--large"></span>
+                                </div>
+                            </div>
+
+                            <div class="search-hint__trending">
+                                <div class="search-hint__trending__image-container search-hint__trending__image-container--lazy-load">
+
+                                </div>
+
+                                <div class="search-hint__trending__info-text-container">
+                                    <span class="search-hint__trending__info-text-container--lazy-load search-hint__trending__info-text-container--lazy-load--small"></span>
+                                    <span class="search-hint__trending__info-text-container--lazy-load search-hint__trending__info-text-container--lazy-load--medium"></span>
+                                    <span class="search-hint__trending__info-text-container--lazy-load search-hint__trending__info-text-container--lazy-load--large"></span>
+                                </div>
+                            </div>
+
+                            <div class="search-hint__trending">
+                                <div class="search-hint__trending__image-container search-hint__trending__image-container--lazy-load">
+
+                                </div>
+
+                                <div class="search-hint__trending__info-text-container">
+                                    <span class="search-hint__trending__info-text-container--lazy-load search-hint__trending__info-text-container--lazy-load--small"></span>
+                                    <span class="search-hint__trending__info-text-container--lazy-load search-hint__trending__info-text-container--lazy-load--medium"></span>
+                                    <span class="search-hint__trending__info-text-container--lazy-load search-hint__trending__info-text-container--lazy-load--large"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+               </div>
+
                 
                 <!-- MOBILE MENU -->
-                <nav class="nav__mobile">
+                <nav class="nav__mobile hide">
                     <ul class="nav__mobile-upper">
                         <li><a class="nav__mobile-upper-item" data-item="whatsnew">What's New</a></li>
                         <li><a class="nav__mobile-upper-item" data-item="category">Categories</a></li>
@@ -506,7 +595,6 @@
                     <div class="nav__mobile-container nav__mobile--category">
                         <div class="nav__mobile-header">
                             <span class="font-headline nav__mobile-header-title">Categories</span>
-                            <!-- <a href="">View all</a> -->
                         </div>
                         <div class="nav__mobile-content nav__mobile--category">
                             <a href="" class="nav__mobile-content-item">
@@ -541,7 +629,7 @@
                     </div>
                     <div class="nav__mobile-container nav__mobile--events">
                         <div class="nav__mobile-header">
-                            <span class="font-headline nav__mobile-header-title">Categories</span>
+                            <span class="font-headline nav__mobile-header-title">Upcoming Events</span>
                             <a class="btn--text-link font-cta" href="">View all</a>
                         </div>
                         <div class="nav__mobile-content nav__mobile--events">
@@ -550,8 +638,8 @@
                                 <div class="card-mobile--events-text">
                                     <p class="font-metadata text-bold">Billie Eilish Tour</p>
                                     <ul>
-                                        <li class="font-caption"><img src="./assets/images/calendar.svg" alt=""> Sat - Sun, January 13-14</li>
-                                        <li class="font-caption"><img src="./assets/images/navigation.svg" alt=""> SM Makati</li>
+                                        <li class="font-caption"><img src="./assets/images/icons/icon-calendar.svg" alt=""> Sat - Sun, January 13-14</li>
+                                        <li class="font-caption"><img src="./assets/images/icons/icon-location.svg" alt=""> SM Makati</li>
                                     </ul>
                                 </div>
                             </a>
@@ -560,8 +648,8 @@
                                 <div class="card-mobile--events-text">
                                     <p class="font-metadata text-bold">Kids At Play</p>
                                     <ul>
-                                        <li class="font-caption"><img src="./assets/images/calendar.svg" alt=""> Sat, January 20</li>
-                                        <li class="font-caption"><img src="./assets/images/navigation.svg" alt=""> SM Makati</li>
+                                        <li class="font-caption"><img src="./assets/images/icons/icon-calendar.svg" alt=""> Sat, January 20</li>
+                                        <li class="font-caption"><img src="./assets/images/icons/icon-location.svg" alt=""> SM Makati</li>
                                     </ul>
                                 </div>
                             </a>
@@ -570,8 +658,8 @@
                                 <div class="card-mobile--events-text">
                                     <p class="font-metadata text-bold">Peppa Pig's Adventure</p>
                                     <ul>
-                                        <li class="font-caption"><img src="./assets/images/calendar.svg" alt=""> Sat, January 20</li>
-                                        <li class="font-caption"><img src="./assets/images/navigation.svg" alt=""> SM Makati</li>
+                                        <li class="font-caption"><img src="./assets/images/icons/icon-calendar.svg" alt=""> Sat, January 20</li>
+                                        <li class="font-caption"><img src="./assets/images/icons/icon-location.svg" alt=""> SM Makati</li>
                                     </ul>
                                 </div>
                             </a>
@@ -631,269 +719,290 @@
                             </a>
                         </div>
                     </div>
+                    <div class="nav__mobile-container nav__mobile--gifts">
+                        <div class="nav__mobile-header">
+                            <span class="font-headline nav__mobile-header-title">Gifts</span>
+                        </div>
+                        <div class="nav__mobile-content nav__mobile--gifts">
+                            <a href="" class="nav__mobile-content-item">
+                                <img src="./assets/images/cards/menu-gifts-m1.jpg" alt="">
+                                <span class="font-headline2">Gift Cards</span>
+                            </a>
+                            <a href="" class="nav__mobile-content-item">
+                                <img src="./assets/images/cards/menu-gifts-m2.jpg" alt="">
+                                <span class="font-headline2">Gifts Wrapping</span>
+                            </a>
+                            <a href="" class="nav__mobile-content-item">
+                                <img src="./assets/images/cards/menu-gifts-m3.jpg" alt="">
+                                <span class="font-headline2">Gifts Registry</span>
+                            </a>
+                        </div>
+                    </div>
                 </nav>
                 <!-- /MOBILE MENU -->
             </header>
             <!-- /HEADER -->
+
+            <!-- WIDGETS -->
+            <section class="widgets">
+                <div class="widget widget--promos">
+                    <!--<p class="font-eyebrow widget--promos-sidetext">Jan 2-12</p>//-->
+                    <img src="./assets/images/icons/Promos.svg" alt="">
+                    <div class="widget--promos-content">
+                        <div class="widget--promos-header widget-header">
+                            <p class="font-metadata text-bold">Promos</p>
+                            <a href="" class="btn--text-link font-cta">Learn more</a>
+                        </div>
+                        <div class="widget--promos-details">
+                            <p class="font-eyebrow">Big clearance sale</p>
+                            <!--<p class="font-metadata">Up to 50% off on selected items</p>//-->
+                            <p class="font-metadata">JAN. 21-23, 2020</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="widget widget--events">
+                    <img src="./assets/images/widget-event-icon.png" alt="">
+                    <div class="widget--events-content">
+                        <div class="widget--events-header widget-header">
+                            <p class="font-metadata text-bold">Events near you</p>
+                            <a href="" class="btn--text-link font-cta">View all</a>
+                        </div>
+                        <div class="widget--events-details">
+                            <p class="font-eyebrow">Big clearance sale</p>
+                            <p class="font-metadata">JAN. 20, 2020, 4PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="widget widget--locator">
+                    <!--<p class="font-eyebrow widget--locator-sidetext">Open now</p>//-->
+                    <img src="./assets/images/icons/Stores.svg" alt="">
+                    <div class="widget--locator-content">
+                        <div class="widget--locator-header widget-header">
+                            <p class="font-metadata text-bold">Stores near you</p>
+                            <a href="" class="btn--text-link font-cta">View all</a>
+                        </div>
+                        <div class="widget--locator-details">
+                            <p class="font-eyebrow">The SM Store Estancia</p>
+                            <p class="font-metadata">OPEN TODAY, 10AM - 10PM</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /WIDGETS -->
             
-            <section class="banner-inner banner-inner--other container-fluid">
+            <section class="banner container-fluid">
+                <div class="banner__yellow"></div>
+                <div class="banner__pattern"></div>
+               
+                <div class="main-carousel">
+                    <div class="banner__featured"></div>
+                    
+                    <div class="banner__content">
+                        <span class="font-eyebrow font-eyebrow--hero">Get up to 50% discount</span>
+                        <h1 class="font-titan">Women's <span class="font-titan--newline-right">Sale</span></h1>
+                        <div class="banner__btn">
+                            <a href="" class="btn--primary font-cta">Learn more</a>
+                        </div>
+                     </div>
+                </div>
+
+                <div class="banner__pagination pagination-dot">
+                    
+                    <input type="radio" id="slide1" name="activator" checked="checked" type="text" class="pagination-dot__activator">
+                    <label class="pagination-dot__indicator" for="slide1"></label>
+                
+                    <input type="radio" id="slide2" name="activator" type="text" class="pagination-dot__activator">
+                    <label class="pagination-dot__indicator" for="slide2"></label>
+                
+                    <input type="radio" id="slide3" name="activator" type="text" class="pagination-dot__activator">
+                    <label class="pagination-dot__indicator" for="slide3"></label>
+                
+                    <input type="radio" id="slide4" name="activator" type="text" class="pagination-dot__activator">
+                    <label class="pagination-dot__indicator" for="slide4"></label>
+
+                </div> <!--.banner__pagination pagination-dot-->
+            </section>
+
+            <!-- EVENTS --> 
+            <section class="featured-events container-fluid">
                 <div class="container">
-                    <h1 class="font-hero banner-page__headings">Other Categories</h1>
+                    <div class="featured-events__btn">
+                        <a href="" class="btn--text-link font-cta">View all events</a>
+                    </div>
+                    <div class="featured-events__content">
+                        <div class="featured-events__title">
+                            <h2>In-store Events</h2>
+                            <p class="featured-events__title-month">January</p>
+                        </div>
+                        <div class="featured-events__details">
+                            <h3 class="featured-events__details-title">Billie Eilish Tour</h3>
+                            <p class="featured-events__details-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo.</p>
+                            <div class="featured-events__details-datetime">
+                                <img src="./assets/images/icons/icon-clock.svg" alt="">
+                                <span class="font-eyebrow">Sat - Sun, January 13-14</span>
+                            </div>
+        
+                            <div class="featured-events__details-venue">
+                                <img src="./assets/images/icons/icon-location.svg" alt="">
+                                <p class="text-semibold">SM Makati</p>
+                            </div>
+        
+                            <a href="" class="btn--text-link font-cta">Learn more</a>
+                        </div>
+
+                        <div class="featured-events__slider">
+                            <div class="featured-events__slider-event">
+                                <img src="./assets/images/event_img.jpg" alt="">
+                                <div>
+                                    <p class="font-cta">Jan</p>
+                                    <p class="font-hero-m">20</p>
+                                </div>
+                            </div>
+                            <div class="featured-events__slider-event">
+                                <img src="./assets/images/event_img.jpg" alt="">
+                                <div>
+                                    <p class="font-cta">Jan</p>
+                                    <p class="font-hero-m">24</p>
+                                </div>
+                            </div>
+                            <div class="featured-events__slider-event">
+                                <img src="./assets/images/event_img.jpg" alt="">
+                                <div>
+                                    <p class="font-cta">Jan</p>
+                                    <p class="font-hero-m">26</p>
+                                </div>
+                            </div>
+                            <div class="featured-events__slider-event">
+                                <img src="./assets/images/event_img.jpg" alt="">
+                                <div>
+                                    <p class="font-cta">Jan</p>
+                                    <p class="font-hero-m">30</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="featured-events__footer">
+                        <button class="controls__arrow controls__arrow--left" href=""><img src="./assets/images/arrow-tail-left.svg" alt=""></button>
+                        <button class="controls__arrow controls__arrow--right" href=""><img src="./assets/images/arrow-tail-right.svg" alt=""></button>
+                    </div>
+
                 </div>
             </section>
-            
-            
-            <section class="sale container-1238 sale--with-controls sale--four-cards">
-                <div class="card--sale card--sale-md">
-                    <img src="./assets/images/cards/card-other-sale1.jpg" alt="">
-                    <div class="card--sale-text">
-                        <p>Up to 50% off on selected items</p>
-                        <h1>Stationery Sale</h1>
-                        <p>Promo Period: Jan 1 - Jan 31, 2020</p>
-                        <a href="" class="btn--primary font-cta">Learn more</a>
-                    </div>
-                </div>
-                <div class="card--sale card--sale-md">
-                    <img src="./assets/images/cards/card-other-sale2.jpg" alt="">
-                    <div class="card--sale-text">
-                        <p>Up to 50% off on selected items</p>
-                        <h1>Toy Kingdom Sale</h1>
-                        <p>Promo Period: Jan 1 - Jan 31, 2020</p>
-                        <a href="" class="btn--primary font-cta">Learn more</a>
-                    </div>
-                </div>
-                <div class="card--sale card--sale-md">
-                    <img src="./assets/images/cards/card-other-sale3.jpg" alt="">
-                    <div class="card--sale-text">
-                        <p>Up to 50% off on selected items</p>
-                        <h1>Baby Co. Sale</h1>
-                        <p>Promo Period: Jan 1 - Jan 31, 2020</p>
-                        <a href="" class="btn--primary font-cta">Learn more</a>
-                    </div>
-                </div>
-                <div class="card--sale card--sale-md">
-                    <img src="./assets/images/cards/card-other-sale4.jpg" alt="">
-                    <div class="card--sale-text">
-                        <p>Up to 50% off on selected items</p>
-                        <h1>Ace Hardware Sale</h1>
-                        <p>Promo Period: Jan 1 - Jan 31, 2020</p>
-                        <a href="" class="btn--primary font-cta">Learn more</a>
-                    </div>
-                </div>
-                <div class="sale__controls">
-                    <a class="controls__arrow controls__arrow--left" href=""><img src="./assets/images/arrow-tail-left.svg" alt=""></a>
-                    <a class="controls__arrow controls__arrow--right" href=""><img src="./assets/images/arrow-tail-right.svg" alt=""></a>
-                </div>
-            </section>
-            
-            
-            <section class="omnibus-slider container-fluid">
-                <div class="omnibus-slider__content">
-                    <div class="omnibus-slider__details">
-                        <h2>Upcoming Events</h2>
-                        <div class="omnibus-slider__details-controls">
-                            <a class="controls__arrow controls__arrow--left" href=""><img src="./assets/images/arrow-tail-left.svg" alt=""></a>
-                            <a class="controls__arrow controls__arrow--right" href=""><img src="./assets/images/arrow-tail-right.svg" alt=""></a>
-                        </div>
-                        <a href="" class="btn--primary button--black font-cta">View Calendar</a>
-                    </div>
+            <!-- /EVENTS -->
 
-                    <div class="omnibus-slider__slider">
-                        <div class="card--event">
-                            <img class="card--event-poster" src="./assets/images/cards/youth-card-event1.jpg" alt="">
-                            <div class="card--event-details">
-                                <p class="font-eyebrow card--event-details-month">Jan</p>
-                                <h1 class="font-h1 card--event-details-day">13-14</h1>
-                                <p class="font-eyebrow card--event-details-title">Billie Eilish Tour</p>
+            <!-- CATALOG -->
+            <section class="featured-stories">
+                <div class="featured-stories__box container-fluid">
+
+                </div>
+                
+                <div class="featured-stories__container">
+                    <div class="featured-stories__header">
+                        <h2 class="font-h2-hero">Catalog</h2>
+                        <a href="" class="btn--text-link font-cta">View all</a>
+                        <p>Your ultimate guide to this season’s fashion, style, beauty, and shopping finds at The SM Store.</p>
+                    </div> <!--.featured-stories__header-->
+
+                    <div class="featured-stories__slider">
+                        <div class="featured-stories__details">
+                            <span class="featured-stories__category font-eyebrow-semi">Magazine</span>
+                            <h1 class="featured-stories__title font-hero">Real</h1>
+                            <h1 class="featured-stories__title font-hero">Beauty</h1>
+                            <a href="" class="featured-stories__btn btn--primary font-cta">Browse</a>
+                        </div>
+                        <div class="featured-stories__images">
+                            <div class="featured-stories__image">
+                                <img src="./assets/images/slideshow1.png" alt="">
+                            </div>
+                            <div class="featured-stories__image">
+                                <img src="./assets/images/slideshow1.png" alt="">
                             </div>
                         </div>
+                    </div> <!--.featured-stories__slider-->
 
-                        <div class="card--event">
-                            <img class="card--event-poster" src="./assets/images/cards/youth-card-event2.jpg" alt="">
-                            <div class="card--event-details">
-                                <p class="font-eyebrow card--event-details-month">Jan</p>
-                                <h1 class="font-h1 card--event-details-day">13-14</h1>
-                                <p class="font-eyebrow card--event-details-title">Billie Eilish Tour</p>
-                            </div>
-                        </div>
-
-                        <div class="card--event">
-                            <img class="card--event-poster" src="./assets/images/cards/youth-card-event3.jpg" alt="">
-                            <div class="card--event-details">
-                                <p class="font-eyebrow card--event-details-month">Jan</p>
-                                <h1 class="font-h1 card--event-details-day">13-14</h1>
-                                <p class="font-eyebrow card--event-details-title">Billie Eilish Tour</p>
-                            </div>
-                        </div>
-
-                        <div class="card--event">
-                            <img class="card--event-poster" src="./assets/images/cards/youth-card-event1.jpg" alt="">
-                            <div class="card--event-details">
-                                <p class="font-eyebrow card--event-details-month">Jan</p>
-                                <h1 class="font-h1 card--event-details-day">13-14</h1>
-                                <p class="font-eyebrow card--event-details-title">Billie Eilish Tour</p>
-                            </div>
-                        </div>
-
-                        <div class="card--event">
-                            <img class="card--event-poster" src="./assets/images/cards/youth-card-event2.jpg" alt="">
-                            <div class="card--event-details">
-                                <p class="font-eyebrow card--event-details-month">Jan</p>
-                                <h1 class="font-h1 card--event-details-day">13-14</h1>
-                                <p class="font-eyebrow card--event-details-title">Billie Eilish Tour</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="others-video">
-                <div class="others-video__bg container-fluid"></div>         
-                <div class="others-video__content container">
-                    <div class="others-video__video">
-                        <video class="others-video__video-file" playsinline="" autoplay="" muted="" loop="" src="https://storage.coverr.co/videos/coverr-meditation-couple-in-the-park-1566577927549?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjExNDMyN0NEOTRCMUFCMTFERTE3IiwiaWF0IjoxNTgyNzcyNzk2fQ.02ngrtvWjl3gOlqlCqYXerXmA9N2JcoUqXH-gu66oiA" poster="https://storage.coverr.co/posters/coverr-meditation-couple-in-the-park-1566577927549" class="ng-star-inserted"></video>
-                    </div> 
-
-                    <div class="others-video__text">
-                        <span class="font-eyebrow">#SMStationery</span>
-                        <h1 class="font-hero">
-                            <span>ART FEST</span> 
-                            <span>2020</span>
-                        </h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, necessitatibus.</p>
-                    </div> 
-
-                    <div class="others-video__controls controls">
+                    <div class="featured-stories__controls controls">
                         <a class="controls__arrow controls__arrow--left" href=""><img src="./assets/images/arrow-tail-left.svg" alt=""></a>
                         <a class="controls__arrow controls__arrow--right" href=""><img src="./assets/images/arrow-tail-right.svg" alt=""></a>
-                    </div> 
+                    </div> <!--.featured-stories__controls controls-->
+                </div>  <!--.featured-stories__container-->
+
+                <div class="featured-stories__shadow"></div>
+                
+                <div class="featured-stories__shadow container-fluid"></div>
+            </section>
+            <!-- /CATALOG -->
+
+            <!-- VIDEO -->
+            <section class="featured-video">
+                <div class="featured-video__bg container-fluid"></div>         
+                <div class="featured-video__content container">
+                    <div class="featured-video__video">
+                        <video class="featured-video__video-file" playsinline="" autoplay="" muted="" loop="" src="https://storage.coverr.co/videos/coverr-meditation-couple-in-the-park-1566577927549?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjExNDMyN0NEOTRCMUFCMTFERTE3IiwiaWF0IjoxNTgyNzcyNzk2fQ.02ngrtvWjl3gOlqlCqYXerXmA9N2JcoUqXH-gu66oiA" poster="https://storage.coverr.co/posters/coverr-meditation-couple-in-the-park-1566577927549" class="ng-star-inserted"></video>
+                    </div> <!--.featured-video__video -->
+
+                    <div class="featured-video__text">
+                        <span class="font-eyebrow">Official Campaign Video</span>
+                        <h1 class="font-hero">
+                            <span>SM Real</span> 
+                            <span>Beauty</span>
+                        </h1>
+                        <p>From the latest KBeauty trends and products to the hottest styles in fashion—discover real beauty today.</p>
+                    </div> <!--.featured-video__text -->
+
+                    <div class="featured-video__controls controls">
+                        <a class="controls__arrow controls__arrow--left" href=""><img src="./assets/images/arrow-tail-left.svg" alt=""></a>
+                        <a class="controls__arrow controls__arrow--right" href=""><img src="./assets/images/arrow-tail-right.svg" alt=""></a>
+                    </div> <!--.featured-video__controls controls -->
                 </div>
             </section>
+            <!-- /VIDEO -->
 
-            <section class="stories-blog p-40">
-                <div class="container">
-                    <h2 class="font-h2-hero content__heading2--center">Lorem ipsum dolor sit amet</h2>
-                    <p class="font-eyebrow-semi content__heading2--center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus laborum debitis sint.</p>
-                </div>
+            <!-- GIFTS -->
 
-                <div class="stories-blog__content container">
-                    
-                    <div class="row-content blog-filter-d">
-                        <ul class="blog__nav">
-                            <li class="blog__nav-item"><a class="blog__nav-link blog__nav-link--active" href="#">All</a></li>
-                            <li class="blog__nav-item"><a class="blog__nav-link" href="#">Blogs</a></li>
-                            <li class="blog__nav-item"><a class="blog__nav-link" href="#">Quizzes</a></li>
-                            <li class="blog__nav-item"><a class="blog__nav-link" href="#">Campaigns</a></li>
-                        </ul>
-                    </div> 
-                    
-                    <div class="row-content blog-filter-m blog-filter-dropdown">
-                        <p class="font-metadata text-bold">Filter</p>
-                        <select class="font-caption text-semibold">
-                            <option value="All">All</option>
-                            <option value="All">SM Men</option>
-                            <option value="All">Men’s Accessories</option>
-                            <option value="All">Men’s Shoes & Bags</option>
-                        </select>
+            <!-- /GIFTS -->
+
+            <!-- BLOG -->
+            <section class="featured-blog container">
+                <h2 class="featured-blog__title font-h2-hero">Latest in fashion</h2>
+                <p class="featured-blog__subtitle font-eyebrow">All the freshest style inspirations in one place.</p>
+                <a href="" class="featured-blog__btn font-cta btn--text-link">View all</a>
+
+                <div class="featured-blog__cards">
+
+                    <div class="featured-blog__card">
+                        <img src="./assets/images/thumbnail-blog-fashion.jpg" alt="Fashion">
+                        <span class="featured-blog__card--category font-eyebrow-medium">Fashion</span>
+                        <h4 class="featured-blog__card--title font-h4">2020 Beauty Trends</h4>
+                        <a href="" class="featured-blog__card--btn btn--text-link font-cta">Read more</a>
                     </div> 
 
-                    <div class="stories-blog__row blog__row row-content">
+                    <div class="featured-blog__card">
+                        <img src="./assets/images/thumbnail-blog-women.jpg" alt="Women">
+                        <span class="featured-blog__card--category font-eyebrow-medium">Women</span>
+                        <h4 class="featured-blog__card--title font-h4">Classic Forever Pieces</h4>
+                        <a href="" class="featured-blog__card--btn btn--text-link font-cta">Read more</a>
+                    </div> 
 
-                            <div class="blog__item col-4">
-                                <a href="#"><img src="./assets/images/cards/card-blog-others1.jpg" alt="blog title"> </a>
-                                <h5 class="font-h5--uppercase">FASHION</h5>  
-                                <a class="link__heading" href="#"><h4 class="font-h4">Real Beauty</h4></a>
-                                <a class="btn--text-link font-cta" href="#">Read Blog</a>
-                            </div> <!--.blog__item col-4-->
+                    <div class="featured-blog__card">
+                        <img src="./assets/images/thumbnail-blog-men.jpg" alt="Men">
+                        <span class="featured-blog__card--category font-eyebrow-medium">Men</span>
+                        <h4 class="featured-blog__card--title font-h4">SM Men's Fashion Spring 2020 Lookbook</h4>
+                        <a href="" class="featured-blog__card--btn btn--text-link font-cta">Read more</a>
+                    </div> 
 
-                            <div class="blog__item col-4">
-                                <a href="#"><img src="./assets/images/cards/card-blog-others2.jpg" alt="blog title"> </a>
-                                <h5 class="font-h5--uppercase">FASHION</h5>  
-                                <a class="link__heading" href="#"><h4 class="font-h4">Real Beauty</h4></a>
-                                <a class="btn--text-link font-cta" href="#">Read Blog</a>
-                            </div> <!--.blog__item col-4-->
-
-                            <div class="blog__item col-4">
-                                <a href="#"><img src="./assets/images/cards/card-blog-others3.jpg" alt="blog title"> </a>
-                                <h5 class="font-h5--uppercase">FASHION</h5>  
-                                <a class="link__heading" href="#"><h4 class="font-h4">Real Beauty</h4></a>
-                                <a class="btn--text-link font-cta" href="#">Read Blog</a>
-                            </div> <!--.blog__item col-4-->
-
-                            <div class="blog__item col-4">
-                                <a href="#"><img src="./assets/images/cards/card-blog-others4.jpg" alt="blog title"> </a>
-                                <h5 class="font-h5--uppercase">FASHION</h5>  
-                                <a class="link__heading" href="#"><h4 class="font-h4">Real Beauty</h4></a>
-                                <a class="btn--text-link font-cta" href="#">Read Blog</a>
-                            </div> <!--.blog__item col-4-->
-
-                            <div class="blog__item col-4">
-                                <a href="#"><img src="./assets/images/cards/card-blog-others5.jpg" alt="blog title"> </a>
-                                <h5 class="font-h5--uppercase">FASHION</h5>  
-                                <a class="link__heading" href="#"><h4 class="font-h4">Real Beauty</h4></a>
-                                <a class="btn--text-link font-cta" href="#">Read Blog</a>
-                            </div> <!--.blog__item col-4-->
-
-                            <div class="blog__item col-4">
-                                <a href="#"><img src="./assets/images/cards/card-blog-others6.jpg" alt="blog title"> </a>
-                                <h5 class="font-h5--uppercase">FASHION</h5>  
-                                <a class="link__heading" href="#"><h4 class="font-h4">Real Beauty</h4></a>
-                                <a class="btn--text-link font-cta" href="#">Read Blog</a>
-                            </div> <!--.blog__item col-4-->
-
-                            <div class="blog__item col-4">
-                                <a href="#"><img src="./assets/images/cards/card-blog-others7.jpg" alt="blog title"> </a>
-                                <h5 class="font-h5--uppercase">FASHION</h5>  
-                                <a class="link__heading" href="#"><h4 class="font-h4">Real Beauty</h4></a>
-                                <a class="btn--text-link font-cta" href="#">Read Blog</a>
-                            </div> <!--.blog__item col-4-->
-
-                            <div class="blog__item col-4">
-                                <a href="#"><img src="./assets/images/cards/card-blog-others8.jpg" alt="blog title"> </a>
-                                <h5 class="font-h5--uppercase">FASHION</h5>  
-                                <a class="link__heading" href="#"><h4 class="font-h4">Real Beauty</h4></a>
-                                <a class="btn--text-link font-cta" href="#">Read Blog</a>
-                            </div> <!--.blog__item col-4-->
-
-                            <div class="blog__item col-4">
-                                <a href="#"><img src="./assets/images/cards/card-blog-others4.jpg" alt="blog title"> </a>
-                                <h5 class="font-h5--uppercase">FASHION</h5>  
-                                <a class="link__heading" href="#"><h4 class="font-h4">Real Beauty</h4></a>
-                                <a class="btn--text-link font-cta" href="#">Read Blog</a>
-                            </div> <!--.blog__item col-4-->
-
-                            <div class="blog__item col-4">
-                                <a href="#"><img src="./assets/images/cards/card-blog-others5.jpg" alt="blog title"> </a>
-                                <h5 class="font-h5--uppercase">FASHION</h5>  
-                                <a class="link__heading" href="#"><h4 class="font-h4">Real Beauty</h4></a>
-                                <a class="btn--text-link font-cta" href="#">Read Blog</a>
-                            </div> <!--.blog__item col-4-->
-
-                            <div class="blog__item col-4">
-                                <a href="#"><img src="./assets/images/cards/card-blog-others6.jpg" alt="blog title"> </a>
-                                <h5 class="font-h5--uppercase">FASHION</h5>  
-                                <a class="link__heading" href="#"><h4 class="font-h4">Real Beauty</h4></a>
-                                <a class="btn--text-link font-cta" href="#">Read Blog</a>
-                            </div> <!--.blog__item col-4-->
-
-                            <div class="blog__item col-4">
-                                <a href="#"><img src="./assets/images/cards/card-blog-others7.jpg" alt="blog title"> </a>
-                                <h5 class="font-h5--uppercase">FASHION</h5>  
-                                <a class="link__heading" href="#"><h4 class="font-h4">Real Beauty</h4></a>
-                                <a class="btn--text-link font-cta" href="#">Read Blog</a>
-                            </div> <!--.blog__item col-4-->
-
-                    </div>
+                    <div class="featured-blog__card">
+                        <img src="./assets/images/thumbnail-blog-fashion-02.jpg" alt="Fashion">
+                        <span class="featured-blog__card--category font-eyebrow-medium">Fashion</span>
+                        <h4 class="featured-blog__card--title font-h4">Summer Hits</h4>
+                        <a href="" class="featured-blog__card--btn btn--text-link font-cta">Read more</a>
+                    </div> 
 
                 </div> 
+                <button class="btn--primary button--black font-cta">Load more</button>
+            </section>
+            <!-- /BLOG -->
 
-                <div class="gradient gradient--white">
-
-                    <a href="#" class="button button--primary button--black button--gradient-content">View more</a>
-
-                </div>
-            </section> 
-            
             
             <!-- FOOTER -->
             <footer class="footer">
@@ -969,5 +1078,25 @@
             <!-- /FOOTER -->
 
         </div> <!-- /wrapper -->
+
+        <!-- COOKIE POLICY -->
+        <div class="cookie__container">
+            <p class="font-caption cookie__text">The SM Store values your rights to keep your data secure under the Data Privacy Act. This website uses cookies to help enhance your online experience. Continue to browse if you agree to our Cookie Policy; otherwise, kindly update your cookie settings. Check out our Privacy Policy page too for more information on how we protect your privacy.</p>
+
+            <div class="cookie__btn">
+                <a href="" class="btn--primary font-cta">Settings</a>
+                <a href="" class="btn--primary font-cta">Got it</a>
+            </div>
+        </div>
+        <!-- /COOKIE POLICY -->
+
     </body>
+
+    <!-- IMPORTS -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/slimscroll.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+
+    <!-- CUSTOM JS -->
+    <script src="assets/js/main.js"></script>
 </html>

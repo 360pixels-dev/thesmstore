@@ -8,6 +8,7 @@
         position: absolute;
         top: 0;
         left: 0;
+        z-index: 999;
 
         /*@include respond(tablet) {
             &--mhide{
@@ -15,11 +16,11 @@
             }   
         }*/
         
-        &:not(&--index) {
+        /*&:not(&--index) {
             @include respond(1160px) {
                 display: none;    
             }
-        }
+        }*/
        
  
         &--default {
@@ -62,6 +63,14 @@
 
                 & li {
                     margin: 0 12px;
+
+                    @include respond(360px) {
+                        margin: 0 10px;
+                    }
+                    
+                    &:not(.tooltip) {
+                        white-space: nowrap;
+                    }
 
                     & > img {
                         vertical-align: middle;
@@ -112,7 +121,7 @@
 
         @include respond(tablet) {
             top: 0;
-            padding: 14px 20px;
+            padding: 44px 20px 0;
         }
 
         &--index {
@@ -485,20 +494,17 @@
         &-controls {
             & button {
                 // display: block;
-                background-color: rgba(255,255,255,0.8);
+                background-color: #FFF;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
                 height: 56px;
                 width: 56px;
                 padding: 18px 8px;
                 border-radius: 40px;
                 cursor: pointer;
-
-                &:hover {
-                    background-color: #FFF;
-                }
             }
 
             &--left {
-                display: none;
+                opacity: 1;
                 position: absolute;
                 left: -27px;
                 top: 50%;
@@ -506,6 +512,7 @@
             }
 
             &--right {
+                opacity: 0;
                 position: absolute;
                 right: -27px;
                 top: 50%;
@@ -532,6 +539,15 @@
             padding-top: 24px !important;
             justify-content: space-between;
             flex-direction: row;
+
+            & .nav__dropdown-header {
+                margin-bottom: 16px;
+            }
+
+            & .nav__dropdown-btn {
+                display: block;
+                margin: 26px 0 0px 0; 
+            }
         }
 
         &--services {
@@ -625,4 +641,9 @@
             }
         }
     }
+}
+
+
+.dark-gradient {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
 }
