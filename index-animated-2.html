@@ -11,6 +11,10 @@
     </head>
     <body>
         <div class="wrapper">
+
+            <div class="animated-logo">
+                <img src="./assets/images/logo.svg" alt="SM Store">
+            </div>
             
             <!-- HEADER -->
             <header>
@@ -47,11 +51,11 @@
                         <img class="burger-menu burger-menu-close" src="./assets/images/close.svg" alt="" hidden>
                     </div>
 
-                    <div class="logo">
+                    <!--<div class="logo">
                         <img src="./assets/images/logo.svg" alt="SM Store">
-                    </div>
+                    </div>--//-->
 
-                    <ul class="nav__lower-menu navanimate">
+                    <ul class="nav__lower-menu navanimate__item">
                         <li class="nav__lower-menu-item">
                             <a href="" class="font-headline">What's New</a>
                             <div class="nav__dropdown container">
@@ -700,14 +704,14 @@
             </section> -->
             <!-- /WIDGETS -->
             
-            <section class="banner container-fluid">
-                <div class="banner__yellow"></div>
-                <div class="banner__pattern"></div>
+            <section class="banner container-fluid vh-100">
+                <div class="banner__yellow moiveInTopCornerLeft"></div>
+                <div class="banner__pattern moiveInRight"></div>
                
                 <div class="main-carousel active">
-                    <div class="banner__featured animated fadeInRight"></div>
+                    <div class="banner__featured moveInUp"></div>
                     
-                    <div class="banner__content animated fadeInRight">
+                    <div class="banner__content moveInUp">
                         <span class="font-eyebrow font-eyebrow--hero">Get up to 50% discount</span>
                         <h1 class="font-titan">Women's <span class="font-titan--newline-right">Sale</span></h1>
                         <div class="banner__btn">
@@ -729,7 +733,7 @@
                 </div>
                
                 <div class="main-carousel">
-                    <div class="banner__featured animated fadeInRight"></div>
+                    <div class="banner__featured"></div>
                     
                     <div class="banner__content animated fadeInRight">
                         <span class="font-eyebrow font-eyebrow--hero">Get up to 50% discount</span>
@@ -741,7 +745,7 @@
                 </div>
                
                 <div class="main-carousel">
-                    <div class="banner__featured animated fadeInRight"></div>
+                    <div class="banner__featured"></div>
                     
                     <div class="banner__content animated fadeInRight">
                         <span class="font-eyebrow font-eyebrow--hero">Get up to 50% discount</span>
@@ -752,7 +756,7 @@
                     </div>
                 </div>
 
-                <div class="banner__pagination pagination-dot">
+                <div class="banner__pagination pagination-dot moveInUp">
                     
                     <input type="radio" id="slide1" name="activator" checked="checked" type="text" class="pagination-dot__activator">
                     <label class="pagination-dot__indicator" for="slide1"></label>
@@ -768,7 +772,7 @@
 
                 </div> <!--.banner__pagination pagination-dot-->
             </section>
-            </section>
+
 
             <!-- EVENTS --> 
             <section class="featured-events container-fluid">

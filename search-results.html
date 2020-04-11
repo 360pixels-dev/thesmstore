@@ -3,9 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>SM Store</title>
+        <title>Search - SM Store</title>
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
         <link rel="stylesheet" href="./assets/css/style.min.css">
 
     </head>
@@ -430,11 +429,15 @@
                     <div class="nav__lower-search"> 
                         <img src="./assets/images/search.svg" alt="">
                     </div>
+
+                    
                 </nav>
 
+
+               
                 
                 <!-- MOBILE MENU -->
-                <nav class="nav__mobile">
+                <nav class="nav__mobile hide">
                     <ul class="nav__mobile-upper">
                         <li><a class="nav__mobile-upper-item" data-item="whatsnew">What's New</a></li>
                         <li><a class="nav__mobile-upper-item" data-item="category">Categories</a></li>
@@ -653,247 +656,195 @@
                     </div>
                 </nav>
                 <!-- /MOBILE MENU -->
+
             </header>
             <!-- /HEADER -->
 
-            <!-- WIDGETS -->
-            <!-- <section class="widgets">
-                <div class="widget widget--promos">
-                    <img src="./assets/images/icons/Promos.svg" alt="">
-                    <div class="widget--promos-content">
-                        <div class="widget--promos-header widget-header">
-                            <p class="font-metadata text-bold">Promos</p>
-                            <a href="" class="btn--text-link font-cta">Learn more</a>
-                        </div>
-                        <div class="widget--promos-details">
-                            <p class="font-eyebrow">Big clearance sale</p>
-                            <p class="font-metadata">JAN. 21-23, 2020</p>
-                        </div>
-                    </div>
+           
+            <section class="search-header">
+                <div class="container-1224">
+                    <div class="container-search--result">
+                        <h2 class="search-header__h2">Search for</h2>
+                        <div class="search">
+                            <a href="#" class="search__btn"> <img src="./assets/images/icon-search.svg" alt="Search"></a>
+                            <input type="text" class="search__input" placeholder="Search The SM Store...">
+                         </div>
+                         <p class="search__count">Showing 9 of about 19 results</p>
+                     </div>
+
                 </div>
-                <div class="widget widget--events">
-                    <img src="./assets/images/widget-event-icon.png" alt="">
-                    <div class="widget--events-content">
-                        <div class="widget--events-header widget-header">
-                            <p class="font-metadata text-bold">Events near you</p>
-                            <a href="" class="btn--text-link font-cta">View all</a>
+            </section>
+
+            <section class="search-result">
+
+                <div class="container-1224 container-results">
+
+                    <h2 class="search-result__h2">Women</h2>
+                    <p class="search-result__p">10 results for “Summer Dresses”</p>
+
+                    <div class="search-result__row">
+
+                        <div class="search-result__item">
+                            <img class="search-result__item__image" src="./assets/images/img-search-result-01.jpg">
+                            <div class="search-result__item__details">
+                                <h4 class="search-result__item__h4">FASHION</h4>
+                                <a class="search-result__item__link-heading" href="#"><h3 class="search-result__item__link-heading__h3">Summer Hits</h3></a>
+                                <a class="btn--text-link font-cta" href="#">Read more</a>
+                            </div>
                         </div>
-                        <div class="widget--events-details">
-                            <p class="font-eyebrow">Big clearance sale</p>
-                            <p class="font-metadata">JAN. 20, 2020, 4PM</p>
+
+                        <div class="search-result__item">
+                            <img class="search-result__item__image" src="./assets/images/img-search-result-01.jpg">
+                            <div class="search-result__item__details">
+                                <h4 class="search-result__item__h4">FASHION</h4>
+                                <a class="search-result__item__link-heading" href="#"><h3 class="search-result__item__link-heading__h3">10 Sandals You Need To Buy this Summer</h3></a>
+                                <a class="btn--text-link font-cta" href="#">Read more</a>
+                            </div>
                         </div>
+                        
+                        <div class="search-result__item">
+                            <img class="search-result__item__image" src="./assets/images/img-search-result-01.jpg">
+                            <div class="search-result__item__details">
+                                <h4 class="search-result__item__h4">FASHION</h4>
+                                <a class="search-result__item__link-heading" href="#"><h3 class="search-result__item__link-heading__h3">10 Blooming Outfits to Wear this Summer</h3></a>
+                                <a class="btn--text-link font-cta" href="#">Read more</a>
+                            </div>
+                        </div>
+
+                        <div class="search-result__item">
+                            <img class="search-result__item__image" src="./assets/images/img-search-result-01.jpg">
+                            <div class="search-result__item__details">
+                                <h4 class="search-result__item__h4">FASHION</h4>
+                                <a class="search-result__item__link-heading" href="#"><h3 class="search-result__item__link-heading__h3">Key Looks this Summer</h3></a>
+                                <a class="btn--text-link font-cta" href="#">Read more</a>
+                            </div>
+                        </div>
+
                     </div>
-                </div>
-                <div class="widget widget--locator">
-                    <img src="./assets/images/icons/Stores.svg" alt="">
-                    <div class="widget--locator-content">
-                        <div class="widget--locator-header widget-header">
-                            <p class="font-metadata text-bold">Stores near you</p>
-                            <a href="" class="btn--text-link font-cta">View all</a>
-                        </div>
-                        <div class="widget--locator-details">
-                            <p class="font-eyebrow">The SM Store Estancia</p>
-                            <p class="font-metadata">OPEN TODAY, 10AM - 10PM</p>
-                        </div>
+
+
+                    <div class="search-result__button">
+                        <button class="btn--primary button--black font-cta">Show All</button>
                     </div>
+
                 </div>
-            </section> -->
-            <!-- /WIDGETS -->
+
+                <div class="container-1224 container-results">
+
+                    <h2 class="search-result__h2">Social Media Campaigns</h2>
+                    <p class="search-result__p">10 results for “Summer Dresses”</p>
+
+                    <div class="search-result__row">
+
+                        <div class="search-result__item">
+                            <img class="search-result__item__image" src="./assets/images/img-search-result-01.jpg">
+                            <div class="search-result__item__details">
+                                <h4 class="search-result__item__h4">FASHION</h4>
+                                <a class="search-result__item__link-heading" href="#"><h3 class="search-result__item__link-heading__h3">Summer Hits</h3></a>
+                                <a class="btn--text-link font-cta" href="#">Read more</a>
+                            </div>
+                        </div>
+
+                        <div class="search-result__item">
+                            <img class="search-result__item__image" src="./assets/images/img-search-result-01.jpg">
+                            <div class="search-result__item__details">
+                                <h4 class="search-result__item__h4">FASHION</h4>
+                                <a class="search-result__item__link-heading" href="#"><h3 class="search-result__item__link-heading__h3">10 Sandals You Need To Buy this Summer</h3></a>
+                                <a class="btn--text-link font-cta" href="#">Read more</a>
+                            </div>
+                        </div>
+                        
+                        <div class="search-result__item">
+                            <img class="search-result__item__image" src="./assets/images/img-search-result-01.jpg">
+                            <div class="search-result__item__details">
+                                <h4 class="search-result__item__h4">FASHION</h4>
+                                <a class="search-result__item__link-heading" href="#"><h3 class="search-result__item__link-heading__h3">10 Blooming Outfits to Wear this Summer</h3></a>
+                                <a class="btn--text-link font-cta" href="#">Read more</a>
+                            </div>
+                        </div>
+
+                        <div class="search-result__item">
+                            <img class="search-result__item__image" src="./assets/images/img-search-result-01.jpg">
+                            <div class="search-result__item__details">
+                                <h4 class="search-result__item__h4">FASHION</h4>
+                                <a class="search-result__item__link-heading" href="#"><h3 class="search-result__item__link-heading__h3">Key Looks this Summer</h3></a>
+                                <a class="btn--text-link font-cta" href="#">Read more</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="search-result__button">
+                        <button class="btn--primary button--black font-cta">Show All</button>
+                    </div>
+
+                </div>
+
+
+                <div class="container-1224 container-results">
+
+                    <h2 class="search-result__h2">Kids</h2>
+                    <p class="search-result__p">10 results for “Summer Dresses”</p>
+
+                    <div class="search-result__row">
+
+                        <div class="search-result__item">
+                            <img class="search-result__item__image" src="./assets/images/img-search-result-01.jpg">
+                            <div class="search-result__item__details">
+                                <h4 class="search-result__item__h4">FASHION</h4>
+                                <a class="search-result__item__link-heading" href="#"><h3 class="search-result__item__link-heading__h3">Summer Hits</h3></a>
+                                <a class="btn--text-link font-cta" href="#">Read more</a>
+                            </div>
+                        </div>
+
+                        <div class="search-result__item">
+                            <img class="search-result__item__image" src="./assets/images/img-search-result-01.jpg">
+                            <div class="search-result__item__details">
+                                <h4 class="search-result__item__h4">FASHION</h4>
+                                <a class="search-result__item__link-heading" href="#"><h3 class="search-result__item__link-heading__h3">10 Sandals You Need To Buy this Summer</h3></a>
+                                <a class="btn--text-link font-cta" href="#">Read more</a>
+                            </div>
+                        </div>
+                        
+                        <div class="search-result__item">
+                            <img class="search-result__item__image" src="./assets/images/img-search-result-01.jpg">
+                            <div class="search-result__item__details">
+                                <h4 class="search-result__item__h4">FASHION</h4>
+                                <a class="search-result__item__link-heading" href="#"><h3 class="search-result__item__link-heading__h3">10 Blooming Outfits to Wear this Summer</h3></a>
+                                <a class="btn--text-link font-cta" href="#">Read more</a>
+                            </div>
+                        </div>
+
+                        <div class="search-result__item">
+                            <img class="search-result__item__image" src="./assets/images/img-search-result-01.jpg">
+                            <div class="search-result__item__details">
+                                <h4 class="search-result__item__h4">FASHION</h4>
+                                <a class="search-result__item__link-heading" href="#"><h3 class="search-result__item__link-heading__h3">Key Looks this Summer</h3></a>
+                                <a class="btn--text-link font-cta" href="#">Read more</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="search-result__button">
+                        <button class="btn--primary button--black font-cta">Show All</button>
+                    </div>
+
+                </div>
+
+
+                
+
+
+            </section>
+
+
             
-            <section class="banner container-fluid">
-                <div class="banner__yellow"></div>
-                <div class="banner__pattern"></div>
-               
-                <div class="main-carousel active">
-                    <div class="banner__featured animated fadeInRight"></div>
-                    
-                    <div class="banner__content animated fadeInRight">
-                        <span class="font-eyebrow font-eyebrow--hero">Get up to 50% discount</span>
-                        <h1 class="font-titan">Women's <span class="font-titan--newline-right">Sale</span></h1>
-                        <div class="banner__btn">
-                            <a href="" class="btn--primary font-cta">Learn more</a>
-                        </div>
-                    </div>
-                </div>
-               
-                <div class="main-carousel">
-                    <div class="banner__featured animated fadeInRight"></div>
-                    
-                    <div class="banner__content animated fadeInRight">
-                        <span class="font-eyebrow font-eyebrow--hero">Get up to 50% discount</span>
-                        <h1 class="font-titan">Men's <span class="font-titan--newline-right">Sale</span></h1>
-                        <div class="banner__btn">
-                            <a href="" class="btn--primary font-cta">Learn more</a>
-                        </div>
-                    </div>
-                </div>
-               
-                <div class="main-carousel">
-                    <div class="banner__featured animated fadeInRight"></div>
-                    
-                    <div class="banner__content animated fadeInRight">
-                        <span class="font-eyebrow font-eyebrow--hero">Get up to 50% discount</span>
-                        <h1 class="font-titan">Kids' <span class="font-titan--newline-right">Sale</span></h1>
-                        <div class="banner__btn">
-                            <a href="" class="btn--primary font-cta">Learn more</a>
-                        </div>
-                    </div>
-                </div>
-               
-                <div class="main-carousel">
-                    <div class="banner__featured animated fadeInRight"></div>
-                    
-                    <div class="banner__content animated fadeInRight">
-                        <span class="font-eyebrow font-eyebrow--hero">Get up to 50% discount</span>
-                        <h1 class="font-titan">Beauty <span class="font-titan--newline-right">Sale</span></h1>
-                        <div class="banner__btn">
-                            <a href="" class="btn--primary font-cta">Learn more</a>
-                        </div>
-                    </div>
-                </div>
+          
 
-                <div class="banner__pagination pagination-dot">
-                    
-                    <input type="radio" id="slide1" name="activator" checked="checked" type="text" class="pagination-dot__activator">
-                    <label class="pagination-dot__indicator" for="slide1"></label>
-                
-                    <input type="radio" id="slide2" name="activator" type="text" class="pagination-dot__activator">
-                    <label class="pagination-dot__indicator" for="slide2"></label>
-                
-                    <input type="radio" id="slide3" name="activator" type="text" class="pagination-dot__activator">
-                    <label class="pagination-dot__indicator" for="slide3"></label>
-                
-                    <input type="radio" id="slide4" name="activator" type="text" class="pagination-dot__activator">
-                    <label class="pagination-dot__indicator" for="slide4"></label>
-
-                </div> <!--.banner__pagination pagination-dot-->
-            </section>
-            </section>
-
-            <!-- EVENTS --> 
-            <section class="featured-events container-fluid">
-                <div class="container">
-                    <div class="featured-events__btn">
-                        <a href="" class="btn--text-link font-cta">View all events</a>
-                    </div>
-                    <div class="featured-events__content">
-                        <div class="featured-events__title">
-                            <h2>In-store Events</h2>
-                            <p class="featured-events__title-month">January</p>
-                        </div>
-                        <div class="featured-events__details">
-                            <!-- generated by javascript - carousel.js -->
-                        </div>
-
-                        <div class="featured-events__slider">
-                            <!-- generated by javascript - carousel.js -->
-                        </div>
-                    </div>
-
-                    <div class="featured-events__footer">
-                        <button class="controls__arrow controls__arrow--left" href=""><img src="./assets/images/arrow-tail-left.svg" alt=""></button>
-                        <button class="controls__arrow controls__arrow--right" href=""><img src="./assets/images/arrow-tail-right.svg" alt=""></button>
-                    </div>
-
-                </div>
-            </section>
-            <!-- /EVENTS -->
-
-            <!-- CATALOG -->
-            <section class="featured-stories">
-                <div class="featured-stories__box container-fluid">
-
-                </div>
-                
-                <div class="featured-stories__container">
-                    <div class="featured-stories__header">
-                        <h2 class="font-h2-hero">Catalog</h2>
-                        <a href="" class="btn--text-link font-cta">View all</a>
-                        <p>Your ultimate guide to this season’s fashion, style, beauty, and shopping finds at The SM Store.</p>
-                    </div> <!--.featured-stories__header-->
-
-                    <div class="featured-stories__slider">
-                        <div class="featured-stories__details">
-                            <!-- generate by js - carousel.js -->
-                        </div>
-                        <div class="featured-stories__images">
-                            <!-- generate by js - carousel.js -->
-                        </div>
-                    </div> <!--.featured-stories__slider-->
-
-                    <div class="featured-stories__controls controls">
-                        <button class="controls__arrow controls__arrow--left"><img src="./assets/images/arrow-tail-left.svg" alt=""></button>
-                        <button class="controls__arrow controls__arrow--right"><img src="./assets/images/arrow-tail-right.svg" alt=""></button>
-                    </div> <!--.featured-stories__controls controls-->
-                </div>  <!--.featured-stories__container-->
-
-                <div class="featured-stories__shadow"></div>
-                
-                <div class="featured-stories__shadow container-fluid"></div>
-            </section>
-            <!-- /CATALOG -->
-
-            <!-- VIDEO -->
-            <section class="featured-video">
-                <div class="featured-video__bg container-fluid"></div>         
-                <div class="featured-video__content container">
-                    
-                    <div class="featured-video__video">
-                        <!-- generated by js - carousel.js -->
-                    </div>
-
-                    <div class="featured-video__text">
-                        <!-- generated by js - carousel.js -->
-                    </div>
-
-                    <div class="featured-video__controls controls">
-                        <button class="controls__arrow controls__arrow--left" href=""><img src="./assets/images/arrow-tail-left.svg" alt=""></button>
-                        <button class="controls__arrow controls__arrow--right" href=""><img src="./assets/images/arrow-tail-right.svg" alt=""></button>
-                    </div> <!--.featured-video__controls controls -->
-                </div>
-            </section>
-            <!-- /VIDEO -->
-            
-            <!-- BLOG -->
-            <section class="featured-blog container">
-                <h2 class="featured-blog__title font-h2-hero">Latest in fashion</h2>
-                <p class="featured-blog__subtitle font-eyebrow">All the freshest style inspirations in one place.</p>
-                <a href="" class="featured-blog__btn font-cta btn--text-link">View all</a>
-
-                <div class="featured-blog__cards">
-
-                    <div class="featured-blog__card">
-                        <img src="./assets/images/thumbnail-blog-fashion.jpg" alt="Fashion">
-                        <span class="featured-blog__card--category font-eyebrow-medium">Fashion</span>
-                        <h4 class="featured-blog__card--title font-h4">2020 Beauty Trends</h4>
-                        <a href="" class="featured-blog__card--btn btn--text-link font-cta">Read more</a>
-                    </div> 
-
-                    <div class="featured-blog__card">
-                        <img src="./assets/images/thumbnail-blog-women.jpg" alt="Women">
-                        <span class="featured-blog__card--category font-eyebrow-medium">Women</span>
-                        <h4 class="featured-blog__card--title font-h4">Classic Forever Pieces</h4>
-                        <a href="" class="featured-blog__card--btn btn--text-link font-cta">Read more</a>
-                    </div> 
-
-                    <div class="featured-blog__card">
-                        <img src="./assets/images/thumbnail-blog-men.jpg" alt="Men">
-                        <span class="featured-blog__card--category font-eyebrow-medium">Men</span>
-                        <h4 class="featured-blog__card--title font-h4">SM Men's Fashion Spring 2020 Lookbook</h4>
-                        <a href="" class="featured-blog__card--btn btn--text-link font-cta">Read more</a>
-                    </div> 
-
-                    <div class="featured-blog__card">
-                        <img src="./assets/images/thumbnail-blog-fashion-02.jpg" alt="Fashion">
-                        <span class="featured-blog__card--category font-eyebrow-medium">Fashion</span>
-                        <h4 class="featured-blog__card--title font-h4">Summer Hits</h4>
-                        <a href="" class="featured-blog__card--btn btn--text-link font-cta">Read more</a>
-                    </div> 
-
-                </div> 
-                <button class="btn--primary button--black font-cta">Load more</button>
-            </section>
-            <!-- /BLOG -->
+         
 
             
             <!-- FOOTER -->
@@ -986,8 +937,9 @@
 
     <!-- IMPORTS -->
     <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/slimscroll.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
 
     <!-- CUSTOM JS -->
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/carousel.js"></script>
 </html>

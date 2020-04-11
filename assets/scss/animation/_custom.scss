@@ -66,6 +66,19 @@
     animation-name: moveInUp;
     animation-duration: 1s;
     animation-delay: 1.5s;
+
+    &--Quick {
+        animation-duration: 0.2s;
+        animation-delay: 0.2s;
+    }
+}
+
+.moveInUp--Quick {
+    @include opacityFillMode();
+    animation-name: moveInUp;
+    animation-duration: 0.2s;
+    animation-delay: 0.2s;
+    }
 }
 
 .fade-up {
