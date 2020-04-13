@@ -4,11 +4,19 @@
 	{
 		"name": "Process All Remaining Files and Folders",
 		"stepType": 1,
-		"uuidString": "72AE59D9-A27E-4582-BC18-809CF91778B5"
+		"uuidString": "1C20E4E6-AC9E-455C-9C10-ABE0ADE45576"
 		}
 	],
-"creatorBuild": "31934",
+"creatorBuild": "32001",
 "files": {
+	"/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/.gitignore",
+		"oF": 0
+		},
 	"/about-us.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -160,11 +168,31 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/assets/images/arrow-right-black.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/arrow-right-black.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/assets/images/arrow-right-dark.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/assets/images/arrow-right-dark.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/arrow-right-gray.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/arrow-right-gray.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 52780316221407,
@@ -617,6 +645,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/assets/images/banner-services-forex-m.jpg": {
+		"ft": 16384,
+		"iS": 32526,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/banner-services-forex-m.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/assets/images/banner-services-forex.jpg": {
 		"ft": 16384,
 		"iS": 159385,
@@ -705,6 +744,28 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/assets/images/banner-viber-m.jpg": {
+		"ft": 16384,
+		"iS": 13713,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/banner-viber-m.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/banner-viber.jpg": {
+		"ft": 16384,
+		"iS": 65981,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/banner-viber.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/assets/images/banner-whatsnew-m.png": {
 		"ft": 32768,
 		"iS": 76243,
@@ -747,6 +808,28 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/banner-women-m.jpg": {
+		"ft": 16384,
+		"iS": 64497,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/banner-women-m.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/banner-women.jpg": {
+		"ft": 16384,
+		"iS": 332086,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/banner-women.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"/assets/images/banner-womens-blog-m.png": {
@@ -2888,6 +2971,26 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/assets/images/icons/arrow-blue-tail-left.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/arrow-blue-tail-left.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/arrow-blue-tail-right.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/arrow-blue-tail-right.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/assets/images/icons/arrow-tail-left.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -2967,17 +3070,6 @@
 		"opt": 0,
 		"plM": 52780316221407,
 		"prP": 0
-		},
-	"/assets/images/icons/fb-alt.png": {
-		"ft": 32768,
-		"iS": 315,
-		"oA": 0,
-		"oAP": "/assets/images/icons/fb-alt.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
 		},
 	"/assets/images/icons/FindRegistry.svg": {
 		"ft": 2097152,
@@ -3249,11 +3341,31 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/assets/images/icons/icon-facebook.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/icon-facebook.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/assets/images/icons/icon-fire.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/assets/images/icons/icon-fire.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/icon-instagram.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/icon-instagram.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 52780316221407,
@@ -3279,27 +3391,35 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
-	"/assets/images/icons/icon-message.png": {
-		"ft": 32768,
-		"iS": 322,
-		"oA": 0,
-		"oAP": "/assets/images/icons/icon-message.png",
+	"/assets/images/icons/icon-message.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/icon-message.svg",
 		"oF": 0,
-		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
-		"q": 100
+		"plM": 52780316221407,
+		"prP": 0
 		},
-	"/assets/images/icons/icon-phone.png": {
-		"ft": 32768,
-		"iS": 398,
-		"oA": 0,
-		"oAP": "/assets/images/icons/icon-phone.png",
+	"/assets/images/icons/icon-phone.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/icon-phone.svg",
 		"oF": 0,
-		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
-		"q": 100
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/icon-search-black.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/icon-search-black.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
 		},
 	"/assets/images/icons/icon-services-bills-payment-white.svg": {
 		"ft": 2097152,
@@ -3441,22 +3561,41 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
-	"/assets/images/icons/icon-viber.png": {
-		"ft": 32768,
-		"iS": 387,
-		"oA": 0,
-		"oAP": "/assets/images/icons/icon-viber.png",
+	"/assets/images/icons/icon-twitter.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/icon-twitter.svg",
 		"oF": 0,
-		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
-		"q": 100
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/icon-viber.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/icon-viber.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
 		},
 	"/assets/images/icons/icon-work.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/assets/images/icons/icon-work.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/icon-youtube.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/icon-youtube.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 52780316221407,
@@ -3481,17 +3620,6 @@
 		"opt": 0,
 		"plM": 52780316221407,
 		"prP": 0
-		},
-	"/assets/images/icons/instagram-alt.png": {
-		"ft": 32768,
-		"iS": 464,
-		"oA": 0,
-		"oAP": "/assets/images/icons/instagram-alt.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
 		},
 	"/assets/images/icons/InStore.svg": {
 		"ft": 2097152,
@@ -3663,26 +3791,15 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
-	"/assets/images/icons/twitter-alt.png": {
-		"ft": 32768,
-		"iS": 451,
+	"/assets/images/img-search-result-01.jpg": {
+		"ft": 16384,
+		"iS": 138790,
+		"jF": 0,
 		"oA": 0,
-		"oAP": "/assets/images/icons/twitter-alt.png",
+		"oAP": "/assets/images/img-search-result-01.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/assets/images/icons/youtube-alt.png": {
-		"ft": 32768,
-		"iS": 338,
-		"oA": 0,
-		"oAP": "/assets/images/icons/youtube-alt.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
 		"q": 100
 		},
 	"/assets/images/instagram.svg": {
@@ -3949,6 +4066,17 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/press-release-m.jpg": {
+		"ft": 16384,
+		"iS": 108353,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/press-release-m.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"/assets/images/press-release-slide1.jpg": {
@@ -4783,6 +4911,17 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/assets/js/carousel.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/assets/js/carousel-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/assets/js/jquery.js": {
 		"bF": 0,
 		"ft": 64,
@@ -4794,6 +4933,17 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/assets/js/main-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/assets/js/main-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/assets/js/main.js": {
 		"bF": 0,
 		"ft": 64,
@@ -4801,17 +4951,6 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/assets/js/main-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/assets/js/slick.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/assets/js/slick.min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -5624,11 +5763,11 @@
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
-		"ma": 0,
+		"ma": 1,
 		"oA": 0,
-		"oAP": "/assets/scss/style.css",
-		"oF": 0,
-		"oS": 0,
+		"oAP": "/assets/css/style.min.css",
+		"oF": 3,
+		"oS": 3,
 		"uL": 1
 		},
 	"/assets/scss/template/_blog.scss": {
@@ -5673,14 +5812,6 @@
 		"oAP": "/beauty-trends.html",
 		"oF": 0
 		},
-	"/blank.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/blank.html",
-		"oF": 0
-		},
 	"/category-landing.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -5695,14 +5826,6 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/contact-us.html",
-		"oF": 0
-		},
-	"/deleted.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/deleted.html",
 		"oF": 0
 		},
 	"/events-fashion-lifestyle.html": {
@@ -5735,6 +5858,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/home-landing.html",
+		"oF": 0
+		},
+	"/index-animated-2.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/index-animated-2.html",
 		"oF": 0
 		},
 	"/index-animated.html": {
@@ -5897,13 +6028,24 @@
 		"oAP": "/promo-registration.html",
 		"oF": 0
 		},
-	"/robots.txt": {
+	"/README.md": {
 		"cB": 0,
-		"ft": 8192,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/robots.txt",
-		"oF": 0
+		"oAP": "/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
 		},
 	"/search-lazyload.html": {
 		"cB": 0,
@@ -5911,6 +6053,22 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/search-lazyload.html",
+		"oF": 0
+		},
+	"/search-results-expanded.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/search-results-expanded.html",
+		"oF": 0
+		},
+	"/search-results.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/search-results.html",
 		"oF": 0
 		},
 	"/search.html": {
@@ -5961,6 +6119,22 @@
 		"oAP": "/template.html",
 		"oF": 0
 		},
+	"/test.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/test.html",
+		"oF": 0
+		},
+	"/viber-community.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/viber-community.html",
+		"oF": 0
+		},
 	"/whats-new.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -6007,10 +6181,10 @@
 "manualImportLinks": {
 	},
 "projectAttributes": {
-	"creationDate": 603637067.34576702,
-	"displayValue": "smstore",
+	"creationDate": 605801504.651034,
+	"displayValue": "SM.Store.Frontend",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "brackets-pink",
+	"iconImageName": "brackets-azure",
 	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
@@ -6607,6 +6781,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"grouped-accessor-pairs": {
+			"active": 0,
+			"optionString": "'anyOrder'"
+			},
 		"guard-for-in": {
 			"active": 0,
 			"optionString": ""
@@ -6783,6 +6961,10 @@
 			"active": 1,
 			"optionString": "{'checkLoops': true}"
 			},
+		"no-constructor-return": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-continue": {
 			"active": 0,
 			"optionString": ""
@@ -6808,6 +6990,10 @@
 			"optionString": ""
 			},
 		"no-dupe-class-members": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-dupe-else-if": {
 			"active": 1,
 			"optionString": ""
 			},
@@ -6921,7 +7107,7 @@
 			},
 		"no-invalid-this": {
 			"active": 0,
-			"optionString": ""
+			"optionString": "{'capIsConstructor': true}"
 			},
 		"no-irregular-whitespace": {
 			"active": 1,
@@ -7111,6 +7297,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-setter-return": {
+			"active": 1,
+			"optionString": ""
+			},
 		"no-shadow": {
 			"active": 0,
 			"optionString": "{'builtinGlobals': false, 'hoist': 'functions', 'allow': []}"
@@ -7189,7 +7379,7 @@
 			},
 		"no-unsafe-negation": {
 			"active": 1,
-			"optionString": ""
+			"optionString": "{'enforceForOrderingRelations': false}"
 			},
 		"no-unused-expressions": {
 			"active": 0,
@@ -7217,7 +7407,7 @@
 			},
 		"no-useless-computed-key": {
 			"active": 0,
-			"optionString": ""
+			"optionString": "{'enforceForClassMembers': false}"
 			},
 		"no-useless-concat": {
 			"active": 0,
@@ -7314,6 +7504,10 @@
 		"prefer-destructuring": {
 			"active": 0,
 			"optionString": "{'array': true, 'object': true}, {'enforceForRenamedProperties': false}"
+			},
+		"prefer-exponentiation-operator": {
+			"active": 0,
+			"optionString": ""
 			},
 		"prefer-named-capture-group": {
 			"active": 0,
@@ -7457,7 +7651,7 @@
 			},
 		"use-isnan": {
 			"active": 1,
-			"optionString": ""
+			"optionString": "{'enforceForSwitchCase': false, 'enforceForIndexOf': false}"
 			},
 		"valid-jsdoc": {
 			"active": 0,
