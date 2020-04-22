@@ -124,10 +124,12 @@
 
 .hide {
     visibility: hidden;
+    display: none !important;
 }
 
 .show {
     visibility: visible;
+    display: block;
 }
 
     
