@@ -32,8 +32,9 @@
                     </div>
 
                     <nav class="link-delivery">
-                        <a class="link-delivery__item" href="#">Call to Deliver</a>
+                        <a class="link-delivery__item" href="#">Mechanigs</a>
                         <a class="link-delivery__item" href="#">Browse Essentials</a>
+						<a class="link-delivery__item" href="#">FAQS</a>
                     </nav>
 
                     <nav class="nav-user hide">
@@ -130,35 +131,42 @@
                     </div>
 
                     <div class="delivery__featured-slider">
-                        <div class="carousel__item carousel__item--1">
+                     
+					 
+					 <div class="carousel__item">
                             <img src="./assets/images/delivery-item1.jpg" alt="">
                             <span>Cetaphil</span>
                             <h4 class="font-h4">Foaming Cleanser</h4>
                             <h4 class="font-h4 text-bold">₱429.00</h4>
                         </div>
-                        <div class="carousel__item carousel__item--2">
+                        <div class="carousel__item">
                             <img src="./assets/images/delivery-item2.jpg" alt="">
                             <span>Watsons</span>
                             <h4 class="font-h4">Washable Gloves</h4>
                             <h4 class="font-h4 text-bold">₱49.75</h4>
                         </div>
-                        <div class="carousel__item carousel__item--3">
+                        <div class="carousel__item">
                             <img src="./assets/images/delivery-item3.jpg" alt="">
                             <span>Watsons</span>
                             <h4 class="font-h4">Facial Tissues</h4>
                             <h4 class="font-h4 text-bold">₱149.00</h4>
                         </div>
-                        <div class="carousel__item carousel__item--4">
+                       
+					   <div class="carousel__item">
                             <img src="./assets/images/delivery-item4.jpg" alt="">
                             <span>Watsons</span>
                             <h4 class="font-h4">Invigorating Wet Wipes</h4>
                             <h4 class="font-h4 text-bold">₱79.00</h4>
                         </div>
+						
+				 
+						
+						
                     </div>
 
                     <div class="delivery__featured-controls">
-                        <button class="delivery__featured-controls--left"></button>
-                        <button class="delivery__featured-controls--right"></button>
+                        <span class="delivery__featured-controls--left"></span>
+                        <span class="delivery__featured-controls--right"></span>
                     </div>
                 </div>
             </section>
@@ -215,10 +223,42 @@
         </div> <!-- /wrapper -->
 
         <!-- IMPORTS -->
-        <script src="assets/js/jquery.js"></script>
-
+        <script src="./assets/js/jquery.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+ 
         <!-- CUSTOM JS -->
         <script src="assets/js/main.js"></script>
         <script src="assets/js/carousel.js"></script>
+		
+		<script>
+ 
+
+$(document).ready(function(){
+
+var slider= $('.delivery__featured-slider').bxSlider({
+			minSlides:6,
+			pager:false,
+			  nextSelector: '#slider-next',
+  prevSelector: '#slider-prev',
+  nextText: '',
+  prevText: ''
+
+    });
+	
+$('.delivery__featured-controls--right').click(function(){
+      slider.goToNextSlide();
+	  console.log('clicked next');
+      return false;
+    });
+
+    $('.delivery__featured-controls--left').click(function(){
+      slider.goToPrevSlide();
+	   console.log('clicked prev');
+      return false;
+    });
+
+
+});
+		</script>
     </body>
 </html>
