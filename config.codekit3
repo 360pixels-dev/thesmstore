@@ -9,14 +9,6 @@
 	],
 "creatorBuild": "32001",
 "files": {
-	"/.gitignore": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/.gitignore",
-		"oF": 0
-		},
 	"/about-us.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -228,6 +220,17 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/assets/images/auth-bg.jpg": {
+		"ft": 16384,
+		"iS": 510709,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/auth-bg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/assets/images/banner-3ds-m.png": {
 		"ft": 32768,
 		"iS": 45023,
@@ -415,6 +418,49 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/assets/images/banner-delivery-m.jpg": {
+		"ft": 16384,
+		"iS": 23552,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/banner-delivery-m.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/banner-delivery-m.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/banner-delivery-m.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/banner-delivery.jpg": {
+		"ft": 16384,
+		"iS": 122390,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/banner-delivery.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/banner-delivery2.jpg": {
+		"ft": 16384,
+		"iS": 120933,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/banner-delivery2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/assets/images/banner-events-fashion-lifestyle-m.png": {
 		"ft": 32768,
 		"iS": 97465,
@@ -468,6 +514,72 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/banner-gift-card-m.jpg": {
+		"ft": 16384,
+		"iS": 53962,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/banner-gift-card-m.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/banner-gift-card.jpg": {
+		"ft": 16384,
+		"iS": 256779,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/banner-gift-card.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/banner-gift-registry-m.jpg": {
+		"ft": 16384,
+		"iS": 40659,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/banner-gift-registry-m.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/banner-gift-registry.jpg": {
+		"ft": 16384,
+		"iS": 194383,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/banner-gift-registry.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/banner-gift-wrapping-m.jpg": {
+		"ft": 16384,
+		"iS": 27314,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/banner-gift-wrapping-m.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/banner-gift-wrapping.jpg": {
+		"ft": 16384,
+		"iS": 131762,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/banner-gift-wrapping.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"/assets/images/banner-home-m.jpg": {
@@ -618,6 +730,28 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/assets/images/banner-press-release.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/banner-privacy-m.jpg": {
+		"ft": 16384,
+		"iS": 38063,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/banner-privacy-m.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/banner-privacy.jpg": {
+		"ft": 16384,
+		"iS": 185627,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/banner-privacy.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -2292,6 +2426,248 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/assets/images/cards/gift-card-sleeve1.png": {
+		"ft": 32768,
+		"iS": 6089,
+		"oA": 0,
+		"oAP": "/assets/images/cards/gift-card-sleeve1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/cards/gift-card-sleeve2.png": {
+		"ft": 32768,
+		"iS": 5107,
+		"oA": 0,
+		"oAP": "/assets/images/cards/gift-card-sleeve2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/cards/gift-card-sleeve3.png": {
+		"ft": 32768,
+		"iS": 5683,
+		"oA": 0,
+		"oAP": "/assets/images/cards/gift-card-sleeve3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/cards/gift-card-sleeve4.png": {
+		"ft": 32768,
+		"iS": 5990,
+		"oA": 0,
+		"oAP": "/assets/images/cards/gift-card-sleeve4.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/cards/gift-card-use2.jpg": {
+		"ft": 16384,
+		"iS": 9881,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/gift-card-use2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/gift-card-use3.jpg": {
+		"ft": 16384,
+		"iS": 17886,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/gift-card-use3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/gift-card-use4.jpg": {
+		"ft": 16384,
+		"iS": 9349,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/gift-card-use4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/gift-card-where1.jpg": {
+		"ft": 16384,
+		"iS": 10327,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/gift-card-where1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/gift-card-where2.jpg": {
+		"ft": 16384,
+		"iS": 11841,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/gift-card-where2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/gift-card-where3.jpg": {
+		"ft": 16384,
+		"iS": 9592,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/gift-card-where3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/gift-card-where4.jpg": {
+		"ft": 16384,
+		"iS": 10044,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/gift-card-where4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/gift-card1.png": {
+		"ft": 32768,
+		"iS": 58347,
+		"oA": 0,
+		"oAP": "/assets/images/cards/gift-card1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/cards/gift-card2.png": {
+		"ft": 32768,
+		"iS": 48039,
+		"oA": 0,
+		"oAP": "/assets/images/cards/gift-card2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/cards/gift-card3.png": {
+		"ft": 32768,
+		"iS": 32044,
+		"oA": 0,
+		"oAP": "/assets/images/cards/gift-card3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/cards/gift-registry1.jpg": {
+		"ft": 16384,
+		"iS": 13301,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/gift-registry1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/gift-registry2.jpg": {
+		"ft": 16384,
+		"iS": 15051,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/gift-registry2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/gift-registry3.jpg": {
+		"ft": 16384,
+		"iS": 23762,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/gift-registry3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/gift-registry4.jpg": {
+		"ft": 16384,
+		"iS": 17911,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/gift-registry4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/gift-registry5.jpg": {
+		"ft": 16384,
+		"iS": 32295,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/gift-registry5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/gift-registry6.jpg": {
+		"ft": 16384,
+		"iS": 32078,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/gift-registry6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/gift-registry7.jpg": {
+		"ft": 16384,
+		"iS": 13818,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/gift-registry7.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/cards/gift-registry8.jpg": {
+		"ft": 16384,
+		"iS": 23362,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/cards/gift-registry8.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/assets/images/cards/men-card-event1.jpg": {
 		"ft": 16384,
 		"iS": 108303,
@@ -2795,6 +3171,72 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/assets/images/delivery-banner.jpg": {
+		"ft": 16384,
+		"iS": 156262,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/delivery-banner.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/delivery-banner2.jpg": {
+		"ft": 16384,
+		"iS": 183807,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/delivery-banner2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/delivery-item1.jpg": {
+		"ft": 16384,
+		"iS": 15591,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/delivery-item1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/delivery-item2.jpg": {
+		"ft": 16384,
+		"iS": 15006,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/delivery-item2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/delivery-item3.jpg": {
+		"ft": 16384,
+		"iS": 44271,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/delivery-item3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/delivery-item4.jpg": {
+		"ft": 16384,
+		"iS": 30417,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/delivery-item4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/assets/images/event_img.jpg": {
 		"ft": 16384,
 		"iS": 247891,
@@ -2849,6 +3291,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/assets/images/gift-registry-img.jpg": {
+		"ft": 16384,
+		"iS": 219991,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/gift-registry-img.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/assets/images/globe-sale.png": {
 		"ft": 32768,
 		"iS": 183942,
@@ -2881,6 +3334,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/assets/images/icon-basket.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icon-basket.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/assets/images/icon-close.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -2896,6 +3359,36 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/assets/images/icon-facebook.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icon-gift-card.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icon-gift-card.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icon-gift-registry.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icon-gift-registry.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icon-gift-wrapping.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icon-gift-wrapping.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 52780316221407,
@@ -2971,6 +3464,26 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/assets/images/icons/angle-left.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/angle-left.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/angle-right.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/angle-right.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/assets/images/icons/arrow-blue-tail-left.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -3021,6 +3534,46 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/assets/images/icons/btn_Call.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/btn_Call.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/btn_Email.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/btn_Email.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/btn_Message.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/btn_Message.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/btn_Viber.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/btn_Viber.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/assets/images/icons/CardGift.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -3061,11 +3614,71 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/assets/images/icons/control-left.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/control-left.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/control-right.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/control-right.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/assets/images/icons/CreateRegistry.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/assets/images/icons/CreateRegistry.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/delivery-step1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/delivery-step1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/delivery-step2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/delivery-step2.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/delivery-step3.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/delivery-step3.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/fb-button.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/fb-button.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 52780316221407,
@@ -3321,6 +3934,16 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/assets/images/icons/google-button.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/google-button.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/assets/images/icons/icon-calendar.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -3351,11 +3974,31 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/assets/images/icons/icon-fb-black.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/icon-fb-black.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/assets/images/icons/icon-fire.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/assets/images/icons/icon-fire.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/icon-ig-black.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/icon-ig-black.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 52780316221407,
@@ -3561,6 +4204,16 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/assets/images/icons/icon-twitter-black.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/icon-twitter-black.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/assets/images/icons/icon-twitter.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -3591,11 +4244,31 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/assets/images/icons/icon-youtube-black.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/icon-youtube-black.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/assets/images/icons/icon-youtube.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/assets/images/icons/icon-youtube.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/Info-Outline.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/Info-Outline.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 52780316221407,
@@ -3641,6 +4314,16 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/assets/images/icons/Navigationbranded.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/Navigationbranded.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/assets/images/icons/NoGiftDuplicate.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -3676,6 +4359,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/assets/images/icons/Package.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/password-eye.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/password-eye.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 52780316221407,
@@ -3741,6 +4434,26 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/assets/images/icons/Shop-SM.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/Shop-SM.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/sm-location.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/sm-location.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/assets/images/icons/SMAC.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -3786,6 +4499,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/assets/images/icons/Stores.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/tag-close.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/tag-close.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 52780316221407,
@@ -3907,6 +4630,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/assets/images/modal-item1.png": {
+		"ft": 32768,
+		"iS": 70772,
+		"oA": 0,
+		"oAP": "/assets/images/modal-item1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/assets/images/Navigation-red.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -3958,6 +4692,16 @@
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
+		},
+	"/assets/images/pattern-yolk.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/pattern-yolk.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
 		},
 	"/assets/images/play-video.svg": {
 		"ft": 2097152,
@@ -4099,6 +4843,17 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/profile-avatar.jpg": {
+		"ft": 16384,
+		"iS": 4499,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/profile-avatar.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"/assets/images/quiz/quiz-result.jpg": {
@@ -4726,6 +5481,17 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/assets/images/signup-logo.png": {
+		"ft": 32768,
+		"iS": 6970,
+		"oA": 0,
+		"oAP": "/assets/images/signup-logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/assets/images/slideshow1.png": {
 		"ft": 32768,
 		"iS": 477626,
@@ -4846,6 +5612,28 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/assets/images/welcome-modal-m.jpg": {
+		"ft": 16384,
+		"iS": 65686,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/welcome-modal-m.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/welcome-modal.jpg": {
+		"ft": 16384,
+		"iS": 102082,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/welcome-modal.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/assets/images/whatsnew-featured.png": {
 		"ft": 32768,
 		"iS": 160941,
@@ -4907,6 +5695,17 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/assets/js/aos-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/assets/js/branch-list.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/assets/js/branch-list-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -5315,6 +6114,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/assets/scss/component/_checkbox.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/component/_checkbox.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/assets/scss/component/_comments.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -5588,6 +6400,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/assets/scss/layout/_header-delivery.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/layout/_header-delivery.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/assets/scss/layout/_header.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -5653,6 +6478,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/assets/scss/page/_delivery.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/page/_delivery.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/assets/scss/page/_events.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -5666,6 +6504,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/assets/scss/page/_gift.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/page/_gift.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/assets/scss/page/_homepage.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -5675,6 +6526,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/assets/scss/page/_homepage.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/assets/scss/page/_policy.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/page/_policy.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -5701,6 +6565,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/assets/scss/page/_services.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/assets/scss/page/_signup.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/page/_signup.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -5812,6 +6689,14 @@
 		"oAP": "/beauty-trends.html",
 		"oF": 0
 		},
+	"/blank.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blank.html",
+		"oF": 0
+		},
 	"/category-landing.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -5826,6 +6711,38 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/contact-us.html",
+		"oF": 0
+		},
+	"/deleted.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deleted.html",
+		"oF": 0
+		},
+	"/delivery-2.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/delivery-2.html",
+		"oF": 0
+		},
+	"/delivery-catalog.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/delivery-catalog.html",
+		"oF": 0
+		},
+	"/delivery.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/delivery.html",
 		"oF": 0
 		},
 	"/events-fashion-lifestyle.html": {
@@ -5850,6 +6767,30 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/events.html",
+		"oF": 0
+		},
+	"/gift-card.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/gift-card.html",
+		"oF": 0
+		},
+	"/gift-card2.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/gift-card2.html",
+		"oF": 0
+		},
+	"/gift-registry.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/gift-registry.html",
 		"oF": 0
 		},
 	"/home-landing.html": {
@@ -6004,6 +6945,14 @@
 		"oAP": "/press-release.html",
 		"oF": 0
 		},
+	"/privacy-policy.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/privacy-policy.html",
+		"oF": 0
+		},
 	"/promo-3ds.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -6046,6 +6995,14 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
+		},
+	"/robots.txt": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/robots.txt",
+		"oF": 0
 		},
 	"/search-lazyload.html": {
 		"cB": 0,
@@ -6182,7 +7139,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 605801504.651034,
-	"displayValue": "SM.Store.Frontend",
+	"displayValue": "thesmstore",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets-azure",
 	"iconImageWasSetByUser": 0
