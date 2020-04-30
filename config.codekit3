@@ -51,24 +51,6 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"/assets/css/style.min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/assets/css/style.min-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/assets/css/style.min.css.map": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/assets/css/style.min.css.map",
-		"oF": 0
-		},
 	"/assets/fonts/Verlag-Black.ttf": {
 		"cB": 0,
 		"ft": 8192,
@@ -5699,17 +5681,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/assets/js/branch-list.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/assets/js/branch-list-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/assets/js/carousel.js": {
 		"bF": 0,
 		"ft": 64,
@@ -5739,17 +5710,6 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/assets/js/main-min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/assets/js/main.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/assets/js/main-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -6474,19 +6434,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/assets/scss/page/_contacts.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/assets/scss/page/_delivery.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/assets/scss/page/_delivery.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
