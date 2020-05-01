@@ -1019,6 +1019,10 @@
            margin: 20px;
         }
 
+        @include respond(mobile) {
+            margin: 0 8px 0;
+         }
+
         
         &--2 {
             @include respond(972px) {
