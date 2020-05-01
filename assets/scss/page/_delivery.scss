@@ -493,17 +493,6 @@
         display: flex;
         flex-direction: column;
 
-        @include respond(tablet) {
-            display: none;
-            position: absolute;
-            margin: 0px 10px 0 auto; 
-            background-color: $white;
-            z-index: 190;
-            min-height: 576px;
-            padding: 19px 16px;
-            width: 100%;
-        }
-
         @include respond(mobile) {
             display: none;
             position: absolute;
@@ -672,6 +661,10 @@
                     padding: 9px 0;
                     color: $black;
 
+                    @include respond(tablet) {
+                        font-size: 12px;
+                    }
+
                     &:focus {
                         outline: none;
                     }
@@ -739,6 +732,13 @@
                     }
 
                     & > div {
+                        display: flex;
+                        align-items: flex-start;
+
+                        & > img {
+                            margin-top: 3px;
+                        }
+
                         &:nth-of-type(1) {
                             width: 302px;
                             margin-right: 49px;
@@ -960,11 +960,16 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                margin: 0 10px;
+                margin: 0 10px 40px 0;
 
                 @include respond(1230px) {
                     width: 173px;
                   }
+
+                  @include respond(mobile) {
+                    width: 173px;
+                  }
+
 
                 & > img {
                     margin-bottom: 16px;
@@ -1066,7 +1071,7 @@
       &__catalog {
         @include respond(mobile) {
             width: 160px !important;
-            margin: 0 !important;
+            margin: 0 0 60px 0 !important;
         }
       }
     }
