@@ -277,34 +277,54 @@
         }
 
         &-slider {
-            max-width: 1058px;
-            display: flex;
-            justify-content: space-between;
-            margin: 0 auto;
+            overflow: hidden;
+            margin: 0 70px;
 
-            @include respond(1200px) {
-                justify-content:center
-              }
+            & .slick-arrow {
+                display: none !important;
+            }
 
-            @include respond(tablet) {
-                width: 100%;
-                justify-content:center
-              }
+            & .slick-list {
+                position: relative;
+                overflow: hidden;
+                z-index: 20 !important;
+                max-width: 1076px;
 
-            & > div {
+                // @include respond(1340px) {
+                //     max-width: 700px;
+                // }
+
+                @include respond(mobile) {
+                    max-width: max-content;
+                }
+            }
+
+            & .slick-track {
+                display: flex;
+            }
+
+            & .carousel__item {
                 height: 514px;
-                width: 240px;
+                width: 240px !important;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                margin: 0 10px;
+                margin: 0 16px;
+                cursor: pointer;
+
+                @include respond(tablet) {
+                    width: auto !important;
+                    margin: 0 20px 0 20px;
+                    cursor: pointer;
+
+                }
 
                 & > img {
                     margin-bottom: 16px;
 
                     @include respond(mobile) {
                         width: 187px;
-                      }
+                    }
                 }
 
                 & > span {
@@ -326,7 +346,7 @@
                         height: 60px;
                     }
                 }
-            }
+            }            
         }
 
         &-controls {
@@ -339,16 +359,17 @@
             justify-content: space-between;
             width: 1216px;
             padding: 0 10px;
+            z-index: 1;
+            cursor: pointer;
 
             @include respond(1215px) {
-                width: 90%;
-
-              }
+                width: 100%;
+                padding: 0 24px 0 0;
+            }
 
             @include respond(mobile) {
                 top: 42%;
-
-              }
+            }
 
 
             &--right,
@@ -478,7 +499,7 @@
 
         @include respond(tablet) {
             width: 100%;
-            padding: 20px;
+            padding: 10px;
             justify-content: center;
         }
 
@@ -493,7 +514,7 @@
         display: flex;
         flex-direction: column;
 
-        @include respond(mobile) {
+        @include respond(tablet) {
             display: none;
             position: absolute;
             margin: 0px auto 0 auto; 
@@ -508,7 +529,7 @@
             display: none;
             margin-bottom: 27px; 
 
-            @include respond(mobile) {
+            @include respond(tablet) {
                 display: block;
                 align-self: flex-end;
             }
@@ -877,14 +898,13 @@
 
             @include respond(mobile) {
                 margin: auto;
-                //width: 96%;
                 width: auto;
             }
 
             & > p {
                 color: $dark-gray;
 
-                @include respond(mobile) {
+                @include respond(tablet) {
                     display: none;
                 }
             }
@@ -895,7 +915,7 @@
                 &:nth-of-type(1) {
                     display: none;
 
-                    @include respond(mobile) {
+                    @include respond(tablet) {
                         display: block;
                     }
                 }
@@ -903,7 +923,7 @@
                     color: $gray;
                     margin-right: 10px;
 
-                    @include respond(972px) {
+                    @include respond(tablet) {
                         margin-right: 0;
                     }
                 }
@@ -961,9 +981,11 @@
                 flex-direction: column;
                 align-items: center;
                 margin: 0 10px 40px 0;
+                text-align: center;
 
                 @include respond(1230px) {
                     width: 173px;
+                    
                   }
 
                   @include respond(mobile) {
@@ -1001,7 +1023,7 @@
                        // height: 60px;
                     }
 
-                    @include respond(mobile) {
+                    @include respond(tablet) {
                         font-style: normal;
                         font-weight: 600;
                         font-size: 16px;
@@ -1018,6 +1040,10 @@
 
 .carousel {
     &__item {
+
+        & > a {
+            outline: none;
+        }
 
         img {
             width: 240px;
@@ -1037,11 +1063,23 @@
             color:$dark-gray;
             text-decoration: none;
             margin-bottom: 30px;
+            
+            h4 {
+
+
+                @include respond(tablet) {
+                    font-size: 16px;
+                    line-height: 24px;
+                 }
+            }
         }
 
         @include respond(1260px) {
            margin: 20px;
         }
+
+
+        
 
         @include respond(mobile) {
             margin: 0 8px 0;
