@@ -3968,16 +3968,6 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
-	"/assets/images/icons/icon-clock.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/assets/images/icons/icon-clock.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
 	"/assets/images/icons/icon-facebook.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -5746,28 +5736,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/assets/js/main-min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/assets/js/main-min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/assets/js/main.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/assets/js/main-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/assets/js/slick.min.js": {
 		"bF": 0,
 		"ft": 64,
@@ -6490,19 +6458,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/assets/scss/page/_delivery.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/assets/scss/page/_delivery.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"/assets/scss/page/_events.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -6741,22 +6696,6 @@
 		"oAP": "/delivery-2.html",
 		"oF": 0
 		},
-	"/delivery-catalog.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/delivery-catalog.html",
-		"oF": 0
-		},
-	"/delivery.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/delivery.html",
-		"oF": 0
-		},
 	"/events-fashion-lifestyle.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -6955,14 +6894,6 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/press-release.html",
-		"oF": 0
-		},
-	"/privacy-policy.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/privacy-policy.html",
 		"oF": 0
 		},
 	"/promo-3ds.html": {

@@ -20,6 +20,7 @@
             height: 550px;
             display: flex;
             padding: 42px 47px 0 67px;
+            
 
             @include respond(tablet) {
                 width: 80%;
@@ -35,6 +36,7 @@
                 padding: 19px 0 16px 19px;
                 flex-direction: column-reverse;
                 justify-content: flex-end;
+                
               }
 
             & > img {
@@ -761,6 +763,12 @@
                         display: flex;
                         align-items: flex-start;
 
+                        @include respond(tablet) {
+                            margin-bottom: 16px;
+                        }
+
+                  
+
                         & > img {
                             margin-top: 3px;
                         }
@@ -785,6 +793,11 @@
                                 width: 14px;
                                 vertical-align: middle;
                                 margin-right: 8px;
+
+                                @include respond(tablet) {
+                                    margin-right: 20px;
+                                    margin-left: 6px;
+                                }
                             }
                         }
                     }
@@ -793,14 +806,24 @@
                 & > .contacts {
                     display: flex;
 
+                   
+
                     @include respond(tablet) {
                         flex-direction: column;
-                        align-items: center;
+                        //align-items: center;
+                    }
+
+                    @include respond(mobile) {
+                        align-items: flex-start;
                     }
 
                     & > div {
                         //height: 97px;
                         width: 270px;
+
+                        @include respond(mobile) {
+                            width: 100%;
+                        }
 
                         & > h2 {
                             position: relative;
@@ -853,6 +876,7 @@
 
                             @include respond(tablet) {
                                 margin-bottom: 24px;
+                                margin-left: 0px;
                             }
 
                             @include respond(mobile) {
@@ -864,7 +888,7 @@
                             margin-left: 69px;
 
                             @include respond(tablet) {
-                                margin-left: 40px;
+                                margin-left: 0;
                                 height: min-content;
                             }
 
@@ -875,7 +899,7 @@
                             & > div {
     
                                 & > div {
-                                    justify-content: flex-end;
+                                   // justify-content: flex-end;
                                 }
                             }
                         }
@@ -1118,4 +1142,13 @@
         }
       }
     }
+}
+
+.container-email-branch {
+    justify-content: left !important;
+}
+
+.icon-email-branch {
+    width: auto !important;
+    margin-right: 8px;
 }
