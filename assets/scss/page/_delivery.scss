@@ -1026,6 +1026,7 @@
                     margin-bottom: 16px;
                     width: 240px;
                     height: 360px;
+                    cursor: pointer;
 
                     @include respond(1230px) {
                         width: 160px;
@@ -1047,6 +1048,7 @@
                 & > h4 {
                     color: $dark-gray;
                     margin-bottom: 16px;
+                    cursor: pointer;
 
                     &:nth-of-type(1) {
                        // height: 60px;
