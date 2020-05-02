@@ -51,24 +51,6 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"/assets/css/style.min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/assets/css/style.min-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/assets/css/style.min.css.map": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/assets/css/style.min.css.map",
-		"oF": 0
-		},
 	"/assets/fonts/Verlag-Black.ttf": {
 		"cB": 0,
 		"ft": 8192,
@@ -6521,19 +6503,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/assets/scss/page/_delivery.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/assets/scss/page/_delivery.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"/assets/scss/page/_events.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -6986,6 +6955,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/press-release.html",
+		"oF": 0
+		},
+	"/privacy-policy.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/privacy-policy.html",
 		"oF": 0
 		},
 	"/promo-3ds.html": {
