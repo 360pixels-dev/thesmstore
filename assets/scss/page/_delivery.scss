@@ -99,10 +99,6 @@
 
                     &:nth-of-type(1) {
                         color: $teal;
-
-                        @include respond(mobile) {
-                            color: $black;
-                        }
                     }
 
 
@@ -114,7 +110,6 @@
                     
                         @include respond(mobile) {
                             margin-left: 10%;
-                            color: $teal;
                         }
                     }
                 }
