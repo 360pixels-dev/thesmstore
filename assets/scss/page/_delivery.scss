@@ -98,7 +98,7 @@
                     display: block;
 
                     &:nth-of-type(1) {
-                        color: $teal;
+                        color: $aqua;
                     }
 
 
@@ -309,7 +309,7 @@
             }
 
             & .carousel__item {
-                height: 514px;
+                height: 360px;
                 width: 240px !important;
                 display: flex;
                 flex-direction: column;
@@ -329,6 +329,7 @@
 
                     @include respond(mobile) {
                         width: 187px;
+                        height: 280px;
                     }
                 }
 
@@ -373,7 +374,7 @@
             }
 
             @include respond(mobile) {
-                top: 42%;
+                top: 50%;
             }
 
 
@@ -646,6 +647,7 @@
         & > p {
             width: 162px;
             font-size: 14px;
+            padding-left: 8px;
         }
     }
 
