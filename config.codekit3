@@ -951,19 +951,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/assets/scss/component/_nav.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/assets/scss/component/_nav.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"/assets/scss/component/_pagination.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1094,19 +1081,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/assets/scss/layout/_header-delivery.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/assets/scss/layout/_header-delivery.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"/assets/scss/layout/_header.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1168,19 +1142,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/assets/scss/page/_contacts.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/assets/scss/page/_delivery.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/assets/scss/page/_delivery.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

@@ -248,3 +248,85 @@
         }
 }
 
+
+
+
+
+/* Integrate this in compilation */
+
+
+.header-delivery--terms{
+    height: 350px;
+    background-image: url("../../assets/images/tc-banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+    .header-delivery--terms > h1 {
+        position: absolute;
+        color: #fff;
+        margin: 206px 0 0 256px
+    }
+
+@media only screen and (max-width: 1024px) {
+    .header-delivery--terms > h1 {
+        margin: 113px 0 0 20px;
+        font-size: 32px;
+        line-height: 40px
+    }
+}
+
+@media only screen and (max-width: tablet) {
+    .header-delivery--terms > h1 {
+        margin: 113px 0 0 20px;
+        font-size: 32px;
+        line-height: 40px
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .header-delivery--terms > h1 {
+        margin: 90px 0 0 20px
+    }
+}
+
+@media only screen and (max-width: mobile) {
+    .header-delivery--terms > h1 {
+        margin: 90px 0 0 20px
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .header-delivery--terms {
+        background: url("../../assets/images/tc-banner-.jpg") center left no-repeat;
+        background-size: cover;
+        height: 200px
+    }
+}
+
+@media only screen and (max-width: tablet) {
+    .header-delivery--terms {
+        background: url("../../assets/images/tc-banner-.jpg") center left no-repeat;
+        background-size: cover;
+        height: 200px
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .header-delivery--terms {
+        background: url("../../assets/images/tc-banner-.jpg") center top no-repeat;
+        background-size: cover;
+        height: 200px
+    }
+}
+
+@media only screen and (max-width: mobile) {
+    .header-delivery--terms {
+        background: url("../../assets/images/tc-banner-.jpg") center top no-repeat;
+        background-size: cover;
+        height: 200px
+    }
+}
+
+
+
