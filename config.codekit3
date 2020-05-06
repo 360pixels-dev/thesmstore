@@ -9,6 +9,14 @@
 	],
 "creatorBuild": "32001",
 "files": {
+	"/404.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/404.html",
+		"oF": 0
+		},
 	"/about-us.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -50,6 +58,24 @@
 		"oAP": "/assets/css/owl.carousel.min-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"/assets/css/style.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/assets/css/style.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/assets/css/style.min.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/css/style.min.css.map",
+		"oF": 0
 		},
 	"/assets/fonts/Verlag-Black.ttf": {
 		"cB": 0,
@@ -1643,7 +1669,7 @@
 		"oAP": "/assets/images/cards/card-blog-others6.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/assets/images/cards/card-blog-others7.jpg": {
@@ -1654,7 +1680,7 @@
 		"oAP": "/assets/images/cards/card-blog-others7.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/assets/images/cards/card-blog-others8.jpg": {
@@ -1687,7 +1713,7 @@
 		"oAP": "/assets/images/cards/card-blog-youth2.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/assets/images/cards/card-blog-youth3.jpg": {
@@ -1698,7 +1724,7 @@
 		"oAP": "/assets/images/cards/card-blog-youth3.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/assets/images/cards/card-blog-youth4.jpg": {
@@ -1817,8 +1843,8 @@
 		"oA": 0,
 		"oAP": "/assets/images/cards/card-component-accessories.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1995,7 +2021,7 @@
 		"oAP": "/assets/images/cards/card-kids-sale2.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/assets/images/cards/card-mens-sale-m.jpg": {
@@ -2081,8 +2107,8 @@
 		"oA": 0,
 		"oAP": "/assets/images/cards/card-menu-category-mobile2.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -2092,8 +2118,8 @@
 		"oA": 0,
 		"oAP": "/assets/images/cards/card-menu-category-mobile3.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -2246,8 +2272,8 @@
 		"oA": 0,
 		"oAP": "/assets/images/cards/card-menu-whatsnew2.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -2257,8 +2283,8 @@
 		"oA": 0,
 		"oAP": "/assets/images/cards/card-menu-whatsnew3.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -2356,8 +2382,8 @@
 		"oA": 0,
 		"oAP": "/assets/images/cards/card-whatsnew-mobile3.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -2512,7 +2538,7 @@
 		"oAP": "/assets/images/cards/gift-card-use2.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/assets/images/cards/gift-card-use3.jpg": {
@@ -2523,7 +2549,7 @@
 		"oAP": "/assets/images/cards/gift-card-use3.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/assets/images/cards/gift-card-use4.jpg": {
@@ -2556,7 +2582,7 @@
 		"oAP": "/assets/images/cards/gift-card-where2.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/assets/images/cards/gift-card-where3.jpg": {
@@ -2567,7 +2593,7 @@
 		"oAP": "/assets/images/cards/gift-card-where3.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/assets/images/cards/gift-card-where4.jpg": {
@@ -2598,8 +2624,8 @@
 		"oA": 0,
 		"oAP": "/assets/images/cards/gift-card2.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -2609,8 +2635,8 @@
 		"oA": 0,
 		"oAP": "/assets/images/cards/gift-card3.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -2633,7 +2659,7 @@
 		"oAP": "/assets/images/cards/gift-registry2.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/assets/images/cards/gift-registry3.jpg": {
@@ -2897,7 +2923,7 @@
 		"oAP": "/assets/images/cards/menu-services-m2.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/assets/images/cards/menu-services-m3.jpg": {
@@ -2908,7 +2934,7 @@
 		"oAP": "/assets/images/cards/menu-services-m3.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/assets/images/cards/menu-services-m4.jpg": {
@@ -3073,7 +3099,7 @@
 		"oAP": "/assets/images/cards/menu-services9.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/assets/images/cards/women-card-event1.jpg": {
@@ -6330,6 +6356,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/assets/scss/component/_modal.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/component/_modal.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/assets/scss/component/_nav.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -6547,6 +6586,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/assets/scss/page/_contacts.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/assets/scss/page/_delivery.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/page/_delivery.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
