@@ -309,7 +309,7 @@
             }
 
             & .carousel__item {
-                height: 360px;
+                height: 514px;
                 width: 240px !important;
                 display: flex;
                 flex-direction: column;
@@ -1177,10 +1177,7 @@
         @include respond(1260px) {
            margin: 20px;
         }
-
-
         
-
         @include respond(mobile) {
             margin: 0 8px 0;
          }
@@ -1224,17 +1221,6 @@
     margin-right: 8px;
 }
 
-
-
-
-
-
-
-
-.modal--item>.modal-content>.modal--item-image>img {
-    height: 360px;  /*change from 339 to 360*/
-    width: 240px;   /*change from 272 to 240*/
-}
 
 
 
