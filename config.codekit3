@@ -903,28 +903,6 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/assets/images/cards/card-blog-beauty2.jpg": {
-		"ft": 16384,
-		"iS": 85766,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/assets/images/cards/card-blog-beauty2.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/assets/images/cards/card-blog-beauty3.jpg": {
-		"ft": 16384,
-		"iS": 104498,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/assets/images/cards/card-blog-beauty3.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
 	"/assets/images/cards/card-blog-beauty4.jpg": {
 		"ft": 16384,
 		"iS": 131790,
@@ -1013,78 +991,12 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/assets/images/cards/card-blog-home4.jpg": {
-		"ft": 16384,
-		"iS": 108832,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/assets/images/cards/card-blog-home4.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/assets/images/cards/card-blog-home5.jpg": {
-		"ft": 16384,
-		"iS": 127327,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/assets/images/cards/card-blog-home5.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/assets/images/cards/card-blog-home6.jpg": {
-		"ft": 16384,
-		"iS": 102296,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/assets/images/cards/card-blog-home6.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/assets/images/cards/card-blog-home7.jpg": {
-		"ft": 16384,
-		"iS": 90954,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/assets/images/cards/card-blog-home7.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
 	"/assets/images/cards/card-blog-home8.jpg": {
 		"ft": 16384,
 		"iS": 127273,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/assets/images/cards/card-blog-home8.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/assets/images/cards/card-blog-kids6.jpg": {
-		"ft": 16384,
-		"iS": 88707,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/assets/images/cards/card-blog-kids6.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/assets/images/cards/card-blog-kids7.jpg": {
-		"ft": 16384,
-		"iS": 54703,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/assets/images/cards/card-blog-kids7.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -1129,50 +1041,6 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/assets/images/cards/card-blog-mens3.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/assets/images/cards/card-blog-mens4.jpg": {
-		"ft": 16384,
-		"iS": 118755,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/assets/images/cards/card-blog-mens4.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/assets/images/cards/card-blog-mens5.jpg": {
-		"ft": 16384,
-		"iS": 140327,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/assets/images/cards/card-blog-mens5.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/assets/images/cards/card-blog-mens6.jpg": {
-		"ft": 16384,
-		"iS": 108853,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/assets/images/cards/card-blog-mens6.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/assets/images/cards/card-blog-mens7.jpg": {
-		"ft": 16384,
-		"iS": 146185,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/assets/images/cards/card-blog-mens7.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -1354,39 +1222,6 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/assets/images/cards/card-blog-youth8.jpg": {
-		"ft": 16384,
-		"iS": 96541,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/assets/images/cards/card-blog-youth8.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/assets/images/cards/card-blog.png": {
-		"ft": 32768,
-		"iS": 98181,
-		"oA": 0,
-		"oAP": "/assets/images/cards/card-blog.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/assets/images/cards/card-blog4.png": {
-		"ft": 32768,
-		"iS": 200367,
-		"oA": 0,
-		"oAP": "/assets/images/cards/card-blog4.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"/assets/images/cards/card-component-accessories.png": {
 		"ft": 32768,
 		"iS": 124444,
@@ -1453,17 +1288,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/assets/images/cards/card-component-women.png": {
-		"ft": 32768,
-		"iS": 101713,
-		"oA": 0,
-		"oAP": "/assets/images/cards/card-component-women.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"/assets/images/cards/card-event.png": {
 		"ft": 32768,
 		"iS": 186874,
@@ -1473,17 +1297,6 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
-		},
-	"/assets/images/cards/card-home-sale-4.jpg": {
-		"ft": 16384,
-		"iS": 31276,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/assets/images/cards/card-home-sale-4.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
 		"q": 100
 		},
 	"/assets/images/cards/card-home-sale-m.jpg": {
@@ -1656,17 +1469,6 @@
 		"iS": 31298,
 		"oA": 0,
 		"oAP": "/assets/images/cards/card-menu-category-mobile7.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/assets/images/cards/card-menu-event1.png": {
-		"ft": 32768,
-		"iS": 89660,
-		"oA": 0,
-		"oAP": "/assets/images/cards/card-menu-event1.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -1882,17 +1684,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/assets/images/cards/card-whatsnew-mobile4.png": {
-		"ft": 32768,
-		"iS": 55475,
-		"oA": 0,
-		"oAP": "/assets/images/cards/card-whatsnew-mobile4.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"/assets/images/cards/card-womens-landing-sale.jpg": {
 		"ft": 16384,
 		"iS": 33301,
@@ -1902,28 +1693,6 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"q": 100
-		},
-	"/assets/images/cards/card-womens-landing2.png": {
-		"ft": 32768,
-		"iS": 194257,
-		"oA": 0,
-		"oAP": "/assets/images/cards/card-womens-landing2.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/assets/images/cards/card-womens-landing3.png": {
-		"ft": 32768,
-		"iS": 272163,
-		"oA": 0,
-		"oAP": "/assets/images/cards/card-womens-landing3.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
 		"q": 100
 		},
 	"/assets/images/cards/card-womens-sale-m.jpg": {
@@ -1986,17 +1755,6 @@
 		"iS": 5683,
 		"oA": 0,
 		"oAP": "/assets/images/cards/gift-card-sleeve3.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/assets/images/cards/gift-card-sleeve4.png": {
-		"ft": 32768,
-		"iS": 5990,
-		"oA": 0,
-		"oAP": "/assets/images/cards/gift-card-sleeve4.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -2152,39 +1910,6 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/assets/images/cards/gift-registry4.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/assets/images/cards/gift-registry5.jpg": {
-		"ft": 16384,
-		"iS": 32295,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/assets/images/cards/gift-registry5.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/assets/images/cards/gift-registry6.jpg": {
-		"ft": 16384,
-		"iS": 32078,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/assets/images/cards/gift-registry6.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/assets/images/cards/gift-registry7.jpg": {
-		"ft": 16384,
-		"iS": 13818,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/assets/images/cards/gift-registry7.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -2421,61 +2146,6 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/assets/images/cards/menu-services-m8.jpg": {
-		"ft": 16384,
-		"iS": 14057,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/assets/images/cards/menu-services-m8.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/assets/images/cards/menu-services-m9.jpg": {
-		"ft": 16384,
-		"iS": 12673,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/assets/images/cards/menu-services-m9.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/assets/images/cards/menu-services1.jpg": {
-		"ft": 16384,
-		"iS": 25116,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/assets/images/cards/menu-services1.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/assets/images/cards/menu-services2.jpg": {
-		"ft": 16384,
-		"iS": 32395,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/assets/images/cards/menu-services2.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/assets/images/cards/menu-services3.jpg": {
-		"ft": 16384,
-		"iS": 22440,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/assets/images/cards/menu-services3.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
 	"/assets/images/cards/menu-services4.jpg": {
 		"ft": 16384,
 		"iS": 19925,
@@ -2540,28 +2210,6 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
-		"q": 100
-		},
-	"/assets/images/cards/women-card-event1.jpg": {
-		"ft": 16384,
-		"iS": 130202,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/assets/images/cards/women-card-event1.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/assets/images/cards/women-card-event3.jpg": {
-		"ft": 16384,
-		"iS": 163720,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/assets/images/cards/women-card-event3.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
 		"q": 100
 		},
 	"/assets/images/carousel-thumnail-01.jpg": {

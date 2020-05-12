@@ -66,7 +66,33 @@ $(document).ready(function(){
         // var submenu = $('.nav__mobile-control-back').data('item');
         $('.nav__mobile-container').css('display', 'none');
     }
-    
+
+
+    // TOGGLE PASSWORD VISIBILITY
+    $('.signup__form-group .toggle-password, .login__form-group .toggle-password').click(function() {
+        let pass =  $('.signup__form-group #password, .login__form-group #password');
+        if (pass.attr('type') == 'password') {
+            pass.attr('type', 'text');
+            $('.toggle-password').attr('src', './assets/images/icons/password-eye-enable.svg');
+        }
+        else {
+            pass.attr('type', 'password');
+            $('.toggle-password').attr('src', './assets/images/icons/password-eye.svg');
+        }
+    });
+
+
+    // OPEN TERMS AND CONDITION MODAL
+    $('#openTermsModal').click(function() {
+        $('.modal--terms').parent().addClass('active');
+        let cb = $('.checkbox-container input');
+        if(cb.prop('checked')) {
+            cb.prop("checked", false).change();
+        }
+        else {
+            cb.prop("checked", true).change();
+        }
+    });
 
     
     // TOGGLE MODAL
