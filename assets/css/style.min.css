@@ -12866,7 +12866,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 
 .user {
   width: 100%;
-  background-color: #F9FBFF; }
+  background-color: #F9FBFF;
+  min-height: calc(100vh - 160px); }
   .user > div {
     width: 1400px;
     height: 740px;
@@ -12911,6 +12912,11 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         margin-bottom: 4px; }
       .user-profile__content > .font-caption {
         margin-bottom: 16px; }
+      .user-profile__content > .font-caption.text-danger {
+        color: #ff4e4e;
+        display: flex; }
+        .user-profile__content > .font-caption.text-danger > img {
+          margin-right: 10px; }
       .user-profile__content > a {
         color: #397CEE;
         text-decoration: none;
@@ -12981,7 +12987,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         .user-orders__tbl-header > span:nth-child(5) {
           width: 11.51%; }
         .user-orders__tbl-header > span:nth-child(6) {
-          width: 10.50%; }
+          width: 10.5%; }
       .user-orders__tbl-content {
         display: flex;
         flex-direction: column;
@@ -13014,7 +13020,91 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           .user-orders__tbl-row > span:nth-child(5) {
             width: 11.51%; }
           .user-orders__tbl-row > span:nth-child(6) {
-            width: 10.50%; }
+            width: 10.5%; }
+    .user-orders__empty {
+      background-color: white;
+      box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
+      border-radius: 4px;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      height: 510px; }
+      .user-orders__empty > img {
+        margin: auto;
+        margin-top: 56px;
+        margin-bottom: 0; }
+      .user-orders__empty > p {
+        margin-top: 20px;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        /* or 150% */
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+      .user-orders__empty > button {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        padding: 16px 24px;
+        background: #18489a;
+        width: fit-content;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #ffffff; }
+        .user-orders__empty > button > img {
+          padding-left: 8px; }
+    .user-orders__incomplete {
+      background-color: white;
+      box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
+      border-radius: 4px;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      height: 510px; }
+      .user-orders__incomplete > img {
+        margin: auto;
+        margin-top: 56px;
+        margin-bottom: 0; }
+      .user-orders__incomplete > p {
+        margin-top: 20px;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        /* or 150% */
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+      .user-orders__incomplete > button {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        padding: 16px 24px;
+        background: #18489a;
+        width: fit-content;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #ffffff; }
+        .user-orders__incomplete > button > img {
+          padding-left: 8px; }
     .user-orders > a {
       display: flex;
       align-items: center;

@@ -1,7 +1,8 @@
 .user {
     width: 100%;
     background-color: $light-periwinkle;
-    
+    min-height: calc(100vh - 160px);
+
     & > div {
         width: 1400px;
         height: 740px;
@@ -53,13 +54,22 @@
             & > p {
                 margin-bottom: 16px;
             }
-            
+
             & > .font-fineprint {
                 margin-bottom: 4px;
             }
-            
+
             & > .font-caption {
                 margin-bottom: 16px;
+            }
+
+            & > .font-caption.text-danger {
+                color: #ff4e4e;
+                display: flex;
+
+                & > img {
+                    margin-right: 10px;
+                }
             }
 
             & > a {
@@ -113,7 +123,7 @@
                     -webkit-appearance: none;
                     -moz-appearance: none;
                     appearance: none;
-                    background: url('../../assets/images/icons/angle-down-black.svg') 90% / 8% no-repeat $white;
+                    background: url("../../assets/images/icons/angle-down-black.svg") 90% / 8% no-repeat $white;
                     border: 1px solid $gray;
                     outline: none;
                 }
@@ -133,12 +143,11 @@
                 padding: 0 24px;
                 background-color: $lilac;
                 display: flex;
-                align-items: center; 
+                align-items: center;
                 width: 100%;
                 height: 48px;
 
                 & > span {
-
                     &:not(:last-child) {
                         margin-right: 2.19%;
                     }
@@ -159,7 +168,7 @@
                         width: 11.51%;
                     }
                     &:nth-child(6) {
-                        width: 10.50%;
+                        width: 10.5%;
                     }
                 }
             }
@@ -173,7 +182,7 @@
 
             &-row {
                 display: flex;
-                align-items: center; 
+                align-items: center;
                 width: 100%;
                 height: 72px;
 
@@ -211,13 +220,122 @@
                         width: 11.51%;
                     }
                     &:nth-child(6) {
-                        width: 10.50%;
+                        width: 10.5%;
                     }
                 }
             }
         }
 
-        
+        // Paul Prieto
+        &__empty {
+            background-color: white;
+            box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
+            border-radius: 4px;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            height: 510px;
+
+            & > img {
+                margin: auto;
+                margin-top: 56px;
+                margin-bottom: 0;
+            }
+
+            & > p {
+                margin-top: 20px;
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 30px;
+                /* or 150% */
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            & > button {
+                margin-top: 20px;
+                display: flex;
+                justify-content: center;
+                padding: 16px 24px;
+                background: #18489a;
+                width: fit-content;
+
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 16px;
+                display: flex;
+                align-items: center;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                color: #ffffff;
+
+                & > img {
+                    padding-left: 8px;
+                }
+            }
+        }
+
+        &__incomplete {
+            background-color: white;
+            box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
+            border-radius: 4px;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            height: 510px;
+
+            & > img {
+                margin: auto;
+                margin-top: 56px;
+                margin-bottom: 0;
+            }
+
+            & > p {
+                margin-top: 20px;
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 30px;
+                /* or 150% */
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            & > button {
+                margin-top: 20px;
+                display: flex;
+                justify-content: center;
+                padding: 16px 24px;
+                background: #18489a;
+                width: fit-content;
+
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 16px;
+                display: flex;
+                align-items: center;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                color: #ffffff;
+
+                & > img {
+                    padding-left: 8px;
+                }
+            }
+        }
+        // end Paul Prieto
+
         & > a {
             display: flex;
             align-items: center;
