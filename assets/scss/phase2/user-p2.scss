@@ -227,6 +227,222 @@
         }
 
         // Paul Prieto
+
+        &__container {
+            & > p {
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 18px;
+                margin: 8px 0px;
+                color: #161720;
+                align-items: center;
+                display: flex;
+                flex-flow: row nowrap;
+
+                & > img {
+                    height: 16px;
+                    margin: auto 12px;
+                }
+
+                & > span {
+                    font-weight: bold;
+                }
+            }
+        }
+
+        &__details {
+            display: flex;
+            flex-flow: row nowrap;
+
+            &__pricing {
+                margin-top: 24px;
+                background: #ffffff;
+                box-shadow: $soft-shadow;
+                border-radius: 4px;
+
+                padding: 16px 24px 24px 24px;
+
+                &__item:first-of-type {
+                    margin-top: 16px;
+                }
+
+                & > hr {
+                    color: #ebeef8;
+                    margin: 24px 0;
+                }
+
+                & > p {
+                    background: #ebeef8;
+                    padding: 6px 16px;
+                    font-family: Open Sans;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #403f47;
+                }
+
+                &__item {
+                    display: flex;
+
+                    & > .item_column_big {
+                        flex: 3;
+                        flex-flow: row;
+                        display: flex;
+                        align-items: center;
+
+                        & > div {
+                            padding-left: 8px;
+                            padding-right: 25px;
+
+                            & > .name {
+                                font-weight: bold;
+                                font-size: 12px;
+                                line-height: 16px;
+                                letter-spacing: 1.6px;
+                                text-transform: uppercase;
+                                color: #88898f;
+                            }
+
+                            & > .description {
+                                font-weight: bold;
+                                font-size: 16px;
+                                line-height: 24px;
+                                color: #403f47;
+                            }
+                        }
+                    }
+
+                    & > .item_column {
+                        flex: 1;
+                        flex-flow: column;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-family: Open Sans;
+                        font-style: normal;
+                        font-weight: bold;
+
+                        & > .label {
+                            font-size: 12px;
+                            line-height: 18px;
+                            color: #88898f;
+                        }
+
+                        & > .value {
+                            font-size: 16px;
+                            line-height: 24px;
+                            display: flex;
+                            align-items: center;
+                            color: #403f47;
+                        }
+                    }
+                }
+            }
+
+            &__item {
+                margin-top: 24px;
+                padding: 24px;
+                background: #ffffff;
+                box-shadow: $soft-shadow;
+                border-radius: 4px;
+                font-family: Open Sans;
+
+                & > .label {
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 22px;
+                    text-transform: capitalize;
+                    color: #161720;
+                    margin-bottom: 10px;
+                }
+
+                & > .item {
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #161720;
+                }
+            }
+        }
+
+        &__status {
+            background-color: #f0f3fc;
+            width: 808px;
+            flex-wrap: nowrap;
+            display: flex;
+            padding: 8px 24px;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: bold;
+            // flex-flow: row wrap;
+
+            &__column {
+                display: flex;
+                flex: 1 2 33%;
+                flex-flow: column;
+
+                &__label {
+                    font-size: 12px;
+                    line-height: 16px;
+                    letter-spacing: 3px;
+                    text-transform: uppercase;
+                    color: #88898f;
+                }
+
+                &__content {
+                    margin-top: 5px;
+                    font-size: 20px;
+                    line-height: 30px;
+                    color: #161720;
+                }
+            }
+        }
+
+        &__summary {
+            margin-left: 24px;
+            background-color: #ffffff;
+            width: 392px;
+            flex-wrap: nowrap;
+            height: fit-content;
+            padding: 24px;
+
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            color: #161720;
+
+            & > .text_order {
+                font-weight: bold;
+                margin-bottom: 16px;
+            }
+
+            & > .text_total {
+                & > span {
+                    float: right;
+                    font-size: 20px;
+                    font-weight: bold;
+                    line-height: 30px;
+                    color: #403f47;
+                }
+            }
+            & > hr {
+                margin: 16px 0;
+            }
+
+            & > .text_shipping_reminder {
+                margin-top: 8px;
+                padding: 16px;
+                background: #F0F3FC;
+                font-size: 14px;
+                line-height: 22px;
+                color: #403f47;
+            }
+        }
+
         &__empty {
             background-color: white;
             box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
