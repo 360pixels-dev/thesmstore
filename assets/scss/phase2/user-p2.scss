@@ -3,6 +3,7 @@
   background-color: $light-periwinkle;
   min-height: calc(100vh - 160px);
   height: fit-content;
+  padding-bottom: 40px;
 
   & > div {
     width: 1400px;
@@ -259,6 +260,7 @@
       flex-flow: row nowrap;
 
       &__account {
+        margin-right: 0;
         padding: 24px;
         background: #ffffff;
         box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
@@ -332,6 +334,7 @@
         background: #ffffff;
         box-shadow: $soft-shadow;
         border-radius: 4px;
+        width: 808px;
 
         padding: 16px 24px 24px 24px;
 
@@ -386,28 +389,64 @@
             }
           }
 
-          & > .item_column {
-            flex: 1;
-            flex-flow: column;
+          & > .item_column_container {
+            flex: 3;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-family: Open Sans;
-            font-style: normal;
-            font-weight: bold;
+            flex-wrap: wrap;
 
-            & > .label {
+            & > .remove {
+              display: flex;
+              cursor: pointer;
+              flex-basis: 100%;
+              justify-content: flex-end;
+              font-weight: bold;
               font-size: 12px;
-              line-height: 18px;
+              line-height: 16px;
+              text-align: right;
+              letter-spacing: 1.6px;
+              text-transform: uppercase;
               color: #88898f;
             }
 
-            & > .value {
-              font-size: 16px;
-              line-height: 24px;
+            & > .item_column {
+              flex: 1 1 33%;
+              flex-flow: column;
               display: flex;
               align-items: center;
-              color: #403f47;
+              justify-content: center;
+              font-family: Open Sans;
+              font-style: normal;
+              font-weight: bold;
+
+              & > select {
+                // margin: 50px;
+                width: 84px;
+                padding: 8px 25px 8px 15px;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                height: 40px;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                background-color: white !important;
+                background: url(./../images/icons/angle-down.svg) 80% / 15% no-repeat #eee;
+              }
+
+              & > .label {
+                font-size: 12px;
+                line-height: 18px;
+                color: #88898f;
+              }
+
+              & > .value {
+                font-size: 16px;
+                line-height: 24px;
+                display: flex;
+                align-items: center;
+                color: #403f47;
+              }
             }
           }
         }
@@ -509,8 +548,6 @@
             text-transform: uppercase;
             color: #88898f;
           }
-
-          
 
           & > .servicing_branch {
             padding: 6px 8px;
@@ -646,6 +683,15 @@
         margin: 16px 0;
       }
 
+      & > .text_reminder {
+        margin-top: 16px;
+        padding: 16px;
+        background: #f0f3fc;
+        font-size: 14px;
+        line-height: 22px;
+        color: #403f47;
+      }
+
       & > .text_shipping_reminder {
         margin-top: 8px;
         padding: 16px;
@@ -653,6 +699,58 @@
         font-size: 14px;
         line-height: 22px;
         color: #403f47;
+      }
+
+      & > .need-text {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 22px;
+        text-transform: capitalize;
+        color: #161720;
+      }
+
+      & > .list-text {
+        margin-top: 4px;
+        margin-bottom: 8px;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+        color: #161720;
+      }
+
+      & > textarea {
+        width: 100%;
+        font-family: Open Sans;
+        font-style: normal;
+        padding: 10px;
+      }
+
+      & > button {
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        padding: 16px 24px;
+        background: #18489a;
+
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #ffffff;
+
+        & > img {
+          padding-left: 8px;
+        }
       }
     }
 
