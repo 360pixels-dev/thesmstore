@@ -12867,7 +12867,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 .user {
   width: 100%;
   background-color: #F9FBFF;
-  min-height: calc(100vh - 160px); }
+  min-height: calc(100vh - 160px);
+  height: fit-content; }
   .user > div {
     width: 1400px;
     height: 740px;
@@ -12945,7 +12946,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         font-size: 24px;
         line-height: 40px;
         text-transform: uppercase;
-        color: #161720; }
+        color: #161720;
+        letter-spacing: 1.6px; }
       .user-orders__header > div > span {
         color: #88898F; }
       .user-orders__header > div > select {
@@ -13037,6 +13039,55 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         margin: auto 12px; }
       .user-orders__container > p > span {
         font-weight: bold; }
+    .user-orders__basket {
+      display: flex;
+      flex-flow: row nowrap; }
+      .user-orders__basket__account {
+        padding: 24px;
+        background: #ffffff;
+        box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
+        border-radius: 4px;
+        width: 808px; }
+        .user-orders__basket__account > .first > p {
+          font-family: Open Sans;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 24px;
+          color: #161720; }
+          .user-orders__basket__account > .first > p > span {
+            float: right;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 1.6px;
+            text-transform: uppercase;
+            color: #397cee;
+            cursor: pointer; }
+            .user-orders__basket__account > .first > p > span img {
+              margin-right: 11px; }
+        .user-orders__basket__account > .second {
+          display: flex;
+          margin-top: 16px;
+          margin-bottom: 14px; }
+        .user-orders__basket__account__info {
+          display: flex;
+          flex: 1;
+          flex-flow: column;
+          font-family: Open Sans;
+          font-style: normal;
+          color: #161720; }
+          .user-orders__basket__account__info__label {
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 18px;
+            text-transform: capitalize;
+            margin-bottom: 4px; }
+          .user-orders__basket__account__info__content {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px; }
     .user-orders__details {
       display: flex;
       flex-flow: row nowrap; }
@@ -13101,6 +13152,94 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
               display: flex;
               align-items: center;
               color: #403f47; }
+        .user-orders__details__pricing__checkbox {
+          display: flex;
+          align-items: center;
+          margin: 18px 0 34px 0;
+          font-family: Open Sans;
+          font-style: normal; }
+          .user-orders__details__pricing__checkbox input[type="checkbox"] {
+            display: none; }
+          .user-orders__details__pricing__checkbox label {
+            position: relative;
+            display: inline-block;
+            padding-left: 34px; }
+          .user-orders__details__pricing__checkbox label::before, .user-orders__details__pricing__checkbox label::after {
+            position: absolute;
+            content: "";
+            display: inline-block; }
+          .user-orders__details__pricing__checkbox label::before {
+            height: 16px;
+            width: 16px;
+            left: 0px;
+            border: 1px solid #0184e2;
+            border-radius: 4px;
+            top: 3px; }
+          .user-orders__details__pricing__checkbox label::before {
+            height: 16px;
+            width: 16px;
+            left: 0px;
+            border: 1px solid #0184e2;
+            border-radius: 4px;
+            top: 3px; }
+          .user-orders__details__pricing__checkbox #check2::before {
+            top: 9px; }
+          .user-orders__details__pricing__checkbox #check2::after {
+            top: 14px; }
+          .user-orders__details__pricing__checkbox label::after {
+            height: 3px;
+            width: 6px;
+            border-left: 2px solid;
+            border-bottom: 2px solid;
+            transform: rotate(-45deg);
+            left: 5px;
+            top: 8px; }
+          .user-orders__details__pricing__checkbox input[type="checkbox"] + label::after {
+            content: none; }
+          .user-orders__details__pricing__checkbox input[type="checkbox"]:checked + label::after {
+            content: "";
+            color: white; }
+          .user-orders__details__pricing__checkbox input[type="checkbox"]:focus + label::before {
+            outline: #3b99fc auto 5px; }
+          .user-orders__details__pricing__checkbox input[type="checkbox"]:checked + label::before {
+            background-color: #0797ff; }
+          .user-orders__details__pricing__checkbox > .selectAll {
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 22px;
+            text-transform: capitalize;
+            color: #403f47; }
+          .user-orders__details__pricing__checkbox > .removeAll {
+            margin-left: auto;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: right;
+            letter-spacing: 1.6px;
+            text-transform: uppercase;
+            color: #88898f; }
+          .user-orders__details__pricing__checkbox > .servicing_branch {
+            padding: 6px 8px;
+            display: flex;
+            background-color: #ebeef8;
+            flex: 1;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+            color: #403f47; }
+          .user-orders__details__pricing__checkbox label {
+            flex: 1; }
+            .user-orders__details__pricing__checkbox label > .servicing_branch {
+              padding: 6px 8px;
+              display: flex;
+              background-color: #ebeef8;
+              flex: 1;
+              font-weight: bold;
+              font-size: 16px;
+              line-height: 24px;
+              color: #403f47; }
       .user-orders__details__item {
         margin-top: 24px;
         padding: 24px;
@@ -13119,6 +13258,15 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           font-size: 16px;
           line-height: 24px;
           color: #161720; }
+    .user-orders__cancelled {
+      font-family: Open Sans;
+      font-style: italic;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 22px;
+      color: #403f47;
+      padding: 16px 24px;
+      background: #ffffff; }
     .user-orders__status {
       background-color: #f0f3fc;
       width: 808px;
@@ -13143,6 +13291,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           font-size: 20px;
           line-height: 30px;
           color: #161720; }
+          .user-orders__status__column__content.cancelled {
+            color: #ff4e4e; }
     .user-orders__summary {
       margin-left: 24px;
       background-color: #ffffff;
@@ -13170,7 +13320,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       .user-orders__summary > .text_shipping_reminder {
         margin-top: 8px;
         padding: 16px;
-        background: #F0F3FC;
+        background: #f0f3fc;
         font-size: 14px;
         line-height: 22px;
         color: #403f47; }
