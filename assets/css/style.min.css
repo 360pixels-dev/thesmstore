@@ -12869,7 +12869,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   background-color: #F9FBFF;
   min-height: calc(100vh - 160px);
   height: fit-content;
-  padding-bottom: 40px; }
+  padding-bottom: 100px; }
   .user > div {
     width: 1400px;
     height: 740px;
@@ -13116,6 +13116,25 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           color: #403f47; }
         .user-orders__details__pricing__item {
           display: flex; }
+          .user-orders__details__pricing__item > .item_column {
+            flex: 1;
+            flex-flow: column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: bold; }
+            .user-orders__details__pricing__item > .item_column > .label {
+              font-size: 12px;
+              line-height: 18px;
+              color: #88898f; }
+            .user-orders__details__pricing__item > .item_column > .value {
+              font-size: 16px;
+              line-height: 24px;
+              display: flex;
+              align-items: center;
+              color: #403f47; }
           .user-orders__details__pricing__item > .item_column_big {
             flex: 3;
             flex-flow: row;
@@ -13299,6 +13318,59 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       color: #403f47;
       padding: 16px 24px;
       background: #ffffff; }
+    .user-orders__success {
+      background-color: white;
+      width: 808px;
+      flex-flow: row wrap;
+      display: flex;
+      padding: 8px 24px;
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: bold; }
+      .user-orders__success__message {
+        flex: 1 0 100%;
+        font-family: Open Sans;
+        font-style: normal;
+        padding-top: 16px;
+        padding-left: 8px; }
+        .user-orders__success__message > .greeting {
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 32px;
+          display: flex;
+          align-items: center;
+          color: #161720;
+          margin-bottom: 24px; }
+        .user-orders__success__message > .message {
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 24px;
+          color: #403f47;
+          margin-bottom: 28px; }
+      .user-orders__success__column {
+        display: flex;
+        flex: 1 2 33%;
+        flex-flow: column;
+        padding-left: 8px;
+        background-color: #f0f3fc;
+        margin-bottom: 16px; }
+        .user-orders__success__column__label {
+          font-size: 12px;
+          line-height: 16px;
+          letter-spacing: 3px;
+          text-transform: uppercase;
+          color: #88898f;
+          padding-left: 16px;
+          margin-top: 8px; }
+        .user-orders__success__column__content {
+          margin-top: 5px;
+          font-size: 20px;
+          line-height: 30px;
+          color: #161720;
+          margin-bottom: 8px;
+          padding-left: 16px; }
+          .user-orders__success__column__content.cancelled {
+            color: #ff4e4e; }
     .user-orders__status {
       background-color: #f0f3fc;
       width: 808px;
@@ -13325,10 +13397,30 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           color: #161720; }
           .user-orders__status__column__content.cancelled {
             color: #ff4e4e; }
+    .user-orders__summary__container > button {
+      margin: 24px;
+      width: 100%;
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      padding: 16px 24px;
+      background: #18489a;
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 16px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #ffffff; }
+      .user-orders__summary__container > button > img {
+        padding-left: 8px; }
     .user-orders__summary {
       margin-left: 24px;
       background-color: #ffffff;
-      width: 392px;
+      width: 100%;
       flex-wrap: nowrap;
       height: fit-content;
       padding: 24px;

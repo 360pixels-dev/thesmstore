@@ -3,7 +3,7 @@
   background-color: $light-periwinkle;
   min-height: calc(100vh - 160px);
   height: fit-content;
-  padding-bottom: 40px;
+  padding-bottom: 100px;
 
   & > div {
     width: 1400px;
@@ -360,6 +360,30 @@
 
         &__item {
           display: flex;
+          & > .item_column {
+            flex: 1;
+            flex-flow: column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: bold;
+
+            & > .label {
+              font-size: 12px;
+              line-height: 18px;
+              color: #88898f;
+            }
+
+            & > .value {
+              font-size: 16px;
+              line-height: 24px;
+              display: flex;
+              align-items: center;
+              color: #403f47;
+            }
+          }
 
           & > .item_column_big {
             flex: 3;
@@ -613,6 +637,79 @@
       background: #ffffff;
     }
 
+    &__success {
+      // background-color: #f0f3fc;
+      background-color: white;
+      width: 808px;
+      flex-flow: row wrap;
+      display: flex;
+      padding: 8px 24px;
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: bold;
+
+      &__message {
+        flex: 1 0 100%;
+        font-family: Open Sans;
+        font-style: normal;
+        padding-top: 16px;
+        padding-left: 8px;
+
+        & > .greeting {
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 32px;
+          display: flex;
+          align-items: center;
+          color: #161720;
+
+          margin-bottom: 24px;
+        }
+
+        & > .message {
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 24px;
+          color: #403f47;
+
+          margin-bottom: 28px;
+        }
+      }
+
+      &__column {
+        display: flex;
+        flex: 1 2 33%;
+        flex-flow: column;
+        padding-left: 8px;
+        background-color: #f0f3fc;
+        margin-bottom: 16px;
+
+        &__label {
+          font-size: 12px;
+          line-height: 16px;
+          letter-spacing: 3px;
+          text-transform: uppercase;
+          color: #88898f;
+          padding-left: 16px;
+
+          margin-top: 8px;
+        }
+
+        &__content {
+          margin-top: 5px;
+          font-size: 20px;
+          line-height: 30px;
+          color: #161720;
+          margin-bottom: 8px;
+          padding-left: 16px;
+
+          &.cancelled {
+            color: #ff4e4e;
+          }
+        }
+      }
+    }
+
     &__status {
       background-color: #f0f3fc;
       width: 808px;
@@ -622,7 +719,13 @@
       font-family: Open Sans;
       font-style: normal;
       font-weight: bold;
+      // background-color: red;
       // flex-flow: row wrap;
+
+      // &__success {
+      //   display: flex;
+      //   flex: 1 0 100%;
+      // }
 
       &__column {
         display: flex;
@@ -650,10 +753,38 @@
       }
     }
 
+    &__summary__container {
+      & > button {
+        margin: 24px;
+
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        padding: 16px 24px;
+        background: #18489a;
+
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #ffffff;
+
+        & > img {
+          padding-left: 8px;
+        }
+      }
+    }
+
     &__summary {
       margin-left: 24px;
       background-color: #ffffff;
-      width: 392px;
+      width: 100%;
       flex-wrap: nowrap;
       height: fit-content;
       padding: 24px;
