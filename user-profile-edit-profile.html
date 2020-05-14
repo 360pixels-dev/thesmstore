@@ -97,97 +97,68 @@
             </ul>
         </nav>
 
-        <section class="user">
+        <section class="profile">
             <div>
-                <div class="user-orders__container">
-                    <p>My Orders<img src="./assets/images/icons/angle-right.svg" alt=""><span>#QPZGUOA</span> </p>
-                    <div class="user-orders__details">
-                        <div>
-                            <div class="user-orders__status">
-                                <div class="user-orders__status__column">
-                                    <div class="user-orders__status__column__label">status</div>
-                                    <div class="user-orders__status__column__content cancelled">Cancelled</div>
-                                </div>
-                                <div class="user-orders__status__column">
-                                    <div class="user-orders__status__column__label">Order number</div>
-                                    <div class="user-orders__status__column__content">#QPZGUOA</div>
-                                </div>
-                                <div class="user-orders__status__column">
-                                    <div class="user-orders__status__column__label">Order date</div>
-                                    <div class="user-orders__status__column__content">05/10/2020 15:41</div>
-                                </div>
-                            </div>
-                            <div class="user-orders__cancelled">
-                                This order has been cancelled by The SM Store SM Megamall branch due to the lack of availability
-                            </div>
-                            <div class="user-orders__details__pricing">
-                                <p>Servicing Branch: The SM Store Megamall</p>
+                <div class="profile__breadcrumb">
+                    <p>My Profile<img src="./assets/images/icons/angle-right.svg" alt=""><span>Edit Profile</span> </p>
+                </div>
 
-                                <div class="user-orders__details__pricing__item">
-                                    <div class="item_column_big">
-                                        <img src="./assets/images/item1.png" alt="">
-                                        <div>
-                                            <p class="name">CETAPHIL</p>
-                                            <p class="description">Gentle Foaming Cleanser</p>
-                                        </div>
-                                    </div>
-                                    <div class="item_column">
-                                        <p class="label">Item Price</p>
-                                        <p class="value">₱429.00</p>
-                                    </div>
-                                    <div class="item_column">
-                                        <p class="label">Quantity</p>
-                                        <p class="value">2pcs.</p>
-                                    </div>
-                                    <div class="item_column">
-                                        <p class="label">Total Price</p>
-                                        <p class="value">₱856.00</p>
-                                    </div>
-                                </div>
+                <div class="profile__information">
+                    <p class="header-text">PROFILE INFORMATION</p>
 
-                                <hr />
+                    <p class="required-text">*Required</p>
 
-                                <div class="user-orders__details__pricing__item">
-                                    <div class="item_column_big">
-                                        <img src="./assets/images/item2.png" alt="">
-                                        <div>
-                                            <p class="name">WATSONS</p>
-                                            <p class="description">Invigorating Wet Wipes Unscented 10 Wipes</p>
-                                        </div>
-                                    </div>
-                                    <div class="item_column">
-                                        <p class="label">Item Price</p>
-                                        <p class="value">₱79.00</p>
-                                    </div>
-                                    <div class="item_column">
-                                        <p class="label">Quantity</p>
-                                        <p class="value">3pcs.</p>
-                                    </div>
-                                    <div class="item_column">
-                                        <p class="label">Total Price</p>
-                                        <p class="value">₱237.00</p>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="profile__information__picture">
+                        <img src="./assets/images/user-default.svg" alt="">
+                        <button>Upload Photo<img src="./assets/images/red-line.svg" alt=""></button>
+                    </div>
 
-                            <div class="user-orders__details__item">
-                                <p class="label">Requested Items</p>
-                                <p class="item">500ml Ethyl Alcohol</p>
-                            </div>
+                    <div class="profile__information__fields">
+                        <div class="field__container">
+                            <label for="fname">Nam<span>*</span></label>
+                            <input type="text" id="fname" placeholder="nam" />
                         </div>
-
-                        <div class="user-orders__summary">
-                            <p class="text_order">Order Summary</p>
-
-                            <p class="text_total">Total (5 items)<span>₱1,095.00</span></p>
-
-                            <hr />
-
-                            <p>Shipping</p>
-
-                            <p class="text_shipping_reminder">Total price does <span>not</span> include shipping and shipping costs vary per location.</p>
+                        <div class="field__container">
+                            <label for="lname">Nam</label>
+                            <input type="text" id="lname" placeholder="nam" />
+                        </div>
+                        <div class="field__container">
+                            <label for="mobile">Nam</label>
+                            <input type="text" id="mobile" placeholder="nam" />
+                        </div>
+                        <div class="field__container">
+                            <label for="email">Nam</label>
+                            <input type="text" id="email" placeholder="nam" />
                         </div>
                     </div>
+
+                    <hr />
+
+                    <p class="header-text">ADDRESS</p>
+
+                    <div class="profile__information__fields">
+                        <div class="field__container">
+                            <label for="fname">Nam</label>
+                            <input type="text" id="fname" placeholder="nam" />
+                        </div>
+                        <div class="field__container">
+                            <label for="lname">Nam</label>
+                            <input type="text" id="lname" placeholder="nam" />
+                        </div>
+                        <div class="field__container">
+                            <label for="mobile">Nam</label>
+                            <input type="text" id="mobile" placeholder="nam" />
+                        </div>
+                        <div class="field__container">
+                            <label for="email">Nam</label>
+                            <input type="text" id="email" placeholder="nam" />
+                        </div>
+                    </div>
+
+                    <button>Update</button>
+                </div>
+                <div class="profile__password">
+                    Password
                 </div>
             </div>
         </section>
