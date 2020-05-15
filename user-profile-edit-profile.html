@@ -97,12 +97,14 @@
             </ul>
         </nav>
 
+        <section class="breadcrumb">
+            <div>
+                <p>My Profile<img src="./assets/images/icons/angle-right.svg" alt=""><span>Edit Profile</span> </p>
+            </div>
+        </section>
+
         <section class="profile">
             <div>
-                <div class="profile__breadcrumb">
-                    <p>My Profile<img src="./assets/images/icons/angle-right.svg" alt=""><span>Edit Profile</span> </p>
-                </div>
-
                 <div class="profile__information">
                     <p class="header-text">PROFILE INFORMATION</p>
 
@@ -110,25 +112,26 @@
 
                     <div class="profile__information__picture">
                         <img src="./assets/images/user-default.svg" alt="">
-                        <button>Upload Photo<img src="./assets/images/red-line.svg" alt=""></button>
+                        <button class="sm-button bg-white">Upload Photo<img src="./assets/images/red-line.svg"
+                                alt=""></button>
                     </div>
 
                     <div class="profile__information__fields">
                         <div class="field__container">
-                            <label for="fname">Nam<span>*</span></label>
-                            <input type="text" id="fname" placeholder="nam" />
+                            <label for="fname">First Name <span>*</span></label>
+                            <input type="text" id="fname" placeholder="first name" value="Maan" />
                         </div>
                         <div class="field__container">
-                            <label for="lname">Nam</label>
-                            <input type="text" id="lname" placeholder="nam" />
+                            <label for="lname">last Name <span>*</span></label>
+                            <input type="text" id="lname" placeholder="last name" value="Parafina" />
                         </div>
                         <div class="field__container">
-                            <label for="mobile">Nam</label>
-                            <input type="text" id="mobile" placeholder="nam" />
+                            <label for="mobile">Mobile Number <span>*</span></label>
+                            <input type="text" id="mobile" placeholder="mobile number" value="+ 63 917 892 4225" />
                         </div>
                         <div class="field__container">
-                            <label for="email">Nam</label>
-                            <input type="text" id="email" placeholder="nam" />
+                            <label for="email">Email Address <span>*</span></label>
+                            <input type="text" id="email" placeholder="email address" value="maan.parafina@gmail.com" />
                         </div>
                     </div>
 
@@ -138,27 +141,77 @@
 
                     <div class="profile__information__fields">
                         <div class="field__container">
-                            <label for="fname">Nam</label>
-                            <input type="text" id="fname" placeholder="nam" />
+                            <label for="house">House # / Unit & Floor #, Blk or Lot # <span>*</span></label>
+                            <input type="text" id="house" />
                         </div>
                         <div class="field__container">
-                            <label for="lname">Nam</label>
-                            <input type="text" id="lname" placeholder="nam" />
+                            <label for="street">Street <span>*</span></label>
+                            <input type="text" id="street" />
                         </div>
                         <div class="field__container">
-                            <label for="mobile">Nam</label>
-                            <input type="text" id="mobile" placeholder="nam" />
+                            <label for="bldg">Building / Subdivision / Apartment / Village</label>
+                            <input type="text" id="bldg" />
                         </div>
                         <div class="field__container">
-                            <label for="email">Nam</label>
-                            <input type="text" id="email" placeholder="nam" />
+                            <label for="city">City <span>*</span></label>
+                            <select class="sm-select" name="" id="city" required>
+                                <option value="" disabled selected hidden>Select City</option>
+                                <option value="1">Pasig City</option>
+                                <option value="1">Marikina City</option>
+                                <option value="1">Quezon City</option>
+                            </select>
+                        </div>
+                        <div class="field__container">
+                            <label for="brgy">Barangay <span>*</span></label>
+                            <select class="sm-select" name="" id="brgy" required>
+                                <option value="" disabled selected hidden>Select Barangay</option>
+                                <option value="1">Barangay</option>
+                                <option value="1">Barangay</option>
+                                <option value="1">Barangay</option>
+                            </select>
+                        </div>
+                        <div class="field__container">
+                            <label for="prov">Province <span>*</span></label>
+                            <select class="sm-select" name="" id="prov" required>
+                                <option value="" disabled selected hidden>Select Province</option>
+                                <option value="1">Province</option>
+                                <option value="1">Province</option>
+                                <option value="1">Province</option>
+                            </select>
+                        </div>
+                        <div class="field__container">
+                            <label for="zip">Postal Zip Code <span>*</span></label>
+                            <input type="text" id="zip" />
                         </div>
                     </div>
 
-                    <button>Update</button>
+                    <button class="sm-button bg-blue">Update<img src="./assets/images/red-line.svg" alt=""></button>
                 </div>
-                <div class="profile__password">
-                    Password
+            </div>
+        </section>
+
+        <section class="password">
+            <div>
+                <div class="password__information">
+                    <p class="header-text">PASSWORD</p>
+                    <p class="changepassword-text">To change your password, please complete the following:</p>
+                    <div class="current_password">
+                        <div class="field__container">
+                            <label for="currPass">current Password <span>*</span></label>
+                            <input type="text" id="currPass" />
+                        </div>
+                    </div>
+                    <div class="new_password">
+                        <div class="field__container">
+                            <label for="currPass">New Password <span>*</span></label>
+                            <input type="text" id="currPass" placeholder="6+ alphanumeric characters" />
+                        </div>
+                        <div class="field__container">
+                            <label for="currPass">Confirm New Password <span>*</span></label>
+                            <input type="text" id="currPass" placeholder="6+ alphanumeric characters" />
+                        </div>
+                    </div>
+                    <button class="sm-button bg-blue">Update<img src="./assets/images/red-line.svg" alt=""></button>
                 </div>
             </div>
         </section>
@@ -174,6 +227,7 @@
             <span class="font-caption">© 2020 The SM Store. All rights reserved.</span>
         </footer>
         <!-- /FOOTER -->
+
 
 
     </div> <!-- /wrapper -->
