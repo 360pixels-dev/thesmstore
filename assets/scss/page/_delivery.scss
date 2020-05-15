@@ -1147,6 +1147,13 @@
 
 .carousel {
     &__item {
+        position: relative;
+
+        &:hover {
+            & > .color-picker {
+                display: flex;
+            }
+        }
 
         & > a {
             outline: none;
@@ -1211,6 +1218,7 @@
         }
 
       &__catalog {
+
         @include respond(mobile) {
             width: 160px !important;
            // margin: 0 0 60px 0 !important;
@@ -1226,6 +1234,60 @@
 .icon-email-branch {
     width: auto !important;
     margin-right: 8px;
+}
+
+
+.color-picker {
+    position: absolute;
+    display: none;
+    top: 65%;
+    transform: translateY(-50%);
+
+    &-item {
+        height: 20px;
+        width: 20px;
+        border-radius: 20px;
+        padding: 5px;
+        margin: 0 10.5px;
+        position: relative;
+        cursor: pointer;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            border-radius: 20px;
+        }
+
+        &.active {
+            &:after {
+                border: 1px solid $black;
+            }
+        }
+
+        & > input {
+            display: none;
+        }
+
+        &--black {
+            background-color: #312D2D;
+        }
+
+        &--red {
+            background-color: #D11D1E;
+        }
+
+        &--gold {
+            background-color: #E9C66E;
+        }
+
+        &--blue {
+            background-color: #2B8DC5;
+        }
+    }
 }
 
 

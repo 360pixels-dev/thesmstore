@@ -108,7 +108,10 @@ $(document).ready(function(){
         $('.modal--terms').parent().removeClass('active');
     });
 
-    $('.catalog-items .carousel__item').click(function() {
+    $('.catalog-items .carousel__item').click(function(e) {
+        if($(e.target).hasClass('color-picker-item') || $(e.target).attr('type') == 'checkbox') {
+            return false;
+        }
         $('.modal').addClass('active');
         $('body').css('overflow', 'hidden');
     });
@@ -259,15 +262,16 @@ $(document).ready(function(){
             $('.nav-user__menu').css('display', 'none');
         }
     });
+    
 
-    // $(document).on('click', function (e) {
-    //     // if (!$(e.target).closest('.nav-user div:nth-of-type(1)').length || !$(e.target).closest('.nav-user__menu').length) {
-    //     //     $('.nav-user__menu').css('display', 'none');
-    //     // }
-    //     if(!$(e.target).hasClass('nav-user__menu') || $(e.target).parent() !== $('.nav-user__hello')) {
-    //         $('.nav-user__menu').css('display', 'none');
-    //     }
-    // });
+    // COLOR PICKER ON CATALOG
+    $('.color-picker-item').click(function() {
+        $(this).parent().children().each(function() {
+            $(this).removeClass('active');
+        });
+        $(this).addClass('active');
+    });
+
 
 
     // AUTO SUGGESTION SEARCH BRANCH
