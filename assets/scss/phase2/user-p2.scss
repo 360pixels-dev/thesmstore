@@ -4,7 +4,6 @@
   min-height: calc(100vh - 160px);
   height: fit-content;
   padding-bottom: 100px;
-  
 
   & > div {
     width: 1400px;
@@ -199,7 +198,6 @@
           letter-spacing: 1.6px;
           text-transform: uppercase;
           color: #403f47;
-
         }
       }
 
@@ -240,6 +238,85 @@
       display: flex;
       flex-direction: column;
       margin-bottom: 24px;
+
+      @include respond(mobile) {
+        background: $light-periwinkle;
+
+        .user-orders__tbl-item_mobile:not(:first-child) {
+          margin-top: 16px;
+        }
+
+        & > .user-orders__tbl-item_mobile {
+          background-color: white;
+          border-radius: 8px;
+          overflow: hidden;
+
+          & > .order_details {
+            padding: 0 22px;
+            padding-bottom: 26px;
+            color: #161720;
+            font-family: Open Sans;
+            font-style: normal;
+
+            & > .label {
+              margin-top: 16px;
+              font-weight: normal;
+              font-size: 12px;
+              line-height: 18px;
+            }
+
+            & > .value {
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 22px;
+              text-transform: capitalize;
+
+              &.cancelled {
+                color: #FF4E4E;
+              }
+
+              &.completed {
+                color: #55C9A5;
+              }
+            }
+          }
+
+          & > .order_number {
+            background: #ebeef8;
+            display: flex;
+
+            & > p {
+              font-family: Open Sans;
+              font-style: normal;
+              font-weight: 600;
+              font-size: 12px;
+              line-height: 18px;
+              text-align: right;
+              letter-spacing: 2px;
+              text-transform: uppercase;
+              color: #88898f;
+              padding: 14px 0;
+              padding-left: 20px;
+
+              & > span {
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+                color: #161720;
+              }
+            }
+
+            & > img {
+              margin-left: auto;
+              margin-right: 32px;
+              cursor: pointer;
+            }
+          }
+        }
+      }
 
       &-header {
         padding: 0 24px;
