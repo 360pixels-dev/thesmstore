@@ -7349,10 +7349,104 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           display: flex; }
           @media only screen and (max-width: 600px) {
             .user-orders__details__pricing__item {
-              flex-flow: column; } }
+              flex-flow: column; }
+              .user-orders__details__pricing__item.to-flex-row {
+                flex-flow: row wrap; }
+                .user-orders__details__pricing__item.to-flex-row > .item_column_big {
+                  display: flex; }
+                  .user-orders__details__pricing__item.to-flex-row > .item_column_big > div {
+                    padding-top: 10px;
+                    height: 100%; }
+                  .user-orders__details__pricing__item.to-flex-row > .item_column_big > div > .value {
+                    margin-top: auto;
+                    font-size: 12px;
+                    line-height: 18px; }
+                .user-orders__details__pricing__item.to-flex-row > .remove {
+                  margin-top: 15px;
+                  margin-bottom: 12px;
+                  display: flex;
+                  cursor: pointer;
+                  flex-basis: 100%;
+                  justify-content: flex-end;
+                  font-weight: bold;
+                  font-size: 12px;
+                  line-height: 16px;
+                  text-align: right;
+                  letter-spacing: 1.6px;
+                  text-transform: uppercase;
+                  color: #88898f; }
+                .user-orders__details__pricing__item.to-flex-row > .item_column {
+                  padding-left: 34px;
+                  display: flex;
+                  flex: 1 0 100%;
+                  justify-content: flex-start;
+                  padding-right: 26px;
+                  margin-top: 22px; }
+                  .user-orders__details__pricing__item.to-flex-row > .item_column > .label {
+                    margin: 0;
+                    width: 35%; }
+                  .user-orders__details__pricing__item.to-flex-row > .item_column > .value {
+                    width: 40%; }
+                  .user-orders__details__pricing__item.to-flex-row > .item_column > select {
+                    padding: 8px 25px 8px 15px;
+                    font-size: 16px;
+                    border: 1px solid #ccc;
+                    height: 40px;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                    background-color: white !important;
+                    background: url(./../images/icons/angle-down.svg) 80%/12% no-repeat white; } }
           @media only screen and (max-width: mobile) {
             .user-orders__details__pricing__item {
-              flex-flow: column; } }
+              flex-flow: column; }
+              .user-orders__details__pricing__item.to-flex-row {
+                flex-flow: row wrap; }
+                .user-orders__details__pricing__item.to-flex-row > .item_column_big {
+                  display: flex; }
+                  .user-orders__details__pricing__item.to-flex-row > .item_column_big > div {
+                    padding-top: 10px;
+                    height: 100%; }
+                  .user-orders__details__pricing__item.to-flex-row > .item_column_big > div > .value {
+                    margin-top: auto;
+                    font-size: 12px;
+                    line-height: 18px; }
+                .user-orders__details__pricing__item.to-flex-row > .remove {
+                  margin-top: 15px;
+                  margin-bottom: 12px;
+                  display: flex;
+                  cursor: pointer;
+                  flex-basis: 100%;
+                  justify-content: flex-end;
+                  font-weight: bold;
+                  font-size: 12px;
+                  line-height: 16px;
+                  text-align: right;
+                  letter-spacing: 1.6px;
+                  text-transform: uppercase;
+                  color: #88898f; }
+                .user-orders__details__pricing__item.to-flex-row > .item_column {
+                  padding-left: 34px;
+                  display: flex;
+                  flex: 1 0 100%;
+                  justify-content: flex-start;
+                  padding-right: 26px;
+                  margin-top: 22px; }
+                  .user-orders__details__pricing__item.to-flex-row > .item_column > .label {
+                    margin: 0;
+                    width: 35%; }
+                  .user-orders__details__pricing__item.to-flex-row > .item_column > .value {
+                    width: 40%; }
+                  .user-orders__details__pricing__item.to-flex-row > .item_column > select {
+                    padding: 8px 25px 8px 15px;
+                    font-size: 16px;
+                    border: 1px solid #ccc;
+                    height: 40px;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                    background-color: white !important;
+                    background: url(./../images/icons/angle-down.svg) 80%/12% no-repeat white; } }
           .user-orders__details__pricing__item > .item_column {
             flex: 1;
             flex-flow: column;
@@ -7486,6 +7580,14 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
                 font-size: 16px;
                 line-height: 24px;
                 color: #403f47; }
+                @media only screen and (max-width: 600px) {
+                  .user-orders__details__pricing__item > .item_column_big > div > .description {
+                    font-size: 14px;
+                    line-height: 22px; } }
+                @media only screen and (max-width: mobile) {
+                  .user-orders__details__pricing__item > .item_column_big > div > .description {
+                    font-size: 14px;
+                    line-height: 22px; } }
           @media only screen and (max-width: 600px) {
             .user-orders__details__pricing__item > .item_column {
               display: flex;
@@ -7625,6 +7727,14 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
             font-size: 16px;
             line-height: 24px;
             color: #403f47; }
+            @media only screen and (max-width: 600px) {
+              .user-orders__details__pricing__checkbox > .servicing_branch {
+                font-size: 12px;
+                line-height: 18px; } }
+            @media only screen and (max-width: mobile) {
+              .user-orders__details__pricing__checkbox > .servicing_branch {
+                font-size: 12px;
+                line-height: 18px; } }
           .user-orders__details__pricing__checkbox label {
             flex: 1; }
             .user-orders__details__pricing__checkbox label > .servicing_branch {
@@ -7636,6 +7746,14 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
               font-size: 16px;
               line-height: 24px;
               color: #403f47; }
+              @media only screen and (max-width: 600px) {
+                .user-orders__details__pricing__checkbox label > .servicing_branch {
+                  font-size: 12px;
+                  line-height: 18px; } }
+              @media only screen and (max-width: mobile) {
+                .user-orders__details__pricing__checkbox label > .servicing_branch {
+                  font-size: 12px;
+                  line-height: 18px; } }
       .user-orders__details__item {
         margin-top: 24px;
         padding: 24px;
@@ -7951,7 +8069,9 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         width: 100%;
         font-family: Open Sans;
         font-style: normal;
-        padding: 10px; }
+        padding: 10px;
+        border: 1px solid #88898F;
+        resize: none; }
       .user-orders__summary > button {
         width: 100%;
         margin-top: 20px;

@@ -665,6 +665,68 @@
 
           @include respond(mobile) {
             flex-flow: column;
+
+            &.to-flex-row {
+              flex-flow: row wrap;
+
+              & > .item_column_big {
+                display: flex;
+
+                & > div {
+                  padding-top: 10px;
+                  height: 100%;
+                }
+
+                & > div > .value {
+                  margin-top: auto;
+                  font-size: 12px;
+                  line-height: 18px;
+                }
+              }
+              & > .remove {
+                margin-top: 15px;
+                margin-bottom: 12px;
+                display: flex;
+                cursor: pointer;
+                flex-basis: 100%;
+                justify-content: flex-end;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 16px;
+                text-align: right;
+                letter-spacing: 1.6px;
+                text-transform: uppercase;
+                color: #88898f;
+              }
+
+              & > .item_column {
+                padding-left: 34px;
+                display: flex;
+                flex: 1 0 100%;
+                justify-content: flex-start;
+                padding-right: 26px;
+                margin-top: 22px;
+
+                & > .label {
+                  margin: 0;
+                  width: 35%;
+                }
+                & > .value {
+                  width: 40%;
+                }
+                & > select {
+                  padding: 8px 25px 8px 15px;
+                  font-size: 16px;
+                  border: 1px solid #ccc;
+                  height: 40px;
+                  -webkit-appearance: none;
+                  -moz-appearance: none;
+                  appearance: none;
+                  background-color: white !important;
+                  background: url(./../images/icons/angle-down.svg) 80% / 12% no-repeat white;
+                }
+              }
+            }
           }
 
           & > .item_column {
@@ -785,6 +847,11 @@
                 font-size: 16px;
                 line-height: 24px;
                 color: #403f47;
+
+                @include respond(mobile) {
+                  font-size: 14px;
+                  line-height: 22px;
+                }
               }
             }
           }
@@ -970,6 +1037,11 @@
             font-size: 16px;
             line-height: 24px;
             color: #403f47;
+
+            @include respond(mobile) {
+              font-size: 12px;
+              line-height: 18px;
+            }
           }
 
           & label {
@@ -983,6 +1055,10 @@
               font-size: 16px;
               line-height: 24px;
               color: #403f47;
+              @include respond(mobile) {
+                font-size: 12px;
+                line-height: 18px;
+              }
             }
           }
         }
@@ -1322,6 +1398,8 @@
         font-family: Open Sans;
         font-style: normal;
         padding: 10px;
+        border: 1px solid #88898F;
+        resize: none;
       }
 
       & > button {
