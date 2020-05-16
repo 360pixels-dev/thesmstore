@@ -7591,6 +7591,12 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       color: #403f47;
       padding: 16px 24px;
       background: #ffffff; }
+      @media only screen and (max-width: 600px) {
+        .user-orders__cancelled {
+          padding-top: 0; } }
+      @media only screen and (max-width: mobile) {
+        .user-orders__cancelled {
+          padding-top: 0; } }
     .user-orders__success {
       background-color: white;
       width: 808px;
@@ -7850,6 +7856,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         font-size: 14px;
         line-height: 22px;
         color: #403f47; }
+        .user-orders__summary > .text_shipping_reminder > span {
+          font-weight: bold; }
       .user-orders__summary > .need-text {
         font-family: Open Sans;
         font-style: normal;

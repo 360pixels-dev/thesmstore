@@ -977,6 +977,11 @@
 
       padding: 16px 24px;
       background: #ffffff;
+
+      @include respond(mobile) {
+        padding-top: 0;
+      }
+
     }
 
     &__success {
@@ -1240,6 +1245,10 @@
         font-size: 14px;
         line-height: 22px;
         color: #403f47;
+
+        & > span {
+          font-weight: bold;
+        }
       }
 
       & > .need-text {
