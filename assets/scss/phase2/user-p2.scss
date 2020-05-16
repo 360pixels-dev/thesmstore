@@ -1116,6 +1116,7 @@
       font-style: normal;
       font-weight: bold;
 
+
       &__message {
         flex: 1 0 100%;
         font-family: Open Sans;
@@ -1285,7 +1286,6 @@
     &__summary__container {
       & > button {
         margin: 24px;
-
         width: 100%;
         margin-top: 20px;
         display: flex;
@@ -1303,6 +1303,10 @@
         letter-spacing: 3px;
         text-transform: uppercase;
         color: #ffffff;
+
+        @include respond(mobile) {
+          margin-left: 0;
+        }
 
         & > img {
           padding-left: 8px;
