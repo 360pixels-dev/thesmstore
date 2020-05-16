@@ -571,14 +571,23 @@
       display: flex;
       flex-flow: row nowrap;
 
+      @include respond(mobile) {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+      }
+
       &__pricing {
         margin-top: 24px;
         background: #ffffff;
         box-shadow: $soft-shadow;
         border-radius: 4px;
         width: 808px;
-
         padding: 16px 24px 24px 24px;
+
+        @include respond(mobile) {
+          width: 100%;
+        }
 
         &__item:first-of-type {
           margin-top: 16px;
@@ -598,10 +607,20 @@
           font-size: 16px;
           line-height: 24px;
           color: #403f47;
+
+          @include respond(mobile) {
+            font-size: 12px;
+            line-height: 18px;
+          }
         }
 
         &__item {
           display: flex;
+
+          @include respond(mobile) {
+            flex-flow: column;
+          }
+
           & > .item_column {
             flex: 1;
             flex-flow: column;
@@ -633,6 +652,75 @@
             display: flex;
             align-items: center;
 
+            @include respond(mobile) {
+              & > div {
+                display: flex;
+                flex-flow: row wrap;
+                font-family: Open Sans;
+                font-style: normal;
+                justify-content: space-between;
+                padding-right: 0 !important;
+
+                & > .item_column_big__item {
+                  display: flex;
+                  flex-flow: column;
+                  flex: 3 0 50%;
+
+                  & > .name {
+                    font-weight: bold;
+                    font-size: 12px;
+                    line-height: 16px;
+                    letter-spacing: 1.6px;
+                    text-transform: uppercase;
+                    color: #88898f;
+                  }
+
+                  & > .description {
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 22px;
+                    text-transform: capitalize;
+                    color: #403f47;
+                  }
+                }
+
+                & > .item_column_big__price {
+                  // background-color: red;
+                  display: flex;
+                  flex: 1 2 30%;
+                  align-self: center;
+                  justify-content: flex-end;
+
+                  & > p {
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: #403f47;
+                  }
+                }
+
+                & > .item_column_big__qty {
+                  // background-color: red;
+                  display: flex;
+                  flex: 1 2 100%;
+                  font-style: italic;
+                  display: flex;
+                  align-items: center;
+                  color: #88898f;
+
+                  & > .label,
+                  & > .value {
+                    font-size: 12px;
+                    line-height: 18px;
+                  }
+
+                  & > .value {
+                    margin-left: 5px;
+                  }
+                }
+              }
+            }
+
             & > div {
               padding-left: 8px;
               padding-right: 25px;
@@ -651,6 +739,18 @@
                 font-size: 16px;
                 line-height: 24px;
                 color: #403f47;
+              }
+            }
+          }
+
+          @include respond(mobile) {
+            & > .item_column {
+              display: flex;
+              flex-flow: row nowrap;
+              justify-content: flex-end;
+
+              & > .label {
+                margin-right: 14px;
               }
             }
           }
@@ -675,6 +775,8 @@
               text-transform: uppercase;
               color: #88898f;
             }
+
+            
 
             & > .item_column {
               flex: 1 1 33%;
@@ -961,18 +1063,61 @@
       font-family: Open Sans;
       font-style: normal;
       font-weight: bold;
-      // background-color: red;
-      // flex-flow: row wrap;
 
-      // &__success {
-      //   display: flex;
-      //   flex: 1 0 100%;
-      // }
+      @include respond(desktop) {
+        display: flex;
+      }
+
+      @include respond(mobile) {
+        display: none;
+        width: 100%;
+        padding: 0;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
+        background-color: white;
+
+        &__header {
+          display: flex;
+          align-content: center;
+          background-color: #ebeef8;
+          padding: 14px 20px 10px 20px;
+          margin-bottom: 22px;
+
+          &__label {
+            display: flex;
+            align-self: center;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #88898f;
+            margin-right: 12px;
+          }
+
+          &__content {
+            display: flex;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            color: #161720;
+          }
+        }
+      }
 
       &__column {
         display: flex;
         flex: 1 2 33%;
         flex-flow: column;
+
+        @include respond(mobile) {
+          padding: 0 22px 16px 22px;
+          &:last-child {
+            padding-bottom: 22px;
+          }
+        }
 
         &__label {
           font-size: 12px;
@@ -980,6 +1125,16 @@
           letter-spacing: 3px;
           text-transform: uppercase;
           color: #88898f;
+
+          @include respond(mobile) {
+            letter-spacing: unset;
+            text-transform: capitalize;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 18px;
+            color: #161720;
+          }
         }
 
         &__content {
@@ -987,6 +1142,14 @@
           font-size: 20px;
           line-height: 30px;
           color: #161720;
+
+          @include respond(mobile) {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 22px;
+            text-transform: capitalize;
+            color: #161720;
+          }
 
           &.cancelled {
             color: #ff4e4e;
