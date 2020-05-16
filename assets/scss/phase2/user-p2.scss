@@ -501,6 +501,13 @@
       display: flex;
       flex-flow: row nowrap;
 
+      @include respond(mobile) {
+        flex-flow: column;
+        & > div {
+          width: 100%;
+        }
+      }
+
       &__account {
         margin-right: 0;
         padding: 24px;
@@ -508,6 +515,15 @@
         box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
         border-radius: 4px;
         width: 808px;
+
+        @include respond(desktop) {
+          display: block;
+        }
+    
+        @include respond(mobile) {
+          display: none;
+          width: 100%;
+        }
 
         & > .first {
           & > p {

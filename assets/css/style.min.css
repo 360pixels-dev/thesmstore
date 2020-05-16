@@ -7178,6 +7178,16 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     .user-orders__basket {
       display: flex;
       flex-flow: row nowrap; }
+      @media only screen and (max-width: 600px) {
+        .user-orders__basket {
+          flex-flow: column; }
+          .user-orders__basket > div {
+            width: 100%; } }
+      @media only screen and (max-width: mobile) {
+        .user-orders__basket {
+          flex-flow: column; }
+          .user-orders__basket > div {
+            width: 100%; } }
       .user-orders__basket__account {
         margin-right: 0;
         padding: 24px;
@@ -7185,6 +7195,20 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
         border-radius: 4px;
         width: 808px; }
+        @media only screen and (min-width: 841px) and (max-width: 1400px) {
+          .user-orders__basket__account {
+            display: block; } }
+        @media only screen and (max-width: desktop) {
+          .user-orders__basket__account {
+            display: block; } }
+        @media only screen and (max-width: 600px) {
+          .user-orders__basket__account {
+            display: none;
+            width: 100%; } }
+        @media only screen and (max-width: mobile) {
+          .user-orders__basket__account {
+            display: none;
+            width: 100%; } }
         .user-orders__basket__account > .first > p {
           font-family: Open Sans;
           font-style: normal;
