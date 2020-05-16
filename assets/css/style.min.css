@@ -7204,11 +7204,41 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         @media only screen and (max-width: 600px) {
           .user-orders__basket__account {
             display: none;
-            width: 100%; } }
+            width: 100%; }
+            .user-orders__basket__account > p {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-top: 25px;
+              letter-spacing: 1.6px;
+              text-transform: uppercase;
+              color: #397cee;
+              font-family: Open Sans;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 14px;
+              line-height: 20px; }
+              .user-orders__basket__account > p > img {
+                margin-right: 11px; } }
         @media only screen and (max-width: mobile) {
           .user-orders__basket__account {
             display: none;
-            width: 100%; } }
+            width: 100%; }
+            .user-orders__basket__account > p {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-top: 25px;
+              letter-spacing: 1.6px;
+              text-transform: uppercase;
+              color: #397cee;
+              font-family: Open Sans;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 14px;
+              line-height: 20px; }
+              .user-orders__basket__account > p > img {
+                margin-right: 11px; } }
         .user-orders__basket__account > .first > p {
           font-family: Open Sans;
           font-style: normal;
@@ -7239,6 +7269,12 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           font-family: Open Sans;
           font-style: normal;
           color: #161720; }
+          @media only screen and (max-width: 600px) {
+            .user-orders__basket__account__info {
+              margin-top: 16px; } }
+          @media only screen and (max-width: mobile) {
+            .user-orders__basket__account__info {
+              margin-top: 16px; } }
           .user-orders__basket__account__info__label {
             font-weight: normal;
             font-size: 12px;
@@ -7249,6 +7285,18 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
             font-weight: 600;
             font-size: 16px;
             line-height: 24px; }
+            @media only screen and (max-width: 600px) {
+              .user-orders__basket__account__info__content {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 22px;
+                color: #161720; } }
+            @media only screen and (max-width: mobile) {
+              .user-orders__basket__account__info__content {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 22px;
+                color: #161720; } }
     .user-orders__details {
       display: flex;
       flex-flow: row nowrap; }
