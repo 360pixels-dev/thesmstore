@@ -593,7 +593,7 @@
           margin-top: 16px;
         }
 
-        & > hr {
+        & hr {
           color: #ebeef8;
           margin: 24px 0;
         }
@@ -775,8 +775,6 @@
               text-transform: uppercase;
               color: #88898f;
             }
-
-            
 
             & > .item_column {
               flex: 1 1 33%;
@@ -1200,6 +1198,13 @@
       font-size: 16px;
       line-height: 24px;
       color: #161720;
+      box-shadow: 0px 7px 10px rgba(201, 208, 222, 0.25);
+      border-radius: 4px;
+
+      @include respond(mobile) {
+        margin: 0;
+        margin-top: 24px;
+      }
 
       & > .text_order {
         font-weight: bold;

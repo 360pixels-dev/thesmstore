@@ -7253,7 +7253,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
             width: 100%; } }
         .user-orders__details__pricing__item:first-of-type {
           margin-top: 16px; }
-        .user-orders__details__pricing > hr {
+        .user-orders__details__pricing hr {
           color: #ebeef8;
           margin: 24px 0; }
         .user-orders__details__pricing > p {
@@ -7814,7 +7814,17 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       font-weight: normal;
       font-size: 16px;
       line-height: 24px;
-      color: #161720; }
+      color: #161720;
+      box-shadow: 0px 7px 10px rgba(201, 208, 222, 0.25);
+      border-radius: 4px; }
+      @media only screen and (max-width: 600px) {
+        .user-orders__summary {
+          margin: 0;
+          margin-top: 24px; } }
+      @media only screen and (max-width: mobile) {
+        .user-orders__summary {
+          margin: 0;
+          margin-top: 24px; } }
       .user-orders__summary > .text_order {
         font-weight: bold;
         margin-bottom: 16px; }
