@@ -12510,59 +12510,63 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
               font-size: 16px;
               line-height: 24px; } }
 
-.carousel__item > a {
-  outline: none; }
-.carousel__item img {
-  width: 240px;
-  height: 360px; }
+.carousel__item {
+  position: relative; }
+  .carousel__item:hover > .color-picker {
+    display: flex; }
+  .carousel__item > a {
+    outline: none; }
+  .carousel__item img {
+    width: 240px;
+    height: 360px; }
+    @media only screen and (max-width: 600px) {
+      .carousel__item img {
+        width: 160px;
+        height: 280px; } }
+    @media only screen and (max-width: mobile) {
+      .carousel__item img {
+        width: 160px;
+        height: 280px; } }
+  .carousel__item__link {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #403F47;
+    text-decoration: none;
+    margin-bottom: 30px; }
+    @media only screen and (max-width: 1024px) {
+      .carousel__item__link h4 {
+        font-size: 16px;
+        line-height: 24px; } }
+    @media only screen and (max-width: tablet) {
+      .carousel__item__link h4 {
+        font-size: 16px;
+        line-height: 24px; } }
+  @media only screen and (max-width: 1260px) {
+    .carousel__item {
+      margin: 20px; } }
   @media only screen and (max-width: 600px) {
-    .carousel__item img {
-      width: 160px;
-      height: 280px; } }
+    .carousel__item {
+      margin: 0 8px 0; } }
   @media only screen and (max-width: mobile) {
-    .carousel__item img {
-      width: 160px;
-      height: 280px; } }
-.carousel__item__link {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 30px;
-  text-align: center;
-  color: #403F47;
-  text-decoration: none;
-  margin-bottom: 30px; }
-  @media only screen and (max-width: 1024px) {
-    .carousel__item__link h4 {
-      font-size: 16px;
-      line-height: 24px; } }
-  @media only screen and (max-width: tablet) {
-    .carousel__item__link h4 {
-      font-size: 16px;
-      line-height: 24px; } }
-@media only screen and (max-width: 1260px) {
-  .carousel__item {
-    margin: 20px; } }
-@media only screen and (max-width: 600px) {
-  .carousel__item {
-    margin: 0 8px 0; } }
-@media only screen and (max-width: mobile) {
-  .carousel__item {
-    margin: 0 8px 0; } }
-@media only screen and (max-width: 972px) {
-  .carousel__item--2 {
-    display: none !important; } }
-@media only screen and (max-width: 1020px) {
-  .carousel__item--3 {
-    display: none !important; } }
-@media only screen and (max-width: 1260px) {
-  .carousel__item--4 {
-    display: none !important; } }
-@media only screen and (max-width: 600px) {
-  .carousel__item__catalog {
-    width: 160px !important; } }
-@media only screen and (max-width: mobile) {
-  .carousel__item__catalog {
-    width: 160px !important; } }
+    .carousel__item {
+      margin: 0 8px 0; } }
+  @media only screen and (max-width: 972px) {
+    .carousel__item--2 {
+      display: none !important; } }
+  @media only screen and (max-width: 1020px) {
+    .carousel__item--3 {
+      display: none !important; } }
+  @media only screen and (max-width: 1260px) {
+    .carousel__item--4 {
+      display: none !important; } }
+  @media only screen and (max-width: 600px) {
+    .carousel__item__catalog {
+      width: 160px !important; } }
+  @media only screen and (max-width: mobile) {
+    .carousel__item__catalog {
+      width: 160px !important; } }
 
 .container-email-branch {
   justify-content: left !important; }
@@ -12570,6 +12574,40 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 .icon-email-branch {
   width: auto !important;
   margin-right: 8px; }
+
+.color-picker {
+  position: absolute;
+  display: none;
+  top: 65%;
+  transform: translateY(-50%); }
+  .color-picker-item {
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 0 10.5px;
+    position: relative;
+    cursor: pointer; }
+    .color-picker-item:after {
+      content: '';
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      right: -5px;
+      bottom: -5px;
+      border-radius: 20px; }
+    .color-picker-item.active:after {
+      border: 1px solid #161720; }
+    .color-picker-item > input {
+      display: none; }
+    .color-picker-item--black {
+      background-color: #312D2D; }
+    .color-picker-item--red {
+      background-color: #D11D1E; }
+    .color-picker-item--gold {
+      background-color: #E9C66E; }
+    .color-picker-item--blue {
+      background-color: #2B8DC5; }
 
 @media only screen and (max-width: 414px) {
   .slick-current.slick-active {
