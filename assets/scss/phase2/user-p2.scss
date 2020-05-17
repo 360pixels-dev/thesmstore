@@ -562,6 +562,13 @@
         }
       }
 
+      @include respond(tablet) {
+        flex-flow: column;
+        & > div {
+          width: 100%;
+        }
+      }
+
       &__account {
         margin-right: 0;
         padding: 24px;
@@ -572,6 +579,10 @@
 
         @include respond(desktop) {
           display: block;
+        }
+
+        @include respond(tablet) {
+          width: 100%;
         }
 
         @include respond(mobile) {
@@ -641,6 +652,14 @@
 
           @include respond(mobile) {
             margin-top: 16px;
+          }
+
+          @include respond(tablet) {
+            padding-right: 30px;
+
+            &:last-child {
+              padding-right: 0;
+            }
           }
 
           &__label {

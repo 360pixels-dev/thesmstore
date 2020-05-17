@@ -7274,6 +7274,16 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           flex-flow: column; }
           .user-orders__basket > div {
             width: 100%; } }
+      @media only screen and (max-width: 1024px) {
+        .user-orders__basket {
+          flex-flow: column; }
+          .user-orders__basket > div {
+            width: 100%; } }
+      @media only screen and (max-width: tablet) {
+        .user-orders__basket {
+          flex-flow: column; }
+          .user-orders__basket > div {
+            width: 100%; } }
       .user-orders__basket__account {
         margin-right: 0;
         padding: 24px;
@@ -7287,6 +7297,12 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         @media only screen and (max-width: desktop) {
           .user-orders__basket__account {
             display: block; } }
+        @media only screen and (max-width: 1024px) {
+          .user-orders__basket__account {
+            width: 100%; } }
+        @media only screen and (max-width: tablet) {
+          .user-orders__basket__account {
+            width: 100%; } }
         @media only screen and (max-width: 600px) {
           .user-orders__basket__account {
             display: none;
@@ -7361,6 +7377,16 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           @media only screen and (max-width: mobile) {
             .user-orders__basket__account__info {
               margin-top: 16px; } }
+          @media only screen and (max-width: 1024px) {
+            .user-orders__basket__account__info {
+              padding-right: 30px; }
+              .user-orders__basket__account__info:last-child {
+                padding-right: 0; } }
+          @media only screen and (max-width: tablet) {
+            .user-orders__basket__account__info {
+              padding-right: 30px; }
+              .user-orders__basket__account__info:last-child {
+                padding-right: 0; } }
           .user-orders__basket__account__info__label {
             font-weight: normal;
             font-size: 12px;
