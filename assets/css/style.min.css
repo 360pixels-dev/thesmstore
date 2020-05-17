@@ -7928,6 +7928,12 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       font-family: Open Sans;
       font-style: normal;
       font-weight: bold; }
+      @media only screen and (max-width: 1024px) {
+        .user-orders__success {
+          width: 100%; } }
+      @media only screen and (max-width: tablet) {
+        .user-orders__success {
+          width: 100%; } }
       .user-orders__success__message {
         flex: 1 0 100%;
         font-family: Open Sans;
@@ -8138,6 +8144,12 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         .user-orders__summary__container > button {
           margin-left: 0; } }
       @media only screen and (max-width: mobile) {
+        .user-orders__summary__container > button {
+          margin-left: 0; } }
+      @media only screen and (max-width: 1024px) {
+        .user-orders__summary__container > button {
+          margin-left: 0; } }
+      @media only screen and (max-width: tablet) {
         .user-orders__summary__container > button {
           margin-left: 0; } }
       .user-orders__summary__container > button > img {
@@ -8436,6 +8448,14 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       .breadcrumb > div {
         width: 100%;
         padding: 15px; } }
+    @media only screen and (max-width: 1024px) {
+      .breadcrumb > div {
+        width: 100%;
+        padding: 30px; } }
+    @media only screen and (max-width: tablet) {
+      .breadcrumb > div {
+        width: 100%;
+        padding: 30px; } }
     .breadcrumb > div > p {
       font-family: Open Sans;
       font-style: normal;
@@ -8514,6 +8534,16 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         width: 100%;
         padding: 15px;
         height: auto; } }
+    @media only screen and (max-width: 1024px) {
+      .password > div {
+        width: 100%;
+        padding: 30px;
+        height: auto; } }
+    @media only screen and (max-width: tablet) {
+      .password > div {
+        width: 100%;
+        padding: 30px;
+        height: auto; } }
   .password__information {
     background-color: white;
     width: 90%;
@@ -8536,6 +8566,20 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         border-radius: 8px;
         padding-left: 10px;
         padding-right: 10px; } }
+    @media only screen and (max-width: 1024px) {
+      .password__information {
+        width: 100%;
+        box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
+        border-radius: 8px;
+        padding-left: 10px;
+        padding-right: 10px; } }
+    @media only screen and (max-width: tablet) {
+      .password__information {
+        width: 100%;
+        box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
+        border-radius: 8px;
+        padding-left: 10px;
+        padding-right: 10px; } }
     .password__information > .header-text {
       font-family: Josefin Sans;
       font-style: normal;
@@ -8550,6 +8594,16 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           line-height: 30px;
           letter-spacing: unset; } }
       @media only screen and (max-width: mobile) {
+        .password__information > .header-text {
+          font-size: 20px;
+          line-height: 30px;
+          letter-spacing: unset; } }
+      @media only screen and (max-width: 1024px) {
+        .password__information > .header-text {
+          font-size: 20px;
+          line-height: 30px;
+          letter-spacing: unset; } }
+      @media only screen and (max-width: tablet) {
         .password__information > .header-text {
           font-size: 20px;
           line-height: 30px;
@@ -8636,6 +8690,12 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   @media only screen and (max-width: mobile) {
     .profile {
       height: auto; } }
+  @media only screen and (max-width: 1024px) {
+    .profile {
+      height: auto; } }
+  @media only screen and (max-width: tablet) {
+    .profile {
+      height: auto; } }
   .profile > div {
     width: 1400px;
     height: 740px;
@@ -8651,6 +8711,16 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       .profile > div {
         width: 100%;
         padding: 15px;
+        height: auto; } }
+    @media only screen and (max-width: 1024px) {
+      .profile > div {
+        width: 100%;
+        padding: 30px;
+        height: auto; } }
+    @media only screen and (max-width: tablet) {
+      .profile > div {
+        width: 100%;
+        padding: 30px;
         height: auto; } }
   .profile__information {
     background-color: white;
@@ -8674,6 +8744,20 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         border-radius: 8px;
         padding-left: 10px;
         padding-right: 10px; } }
+    @media only screen and (max-width: 1024px) {
+      .profile__information {
+        width: 100%;
+        box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
+        border-radius: 8px;
+        padding-left: 10px;
+        padding-right: 10px; } }
+    @media only screen and (max-width: tablet) {
+      .profile__information {
+        width: 100%;
+        box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
+        border-radius: 8px;
+        padding-left: 10px;
+        padding-right: 10px; } }
     .profile__information > .header-text {
       font-family: Josefin Sans;
       font-style: normal;
@@ -8688,6 +8772,16 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           line-height: 30px;
           letter-spacing: unset; } }
       @media only screen and (max-width: mobile) {
+        .profile__information > .header-text {
+          font-size: 20px;
+          line-height: 30px;
+          letter-spacing: unset; } }
+      @media only screen and (max-width: 1024px) {
+        .profile__information > .header-text {
+          font-size: 20px;
+          line-height: 30px;
+          letter-spacing: unset; } }
+      @media only screen and (max-width: tablet) {
         .profile__information > .header-text {
           font-size: 20px;
           line-height: 30px;
