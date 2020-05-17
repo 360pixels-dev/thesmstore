@@ -60,7 +60,7 @@
 
                 & > .gift-header__text {
                     & > h3 {
-                        color: $teal;
+                            color: $teal;
                     }
                 }
             }
@@ -75,12 +75,14 @@
             & > div {
                 background-color: $white;
 
-                & > h3 {
-                    &:nth-of-type(1) {
-                        color: #DEAF3B;
-                    }
-                    &:nth-of-type(2) {
-                        color: $coral;
+                & > .gift-header__text {
+                    & > h3 {
+                        &:nth-of-type(1) {
+                            color: #DEAF3B;
+                        }
+                        &:nth-of-type(2) {
+                            color: $coral;
+                        }
                     }
                 }
             }
@@ -160,6 +162,153 @@
 
             @include respond(1180px) {
 
+            }
+        }
+    }
+
+    &-wrapping {
+        width: 100%;
+        background-color: $blush;
+        margin-top: -114px;
+
+        @include respond(mobile) {
+            margin-top: -280px;
+        }
+
+        & > div {
+            position: relative;
+            width: 1400px;
+            min-height: 514px;
+            display: flex;
+            padding: 110px 0 0 193px;
+            margin: 0 auto;
+
+            @include respond(tablet) {
+                padding: 110px 32px 49px 32px;
+                min-height: 593px;
+                width: 100%;
+            }
+
+            @include respond(mobile) {
+                padding: 200px 12px 49px 12px;
+            }
+        }
+
+        &__slider {
+            &-content {
+                margin-top: 69px;
+                min-width: 351px;
+                height: 165px;
+                position: relative;
+                margin-right: 64px;
+
+                @include respond(tablet) {
+                    margin-top: 0;
+                    height: 400px;
+                    margin-right: 0;
+                }
+
+                @include respond(mobile) {
+                    margin-top: 80px;
+                    height: 380px;
+                }
+                
+                & > h2 {
+                    color: $black;
+
+                    @include respond(mobile) {
+                        font-size: 20px;
+                        line-height: 30px;
+                        font-weight: bold;
+                    }
+                }
+
+                & > p {
+                    color: $black;
+                }
+            }
+
+            &-slides {
+                display: flex;
+                width: 100%;
+
+                @include respond(tablet) {
+                    position: absolute;
+                    top: 250px;
+                }
+
+                @include respond(mobile) {
+                    top: 410px;
+                }
+
+                & > img {
+                    height: 325px;
+                    width: 262px;
+                    margin-right: 16px;
+
+                    @include respond(tablet) {
+                        width: 160px;
+                        height: 198.12px;
+                    }
+                }
+            }
+        }
+
+        &__controls {
+            position: absolute;
+            bottom: 0;
+
+            @include respond(tablet) {
+                right: 0;
+            }
+        }
+    }
+
+    &-bags {
+        width: 100%;
+
+        & > div {
+            position: relative;
+            max-width: 1400px;
+            min-height: 690px;
+            padding: 92px 88px 64px 88px;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            align-items: center;
+
+            @include respond(tablet) {
+                padding: 32px;
+            }
+
+            @include respond(mobile) {
+                padding: 32px 12px;
+            }
+
+            @include respond(mobile) {
+                min-height: 332px;
+            }
+
+            & > p {
+                max-width: 560px;
+                text-align: center;
+                margin-bottom: 40px;
+            }
+        }
+
+        &__gallery {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            & > img {
+                @include respond(tablet) {
+                    height: 250px;
+                }
+                @include respond(mobile) {
+                    width: 159.75px;
+                    height: 142px;
+                }
             }
         }
     }
@@ -870,7 +1019,7 @@
 
     &-support {
         width: 100%;
-        background-color: $lilac;
+        background-color: $light-periwinkle;
 
         & > div {
             height: 240px;
@@ -996,6 +1145,176 @@
         &--left {
             background-image: url('../../assets/images/icons/control-left.svg');
             visibility: hidden;
+        }
+    }
+}
+
+
+
+.box-sizes {
+    width: 100%;
+    background-color: $lilac;
+
+    @include respond(mobile) {
+        background-color: $white;
+        background-image: linear-gradient(top, $lilac, $lilac 238px, transparent 238px, transparent 100%);
+    }
+
+    & > div {
+        position: relative;
+        width: 1400px;
+        min-height: 589px;
+        display: flex;
+        padding: 80px 0 80px 193px;
+        margin: 0 auto;
+
+        @include respond(tablet) {
+            padding: 32px 32px 49px 32px;
+            min-height: 593px;
+            width: 100%;
+            flex-direction: column;
+        }
+
+        @include respond(mobile) {
+            padding: 24px 0 49px 12px;
+            min-height: 390px;
+        }
+    }
+
+    &__slider {
+        &-content {
+            margin-top: 132px;
+            min-width: 351px;
+            height: 165px;
+            position: relative;
+            margin-right: 64px;
+
+            @include respond(tablet) {
+                margin-top: 0;
+                margin-right: 0;
+                height: min-content;
+                margin-bottom: 16px;
+            }
+            
+            & > h2 {
+                color: $black;
+
+                @include respond(mobile) {
+                    font-size: 20px;
+                    line-height: 30px;
+                    font-weight: bold;
+                }
+            }
+
+            & > p {
+                color: $black;
+                @include respond(tablet) {
+                    display: none;
+                }
+            }
+
+            & > div {
+                @include respond(tablet) {
+                    display: none;
+                }
+            }
+        }
+
+        &-slides {
+            display: flex;
+            // width: 100%;
+
+            & > div {
+                height: 429px;
+                width: 341px;
+                background-color: $white;
+                margin-right: 16px;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+
+                & > img {
+                    margin-bottom: 18px;
+
+                    @include respond(mobile) {
+                        height: 230px;
+                        width: 230px;
+                    }
+                }
+
+                & > div {
+                    display: flex;
+                    justify-content: space-between;
+                    color: $dark-gray;
+                }
+
+                & > span {
+                    color: $gray;
+                }
+
+                @include respond(mobile) {
+                    width: 255px;
+                    height: 320px;
+                    padding: 14px 12px 0 12px;
+                }
+            }
+        }
+    }
+
+    &__controls {
+        position: absolute;
+        bottom: 0;
+
+        @include respond(tablet) {
+            right: 0;
+        }
+    }
+}
+
+.free-wrapping-note {
+    width: 100%;
+    padding: 64px 0;
+
+    @include respond(tablet) {
+        padding: 32px 32px 29px 32px;
+    }
+
+    @include respond(mobile) {
+        padding: 0 12px 29px 12px;
+    }
+
+    & > div {
+        width: 1225px;
+        height: 220px;
+        margin: 0 auto;
+        background-color: $lilac;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @include respond(tablet) {
+            width: 100%;
+            padding: 32px;
+        }
+
+        @include respond(mobile) {
+            padding: 32px 16px;
+        }
+
+        & > h3 {
+            color: #DEAF3B;
+            margin-bottom: 8px;
+        }
+
+        & > p {
+            width: 684px;
+            text-align: center;
+            color: #000;
+
+            @include respond(tablet) {
+                width: 100%;
+            }
         }
     }
 }
