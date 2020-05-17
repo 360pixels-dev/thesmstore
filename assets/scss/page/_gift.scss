@@ -282,6 +282,10 @@
             }
 
             @include respond(mobile) {
+                padding: 32px 12px;
+            }
+
+            @include respond(mobile) {
                 min-height: 332px;
             }
 
@@ -302,7 +306,8 @@
                     height: 250px;
                 }
                 @include respond(mobile) {
-                    height: 159px;
+                    width: 159.75px;
+                    height: 142px;
                 }
             }
         }
