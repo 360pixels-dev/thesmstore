@@ -41,7 +41,7 @@
     flex-direction: column;
     width: 288px;
     margin-right: 24px;
-
+    
     @include respond(tablet) {
       margin-right: 0;
     }
@@ -143,8 +143,8 @@
     & > div {
       height: 510px;
       border-radius: 4px;
-      background-color: $white;
-      box-shadow: 0px 7px 10px rgba(201, 208, 222, 0.25);
+      // background-color: $white;
+      // box-shadow: 0px 7px 10px rgba(201, 208, 222, 0.25);
 
       @include respond(mobile) {
         height: auto;
@@ -704,7 +704,6 @@
         & > div {
           width: 100%;
         }
-
       }
 
       &__pricing {
@@ -1206,7 +1205,7 @@
 
       @include respond(tablet) {
         width: 100%;
-      } 
+      }
 
       &__message {
         flex: 1 0 100%;
