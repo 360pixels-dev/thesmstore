@@ -41,7 +41,7 @@
     flex-direction: column;
     width: 288px;
     margin-right: 24px;
-    
+
     @include respond(tablet) {
       margin-right: 0;
     }
@@ -126,13 +126,15 @@
     }
 
     &__header {
-      font-family: Josefin Sans;
-      font-weight: 600;
-      font-size: 24px;
-      line-height: 40px;
-      text-transform: uppercase;
-      color: $black;
       margin-bottom: 16px;
+      font-family: Josefin Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 28px;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+      color: #161720;
 
       @include respond(mobile) {
         margin-top: 32px;
@@ -309,13 +311,15 @@
       }
 
       & > p {
+        margin-bottom: 16px;
         font-family: Josefin Sans;
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 40px;
-        text-transform: uppercase;
-        color: $black;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 28px;
         letter-spacing: 1.6px;
+        text-transform: uppercase;
+        color: #161720;
       }
 
       & > div {

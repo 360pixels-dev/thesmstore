@@ -6817,13 +6817,15 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       .user-profile {
         width: 100%; } }
     .user-profile__header {
+      margin-bottom: 16px;
       font-family: Josefin Sans;
-      font-weight: 600;
-      font-size: 24px;
-      line-height: 40px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 28px;
+      letter-spacing: 1.6px;
       text-transform: uppercase;
-      color: #161720;
-      margin-bottom: 16px; }
+      color: #161720; }
       @media only screen and (max-width: 600px) {
         .user-profile__header {
           margin-top: 32px;
@@ -7029,13 +7031,15 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
             text-transform: uppercase;
             color: #403f47; } }
       .user-orders__header > p {
+        margin-bottom: 16px;
         font-family: Josefin Sans;
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 40px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 1.6px;
         text-transform: uppercase;
-        color: #161720;
-        letter-spacing: 1.6px; }
+        color: #161720; }
       .user-orders__header > div > span {
         color: #88898F; }
       .user-orders__header > div > select {
@@ -8942,5 +8946,37 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%); }
+
+.nav-tabs > ul {
+  margin-bottom: 24px;
+  position: relative;
+  border-bottom: 2px solid #e0e0e0; }
+  .nav-tabs > ul > li {
+    display: inline-flex;
+    z-index: 1000; }
+    .nav-tabs > ul > li > a {
+      text-decoration: none;
+      padding: 13px 20px;
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #88898f; }
+      .nav-tabs > ul > li > a:hover {
+        transform: scale(1.1); }
+    .nav-tabs > ul > li.active a {
+      font-weight: bold;
+      color: #161720; }
+    .nav-tabs > ul > li.active a:hover {
+      font-weight: bold;
+      color: #161720;
+      transform: scale(1.1); }
+    .nav-tabs > ul > li.active {
+      border-bottom: 2px solid #ff4e4e;
+      margin-bottom: -2px; }
 
 /*# sourceMappingURL=style.min.css.map */

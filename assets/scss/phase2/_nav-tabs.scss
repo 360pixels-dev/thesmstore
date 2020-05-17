@@ -1,0 +1,69 @@
+// sample structure
+// <div class="nav-tabs">
+//     <ul>
+//         <li><a href="">All</a></li>
+//         <li><a href="">Processing</a></li>
+//         <li><a href="">Completed</a></li>
+//         <li><a href="">Cancelled</a></li>
+//     </ul>
+// </div>
+
+.nav-tabs {
+  & > ul {
+    margin-bottom: 24px;
+    position: relative;
+
+    border-bottom: 2px solid #e0e0e0;
+
+    & > li {
+      display: inline-flex;
+      z-index: 1000;
+
+      & > a {
+        text-decoration: none;
+        padding: 13px 20px;
+
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #88898f;
+
+        &:hover {
+          // font-weight: bold;
+          transform: scale(1.1);
+        }
+      }
+
+      &.active a {
+        font-weight: bold;
+        color: #161720;
+      }
+
+      &.active a:hover {
+        font-weight: bold;
+        color: #161720;
+        transform: scale(1.1);
+      }
+
+      &.active {
+        border-bottom: 2px solid #ff4e4e;
+        margin-bottom: -2px;
+      }
+    }
+
+    // &:after {
+    //   content: "";
+    //   position: absolute;
+    //   left: 0;
+    //   right: 0;
+    //   bottom: 0px;
+    //   border-bottom: 2px solid rgba(128, 128, 128, 0.514);
+    //   display: block;
+    // }
+  }
+}
