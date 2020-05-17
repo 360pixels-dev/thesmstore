@@ -18,6 +18,13 @@
       height: auto;
       padding: 15px;
     }
+
+    @include respond(tablet) {
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      padding: 30px;
+    }
   }
 
   & .mobile-only {
@@ -34,6 +41,10 @@
     flex-direction: column;
     width: 288px;
     margin-right: 24px;
+
+    @include respond (tablet) {
+      margin-right: 0;
+    }
 
     &-view_profile {
       &__avatar {
@@ -110,6 +121,10 @@
       width: 100%;
     }
 
+    @include respond(tablet) {
+      width: 100%;
+    }
+
     &__header {
       font-family: Josefin Sans;
       font-weight: 600;
@@ -134,6 +149,12 @@
       @include respond(mobile) {
         height: auto;
       }
+
+      @include respond(tablet) {
+        display: flex;
+        flex-flow: row;
+        flex: 1;
+      }
     }
 
     &__avatar {
@@ -144,6 +165,13 @@
       flex-direction: column;
       padding: 24px 0;
       align-items: center;
+
+      @include respond(tablet) {
+        flex: 1;
+        justify-content: center;
+        padding: 0;
+        padding-bottom: 40px;
+      }
 
       @include respond(mobile) {
         flex-flow: row;
@@ -244,10 +272,19 @@
       width: 100%;
     }
 
+    @include respond(tablet) {
+      width: 100%;
+    }
+
     &__header {
       display: flex;
       justify-content: space-between;
       margin-bottom: 16px;
+
+      @include respond(tablet) {
+        width: 100%;
+        margin: 24px 0;
+      }
 
       @include respond(mobile) {
         flex-flow: column;
@@ -305,6 +342,7 @@
       flex-direction: column;
       margin-bottom: 24px;
 
+      
       @include respond(mobile) {
         background: $light-periwinkle;
 
@@ -392,6 +430,11 @@
         width: 100%;
         height: 48px;
 
+        @include respond(tablet) {
+          justify-content: center;
+          padding: 0;
+        }
+
         & > span {
           &:not(:last-child) {
             margin-right: 2.19%;
@@ -423,6 +466,10 @@
         flex-direction: column;
         width: 100%;
         padding: 0 24px;
+
+        @include respond(tablet) {
+          padding: 0;
+        }
       }
 
       &-row {
@@ -430,6 +477,10 @@
         align-items: center;
         width: 100%;
         height: 72px;
+
+        @include respond(tablet) {
+          justify-content: center;
+        }
 
         &:not(:last-child) {
           border-bottom: 1px solid $silver;
