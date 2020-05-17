@@ -100,24 +100,17 @@
         <section class="user">
             <div>
                 <div class="user-profile">
-                    <p class="user-profile__header">My Profile</p>
-                    <div>
-                        <div class="user-profile__avatar">
-                            <img src="./assets/images/avatar.png" alt="">
-                            <span class="font-callout">Maan Parafina</span>
-                        </div>
-                        <div class="user-profile__content">
-                            <p class="font-headline text-bold">Profile Information</p>
-                            <span class="font-fineprint">Mobile:</span>
-                            <span class="font-caption text-semibold">+ 63 917 892 4225</span>
-                            <span class="font-fineprint">Email:</span>
-                            <span class="font-caption text-semibold">maan.parafina@gmail.com</span>
-                            <span class="font-fineprint">Address:</span>
-                            <span class="font-caption text-semibold">San Rafael Street, Mandaluyong City, Metro Manila,
-                                Philippines, 1550</span>
-
-                            <a href=""><img src="./assets/images/icons/Pencil.svg" alt=""> Update Profile</a>
-                        </div>
+                    <div class="user-profile__header">
+                        <p>Hello, Maan</p>
+                    </div>
+                    <!-- <p class="user-profile__header"></p> -->
+                    <div class="side_nav">
+                        <ul>
+                            <li class="active"><a href="#">My Orders</a></li>
+                            <li><a href="#">My profile</a></li>
+                            <li><a href="#">Change Password</a></li>
+                            <li><a href="#">Sign Out</a></li>
+                        </ul>
                     </div>
                 </div>
 
@@ -141,6 +134,7 @@
                             <span class="display-text">DISPLAYING 3 out of 5 results</span>
                         </div>
                     </div>
+
 
                     <div class="user-orders__tbl">
                         <div class="user-orders__tbl-item_mobile">
@@ -225,6 +219,47 @@
                             <select name="" id="">
                                 <option value="">Recent 5 Orders</option>
                             </select>
+                        </div>
+                    </div>
+
+                    <div class="nav-tabs">
+                        <ul>
+                            <li class="active"><a href="">All</a></li>
+                            <li><a href="">Processing</a></li>
+                            <li><a href="">Completed</a></li>
+                            <li><a href="">Cancelled</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="user-orders__items">
+                        <div class="user-orders__items__item">
+                            <div class="user-orders__items__item__order-info">
+                                <div class="details">
+                                    <div>ORDER NUMBER</div>
+                                    <div>#QPZGUOA</div>
+                                </div>
+                                <div class="details">
+                                    <div>ORDER DATE</div>
+                                    <div>05/10/2020 15:41</div>
+                                </div>
+                                <div class="details">
+                                    <div>ORDER TOTAL</div>
+                                    <div>₱699.75</div>
+                                </div>
+
+                                <a href="" class="btn--text-link font-cta">Manage</a>
+                            </div>
+                            <div class="user-orders__items__item__order-items">
+                                <div class="user-orders__items__item__order-items__item">
+                                    water jugg
+                                </div>
+                                <div class="user-orders__items__item__order-items__item">
+                                    face shield
+                                </div>
+                            </div>
+                            <div class="user-orders__items__item__order-requested-items">
+                                requested items
+                            </div>
                         </div>
                     </div>
 

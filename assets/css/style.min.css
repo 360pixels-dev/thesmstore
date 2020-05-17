@@ -6817,15 +6817,19 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       .user-profile {
         width: 100%; } }
     .user-profile__header {
-      margin-bottom: 16px;
-      font-family: Josefin Sans;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 20px;
-      line-height: 28px;
-      letter-spacing: 1.6px;
-      text-transform: uppercase;
-      color: #161720; }
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      height: 52px !important; }
+      .user-profile__header > p {
+        font-family: Josefin Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+        color: #161720; }
       @media only screen and (max-width: 600px) {
         .user-profile__header {
           margin-top: 32px;
@@ -6835,7 +6839,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           margin-top: 32px;
           margin-bottom: 20px; } }
     .user-profile > div {
-      height: 510px;
+      height: auto;
       border-radius: 4px; }
       @media only screen and (max-width: 600px) {
         .user-profile > div {
@@ -6988,10 +6992,21 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     @media only screen and (max-width: tablet) {
       .user-orders {
         width: 100%; } }
+    .user-orders__items {
+      background-color: white;
+      padding: 24px; }
+      .user-orders__items__item__order-info {
+        display: flex; }
+      .user-orders__items__item__order-items {
+        background-color: red; }
+      .user-orders__items__item__order-requested-items {
+        background-color: blue; }
     .user-orders__header {
+      margin-bottom: 12px;
       display: flex;
       justify-content: space-between;
-      margin-bottom: 16px; }
+      align-items: center;
+      height: 52px !important; }
       @media only screen and (max-width: 1024px) {
         .user-orders__header {
           width: 100%;
@@ -7031,7 +7046,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
             text-transform: uppercase;
             color: #403f47; } }
       .user-orders__header > p {
-        margin-bottom: 16px;
+        margin-bottom: 0;
         font-family: Josefin Sans;
         font-style: normal;
         font-weight: bold;
@@ -8267,7 +8282,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       height: 510px; }
       .user-orders__empty > img {
         margin: auto;
-        margin-top: 56px;
+        margin-top: 24px;
         margin-bottom: 0; }
       @media only screen and (max-width: 600px) {
         .user-orders__empty {
