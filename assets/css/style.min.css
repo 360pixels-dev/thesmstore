@@ -7396,6 +7396,20 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           flex-direction: column;
           width: 100%;
           height: auto; } }
+      @media only screen and (max-width: 1024px) {
+        .user-orders__details {
+          flex-direction: column;
+          width: 100%;
+          height: auto; }
+          .user-orders__details > div {
+            width: 100%; } }
+      @media only screen and (max-width: tablet) {
+        .user-orders__details {
+          flex-direction: column;
+          width: 100%;
+          height: auto; }
+          .user-orders__details > div {
+            width: 100%; } }
       .user-orders__details__pricing {
         margin-top: 24px;
         background: #ffffff;
@@ -7407,6 +7421,12 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           .user-orders__details__pricing {
             width: 100%; } }
         @media only screen and (max-width: mobile) {
+          .user-orders__details__pricing {
+            width: 100%; } }
+        @media only screen and (max-width: 1024px) {
+          .user-orders__details__pricing {
+            width: 100%; } }
+        @media only screen and (max-width: tablet) {
           .user-orders__details__pricing {
             width: 100%; } }
         .user-orders__details__pricing__item:first-of-type {
@@ -7941,6 +7961,12 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       @media only screen and (max-width: desktop) {
         .user-orders__status {
           display: flex; } }
+      @media only screen and (max-width: 1024px) {
+        .user-orders__status {
+          width: 100%; } }
+      @media only screen and (max-width: tablet) {
+        .user-orders__status {
+          width: 100%; } }
       @media only screen and (max-width: 600px) {
         .user-orders__status {
           display: none;
@@ -8110,6 +8136,14 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           margin: 0;
           margin-top: 24px; } }
       @media only screen and (max-width: mobile) {
+        .user-orders__summary {
+          margin: 0;
+          margin-top: 24px; } }
+      @media only screen and (max-width: 1024px) {
+        .user-orders__summary {
+          margin: 0;
+          margin-top: 24px; } }
+      @media only screen and (max-width: tablet) {
         .user-orders__summary {
           margin: 0;
           margin-top: 24px; } }

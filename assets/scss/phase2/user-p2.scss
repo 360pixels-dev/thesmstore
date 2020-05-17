@@ -677,6 +677,17 @@
         height: auto;
       }
 
+      @include respond(tablet) {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+
+        & > div {
+          width: 100%;
+        }
+
+      }
+
       &__pricing {
         margin-top: 24px;
         background: #ffffff;
@@ -686,6 +697,10 @@
         padding: 16px 24px 24px 24px;
 
         @include respond(mobile) {
+          width: 100%;
+        }
+
+        @include respond(tablet) {
           width: 100%;
         }
 
@@ -1246,6 +1261,10 @@
         display: flex;
       }
 
+      @include respond(tablet) {
+        width: 100%;
+      }
+
       @include respond(mobile) {
         display: none;
         width: 100%;
@@ -1385,6 +1404,11 @@
       border-radius: 4px;
 
       @include respond(mobile) {
+        margin: 0;
+        margin-top: 24px;
+      }
+
+      @include respond(tablet) {
         margin: 0;
         margin-top: 24px;
       }
