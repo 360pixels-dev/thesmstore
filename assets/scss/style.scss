@@ -64,7 +64,7 @@
 @import 'page/signup';
 @import 'page/delivery';
 @import 'page/policy';
-@import 'page/user';
+// @import 'page/user';
 @import 'page/404';
 @import 'page/error';
 
@@ -76,3 +76,6 @@
 // components
 @import 'phase2/side-nav';
 @import 'phase2/nav-tabs';
+@import 'phase2/breadcrumb';
+@import 'phase2/steps-bar';
+@import 'phase2/order-actions-list';
