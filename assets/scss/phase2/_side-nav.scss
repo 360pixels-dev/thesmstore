@@ -4,7 +4,8 @@
 }
 
 .side_nav li a {
-    display: block;
+    display: flex;
+    align-items: center;
     padding: 24px;
     color: #fff;
     font-size: 15px;
@@ -23,6 +24,10 @@
     background-color: white;
     text-decoration: none;
     border-bottom: 1px solid rgba(128, 128, 128, 0.473);
+
+    & > img {
+        margin-right: 8px;
+    }
 }
 .side_nav li.active a,
 .side_nav li.active a:hover,
@@ -36,6 +41,10 @@
     letter-spacing: 1.6px;
     text-transform: uppercase;
     color: #ffffff;
+
+    & > img {
+        filter: brightness(0) invert(1);
+    }
 }
 .side_nav li.active a:after {
     position: absolute;
