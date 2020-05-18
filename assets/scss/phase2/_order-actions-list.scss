@@ -1,0 +1,49 @@
+.order-actions-list {
+    background: #baeedc;
+    padding: 16px 20px;
+    margin-bottom: 18px;
+
+    & > .action {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        display: flex;
+        margin-top: 8px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        & > p:first-child {
+            font-weight: bold;
+            display: flex;
+            font-size: 12px;
+            line-height: 18px;
+            align-items: center;
+            color: #88898f;
+            flex: 1;
+        }
+
+        & > p:last-child {
+            display: flex;
+            font-size: 12px;
+            line-height: 18px;
+            color: #403f47;
+            flex: 3;
+            justify-content: flex-start;
+        }
+    }
+
+    & > a {
+        margin-top: 16px;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        color: #403f47;
+        text-decoration: none;
+    }
+}
