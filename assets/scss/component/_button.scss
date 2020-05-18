@@ -58,6 +58,27 @@ button {
     }
 }
 
+.button--cancel {
+    display: flex;
+    text-decoration: none;
+    color: #403F47;
+    letter-spacing: 1.6px !important;
+
+    & > img {
+        margin-right: 11px;
+        
+    }
+
+    &:hover {
+        color: $black;
+        transition: 0.5s;
+
+        & > img {
+            filter: opacity(80%);
+        }
+    }
+}
+
 .btn--text-link {
     text-decoration: none;
     white-space: nowrap;
