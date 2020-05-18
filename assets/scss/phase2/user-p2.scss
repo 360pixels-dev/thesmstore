@@ -519,26 +519,37 @@
           font-family: Open Sans;
           font-style: normal;
           font-weight: normal;
-          justify-content: space-between;
+          flex-flow: column;
 
-          & > p:first-child {
-            font-weight: bold;
-            font-size: 14px;
-            line-height: 22px;
-            color: #161720;
-          }
-
-          & > p:last-child {
-            font-size: 12px;
-            line-height: 18px;
+          & > div {
             display: flex;
-            align-items: center;
-            text-align: right;
-            color: #000000;
-            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 20px;
 
-            & > img {
-              margin-right: 11px;
+            &:first-child {
+              margin-top: 0;
+            }
+
+            & > p:first-child {
+              font-weight: bold;
+              font-size: 14px;
+              line-height: 22px;
+              color: #161720;
+            }
+
+            & > p:last-child {
+              font-size: 12px;
+              line-height: 18px;
+              display: flex;
+              align-items: center;
+              text-align: right;
+              color: #000000;
+              display: flex;
+
+              & > img {
+                margin-right: 11px;
+              }
             }
           }
         }

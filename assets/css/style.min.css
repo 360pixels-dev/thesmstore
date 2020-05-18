@@ -7172,22 +7172,29 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           font-family: Open Sans;
           font-style: normal;
           font-weight: normal;
-          justify-content: space-between; }
-          .user-orders__order-details > .right-column > .pickup-method > p:first-child {
-            font-weight: bold;
-            font-size: 14px;
-            line-height: 22px;
-            color: #161720; }
-          .user-orders__order-details > .right-column > .pickup-method > p:last-child {
-            font-size: 12px;
-            line-height: 18px;
+          flex-flow: column; }
+          .user-orders__order-details > .right-column > .pickup-method > div {
             display: flex;
-            align-items: center;
-            text-align: right;
-            color: #000000;
-            display: flex; }
-            .user-orders__order-details > .right-column > .pickup-method > p:last-child > img {
-              margin-right: 11px; }
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 20px; }
+            .user-orders__order-details > .right-column > .pickup-method > div:first-child {
+              margin-top: 0; }
+            .user-orders__order-details > .right-column > .pickup-method > div > p:first-child {
+              font-weight: bold;
+              font-size: 14px;
+              line-height: 22px;
+              color: #161720; }
+            .user-orders__order-details > .right-column > .pickup-method > div > p:last-child {
+              font-size: 12px;
+              line-height: 18px;
+              display: flex;
+              align-items: center;
+              text-align: right;
+              color: #000000;
+              display: flex; }
+              .user-orders__order-details > .right-column > .pickup-method > div > p:last-child > img {
+                margin-right: 11px; }
         .user-orders__order-details > .right-column > .order-summary {
           margin-top: 16px;
           background: #ffffff;
@@ -9223,7 +9230,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   position: relative;
   width: 100%;
   height: 75px;
-  margin: 16px auto; }
+  margin: 16px 0 0 0; }
   .steps-bar > .container {
     width: 100%;
     position: absolute;
@@ -9271,5 +9278,46 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     background-color: #0797FF;
     color: white;
     content: "•"; }
+  .steps-bar .progressbar li.active:after {
+    background-color: #0797FF; }
+
+.order-actions-list {
+  background: #baeedc;
+  padding: 16px 20px;
+  margin-bottom: 18px; }
+  .order-actions-list > .action {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    display: flex;
+    margin-top: 8px; }
+    .order-actions-list > .action:first-child {
+      margin-top: 0; }
+    .order-actions-list > .action > p:first-child {
+      font-weight: bold;
+      display: flex;
+      font-size: 12px;
+      line-height: 18px;
+      align-items: center;
+      color: #88898f;
+      flex: 1; }
+    .order-actions-list > .action > p:last-child {
+      display: flex;
+      font-size: 12px;
+      line-height: 18px;
+      color: #403f47;
+      flex: 3;
+      justify-content: flex-start; }
+  .order-actions-list > a {
+    margin-top: 16px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #403f47;
+    text-decoration: none; }
 
 /*# sourceMappingURL=style.min.css.map */
