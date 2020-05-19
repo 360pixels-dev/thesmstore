@@ -126,20 +126,18 @@
               <div class="row">
                 <div class="col">
                   <p>Size</p>
-                  <div class="custom-select" style="width:200px;">
+                  <div class="custom-select">
                     <select>
                       <option value="default" disabled selected hidden>Select</option>
-                      <option value="1" color="white">Audi</option>
-                      <option value="2" color="green">BMW</option>
-                      <option value="3" color="yellow">Citroen</option>
+                      <option value="1">1 Liter</option>
                     </select>
                   </div>
                 </div>
                 <div class="col">
-                  <p>Size</p>
-                  <div class="custom-select-colors" style="width:200px;">
+                  <p>Color</p>
+                  <div class="custom-select-colors">
                     <select>
-                      <option value="default" >Select</option>
+                      <option value="default">Select</option>
                       <option value="1" color="green">green</option>
                       <option value="2" color="white">white</option>
                       <option value="3" color="yellow">yellow</option>
@@ -148,8 +146,8 @@
                   </div>
                 </div>
                 <div class="col">
-                  <p>Size</p>
-                  <div class="custom-select" style="width:200px;">
+                  <p>Quantity</p>
+                  <div class="custom-select">
                     <select>
                       <option value="1" selected>1</option>
                       <option value="2">2</option>
@@ -159,36 +157,40 @@
                 </div>
               </div>
 
-              <div class="row">
+              <div class="row servicing-branch">
                 <p>Servicing Branch</p>
-                <input type="text" value="Search">
+                <input type="text" value="" placeholder="Choose your preferred branch...">
               </div>
 
               <div class="delivery-box">
-                min deliver
+                <p><img src="./assets/images/icons/delivery.svg" alt="">2 Days Minimum Delivery Lead Time</p>
+                <p class="reminder-text">Delivery lead times vary per area as stores have different serviceability
+                  coverage. Can't wait for 2
+                  days? Please select store pick up upon check out.</p>
               </div>
 
               <div class="buttons-container">
-                <button>Ordernow</button>
-                <button>Basket</button>
+                <button class="sm-button bg-white">Ordernow<img src="./assets/images/red-line.svg" alt=""></button>
+                <button class="sm-button bg-blue">Basket<img src="./assets/images/red-line.svg" alt=""></button>
               </div>
             </div>
           </div>
 
           <div class="nav-tabs">
             <ul>
-              <li class="active"><a href="">All</a></li>
-              <li><a href="">Processing</a></li>
-              <li><a href="">Completed</a></li>
-              <li><a href="">Cancelled</a></li>
+              <li class="active"><a href="">About The Product</a></li>
+              <li><a href="">Return Policy</a></li>
+              <li><a href="">Delivery Info</a></li>
             </ul>
           </div>
 
           <div class="nav-tabs-content">
-            dont forget
+            <p>Don’t forget to stay hydrated in this insane heat—this Water Jug can help you with this goal!</p>
 
             <div class="blue-box">
-              product availability
+              <img src="./assets/images/product-geotag.png" alt="">
+              <p>Product availability varies per branch. A branch representative will confirm available items and
+              variations after you check out.</p> 
             </div>
           </div>
         </div>
