@@ -9143,7 +9143,10 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         flex-flow: column;
         font-family: Open Sans;
         font-style: normal;
-        font-weight: normal; }
+        font-weight: normal;
+        padding: 24px;
+        margin-left: 40px;
+        justify-content: center; }
         .product-details > .item > .item__details > p {
           font-weight: bold;
           font-size: 12px;
@@ -9165,31 +9168,94 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           border: none; }
         .product-details > .item > .item__details > .row {
           display: flex;
-          padding: 0; }
+          padding: 0;
+          margin: 24px 0; }
+          .product-details > .item > .item__details > .row p {
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 22px;
+            text-transform: capitalize; }
           .product-details > .item > .item__details > .row > .col {
             display: flex;
-            flex-flow: column; }
-            .product-details > .item > .item__details > .row > .col > p > div {
-              border-radius: 50%;
-              width: 23px;
-              height: 23px;
-              background-color: red; }
-            .product-details > .item > .item__details > .row > .col > select {
-              height: 40px;
-              width: 170px;
-              /*change from 122px to 170*/
-              padding: 9px 0 9px 16px;
-              -webkit-appearance: none;
-              -moz-appearance: none;
-              appearance: none;
-              background: url("../../assets/images/icons/angle-down-black.svg") 90%/8% no-repeat #FFFFFF;
-              border: 1px solid #88898F;
-              outline: none; }
-              .product-details > .item > .item__details > .row > .col > select > .white:after {
-                content: "";
-                width: 20px;
-                height: 20px;
-                background-color: red; }
+            flex-flow: column;
+            flex: 1;
+            margin-right: 16px; }
+            .product-details > .item > .item__details > .row > .col:last-child {
+              margin-right: 0; }
+        .product-details > .item > .item__details > .row.servicing-branch {
+          flex-flow: column;
+          margin-top: 0; }
+          .product-details > .item > .item__details > .row.servicing-branch > input[type="text"] {
+            background: url("../../assets/images/icons/icon-search-black.svg") 96%/3% no-repeat #FFFFFF;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            border: 1px solid #88898f;
+            height: 40px; }
+            .product-details > .item > .item__details > .row.servicing-branch > input[type="text"]::placeholder {
+              font-family: Open Sans;
+              font-style: italic;
+              font-weight: normal;
+              font-size: 16px;
+              line-height: 24px;
+              color: #88898f; }
+        .product-details > .item > .item__details > .delivery-box {
+          background-color: #faf3f0;
+          padding: 16px; }
+          .product-details > .item > .item__details > .delivery-box > p {
+            display: flex;
+            align-items: center;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+            color: #161720; }
+            .product-details > .item > .item__details > .delivery-box > p > img {
+              margin-right: 8px; }
+            .product-details > .item > .item__details > .delivery-box > p:last-child {
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 22px;
+              color: #403f47;
+              margin-top: 8px; }
+        .product-details > .item > .item__details > .buttons-container {
+          display: flex;
+          margin-top: 24px; }
+          .product-details > .item > .item__details > .buttons-container > button {
+            max-width: 200px; }
+            .product-details > .item > .item__details > .buttons-container > button:last-child {
+              margin-left: 24px; }
+    .product-details > .nav-tabs {
+      padding: 0 80px;
+      padding-top: 40px; }
+      .product-details > .nav-tabs > ul {
+        margin: 0 !important; }
+    .product-details > .nav-tabs-content {
+      padding: 32px 80px 40px 80px;
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: normal; }
+      .product-details > .nav-tabs-content > p {
+        font-size: 16px;
+        line-height: 24px;
+        color: #403f47;
+        padding-bottom: 40px; }
+      .product-details > .nav-tabs-content > .blue-box {
+        background: #18489a;
+        padding: 38px 32px;
+        display: flex;
+        align-items: center; }
+        .product-details > .nav-tabs-content > .blue-box > p {
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 30px;
+          color: #ffffff;
+          padding-left: 24px; }
 
 .side_nav {
   display: flex;
@@ -9442,17 +9508,16 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     color: #403f47;
     text-decoration: none; }
 
-.custom-select-colors {
-  position: relative;
-  font-family: Arial; }
-
-.custom-select-colors select {
-  display: none; }
-
+.custom-select-colors,
 .custom-select {
   position: relative;
-  font-family: Arial; }
+  font-family: Arial;
+  width: 100%;
+  min-width: 120px;
+  max-width: 200px;
+  height: 40px; }
 
+.custom-select-colors select,
 .custom-select select {
   display: none; }
 
@@ -9480,7 +9545,12 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   padding: 8px 16px;
   border: 1px solid #88898f;
   cursor: pointer;
-  user-select: none; }
+  user-select: none;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px; }
 
 .select-items {
   position: absolute;

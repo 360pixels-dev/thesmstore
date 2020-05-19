@@ -1,17 +1,14 @@
-.custom-select-colors {
-    position: relative;
-    font-family: Arial;
-}
-
-.custom-select-colors select {
-    display: none;
-}
-
+.custom-select-colors,
 .custom-select {
     position: relative;
     font-family: Arial;
+    width: 100%;
+    min-width: 120px;
+    max-width: 200px;
+    height: 40px;
 }
 
+.custom-select-colors select,
 .custom-select select {
     display: none;
 }
@@ -44,6 +41,12 @@
     border: 1px solid #88898f;
     cursor: pointer;
     user-select: none;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .select-items {
