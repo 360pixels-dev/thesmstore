@@ -1,49 +1,5 @@
 $chilli: #ff4e4e;
 
-.breadcrumb {
-  width: 100%;
-  background-color: $light-periwinkle;
-  & > div {
-    width: 1400px;
-    height: fit-content;
-    margin: 0 auto;
-    flex-flow: column;
-    padding: 40px 87px 40px 88px;
-    @include respond(mobile) {
-      width: 100%;
-      padding: 15px;
-    }
-
-    @include respond(tablet) {
-      width: 100%;
-      padding: 30px;
-    }
-
-    & > p {
-      font-family: Open Sans;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 12px;
-      line-height: 18px;
-      margin: 8px 0px;
-      color: #161720;
-      align-items: center;
-      display: flex;
-      flex-flow: row wrap;
-      flex: 1 0 100%;
-
-      & > img {
-        height: 16px;
-        margin: auto 12px;
-      }
-
-      & > span {
-        font-weight: bold;
-      }
-    }
-  }
-}
-
 // Utilities
 .sm-button {
   display: flex;

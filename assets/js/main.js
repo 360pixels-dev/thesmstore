@@ -107,6 +107,10 @@ $(document).ready(function(){
     $('.modal--terms .modal__close').click(function(){
         $('.modal--terms').parent().removeClass('active');
     });
+    
+    $('.modal--services .modal__close').click(function(){
+        $('.modal--services').parent().removeClass('active');
+    });
 
     $('.catalog-items .carousel__item').click(function(e) {
         if($(e.target).hasClass('color-picker-item') || $(e.target).attr('type') == 'checkbox') {
