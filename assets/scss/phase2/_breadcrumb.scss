@@ -3,6 +3,7 @@
     background-color: $light-periwinkle;
     
     & > div {
+      max-width: 1400px;
       width: 100%;
       height: fit-content;
       margin: 0 auto;

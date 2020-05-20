@@ -4,8 +4,172 @@
   min-height: calc(100vh - 160px);
   height: fit-content;
 
+  // Styling for My basket dropdown
+  &--small {
+    display: flex;
+    padding: 24px 0 16px 0;
+
+    & > div {
+      display: flex;
+      flex-flow: column;
+      font-family: Open Sans;
+      font-style: normal;
+      justify-content: space-between;
+      padding-left: 30px;
+
+      & > .item-category {
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+        color: #88898f;
+      }
+
+      & > .item-name {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #403f47;
+      }
+
+      & > .item-details {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+        color: #88898f;
+
+        & > .value {
+          font-weight: bold;
+        }
+      }
+
+      & > .item-price {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        color: #403f47;
+        margin-top: 14px;
+      }
+    }
+  }
+
+  &--small + .buttons-container {
+    display: flex;
+
+    & > .sm-button {
+      flex: 1;
+
+      &:first-child {
+        margin-right: 12px;
+        width: 200px;
+        max-width: 200px;
+      }
+
+      &:last-child {
+        padding-left: 12px;
+        width: 162px;
+        max-width: 162px;
+      }
+    }
+  }
+
+  &-similar--small {
+    & > hr {
+      margin-top: 16px;
+      margin-bottom: 24px;
+    }
+
+    & > .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      & > p {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+        color: #161720;
+      }
+    }
+
+    & > .product--small {
+      padding-bottom: 0;
+
+      & > div {
+        justify-content: unset;
+
+        & > .item-price {
+          margin-top: auto !important;
+        }
+      }
+    }
+  }
+
+  // Styling for My basket dropdown
+
+  // override padding of sibling section
+  & + .delivery__featured {
+    div {
+      padding-top: 0;
+    }
+  }
+
+  & .branch_select {
+    height: 40px;
+    max-width: 550px;
+    width: 100%; /*change from 122px to 170*/
+    padding: 8px 0 8px 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url("../../assets/images/icons/icon-search-black.svg") 96%/3% no-repeat $white;
+    border: 1px solid $gray;
+    outline: none;
+
+    font-family: Open Sans;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    & > optgroup[label] {
+      font-weight: bold;
+
+      & > option {
+        font-size: 14px;
+        line-height: 22px;
+        color: #161720;
+        padding: 16px 20px;
+
+        &[label] {
+          color: #161720;
+          font-style: normal;
+          font-size: 14px;
+          line-height: 22px;
+          color: #161720;
+          padding: 16px 20px;
+        }
+
+        // &[label][disabled] {
+        //   color: #88898f;
+        //   font-style: italic;
+        // }
+      }
+    }
+  }
+
   & > div {
-    width: 1400px;
+    max-width: 1400px;
+    width: 100%;
     height: auto;
     margin: 0 auto;
     display: flex;
@@ -25,7 +189,7 @@
   }
 
   &-details {
-    z-index: 100;
+    z-index: 10;
     width: 100%;
 
     & > div {
