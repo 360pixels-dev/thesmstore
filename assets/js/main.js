@@ -415,12 +415,4 @@ $(document).ready(function () {
         </div>`
         );
     }
-
-    // $("#my-basket-dropdown").hover(
-    //     function (e) {
-    //         $().removeClass('hide')
-    //     }
-    // )
-
-    // $("#my-basket-dropdown").off("mouseenter mouseleave")
 });
