@@ -13427,6 +13427,106 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   color: #20A999;
   text-decoration: none; }
 
+.error {
+  width: 100%;
+  background: url("../../assets/images/bg-404.jpg") no-repeat;
+  background-size: cover; }
+  @media only screen and (max-width: 600px) {
+    .error {
+      background: url("../../assets/images/bg-404-m.jpg") center left no-repeat;
+      background-size: cover; } }
+  @media only screen and (max-width: mobile) {
+    .error {
+      background: url("../../assets/images/bg-404-m.jpg") center left no-repeat;
+      background-size: cover; } }
+  .error > div {
+    width: 1400px;
+    height: 690px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 0 167px; }
+    @media only screen and (max-width: 1024px) {
+      .error > div {
+        padding: 0 32px; } }
+    @media only screen and (max-width: tablet) {
+      .error > div {
+        padding: 0 32px; } }
+    @media only screen and (max-width: 600px) {
+      .error > div {
+        height: 524px;
+        padding: 0 12px; } }
+    @media only screen and (max-width: mobile) {
+      .error > div {
+        height: 524px;
+        padding: 0 12px; } }
+    .error > div > span {
+      color: #FFFFFF;
+      margin-bottom: 16px; }
+    @media only screen and (max-width: 1024px) {
+      .error > div > h1 {
+        font-size: 48px;
+        line-height: 58px; } }
+    @media only screen and (max-width: tablet) {
+      .error > div > h1 {
+        font-size: 48px;
+        line-height: 58px; } }
+    .error > div > h2 {
+      font-family: Josefin Sans;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 58px;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      margin-bottom: 16px; }
+      @media only screen and (max-width: 1024px) {
+        .error > div > h2 {
+          font-size: 24px;
+          line-height: 32px; } }
+      @media only screen and (max-width: tablet) {
+        .error > div > h2 {
+          font-size: 24px;
+          line-height: 32px; } }
+    .error > div > p {
+      color: #FFFFFF;
+      margin-bottom: 39px; }
+      @media only screen and (max-width: 1024px) {
+        .error > div > p {
+          width: 244px; } }
+      @media only screen and (max-width: tablet) {
+        .error > div > p {
+          width: 244px; } }
+    .error > div > a {
+      width: 278px; }
+      .error > div > a::after {
+        content: '\2014\2014';
+        color: #FFFFFF;
+        letter-spacing: -4px;
+        margin-left: 16px;
+        transition: .2s; }
+      @media only screen and (max-width: 1024px) {
+        .error > div > a {
+          width: 245px; } }
+      @media only screen and (max-width: tablet) {
+        .error > div > a {
+          width: 245px; } }
+      @media only screen and (max-width: 1024px) {
+        .error > div > a > span {
+          display: none; } }
+      @media only screen and (max-width: tablet) {
+        .error > div > a > span {
+          display: none; } }
+  .error--301 > div > h1 {
+    color: #FCE513; }
+  .error--302 > div > h1 {
+    color: #B4278C; }
+  .error--404 > div > h1 {
+    color: #FDBFCE; }
+  .error--405 > div > h1 {
+    color: #BAEEDC; }
+
 .user {
   width: 100%;
   background-color: #F9FBFF;
