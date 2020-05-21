@@ -7135,7 +7135,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       height: 39.76px;
       width: 39.76px;
       background-color: #fff;
-      border: 1px solid #E0E0E0;
+      border: 1px solid #e0e0e0;
       box-sizing: border-box;
       background-repeat: no-repeat;
       background-size: 15.9px 7.95px;
@@ -7571,7 +7571,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
                 background-color: #FFFFFF;
                 z-index: 4; }
               .delivery-catalog__catalog > .serving-branch > .branch-details > .contacts > div > h2:after {
-                content: '';
+                content: "";
                 position: absolute;
                 border-top: 1px solid #E0E0E0;
                 bottom: 0;
@@ -7856,7 +7856,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     position: relative;
     cursor: pointer; }
     .color-picker-item:after {
-      content: '';
+      content: "";
       position: absolute;
       top: -5px;
       left: -5px;
@@ -7868,13 +7868,13 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     .color-picker-item > input {
       display: none; }
     .color-picker-item--black {
-      background-color: #312D2D; }
+      background-color: #312d2d; }
     .color-picker-item--red {
-      background-color: #D11D1E; }
+      background-color: #d11d1e; }
     .color-picker-item--gold {
-      background-color: #E9C66E; }
+      background-color: #e9c66e; }
     .color-picker-item--blue {
-      background-color: #2B8DC5; }
+      background-color: #2b8dc5; }
 
 @media only screen and (max-width: 414px) {
   .slick-current.slick-active {
@@ -10233,62 +10233,61 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     width: 90%;
     font-family: Open Sans;
     font-style: normal; }
-
-.password {
-  width: 100%;
-  background-color: #F9FBFF;
-  min-height: calc(100vh - 225px); }
-  @media only screen and (max-width: 600px) {
-    .password {
-      padding-bottom: 60px; } }
-  @media only screen and (max-width: mobile) {
-    .password {
-      padding-bottom: 60px; } }
-  .password .side_nav-header.mobile-only {
+  .profile .password {
+    width: 100%;
+    background-color: #F9FBFF;
+    min-height: calc(100vh - 225px); }
+    @media only screen and (max-width: 600px) {
+      .profile .password {
+        padding-bottom: 60px; } }
+    @media only screen and (max-width: mobile) {
+      .profile .password {
+        padding-bottom: 60px; } }
+  .profile .side_nav-header.mobile-only {
     display: none; }
     @media only screen and (max-width: 600px) {
-      .password .side_nav-header.mobile-only {
+      .profile .side_nav-header.mobile-only {
         display: flex;
         height: 56px !important;
         margin-bottom: 0;
         align-items: center;
         padding-left: 12px; } }
     @media only screen and (max-width: mobile) {
-      .password .side_nav-header.mobile-only {
+      .profile .side_nav-header.mobile-only {
         display: flex;
         height: 56px !important;
         margin-bottom: 0;
         align-items: center;
         padding-left: 12px; } }
-  .password > div {
+  .profile > div {
     width: 1400px;
     margin: 0 auto;
     display: flex;
     flex-flow: row;
     padding: 0 30px 40px 30px; }
     @media only screen and (max-width: 1024px) {
-      .password > div {
+      .profile > div {
         width: 100%;
         padding: 30px;
         height: auto; } }
     @media only screen and (max-width: tablet) {
-      .password > div {
+      .profile > div {
         width: 100%;
         padding: 30px;
         height: auto; } }
     @media only screen and (max-width: 600px) {
-      .password > div {
+      .profile > div {
         width: 100%;
         padding: 0;
         height: auto;
         flex-flow: column; } }
     @media only screen and (max-width: mobile) {
-      .password > div {
+      .profile > div {
         width: 100%;
         padding: 0;
         height: auto;
         flex-flow: column; } }
-  .password__information {
+  .profile__information {
     background-color: white;
     margin: auto;
     padding: 24px;
@@ -10299,21 +10298,21 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     font-style: normal;
     font-weight: normal; }
     @media only screen and (max-width: 1024px) {
-      .password__information {
+      .profile__information {
         width: 100%;
         box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
         border-radius: 8px;
         padding-left: 10px;
         padding-right: 10px; } }
     @media only screen and (max-width: tablet) {
-      .password__information {
+      .profile__information {
         width: 100%;
         box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
         border-radius: 8px;
         padding-left: 10px;
         padding-right: 10px; } }
     @media only screen and (max-width: 600px) {
-      .password__information {
+      .profile__information {
         width: 100%;
         box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
         border-radius: 8px;
@@ -10321,14 +10320,14 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         padding-right: 12px;
         margin-top: 0; } }
     @media only screen and (max-width: mobile) {
-      .password__information {
+      .profile__information {
         width: 100%;
         box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
         border-radius: 8px;
         padding-left: 12px;
         padding-right: 12px;
         margin-top: 0; } }
-    .password__information > .header-text {
+    .profile__information > .header-text {
       font-family: Josefin Sans;
       font-style: normal;
       font-weight: 600;
@@ -10337,26 +10336,26 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       letter-spacing: 1.6px;
       color: #000000; }
       @media only screen and (max-width: 600px) {
-        .password__information > .header-text {
+        .profile__information > .header-text {
           font-size: 20px;
           line-height: 30px;
           letter-spacing: unset; } }
       @media only screen and (max-width: mobile) {
-        .password__information > .header-text {
+        .profile__information > .header-text {
           font-size: 20px;
           line-height: 30px;
           letter-spacing: unset; } }
       @media only screen and (max-width: 1024px) {
-        .password__information > .header-text {
+        .profile__information > .header-text {
           font-size: 20px;
           line-height: 30px;
           letter-spacing: unset; } }
       @media only screen and (max-width: tablet) {
-        .password__information > .header-text {
+        .profile__information > .header-text {
           font-size: 20px;
           line-height: 30px;
           letter-spacing: unset; } }
-    .password__information > .changepassword-text {
+    .profile__information > .changepassword-text {
       font-family: Open Sans;
       font-style: normal;
       font-weight: normal;
@@ -10367,33 +10366,33 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       color: #403f47;
       margin-top: 24px;
       margin-bottom: 16px; }
-    .password__information > .current_password, .password__information > .new_password {
+    .profile__information > .current_password, .profile__information > .new_password {
       display: flex;
       flex-flow: row wrap;
       justify-content: space-between; }
-      .password__information > .current_password > .field__container, .password__information > .new_password > .field__container {
+      .profile__information > .current_password > .field__container, .profile__information > .new_password > .field__container {
         display: flex;
         flex-flow: column nowrap;
         flex: 1 0 50%;
         max-width: 48%; }
         @media only screen and (max-width: 600px) {
-          .password__information > .current_password > .field__container, .password__information > .new_password > .field__container {
+          .profile__information > .current_password > .field__container, .profile__information > .new_password > .field__container {
             max-width: unset;
             flex: 1 0 100%; } }
         @media only screen and (max-width: mobile) {
-          .password__information > .current_password > .field__container, .password__information > .new_password > .field__container {
+          .profile__information > .current_password > .field__container, .profile__information > .new_password > .field__container {
             max-width: unset;
             flex: 1 0 100%; } }
-        .password__information > .current_password > .field__container > label, .password__information > .new_password > .field__container > label {
+        .profile__information > .current_password > .field__container > label, .profile__information > .new_password > .field__container > label {
           font-weight: 600;
           font-size: 14px;
           line-height: 22px;
           text-transform: capitalize;
           color: #161720;
           margin-bottom: 6px; }
-          .password__information > .current_password > .field__container > label > span, .password__information > .new_password > .field__container > label > span {
+          .profile__information > .current_password > .field__container > label > span, .profile__information > .new_password > .field__container > label > span {
             color: #ff4e4e; }
-        .password__information > .current_password > .field__container > input, .password__information > .new_password > .field__container > input {
+        .profile__information > .current_password > .field__container > input, .profile__information > .new_password > .field__container > input {
           border: 1px solid #88898f;
           padding: 8px 15px;
           font-weight: 600;
@@ -10402,11 +10401,11 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           color: #403f47;
           margin-bottom: 24px;
           background: url(./../images/icons/password-eye-enable.svg) 95%/3% no-repeat white; }
-          .password__information > .current_password > .field__container > input::placeholder, .password__information > .new_password > .field__container > input::placeholder {
+          .profile__information > .current_password > .field__container > input::placeholder, .profile__information > .new_password > .field__container > input::placeholder {
             font-style: italic;
             text-transform: capitalize;
             font-weight: normal; }
-        .password__information > .current_password > .field__container > .sm-select, .password__information > .new_password > .field__container > .sm-select {
+        .profile__information > .current_password > .field__container > .sm-select, .profile__information > .new_password > .field__container > .sm-select {
           border: 1px solid #88898f;
           padding: 8px 15px;
           font-weight: 600;
@@ -10416,12 +10415,12 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           margin-bottom: 24px;
           width: 100%;
           background: url(./../images/icons/angle-down.svg) 95%/2% no-repeat #eee; }
-          .password__information > .current_password > .field__container > .sm-select:required:invalid, .password__information > .new_password > .field__container > .sm-select:required:invalid {
+          .profile__information > .current_password > .field__container > .sm-select:required:invalid, .profile__information > .new_password > .field__container > .sm-select:required:invalid {
             font-style: italic;
             text-transform: capitalize;
             font-weight: normal;
             color: #88898f; }
-          .password__information > .current_password > .field__container > .sm-select > option, .password__information > .new_password > .field__container > .sm-select > option {
+          .profile__information > .current_password > .field__container > .sm-select > option, .profile__information > .new_password > .field__container > .sm-select > option {
             font-style: normal;
             text-transform: capitalize;
             font-weight: normal;

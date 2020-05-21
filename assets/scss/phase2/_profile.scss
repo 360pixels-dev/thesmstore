@@ -235,7 +235,6 @@ $chilli: #ff4e4e;
     font-family: Open Sans;
     font-style: normal;
   }
-}
 
 .password {
   width: 100%;
@@ -245,6 +244,7 @@ $chilli: #ff4e4e;
   @include respond(mobile) {
     padding-bottom: 60px;
   }
+}
 
   & .side_nav-header.mobile-only {
     display: none;
