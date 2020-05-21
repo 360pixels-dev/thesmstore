@@ -48,30 +48,31 @@
 @import 'animation/animations';
 
 
-@import 'page/homepage';
-@import 'page/whatsnew';
-@import 'page/whatsnew-promo';
-@import 'page/events';
-@import 'page/about';
-@import 'page/stories';
-@import 'page/category-landing';
-@import 'page/womens-blog';
-@import 'page/services';
-@import 'page/beauty';
-@import 'page/contacts';
-@import 'page/press-release';
-@import 'page/gift';
-@import 'page/signup';
+// @import 'page/homepage';
+// @import 'page/whatsnew';
+// @import 'page/whatsnew-promo';
+// @import 'page/events';
+// @import 'page/about';
+// @import 'page/stories';
+// @import 'page/category-landing';
+// @import 'page/womens-blog';
+// @import 'page/services';
+// @import 'page/beauty';
+// @import 'page/contacts';
+// @import 'page/press-release';
+// @import 'page/gift';
+// @import 'page/signup';
 @import 'page/delivery';
-@import 'page/policy';
+// @import 'page/policy';
 // @import 'page/user';
-@import 'page/404';
-@import 'page/error';
+// @import 'page/404';
+// @import 'page/error';
 
 
 // phase 2
-@import 'phase2/user-p2.scss';
-@import 'phase2/profile-p2.scss';
+@import 'phase2/user';
+@import 'phase2/profile';
+@import 'phase2/products';
 
 // components
 @import 'phase2/side-nav';
@@ -79,3 +80,5 @@
 @import 'phase2/breadcrumb';
 @import 'phase2/steps-bar';
 @import 'phase2/order-actions-list';
+@import 'phase2/custom-select';
+@import 'phase2/similar-products';

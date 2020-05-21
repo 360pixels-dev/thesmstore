@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delivery - SM Store</title>
+
+  <link rel="stylesheet" href="./assets/css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <!-- HEADER -->
+    <header class="header-profile">
+      <nav
+        class="nav__upper nav__upper--default nav__upper--index container-fluid align__content align__content--right mobile-hide tablet-hide">
+        <ul class="nav__upper-list">
+          <li class="nav__social"><a href="#"><img src="./assets/images/facebook.svg" alt=""></a></li>
+          <li class="nav__social"><a href="#"><img src="./assets/images/youtube.svg" alt=""></a></li>
+          <li class="nav__social"><a href="#"><img src="./assets/images/instagram.svg" alt=""></a></li>
+          <li class="nav__social"><a href="#"><img src="./assets/images/twitter.svg" alt=""></a></li>
+        </ul>
+      </nav>
+
+      <nav class="nav__lower nav_lower--default nav__lower--index nav__delivery container-fluid">
+        <div class="nav__lower-burger">
+          <img class="burger-menu burger-menu-default" src="./assets/images/burger-menu.svg" alt="">
+          <img class="burger-menu burger-menu-close" src="./assets/images/close.svg" alt="" hidden>
+        </div>
+
+        <div class="logo-delivery">
+          <img class="logo-delivery__img" src="./assets/images/logo.svg" alt="SM Store">
+        </div>
+
+        <nav class="link-delivery">
+          <a class="link-delivery__item" href="#mechanics">Mechanics</a>
+          <a class="link-delivery__item" href="#">Browse Essentials</a>
+          <a class="link-delivery__item" href="#faqs">FAQs</a>
+        </nav>
+
+        <nav class="nav-user hide">
+          <a class="nav-user nav-user__avatar" href="#"><img class="nav-user__avatar__image"
+              src="./assets/images/profile-avatar.jpg">Hello, Maan!</a>
+          <a class="nav-user nav-user__basket" href="#"><img class="nav-user__basket__icon"
+              src="./assets/images/icon-basket.svg">My Basket <span class="nav-user__basket__count">5</span></a>
+        </nav>
+
+        <nav class="nav-guest hide">
+          <a class="button-guest button-guest--outline-white font-cta">Login</a>
+          <a class="button-guest button-guest--pure-white font-cta">Sign up</a>
+        </nav>
+
+        <nav class="nav-user">
+          <div class="nav-user__hello">
+            <img class="nav-user__avatar" src="./assets/images/avatar.png" alt="">
+            <span>Hello, Maan!</span>
+            <div class="nav-user__menu">
+              <a href="#">My Profile and Orders</a>
+              <a href="#">Logout</a>
+            </div>
+          </div>
+
+          <div id="my-basket-dropdown">
+            <a href="#">
+              <img src="./assets/images/icons/cart.svg" alt="">
+              My Basket <span class="order-count">5</span>
+            </a>
+
+            <div></div>
+            <div class="hide" id="my-basket-dropdown-content">
+              <div class="div-arrow"></div>
+              <div class="top">
+                <div>
+                  <img src="./assets/images/icons/circle-check.svg" alt="">
+                  Added To Your Basket (5)
+                </div>
+
+                <a href=""><img src="./assets/images/icons/close-black.svg" alt=""></a>
+              </div>
+
+              <div class="product--small">
+                <img src="./assets/images/basket-1.png" alt="">
+                <div>
+                  <p class="item-category">INDOOR COMFORTS</p>
+                  <p class="item-name">Water Jug With Ice</p>
+                  <p class="item-details"> <span class="label"> Size:</span> <span class="value">1 Liter</span> <span
+                      class="label">Color:</span>
+                    <span class="value">Green</span></p>
+                  <p class="item-price">₱429.00</p>
+                </div>
+              </div>
+
+              <div class="buttons-container">
+                <button class="sm-button bg-white">View Basket<img src="./assets/images/red-line.svg" alt=""></button>
+                <button class="sm-button bg-blue">Checkout<img src="./assets/images/red-line.svg" alt=""></button>
+              </div>
+
+              <div class="product-similar--small">
+                <hr />
+
+                <div class="header">
+                  <p>Similar Products</p>
+                  <a href="" class="btn--text-link font-cta">Browse all</a>
+                </div>
+
+                <div class="product--small">
+                  <img src="./assets/images/basket-2.png" alt="">
+                  <div>
+                    <p class="item-category">INDOOR COMFORTS</p>
+                    <p class="item-name">Oreo Chocolate Cream</p>
+
+                    <p class="item-price">₱24.75</p>
+                  </div>
+                </div>
+                <div class="product--small">
+                  <img src="./assets/images/basket-3.png" alt="">
+                  <div>
+                    <p class="item-category">INDOOR COMFORTS</p>
+                    <p class="item-name">Tumbler</p>
+
+                    <p class="item-price">₱100.00</p>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+        </nav>
+      </nav>
+    </header>
+    <!-- /HEADER -->
+
+    <!-- MOBILE MENU -->
+    <nav class="nav__mobile nav__mobile--delivery">
+      <nav class="nav__mobile__user"></nav>
+      <ul class="nav__mobile-upper">
+        <li><a class="nav__mobile-upper-item" href="#mechanics">Mechanics</a></li>
+        <li><a class="nav__mobile-upper-item" href="#">Browse Essentials</a></li>
+        <li><a class="nav__mobile-upper-item" href="#faqs">FAQS</a></li>
+
+      </ul>
+      <ul class="nav__mobile-social">
+        <li><a href="#"><img src="./assets/images/icons/icon-dark-viber.svg" alt="Viber"></a></li>
+        <li><a href="#"><img src="./assets/images/icons/icon-fb-black.svg" alt="Facebook"></a></li>
+        <li><a href="#"><img src="./assets/images/icons/icon-youtube-black.svg" alt="Youtube"></a></li>
+        <li><a href="#"><img src="./assets/images/icons/icon-ig-black.svg" alt="Instagram"></a></li>
+        <li><a href="#"><img src="./assets/images/icons/icon-twitter-black.svg" alt="Twitter"></a></li>
+      </ul>
+    </nav>
+    <!-- /MOBILE MENU -->
+
+    <section class="product">
+      <div>
+        <div class="blue-background"></div>
+        <div class="product-details">
+          <div>
+            <section class="breadcrumb">
+              <div>
+                <p>
+                  Home <img src="./assets/images/icons/angle-right.svg" alt="">
+                  Essentials Catalog <img src="./assets/images/icons/angle-right.svg" alt="">
+                  <span>
+                    Indoor Comforts
+                  </span>
+                </p>
+              </div>
+            </section>
+          </div>
+
+          <div class="item">
+            <div class="item__variants">
+              <img src="./assets/images/variant-1.png" alt="">
+              <img src="./assets/images/variant-2.png" alt="">
+              <img src="./assets/images/variant-3.png" alt="">
+              <img src="./assets/images/variant-4.png" alt="">
+            </div>
+            <div class="item__image">
+              <img src="./assets/images/water-jug-big.png" alt="">
+            </div>
+
+            <div class="item__details">
+              <p>INDOOR COMFORTS</p>
+              <!-- h1 for SEO -->
+              <h1>Water Jug With Ice</h1>
+              <h1>₱199.75</h1>
+
+              <hr />
+
+              <div class="row">
+                <div class="col">
+                  <p>Size</p>
+                  <div class="custom-select">
+                    <select>
+                      <!-- put value default to hide data on dropdown -->
+                      <option value="default" disabled selected hidden>Select</option>
+                      <option value="1">1 Liter</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col">
+                  <p>Color</p>
+                  <div class="custom-select-colors">
+                    <select>
+                      <option value="default">Select</option>
+                      <option value="1" color="green">green</option>
+                      <option value="2" color="white">white</option>
+                      <option value="3" color="yellow">yellow</option>
+                      <option value="4" color="red">Red</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col">
+                  <p>Quantity</p>
+                  <div class="custom-select">
+                    <select>
+                      <option value="1" selected>1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row servicing-branch">
+                <p>Servicing Branch</p>
+                <select name="" class="branch_select" id="">
+                  <optgroup label="Metro Manila">
+                    <option label="Choose your preferred branch..." disabled selected />
+                    <option label="The SM Store Makati" />
+                    <option label="The SM Store Mall of Asia" />
+                    <option label="The SM Store Marikina" />
+                    <option label="The SM Store Masinag" />
+                    <option label="The SM Store Megamall" />
+                  </optgroup>
+                </select>
+              </div>
+
+              <div class="delivery-box">
+                <p><img src="./assets/images/icons/delivery.svg" alt="">2 Days Minimum Delivery Lead Time</p>
+                <p class="reminder-text">Delivery lead times vary per area as stores have different serviceability
+                  coverage. Can't wait for 2
+                  days? Please select store pick up upon check out.</p>
+              </div>
+
+              <div class="buttons-container">
+                <button class="sm-button bg-white">Order now<img src="./assets/images/red-line.svg" alt=""></button>
+                <button class="sm-button bg-blue">Basket<img src="./assets/images/red-line.svg" alt=""></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="nav-tabs">
+            <ul>
+              <li class="active"><a href="">About The Product</a></li>
+              <li><a href="">Return Policy</a></li>
+              <li><a href="">Delivery Info</a></li>
+            </ul>
+          </div>
+
+          <div class="nav-tabs-content">
+            <p>Don’t forget to stay hydrated in this insane heat—this Water Jug can help you with this goal!</p>
+
+            <div class="blue-box">
+              <img src="./assets/images/product-geotag.png" alt="">
+              <p>Product availability varies per branch. A branch representative will confirm available items and
+                variations after you check out.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="delivery__featured">
+      <div>
+        <div class="delivery__featured-header">
+          <h2 class="font-h2-caps delivery__h2">Similar Items</h2>
+
+        </div>
+
+        <div class="delivery__featured-slider">
+          <div class="carousel__item">
+            <a><img src="./assets/images/face-shield-similar.png" alt=""></a>
+            <span>SAFETY AND PROTECTION</span>
+            <a class="carousel__item__link">
+              <h4 class="font-h4">Face Shield</h4>
+            </a>
+            <h4 class="font-h4 text-bold">₱100.00</h4>
+          </div>
+          <div class="carousel__item">
+            <a><img src="./assets/images/filtered-dispenser.png" alt=""></a>
+            <span>INDOOR COMFORTS</span>
+            <a class="carousel__item__link">
+              <h4 class="font-h4">Filtered Dispenser</h4>
+            </a>
+            <h4 class="font-h4 text-bold">₱2,799.75</h4>
+          </div>
+          <div class="carousel__item">
+            <a><img src="./assets/images/ethyl-alcohol.png" alt=""></a>
+            <span>INDOOR COMFORTS</span>
+            <a class="carousel__item__link">
+              <h4 class="font-h4">Ethyl Alcohol</h4>
+            </a>
+            <h4 class="font-h4 text-bold">₱205.00</h4>
+          </div>
+          <div class="carousel__item">
+            <a><img src="./assets/images/poly-sprayer.png" alt=""></a>
+            <span>OUTDOOR ESSENTIALS</span>
+            <a class="carousel__item__link">
+              <h4 class="font-h4">Poly Sprayer</h4>
+            </a>
+            <h4 class="font-h4 text-bold">₱1,599.75</h4>
+          </div>
+          <div class="carousel__item">
+            <a><img src="./assets/images/face-shield-similar.png" alt=""></a>
+            <span>SAFETY AND PROTECTION</span>
+            <a class="carousel__item__link">
+              <h4 class="font-h4">Face Shield</h4>
+            </a>
+            <h4 class="font-h4 text-bold">₱100.00</h4>
+          </div>
+          <div class="carousel__item">
+            <a><img src="./assets/images/filtered-dispenser.png" alt=""></a>
+            <span>INDOOR COMFORTS</span>
+            <a class="carousel__item__link">
+              <h4 class="font-h4">Filtered Dispenser</h4>
+            </a>
+            <h4 class="font-h4 text-bold">₱2,799.75</h4>
+          </div>
+        </div>
+
+        <div class="delivery__featured-controls">
+          <button class="delivery__featured-controls--left"></button>
+          <button class="delivery__featured-controls--right"></button>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="footer__delivery">
+      <div>
+        <a class="font-caption">Privacy And Cookie Policy</a>
+        <a class="font-caption">Terms and Conditions</a>
+      </div>
+      <span class="font-caption">© 2020 The SM Store. All rights reserved.</span>
+    </footer>
+    <!-- /FOOTER -->
+
+
+  </div> <!-- /wrapper -->
+
+  <!-- IMPORTS -->
+  <script src="./assets/js/jquery.js"></script>
+  <script src="./assets/js/slick.min.js"></script>
+  <script src="./assets//js/customselectcolors.js"></script>
+  <script src="./assets//js/customselect.js"></script>
+
+  <!-- CUSTOM JS -->
+  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/carousel.js"></script>
+</body>
+
+</html>
