@@ -1,277 +1,63 @@
 $chilli: #ff4e4e;
 
-// Utilities
-.sm-button {
-  display: flex;
-  justify-content: center;
-  padding: 16px 24px;
-  cursor: pointer;
-
-  border: 1px solid black;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 16px;
-  display: flex;
-  align-items: center;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-
-  flex: none;
-  order: 0;
-  align-self: center;
-
-  &.bg-white {
-    background: white;
-    color: #161720;
-    &:hover {
-      background: whitesmoke;
-    }
-  }
-
-  &.bg-blue {
-    background-color: #18489a;
-    color: white;
-    &:hover {
-      background: rgba(24, 72, 154, 0.699);
-    }
-  }
-
-  & > img {
-    padding-left: 8px;
-  }
-}
-
-.sm-select {
-  // margin: 50px;
-  width: 84px;
-  padding: 8px 25px 8px 15px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  height: 40px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-color: white !important;
-}
-
-// End of Utilities
-
-.password {
-  width: 100%;
-  background-color: $light-periwinkle;
-  padding-bottom: 40px;
-
-  & > div {
-    width: 1400px;
-    margin: 0 auto;
-    flex-flow: column;
-    padding: 0 87px 40px 88px;
-
-    @include respond(mobile) {
-      width: 100%;
-      padding: 15px;
-      height: auto;
-    }
-
-    @include respond(tablet) {
-      width: 100%;
-      padding: 30px;
-      height: auto;
-    }
-  }
-
-  &__information {
-    background-color: white;
-    width: 90%;
-    margin: auto;
-    padding: 44px 40px 32px 40px;
-
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: normal;
-
-    @include respond(mobile) {
-      width: 100%;
-      box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
-      border-radius: 8px;
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-
-    @include respond(tablet) {
-      width: 100%;
-      box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
-      border-radius: 8px;
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-
-    & > .header-text {
-      font-family: Josefin Sans;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 24px;
-      line-height: 32px;
-      letter-spacing: 1.6px;
-
-      color: #000000;
-
-      @include respond(mobile) {
-        font-size: 20px;
-        line-height: 30px;
-        letter-spacing: unset;
-      }
-
-      @include respond(tablet) {
-        font-size: 20px;
-        line-height: 30px;
-        letter-spacing: unset;
-      }
-    }
-
-    & > .changepassword-text {
-      font-family: Open Sans;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 24px;
-      display: flex;
-      align-items: center;
-      color: #403f47;
-
-      margin-top: 24px;
-      margin-bottom: 16px;
-    }
-
-    & > .current_password,
-    & > .new_password {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-between;
-
-      & > .field__container {
-        display: flex;
-        flex-flow: column nowrap;
-        flex: 1 0 50%;
-        max-width: 48%;
-
-        @include respond(mobile) {
-          max-width: unset;
-          flex: 1 0 100%;
-        }
-
-        & > label {
-          font-weight: 600;
-          font-size: 14px;
-          line-height: 22px;
-          text-transform: capitalize;
-          color: #161720;
-          margin-bottom: 6px;
-
-          & > span {
-            color: $chilli;
-          }
-        }
-
-        & > input {
-          border: 1px solid #88898f;
-          padding: 8px 15px;
-          font-weight: 600;
-          font-size: 16px;
-          line-height: 24px;
-          color: #403f47;
-          margin-bottom: 24px;
-          background: url(./../images/icons/password-eye-enable.svg) 95% / 3% no-repeat white;
-
-          &::placeholder {
-            font-style: italic;
-            text-transform: capitalize;
-            font-weight: normal;
-          }
-        }
-
-        & > .sm-select {
-          border: 1px solid #88898f;
-          padding: 8px 15px;
-          font-weight: 600;
-          font-size: 16px;
-          line-height: 24px;
-          color: #403f47;
-          margin-bottom: 24px;
-          width: 100%;
-          background: url(./../images/icons/angle-down.svg) 95%/2% no-repeat #eee;
-
-          &:required:invalid {
-            font-style: italic;
-            text-transform: capitalize;
-            font-weight: normal;
-            color: #88898f;
-          }
-
-          & > option {
-            font-style: normal;
-            text-transform: capitalize;
-            font-weight: normal;
-            color: #403f47;
-          }
-        }
-      }
-    }
-  }
-}
-
 .profile {
   width: 100%;
   background-color: $light-periwinkle;
   min-height: calc(100vh - 160px);
-  height: 1020px;
-
-  @include respond(mobile) {
-    height: auto;
-  }
+  height: auto;
 
   @include respond(tablet) {
     height: auto;
   }
 
-  & > div {
-    width: 1400px;
-    height: 740px;
-    margin: 0 auto;
-    flex-flow: column;
-    padding: 0 87px 40px 88px;
+  @include respond(mobile) {
+    height: auto;
+    padding-bottom: 60px;
+  }
+
+  & .side_nav-header.mobile-only {
+    display: none;
 
     @include respond(mobile) {
-      width: 100%;
-      padding: 15px;
-      height: auto;
+      display: flex;
+      flex: 1;
+      height: 56px !important;
+      margin-bottom: 0;
+      align-items: center;
+      padding-left: 12px;
     }
+  }
+
+  & > div {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 30px 40px 30px;
 
     @include respond(tablet) {
       width: 100%;
       padding: 30px;
       height: auto;
     }
+
+    @include respond(mobile) {
+      width: 100%;
+      padding: 0;
+      height: auto;
+    }
   }
 
   &__information {
     background-color: white;
-    width: 90%;
     margin: auto;
-    padding: 44px 40px 32px 40px;
+    padding: 24px;
+    max-width: 1028px;
+    margin-top: 64px;
 
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
-
-    @include respond(mobile) {
-      width: 100%;
-      box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
-      border-radius: 8px;
-      padding-left: 10px;
-      padding-right: 10px;
-    }
 
     @include respond(tablet) {
       width: 100%;
@@ -279,6 +65,15 @@ $chilli: #ff4e4e;
       border-radius: 8px;
       padding-left: 10px;
       padding-right: 10px;
+    }
+
+    @include respond(mobile) {
+      width: 100%;
+      box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
+      border-radius: 8px;
+      padding-left: 12px;
+      padding-right: 12px;
+      margin-top: 0;
     }
 
     & > .header-text {
@@ -424,6 +219,10 @@ $chilli: #ff4e4e;
 
     & > button {
       width: 140px;
+
+      @include respond(mobile) {
+        width: 100%;
+      }
     }
   }
 
@@ -436,4 +235,253 @@ $chilli: #ff4e4e;
     font-family: Open Sans;
     font-style: normal;
   }
+
+.password {
+  width: 100%;
+  background-color: $light-periwinkle;
+  min-height: calc(100vh - 225px);
+
+  @include respond(mobile) {
+    padding-bottom: 60px;
+  }
 }
+
+  & .side_nav-header.mobile-only {
+    display: none;
+
+    @include respond(mobile) {
+      display: flex;
+      height: 56px !important;
+      margin-bottom: 0;
+      align-items: center;
+      padding-left: 12px;
+    }
+  }
+
+  & > div {
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row;
+    padding: 0 30px 40px 30px;
+
+    @include respond(tablet) {
+      width: 100%;
+      padding: 30px;
+      height: auto;
+    }
+
+    @include respond(mobile) {
+      width: 100%;
+      padding: 0;
+      height: auto;
+      flex-flow: column;
+    }
+  }
+
+  &__information {
+    background-color: white;
+    margin: auto;
+    padding: 24px;
+    max-width: 1028px;
+    width: 100%;
+    margin-top: 64px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+
+    @include respond(tablet) {
+      width: 100%;
+      box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
+      border-radius: 8px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    @include respond(mobile) {
+      width: 100%;
+      box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
+      border-radius: 8px;
+      padding-left: 12px;
+      padding-right: 12px;
+      margin-top: 0;
+    }
+
+    & > .header-text {
+      font-family: Josefin Sans;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: 1.6px;
+
+      color: #000000;
+
+      @include respond(mobile) {
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: unset;
+      }
+
+      @include respond(tablet) {
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: unset;
+      }
+    }
+
+    & > .changepassword-text {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+      color: #403f47;
+
+      margin-top: 24px;
+      margin-bottom: 16px;
+    }
+
+    & > .current_password,
+    & > .new_password {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+
+      & > .field__container {
+        display: flex;
+        flex-flow: column nowrap;
+        flex: 1 0 50%;
+        max-width: 48%;
+
+        @include respond(mobile) {
+          max-width: unset;
+          flex: 1 0 100%;
+        }
+
+        & > label {
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 22px;
+          text-transform: capitalize;
+          color: #161720;
+          margin-bottom: 6px;
+
+          & > span {
+            color: $chilli;
+          }
+        }
+
+        & > input {
+          border: 1px solid #88898f;
+          padding: 8px 15px;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 24px;
+          color: #403f47;
+          margin-bottom: 24px;
+          background: url(./../images/icons/password-eye-enable.svg) 95% / 3% no-repeat white;
+
+          &::placeholder {
+            font-style: italic;
+            text-transform: capitalize;
+            font-weight: normal;
+          }
+        }
+
+        & > .sm-select {
+          border: 1px solid #88898f;
+          padding: 8px 15px;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 24px;
+          color: #403f47;
+          margin-bottom: 24px;
+          width: 100%;
+          background: url(./../images/icons/angle-down.svg) 95%/2% no-repeat #eee;
+
+          &:required:invalid {
+            font-style: italic;
+            text-transform: capitalize;
+            font-weight: normal;
+            color: #88898f;
+          }
+
+          & > option {
+            font-style: normal;
+            text-transform: capitalize;
+            font-weight: normal;
+            color: #403f47;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Utilities
+.sm-button {
+  display: flex;
+  justify-content: center;
+  padding: 16px 24px;
+  cursor: pointer;
+  max-width: 230px;
+  width: 230px;
+
+  @include respond(mobile) {
+    max-width: unset;
+    width: 100%;
+  }
+
+  border: 1px solid black;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  flex: none;
+  order: 0;
+  align-self: center;
+
+  &.bg-white {
+    background: white;
+    color: #161720;
+    &:hover {
+      background: whitesmoke;
+    }
+  }
+
+  &.bg-blue {
+    background-color: #18489a;
+    color: white;
+    &:hover {
+      background: rgba(24, 72, 154, 0.699);
+    }
+  }
+
+  & > img {
+    padding-left: 8px;
+  }
+}
+
+.sm-select {
+  // margin: 50px;
+  width: 84px;
+  padding: 8px 25px 8px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  height: 40px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: white !important;
+}
+
+// End of Utilities
