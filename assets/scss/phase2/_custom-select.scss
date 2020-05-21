@@ -6,6 +6,10 @@
     min-width: 120px;
     max-width: 200px;
     height: 40px;
+
+    @include respond(mobile) {
+        max-width: unset;
+    }
 }
 
 .custom-select-colors select,

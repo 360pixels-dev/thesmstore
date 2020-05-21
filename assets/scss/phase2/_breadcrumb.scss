@@ -85,3 +85,19 @@
     }
   }
 }
+.breadcrumb.mobile-only {
+  & > div {
+    @include respond(mobile) {
+      display: block;
+      background-color: white;
+      padding: 12px;
+
+      & > p {
+        font-size: 14px;
+        line-height: 22px;
+        color: #403f47;
+        margin: 0;
+      }
+    }
+  }
+}

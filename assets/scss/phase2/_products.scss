@@ -184,6 +184,10 @@
     padding-top: 0;
     padding-bottom: 80px;
 
+    @include respond(mobile) {
+      padding: 0 0 60px 0;
+    }
+
     & > .blue-background {
       position: absolute;
       left: 0;
@@ -192,12 +196,23 @@
       z-index: 0;
       background-color: #397cee;
       height: 220px;
+
+      @include respond(mobile) {
+        display: none;
+      }
     }
   }
 
   &-details {
     z-index: 10;
     width: 100%;
+
+    @include respond(mobile) {
+      & > .nav-tabs,
+      & > .nav-tabs-content {
+        display: none;
+      }
+    }
 
     & > div {
       background-color: white;
@@ -211,6 +226,77 @@
     & > .item {
       padding: 20px 40px;
       display: flex;
+
+      @include respond(mobile) {
+        padding: 0;
+        flex-flow: column;
+      }
+
+      // mobile dropdown
+      & > .delivery__mechanics {
+        display: none;
+
+        @include respond(mobile) {
+          display: block !important;
+
+          & > div {
+            padding: 0;
+            padding-top: 40px;
+
+            & > .accordion.active {
+              & .font-headline-bold {
+                font-weight: bold;
+              }
+            }
+
+            & > .accordion {
+              margin: 0;
+
+              & > .accordion__content {
+                padding: 0 !important;
+
+                & > p {
+                  padding: 24px;
+                  font-family: Open Sans;
+                  font-style: normal;
+                  font-weight: normal;
+                  font-size: 16px;
+                  line-height: 24px;
+                  color: #403f47;
+                }
+                & > .blue-box {
+                  display: flex;
+                  flex-flow: column;
+                  align-items: center;
+                  padding: 12px;
+                  background: #18489a;
+
+                  & > img {
+                    width: fit-content;
+                  }
+
+                  & > p {
+                    font-family: Open Sans;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 22px;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    color: #ffffff;
+                    margin-top: 19px;
+                  }
+                }
+              }
+            }
+          }
+
+          & .accordion__header {
+            border-radius: 0;
+          }
+        }
+      }
 
       & > .item__variants {
         display: flex;
@@ -237,7 +323,7 @@
           }
 
           &:hover {
-            border: 2px solid #0797FF;
+            border: 2px solid #0797ff;
           }
         }
       }
@@ -245,6 +331,12 @@
       & > .item__image {
         display: flex;
         flex: 1;
+
+        @include respond(mobile) {
+          img {
+            width: 100%;
+          }
+        }
       }
 
       & > .item__details {
@@ -258,6 +350,11 @@
         margin-left: 40px;
         justify-content: center;
 
+        @include respond(mobile) {
+          padding: 24px 12px;
+          margin: 0;
+        }
+
         & > p {
           font-weight: bold;
           font-size: 12px;
@@ -266,6 +363,10 @@
           text-transform: uppercase;
           color: #88898f;
           margin-bottom: 6px;
+
+          @include respond(mobile) {
+            text-align: center;
+          }
         }
 
         & > h1 {
@@ -274,6 +375,10 @@
           line-height: 32px;
           color: #403f47;
           margin-bottom: 16px;
+
+          @include respond(mobile) {
+            text-align: center;
+          }
         }
 
         & > hr {
@@ -295,6 +400,7 @@
             font-size: 14px;
             line-height: 22px;
             text-transform: capitalize;
+            color: #161720;
           }
 
           & > .col {
@@ -305,6 +411,24 @@
 
             &:last-child {
               margin-right: 0;
+            }
+
+            @include respond(mobile) {
+              height: 80px;
+
+              &:nth-child(1) {
+                margin-right: 8px;
+              }
+
+              &:nth-child(2) {
+                margin-right: 0;
+                margin-left: 8px;
+              }
+
+              &:nth-child(3) {
+                margin-top: 20px;
+                flex-basis: 100%;
+              }
             }
           }
         }
@@ -371,11 +495,25 @@
           display: flex;
           margin-top: 24px;
 
+          @include respond(mobile) {
+            flex-wrap: wrap-reverse;
+          }
+
           & > button {
             max-width: 200px;
 
             &:last-child {
               margin-left: 24px;
+
+              @include respond(mobile) {
+                margin: 0;
+                margin-bottom: 24px;
+              }
+            }
+
+            @include respond(mobile) {
+              max-width: unset;
+              width: 100%;
             }
           }
         }
