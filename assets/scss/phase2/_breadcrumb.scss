@@ -56,6 +56,11 @@
       flex: 1;
       padding: 22px 0 22px 20px;
 
+      & > a {
+        display: flex;
+        align-items: center;
+      }
+
       & > p {
         // length of left icon + padding 20px
         margin-right: 44px;

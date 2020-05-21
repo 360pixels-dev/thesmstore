@@ -112,12 +112,11 @@
 
         <section class="user">
             <div>
-                <div class="user-profile">
-                    <div class="user-profile__header">
+                <div class="side_nav">
+                    <div class="side_nav-header">
                         <p>Hello, Maan</p>
                     </div>
-                    <!-- <p class="user-profile__header"></p> -->
-                    <div class="side_nav">
+                    <div class="side_nav-nav">
                         <ul>
                             <li class="active"><a href="#"><img src="./assets/images/icons/Cart.svg" alt="">My
                                     Orders</a></li>
@@ -146,7 +145,22 @@
 
                 <div class="user-orders mobile-only">
                     <div class="user-orders__header">
-                        <p>My Orders</p>
+                        <div class="custom-select transparent orders-status">
+                            <select>
+                                <option selected >All Orders</option>
+                                <option value="1">Processing</option>
+                                <option value="1">Completed</option>
+                                <option value="1">Cancelled</option>
+                            </select>
+                        </div>
+
+                        <div class="custom-select transparent">
+                            <select>
+                                <option selected>Last 5 Orders</option>
+                                <option value="1">Last 10 Orders</option>
+                                <option value="1">Last 20 Orders</option>
+                            </select>
+                        </div>
                     </div>
 
                     <div class="user-orders__empty">
@@ -202,6 +216,7 @@
     <!-- IMPORTS -->
     <script src="./assets/js/jquery.js"></script>
     <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets//js/customselect.js"></script>
 
     <!-- CUSTOM JS -->
     <script src="./assets/js/main.js"></script>

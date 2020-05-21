@@ -3,12 +3,20 @@
     padding: 16px 20px;
     margin-bottom: 18px;
 
+    @include respond(mobile) {
+        margin: 0 12px 18px 12px;
+    }
+
     & > .action {
         font-family: Open Sans;
         font-style: normal;
         font-weight: normal;
         display: flex;
         margin-top: 8px;
+
+        @include respond(mobile) {
+            flex-flow: column;
+        }
 
         &:first-child {
             margin-top: 0;
@@ -22,6 +30,10 @@
             align-items: center;
             color: #88898f;
             flex: 1;
+            margin-left: 0;
+            @include respond(mobile) {
+                margin-bottom: 4px;
+            }
         }
 
         & > p:last-child {
@@ -31,6 +43,34 @@
             color: #403f47;
             flex: 3;
             justify-content: flex-start;
+
+            @include respond(mobile) {
+                margin-left: 40px;
+            }
+        }
+
+        @include respond(mobile) {
+            & > p {
+                display: flex;
+                font-size: 12px;
+                line-height: 18px;
+                color: #403f47;
+                flex: 3;
+                justify-content: flex-start;
+                margin-left: 40px;
+
+                & > span {
+                    font-family: Open Sans;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 18px;
+                    display: flex;
+                    align-items: center;
+                    color: #88898f;
+                    margin-right: 8px;
+                }
+            }
         }
     }
 
@@ -45,5 +85,9 @@
         align-items: center;
         color: #403f47;
         text-decoration: none;
+
+        @include respond(mobile) {
+            justify-content: center;
+        }
     }
 }
