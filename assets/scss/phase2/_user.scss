@@ -128,10 +128,11 @@
     }
 
     &__header {
-      margin-bottom: 12px;
+      margin-bottom: 16px;
       display: flex;
       align-items: center;
-      height: 52px !important;
+      height: 40px !important;
+      max-height: 40px;
 
       & > p {
         font-family: Josefin Sans;
@@ -640,11 +641,13 @@
     }
 
     &__header {
-      margin-bottom: 12px;
+      margin-bottom: 16px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      height: 52px !important;
+      height: 40px !important;
+      max-height: 40px;
+
 
       @include respond(tablet) {
         width: 100%;

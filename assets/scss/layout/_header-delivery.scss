@@ -138,7 +138,7 @@
 }
 
 .header-profile {
-    height: 120px;
+    height: 118px;
     // background: $coral;
     background-color: #397CEE;
     z-index: 40;
@@ -165,6 +165,8 @@
 }
 
 .logo-delivery {
+    max-height: 53px;
+    
     @include respond(tablet) {
         width: 297px;
         margin: auto;
@@ -231,7 +233,7 @@
 .nav {
     &__social {
         margin-top: 8px;
-        margin-left: 20px;
+        margin-left: 16px;
     }
 }
 
