@@ -34,7 +34,6 @@
     @include respond(mobile) {
         top: 20px;
     }
-
 }
 
 .select-selected.select-arrow-active:after {
@@ -142,9 +141,38 @@
 
 .custom-select.transparent.orders-status {
     @include respond(mobile) {
-        width: 130px ;
+        width: 130px;
         min-width: 130px;
         max-width: 160px;
     }
 }
 
+.custom-select.transparent.basket-qty {
+    @include respond(mobile) {
+        width: 110px;
+        min-width: 110px;
+        max-width: 130px;
+
+        & .select-items div,
+        & .select-selected {
+            color: #403f47;
+            padding: 8px 0px;
+            cursor: pointer;
+            user-select: none;
+
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+        & .select-selected:after {
+            top: 16px !important;
+        }
+
+        & .select-selected.select-arrow-active:after {
+            top: 9px !important;
+        }
+    }
+}
