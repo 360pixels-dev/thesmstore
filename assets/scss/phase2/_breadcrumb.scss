@@ -9,6 +9,7 @@
     margin: 0 auto;
     flex-flow: column;
     padding: 16px 30px;
+    padding-bottom: 0;
 
     @include respond(tablet) {
       width: 100%;

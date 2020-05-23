@@ -13981,7 +13981,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       align-items: center;
       height: 40px !important;
       max-height: 40px;
-      margin-top: 48px; }
+      margin-top: 30px; }
       @media only screen and (max-width: 1024px) {
         .user-orders__header {
           width: 100%;
@@ -16733,7 +16733,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     display: flex;
     align-items: center;
     height: 40px !important;
-    max-height: 40px; }
+    max-height: 40px;
+    margin-top: 30px; }
     .side_nav-header > p {
       font-family: Josefin Sans;
       font-style: normal;
@@ -16842,7 +16843,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     height: fit-content;
     margin: 0 auto;
     flex-flow: column;
-    padding: 16px 30px; }
+    padding: 16px 30px;
+    padding-bottom: 0; }
     @media only screen and (max-width: 1024px) {
       .breadcrumb > div {
         width: 100%;
