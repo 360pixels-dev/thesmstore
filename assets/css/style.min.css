@@ -13980,7 +13980,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       justify-content: space-between;
       align-items: center;
       height: 40px !important;
-      max-height: 40px; }
+      max-height: 40px;
+      margin-top: 48px; }
       @media only screen and (max-width: 1024px) {
         .user-orders__header {
           width: 100%;
@@ -14333,6 +14334,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     .user-orders__basket {
       display: flex;
       flex-flow: row nowrap; }
+      .user-orders__basket > .right-column {
+        padding-left: 24px; }
       @media only screen and (max-width: 600px) {
         .user-orders__basket {
           flex-flow: column; }
@@ -14506,7 +14509,6 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           .user-orders__details > div {
             width: 100%; } }
       .user-orders__details__pricing {
-        margin-top: 24px;
         background: #ffffff;
         box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
         border-radius: 4px;
@@ -14524,7 +14526,12 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         @media only screen and (max-width: tablet) {
           .user-orders__details__pricing {
             width: 100%; } }
-        .user-orders__details__pricing__item:first-of-type {
+        .user-orders__details__pricing .user-orders__summary {
+          margin-left: unset;
+          padding: unset;
+          border-radius: unset;
+          box-shadow: unset; }
+        .user-orders__details__pricing__item {
           margin-top: 16px; }
         .user-orders__details__pricing hr {
           color: #ebeef8;
@@ -14854,9 +14861,10 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         .user-orders__details__pricing__checkbox {
           display: flex;
           align-items: center;
-          margin: 18px 0 34px 0;
           font-family: Open Sans;
           font-style: normal; }
+          .user-orders__details__pricing__checkbox:first-child {
+            margin-bottom: 24px; }
           .user-orders__details__pricing__checkbox input[type="checkbox"] {
             display: none; }
           .user-orders__details__pricing__checkbox label {
@@ -14920,7 +14928,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
             text-transform: uppercase;
             color: #88898f; }
           .user-orders__details__pricing__checkbox > .servicing_branch {
-            padding: 6px 8px;
+            padding: 6px 16px;
             display: flex;
             background-color: #ebeef8;
             flex: 1;
@@ -15224,7 +15232,6 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       .user-orders__summary__container > button > img {
         padding-left: 8px; }
     .user-orders__summary {
-      margin-left: 24px;
       background-color: #ffffff;
       width: 100%;
       flex-wrap: nowrap;
@@ -15238,6 +15245,17 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       color: #161720;
       box-shadow: 0px 7px 10px rgba(201, 208, 222, 0.25);
       border-radius: 4px; }
+      .user-orders__summary:first-child {
+        background-color: #F86A6A;
+        margin-bottom: 16px; }
+        .user-orders__summary:first-child > p {
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 22px;
+          color: #ffffff;
+          margin: 0;
+          display: flex;
+          align-items: center; }
       @media only screen and (max-width: 600px) {
         .user-orders__summary {
           margin: 0;
@@ -15278,8 +15296,11 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         background: #f0f3fc;
         font-size: 14px;
         line-height: 22px;
-        color: #403f47; }
-        .user-orders__summary > .text_shipping_reminder > span {
+        color: #403f47;
+        display: flex; }
+        .user-orders__summary > .text_shipping_reminder > img {
+          margin-right: 18px; }
+        .user-orders__summary > .text_shipping_reminder span {
           font-weight: bold; }
       .user-orders__summary > .need-text {
         font-family: Open Sans;
@@ -15304,7 +15325,18 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         font-style: normal;
         padding: 10px;
         border: 1px solid #88898f;
-        resize: none; }
+        resize: none;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #161720; }
+        .user-orders__summary > textarea::placeholder {
+          font-family: Open Sans;
+          font-style: italic;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 24px;
+          color: #88898f; }
       .user-orders__summary > button {
         width: 100%;
         margin-top: 20px;

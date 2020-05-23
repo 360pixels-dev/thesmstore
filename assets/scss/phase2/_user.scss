@@ -647,7 +647,7 @@
       align-items: center;
       height: 40px !important;
       max-height: 40px;
-
+      margin-top: 48px;
 
       @include respond(tablet) {
         width: 100%;
@@ -977,6 +977,10 @@
       display: flex;
       flex-flow: row nowrap;
 
+      & > .right-column {
+        padding-left: 24px;
+      }
+
       @include respond(mobile) {
         flex-flow: column;
         & > div {
@@ -1129,7 +1133,7 @@
       }
 
       &__pricing {
-        margin-top: 24px;
+        // margin-top: 24px;
         background: #ffffff;
         box-shadow: $soft-shadow;
         border-radius: 4px;
@@ -1144,7 +1148,14 @@
           width: 100%;
         }
 
-        &__item:first-of-type {
+        & .user-orders__summary {
+          margin-left: unset;
+          padding: unset;
+          border-radius: unset;
+          box-shadow: unset;
+        }
+
+        &__item {
           margin-top: 16px;
         }
 
@@ -1442,9 +1453,12 @@
         &__checkbox {
           display: flex;
           align-items: center;
-          margin: 18px 0 34px 0;
           font-family: Open Sans;
           font-style: normal;
+
+          &:first-child {
+            margin-bottom: 24px;
+          }
 
           & input[type="checkbox"] {
             display: none;
@@ -1538,7 +1552,7 @@
           }
 
           & > .servicing_branch {
-            padding: 6px 8px;
+            padding: 6px 16px;
             display: flex;
             background-color: #ebeef8;
             flex: 1;
@@ -1835,7 +1849,7 @@
     }
 
     &__summary {
-      margin-left: 24px;
+      // margin-left: 24px;
       background-color: #ffffff;
       width: 100%;
       flex-wrap: nowrap;
@@ -1850,6 +1864,22 @@
       color: #161720;
       box-shadow: 0px 7px 10px rgba(201, 208, 222, 0.25);
       border-radius: 4px;
+
+      &:first-child {
+        background-color: $coral;
+        margin-bottom: 16px;
+
+        & > p {
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 22px;
+          color: #ffffff;
+          margin: 0;
+
+          display: flex;
+          align-items: center;
+        }
+      }
 
       @include respond(mobile) {
         margin: 0;
@@ -1895,8 +1925,13 @@
         font-size: 14px;
         line-height: 22px;
         color: #403f47;
+        display: flex;
 
-        & > span {
+        & > img {
+          margin-right: 18px;
+        }
+
+        & span {
           font-weight: bold;
         }
       }
@@ -1929,6 +1964,19 @@
         padding: 10px;
         border: 1px solid #88898f;
         resize: none;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #161720;
+
+        &::placeholder {
+          font-family: Open Sans;
+          font-style: italic;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 24px;
+          color: #88898f;
+        }
       }
 
       & > button {
