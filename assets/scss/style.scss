@@ -64,14 +64,15 @@
 @import 'page/signup';
 @import 'page/delivery';
 @import 'page/policy';
-// @import 'page/user';
 @import 'page/404';
 @import 'page/error';
+// @import 'page/user';
 
 
 // phase 2
-@import 'phase2/user-p2.scss';
-@import 'phase2/profile-p2.scss';
+@import 'phase2/user';
+@import 'phase2/profile';
+@import 'phase2/products';
 
 // components
 @import 'phase2/side-nav';
@@ -79,3 +80,5 @@
 @import 'phase2/breadcrumb';
 @import 'phase2/steps-bar';
 @import 'phase2/order-actions-list';
+@import 'phase2/custom-select';
+@import 'phase2/similar-products';

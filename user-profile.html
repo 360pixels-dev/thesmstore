@@ -11,7 +11,6 @@
 
 <body>
     <div class="wrapper">
-
         <!-- HEADER -->
         <header class="header-profile">
             <nav
@@ -76,18 +75,19 @@
 
         <!-- MOBILE MENU -->
         <nav class="nav__mobile nav__mobile--delivery">
-
-            <nav class="nav__mobile__user">
-
-            </nav>
-
-
             <ul class="nav__mobile-upper">
                 <li><a class="nav__mobile-upper-item" href="#mechanics">Mechanics</a></li>
                 <li><a class="nav__mobile-upper-item" href="#">Browse Essentials</a></li>
                 <li><a class="nav__mobile-upper-item" href="#faqs">FAQS</a></li>
-
             </ul>
+
+            <ul class="nav__mobile-lower">
+                <li><a class="nav__mobile-lower-item" href="#">My Orders</a></li>
+                <li><a class="nav__mobile-lower-item" href="#">My Profile</a></li>
+                <li><a class="nav__mobile-lower-item" href="#">Change Password</a></li>
+                <li><a class="nav__mobile-lower-item" href="#">Log out</a></li>
+            </ul>
+
             <ul class="nav__mobile-social">
                 <li><a href="#"><img src="./assets/images/icons/icon-dark-viber.svg" alt="Viber"></a></li>
                 <li><a href="#"><img src="./assets/images/icons/icon-fb-black.svg" alt="Facebook"></a></li>
@@ -103,14 +103,20 @@
             </div>
         </section>
 
+        <section class="breadcrumb-mobile">
+            <div>
+                <a href="#"><img src="./assets/images/icons/angle-left.svg" alt=""></a>
+                <p><img src="./assets/images/icons/cart.svg" alt="">My Orders</p>
+            </div>
+        </section>
+
         <section class="user">
             <div>
-                <div class="user-profile">
-                    <div class="user-profile__header">
+                <div class="side_nav">
+                    <div class="side_nav-header">
                         <p>Hello, Maan</p>
                     </div>
-                    <!-- <p class="user-profile__header"></p> -->
-                    <div class="side_nav">
+                    <div class="side_nav-nav">
                         <ul>
                             <li class="active"><a href="#"><img src="./assets/images/icons/Cart.svg" alt="">My
                                     Orders</a></li>
@@ -122,98 +128,191 @@
                     </div>
                 </div>
 
-                <div class="user-profile mobile-only">
-                    <p class="user-profile__header">My Profile</p>
-                    <div>
-                        <div class="user-profile__avatar">
-                            <img src="./assets/images/avatar.png" alt="">
-                            <div>
-                                <span class="font-callout">Maan Parafina</span>
-                                <span class="view-profile-text">View Profile</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
                 <div class="user-orders mobile-only">
                     <div class="user-orders__header">
-                        <p>My Orders</p>
-                        <div>
-                            <span class="display-text">DISPLAYING 3 out of 5 results</span>
+                        <div class="custom-select transparent orders-status">
+                            <select>
+                                <option selected>All Orders</option>
+                                <option value="1">Processing</option>
+                                <option value="1">Completed</option>
+                                <option value="1">Cancelled</option>
+                            </select>
+                        </div>
+
+                        <div class="custom-select transparent">
+                            <select>
+                                <option selected>Last 5 Orders</option>
+                                <option value="1">Last 10 Orders</option>
+                                <option value="1">Last 20 Orders</option>
+                            </select>
                         </div>
                     </div>
-
-
                     <div class="user-orders__tbl">
+
+                        <!-- Order 1 -->
                         <div class="user-orders__tbl-item_mobile">
                             <div class="order_number">
-                                <p class="font-fineprint">Order <span>#QPZGUOA</span></p>
+                                <div>
+                                    <p class="font-fineprint">#QPZGUOA</p>
+                                    <p class="font-fineprint">ORDER DATE <span> 05/10/2020 15:41</span> </p>
+                                </div>
                                 <img src="./assets/images/icons/angle-right.svg" alt="">
+                            </div>
+                            <div class="user-orders__items__item__order-branch">
+                                <div class="branch-text">
+                                    <span>The SM Store Megamall</span>
+                                </div>
+                                <div class="status-text">
+                                    Processing
+                                </div>
                             </div>
 
                             <div class="order_details">
-                                <p class="label">Date and Time</p>
-                                <p class="value">05/10/2020 15:41</p>
+                                <div class="product--small">
+                                    <img src="./assets/images/basket-1.png" alt="">
+                                    <div>
+                                        <p class="item-category">INDOOR COMFORTS</p>
+                                        <p class="item-name">Water Jug With Ice</p>
+                                        <p class="item-details"> <span class="label">Color:</span>
+                                            <span class="value">Green</span></p>
+                                        <p class="item-price">2 pcs. <span>₱399.50</span></p>
+                                    </div>
+                                </div>
 
-                                <p class="label">Quantity</p>
-                                <p class="value">5 pcs</p>
+                                <div class="product--small">
+                                    <img src="./assets/images/basket-1.png" alt="">
+                                    <div>
+                                        <p class="item-category">SAFETY & PROTECTION</p>
+                                        <p class="item-name">Face Shield</p>
+                                        
+                                        <p class="item-price">3 pcs. <span>₱300.00</span></p>
+                                    </div>
+                                </div>
 
-                                <p class="label">Servicing Branch</p>
-                                <p class="value">The SM Store Megamall</p>
+                                <hr />
 
-                                <p class="label">Total Amount</p>
-                                <p class="value">₱1,095.00</p>
+                                <div class="order-total">
+                                    <p>ORDER TOTAL</p>
+                                    <p class="price">₱699.75</p>
+                                </div>
 
-                                <p class="label">Status</p>
-                                <p class="value">To Confirm</p>
+                                <div class="user-orders__items__item__order-requested-items">
+                                    <p>requested items</p>
+                                    <p>500ml Ethyl Alcohol, 10pcs. Watsons Wet Wipes</p>
+                                </div>
                             </div>
+                            
                         </div>
+
+                        <!-- Order 2 -->
                         <div class="user-orders__tbl-item_mobile">
                             <div class="order_number">
-                                <p class="font-fineprint">Order <span>#QPZGUOA</span></p>
+                                <div>
+                                    <p class="font-fineprint">#QPZGUOA</p>
+                                    <p class="font-fineprint">ORDER DATE <span> 05/10/2020 15:41</span> </p>
+                                </div>
                                 <img src="./assets/images/icons/angle-right.svg" alt="">
+                            </div>
+                            <div class="user-orders__items__item__order-branch">
+                                <div class="branch-text">
+                                    <span>The SM Store Cagayan de Oro (Downtown Premier)</span>
+                                </div>
+                                <div class="status-text">
+                                    Processing
+                                </div>
                             </div>
 
                             <div class="order_details">
-                                <p class="label">Date and Time</p>
-                                <p class="value">05/10/2020 15:41</p>
+                                <div class="product--small">
+                                    <img src="./assets/images/basket-1.png" alt="">
+                                    <div>
+                                        <p class="item-category">INDOOR COMFORTS</p>
+                                        <p class="item-name">Water Jug With Ice</p>
+                                        <p class="item-details"> <span class="label">Color:</span>
+                                            <span class="value">Green</span></p>
+                                        <p class="item-price">2 pcs. <span>₱399.50</span></p>
+                                    </div>
+                                </div>
 
-                                <p class="label">Quantity</p>
-                                <p class="value">5 pcs</p>
+                                <div class="product--small">
+                                    <img src="./assets/images/basket-1.png" alt="">
+                                    <div>
+                                        <p class="item-category">SAFETY & PROTECTION</p>
+                                        <p class="item-name">Face Shield</p>
+                                        
+                                        <p class="item-price">3 pcs. <span>₱300.00</span></p>
+                                    </div>
+                                </div>
 
-                                <p class="label">Servicing Branch</p>
-                                <p class="value">The SM Store Megamall</p>
+                                <hr />
 
-                                <p class="label">Total Amount</p>
-                                <p class="value">₱1,095.00</p>
+                                <div class="order-total">
+                                    <p>ORDER TOTAL</p>
+                                    <p class="price">₱699.75</p>
+                                </div>
 
-                                <p class="label">Status</p>
-                                <p class="value cancelled">Cancelled by Branch</p>
+                                <div class="user-orders__items__item__order-requested-items">
+                                    <p>requested items</p>
+                                    <p>500ml Ethyl Alcohol, 10pcs. Watsons Wet Wipes</p>
+                                </div>
                             </div>
+
+                            
                         </div>
+
                         <div class="user-orders__tbl-item_mobile">
                             <div class="order_number">
-                                <p class="font-fineprint">Order <span>#QPZGUOA</span></p>
+                                <div>
+                                    <p class="font-fineprint">#QPZGUOA</p>
+                                    <p class="font-fineprint">ORDER DATE <span> 05/10/2020 15:41</span> </p>
+                                </div>
                                 <img src="./assets/images/icons/angle-right.svg" alt="">
+                            </div>
+                            <div class="user-orders__items__item__order-branch">
+                                <div class="branch-text">
+                                    <span>The SM Store Megamall</span>
+                                </div>
+                                <div class="status-text cancelled">
+                                    Cancelled
+                                </div>
                             </div>
 
                             <div class="order_details">
-                                <p class="label">Date and Time</p>
-                                <p class="value">05/10/2020 15:41</p>
+                                <div class="product--small">
+                                    <img src="./assets/images/basket-1.png" alt="">
+                                    <div>
+                                        <p class="item-category">INDOOR COMFORTS</p>
+                                        <p class="item-name">Water Jug With Ice</p>
+                                        <p class="item-details"> <span class="label">Color:</span>
+                                            <span class="value">Green</span></p>
+                                        <p class="item-price">2 pcs. <span>₱399.50</span></p>
+                                    </div>
+                                </div>
 
-                                <p class="label">Quantity</p>
-                                <p class="value">5 pcs</p>
+                                <div class="product--small">
+                                    <img src="./assets/images/basket-1.png" alt="">
+                                    <div>
+                                        <p class="item-category">SAFETY & PROTECTION</p>
+                                        <p class="item-name">Face Shield</p>
+                                        
+                                        <p class="item-price">3 pcs. <span>₱300.00</span></p>
+                                    </div>
+                                </div>
 
-                                <p class="label">Servicing Branch</p>
-                                <p class="value">The SM Store Megamall</p>
+                                <hr />
 
-                                <p class="label">Total Amount</p>
-                                <p class="value">₱1,095.00</p>
+                                <div class="order-total">
+                                    <p>ORDER TOTAL</p>
+                                    <p class="price">₱699.75</p>
+                                </div>
 
-                                <p class="label">Status</p>
-                                <p class="value completed">completed</p>
+                                <div class="user-orders__items__item__order-requested-items">
+                                    <p>requested items</p>
+                                    <p>500ml Ethyl Alcohol, 10pcs. Watsons Wet Wipes</p>
+                                </div>
                             </div>
                         </div>
+                        
                     </div>
 
                     <a href="" class="btn--text-link font-cta">Show all</a>
@@ -459,6 +558,7 @@
     <!-- IMPORTS -->
     <script src="./assets/js/jquery.js"></script>
     <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets//js/customselect.js"></script>
 
     <!-- CUSTOM JS -->
     <script src="./assets/js/main.js"></script>
