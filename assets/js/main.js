@@ -1,4 +1,10 @@
 $(document).ready(function () {
+
+    // OPEN CART MODAL
+    $('#cartModal').click(function () {
+        $('.modal').addClass('active');
+    });
+
     // WIDGET ANIMATION
     $(window).scroll(() => {
         // console.log($(this).scrollTop());
@@ -184,6 +190,11 @@ $(document).ready(function () {
 
     // CLOSE WELCOME MODAL
     $('.modal--welcome .modal-content button').click(function () {
+        $('.modal').removeClass('active');
+    });
+
+    // CLOSE CART MODAL
+    $('.modal--cart .modal-content button').click(function () {
         $('.modal').removeClass('active');
     });
 

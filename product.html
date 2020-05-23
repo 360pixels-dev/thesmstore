@@ -12,62 +12,59 @@
 <body>
   <div class="wrapper">
     <!-- WELCOME MODAL -->
-    <div class="modal active">
-      <div class="modal--welcome">
-        <div class="modal-content">
-          <div class="my-basket-modal">
-            <div class="div-arrow"></div>
-            <div class="top">
-              <div>
-                <img src="./assets/images/icons/circle-check.svg" alt="">
-                Added To Your Basket (5)
-              </div>
+    <div class="modal">
+      <div class="modal--cart">
+        <div class="modal-content my-basket-modal">
+          <div class="top">
+            <div>
+              <img src="./assets/images/icons/circle-check.svg" alt="">
+              Added To Your Basket (5)
+            </div>
 
-              <button href="#"><img src="./assets/images/icons/close-black.svg" alt=""></button>
+            <button href="#"><img src="./assets/images/icons/close-black.svg" alt=""></button>
+          </div>
+
+          <div class="product--small">
+            <img src="./assets/images/basket-1.png" alt="">
+            <div>
+              <p class="item-category">INDOOR COMFORTS</p>
+              <p class="item-name">Water Jug With Ice</p>
+              <p class="item-details"> <span class="label"> Size:</span> <span class="value">1 Liter</span> <span
+                  class="label">Color:</span>
+                <span class="value">Green</span></p>
+              <p class="item-price">₱429.00</p>
+            </div>
+          </div>
+
+          <div class="buttons-container">
+            <button class="sm-button bg-white">View Basket<img src="./assets/images/red-line.svg" alt=""></button>
+            <button class="sm-button bg-blue">Checkout<img src="./assets/images/red-line.svg" alt=""></button>
+          </div>
+
+          <div class="product-similar--small">
+            <hr />
+
+            <div class="header">
+              <p>Similar Products</p>
+              <a href="" class="btn--text-link font-cta">Browse all</a>
             </div>
 
             <div class="product--small">
-              <img src="./assets/images/basket-1.png" alt="">
+              <img src="./assets/images/basket-2.png" alt="">
               <div>
                 <p class="item-category">INDOOR COMFORTS</p>
-                <p class="item-name">Water Jug With Ice</p>
-                <p class="item-details"> <span class="label"> Size:</span> <span class="value">1 Liter</span> <span
-                    class="label">Color:</span>
-                  <span class="value">Green</span></p>
-                <p class="item-price">₱429.00</p>
+                <p class="item-name">Oreo Chocolate Cream</p>
+
+                <p class="item-price">₱24.75</p>
               </div>
             </div>
+            <div class="product--small">
+              <img src="./assets/images/basket-3.png" alt="">
+              <div>
+                <p class="item-category">INDOOR COMFORTS</p>
+                <p class="item-name">Tumbler</p>
 
-            <div class="buttons-container">
-              <button class="sm-button bg-white">View Basket<img src="./assets/images/red-line.svg" alt=""></button>
-              <button class="sm-button bg-blue">Checkout<img src="./assets/images/red-line.svg" alt=""></button>
-            </div>
-
-            <div class="product-similar--small">
-              <hr />
-
-              <div class="header">
-                <p>Similar Products</p>
-                <a href="" class="btn--text-link font-cta">Browse all</a>
-              </div>
-
-              <div class="product--small">
-                <img src="./assets/images/basket-2.png" alt="">
-                <div>
-                  <p class="item-category">INDOOR COMFORTS</p>
-                  <p class="item-name">Oreo Chocolate Cream</p>
-
-                  <p class="item-price">₱24.75</p>
-                </div>
-              </div>
-              <div class="product--small">
-                <img src="./assets/images/basket-3.png" alt="">
-                <div>
-                  <p class="item-category">INDOOR COMFORTS</p>
-                  <p class="item-name">Tumbler</p>
-
-                  <p class="item-price">₱100.00</p>
-                </div>
+                <p class="item-price">₱100.00</p>
               </div>
             </div>
           </div>
@@ -96,6 +93,12 @@
 
         <div class="logo-delivery">
           <img class="logo-delivery__img" src="./assets/images/logo.svg" alt="SM Store">
+
+          <div class="mobile-buttons">
+            <a href="#"><img class="" src="./assets/images/icons/icon-search-black.svg" alt=""> </a>
+            <a href="#" id="cartModal"><img class="" src="./assets/images/icons/cart.svg" alt="">
+              <span class="order-count">2</span></a>
+          </div>
         </div>
 
         <nav class="link-delivery">
@@ -315,7 +318,7 @@
 
             <section class="delivery__mechanics">
               <div>
-                <div class="accordion" id="mechanics">
+                <div class="accordion active" id="mechanics">
                   <div class="accordion__header">
                     <p class="font-headline-bold">About the Product</p>
                     <img src="./assets/images/icons/angle-down-black.svg" alt="">

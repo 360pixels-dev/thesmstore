@@ -7,11 +7,9 @@
         height: 520px;
     }
 
-     
-
     &--catalog {
         height: 350px;
-        background-image: url('../../assets/images/banner-delivery.svg');
+        background-image: url("../../assets/images/banner-delivery.svg");
         background-repeat: no-repeat;
         background-size: cover;
 
@@ -24,33 +22,31 @@
                 margin: 113px 0 0 20px;
                 font-size: 32px;
                 line-height: 40px;
-              }
+            }
 
             @include respond(mobile) {
                 margin: 113px 0 0 20px;
-              }
+            }
         }
-        
+
         @include respond(tablet) {
-            background: url('../../assets/images/banner-delivery-m.svg') center left no-repeat;
+            background: url("../../assets/images/banner-delivery-m.svg") center left no-repeat;
             background-size: cover;
             height: 200px;
-          }
+        }
 
         @include respond(mobile) {
-            background: url('../../assets/images/banner-delivery-m.svg') center top no-repeat;
+            background: url("../../assets/images/banner-delivery-m.svg") center top no-repeat;
             background-size: cover;
             height: 200px;
-          }
+        }
     }
 
     &--privacy-policy {
         height: 350px;
-        background-image: url('../../assets/images/banner-privacy.svg');
+        background-image: url("../../assets/images/banner-privacy.svg");
         background-repeat: no-repeat;
         background-size: cover;
-
-      
 
         & > h1 {
             position: absolute;
@@ -59,33 +55,31 @@
 
             @include respond(large-screen) {
                 margin: 10% 0 0 18%;
-              }
-
+            }
 
             @include respond(tablet) {
                 margin: 113px 0 0 20px;
                 font-size: 32px;
                 line-height: 40px;
-              }
+            }
 
             @include respond(mobile) {
                 margin: 90px 0 0 20px;
-              }
+            }
         }
-        
+
         @include respond(tablet) {
-            background: url('../../assets/images/banner-privacy-m.svg') center left no-repeat;
+            background: url("../../assets/images/banner-privacy-m.svg") center left no-repeat;
             background-size: cover;
             height: 200px;
-          }
+        }
 
         @include respond(mobile) {
-            background: url('../../assets/images/banner-privacy-m.svg') center top no-repeat;
+            background: url("../../assets/images/banner-privacy-m.svg") center top no-repeat;
             background-size: cover;
             height: 200px;
-          }
+        }
     }
-
 
     &--terms {
         height: 350px;
@@ -94,71 +88,65 @@
         background-size: cover;
 
         @media only screen and (max-width: 1024px) {
-                background: url("../../assets/images/tc-banner-.jpg") center left no-repeat;
-                background-size: cover;
+            background: url("../../assets/images/tc-banner-.jpg") center left no-repeat;
+            background-size: cover;
         }
 
         @media only screen and (max-width: tablet) {
-                background: url("../../assets/images/tc-banner-.jpg") center left no-repeat;
-                background-size: cover;
-                height: 200px
+            background: url("../../assets/images/tc-banner-.jpg") center left no-repeat;
+            background-size: cover;
+            height: 200px;
         }
 
         @media only screen and (max-width: 600px) {
-                background: url("../../assets/images/tc-banner-.jpg") center top no-repeat;
-                background-size: cover;
+            background: url("../../assets/images/tc-banner-.jpg") center top no-repeat;
+            background-size: cover;
         }
 
         @media only screen and (max-width: mobile) {
-                background: url("../../assets/images/tc-banner-.jpg") center top no-repeat;
-                background-size: cover;
-                height: 200px
+            background: url("../../assets/images/tc-banner-.jpg") center top no-repeat;
+            background-size: cover;
+            height: 200px;
         }
-        
 
-
-
-       & > h1 {
+        & > h1 {
             position: absolute;
             color: #fff;
             margin: 206px 0 0 256px;
 
             @media only screen and (max-width: 1024px) {
-                    margin: 113px 0 0 20px;
-                    font-size: 32px;
-                    line-height: 40px
+                margin: 113px 0 0 20px;
+                font-size: 32px;
+                line-height: 40px;
             }
 
-
             @media only screen and (max-width: tablet) {
-                    margin: 113px 0 0 20px;
-                    font-size: 32px;
-                    line-height: 40px
+                margin: 113px 0 0 20px;
+                font-size: 32px;
+                line-height: 40px;
             }
 
             @media only screen and (max-width: 600px) {
-                    margin: 90px 0 0 20px
+                margin: 90px 0 0 20px;
             }
 
             @media only screen and (max-width: mobile) {
-                    margin: 90px 0 0 20px
+                margin: 90px 0 0 20px;
             }
-
-
         }
-        
     }
-
-   
 }
 
 .header-profile {
     height: 120px;
-    background: $coral;
+    // background: $coral;
+    background-color: #397CEE;
     z-index: 40;
+
+    @include respond(mobile) {
+        height: 88px;
+    }
 }
-
-
 
 .align__content {
     display: flex;
@@ -170,33 +158,74 @@
 
 .nav__delivery {
     padding: 0 20px 0;
-   
 
     @include respond(mobile) {
         top: 0;
-      }
+    }
 }
 
 .logo-delivery {
-   
-
     @include respond(tablet) {
         width: 297px;
         margin: auto;
-      }
+    }
 
-      @include respond(mobile) {
+    @include respond(mobile) {
         width: 175px;
         height: 31px;
-      }
-   
+        margin: 0;
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+        padding-left: 20px;
+    }
 
-     &__img {
+    & > .mobile-buttons {
+        display: none;
+
+        @include respond(mobile) {
+            display: flex;
+            align-items: center;
+
+            & a {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+
+                &:first-child img{
+                    margin-right: 12px;
+                }
+
+                & > img {
+                    filter: brightness(0) invert(1);
+                }
+
+                & > span {
+                    background-color: white;
+                    width: 20px;
+                    height: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    font-family: Open Sans;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: #397cee;
+                    
+                }
+            }
+        }
+    }
+
+    &__img {
         @include respond(mobile) {
             width: 175px;
             height: 31px;
-          }
-     }
+        }
+    }
 }
 
 .nav {
@@ -221,10 +250,8 @@
 
     @include respond(tablet) {
         display: none;
-     }
+    }
 }
-
-
 
 .nav-user {
     display: flex;
@@ -232,22 +259,20 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
-    color:white;
+    color: white;
     text-decoration: none;
     margin: 0 16px;
 
     @include respond(tablet) {
-       display: none;
+        display: none;
     }
-
-    
 
     &__avatar {
         &__image {
             width: 24px;
             height: 24px;
             border-radius: 50px;
-            border: 1px solid #E0E0E0;
+            border: 1px solid #e0e0e0;
             margin-right: 8px;
         }
     }
@@ -271,7 +296,6 @@
     }
 }
 
-
 .button-guest {
     font-family: Open Sans;
     font-weight: bold;
@@ -280,20 +304,20 @@
     padding: 16px 24px;
 
     &::after {
-        content: '\2014\2014';
+        content: "\2014\2014";
         letter-spacing: -2px;
         margin-left: 8px;
     }
 
     &--outline-white {
-        border: 1px solid #FFFFFF;
+        border: 1px solid #ffffff;
         box-sizing: border-box;
         color: $white;
         margin-right: 16px;
     }
 
     &--pure-white {
-        border: 1px solid #FFFFFF;
+        border: 1px solid #ffffff;
         box-sizing: border-box;
         color: $black;
         background-color: $white;
@@ -306,21 +330,15 @@
 
     br {
         display: none;
-    
+
         @include respond(tablet) {
             display: block;
-         }
+        }
     }
 
     span {
         @include respond(tablet) {
             display: none;
-            }
         }
+    }
 }
-
-
-
-
-
-
