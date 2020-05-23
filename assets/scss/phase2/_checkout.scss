@@ -1,0 +1,36 @@
+.checkout {
+    background-color: $light-periwinkle;
+    padding-bottom: 30px;
+
+    & > div {
+        max-width: 1400px;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    
+
+    & > div > .make-big-right-column {
+        margin-right: 24px;
+
+        & > .make-orders-container {
+            margin-top: 24px;
+
+            & > .order_container{
+                & > hr {
+                    margin: 24px 0;
+                }
+            }
+        }
+    }
+
+    & > div > .make-small-left-column {
+        & > .make-orders-summary {
+            & > .make-terms-agree {
+                margin-bottom: 16px;
+            }
+        }
+    }
+}

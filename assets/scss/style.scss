@@ -62,10 +62,10 @@
 @import 'page/press-release';
 @import 'page/gift';
 @import 'page/signup';
-@import 'page/delivery';
 @import 'page/policy';
 @import 'page/404';
 @import 'page/error';
+@import 'page/delivery';
 // @import 'page/user';
 
 
@@ -73,6 +73,7 @@
 @import 'phase2/user';
 @import 'phase2/profile';
 @import 'phase2/products';
+@import 'phase2/checkout';
 
 // components
 @import 'phase2/side-nav';
@@ -82,3 +83,7 @@
 @import 'phase2/order-actions-list';
 @import 'phase2/custom-select';
 @import 'phase2/similar-products';
+@import 'phase2/make-components';
+
+@import 'phase2/custom-radio-button';
+@import 'phase2/custom_checkbox';
