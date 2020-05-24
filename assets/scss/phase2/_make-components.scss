@@ -103,6 +103,29 @@
         line-height: 24px;
         color: #161720;
     }
+
+    &-order {
+        & > label {
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #88898f;
+            margin-bottom: 5px;
+        }
+
+        & > p {
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 30px;
+            color: #161720;
+        }
+    }
 }
 
 // Make Right Column
@@ -393,6 +416,50 @@
     }
 }
 
+// order details for make-orders-container
+.make-order-details-container {
+    & > .header {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 30px;
+        color: #161720;
+        margin-bottom: 24px;
+    }
+    & > .order-details-box {
+        display: flex;
+        background: #f0f3fc;
+        padding: 8px 16px;
+        margin-bottom: 24px;
+
+        & > div {
+            flex: 1 0 33%;
+            display: flex;
+            flex-flow: column;
+        }
+    }
+
+    & > .more-details {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 24px;
+
+        & > p {
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 22px;
+            color: #403f47;
+
+            & > span {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
 // Need something else container
 .make-need-textarea {
     & > .need-text {
@@ -604,4 +671,23 @@
     & > img {
         padding-left: 8px;
     }
+}
+
+// make-checkout-thankyou
+.make-checkout-thankyou {
+    background: url("../../assets/images/checkout-thankyou.png") no-repeat;
+    background-size: 100%;
+    height: 100%;
+    max-height: 110px;
+    padding: 29px 24px;
+    border-radius: 4px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
 }
