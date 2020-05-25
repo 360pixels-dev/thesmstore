@@ -105,59 +105,6 @@
                     </div>
                     <div class="user-orders__basket">
                         <div>
-                            <div class="user-orders__basket__account">
-                                <div class="first">
-                                    <p>Account Information <span><img src="./assets/images/icons/Pencil.svg"
-                                                alt="">Update Profile</span></p>
-                                </div>
-
-                                <div class="second">
-                                    <div class="user-orders__basket__account__info">
-                                        <div class="user-orders__basket__account__info__label">name:</div>
-                                        <div class="user-orders__basket__account__info__content">Maan Parafina</div>
-                                    </div>
-                                    <div class="user-orders__basket__account__info">
-                                        <div class="user-orders__basket__account__info__label">email:</div>
-                                        <div class="user-orders__basket__account__info__content">maan.parafina@gmail.com
-                                        </div>
-                                    </div>
-                                    <div class="user-orders__basket__account__info">
-                                        <div class="user-orders__basket__account__info__label">mobile:</div>
-                                        <div class="user-orders__basket__account__info__content">+ 63 917 892 4225</div>
-                                    </div>
-                                </div>
-                                <div class="user-orders__basket__account__info">
-                                    <div class="user-orders__basket__account__info__label">address:</div>
-                                    <div class="user-orders__basket__account__info__content">San Rafael Street,
-                                        Mandaluyong City, Metro Manila, Philippines, 1550</div>
-                                </div>
-                            </div>
-
-                            <div class="user-orders__basket__account mobile-only">
-                                <div class="first">
-                                    <p>Account Information</p>
-                                </div>
-
-                                <div class="user-orders__basket__account__info">
-                                    <div class="user-orders__basket__account__info__label">mobile:</div>
-                                    <div class="user-orders__basket__account__info__content">+ 63 917 892 4225</div>
-                                </div>
-
-                                <div class="user-orders__basket__account__info">
-                                    <div class="user-orders__basket__account__info__label">email:</div>
-                                    <div class="user-orders__basket__account__info__content">maan.parafina@gmail.com
-                                    </div>
-                                </div>
-
-                                <div class="user-orders__basket__account__info">
-                                    <div class="user-orders__basket__account__info__label">address:</div>
-                                    <div class="user-orders__basket__account__info__content">San Rafael Street,
-                                        Mandaluyong City, Metro Manila, Philippines, 1550</div>
-                                </div>
-
-                                <p><img src="./assets/images/icons/Pencil.svg" alt="">Update Profile</p>
-                            </div>
-
                             <div class="user-orders__details__pricing">
                                 <div class="user-orders__details__pricing__checkbox">
                                     <input type="checkbox" id="checkbox_1">
@@ -165,88 +112,186 @@
                                     <p class="removeAll" for="checkbox_1">Remove All</p>
                                 </div>
 
-                                <div class="user-orders__details__pricing__checkbox">
-                                    <input type="checkbox" id="checkbox_2">
-                                    <label id="check2" for="checkbox_2">
-                                        <p class="servicing_branch">Servicing Branch: The SM Store Megamall</p>
-                                    </label>
-                                </div>
-
-                                <div class="mobile-show">
+                                <div class="mobile-show order-branch" style="background-color: white;">
+                                    <div class="user-orders__items__item__order-branch">
+                                        <div class="branch-text">
+                                            <span>The SM Store Megamall</span>
+                                        </div>
+                                    </div>
                                     <div class="user-orders__details__pricing__item to-flex-row">
                                         <div class="user-orders__details__pricing__checkbox">
                                             <input type="checkbox" id="checkbox_3">
                                             <label for="checkbox_3"></label>
                                         </div>
-                                        <div class="item_column_big">
-                                            <img src="./assets/images/item1.png" alt="">
+                                        <div class="product--small">
+                                            <button><img src="./assets/images/icons/close-black.svg" alt=""></button>
+                                            <img src="./assets/images/my-basket-1.png" alt="">
                                             <div>
-                                                <p class="name">CETAPHIL</p>
-                                                <p class="description">Gentle Foaming Cleanser</p>
-                                                <p class="value">₱429.00</p>
+                                                <div>
+                                                    <p class="item-category">INDOOR COMFORTS</p>
+                                                    <p class="item-name">Water Jug With Ice</p>
+                                                    <p class="item-details"> <span class="label">Color:</span>
+                                                        <span class="value">Green</span></p>
+                                                    <!-- <p class="item-price">2 pcs. <span>₱399.50</span></p> -->
+                                                </div>
+                                                <div class="qty-price">
+                                                    <div class="custom-select transparent basket-qty">
+                                                        <select>
+                                                            <option value="1">Quantity 1</option>
+                                                            <option value="1" selected>Quantity 2</option>
+                                                            <option value="1">Quantity 3</option>
+                                                        </select>
+                                                    </div>
+                                                    <p class="item-price">₱399.50</p>
+                                                </div>
                                             </div>
                                         </div>
+                                    </div>
 
-                                        <div class="item_column">
-                                            <p class="label">Quantity</p>
-                                            <select class="value" name="" id="">
-                                                <option value="1">1</option>
-                                                <option value="1" selected>2</option>
-                                            </select>
+                                    <div class="user-orders__details__pricing__item to-flex-row">
+                                        <div class="user-orders__details__pricing__checkbox">
+                                            <input type="checkbox" id="checkbox_3">
+                                            <label for="checkbox_3"></label>
                                         </div>
-                                        <div class="item_column">
-                                            <p class="label">Total Price</p>
-                                            <p class="value">₱856.00</p>
+                                        <div class="product--small">
+                                            <button><img src="./assets/images/icons/close-black.svg" alt=""></button>
+                                            <img src="./assets/images/my-basket-2.png" alt="">
+                                            <div>
+                                                <div>
+                                                    <p class="item-category">safety & protection</p>
+                                                    <p class="item-name">Face shield</p>
+                                                </div>
+                                                <!-- <p class="item-price">2 pcs. <span>₱399.50</span></p> -->
+
+                                                <div class="qty-price">
+                                                    <div class="custom-select transparent basket-qty">
+                                                        <select>
+                                                            <option value="1">Quantity 1</option>
+                                                            <option value="1">Quantity 2</option>
+                                                            <option value="1" selected>Quantity 3</option>
+                                                        </select>
+                                                    </div>
+                                                    <p class="item-price">₱300.00</p>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <p class="remove">remove</p>
                                     </div>
 
                                     <hr />
 
+                                    <div class="user-orders__summary" style="padding: 0 16px 16px 16px;">
+                                        <p class="need-text">Need something else from this branch?</p>
+
+                                        <p class="list-text">List the items you can’t find in our catalog here. We’ll
+                                            check the
+                                            availability of the
+                                            items in your servicing The SM Store branch.</p>
+                                        <textarea name=""
+                                            placeholder="Example: Ethyl Alcohol, Safeguard Body Wash, etc." id=""
+                                            rows="5"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="mobile-show order-branch" style="background-color: white;">
+                                    <div class="user-orders__items__item__order-branch">
+                                        <div class="branch-text">
+                                            <span>The SM Store Cagayan de Oro (Downtown Premier)</span>
+                                        </div>
+                                        <div class="status-text">
+                                            Processing
+                                        </div>
+                                    </div>
                                     <div class="user-orders__details__pricing__item to-flex-row">
                                         <div class="user-orders__details__pricing__checkbox">
-                                            <input type="checkbox" id="checkbox_4">
-                                            <label for="checkbox_4"></label>
+                                            <input type="checkbox" id="checkbox_3">
+                                            <label for="checkbox_3"></label>
                                         </div>
-                                        <div class="item_column_big">
-                                            <img src="./assets/images/item2.png" alt="">
+                                        <div class="product--small">
+                                            <button><img src="./assets/images/icons/close-black.svg" alt=""></button>
+                                            <img src="./assets/images/my-basket-1.png" alt="">
                                             <div>
-                                                <p class="name">WATSONS</p>
-                                                <p class="description">Invigorating Wet Wipes Unscented 10 Wipes</p>
-                                                <p class="value">₱79.00</p>
+                                                <div>
+                                                    <p class="item-category">INDOOR COMFORTS</p>
+                                                    <p class="item-name">Water Jug With Ice</p>
+                                                    <p class="item-details"> <span class="label">Color:</span>
+                                                        <span class="value">Green</span></p>
+                                                    <!-- <p class="item-price">2 pcs. <span>₱399.50</span></p> -->
+                                                </div>
+                                                <div class="qty-price">
+                                                    <div class="custom-select transparent basket-qty">
+                                                        <select>
+                                                            <option value="1">Quantity 1</option>
+                                                            <option value="1" selected>Quantity 2</option>
+                                                            <option value="1">Quantity 3</option>
+                                                        </select>
+                                                    </div>
+                                                    <p class="item-price">₱399.50</p>
+                                                </div>
                                             </div>
                                         </div>
-
-                                        <div class="item_column">
-                                            <p class="label">Quantity</p>
-                                            <select class="value" name="" id="">
-                                                <option value="1">1</option>
-                                                <option value="1">2</option>
-                                                <option value="1" selected>3</option>
-                                            </select>
-                                        </div>
-                                        <div class="item_column">
-                                            <p class="label">Total Price</p>
-                                            <p class="value">₱237.00</p>
-                                        </div>
-                                        <p class="remove">remove</p>
                                     </div>
 
-                                   
+                                    <div class="user-orders__details__pricing__item to-flex-row">
+                                        <div class="user-orders__details__pricing__checkbox">
+                                            <input type="checkbox" id="checkbox_3">
+                                            <label for="checkbox_3"></label>
+                                        </div>
+                                        <div class="product--small">
+                                            <button><img src="./assets/images/icons/close-black.svg" alt=""></button>
+                                            <img src="./assets/images/my-basket-2.png" alt="">
+                                            <div>
+                                                <div>
+                                                    <p class="item-category">safety & protection</p>
+                                                    <p class="item-name">Face shield</p>
+                                                </div>
+                                                <!-- <p class="item-price">2 pcs. <span>₱399.50</span></p> -->
+
+                                                <div class="qty-price">
+                                                    <div class="custom-select transparent basket-qty">
+                                                        <select>
+                                                            <option value="1">Quantity 1</option>
+                                                            <option value="1">Quantity 2</option>
+                                                            <option value="1" selected>Quantity 3</option>
+                                                        </select>
+                                                    </div>
+                                                    <p class="item-price">₱300.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <hr />
+
+                                    <div class="user-orders__summary" style="padding: 0 16px 16px 16px;">
+                                        <p class="need-text">Need something else from this branch?</p>
+
+                                        <p class="list-text">List the items you can’t find in our catalog here. We’ll
+                                            check the
+                                            availability of the
+                                            items in your servicing The SM Store branch.</p>
+                                        <textarea name=""
+                                            placeholder="Example: Ethyl Alcohol, Safeguard Body Wash, etc." id=""
+                                            rows="5"></textarea>
+                                    </div>
                                 </div>
 
                                 <div class="mobile-hide">
+                                    <div class="user-orders__items__item__order-branch">
+                                        <div class="branch-text">
+                                            Servicing Branch: <span>The SM Store Megamall</span>
+                                        </div>
+                                    </div>
                                     <div class="user-orders__details__pricing__item">
                                         <div class="user-orders__details__pricing__checkbox">
-                                            <input type="checkbox" id="checkbox_5">
+                                            <input type="checkbox" id="checkbox_5" checked>
                                             <label for="checkbox_5"></label>
                                             <!-- <p class="servicing_branch">Servicing Branch: The SM Store Megamall</p> -->
                                         </div>
                                         <div class="item_column_big">
-                                            <img src="./assets/images/item1.png" alt="">
+                                            <img src="./assets/images/my-basket-1.png" alt="">
                                             <div>
-                                                <p class="name">CETAPHIL</p>
-                                                <p class="description">Gentle Foaming Cleanser</p>
+                                                <p class="name">indoor comforts</p>
+                                                <p class="description">Water jug with ice</p>
                                             </div>
                                         </div>
                                         <div class="item_column_container">
@@ -261,7 +306,7 @@
                                                 <p class="label">Total Price</p>
                                             </div>
                                             <div class="item_column">
-                                                <p class="value">₱429.00</p>
+                                                <p class="value">₱199.75</p>
                                             </div>
                                             <div class="item_column">
                                                 <!-- <p class="value">2pcs.</p> -->
@@ -271,13 +316,13 @@
                                                 </select>
                                             </div>
                                             <div class="item_column">
-                                                <p class="value">₱856.00</p>
+                                                <p class="value">₱399.75</p>
                                             </div>
                                             <p class="remove">remove</p>
                                         </div>
                                     </div>
 
-                                    <hr />
+
 
                                     <div class="user-orders__details__pricing__item">
                                         <div class="user-orders__details__pricing__checkbox">
@@ -286,10 +331,10 @@
                                             <!-- <p class="servicing_branch">Servicing Branch: The SM Store Megamall</p> -->
                                         </div>
                                         <div class="item_column_big">
-                                            <img src="./assets/images/item2.png" alt="">
+                                            <img src="./assets/images/my-basket-2.png" alt="">
                                             <div>
-                                                <p class="name">WATSONS</p>
-                                                <p class="description">Invigorating Wet Wipes Unscented 10 Wipes</p>
+                                                <p class="name">safety & protection</p>
+                                                <p class="description">Face Shield</p>
                                             </div>
                                         </div>
                                         <div class="item_column_container">
@@ -303,7 +348,7 @@
                                                 <p class="label">Total Price</p>
                                             </div>
                                             <div class="item_column">
-                                                <p class="value">₱79.00</p>
+                                                <p class="value">₱100.00</p>
                                             </div>
                                             <div class="item_column">
                                                 <select name="" id="">
@@ -313,12 +358,26 @@
                                                 </select>
                                             </div>
                                             <div class="item_column">
-                                                <p class="value">₱237.00</p>
+                                                <p class="value">₱300.00</p>
                                             </div>
-
                                             <p class="remove">remove</p>
                                         </div>
                                     </div>
+
+                                    <hr />
+
+                                    <div class="user-orders__summary">
+                                        <p class="need-text">Need something else from this branch?</p>
+
+                                        <p class="list-text">List the items you can’t find in our catalog here. We’ll
+                                            check the
+                                            availability of the
+                                            items in your servicing The SM Store branch.</p>
+                                        <textarea name=""
+                                            placeholder="Example: Ethyl Alcohol, Safeguard Body Wash, etc." id=""
+                                            rows="5"></textarea>
+                                    </div>
+
                                 </div>
                             </div>
 
@@ -328,32 +387,33 @@
                             </div> -->
                         </div>
 
-                        <div class="user-orders__summary">
-                            <p class="text_order">Order Summary</p>
+                        <div class="right-column">
+                            <div class="user-orders__summary">
+                                <p class="text_order">After ordering, you will receive an email with instructions on
+                                    payment. <img src="./assets/images/product-geotag.png" alt=""></p>
+                            </div>
 
-                            <p class="text_total">Total (5 items)<span>₱1,095.00</span></p>
 
-                            <p class="text_reminder">After ordering, you will receive an email with instructions on
-                                payment.</p>
+                            <div class="user-orders__summary">
+                                <p class="text_order">Order Summary</p>
 
-                            <hr />
+                                <p class="text_total">Subtotal (5 items)<span>₱399.75</span></p>
 
-                            <p>Shipping</p>
+                                <hr />
 
-                            <p class="text_shipping_reminder">Total price does <span>not</span> include shipping and
-                                shipping costs vary per location.</p>
+                                <p class="text_order">Shipping & Delivery</p>
 
-                            <hr />
+                                <div class="text_shipping_reminder">
+                                    <img src="./assets/images/icons/delivery-big.png" alt="">
+                                    <p>Total price <span>does not</span> include shipping
+                                        and
+                                        shipping costs vary per location.</p>
+                                </div>
 
-                            <p class="need-text">Need Something Else?</p>
+                                <hr />
 
-                            <p class="list-text">List the items you can’t find in our catalog here. We’ll check the
-                                availability of the
-                                items in your servicing The SM Store branch.</p>
-                            <textarea name="" placeholder="Example: Ethyl Alcohol, Safeguard Body Wash, etc." id=""
-                                rows="5"></textarea>
-
-                            <button>Order Now<img src="./assets/images/red-line.svg" alt=""></button>
+                                <button>Order Now<img src="./assets/images/red-line.svg" alt=""></button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -378,6 +438,7 @@
     <!-- IMPORTS -->
     <script src="./assets/js/jquery.js"></script>
     <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets//js/customselect.js"></script>
 
     <!-- CUSTOM JS -->
     <script src="./assets/js/main.js"></script>

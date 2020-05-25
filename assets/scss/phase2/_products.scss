@@ -14,7 +14,7 @@
 
     & > div {
       display: flex;
-      
+
       & > img {
         margin-right: 8px;
       }
@@ -42,6 +42,15 @@
     display: flex;
     padding: 24px 0 16px 0;
 
+    position: relative;
+
+    & > button {
+      position: absolute;
+      top: 5px;
+      right: 16px;
+      background-color: transparent;
+    }
+
     & > div {
       display: flex;
       flex-flow: column;
@@ -51,7 +60,7 @@
       padding-left: 30px;
       flex: 1;
 
-      & > .item-category {
+      & .item-category {
         font-weight: bold;
         font-size: 12px;
         line-height: 16px;
@@ -60,14 +69,14 @@
         color: #88898f;
       }
 
-      & > .item-name {
+      & .item-name {
         font-weight: 600;
         font-size: 16px;
         line-height: 24px;
         color: #403f47;
       }
 
-      & > .item-details {
+      & .item-details {
         font-family: Open Sans;
         font-style: normal;
         font-weight: normal;
@@ -80,7 +89,7 @@
         }
       }
 
-      & > .item-price {
+      & .item-price {
         font-weight: bold;
         font-size: 16px;
         line-height: 24px;
@@ -545,7 +554,7 @@
           }
 
           & > button {
-            max-width: 200px;
+            max-width: 230px;
 
             &:last-child {
               margin-left: 24px;

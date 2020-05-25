@@ -1,0 +1,836 @@
+// I put make to make the naming convention unique thus not collide with other styling in the page.
+// To use it look for a reference in pages in its structure. This styles can easily be reused.
+// -Paul P.
+
+// Header titles
+.make-header-title {
+    margin-top: 48px;
+    margin-bottom: 16px;
+
+    // make 100% width
+    display: flex;
+    flex: 1 0 100%;
+
+    @include respond(mobile) {
+        padding: 0 12px;
+    }
+
+    & > p {
+        font-family: Josefin Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+        color: #161720;
+    }
+}
+
+// make small header
+.make-small-header {
+    display: flex;
+    flex: 1 0 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+
+    & > p {
+        display: flex;
+        align-items: center;
+
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        color: #161720;
+    }
+
+    & > .edit-button {
+        display: flex;
+        align-items: center;
+
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+        color: #397cee;
+        text-decoration: none;
+
+        @include respond(mobile) {
+            & > span {
+                display: none;
+            }
+        }
+
+        & > img {
+            margin-right: 11px;
+
+            @include respond(mobile) {
+                margin: 0;
+            }
+        }
+    }
+}
+
+// Account Information
+.make-account-details {
+    width: 100%;
+    background-color: white;
+    padding: 24px;
+    display: flex;
+    flex-flow: row wrap;
+    box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
+    border-radius: 4px;
+
+    @include respond(mobile) {
+        padding: 24px 12px;
+    }
+
+    &-second {
+        display: flex;
+        flex: 1 0 100%;
+        margin-bottom: 16px;
+
+        @include respond(mobile) {
+            flex-flow: row wrap;
+        }
+    }
+}
+
+// Label and value
+.make-label-value {
+    display: flex;
+    flex: 1 0 33%;
+    flex-flow: column;
+
+    @include respond(mobile) {
+        flex: 1 0 100%;
+        margin-bottom: 16px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    & > label {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+        color: #88898f;
+    }
+
+    & > p {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #161720;
+    }
+
+    &-order {
+        & > label {
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #88898f;
+            margin-bottom: 5px;
+        }
+
+        & > p {
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 30px;
+            color: #161720;
+
+            @include respond(mobile) {
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+    }
+}
+
+// Make Right Column
+.make-big-right-column {
+    max-width: 984px;
+    width: 100%;
+}
+
+// Make small left column
+.make-small-left-column {
+    max-width: 392px;
+    width: 100%;
+}
+
+// Delivery options
+.make-delivery-options {
+    display: flex;
+    flex: 1 0 100%;
+    flex-flow: row wrap;
+    background-color: white;
+    margin-top: 24px;
+    padding: 24px;
+    box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
+    border-radius: 4px;
+
+    &__options {
+        display: flex;
+        flex: 1;
+        flex-flow: row wrap;
+
+        & > .item {
+            display: flex;
+            flex: 1 0 100%;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            border: 1px solid #88898f;
+            padding: 16px;
+            margin-bottom: 20px;
+
+            .custom-radio-button[type="radio"]:checked + label,
+            .custom-radio-button[type="radio"]:not(:checked) + label {
+                top: -8px;
+
+                @include respond(mobile) {
+                    top: -25px;
+                }
+            }
+
+            &.selected {
+                border: 1px solid #55c9a5;
+
+                & > .description {
+                    & > .price {
+                        color: #397cee;
+                    }
+                }
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            & > .description {
+                display: flex;
+                flex: 1;
+                justify-content: space-between;
+
+                & > .text {
+                    display: flex;
+                    flex-flow: column;
+                    margin-right: auto;
+                    padding-left: 14px;
+
+                    p {
+                        font-family: Open Sans;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 22px;
+                        color: #403f47;
+
+                        @include respond(mobile) {
+                            font-size: 12px;
+                            line-height: 18px;
+                        }
+
+                        &:first-child {
+                            font-weight: bold;
+                            color: #161720;
+
+                            @include respond(mobile) {
+                                font-size: 14px;
+                                line-height: 22px;
+                            }
+                        }
+                    }
+                }
+
+                & > .img-container {
+                    display: flex;
+                    align-self: center;
+                    width: 50px;
+                    justify-content: center;
+
+                    @include respond(mobile) {
+                        width: 25px;
+                        align-self: baseline;
+                        justify-content: flex-end;
+                        margin-top: 3px;
+
+                        & > img {
+                            width: 21px;
+                        }
+                    }
+                }
+
+                & > .price {
+                    display: flex;
+                    align-items: center;
+                    font-family: Open Sans;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 22px;
+                    display: flex;
+                    align-items: center;
+                    text-align: right;
+                    color: #403f47;
+
+                    @include respond(mobile) {
+                        font-size: 12px;
+                        line-height: 18px;
+                        flex: 1 0 68px;
+                        align-self: baseline;
+                        justify-content: flex-end;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Orders container
+.make-orders-container {
+    & > .order_container {
+        background-color: white;
+        padding: 24px;
+        margin-bottom: 24px;
+        box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
+        border-radius: 4px;
+
+        & .order_details_container {
+            display: flex;
+            align-items: center;
+            padding-bottom: 16px;
+
+            & > .details {
+                display: flex;
+                flex: 1;
+                flex-flow: column;
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: bold;
+
+                div:first-child {
+                    font-size: 12px;
+                    line-height: 16px;
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: 3px;
+                    text-transform: uppercase;
+                    color: #88898f;
+                    margin-bottom: 5px;
+                }
+
+                div:last-child {
+                    font-size: 20px;
+                    line-height: 30px;
+                    display: flex;
+                    align-items: center;
+                    color: #161720;
+                }
+            }
+
+            & > a {
+                &:hover {
+                    transition: all 0.5s;
+                    color: #0067b3;
+                    transform: unset;
+                }
+            }
+        }
+
+        & > .order_branch_container {
+            background: #ebeef8;
+            padding: 7px 16px;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            margin-bottom: 16px;
+
+            display: flex;
+            justify-content: space-between;
+
+            & > .branch-text {
+                font-size: 16px;
+                line-height: 24px;
+                color: #403f47;
+                padding-right: 12px;
+                & > span {
+                    font-weight: bold;
+                }
+            }
+
+            & > .status-text {
+                background: #55c9a5;
+                border-radius: 100px;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 16px;
+                display: flex;
+                align-items: center;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                color: #ffffff;
+                padding: 6px 16px;
+                max-height: 21px;
+                align-self: center;
+
+                &.cancelled {
+                    background: #88898f;
+                    color: #ffffff;
+                }
+            }
+        }
+
+        & > .order_items_container {
+            font-family: Open Sans;
+            font-style: normal;
+
+            & > .order_item_container {
+                display: flex;
+                align-items: center;
+                margin-bottom: 16px;
+
+                & > .item-image-description {
+                    display: flex;
+                    flex-flow: row;
+                    align-items: center;
+                    flex: 3;
+
+                    & > .item-name {
+                        display: flex;
+                        flex: 1;
+                        flex-flow: column;
+                        padding-left: 16px;
+
+                        p:first-child {
+                            font-weight: bold;
+                            font-size: 12px;
+                            line-height: 18px;
+                            color: #88898f;
+                            text-transform: uppercase;
+                        }
+
+                        p:last-child {
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: #403f47;
+                            text-transform: capitalize;
+                        }
+                    }
+                }
+
+                & > .item-price,
+                & > .item-quantity,
+                & > .item-total-price {
+                    display: flex;
+                    flex: 1;
+                    flex-flow: column;
+
+                    p:first-child {
+                        font-weight: bold;
+                        font-size: 12px;
+                        line-height: 18px;
+                        color: #88898f;
+                        text-transform: capitalize;
+                    }
+
+                    p:last-child {
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #403f47;
+                    }
+                }
+            }
+        }
+
+        & > .order_request_container {
+            border-left: 4px solid #397cee;
+            padding-left: 16px;
+
+            p:first-child {
+                font-weight: bold;
+                text-transform: capitalize;
+                font-size: 12px;
+                line-height: 18px;
+                color: #88898f;
+            }
+
+            & > p {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 22px;
+                color: #161720;
+            }
+        }
+    }
+}
+
+// order details for make-orders-container
+.make-order-details-container {
+    @include respond(mobile) {
+        padding: 16px 12px !important;
+    }
+
+    &.single {
+        background-color: white;
+        padding: 24px;
+        box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
+        border-radius: 4px;
+
+        @include respond(mobile) {
+            padding: 16px 12px;
+        }
+
+        & > .header {
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            color: #403f47;
+
+            @include respond(mobile) {
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+
+        & > .more-details {
+            margin-bottom: 0;
+        }
+    }
+
+    & > .header {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 30px;
+        color: #161720;
+        margin-bottom: 24px;
+    }
+
+    & > .order-details-box {
+        display: flex;
+        background: #f0f3fc;
+        padding: 8px 16px;
+        margin-bottom: 24px;
+
+        & > div {
+            flex: 1 0 33%;
+            display: flex;
+            flex-flow: column;
+        }
+    }
+
+    & > .more-details {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 24px;
+
+        @include respond(mobile) {
+            flex-flow: column;
+        }
+
+        & > p {
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 22px;
+            color: #403f47;
+
+            @include respond(mobile) {
+                margin-bottom: 16px;
+                font-size: 12px;
+                line-height: 18px;
+            }
+
+            & > span {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+// Need something else container
+.make-need-textarea {
+    & > .need-text {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 22px;
+        text-transform: capitalize;
+        color: #161720;
+    }
+
+    & > .list-text {
+        margin-top: 4px;
+        margin-bottom: 8px;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+        color: #161720;
+    }
+
+    & > textarea {
+        width: 100%;
+        font-family: Open Sans;
+        font-style: normal;
+        padding: 10px;
+        border: 1px solid #88898f;
+        resize: none;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #161720;
+
+        @include respond(mobile) {
+            height: 80px;
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+        &::placeholder {
+            font-family: Open Sans;
+            font-style: italic;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            color: #88898f;
+
+            @include respond(mobile) {
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+    }
+}
+
+// orders summary
+.make-orders-summary {
+    background-color: white;
+    padding: 24px;
+
+    @include respond(mobile) {
+        padding: 16px 12px;
+    }
+
+    & > .summary-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 16px;
+
+        & > p {
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            color: #403f47;
+
+            &:last-child {
+                font-weight: 600;
+                color: #403f47;
+            }
+        }
+
+        &.delivery {
+            margin-bottom: 0;
+            & > div {
+                display: flex;
+                flex-flow: column;
+
+                & > p {
+                    font-family: Open Sans;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #403f47;
+
+                    display: flex;
+                    align-items: center;
+
+                    &:last-child {
+                        font-size: 14px;
+                        line-height: 22px;
+                        color: #000000;
+                        margin-top: 10px;
+
+                        & > img {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.total {
+            & > p {
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 24px;
+                color: #403f47;
+
+                &:last-child {
+                    font-size: 20px;
+                    line-height: 30px;
+                    color: #403f47;
+                }
+            }
+        }
+    }
+
+    & > hr {
+        margin: 20px 0;
+    }
+}
+
+// agree to terms and conditions component
+.make-terms-agree {
+    & label {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+        color: #161720;
+
+        & > a {
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        &::after {
+            top: 20px !important;
+            left: 13px !important;
+        }
+
+        &::before {
+            top: 14px !important;
+            left: 8px !important;
+        }
+    }
+}
+
+// Make sm button component
+.make-sm-button {
+    display: flex;
+    justify-content: center;
+    padding: 16px 24px;
+    cursor: pointer;
+    width: 100%;
+
+    @include respond(mobile) {
+        max-width: unset;
+        width: 100%;
+    }
+
+    border: 1px solid black;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    flex: none;
+    order: 0;
+    align-self: center;
+
+    &.bg-white {
+        background: white;
+        color: #161720;
+        &:hover {
+            background: whitesmoke;
+        }
+    }
+
+    &.bg-transparent {
+        background-color: transparent;
+        color: #161720;
+        border: none;
+
+        &:hover {
+            color: #0067b3;
+        }
+    }
+
+    &.bg-blue {
+        background-color: #18489a;
+        color: white;
+        &:hover {
+            background: rgba(24, 72, 154, 0.699);
+        }
+    }
+
+    & > img {
+        padding-left: 8px;
+    }
+}
+
+// make-checkout-thankyou
+.make-checkout-thankyou {
+    background: url("../../assets/images/checkout-thankyou.png") no-repeat;
+    background-size: 100%;
+    height: 100%;
+    max-height: 110px;
+    padding: 29px 24px;
+    border-radius: 4px;
+
+    & > p {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 32px;
+        display: flex;
+        align-items: center;
+        color: #ffffff;
+
+        @include respond(mobile) {
+            font-size: 20px;
+            line-height: 30px;
+            max-width: 70%;
+        }
+    }
+
+    @include respond(mobile) {
+        background-position: 92% 50%;
+        background-size: cover;
+        font-size: 20px;
+        line-height: 30px;
+        // max-width: 70%;
+    }
+}

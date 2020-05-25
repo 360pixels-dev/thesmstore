@@ -647,7 +647,7 @@
       align-items: center;
       height: 40px !important;
       max-height: 40px;
-
+      margin-top: 30px;
 
       @include respond(tablet) {
         width: 100%;
@@ -977,10 +977,33 @@
       display: flex;
       flex-flow: row nowrap;
 
+      & > .right-column {
+        padding-left: 24px;
+
+        @include respond(mobile) {
+          padding-left: 0;
+        }
+      }
+
       @include respond(mobile) {
         flex-flow: column;
         & > div {
           width: 100%;
+        }
+
+        .servicing_branch {
+          padding: 6px 8px;
+          display: flex;
+          background-color: #ebeef8;
+          flex: 1;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 24px;
+          color: #403f47;
+          @include respond(mobile) {
+            font-size: 14px;
+            line-height: 22px;
+          }
         }
       }
 
@@ -1129,23 +1152,40 @@
       }
 
       &__pricing {
-        margin-top: 24px;
+        // margin-top: 24px;
         background: #ffffff;
         box-shadow: $soft-shadow;
         border-radius: 4px;
         width: 808px;
         padding: 16px 24px 24px 24px;
 
-        @include respond(mobile) {
-          width: 100%;
-        }
-
         @include respond(tablet) {
           width: 100%;
         }
 
-        &__item:first-of-type {
-          margin-top: 16px;
+        @include respond(mobile) {
+          width: 100%;
+          padding: 16px 0 0 0;
+          background: transparent;
+
+          & > .order-branch {
+            margin-top: 16px;
+
+            &:first-child {
+              margin-top: 0;
+            }
+          }
+        }
+
+        & .user-orders__summary {
+          margin-left: unset;
+          padding: unset;
+          border-radius: unset;
+          box-shadow: unset;
+        }
+
+        &__item {
+          margin-top: 24px;
         }
 
         & hr {
@@ -1177,6 +1217,33 @@
 
             &.to-flex-row {
               flex-flow: row wrap;
+
+              @include respond(mobile) {
+                & > .user-orders__details__pricing__checkbox {
+                  padding: 0;
+                  padding-left: 16px;
+                }
+
+                & > .product--small {
+                  flex: 1;
+                  padding: 0;
+                  padding-right: 16px;
+
+                  & > div {
+                    padding-left: 8px;
+                  }
+
+                  & .qty-price {
+                    display: flex;
+                    align-items: baseline;
+                    justify-content: space-between;
+
+                    & > .item-price {
+                      place-content: flex-end;
+                    }
+                  }
+                }
+              }
 
               & > .item_column_big {
                 display: flex;
@@ -1442,9 +1509,20 @@
         &__checkbox {
           display: flex;
           align-items: center;
-          margin: 18px 0 34px 0;
           font-family: Open Sans;
           font-style: normal;
+
+          @include respond(mobile) {
+            padding: 0 16px;
+          }
+
+          &:first-child {
+            margin-bottom: 24px;
+
+            @include respond(mobile) {
+              background-color: transparent;
+            }
+          }
 
           & input[type="checkbox"] {
             display: none;
@@ -1538,7 +1616,7 @@
           }
 
           & > .servicing_branch {
-            padding: 6px 8px;
+            padding: 6px 16px;
             display: flex;
             background-color: #ebeef8;
             flex: 1;
@@ -1835,7 +1913,7 @@
     }
 
     &__summary {
-      margin-left: 24px;
+      // margin-left: 24px;
       background-color: #ffffff;
       width: 100%;
       flex-wrap: nowrap;
@@ -1850,6 +1928,28 @@
       color: #161720;
       box-shadow: 0px 7px 10px rgba(201, 208, 222, 0.25);
       border-radius: 4px;
+
+      &:first-child {
+        background-color: $coral;
+        margin-bottom: 16px;
+
+        @include respond(mobile) {
+          margin-left: 16px;
+          margin-right: 16px;
+          width: calc(100% - 32px);
+        }
+
+        & > p {
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 22px;
+          color: #ffffff;
+          margin: 0;
+
+          display: flex;
+          align-items: center;
+        }
+      }
 
       @include respond(mobile) {
         margin: 0;
@@ -1891,12 +1991,22 @@
       & > .text_shipping_reminder {
         margin-top: 8px;
         padding: 16px;
-        background: #f0f3fc;
+        background: #b0d6e7;
         font-size: 14px;
         line-height: 22px;
         color: #403f47;
+        display: flex;
 
-        & > span {
+        & > img {
+          margin-right: 18px;
+
+          @include respond(mobile) {
+            height: 22px;
+            width: 30px;
+          }
+        }
+
+        & span {
           font-weight: bold;
         }
       }
@@ -1929,6 +2039,30 @@
         padding: 10px;
         border: 1px solid #88898f;
         resize: none;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #161720;
+
+        @include respond(mobile) {
+          height: 80px;
+          font-size: 14px;
+          line-height: 22px;
+        }
+
+        &::placeholder {
+          font-family: Open Sans;
+          font-style: italic;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 24px;
+          color: #88898f;
+
+          @include respond(mobile) {
+            font-size: 14px;
+            line-height: 22px;
+          }
+        }
       }
 
       & > button {

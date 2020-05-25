@@ -1,0 +1,195 @@
+.checkout {
+    background-color: $light-periwinkle;
+    padding-bottom: 30px;
+
+    & > div {
+        max-width: 1400px;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    & > div > .make-big-right-column {
+        margin-right: 24px;
+
+        & > div {
+            margin-top: 24px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+
+        & > .checkout-confirmation {
+            @include respond(mobile) {
+                margin: 0 12px 0 12px;
+            }
+        }
+
+        & > .profile__information {
+            box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
+            border-radius: 4px;
+
+            & > .buttons-container {
+                display: flex;
+                align-items: center;
+
+                @include respond(mobile) {
+                    flex-flow: column-reverse;
+                }
+
+                & > .make-sm-button {
+                    max-width: 120px;
+                    margin-left: 24px;
+
+                    &:first-child {
+                        margin-left: 0;
+                    }
+
+                    @include respond(mobile) {
+                        max-width: unset;
+                        width: 100%;
+                        margin: 0;
+                        margin-top: 8px;
+                    }
+                }
+            }
+        }
+
+        & > .make-orders-container {
+            margin-top: 24px;
+
+            & > .order_container {
+                @include respond(mobile) {
+                    padding: 0;
+                    padding-bottom: 16px;
+                }
+
+                & > .order_items_container {
+                    & > .order_item_container {
+                        @include respond(mobile) {
+                            visibility: hidden;
+                            display: flex;
+                            height: 0;
+                            margin: 0;
+                            padding: 0;
+                        }
+                    }
+
+                    & > .product--small {
+                        display: none;
+
+                        @include respond(mobile) {
+                            display: flex;
+                            padding: 0 12px;
+                            margin-bottom: 16px;
+
+                            & > div {
+                                padding-left: 8px;
+                            }
+                        }
+                    }
+                }
+
+                & > hr {
+                    margin: 24px 0;
+
+                    @include respond(mobile) {
+                        display: none;
+                    }
+
+                    &.mobile {
+                        display: none;
+
+                        @include respond(mobile) {
+                            display: block;
+                            margin-left: 12px;
+                            margin-right: 12px;
+                        }
+                    }
+                }
+
+                & > .order_request_container {
+                    @include respond(mobile) {
+                        margin: 0 12px 0 12px;
+                    }
+                }
+
+                & > .make-need-textarea {
+                    @include respond(mobile) {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        & > .make-order-details-container {
+            background-color: white;
+            padding: 24px;
+            padding-bottom: 0;
+
+            & > .more-details {
+                margin-bottom: 0;
+            }
+
+            & ~ .make-orders-container {
+                margin-top: 0 !important;
+
+                @include respond(mobile) {
+                    margin-top: 24px !important;
+                }
+            }
+        }
+    }
+
+    & > div > .make-small-left-column {
+        & > div {
+            margin-top: 24px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+
+        & > .email-instruction {
+            @include respond(mobile) {
+                padding: 0 12px;
+
+                & > img {
+                    width: 100%;
+                }
+            }
+        }
+
+        & > .button-container {
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+
+        & > .make-orders-summary {
+            & > .make-terms-agree {
+                margin-bottom: 16px;
+            }
+        }
+    }
+
+    // Style for multiple branch checkout
+    &.multiple {
+        & .checkout-confirmation {
+            background-color: white;
+            box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
+
+            & > .text {
+                padding: 16px 24px;
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 24px;
+                color: #403f47;
+            }
+        }
+    }
+}
