@@ -16889,6 +16889,32 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       line-height: 24px;
       color: #403f47; }
 
+.branch-cms > div {
+  max-width: 1224px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+  padding-bottom: 100px;
+  flex-flow: row wrap; }
+.branch-cms-header {
+  display: flex;
+  flex: 1 0 100%; }
+.branch-cms-branch {
+  display: flex;
+  flex: 1 0 100%;
+  justify-content: space-between; }
+.branch-cms-table {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1 0 100%; }
+  .branch-cms-table__header {
+    display: flex;
+    flex: 1 0 100%; }
+  .branch-cms-table__row {
+    display: flex;
+    flex: 1 0 100%; }
+
 .side_nav {
   display: flex;
   flex-direction: column;
