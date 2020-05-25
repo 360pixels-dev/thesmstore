@@ -1,24 +1,76 @@
 .branch-cms {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+
     & > div {
         max-width: 1224px;
         width: 100%;
         height: auto;
         display: flex;
         margin: 0 auto;
-        padding-bottom: 100px;
+        padding-bottom: 120px;
         flex-flow: row wrap;
     }
 
     &-header {
         display: flex;
         flex: 1 0 100%;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 1.6px;
+        color: #88898f;
+        margin-top: 60px;
     }
 
     &-branch {
         display: flex;
         flex: 1 0 100%;
-        
+        margin-top: 8px;
+        margin-bottom: 50px;
+
         justify-content: space-between;
+        align-items: center;
+
+        & > p {
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 40px;
+            letter-spacing: 1.6px;
+            color: #000000;
+        }
+
+        & > .search {
+            max-height: 40px;
+            padding: 8px 12px;
+            background-color: white;
+            border: 1px solid #88898f;
+            display: flex;
+            max-width: 405px;
+            width: 100%;
+
+            & > a {
+                display: flex;
+                align-items: center;
+            }
+
+            & > input {
+                display: flex;
+                color: black;
+                padding: 0 12px 0 12px;
+
+                &::placeholder {
+                    color: #88898f;
+                    font-style: italic;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
     }
 
     &-table {
@@ -29,15 +81,101 @@
         &__header {
             display: flex;
             flex: 1 0 100%;
+            flex-flow: row wrap;
+
+            & p,
+            & label {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 19px;
+                letter-spacing: 0.02em;
+                text-transform: uppercase;
+                color: #88898f;
+            }
+
+            & img {
+                margin-left: 8px;
+            }
+        }
+
+        & > hr {
+            display: flex;
+            flex: 1;
+            margin: 30px 0;
+            border: 1px solid #e0e0e0;
         }
 
         &__column {
+            display: flex;
+            align-items: center;
 
+            &:nth-child(1) {
+                flex: 1 0 12%;
+            }
+            &:nth-child(2) {
+                flex: 1 1 14%;
+            }
+            &:nth-child(3) {
+                flex: 1 1 14%;
+            }
+            &:nth-child(4) {
+                flex: 1 1 22%;
+            }
+            &:nth-child(5) {
+                flex: 1 1 13%;
+            }
+            &:nth-child(6) {
+                flex: 1 1 15%;
+            }
+            &:nth-child(7) {
+                flex: 1 1 10%;
+                justify-content: center;
+            }
+
+            & > .custom-select {
+                min-width: unset;
+                width: 85%;
+            }
         }
 
         &__row {
             display: flex;
             flex: 1 0 100%;
+
+            & label {
+                font-size: 18px;
+                line-height: 30px;
+                text-transform: uppercase;
+                color: #161720;
+            }
+
+            & p {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 19px;
+                letter-spacing: 0.02em;
+                color: #161720;
+            }
+
+            & p.text-cancelled {
+                color: #ff4e4e;
+            }
+
+            & p.text-completed {
+                color: #00a99c;
+            }
+
+            & .custom-select {
+                & > .select-selected {
+                    font-weight: 600;
+                    letter-spacing: 0.02em;
+                    color: #397cee;
+                }
+
+                & > .select-items {
+                    top: unset !important;
+                }
+            }
         }
     }
 }
