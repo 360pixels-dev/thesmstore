@@ -7490,9 +7490,15 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       display: flex;
       justify-content: space-between;
       align-items: center;
-      height: 40px !important;
+      height: 40px;
       max-height: 40px;
-      margin-top: 30px; }
+      margin-top: 30px;
+      flex-flow: row wrap; }
+      .user-orders__header.inner-page {
+        height: auto !important;
+        max-height: unset; }
+        .user-orders__header.inner-page > p {
+          margin-left: 24px; }
       @media only screen and (max-width: 1024px) {
         .user-orders__header {
           width: 100%;
@@ -11992,6 +11998,25 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       background-size: cover;
       font-size: 20px;
       line-height: 30px; } }
+
+.make-back-button {
+  display: flex;
+  flex: 1 0 100%; }
+  .make-back-button > a {
+    display: flex;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    align-items: center;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    color: #403f47; }
+    .make-back-button > a > img {
+      margin-right: 12px; }
 
 .custom-radio-button[type="radio"]:checked,
 .custom-radio-button[type="radio"]:not(:checked) {

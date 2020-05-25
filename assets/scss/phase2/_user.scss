@@ -645,9 +645,19 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      height: 40px !important;
+      height: 40px ;
       max-height: 40px;
       margin-top: 30px;
+      flex-flow: row wrap;
+
+      &.inner-page {
+        height: auto !important;
+        max-height: unset;
+
+        & > p {
+          margin-left: 24px;
+        }
+      }
 
       @include respond(tablet) {
         width: 100%;

@@ -834,3 +834,27 @@
         // max-width: 70%;
     }
 }
+
+.make-back-button {
+    display: flex;
+    flex: 1 0 100%;
+
+    & > a {
+        display: flex;
+        text-decoration: none;
+        margin-bottom: 10px;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 20px;
+        align-items: center;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+        color: #403f47;
+
+        & > img {
+            margin-right: 12px;
+        }
+    }
+}
