@@ -1063,6 +1063,42 @@
                     width: 173px;
                 }
 
+                & > div {
+                    &.image-container {
+                        position: relative;
+                        margin-bottom: 16px;
+                        width: 240px;
+                        height: 360px;
+                        cursor: pointer;
+
+                        @include respond(1230px) {
+                            width: 160px;
+                            height: 245px;
+                        }
+
+                        &:hover {
+                            & > .hover-content {
+                                display: flex;
+                            }
+                        }
+
+                        & > .hover-content {
+                            display: none;
+                            background-color: blue;
+                            bottom: 16px;
+                            position: absolute;
+                            width: 100%;
+                            height: 70px;
+                            align-items: center;
+                            justify-content: center;
+
+                            & > a {
+                                color: white;
+                            }
+                        }
+                    }
+                }
+
                 & > img {
                     margin-bottom: 16px;
                     width: 240px;
