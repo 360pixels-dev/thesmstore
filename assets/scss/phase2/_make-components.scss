@@ -858,3 +858,40 @@
         }
     }
 }
+
+.make-email-instruction {
+    background: url("../../assets/images/email-notification.png") no-repeat;
+    background-size: cover;
+    height: 100%;
+    max-height: 110px;
+    padding: 29px 24px;
+    border-radius: 4px;
+    background-position: 92% 50%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+
+    @include respond(mobile) {
+        margin-left: 12px;
+        margin-right: 12px;
+        background-position: 100% 50%;
+        margin-top: 16px;
+    }
+
+    & > p {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        color: #ffffff;
+        max-width: 60%;
+
+        @include respond(mobile) {
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+}
