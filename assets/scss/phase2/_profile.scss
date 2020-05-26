@@ -76,6 +76,16 @@ $chilli: #ff4e4e;
       margin-top: 0;
     }
 
+    & > .title {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 24px;
+      color: #161720;
+      margin-bottom: 24px;
+    }
+
     & > .header-text {
       font-family: Josefin Sans;
       font-style: normal;
@@ -235,6 +245,7 @@ $chilli: #ff4e4e;
     font-family: Open Sans;
     font-style: normal;
   }
+}
 
 .password {
   width: 100%;
@@ -244,7 +255,6 @@ $chilli: #ff4e4e;
   @include respond(mobile) {
     padding-bottom: 60px;
   }
-}
 
   & .side_nav-header.mobile-only {
     display: none;

@@ -704,17 +704,20 @@
                 & > a {
                     text-decoration: none;
                     color: $white;
+                    display: flex;
+                    align-items: center;
 
                     &:hover {
                         text-decoration: underline;
                     }
 
                     & > img {
-                        margin-right: 13px;
+                        margin-right: 8px;
+                        filter: brightness(0) invert(1);
                     }
 
                     & > span {
-                        margin-left: 10px;
+                        margin-left: 8px;
                         background-color: $white;
                         color: $indigo;
                         height: 20px;

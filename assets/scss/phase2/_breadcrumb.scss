@@ -9,6 +9,7 @@
     margin: 0 auto;
     flex-flow: column;
     padding: 16px 30px;
+    padding-bottom: 0;
 
     @include respond(tablet) {
       width: 100%;
@@ -25,7 +26,7 @@
       font-weight: normal;
       font-size: 12px;
       line-height: 18px;
-      margin: 8px 0px;
+      // margin: 8px 0px;
       color: #161720;
       align-items: center;
       display: flex;

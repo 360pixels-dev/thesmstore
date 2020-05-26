@@ -12,7 +12,6 @@
   & > ul {
     margin-bottom: 24px;
     position: relative;
-
     border-bottom: 2px solid #e0e0e0;
 
     & > li {
@@ -34,8 +33,7 @@
         color: #88898f;
 
         &:hover {
-          // font-weight: bold;
-          transform: scale(1.1);
+          color:#161720;
         }
       }
 
@@ -47,7 +45,6 @@
       &.active a:hover {
         font-weight: bold;
         color: #161720;
-        transform: scale(1.1);
       }
 
       &.active {
