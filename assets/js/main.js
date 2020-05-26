@@ -160,6 +160,18 @@ $(document).ready(function () {
         }
     });
 
+    // LOCATION ACCORDION
+    $('.billpay__category-header').click(function () {
+        if ($(window).width() <= 600) {
+            if ($(this).parent().hasClass('active')) {
+                $(this).parent().removeClass('active');
+            }
+            else {
+                $(this).parent().addClass('active');
+            }
+        }
+    });
+
 
     // ACCORDION
     $('.accordion__header').click(function () {
