@@ -91,7 +91,7 @@
                     justify-content: space-between;
                     width: 220px;
 
-                    @include respond(mobile){
+                    @include respond(mobile) {
                         width: 100%;
                     }
                 }
@@ -180,7 +180,6 @@
             display: flex;
             flex-direction: column;
             height: 68px;
-
 
             & > input {
                 outline: none;
@@ -280,6 +279,7 @@
     background: linear-gradient(90deg, #ff7b6d (57.4px - 3px), transparent 1%) center,
         linear-gradient(#ff7b6d (57.4px - 3px), transparent 1%) center, rgb(121, 121, 121);
     background-size: 57.4px 57.4px;
+    min-height: 100vh;
 
     & > div {
         height: 100vh;
@@ -291,11 +291,35 @@
         justify-content: space-between;
         padding: 0 88px 0 32px;
 
+        @include respond(tablet) {
+            justify-content: center;
+            padding: 0;
+        }
+
+        @include respond(mobile) {
+            width: 100%;
+            padding: 12px;
+            height: auto;
+            flex-flow: row wrap;
+        }
+
         & > .auth-bg {
             height: 100vh;
             width: 693px;
             background: url("../images/auth-bg.jpg") no-repeat;
             background-size: cover;
+
+            @include respond(tablet) {
+                display: none;
+            }
+        }
+
+        & > .mobile-logo {
+            filter: brightness(0) invert(1);
+            flex: 1 0 100%;
+            max-width: 70%;
+            margin-right: auto;
+            margin-bottom: 48px;
         }
     }
 
@@ -308,6 +332,13 @@
         box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.35);
         max-height: 731.9px;
         width: 520px;
+
+        @include respond(mobile) {
+            width: 100%;
+            max-height: unset;
+            padding: 16px;
+            margin-bottom: 60px;
+        }
 
         & > img {
             height: 61.9px;
@@ -391,6 +422,10 @@
                 z-index: 4;
                 width: 97.5px;
                 text-align: center;
+
+                @include respond(mobile) {
+                    padding: 0;
+                }
             }
 
             &:after {
@@ -438,6 +473,20 @@
             justify-content: center;
             margin: 0 16px;
             cursor: pointer;
+
+            @include respond(mobile) {
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+
+                & > img {
+                    margin-right: 0 !important;
+                }
+
+                & > .font-caption {
+                    display: none;
+                }
+            }
 
             & > img {
                 margin-right: 8px;

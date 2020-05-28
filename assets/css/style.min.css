@@ -7166,7 +7166,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 .login {
   width: 100%;
   background: linear-gradient(90deg, #ff7b6d 54.4px, transparent 1%) center, linear-gradient(#ff7b6d 54.4px, transparent 1%) center, #797979;
-  background-size: 57.4px 57.4px; }
+  background-size: 57.4px 57.4px;
+  min-height: 100vh; }
   .login > div {
     height: 100vh;
     display: flex;
@@ -7176,11 +7177,43 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     margin: 0 auto;
     justify-content: space-between;
     padding: 0 88px 0 32px; }
+    @media only screen and (max-width: 1024px) {
+      .login > div {
+        justify-content: center;
+        padding: 0; } }
+    @media only screen and (max-width: tablet) {
+      .login > div {
+        justify-content: center;
+        padding: 0; } }
+    @media only screen and (max-width: 600px) {
+      .login > div {
+        width: 100%;
+        padding: 12px;
+        height: auto;
+        flex-flow: row wrap; } }
+    @media only screen and (max-width: mobile) {
+      .login > div {
+        width: 100%;
+        padding: 12px;
+        height: auto;
+        flex-flow: row wrap; } }
     .login > div > .auth-bg {
       height: 100vh;
       width: 693px;
       background: url("../images/auth-bg.jpg") no-repeat;
       background-size: cover; }
+      @media only screen and (max-width: 1024px) {
+        .login > div > .auth-bg {
+          display: none; } }
+      @media only screen and (max-width: tablet) {
+        .login > div > .auth-bg {
+          display: none; } }
+    .login > div > .mobile-logo {
+      filter: brightness(0) invert(1);
+      flex: 1 0 100%;
+      max-width: 70%;
+      margin-right: auto;
+      margin-bottom: 48px; }
   .login__form {
     display: flex;
     flex-direction: column;
@@ -7190,6 +7223,18 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.35);
     max-height: 731.9px;
     width: 520px; }
+    @media only screen and (max-width: 600px) {
+      .login__form {
+        width: 100%;
+        max-height: unset;
+        padding: 16px;
+        margin-bottom: 60px; } }
+    @media only screen and (max-width: mobile) {
+      .login__form {
+        width: 100%;
+        max-height: unset;
+        padding: 16px;
+        margin-bottom: 60px; } }
     .login__form > img {
       height: 61.9px;
       width: 346.86px;
@@ -7244,6 +7289,12 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         z-index: 4;
         width: 97.5px;
         text-align: center; }
+        @media only screen and (max-width: 600px) {
+          .login__form > h2 > span {
+            padding: 0; } }
+        @media only screen and (max-width: mobile) {
+          .login__form > h2 > span {
+            padding: 0; } }
       .login__form > h2:after {
         content: "";
         position: absolute;
@@ -7280,6 +7331,24 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       justify-content: center;
       margin: 0 16px;
       cursor: pointer; }
+      @media only screen and (max-width: 600px) {
+        .login__form-btn {
+          width: 70px;
+          height: 70px;
+          border-radius: 50%; }
+          .login__form-btn > img {
+            margin-right: 0 !important; }
+          .login__form-btn > .font-caption {
+            display: none; } }
+      @media only screen and (max-width: mobile) {
+        .login__form-btn {
+          width: 70px;
+          height: 70px;
+          border-radius: 50%; }
+          .login__form-btn > img {
+            margin-right: 0 !important; }
+          .login__form-btn > .font-caption {
+            display: none; } }
       .login__form-btn > img {
         margin-right: 8px; }
       .login__form-btn:nth-of-type(1) > span {
