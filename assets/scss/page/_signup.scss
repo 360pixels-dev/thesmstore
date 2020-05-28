@@ -29,8 +29,9 @@
         & > .auth-bg {
             height: 100vh;
             width: 693px;
-            background: url("../images/auth-bg.jpg") no-repeat;
+            background: url("../images/auth-bg-transparent.png") no-repeat;
             background-size: cover;
+            background-position: center;
 
             @include respond(tablet) {
                 display: none;
@@ -306,8 +307,9 @@
         & > .auth-bg {
             height: 100vh;
             width: 693px;
-            background: url("../images/auth-bg.jpg") no-repeat;
+            background: url("../images/auth-bg-transparent.png") no-repeat;
             background-size: cover;
+            background-position: center;
 
             @include respond(tablet) {
                 display: none;

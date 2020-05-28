@@ -6979,8 +6979,9 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     .signup > div > .auth-bg {
       height: 100vh;
       width: 693px;
-      background: url("../images/auth-bg.jpg") no-repeat;
-      background-size: cover; }
+      background: url("../images/auth-bg-transparent.png") no-repeat;
+      background-size: cover;
+      background-position: center; }
       @media only screen and (max-width: 1024px) {
         .signup > div > .auth-bg {
           display: none; } }
@@ -7200,8 +7201,9 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     .login > div > .auth-bg {
       height: 100vh;
       width: 693px;
-      background: url("../images/auth-bg.jpg") no-repeat;
-      background-size: cover; }
+      background: url("../images/auth-bg-transparent.png") no-repeat;
+      background-size: cover;
+      background-position: center; }
       @media only screen and (max-width: 1024px) {
         .login > div > .auth-bg {
           display: none; } }
