@@ -895,3 +895,15 @@
         }
     }
 }
+
+.make-login-back-button {
+    // override initial styles from signup.scss
+    margin-bottom: 24px;
+    align-self: flex-start;
+
+    & > img {
+        display: flex;
+        width: 38px;
+        height: unset;
+    }
+}
