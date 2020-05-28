@@ -792,6 +792,34 @@
         }
     }
 
+    &--billpay {
+        background-image: url('../../assets/images/banner-billpay.jpg');
+
+        @include respond(mobile) {
+            background-image: url('../../assets/images/banner-billpay-m.jpg');
+            @include banner-small-m--bc;
+        }
+
+        & > .banner-section__breadcrumbs {
+            & > a {
+                color: $white;
+                @include respond(mobile) {
+                    @include breadcrumbs--black;
+
+                    &:nth-of-type(1) {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        & > .banner-section__title {
+            @include respond(mobile) {
+                top: 90px !important;
+            }
+        }
+    }
+
 
     &--gift-registry {
         background-image: url('../../assets/images/banner-gift-registry.jpg');
