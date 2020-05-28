@@ -1055,6 +1055,28 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/assets/images/banner-billpay-m.jpg": {
+		"ft": 16384,
+		"iS": 25711,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/banner-billpay-m.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/banner-billpay.jpg": {
+		"ft": 16384,
+		"iS": 165991,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/banner-billpay.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/assets/images/banner-career-m.jpg": {
 		"ft": 16384,
 		"iS": 115504,
@@ -4135,6 +4157,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/assets/images/email-notification.png": {
+		"ft": 32768,
+		"iS": 3724,
+		"oA": 0,
+		"oAP": "/assets/images/email-notification.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/assets/images/ethyl-alcohol.png": {
 		"ft": 32768,
 		"iS": 85719,
@@ -4728,6 +4761,17 @@
 		"opt": 0,
 		"plM": 52780316221407,
 		"prP": 0
+		},
+	"/assets/images/icons/delivery-basket.png": {
+		"ft": 32768,
+		"iS": 1693,
+		"oA": 0,
+		"oAP": "/assets/images/icons/delivery-basket.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"/assets/images/icons/delivery-big.png": {
 		"ft": 32768,
@@ -5705,6 +5749,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/assets/images/icons/Sign-out.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/images/icons/sm-billpay.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/icons/sm-billpay.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 52780316221407,
@@ -8023,6 +8077,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/assets/scss/page/_billpay.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/page/_billpay.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/assets/scss/page/_career.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -8975,6 +9042,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/search.html",
+		"oF": 0
+		},
+	"/services-billpay.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/services-billpay.html",
 		"oF": 0
 		},
 	"/services-forex.html": {
