@@ -1782,6 +1782,81 @@ ul {
         background-size: cover;
         background-position: top right;
         flex-direction: column; } }
+  .banner-inner--help {
+    background: url("../../assets/images/banner-help.jpg") no-repeat;
+    height: 350px;
+    background-size: cover;
+    background-position: top right;
+    flex-direction: column; }
+    .banner-inner--help > div {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .banner-inner--help > div h2 {
+        color: #FFFFFF;
+        margin-top: 53px;
+        margin-bottom: 16px; }
+        @media only screen and (max-width: 1400px) {
+          .banner-inner--help > div h2 {
+            padding-left: 0; } }
+        @media only screen and (max-width: 1024px) {
+          .banner-inner--help > div h2 {
+            text-align: center; } }
+        @media only screen and (max-width: tablet) {
+          .banner-inner--help > div h2 {
+            text-align: center; } }
+    .banner-inner--help__input-group {
+      width: 717px;
+      height: 65px;
+      background: rgba(64, 63, 71, 0.5);
+      border: 2px solid #FFFFFF;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      padding: 0 20px; }
+      @media only screen and (max-width: 1024px) {
+        .banner-inner--help__input-group {
+          width: 90%;
+          height: 56px; } }
+      @media only screen and (max-width: tablet) {
+        .banner-inner--help__input-group {
+          width: 90%;
+          height: 56px; } }
+      .banner-inner--help__input-group img {
+        height: 24px;
+        opacity: 1; }
+        @media only screen and (max-width: 600px) {
+          .banner-inner--help__input-group img {
+            display: none; } }
+        @media only screen and (max-width: mobile) {
+          .banner-inner--help__input-group img {
+            display: none; } }
+      .banner-inner--help__input-group input {
+        border: 0;
+        background-color: transparent;
+        flex: 0 0 544‬px;
+        width: 100%;
+        color: #FFFFFF;
+        font-size: 16px; }
+        .banner-inner--help__input-group input::placeholder {
+          color: #fff; }
+        .banner-inner--help__input-group input:hover, .banner-inner--help__input-group input:active, .banner-inner--help__input-group input:focus {
+          outline: none; }
+    @media only screen and (max-width: 600px) {
+      .banner-inner--help {
+        height: 345px;
+        background: url("../../assets/images/banner-help-m.jpg") no-repeat;
+        background-size: cover;
+        background-position: top right;
+        flex-direction: column; } }
+    @media only screen and (max-width: mobile) {
+      .banner-inner--help {
+        height: 345px;
+        background: url("../../assets/images/banner-help-m.jpg") no-repeat;
+        background-size: cover;
+        background-position: top right;
+        flex-direction: column; } }
   .banner-inner--services {
     background: url("../../assets/images/banner-services.jpg") no-repeat;
     background-size: cover;
@@ -15544,6 +15619,203 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     .billpay__support > div > a {
       margin: 0 auto;
       width: 205px; }
+
+.help {
+  background-color: #F9FBFF; }
+  .help > div {
+    width: 1400px;
+    min-height: 691px;
+    margin: 0 auto;
+    padding: 80px 90px 82px 90px;
+    display: flex;
+    flex-direction: column; }
+    @media only screen and (max-width: 1024px) {
+      .help > div {
+        width: 100%;
+        padding: 80px 32px 82px 32px; } }
+    @media only screen and (max-width: tablet) {
+      .help > div {
+        width: 100%;
+        padding: 80px 32px 82px 32px; } }
+    @media only screen and (max-width: 600px) {
+      .help > div {
+        padding: 48px 12px 36px 12px; } }
+    @media only screen and (max-width: mobile) {
+      .help > div {
+        padding: 48px 12px 36px 12px; } }
+    .help > div > h2 {
+      margin-bottom: 27px; }
+      @media only screen and (max-width: 1024px) {
+        .help > div > h2 {
+          text-align: center;
+          width: 100%; } }
+      @media only screen and (max-width: tablet) {
+        .help > div > h2 {
+          text-align: center;
+          width: 100%; } }
+      @media only screen and (max-width: 600px) {
+        .help > div > h2 {
+          font-size: 24px;
+          line-height: 32px;
+          margin-bottom: 16px;
+          font-weight: bold; } }
+      @media only screen and (max-width: mobile) {
+        .help > div > h2 {
+          font-size: 24px;
+          line-height: 32px;
+          margin-bottom: 16px;
+          font-weight: bold; } }
+  .help-accordions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; }
+    @media only screen and (max-width: 1024px) {
+      .help-accordions {
+        flex-direction: column; } }
+    @media only screen and (max-width: tablet) {
+      .help-accordions {
+        flex-direction: column; } }
+    .help-accordions > div {
+      display: flex;
+      flex-direction: column;
+      width: 598px; }
+      @media only screen and (max-width: 1024px) {
+        .help-accordions > div {
+          width: 100%; } }
+      @media only screen and (max-width: tablet) {
+        .help-accordions > div {
+          width: 100%; } }
+      .help-accordions > div > .faq-accordion {
+        padding: 25px 18px;
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 24px;
+        border: 1px solid #E7EAF4;
+        border-radius: 4px;
+        width: 100%;
+        max-height: 98px; }
+        @media only screen and (max-width: 600px) {
+          .help-accordions > div > .faq-accordion {
+            padding: 16px;
+            margin-bottom: 16px; } }
+        @media only screen and (max-width: mobile) {
+          .help-accordions > div > .faq-accordion {
+            padding: 16px;
+            margin-bottom: 16px; } }
+        .help-accordions > div > .faq-accordion.active {
+          max-height: 1000px; }
+          .help-accordions > div > .faq-accordion.active > .faq-accordion__header {
+            margin-bottom: 16px; }
+            .help-accordions > div > .faq-accordion.active > .faq-accordion__header > img {
+              transform: rotate(180deg); }
+          .help-accordions > div > .faq-accordion.active > .faq-accordion__content {
+            display: block; }
+        .help-accordions > div > .faq-accordion > .faq-accordion__header {
+          min-height: 42.38px;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          cursor: pointer; }
+          .help-accordions > div > .faq-accordion > .faq-accordion__header > img {
+            transition: all ease-in 0.5s;
+            transform: rotate(0deg); }
+        .help-accordions > div > .faq-accordion > .faq-accordion__content {
+          display: none;
+          padding-top: 16px;
+          border-top: 1px solid #E0E0E0; }
+  .help__support {
+    width: 100%;
+    background-color: #F0F3FC; }
+    .help__support > div {
+      height: 350px;
+      max-width: 651px;
+      padding: 103px 0;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      @media only screen and (max-width: 1024px) {
+        .help__support > div {
+          height: 350px;
+          padding: 87px 0; } }
+      @media only screen and (max-width: tablet) {
+        .help__support > div {
+          height: 350px;
+          padding: 87px 0; } }
+      .help__support > div > h3 {
+        text-align: center;
+        margin-bottom: 16px; }
+        @media only screen and (max-width: 600px) {
+          .help__support > div > h3 {
+            width: 324px; } }
+        @media only screen and (max-width: mobile) {
+          .help__support > div > h3 {
+            width: 324px; } }
+      .help__support > div > p {
+        text-align: center;
+        color: #403F47;
+        margin-bottom: 16px; }
+        .help__support > div > p > span {
+          font-weight: bold; }
+        .help__support > div > p > a {
+          text-decoration: none;
+          font-weight: bold;
+          color: #403F47; }
+      .help__support > div > a {
+        margin: 0 auto;
+        width: 205px; }
+
+.topics {
+  background-color: #F9FBFF; }
+  .topics > div {
+    width: 1400px;
+    margin: 0 auto;
+    padding: 0 88px 100px 88px;
+    display: flex;
+    flex-direction: column; }
+    @media only screen and (max-width: 1024px) {
+      .topics > div {
+        width: 100%;
+        padding: 0 32px 40px 32px; } }
+    @media only screen and (max-width: tablet) {
+      .topics > div {
+        width: 100%;
+        padding: 0 32px 40px 32px; } }
+    @media only screen and (max-width: 600px) {
+      .topics > div {
+        padding: 0px 12px 40px 12px; } }
+    @media only screen and (max-width: mobile) {
+      .topics > div {
+        padding: 0px 12px 40px 12px; } }
+    .topics > div > h2 {
+      margin-bottom: 24px; }
+  .topics__boxes {
+    display: flex;
+    flex-wrap: wrap; }
+    .topics__boxes > div {
+      background: #FFFFFF;
+      height: 112px;
+      width: 288px;
+      box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      padding: 26px 24px 26px 16px;
+      margin: 0 24px 24px 0; }
+      @media only screen and (max-width: 600px) {
+        .topics__boxes > div {
+          width: 100%;
+          margin: 0 0px 24px 0; } }
+      @media only screen and (max-width: mobile) {
+        .topics__boxes > div {
+          width: 100%;
+          margin: 0 0px 24px 0; } }
+      .topics__boxes > div:nth-child(4n) {
+        margin-right: 0; }
+      .topics__boxes > div > img {
+        margin-right: 16px; }
 
 .user {
   width: 100%;
