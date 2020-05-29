@@ -21194,7 +21194,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       .make-verication-code-container > div > input::placeholder {
         color: #e0e0e0; }
       .make-verication-code-container > div > input.error {
-        border: 1px solid #ff4e4e; }
+        border: 1px solid #ff4e4e;
+        background: unset; }
     .make-verication-code-container > div:nth-child(4) {
       flex: 0 0 6%; }
 
