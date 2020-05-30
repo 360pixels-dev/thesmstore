@@ -95,9 +95,11 @@
 
                 & > hr {
                     margin: 24px 0;
+                    border: 1px solid #E0E0E0;
 
                     @include respond(mobile) {
-                        display: none;
+                        // display: none;
+                        margin: 24px 12px;
                     }
 
                     &.mobile {

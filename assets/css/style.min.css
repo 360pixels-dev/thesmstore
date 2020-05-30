@@ -19401,13 +19401,14 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
             .checkout > div > .make-big-right-column > .make-orders-container > .order_container > .order_items_container > .product--small > div {
               padding-left: 8px; } }
       .checkout > div > .make-big-right-column > .make-orders-container > .order_container > hr {
-        margin: 24px 0; }
+        margin: 24px 0;
+        border: 1px solid #E0E0E0; }
         @media only screen and (max-width: 600px) {
           .checkout > div > .make-big-right-column > .make-orders-container > .order_container > hr {
-            display: none; } }
+            margin: 24px 12px; } }
         @media only screen and (max-width: mobile) {
           .checkout > div > .make-big-right-column > .make-orders-container > .order_container > hr {
-            display: none; } }
+            margin: 24px 12px; } }
         .checkout > div > .make-big-right-column > .make-orders-container > .order_container > hr.mobile {
           display: none; }
           @media only screen and (max-width: 600px) {
@@ -20999,7 +21000,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         line-height: 30px;
         color: #403f47; }
   .make-orders-summary > hr {
-    margin: 20px 0; }
+    margin: 20px 0;
+    border: 1px solid #EBEEF8; }
 
 .make-terms-agree label {
   font-family: Open Sans;
