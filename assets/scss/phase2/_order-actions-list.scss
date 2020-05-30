@@ -2,9 +2,43 @@
     background: #baeedc;
     padding: 16px 20px;
     margin-bottom: 18px;
+    position: relative;
 
     @include respond(mobile) {
         margin: 0 12px 18px 12px;
+    }
+
+    & > .pointer {
+        background: #baeedc;
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: -8px;
+        transform: rotate(45deg);
+
+        &.first {
+            left: 15.5%;
+
+            @include respond(mobile) {
+                left: 14.5%;
+            }
+        }
+
+        &.second {
+            left: 48.5%;
+
+            @include respond(mobile) {
+                left: 47.5%;
+            }
+        }
+
+        &.third {
+            left: 81.5%;
+
+            @include respond(mobile) {
+                left: 80.5%;
+            }
+        }
     }
 
     & > .action {

@@ -345,7 +345,7 @@
 
         &__order-branch {
           background: #ebeef8;
-          padding: 7px 16px;
+          padding: 8px 16px;
           font-family: Open Sans;
           font-style: normal;
           font-weight: normal;
@@ -631,6 +631,7 @@
           & > hr {
             margin-top: 10px;
             margin-bottom: 4px;
+            border: 1px solid #E0E0E0;
           }
 
           & .total-price {
