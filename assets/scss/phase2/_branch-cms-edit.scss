@@ -1,0 +1,353 @@
+.branch-cms-edit {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+
+    & > div:nth-child(1) {
+        border-bottom: 1px solid #e0e0e0;
+
+        & > div {
+            max-width: 1224px;
+            width: 100%;
+            height: auto;
+            display: flex;
+            margin: 0 auto;
+            flex-flow: row;
+            flex: 1;
+            align-items: center;
+            padding: 30px 0;
+
+            & > .column {
+                display: flex;
+                flex: 1 0 33%;
+
+                &:nth-child(1) {
+                    justify-content: start;
+                }
+
+                &:nth-child(2) {
+                    justify-content: center;
+                }
+
+                &:nth-child(3) {
+                    justify-content: flex-end;
+                }
+
+                & > p {
+                    font-weight: normal;
+                    font-size: 20px;
+                    line-height: 40px;
+                    color: #000000;
+                }
+
+                & > .back-button {
+                    max-height: 56px;
+                    border-radius: 4px;
+                    padding: 6px 16px;
+                    border: 1px solid #88898f;
+                    background-color: white;
+                    cursor: pointer;
+
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 40px;
+                    color: #403f47;
+                    display: flex;
+                    align-items: center;
+                }
+
+                & > .save-button {
+                    max-height: 56px;
+                    border-radius: 4px;
+                    padding: 6px 16px;
+                    border: 1px solid #88898f;
+                    background: #0067b3;
+                    cursor: pointer;
+                    justify-content: center;
+
+                    width: 132px;
+
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 40px;
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    & > div:nth-child(n + 2) {
+        max-width: 1224px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        margin: 0 auto;
+        padding-bottom: 120px;
+        flex-flow: row wrap;
+
+        & > .branch-cms-detail_page_table-item_summary {
+            margin-top: 72px;
+
+            & > .add-new-item-title {
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 40px;
+                color: #403f47;
+                margin-bottom: 24px;
+            }
+
+            & > .add-new-item-button {
+                margin-bottom: 24px;
+                & > a {
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 22px;
+                    letter-spacing: 0.02em;
+                    color: #0067b3;
+                    text-decoration: none;
+                }
+            }
+
+            & > .table-header {
+                display: flex;
+                flex: 1 0 100%;
+                margin-bottom: 20px;
+
+                & > div {
+                    display: flex;
+                    flex: 1;
+
+                    font-family: Open Sans;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 19px;
+                    letter-spacing: 0.02em;
+                    text-transform: uppercase;
+                    color: #161720;
+
+                    &:nth-child(n + 3) {
+                        justify-content: flex-end;
+                    }
+
+                    &:nth-child(1) {
+                        flex: 1 0 11.5%;
+                    }
+                    &:nth-child(2) {
+                        flex: 1 0 49%;
+                    }
+                    &:nth-child(3) {
+                        flex: 1 0 12.5%;
+                    }
+                    &:nth-child(4) {
+                        flex: 1 0 9.5%;
+                    }
+                    &:nth-child(5) {
+                        flex: 1 0 9.5%;
+                    }
+                    &:nth-child(6) {
+                        flex: 1 0 8%;
+                    }
+                }
+
+                &.input {
+                    display: flex;
+                    flex: 1 0 100%;
+                    margin-bottom: 20px;
+
+                    & > div {
+                        display: flex;
+                        flex: 1;
+
+                        font-family: Open Sans;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 19px;
+                        letter-spacing: 0.02em;
+                        text-transform: uppercase;
+                        color: #161720;
+                        padding-right: 24px;
+
+                        &:nth-child(n + 3) {
+                            justify-content: flex-start;
+                        }
+
+                        &:nth-child(1) {
+                            flex: 1 0 11.5%;
+                        }
+                        &:nth-child(2) {
+                            flex: 1 0 49%;
+                        }
+                        &:nth-child(3) {
+                            flex: 1 0 12.5%;
+                        }
+                        &:nth-child(4) {
+                            flex: 1 0 9.5%;
+                        }
+                        &:nth-child(5) {
+                            flex: 1 0 9.5%;
+                            padding-right: 0;
+                        }
+                        &:nth-child(6) {
+                            flex: 1 0 8%;
+                            padding-right: 0;
+                        }
+                    }
+                }
+            }
+
+            & > hr {
+                margin: 0 0 20px 0;
+                display: flex;
+                flex: 1 0 100%;
+                border: 1px solid #e0e0e0;
+            }
+
+            & > .table-row {
+                display: flex;
+                flex: 1 0 100%;
+
+                margin-bottom: 32px;
+
+                & > div {
+                    display: flex;
+                    flex: 1;
+
+                    font-family: Open Sans;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 22px;
+                    letter-spacing: 0.02em;
+                    color: #161720;
+
+                    &:nth-child(n + 3) {
+                        justify-content: flex-end;
+                    }
+
+                    &:nth-child(1) {
+                        flex: 1 0 11.5%;
+                    }
+                    &:nth-child(2) {
+                        flex: 1 0 49%;
+                    }
+                    &:nth-child(3) {
+                        flex: 1 0 12.5%;
+                    }
+                    &:nth-child(4) {
+                        flex: 1 0 9.5%;
+                    }
+                    &:nth-child(5) {
+                        flex: 1 0 9.5%;
+                    }
+                    &:nth-child(6) {
+                        flex: 1 0 8%;
+
+                        & > a {
+                            color: #c84025;
+                            font-weight: bold;
+                            font-size: 16px;
+                            line-height: 22px;
+                            text-align: right;
+                            letter-spacing: 0.02em;
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                &.input {
+                    display: flex;
+                    flex: 1 0 100%;
+
+                    margin-bottom: 32px;
+
+                    & > div {
+                        display: flex;
+                        flex: 1;
+
+                        font-family: Open Sans;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 22px;
+                        letter-spacing: 0.02em;
+                        color: #161720;
+                        padding-right: 24px;
+
+                        &:nth-child(n + 3) {
+                            justify-content: flex-end;
+                        }
+
+                        & > input {
+                            width: 100%;
+                            padding: 8px 16px;
+                            height: 40px;
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: #161720;
+
+                            &::placeholder {
+                                font-style: italic;
+                                font-weight: normal;
+                                font-size: 16px;
+                                line-height: 24px;
+                                color: #88898f;
+                            }
+                        }
+
+                        &:nth-child(1) {
+                            flex: 1 0 11.5%;
+                        }
+                        &:nth-child(2) {
+                            flex: 1 0 49%;
+                        }
+                        &:nth-child(3) {
+                            flex: 1 0 12.5%;
+                        }
+                        &:nth-child(4) {
+                            flex: 1 0 9.5%;
+                        }
+                        &:nth-child(5) {
+                            flex: 1 0 9.5%;
+                            padding-right: 0;
+                        }
+                        &:nth-child(6) {
+                            flex: 1 0 8%;
+                            padding-right: 0;
+
+                            & > a {
+                                color: #c84025;
+                                font-weight: bold;
+                                font-size: 16px;
+                                line-height: 22px;
+                                text-align: right;
+                                letter-spacing: 0.02em;
+                                text-decoration: none;
+                                display: flex;
+                                align-items: center;
+                            }
+                        }
+                    }
+                }
+            }
+
+            & > .table-total {
+                display: flex;
+                flex: 1 0 100%;
+                justify-content: space-between;
+                margin-bottom: 24px;
+
+                &.text-bold {
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 25px;
+                    letter-spacing: 0.02em;
+                    color: #161720;
+                }
+            }
+        }
+    }
+}

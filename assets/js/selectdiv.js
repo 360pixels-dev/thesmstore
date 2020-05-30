@@ -17,7 +17,7 @@ options.children('div').click(function (e) {
     img = document.createElement("img");
     img.setAttribute("src", "./assets/images/icons/angle-down-black.svg");
 
-    console.log(img);
+    // console.log(img);
     txt.text($(this).text());
 
     txt.append(img);

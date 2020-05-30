@@ -39,7 +39,8 @@
         }
 
         & > div:hover {
-            background-color: #31a9b9;
+            background-color: #0067b3;
+            color: white;
         }
 
         & > .divider {
@@ -51,10 +52,40 @@
             text-transform: uppercase;
             color: #403f47;
             pointer-events: none;
+            -webkit-user-select: none; /* Safari */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* IE10+/Edge */
+            user-select: none; /* Standard */
+        }
+
+        &.delivery {
+            width: 300px;
+
+            & > div {
+                transition: all 0.2s ease-out;
+                padding: 4px 16px;
+                cursor: pointer;
+
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 22px;
+                color: #161720;
+            }
+
+            & > div:hover {
+                background-color: #0067b3;
+                color: white;
+            }
+
+            & .selected {
+                background-color: #0067b3;
+                color: white;
+            }
         }
     }
 
     & .selected {
-        background-color: #31a9b9;
+        background-color: #0067b3;
+        color: white;
     }
 }
