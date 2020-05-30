@@ -135,6 +135,7 @@
             }
 
             & ~ .make-orders-container {
+
                 margin-top: 0 !important;
 
                 @include respond(mobile) {
@@ -177,6 +178,11 @@
 
     // Style for multiple branch checkout
     &.multiple {
+
+        & .make-header-title {
+            margin-bottom: 0;
+        }
+
         & .checkout-confirmation {
             background-color: white;
             box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
