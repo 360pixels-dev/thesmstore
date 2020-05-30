@@ -22,6 +22,11 @@
 
     & > button {
       background: transparent;
+
+      & > img {
+        width: 12px;
+        height: 12px;
+      }
     }
   }
 
@@ -181,6 +186,11 @@
   & + .delivery__featured {
     div {
       padding-top: 0;
+      padding-bottom: 0;
+
+      & > .delivery__featured-controls {
+        top: 37%;
+      }
     }
   }
 
@@ -455,6 +465,7 @@
             line-height: 22px;
             text-transform: capitalize;
             color: #161720;
+            margin-bottom: 6px;
           }
 
           & > .col {
