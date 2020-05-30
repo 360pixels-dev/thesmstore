@@ -11,92 +11,6 @@
 
 <body>
     <div class="wrapper">
-        <!-- HEADER -->
-        <header class="header-profile">
-            <nav
-                class="nav__upper nav__upper--default nav__upper--index container-fluid align__content align__content--right mobile-hide tablet-hide">
-                <ul class="nav__upper-list">
-                    <li class="nav__social"><a href="#"><img src="./assets/images/facebook.svg" alt=""></a></li>
-                    <li class="nav__social"><a href="#"><img src="./assets/images/youtube.svg" alt=""></a></li>
-                    <li class="nav__social"><a href="#"><img src="./assets/images/instagram.svg" alt=""></a></li>
-                    <li class="nav__social"><a href="#"><img src="./assets/images/twitter.svg" alt=""></a></li>
-                </ul>
-            </nav>
-
-            <nav class="nav__lower nav_lower--default nav__lower--index nav__delivery container-fluid">
-                <div class="nav__lower-burger">
-                    <img class="burger-menu burger-menu-default" src="./assets/images/burger-menu.svg" alt="">
-                    <img class="burger-menu burger-menu-close" src="./assets/images/close.svg" alt="" hidden>
-                </div>
-
-                <div class="logo-delivery">
-                    <img class="logo-delivery__img" src="./assets/images/logo.svg" alt="SM Store">
-                </div>
-
-                <nav class="link-delivery">
-                    <a class="link-delivery__item" href="#mechanics">Mechanics</a>
-                    <a class="link-delivery__item" href="#">Browse Essentials</a>
-                    <a class="link-delivery__item" href="#faqs">FAQs</a>
-                </nav>
-
-                <nav class="nav-user hide">
-                    <a class="nav-user nav-user__avatar" href="#"><img class="nav-user__avatar__image"
-                            src="./assets/images/profile-avatar.jpg">Hello, Maan!</a>
-                    <a class="nav-user nav-user__basket" href="#"><img class="nav-user__basket__icon"
-                            src="./assets/images/icon-basket.svg">My Basket <span
-                            class="nav-user__basket__count">5</span></a>
-                </nav>
-
-                <nav class="nav-guest hide">
-                    <a class="button-guest button-guest--outline-white font-cta">Login</a>
-                    <a class="button-guest button-guest--pure-white font-cta">Sign up</a>
-                </nav>
-
-                <nav class="nav-user">
-                    <div class="nav-user__hello">
-                        <img class="nav-user__avatar" src="./assets/images/avatar.png" alt="">
-                        <span>Hello, Maan!</span>
-                        <div class="nav-user__menu">
-                            <a href="#">My Profile and Orders</a>
-                            <a href="#">Logout</a>
-                        </div>
-                    </div>
-
-                    <div>
-                        <a href="">
-                            <img src="./assets/images/icons/cart.svg" alt="">
-                            My Basket <span class="order-count">5</span>
-                        </a>
-                    </div>
-                </nav>
-            </nav>
-        </header>
-        <!-- /HEADER -->
-
-        <!-- MOBILE MENU -->
-        <nav class="nav__mobile nav__mobile--delivery">
-            <ul class="nav__mobile-upper">
-                <li><a class="nav__mobile-upper-item" href="#mechanics">Mechanics</a></li>
-                <li><a class="nav__mobile-upper-item" href="#">Browse Essentials</a></li>
-                <li><a class="nav__mobile-upper-item" href="#faqs">FAQS</a></li>
-            </ul>
-
-            <ul class="nav__mobile-lower">
-                <li><a class="nav__mobile-lower-item" href="#">My Orders</a></li>
-                <li><a class="nav__mobile-lower-item" href="#">My Profile</a></li>
-                <li><a class="nav__mobile-lower-item" href="#">Change Password</a></li>
-                <li><a class="nav__mobile-lower-item" href="#">Log out</a></li>
-            </ul>
-
-            <ul class="nav__mobile-social">
-                <li><a href="#"><img src="./assets/images/icons/icon-dark-viber.svg" alt="Viber"></a></li>
-                <li><a href="#"><img src="./assets/images/icons/icon-fb-black.svg" alt="Facebook"></a></li>
-                <li><a href="#"><img src="./assets/images/icons/icon-youtube-black.svg" alt="Youtube"></a></li>
-                <li><a href="#"><img src="./assets/images/icons/icon-ig-black.svg" alt="Instagram"></a></li>
-                <li><a href="#"><img src="./assets/images/icons/icon-twitter-black.svg" alt="Twitter"></a></li>
-            </ul>
-        </nav>
-
         <section class="branch-cms">
             <div>
                 <div class="branch-cms-header">
@@ -108,17 +22,37 @@
 
                         <p class="number">#FUGIAT</p>
                     </div>
-                    
+
                     <div class="buttons-container">
-                        <div class="custom-select">
-                            <select>
-                                <option selected>Change Order Status</option>
-                                <option value="2">Completed</option>
-                                <option value="1">Cancelled</option>
-                            </select>
+                        <button class="edit-button">Edit Order</button>
+
+                        <div class="sel">
+                            <div class='txt'>Select Option <img src="./assets/images/icons/angle-down-black.svg" alt=""> </div>
+                            <div class="options" style="display: none;">
+                                <div class="divider">Processing</div>
+                                <div>New</div>
+                                <div>On-going Picking</div>
+                                <div>Picked</div>
+                                <div>Suspended</div>
+                                <div>Confirmed</div>
+                                <div>Resumed</div>
+
+                                <div class="divider">OUT FOR DELIVERY</div>
+                                <div>Booked for Delivery</div>
+                                <div>Picked-up</div>
+
+                                <div class="divider">Completed</div>
+                                <div>Fulfilled</div>
+                                <div>Cleared</div>
+                                <div>Closed</div>
+
+                                <div class="divider">CAncelled</div>
+                                <div>Cancelled - Customer decides to cancel.</div>
+                                <div>Cancelled - Package cannot be delivered.</div>
+                            </div>
                         </div>
 
-                        <button>Print Order</button>
+                        <button class="print-button">Print Order</button>
                     </div>
                 </div>
 
@@ -159,7 +93,8 @@
                         </div>
                         <div class="table-item">
                             <div class="description">Shipping Address</div>
-                            <div class="value">44 Kaimito Street Town and Country Executive Village, Mayamot, City of Antipolo, Rizal</div>
+                            <div class="value">44 Kaimito Street Town and Country Executive Village, Mayamot, City of
+                                Antipolo, Rizal</div>
                         </div>
                     </div>
 
@@ -214,8 +149,6 @@
                             <div>499.75</div>
                         </div>
 
-                       
-
                         <hr />
 
                         <div class="table-total">
@@ -232,6 +165,25 @@
                         <div class="table-total text-bold">
                             <div>Total Amount Due</div>
                             <div>2,248.75</div>
+                        </div>
+                    </div>
+
+                    <div class="branch-cms-detail_page_requested-items">
+                        <div class="column">
+                            <div class="content">
+                                <div class="header">REQUESTED ITEMS</div>
+                                <div class="items">None</div>
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <div class="content">
+                                <div class="header">ORDER ACTIVITIES</div>
+                                <div class="items">
+                                    <p>Last modified by <span>mail@mail.com</span></p>
+                                    <p>3 hours ago</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -257,6 +209,7 @@
     <script src="./assets/js/jquery.js"></script>
     <script src="./assets/js/slick.min.js"></script>
     <script src="./assets//js/customselect.js"></script>
+    <script src="./assets/js/selectdiv.js"></script>
 
     <!-- CUSTOM JS -->
     <script src="./assets/js/main.js"></script>

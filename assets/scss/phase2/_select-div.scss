@@ -1,0 +1,60 @@
+.sel {
+    color: #403f47;
+    min-height: 40px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 4px;
+    border: 1px solid #88898f;
+
+    & > .txt {
+        padding: 10px;
+        display: flex;
+        height: 100%;
+        align-items: center;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #403f47;
+
+        & > img {
+            margin-left: auto;
+        }
+    }
+
+    & > .options {
+        width: 250px;
+        background-color: white;
+        z-index: 10000;
+        position: absolute;
+        box-shadow: 2px 5px 10px rgba(136, 137, 143, 0.25);
+
+        & > div {
+            transition: all 0.2s ease-out;
+            padding: 4px 16px;
+            font-size: 14px;
+            line-height: 22px;
+            color: #161720;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        & > div:hover {
+            background-color: #31a9b9;
+        }
+
+        & > .divider {
+            background: #ebeef8;
+            padding: 4px 16px;
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: 1.6px;
+            text-transform: uppercase;
+            color: #403f47;
+            pointer-events: none;
+        }
+    }
+
+    & .selected {
+        background-color: #31a9b9;
+    }
+}

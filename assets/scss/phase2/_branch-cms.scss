@@ -67,17 +67,27 @@
         & > .buttons-container {
             display: flex;
 
+            & > .sel {
+                margin-left: 20px;
+                max-width: 210px;
+                width: 210px;
+                max-height: 56px;
+            }
+
+            // not being used.
             & > .custom-select {
-                max-width: 250px;
-                width: 250px;
+                margin-left: 20px;
+                max-width: 210px;
+                width: 210px;
 
                 & > .select-selected {
                     font-family: Open Sans;
                     font-style: normal;
-                    font-weight: bold;
-                    font-size: 18px;
+                    font-weight: 600;
+                    font-size: 16px;
                     line-height: 40px;
                     color: #403f47;
+                    border-radius: 4px;
 
                     &.select-arrow-active:after {
                         top: 20px;
@@ -93,19 +103,46 @@
                 }
             }
 
-            & > button {
+            & > .print-button {
                 margin-left: 20px;
-                background: #0067b3;
                 padding: 8px 16px;
+                max-height: 56px;
+
+                background: #0067b3;
+                border-radius: 4px;
 
                 font-family: Open Sans;
                 font-style: normal;
-                font-weight: bold;
-                font-size: 18px;
-                line-height: 40px;
                 text-align: center;
                 color: #ffffff;
                 cursor: pointer;
+
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 40px;
+
+                color: #ffffff;
+            }
+
+            & > .edit-button {
+                padding: 8px 16px;
+
+                background: #fff;
+                border-radius: 4px;
+                border: 1px solid #88898f;
+                max-height: 56px;
+
+                font-family: Open Sans;
+                font-style: normal;
+                text-align: center;
+                color: #ffffff;
+                cursor: pointer;
+
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 40px;
+
+                color: #403f47;
             }
         }
     }
@@ -153,6 +190,23 @@
                     font-size: 16px;
                     line-height: 24px;
                 }
+            }
+        }
+    }
+
+    &-select_all {
+        display: flex;
+        flex: 1;
+        margin-bottom: 30px;
+
+        & > .make-custom-checkbox {
+            & > label {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 19px;
+                letter-spacing: 0.02em;
+                text-transform: uppercase;
+                color: #88898f;
             }
         }
     }
@@ -358,6 +412,62 @@
                     line-height: 25px;
                     letter-spacing: 0.02em;
                     color: #161720;
+                }
+            }
+        }
+    }
+
+    &-detail_page_requested-items {
+        display: flex;
+        flex: 1 0 100%;
+        justify-content: space-between;
+        margin-top: 90px;
+
+        & > .column {
+            display: flex;
+            flex: 1 0 50%;
+
+            &:nth-child(odd) {
+                padding-right: 16px;
+            }
+            &:nth-child(even) {
+                padding-left: 16px;
+            }
+
+            & > .content {
+                display: flex;
+                flex: 1;
+                flex-flow: row wrap;
+
+                & > .header {
+                    background: #ebeef8;
+                    padding: 8px;
+                    display: flex;
+                    flex: 1 0 100%;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 22px;
+                    letter-spacing: 0.02em;
+                    color: #161720;
+                }
+
+                & > .items {
+                    display: flex;
+                    flex: 1 0 100%;
+                    margin-top: 16px;
+                    padding: 0 8px;
+                    justify-content: space-between;
+
+                    & > p {
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #403f47;
+
+                        & > span {
+                            font-weight: bold;
+                        }
+                    }
                 }
             }
         }
