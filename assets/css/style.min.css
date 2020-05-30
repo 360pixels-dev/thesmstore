@@ -18469,7 +18469,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
             margin-bottom: 32px; } }
     .profile__information > hr {
       margin-top: 8px;
-      margin-bottom: 32px; }
+      margin-bottom: 32px;
+      border: 1px solid #E0E0E0; }
     .profile__information__fields {
       display: flex;
       flex-flow: row wrap;
@@ -18505,11 +18506,11 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         .profile__information__fields > .field__container > input {
           border: 1px solid #88898f;
           padding: 8px 15px;
-          font-weight: 600;
+          font-weight: normal;
           font-size: 16px;
           line-height: 24px;
           color: #403f47;
-          margin-bottom: 24px; }
+          margin-bottom: 16px; }
           .profile__information__fields > .field__container > input::placeholder {
             font-style: italic;
             text-transform: capitalize;
@@ -21020,7 +21021,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     left: 13px !important; }
   .make-terms-agree label::before {
     top: 14px !important;
-    left: 8px !important; }
+    left: 8px !important;
+    border: 1px solid #88898F !important; }
 
 .make-sm-button {
   display: flex;

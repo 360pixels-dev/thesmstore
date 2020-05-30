@@ -148,6 +148,7 @@ $chilli: #ff4e4e;
     & > hr {
       margin-top: 8px;
       margin-bottom: 32px;
+      border: 1px solid #E0E0E0;
     }
 
     &__fields {
@@ -186,11 +187,11 @@ $chilli: #ff4e4e;
         & > input {
           border: 1px solid #88898f;
           padding: 8px 15px;
-          font-weight: 600;
+          font-weight: normal;
           font-size: 16px;
           line-height: 24px;
           color: #403f47;
-          margin-bottom: 24px;
+          margin-bottom: 16px;
 
           &::placeholder {
             font-style: italic;
