@@ -148,6 +148,7 @@
     & > hr {
       margin-top: 16px;
       margin-bottom: 24px;
+      border: 1px solid #E0E0E0;
     }
 
     & > .header {
@@ -175,6 +176,7 @@
 
         & > .item-price {
           margin-top: auto !important;
+          flex: unset;
         }
       }
     }
@@ -290,6 +292,10 @@
     & > .item {
       padding: 20px 40px;
       display: flex;
+
+      @include respond(tablet) {
+        flex-flow: column;
+      }
 
       @include respond(mobile) {
         padding: 0;
@@ -413,6 +419,10 @@
         padding: 24px;
         margin-left: 40px;
         justify-content: center;
+
+        @include respond(tablet) {
+          margin-left: 0;
+        }
 
         @include respond(mobile) {
           padding: 24px 12px;

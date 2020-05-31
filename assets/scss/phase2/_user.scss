@@ -1620,6 +1620,10 @@
             line-height: 22px;
             text-transform: capitalize;
             color: #403f47;
+
+            &::after {
+              content: "ASDAS";
+            }
           }
 
           & > .removeAll {
@@ -2019,10 +2023,12 @@
 
         & > img {
           margin-right: 18px;
+          width: 52px;
+          height: 38.2px;
 
           @include respond(mobile) {
-            height: 36px;
-            width: 36px;
+            width: 29.8px;
+            height: 21.8px;
           }
         }
 

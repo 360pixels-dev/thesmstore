@@ -68,4 +68,9 @@
     & input[type="checkbox"]:checked + label::before {
         background-color: #0797ff;
     }
+
+    & input[type="checkbox"]:checked ~ #deselect-all {
+        // background-color: #0797ff;
+        visibility: visible;
+    }
 }

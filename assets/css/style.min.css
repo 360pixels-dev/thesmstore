@@ -14508,7 +14508,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     .delivery__featured-slider .slick-track {
       display: flex; }
     .delivery__featured-slider .carousel__item {
-      height: 514px;
+      height: 550px;
       width: 240px !important;
       display: flex;
       flex-direction: column;
@@ -17482,6 +17482,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
             line-height: 22px;
             text-transform: capitalize;
             color: #403f47; }
+            .user-orders__details__pricing__checkbox > .selectAll::after {
+              content: "ASDAS"; }
           .user-orders__details__pricing__checkbox > .removeAll {
             margin-left: auto;
             cursor: pointer;
@@ -17875,15 +17877,17 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         color: #403f47;
         display: flex; }
         .user-orders__summary > .text_shipping_reminder > img {
-          margin-right: 18px; }
+          margin-right: 18px;
+          width: 52px;
+          height: 38.2px; }
           @media only screen and (max-width: 600px) {
             .user-orders__summary > .text_shipping_reminder > img {
-              height: 36px;
-              width: 36px; } }
+              width: 29.8px;
+              height: 21.8px; } }
           @media only screen and (max-width: mobile) {
             .user-orders__summary > .text_shipping_reminder > img {
-              height: 36px;
-              width: 36px; } }
+              width: 29.8px;
+              height: 21.8px; } }
         .user-orders__summary > .text_shipping_reminder span {
           font-weight: bold; }
       .user-orders__summary > .need-text {
@@ -18757,7 +18761,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
             margin-bottom: 16px; } }
   .product-similar--small > hr {
     margin-top: 16px;
-    margin-bottom: 24px; }
+    margin-bottom: 24px;
+    border: 1px solid #E0E0E0; }
   .product-similar--small > .header {
     display: flex;
     justify-content: space-between;
@@ -18776,7 +18781,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     .product-similar--small > .product--small > div {
       justify-content: unset; }
       .product-similar--small > .product--small > div > .item-price {
-        margin-top: auto !important; }
+        margin-top: auto !important;
+        flex: unset; }
   .product + .delivery__featured div {
     padding-top: 0;
     padding-bottom: 0; }
@@ -18858,6 +18864,12 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     .product-details > .item {
       padding: 20px 40px;
       display: flex; }
+      @media only screen and (max-width: 1024px) {
+        .product-details > .item {
+          flex-flow: column; } }
+      @media only screen and (max-width: tablet) {
+        .product-details > .item {
+          flex-flow: column; } }
       @media only screen and (max-width: 600px) {
         .product-details > .item {
           padding: 0;
@@ -18987,6 +18999,12 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         padding: 24px;
         margin-left: 40px;
         justify-content: center; }
+        @media only screen and (max-width: 1024px) {
+          .product-details > .item > .item__details {
+            margin-left: 0; } }
+        @media only screen and (max-width: tablet) {
+          .product-details > .item > .item__details {
+            margin-left: 0; } }
         @media only screen and (max-width: 600px) {
           .product-details > .item > .item__details {
             padding: 24px 12px;
@@ -19356,7 +19374,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     line-height: 22px;
     letter-spacing: 1.6px;
     color: #88898f;
-    margin-top: 60px; }
+    margin-top: 60px;
+    margin-bottom: 48px; }
     .branch-cms-header > a {
       font-family: Open Sans;
       font-style: normal;
@@ -19485,6 +19504,18 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       letter-spacing: 0.02em;
       text-transform: uppercase;
       color: #88898f; }
+      .branch-cms-select_all > .make-custom-checkbox > label::before {
+        border: 1px solid #88898F; }
+    .branch-cms-select_all > .make-custom-checkbox > #deselect-all {
+      visibility: hidden;
+      margin-left: 30px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 19px;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      color: #88898f;
+      text-decoration: none; }
   .branch-cms-detail_page_table {
     display: flex;
     flex: 1 0 100%;
@@ -19684,11 +19715,13 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     .branch-cms-table > hr {
       display: flex;
       flex: 1;
-      margin: 30px 0;
+      margin: 24px 0;
       border: 1px solid #e0e0e0; }
     .branch-cms-table__column {
       display: flex;
       align-items: center; }
+      .branch-cms-table__column.make-custom-checkbox > label::before {
+        border: 1px solid #88898F; }
       .branch-cms-table__column:nth-child(1) {
         flex: 1 0 12%; }
       .branch-cms-table__column:nth-child(2) {
@@ -20427,12 +20460,13 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 .select-selected:after {
   position: absolute;
   content: "";
-  top: 17px;
+  top: 12px;
   right: 10px;
-  width: 0;
-  height: 0;
-  border: 6px solid transparent;
-  border-color: #161720 transparent transparent transparent; }
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+  border-bottom: 1.5px solid black;
+  border-right: 1.5px solid black; }
   @media only screen and (max-width: 600px) {
     .select-selected:after {
       top: 20px; } }
@@ -21554,6 +21588,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   outline: #3b99fc auto 5px; }
 .make-custom-checkbox input[type="checkbox"]:checked + label::before {
   background-color: #0797ff; }
+.make-custom-checkbox input[type="checkbox"]:checked ~ #deselect-all {
+  visibility: visible; }
 
 .sel {
   color: #403f47;

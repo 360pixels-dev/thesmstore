@@ -24,6 +24,7 @@
         letter-spacing: 1.6px;
         color: #88898f;
         margin-top: 60px;
+        margin-bottom: 48px;
 
         & > a {
             font-family: Open Sans;
@@ -207,6 +208,23 @@
                 letter-spacing: 0.02em;
                 text-transform: uppercase;
                 color: #88898f;
+
+                &::before {
+                    border: 1px solid #88898F;
+                }
+            }
+
+            & > #deselect-all {
+                // display: none;
+                visibility: hidden;
+                margin-left: 30px;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 19px;
+                letter-spacing: 0.02em;
+                text-transform: uppercase;
+                color: #88898f;
+                text-decoration: none;
             }
         }
     }
@@ -501,13 +519,23 @@
         & > hr {
             display: flex;
             flex: 1;
-            margin: 30px 0;
+            margin: 24px 0;
             border: 1px solid #e0e0e0;
         }
 
         &__column {
             display: flex;
             align-items: center;
+
+            // xxxx
+
+            &.make-custom-checkbox {
+                & > label {
+                    &::before {
+                        border: 1px solid #88898F;
+                    }
+                }
+            }
 
             &:nth-child(1) {
                 flex: 1 0 12%;

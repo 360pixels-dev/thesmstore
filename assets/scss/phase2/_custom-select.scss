@@ -24,12 +24,21 @@
 .select-selected:after {
     position: absolute;
     content: "";
-    top: 17px;
+    // top: 17px;
+    // right: 10px;
+    // width: 0;
+    // height: 0;
+    // border: 6px solid transparent;
+    // border-color: #161720 transparent transparent transparent;
+
+    top: 12px;
     right: 10px;
-    width: 0;
-    height: 0;
-    border: 6px solid transparent;
-    border-color: #161720 transparent transparent transparent;
+    width: 10px;
+    height: 10px;
+    // background: red;
+    transform: rotate(45deg);
+    border-bottom: 1.5px solid black;
+    border-right: 1.5px solid black;
 
     @include respond(mobile) {
         top: 20px;
