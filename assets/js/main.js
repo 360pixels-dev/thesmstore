@@ -118,6 +118,10 @@ $(document).ready(function () {
         $('.modal--services').parent().removeClass('active');
     });
 
+    $('.modal--tos .modal__close').click(function () {
+        $('.modal--tos').parent().removeClass('active');
+    });
+
     $('.catalog-items .carousel__item').click(function (e) {
         if ($(e.target).hasClass('color-picker-item') || $(e.target).attr('type') == 'checkbox') {
             return false;
