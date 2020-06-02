@@ -4288,10 +4288,15 @@ ul {
           text-transform: uppercase;
           color: #ffffff; }
         .modal--tos > .modal-content > .top-content > a {
-          height: 30px; }
+          display: flex;
+          align-content: center;
+          justify-content: center;
+          padding: 6px;
+          background-color: rgba(22, 23, 32, 0.6); }
           .modal--tos > .modal-content > .top-content > a > img {
-            background: rgba(22, 23, 32, 0.6);
-            padding: 6px; }
+            filter: brightness(0) invert(1); }
+          .modal--tos > .modal-content > .top-content > a.modal__close {
+            position: unset; }
       .modal--tos > .modal-content > .tos {
         padding: 32px; }
         .modal--tos > .modal-content > .tos > p {
