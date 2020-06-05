@@ -59,7 +59,7 @@
     & > div {
       display: flex;
       flex-flow: column;
-      font-family: Open Sans;
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
       font-style: normal;
       justify-content: space-between;
       padding-left: 30px;
@@ -82,7 +82,7 @@
       }
 
       & .item-details {
-        font-family: Open Sans;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 12px;
@@ -157,7 +157,7 @@
       align-items: center;
 
       & > p {
-        font-family: Open Sans;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
@@ -208,7 +208,7 @@
     border: 1px solid $gray;
     outline: none;
 
-    font-family: Open Sans;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 16px;
@@ -327,7 +327,7 @@
 
                 & > p {
                   padding: 24px;
-                  font-family: Open Sans;
+                  font-family: "Open Sans", Helvetica, Arial, sans-serif;
                   font-style: normal;
                   font-weight: normal;
                   font-size: 16px;
@@ -346,7 +346,7 @@
                   }
 
                   & > p {
-                    font-family: Open Sans;
+                    font-family: "Open Sans", Helvetica, Arial, sans-serif;
                     font-style: normal;
                     font-weight: 600;
                     font-size: 14px;
@@ -413,7 +413,7 @@
         display: flex;
         flex: 1;
         flex-flow: column;
-        font-family: Open Sans;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
         font-style: normal;
         font-weight: normal;
         padding: 24px;
@@ -468,7 +468,7 @@
           margin: 24px 0;
 
           & p {
-            font-family: Open Sans;
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
             font-style: normal;
             font-weight: 600;
             font-size: 14px;
@@ -519,7 +519,7 @@
 
           & > input[type="text"] {
             background: url("../../assets/images/icons/icon-search-black.svg") 96%/3% no-repeat $white;
-            font-family: Open Sans;
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
             font-style: normal;
             font-weight: 600;
             font-size: 16px;
@@ -528,7 +528,7 @@
             height: 40px;
 
             &::placeholder {
-              font-family: Open Sans;
+              font-family: "Open Sans", Helvetica, Arial, sans-serif;
               font-style: italic;
               font-weight: normal;
               font-size: 16px;
@@ -545,7 +545,7 @@
           & > p {
             display: flex;
             align-items: center;
-            font-family: Open Sans;
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
             font-style: normal;
             font-weight: bold;
             font-size: 16px;
@@ -607,7 +607,7 @@
     & > .nav-tabs-content {
       padding: 32px 80px 40px 80px;
 
-      font-family: Open Sans;
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
       font-style: normal;
       font-weight: normal;
 
