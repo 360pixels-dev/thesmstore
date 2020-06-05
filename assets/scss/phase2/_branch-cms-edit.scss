@@ -229,19 +229,19 @@
                     }
 
                     &:nth-child(1) {
-                        flex: 1 0 11.5%;
+                        flex: 1 1 11.5%;
                     }
                     &:nth-child(2) {
-                        flex: 1 0 49%;
+                        flex: 1 1 49%;
                     }
                     &:nth-child(3) {
-                        flex: 1 0 12.5%;
+                        flex: 1 1 12.5%;
                     }
                     &:nth-child(4) {
-                        flex: 1 0 9.5%;
+                        flex: 1 1 9.5%;
                     }
                     &:nth-child(5) {
-                        flex: 1 0 9.5%;
+                        flex: 1 1 9.5%;
                     }
                     &:nth-child(6) {
                         flex: 1 0 8%;
@@ -328,6 +328,66 @@
                                 text-decoration: none;
                                 display: flex;
                                 align-items: center;
+                            }
+                        }
+                    }
+                }
+
+                &.new-item {
+                    & > div {
+                        display: flex;
+                        flex: 1;
+
+                        font-family: Open Sans;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 22px;
+                        letter-spacing: 0.02em;
+                        color: #161720;
+
+                        &:nth-child(n + 3) {
+                            justify-content: flex-end;
+                        }
+
+                        &:nth-child(1) {
+                            flex: 1 1 11.5%;
+                        }
+                        &:nth-child(2) {
+                            flex: 1 1 49%;
+                        }
+                        &:nth-child(3) {
+                            flex: 1 1 12.5%;
+                        }
+                        &:nth-child(4) {
+                            flex: 1 1 9.5%;
+                        }
+                        &:nth-child(5) {
+                            flex: 1 1 9.5%;
+                        }
+                        &:nth-child(6) {
+                            flex: 1 0 12%;
+                            justify-content: space-between;
+
+                            & > .edit-button {
+                                color: #397CEE;
+                                font-weight: bold;
+                                font-size: 16px;
+                                line-height: 22px;
+                                text-align: right;
+                                letter-spacing: 0.02em;
+                                text-decoration: none;
+                                margin-left: 20%;
+                            }
+
+                            & > .delete-button {
+                                color: #c84025;
+                                font-weight: bold;
+                                font-size: 16px;
+                                line-height: 22px;
+                                text-align: right;
+                                letter-spacing: 0.02em;
+                                text-decoration: none;
                             }
                         }
                     }
