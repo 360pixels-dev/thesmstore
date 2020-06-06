@@ -328,6 +328,17 @@
                                 text-decoration: none;
                                 display: flex;
                                 align-items: center;
+
+                                &.edit-button {
+                                    color: #397cee;
+                                    font-weight: bold;
+                                    font-size: 16px;
+                                    line-height: 22px;
+                                    text-align: right;
+                                    letter-spacing: 0.02em;
+                                    text-decoration: none;
+                                    margin-left: 20%;
+                                }
                             }
                         }
                     }
@@ -370,7 +381,7 @@
                             justify-content: space-between;
 
                             & > .edit-button {
-                                color: #397CEE;
+                                color: #397cee;
                                 font-weight: bold;
                                 font-size: 16px;
                                 line-height: 22px;
