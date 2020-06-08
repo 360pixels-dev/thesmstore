@@ -39,7 +39,7 @@
         display: flex;
         align-items: center;
 
-        font-family: Open Sans;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 16px;
@@ -51,7 +51,7 @@
         display: flex;
         align-items: center;
 
-        font-family: Open Sans;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
@@ -118,7 +118,7 @@
     }
 
     & > label {
-        font-family: Open Sans;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 12px;
@@ -127,7 +127,7 @@
     }
 
     & > p {
-        font-family: Open Sans;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
         font-style: normal;
         font-weight: 600;
         font-size: 16px;
@@ -137,7 +137,7 @@
 
     &-order {
         & > label {
-            font-family: Open Sans;
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
             font-style: normal;
             font-weight: bold;
             font-size: 12px;
@@ -149,7 +149,7 @@
         }
 
         & > p {
-            font-family: Open Sans;
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
             font-style: normal;
             font-weight: bold;
             font-size: 20px;
@@ -237,7 +237,7 @@
                     padding-left: 14px;
 
                     p {
-                        font-family: Open Sans;
+                        font-family: "Open Sans", Helvetica, Arial, sans-serif;
                         font-style: normal;
                         font-weight: normal;
                         font-size: 14px;
@@ -282,7 +282,7 @@
                 & > .price {
                     display: flex;
                     align-items: center;
-                    font-family: Open Sans;
+                    font-family: "Open Sans", Helvetica, Arial, sans-serif;
                     font-style: normal;
                     font-weight: bold;
                     font-size: 14px;
@@ -323,7 +323,7 @@
                 display: flex;
                 flex: 1;
                 flex-flow: column;
-                font-family: Open Sans;
+                font-family: "Open Sans", Helvetica, Arial, sans-serif;
                 font-style: normal;
                 font-weight: bold;
 
@@ -359,7 +359,7 @@
         & > .order_branch_container {
             background: #ebeef8;
             padding: 7px 16px;
-            font-family: Open Sans;
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
             font-style: normal;
             font-weight: normal;
             margin-bottom: 16px;
@@ -400,7 +400,7 @@
         }
 
         & > .order_items_container {
-            font-family: Open Sans;
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
             font-style: normal;
 
             & > .order_item_container {
@@ -502,7 +502,7 @@
         }
 
         & > .header {
-            font-family: Open Sans;
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
             font-style: normal;
             font-weight: normal;
             font-size: 16px;
@@ -521,7 +521,7 @@
     }
 
     & > .header {
-        font-family: Open Sans;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 20px;
@@ -553,7 +553,7 @@
         }
 
         & > p {
-            font-family: Open Sans;
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
             font-style: normal;
             font-weight: normal;
             font-size: 14px;
@@ -576,7 +576,7 @@
 // Need something else container
 .make-need-textarea {
     & > .need-text {
-        font-family: Open Sans;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
@@ -588,7 +588,7 @@
     & > .list-text {
         margin-top: 4px;
         margin-bottom: 8px;
-        font-family: Open Sans;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
@@ -598,7 +598,7 @@
 
     & > textarea {
         width: 100%;
-        font-family: Open Sans;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
         font-style: normal;
         padding: 10px;
         border: 1px solid #88898f;
@@ -615,7 +615,7 @@
         }
 
         &::placeholder {
-            font-family: Open Sans;
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
             font-style: italic;
             font-weight: normal;
             font-size: 16px;
@@ -646,7 +646,7 @@
         margin-bottom: 16px;
 
         & > p {
-            font-family: Open Sans;
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
             font-style: normal;
             font-weight: normal;
             font-size: 16px;
@@ -666,7 +666,7 @@
                 flex-flow: column;
 
                 & > p {
-                    font-family: Open Sans;
+                    font-family: "Open Sans", Helvetica, Arial, sans-serif;
                     font-style: normal;
                     font-weight: normal;
                     font-size: 16px;
@@ -692,7 +692,7 @@
 
         &.total {
             & > p {
-                font-family: Open Sans;
+                font-family: "Open Sans", Helvetica, Arial, sans-serif;
                 font-style: normal;
                 font-weight: bold;
                 font-size: 16px;
@@ -717,7 +717,7 @@
 // agree to terms and conditions component
 .make-terms-agree {
     & label {
-        font-family: Open Sans;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
@@ -812,7 +812,7 @@
     border-radius: 4px;
 
     & > p {
-        font-family: Open Sans;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 24px;
@@ -845,7 +845,7 @@
         display: flex;
         text-decoration: none;
         margin-bottom: 10px;
-        font-family: Open Sans;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
@@ -881,7 +881,7 @@
     }
 
     & > p {
-        font-family: Open Sans;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
         font-style: normal;
         font-weight: 600;
         font-size: 14px;

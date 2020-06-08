@@ -40,15 +40,18 @@
     border-bottom: 1.5px solid black;
     border-right: 1.5px solid black;
 
+    transition: transform .3s;
+
     @include respond(mobile) {
         top: 20px;
     }
 }
 
 .select-selected.select-arrow-active:after {
-    border-color: transparent transparent #161720 transparent;
-    top: 7px;
-    transform: rotate();
+    // border-color: transparent transparent #161720 transparent;
+    // top: 7px;
+    transform: rotate(225deg);
+    transition: transform .3s;
 
     @include respond(mobile) {
         top: 10px;
@@ -62,7 +65,7 @@
     cursor: pointer;
     user-select: none;
 
-    font-family: Open Sans;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -80,7 +83,7 @@
     cursor: pointer;
     user-select: none;
 
-    font-family: Open Sans;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -146,7 +149,7 @@
 
     & .select-items div {
         border: none;
-        font-family: Open Sans;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
@@ -186,7 +189,7 @@
             cursor: pointer;
             user-select: none;
 
-            font-family: Open Sans;
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
             font-style: normal;
             font-weight: 600;
             font-size: 14px;

@@ -44,7 +44,7 @@
                 &.active {
                     & > a {
                         background: #f86a6a;
-                        font-family: Open Sans;
+                        font-family: "Open Sans", Helvetica, Arial, sans-serif;
                         font-style: normal;
                         font-weight: bold;
                         font-size: 14px;
@@ -80,7 +80,7 @@
                     font-weight: 700;
                     cursor: pointer;
                     position: relative;
-                    font-family: Open Sans;
+                    font-family: "Open Sans", Helvetica, Arial, sans-serif;
                     font-style: normal;
                     font-weight: bold;
                     font-size: 14px;
@@ -98,7 +98,7 @@
 
                     &:hover {
                         background: #f86a6a;
-                        font-family: Open Sans;
+                        font-family: "Open Sans", Helvetica, Arial, sans-serif;
                         font-style: normal;
                         font-weight: bold;
                         font-size: 14px;

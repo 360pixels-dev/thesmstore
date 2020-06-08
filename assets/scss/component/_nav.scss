@@ -656,7 +656,7 @@
         & > div {
             &:nth-of-type(1) {
                 display: flex;
-                font-family: Open Sans;
+                font-family: "Open Sans", Helvetica, Arial, sans-serif;
                 justify-content: center;
                 font-weight: 600;
                 font-size: 16px;
@@ -696,7 +696,7 @@
             &:nth-of-type(2) {
                 display: flex;
                 align-items: center;
-                font-family: Open Sans;
+                font-family: "Open Sans", Helvetica, Arial, sans-serif;
                 font-weight: 600;
                 font-size: 16px;
                 line-height: 24px;
@@ -753,7 +753,7 @@
                     border-radius: 4px;
                     box-shadow: 0px 5px 7px rgba(231, 234, 244, 1);
                     color: #403f47;
-                    font-family: Open Sans;
+                    font-family: "Open Sans", Helvetica, Arial, sans-serif;
                     font-style: normal;
                     padding: 24px;
 

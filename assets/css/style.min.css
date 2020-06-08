@@ -427,7 +427,7 @@ p {
       line-height: 18px;
       letter-spacing: 2px; } }
 .font-eyebrow-medium {
-  font-family: Open Sans;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 12px;
   line-height: 16px;
@@ -447,7 +447,7 @@ p {
   color: #FF4E4E; }
 
 .font-caption-italic {
-  font-family: Open Sans;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
   font-size: 14px;
@@ -736,7 +736,7 @@ button {
 
 .button {
   text-decoration: none;
-  font-family: Open Sans;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -1370,7 +1370,7 @@ ul {
     width: 24px; }
   .nav-user > div:nth-of-type(1) {
     display: flex;
-    font-family: Open Sans;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     justify-content: center;
     font-weight: 600;
     font-size: 16px;
@@ -1399,7 +1399,7 @@ ul {
   .nav-user > div:nth-of-type(2) {
     display: flex;
     align-items: center;
-    font-family: Open Sans;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-weight: 600;
     font-size: 16px;
     line-height: 24px; }
@@ -1444,7 +1444,7 @@ ul {
       border-radius: 4px;
       box-shadow: 0px 5px 7px #e7eaf4;
       color: #403f47;
-      font-family: Open Sans;
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
       font-style: normal;
       padding: 24px; }
       .nav-user > div:nth-of-type(2):hover > #my-basket-dropdown-content > .top {
@@ -3054,7 +3054,7 @@ ul {
       .card--sale-md > .card--sale-text > p {
         color: #FFFFFF; }
         .card--sale-md > .card--sale-text > p:nth-of-type(1) {
-          font-family: Open Sans;
+          font-family: "Open Sans", Helvetica, Arial, sans-serif;
           font-weight: 600;
           font-size: 14px;
           line-height: 20px;
@@ -3073,7 +3073,7 @@ ul {
               letter-spacing: 2px;
               width: 150px; } }
         .card--sale-md > .card--sale-text > p:nth-of-type(2) {
-          font-family: Open Sans;
+          font-family: "Open Sans", Helvetica, Arial, sans-serif;
           font-weight: normal;
           font-size: 12px;
           line-height: 18px;
@@ -3139,7 +3139,7 @@ ul {
     .card--sale-text > p {
       color: #FFFFFF; }
       .card--sale-text > p:nth-of-type(1) {
-        font-family: Open Sans;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
         font-weight: 600;
         font-size: 16px;
         line-height: 22px;
@@ -3166,7 +3166,7 @@ ul {
             line-height: 18px;
             letter-spacing: 2px; } }
       .card--sale-text > p:nth-of-type(2) {
-        font-family: Open Sans;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
         font-weight: 600;
         font-size: 14px;
         line-height: 22px;
@@ -5290,7 +5290,7 @@ header {
             justify-content: center;
             align-items: center;
             border-radius: 50%;
-            font-family: Open Sans;
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
             font-style: normal;
             font-weight: bold;
             font-size: 14px;
@@ -5316,7 +5316,7 @@ header {
             justify-content: center;
             align-items: center;
             border-radius: 50%;
-            font-family: Open Sans;
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
             font-style: normal;
             font-weight: bold;
             font-size: 14px;
@@ -5385,7 +5385,7 @@ header {
     margin-left: 10px; }
 
 .button-guest {
-  font-family: Open Sans;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 12px;
   line-height: 16px;
@@ -7302,7 +7302,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
             align-items: flex-start;
             padding: 17.15px 0 15px 0; } }
         .career__header--lower > div > .career__header-logo > span {
-          font-family: Open Sans;
+          font-family: "Open Sans", Helvetica, Arial, sans-serif;
           letter-spacing: 1.5px;
           text-transform: uppercase;
           font-weight: bold;
@@ -7479,7 +7479,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           font-weight: 600;
           font-size: 16px;
           line-height: 24px;
-          font-family: Open Sans;
+          font-family: "Open Sans", Helvetica, Arial, sans-serif;
           color: #161720;
           padding: 20px 0;
           width: 100%;
@@ -7501,7 +7501,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         display: flex;
         align-items: center;
         padding: 0 24px;
-        font-family: Open Sans;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
         font-weight: 600;
         font-size: 16px;
         color: #403F47;
@@ -7653,7 +7653,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
               justify-content: center;
               padding: 0 0px 16px 0; } }
           .career__featured--slider-item > div:nth-of-type(1) > span {
-            font-family: Open Sans;
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
             font-style: normal;
             font-weight: 600;
             font-size: 12px;
@@ -9051,7 +9051,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         font-size: 24px;
         line-height: 32px; } }
   .featured-events__title-month {
-    font-family: Open Sans;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-weight: 600;
     font-size: 16px;
     line-height: 22px;
@@ -9115,7 +9115,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           line-height: 30px; } }
     .featured-events__details-description {
       margin-left: 29px;
-      font-family: Open Sans;
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
       font-weight: normal;
       font-size: 16px;
       line-height: 24px;
@@ -10204,7 +10204,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   margin-top: 16px;
   margin-left: 20px; }
   .events-fl ol > li {
-    font-family: Open Sans;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
@@ -10280,7 +10280,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   margin-top: 16px;
   margin-left: 20px; }
   .events-k ol > li {
-    font-family: Open Sans;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
@@ -10468,7 +10468,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           text-transform: uppercase;
           text-align: left; } }
     .events-slider__details-year {
-      font-family: Open Sans;
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
       font-weight: 600;
       font-size: 16px;
       line-height: 22px;
@@ -11633,7 +11633,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           text-transform: uppercase;
           text-align: left; } }
     .omnibus-slider__details-year {
-      font-family: Open Sans;
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
       font-weight: 600;
       font-size: 16px;
       line-height: 22px;
@@ -13382,7 +13382,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         .signup__form > div:nth-of-type(3) > .signup__form-group > div > input {
           outline: none;
           padding: 0;
-          font-family: Open Sans;
+          font-family: "Open Sans", Helvetica, Arial, sans-serif;
           font-size: 16px;
           border: none;
           width: 317px; }
@@ -13424,7 +13424,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         outline: none;
         height: 40px;
         padding: 4px 15px;
-        font-family: Open Sans;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
         font-size: 16px;
         border: 1px solid #88898F; }
     .signup__form-buttons {
@@ -13596,7 +13596,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         .login__form > div:nth-of-type(2) > .login__form-group > div > input {
           outline: none;
           padding: 0;
-          font-family: Open Sans;
+          font-family: "Open Sans", Helvetica, Arial, sans-serif;
           font-size: 16px;
           border: none;
           width: 317px; }
@@ -13648,7 +13648,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         height: unset !important;
         position: unset !important; }
         .login__form-group > .password-label-container > a {
-          font-family: Open Sans;
+          font-family: "Open Sans", Helvetica, Arial, sans-serif;
           font-style: italic;
           font-weight: normal;
           font-size: 14px;
@@ -13661,7 +13661,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         outline: none;
         height: 40px;
         padding: 4px 15px;
-        font-family: Open Sans;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
         font-size: 16px;
         border: 1px solid #88898F; }
     .login__form-buttons {
@@ -13836,7 +13836,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         .login-reset__form > div:nth-of-type(2) > .login__form-group > div > input, .login-reset__form > div:nth-of-type(1) > .login__form-group > div > input {
           outline: none;
           padding: 0;
-          font-family: Open Sans;
+          font-family: "Open Sans", Helvetica, Arial, sans-serif;
           font-size: 16px;
           border: none;
           width: 317px; }
@@ -13888,7 +13888,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         height: unset !important;
         position: unset !important; }
         .login-reset__form-group > .password-label-container > a {
-          font-family: Open Sans;
+          font-family: "Open Sans", Helvetica, Arial, sans-serif;
           font-style: italic;
           font-weight: normal;
           font-size: 14px;
@@ -13901,7 +13901,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         outline: none;
         height: 40px;
         padding: 4px 15px;
-        font-family: Open Sans;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
         font-size: 16px;
         border: 1px solid #88898F; }
     .login-reset__form-buttons {
@@ -15034,7 +15034,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           position: relative;
           width: 100%;
           border: none;
-          font-family: Open Sans;
+          font-family: "Open Sans", Helvetica, Arial, sans-serif;
           font-style: normal;
           font-weight: 600;
           font-size: 14px;
@@ -15069,7 +15069,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
             .delivery-catalog__catalog > .serving-branch > .input-group > .branch-suggestion-box {
               width: 280px; } }
           .delivery-catalog__catalog > .serving-branch > .input-group > .branch-suggestion-box div {
-            font-family: Open Sans;
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
             font-style: normal;
             font-weight: normal;
             font-size: 14px;
@@ -15670,7 +15670,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
-    font-family: Open Sans;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     color: #161720;
     padding: 20px 0;
     width: 100%;
@@ -16098,7 +16098,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         color: #397CEE;
         text-decoration: none;
         outline: none;
-        font-family: Open Sans;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
         font-weight: bold;
         font-size: 14px;
         line-height: 20px;
@@ -16205,7 +16205,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
               line-height: 24px;
               color: #161720; }
             .user-profile__avatar > div > .view-profile-text {
-              font-family: Open Sans;
+              font-family: "Open Sans", Helvetica, Arial, sans-serif;
               font-style: normal;
               font-weight: bold;
               font-size: 12px;
@@ -16232,7 +16232,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
               line-height: 24px;
               color: #161720; }
             .user-profile__avatar > div > .view-profile-text {
-              font-family: Open Sans;
+              font-family: "Open Sans", Helvetica, Arial, sans-serif;
               font-style: normal;
               font-weight: bold;
               font-size: 12px;
@@ -16271,7 +16271,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         color: #397CEE;
         text-decoration: none;
         outline: none;
-        font-family: Open Sans;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
         font-weight: bold;
         font-size: 14px;
         line-height: 20px;
@@ -16319,7 +16319,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           display: flex;
           flex: 1;
           flex-flow: column;
-          font-family: Open Sans;
+          font-family: "Open Sans", Helvetica, Arial, sans-serif;
           font-style: normal;
           font-weight: bold; }
           .user-orders__items__item__order-info > .details div:first-child {
@@ -16344,7 +16344,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       .user-orders__items__item__order-branch {
         background: #ebeef8;
         padding: 8px 16px;
-        font-family: Open Sans;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
         font-style: normal;
         font-weight: normal;
         margin-bottom: 16px;
@@ -16375,7 +16375,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
             background: #88898f;
             color: #ffffff; }
       .user-orders__items__item__order-items {
-        font-family: Open Sans;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
         font-style: normal; }
         .user-orders__items__item__order-items__item {
           display: flex;
@@ -16452,7 +16452,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
           border-radius: 4px;
           color: #161720;
-          font-family: Open Sans;
+          font-family: "Open Sans", Helvetica, Arial, sans-serif;
           font-style: normal;
           padding: 24px; }
           @media only screen and (max-width: 600px) {
@@ -16496,7 +16496,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           border-radius: 4px;
           padding: 24px;
           display: flex;
-          font-family: Open Sans;
+          font-family: "Open Sans", Helvetica, Arial, sans-serif;
           font-style: normal;
           font-weight: normal;
           flex-flow: column; }
@@ -16553,7 +16553,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           display: flex;
           flex-flow: column;
           justify-content: space-between;
-          font-family: Open Sans;
+          font-family: "Open Sans", Helvetica, Arial, sans-serif;
           font-style: normal; }
           @media only screen and (max-width: 600px) {
             .user-orders__order-details > .right-column > .order-summary {
@@ -16611,7 +16611,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           margin-bottom: 20px;
           padding: 0 15px; }
           .user-orders__header > .display-text {
-            font-family: Open Sans;
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
             font-style: normal;
             font-weight: normal;
             font-size: 14px;
@@ -16626,7 +16626,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           margin-bottom: 20px;
           padding: 0 15px; }
           .user-orders__header > .display-text {
-            font-family: Open Sans;
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
             font-style: normal;
             font-weight: normal;
             font-size: 14px;
@@ -16679,7 +16679,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
               padding: 0 12px;
               padding-bottom: 26px;
               color: #202127;
-              font-family: Open Sans;
+              font-family: "Open Sans", Helvetica, Arial, sans-serif;
               font-style: normal; }
               .user-orders__tbl > .user-orders__tbl-item_mobile > .order_details:first-child {
                 margin-top: 0; }
@@ -16693,7 +16693,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
                 justify-content: flex-end;
                 margin-top: 16px; }
                 .user-orders__tbl > .user-orders__tbl-item_mobile > .order_details > .order-total > p {
-                  font-family: Open Sans;
+                  font-family: "Open Sans", Helvetica, Arial, sans-serif;
                   font-style: normal;
                   font-weight: bold;
                   font-size: 12px;
@@ -16727,7 +16727,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
               display: flex;
               padding: 16px 0; }
               .user-orders__tbl > .user-orders__tbl-item_mobile > .order_number > div > p {
-                font-family: Open Sans;
+                font-family: "Open Sans", Helvetica, Arial, sans-serif;
                 font-style: normal;
                 font-weight: 600;
                 font-size: 12px;
@@ -16741,14 +16741,14 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
                 display: flex;
                 align-items: center; }
                 .user-orders__tbl > .user-orders__tbl-item_mobile > .order_number > div > p:first-child {
-                  font-family: Open Sans;
+                  font-family: "Open Sans", Helvetica, Arial, sans-serif;
                   font-style: normal;
                   font-weight: bold;
                   font-size: 20px;
                   line-height: 30px;
                   color: #161720; }
                 .user-orders__tbl > .user-orders__tbl-item_mobile > .order_number > div > p > span {
-                  font-family: Open Sans;
+                  font-family: "Open Sans", Helvetica, Arial, sans-serif;
                   font-style: normal;
                   font-weight: 600;
                   font-size: 16px;
@@ -16774,7 +16774,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
               padding: 0 12px;
               padding-bottom: 26px;
               color: #202127;
-              font-family: Open Sans;
+              font-family: "Open Sans", Helvetica, Arial, sans-serif;
               font-style: normal; }
               .user-orders__tbl > .user-orders__tbl-item_mobile > .order_details:first-child {
                 margin-top: 0; }
@@ -16788,7 +16788,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
                 justify-content: flex-end;
                 margin-top: 16px; }
                 .user-orders__tbl > .user-orders__tbl-item_mobile > .order_details > .order-total > p {
-                  font-family: Open Sans;
+                  font-family: "Open Sans", Helvetica, Arial, sans-serif;
                   font-style: normal;
                   font-weight: bold;
                   font-size: 12px;
@@ -16822,7 +16822,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
               display: flex;
               padding: 16px 0; }
               .user-orders__tbl > .user-orders__tbl-item_mobile > .order_number > div > p {
-                font-family: Open Sans;
+                font-family: "Open Sans", Helvetica, Arial, sans-serif;
                 font-style: normal;
                 font-weight: 600;
                 font-size: 12px;
@@ -16836,14 +16836,14 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
                 display: flex;
                 align-items: center; }
                 .user-orders__tbl > .user-orders__tbl-item_mobile > .order_number > div > p:first-child {
-                  font-family: Open Sans;
+                  font-family: "Open Sans", Helvetica, Arial, sans-serif;
                   font-style: normal;
                   font-weight: bold;
                   font-size: 20px;
                   line-height: 30px;
                   color: #161720; }
                 .user-orders__tbl > .user-orders__tbl-item_mobile > .order_number > div > p > span {
-                  font-family: Open Sans;
+                  font-family: "Open Sans", Helvetica, Arial, sans-serif;
                   font-style: normal;
                   font-weight: 600;
                   font-size: 16px;
@@ -16909,7 +16909,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         .user-orders__tbl-row:not(:last-child) {
           border-bottom: 1px solid #E7EAF4; }
         .user-orders__tbl-row > span {
-          font-family: Open Sans;
+          font-family: "Open Sans", Helvetica, Arial, sans-serif;
           font-weight: normal;
           font-size: 14px;
           line-height: 22px; }
@@ -16930,7 +16930,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           .user-orders__tbl-row > span:nth-child(6) {
             width: 10.5%; }
     .user-orders__container > p {
-      font-family: Open Sans;
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
       font-style: normal;
       font-weight: normal;
       font-size: 12px;
@@ -17041,7 +17041,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
               letter-spacing: 1.6px;
               text-transform: uppercase;
               color: #397cee;
-              font-family: Open Sans;
+              font-family: "Open Sans", Helvetica, Arial, sans-serif;
               font-style: normal;
               font-weight: bold;
               font-size: 14px;
@@ -17060,7 +17060,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
               letter-spacing: 1.6px;
               text-transform: uppercase;
               color: #397cee;
-              font-family: Open Sans;
+              font-family: "Open Sans", Helvetica, Arial, sans-serif;
               font-style: normal;
               font-weight: bold;
               font-size: 14px;
@@ -17068,7 +17068,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
               .user-orders__basket__account > p > img {
                 margin-right: 11px; } }
         .user-orders__basket__account > .first > p {
-          font-family: Open Sans;
+          font-family: "Open Sans", Helvetica, Arial, sans-serif;
           font-style: normal;
           font-weight: bold;
           font-size: 16px;
@@ -17094,7 +17094,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           display: flex;
           flex: 1;
           flex-flow: column;
-          font-family: Open Sans;
+          font-family: "Open Sans", Helvetica, Arial, sans-serif;
           font-style: normal;
           color: #161720; }
           @media only screen and (max-width: 600px) {
@@ -17205,7 +17205,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         .user-orders__details__pricing > p {
           background: #ebeef8;
           padding: 6px 16px;
-          font-family: Open Sans;
+          font-family: "Open Sans", Helvetica, Arial, sans-serif;
           font-style: normal;
           font-weight: bold;
           font-size: 16px;
@@ -17393,7 +17393,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
             display: flex;
             align-items: center;
             justify-content: center;
-            font-family: Open Sans;
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
             font-style: normal;
             font-weight: bold; }
             .user-orders__details__pricing__item > .item_column > .label {
@@ -17415,7 +17415,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
               .user-orders__details__pricing__item > .item_column_big > div {
                 display: flex;
                 flex-flow: row wrap;
-                font-family: Open Sans;
+                font-family: "Open Sans", Helvetica, Arial, sans-serif;
                 font-style: normal;
                 justify-content: space-between;
                 padding-right: 0 !important; }
@@ -17462,7 +17462,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
               .user-orders__details__pricing__item > .item_column_big > div {
                 display: flex;
                 flex-flow: row wrap;
-                font-family: Open Sans;
+                font-family: "Open Sans", Helvetica, Arial, sans-serif;
                 font-style: normal;
                 justify-content: space-between;
                 padding-right: 0 !important; }
@@ -17566,7 +17566,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
               display: flex;
               align-items: flex-start;
               justify-content: center;
-              font-family: Open Sans;
+              font-family: "Open Sans", Helvetica, Arial, sans-serif;
               font-style: normal;
               font-weight: bold; }
               .user-orders__details__pricing__item > .item_column_container > .item_column:nth-child(n+4) {
@@ -17597,7 +17597,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         .user-orders__details__pricing__checkbox {
           display: flex;
           align-items: center;
-          font-family: Open Sans;
+          font-family: "Open Sans", Helvetica, Arial, sans-serif;
           font-style: normal; }
           @media only screen and (max-width: 600px) {
             .user-orders__details__pricing__checkbox {
@@ -17719,7 +17719,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         background: #ffffff;
         box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
         border-radius: 4px;
-        font-family: Open Sans; }
+        font-family: "Open Sans", Helvetica, Arial, sans-serif; }
         .user-orders__details__item > .label {
           font-weight: bold;
           font-size: 14px;
@@ -17732,7 +17732,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           line-height: 24px;
           color: #161720; }
     .user-orders__cancelled {
-      font-family: Open Sans;
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
       font-style: italic;
       font-weight: normal;
       font-size: 14px;
@@ -17752,7 +17752,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       flex-flow: row wrap;
       display: flex;
       padding: 8px 24px;
-      font-family: Open Sans;
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
       font-style: normal;
       font-weight: bold; }
       @media only screen and (max-width: 1024px) {
@@ -17763,7 +17763,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           width: 100%; } }
       .user-orders__success__message {
         flex: 1 0 100%;
-        font-family: Open Sans;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
         font-style: normal;
         padding-top: 16px;
         padding-left: 8px; }
@@ -17811,7 +17811,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       flex-wrap: nowrap;
       display: flex;
       padding: 8px 24px;
-      font-family: Open Sans;
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
       font-style: normal;
       font-weight: bold; }
       @media only screen and (min-width: 841px) and (max-width: 1400px) {
@@ -17957,7 +17957,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       justify-content: center;
       padding: 16px 24px;
       background: #18489a;
-      font-family: "Open Sans";
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
       font-style: normal;
       font-weight: bold;
       font-size: 12px;
@@ -17987,7 +17987,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       flex-wrap: nowrap;
       height: fit-content;
       padding: 24px;
-      font-family: Open Sans;
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
       font-style: normal;
       font-weight: normal;
       font-size: 16px;
@@ -18074,7 +18074,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         .user-orders__summary > .text_shipping_reminder span {
           font-weight: bold; }
       .user-orders__summary > .need-text {
-        font-family: Open Sans;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
@@ -18084,7 +18084,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       .user-orders__summary > .list-text {
         margin-top: 4px;
         margin-bottom: 8px;
-        font-family: Open Sans;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
@@ -18092,7 +18092,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         color: #161720; }
       .user-orders__summary > textarea {
         width: 100%;
-        font-family: Open Sans;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
         font-style: normal;
         padding: 10px;
         border: 1px solid #88898f;
@@ -18112,7 +18112,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
             font-size: 14px;
             line-height: 22px; } }
         .user-orders__summary > textarea::placeholder {
-          font-family: Open Sans;
+          font-family: "Open Sans", Helvetica, Arial, sans-serif;
           font-style: italic;
           font-weight: normal;
           font-size: 16px;
@@ -18133,7 +18133,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         justify-content: center;
         padding: 16px 24px;
         background: #18489a;
-        font-family: "Open Sans";
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
@@ -18207,7 +18207,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
             height: 160px; } }
       .user-orders__empty > p {
         margin-top: 20px;
-        font-family: "Open Sans";
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
         font-style: normal;
         font-weight: 600;
         font-size: 16px;
@@ -18223,7 +18223,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         padding: 16px 24px;
         background: #18489a;
         width: 240px;
-        font-family: "Open Sans";
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
@@ -18293,7 +18293,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
             height: 160px; } }
       .user-orders__incomplete > p {
         margin-top: 20px;
-        font-family: "Open Sans";
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
         font-style: normal;
         font-weight: 600;
         font-size: 20px;
@@ -18309,7 +18309,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         padding: 16px 24px;
         background: #18489a;
         width: 240px;
-        font-family: "Open Sans";
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
@@ -18396,7 +18396,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     padding: 24px;
     max-width: 1028px;
     margin-top: 64px;
-    font-family: Open Sans;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: normal; }
     @media only screen and (max-width: 1024px) {
@@ -18430,7 +18430,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         padding-right: 12px;
         margin-top: 0; } }
     .profile__information > .title {
-      font-family: Open Sans;
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
       font-style: normal;
       font-weight: bold;
       font-size: 16px;
@@ -18581,7 +18581,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     margin-top: 42px;
     background-color: white;
     width: 90%;
-    font-family: Open Sans;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-style: normal; }
 
 .password {
@@ -18645,7 +18645,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     max-width: 1028px;
     width: 100%;
     margin-top: 64px;
-    font-family: Open Sans;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: normal; }
     @media only screen and (max-width: 1024px) {
@@ -18707,7 +18707,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           line-height: 30px;
           letter-spacing: unset; } }
     .password__information > .changepassword-text {
-      font-family: Open Sans;
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
       font-style: normal;
       font-weight: normal;
       font-size: 16px;
@@ -18870,7 +18870,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     .product--small > div {
       display: flex;
       flex-flow: column;
-      font-family: Open Sans;
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
       font-style: normal;
       justify-content: space-between;
       padding-left: 30px;
@@ -18888,7 +18888,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         line-height: 24px;
         color: #403f47; }
       .product--small > div .item-details {
-        font-family: Open Sans;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 12px;
@@ -18951,7 +18951,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     justify-content: space-between;
     align-items: center; }
     .product-similar--small > .header > p {
-      font-family: Open Sans;
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
       font-style: normal;
       font-weight: bold;
       font-size: 12px;
@@ -18983,7 +18983,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     background: url("../../assets/images/icons/icon-search-black.svg") 96%/3% no-repeat #FFFFFF;
     border: 1px solid #88898F;
     outline: none;
-    font-family: Open Sans;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 16px;
@@ -19077,7 +19077,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
                   padding: 0 !important; }
                   .product-details > .item > .delivery__mechanics > div > .accordion > .accordion__content > p {
                     padding: 24px;
-                    font-family: Open Sans;
+                    font-family: "Open Sans", Helvetica, Arial, sans-serif;
                     font-style: normal;
                     font-weight: normal;
                     font-size: 16px;
@@ -19092,7 +19092,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
                     .product-details > .item > .delivery__mechanics > div > .accordion > .accordion__content > .blue-box > img {
                       width: fit-content; }
                     .product-details > .item > .delivery__mechanics > div > .accordion > .accordion__content > .blue-box > p {
-                      font-family: Open Sans;
+                      font-family: "Open Sans", Helvetica, Arial, sans-serif;
                       font-style: normal;
                       font-weight: 600;
                       font-size: 14px;
@@ -19118,7 +19118,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
                   padding: 0 !important; }
                   .product-details > .item > .delivery__mechanics > div > .accordion > .accordion__content > p {
                     padding: 24px;
-                    font-family: Open Sans;
+                    font-family: "Open Sans", Helvetica, Arial, sans-serif;
                     font-style: normal;
                     font-weight: normal;
                     font-size: 16px;
@@ -19133,7 +19133,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
                     .product-details > .item > .delivery__mechanics > div > .accordion > .accordion__content > .blue-box > img {
                       width: fit-content; }
                     .product-details > .item > .delivery__mechanics > div > .accordion > .accordion__content > .blue-box > p {
-                      font-family: Open Sans;
+                      font-family: "Open Sans", Helvetica, Arial, sans-serif;
                       font-style: normal;
                       font-weight: 600;
                       font-size: 14px;
@@ -19176,7 +19176,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         display: flex;
         flex: 1;
         flex-flow: column;
-        font-family: Open Sans;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
         font-style: normal;
         font-weight: normal;
         padding: 24px;
@@ -19232,7 +19232,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           padding: 0;
           margin: 24px 0; }
           .product-details > .item > .item__details > .row p {
-            font-family: Open Sans;
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
             font-style: normal;
             font-weight: 600;
             font-size: 14px;
@@ -19274,7 +19274,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           margin-top: 0; }
           .product-details > .item > .item__details > .row.servicing-branch > input[type="text"] {
             background: url("../../assets/images/icons/icon-search-black.svg") 96%/3% no-repeat #FFFFFF;
-            font-family: Open Sans;
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
             font-style: normal;
             font-weight: 600;
             font-size: 16px;
@@ -19282,7 +19282,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
             border: 1px solid #88898f;
             height: 40px; }
             .product-details > .item > .item__details > .row.servicing-branch > input[type="text"]::placeholder {
-              font-family: Open Sans;
+              font-family: "Open Sans", Helvetica, Arial, sans-serif;
               font-style: italic;
               font-weight: normal;
               font-size: 16px;
@@ -19294,7 +19294,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           .product-details > .item > .item__details > .delivery-box > p {
             display: flex;
             align-items: center;
-            font-family: Open Sans;
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
             font-style: normal;
             font-weight: bold;
             font-size: 16px;
@@ -19344,7 +19344,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         margin: 0 !important; }
     .product-details > .nav-tabs-content {
       padding: 32px 80px 40px 80px;
-      font-family: Open Sans;
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
       font-style: normal;
       font-weight: normal; }
       .product-details > .nav-tabs-content > p {
@@ -19528,7 +19528,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35); }
     .checkout.multiple .checkout-confirmation > .text {
       padding: 16px 24px;
-      font-family: Open Sans;
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
       font-style: normal;
       font-weight: normal;
       font-size: 16px;
@@ -19536,7 +19536,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       color: #403f47; }
 
 .branch-cms {
-  font-family: Open Sans;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal; }
   .branch-cms > div {
@@ -19550,7 +19550,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   .branch-cms-header {
     display: flex;
     flex: 1 0 100%;
-    font-family: Open Sans;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -19560,7 +19560,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     margin-top: 60px;
     margin-bottom: 48px; }
     .branch-cms-header > a {
-      font-family: Open Sans;
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
       font-style: normal;
       font-weight: bold;
       font-size: 16px;
@@ -19599,7 +19599,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         max-width: 210px;
         width: 210px; }
         .branch-cms-detail > .buttons-container > .custom-select > .select-selected {
-          font-family: Open Sans;
+          font-family: "Open Sans", Helvetica, Arial, sans-serif;
           font-style: normal;
           font-weight: 600;
           font-size: 16px;
@@ -19618,7 +19618,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         max-height: 56px;
         background: #0067b3;
         border-radius: 4px;
-        font-family: Open Sans;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
         font-style: normal;
         text-align: center;
         color: #ffffff;
@@ -19633,7 +19633,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         border-radius: 4px;
         border: 1px solid #88898f;
         max-height: 56px;
-        font-family: Open Sans;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
         font-style: normal;
         text-align: center;
         color: #ffffff;
@@ -19709,7 +19709,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       align-items: center;
       margin-bottom: 16px; }
       .branch-cms-detail_page_table > .status-container > p {
-        font-family: Open Sans;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
@@ -19717,7 +19717,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         color: #000000; }
         .branch-cms-detail_page_table > .status-container > p.status {
           margin-left: 12px;
-          font-family: Open Sans;
+          font-family: "Open Sans", Helvetica, Arial, sans-serif;
           font-style: normal;
           font-weight: bold;
           font-size: 16px;
@@ -19777,7 +19777,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         .branch-cms-detail_page_table-item_summary > .table-header > div {
           display: flex;
           flex: 1;
-          font-family: Open Sans;
+          font-family: "Open Sans", Helvetica, Arial, sans-serif;
           font-style: normal;
           font-weight: 600;
           font-size: 14px;
@@ -19809,7 +19809,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         .branch-cms-detail_page_table-item_summary > .table-row > div {
           display: flex;
           flex: 1;
-          font-family: Open Sans;
+          font-family: "Open Sans", Helvetica, Arial, sans-serif;
           font-style: normal;
           font-weight: normal;
           font-size: 16px;
@@ -19949,7 +19949,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         top: unset !important; }
 
 .branch-cms-edit {
-  font-family: Open Sans;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal; }
   .branch-cms-edit > div:nth-child(1) {
@@ -20038,7 +20038,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         .branch-cms-edit > div:nth-child(n + 2) > .branch-cms-detail_page_table-item_summary > .table-header > div {
           display: flex;
           flex: 1;
-          font-family: Open Sans;
+          font-family: "Open Sans", Helvetica, Arial, sans-serif;
           font-style: normal;
           font-weight: 600;
           font-size: 14px;
@@ -20067,7 +20067,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           .branch-cms-edit > div:nth-child(n + 2) > .branch-cms-detail_page_table-item_summary > .table-header.input > div {
             display: flex;
             flex: 1;
-            font-family: Open Sans;
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
             font-style: normal;
             font-weight: 600;
             font-size: 14px;
@@ -20104,7 +20104,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         .branch-cms-edit > div:nth-child(n + 2) > .branch-cms-detail_page_table-item_summary > .table-row > div {
           display: flex;
           flex: 1;
-          font-family: Open Sans;
+          font-family: "Open Sans", Helvetica, Arial, sans-serif;
           font-style: normal;
           font-weight: normal;
           font-size: 16px;
@@ -20114,15 +20114,15 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           .branch-cms-edit > div:nth-child(n + 2) > .branch-cms-detail_page_table-item_summary > .table-row > div:nth-child(n + 3) {
             justify-content: flex-end; }
           .branch-cms-edit > div:nth-child(n + 2) > .branch-cms-detail_page_table-item_summary > .table-row > div:nth-child(1) {
-            flex: 1 0 11.5%; }
+            flex: 1 1 11.5%; }
           .branch-cms-edit > div:nth-child(n + 2) > .branch-cms-detail_page_table-item_summary > .table-row > div:nth-child(2) {
-            flex: 1 0 49%; }
+            flex: 1 1 49%; }
           .branch-cms-edit > div:nth-child(n + 2) > .branch-cms-detail_page_table-item_summary > .table-row > div:nth-child(3) {
-            flex: 1 0 12.5%; }
+            flex: 1 1 12.5%; }
           .branch-cms-edit > div:nth-child(n + 2) > .branch-cms-detail_page_table-item_summary > .table-row > div:nth-child(4) {
-            flex: 1 0 9.5%; }
+            flex: 1 1 9.5%; }
           .branch-cms-edit > div:nth-child(n + 2) > .branch-cms-detail_page_table-item_summary > .table-row > div:nth-child(5) {
-            flex: 1 0 9.5%; }
+            flex: 1 1 9.5%; }
           .branch-cms-edit > div:nth-child(n + 2) > .branch-cms-detail_page_table-item_summary > .table-row > div:nth-child(6) {
             flex: 1 0 8%; }
             .branch-cms-edit > div:nth-child(n + 2) > .branch-cms-detail_page_table-item_summary > .table-row > div:nth-child(6) > a {
@@ -20140,7 +20140,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           .branch-cms-edit > div:nth-child(n + 2) > .branch-cms-detail_page_table-item_summary > .table-row.input > div {
             display: flex;
             flex: 1;
-            font-family: Open Sans;
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
             font-style: normal;
             font-weight: normal;
             font-size: 16px;
@@ -20187,6 +20187,57 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
                 text-decoration: none;
                 display: flex;
                 align-items: center; }
+                .branch-cms-edit > div:nth-child(n + 2) > .branch-cms-detail_page_table-item_summary > .table-row.input > div:nth-child(6) > a.edit-button {
+                  color: #397cee;
+                  font-weight: bold;
+                  font-size: 16px;
+                  line-height: 22px;
+                  text-align: right;
+                  letter-spacing: 0.02em;
+                  text-decoration: none;
+                  margin-left: 20%; }
+        .branch-cms-edit > div:nth-child(n + 2) > .branch-cms-detail_page_table-item_summary > .table-row.new-item > div {
+          display: flex;
+          flex: 1;
+          font-family: "Open Sans", Helvetica, Arial, sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 22px;
+          letter-spacing: 0.02em;
+          color: #161720; }
+          .branch-cms-edit > div:nth-child(n + 2) > .branch-cms-detail_page_table-item_summary > .table-row.new-item > div:nth-child(n + 3) {
+            justify-content: flex-end; }
+          .branch-cms-edit > div:nth-child(n + 2) > .branch-cms-detail_page_table-item_summary > .table-row.new-item > div:nth-child(1) {
+            flex: 1 1 11.5%; }
+          .branch-cms-edit > div:nth-child(n + 2) > .branch-cms-detail_page_table-item_summary > .table-row.new-item > div:nth-child(2) {
+            flex: 1 1 49%; }
+          .branch-cms-edit > div:nth-child(n + 2) > .branch-cms-detail_page_table-item_summary > .table-row.new-item > div:nth-child(3) {
+            flex: 1 1 12.5%; }
+          .branch-cms-edit > div:nth-child(n + 2) > .branch-cms-detail_page_table-item_summary > .table-row.new-item > div:nth-child(4) {
+            flex: 1 1 9.5%; }
+          .branch-cms-edit > div:nth-child(n + 2) > .branch-cms-detail_page_table-item_summary > .table-row.new-item > div:nth-child(5) {
+            flex: 1 1 9.5%; }
+          .branch-cms-edit > div:nth-child(n + 2) > .branch-cms-detail_page_table-item_summary > .table-row.new-item > div:nth-child(6) {
+            flex: 1 0 12%;
+            justify-content: space-between; }
+            .branch-cms-edit > div:nth-child(n + 2) > .branch-cms-detail_page_table-item_summary > .table-row.new-item > div:nth-child(6) > .edit-button {
+              color: #397cee;
+              font-weight: bold;
+              font-size: 16px;
+              line-height: 22px;
+              text-align: right;
+              letter-spacing: 0.02em;
+              text-decoration: none;
+              margin-left: 20%; }
+            .branch-cms-edit > div:nth-child(n + 2) > .branch-cms-detail_page_table-item_summary > .table-row.new-item > div:nth-child(6) > .delete-button {
+              color: #c84025;
+              font-weight: bold;
+              font-size: 16px;
+              line-height: 22px;
+              text-align: right;
+              letter-spacing: 0.02em;
+              text-decoration: none; }
       .branch-cms-edit > div:nth-child(n + 2) > .branch-cms-detail_page_table-item_summary > .table-total {
         display: flex;
         flex: 1 0 100%;
@@ -20232,7 +20283,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       color: #161720; }
   .side_nav-nav > ul > li.active > a {
     background: #f86a6a;
-    font-family: Open Sans;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -20261,7 +20312,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     font-weight: 700;
     cursor: pointer;
     position: relative;
-    font-family: Open Sans;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -20276,7 +20327,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       margin-right: 8px; }
     .side_nav-nav > ul > li > a:hover {
       background: #f86a6a;
-      font-family: Open Sans;
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
       font-style: normal;
       font-weight: bold;
       font-size: 14px;
@@ -20299,7 +20350,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     .nav-tabs > ul > li > a {
       text-decoration: none;
       padding: 13px 20px;
-      font-family: Open Sans;
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
       font-style: normal;
       font-weight: normal;
       font-size: 16px;
@@ -20346,7 +20397,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       .breadcrumb > div {
         display: none; } }
     .breadcrumb > div > p {
-      font-family: Open Sans;
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
       font-style: normal;
       font-weight: normal;
       font-size: 12px;
@@ -20382,7 +20433,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         display: flex;
         flex: 1;
         justify-content: center;
-        font-family: Open Sans;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
@@ -20520,7 +20571,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         .order-actions-list > .pointer.third {
           left: 80.5%; } }
   .order-actions-list > .action {
-    font-family: Open Sans;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     display: flex;
@@ -20571,7 +20622,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         justify-content: flex-start;
         margin-left: 40px; }
         .order-actions-list > .action > p > span {
-          font-family: Open Sans;
+          font-family: "Open Sans", Helvetica, Arial, sans-serif;
           font-style: normal;
           font-weight: normal;
           font-size: 12px;
@@ -20590,7 +20641,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         justify-content: flex-start;
         margin-left: 40px; }
         .order-actions-list > .action > p > span {
-          font-family: Open Sans;
+          font-family: "Open Sans", Helvetica, Arial, sans-serif;
           font-style: normal;
           font-weight: normal;
           font-size: 12px;
@@ -20601,7 +20652,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           margin-right: 8px; } }
   .order-actions-list > a {
     margin-top: 16px;
-    font-family: Open Sans;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -20648,7 +20699,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   height: 10px;
   transform: rotate(45deg);
   border-bottom: 1.5px solid black;
-  border-right: 1.5px solid black; }
+  border-right: 1.5px solid black;
+  transition: transform .3s; }
   @media only screen and (max-width: 600px) {
     .select-selected:after {
       top: 20px; } }
@@ -20656,9 +20708,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     .select-selected:after {
       top: 20px; } }
 .select-selected.select-arrow-active:after {
-  border-color: transparent transparent #161720 transparent;
-  top: 7px;
-  transform: rotate(); }
+  transform: rotate(225deg);
+  transition: transform .3s; }
   @media only screen and (max-width: 600px) {
     .select-selected.select-arrow-active:after {
       top: 10px; } }
@@ -20671,7 +20722,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   border: 1px solid #88898f;
   cursor: pointer;
   user-select: none;
-  font-family: Open Sans;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -20688,7 +20739,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   border: 1px solid #88898f;
   cursor: pointer;
   user-select: none;
-  font-family: Open Sans;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -20752,7 +20803,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 
 .custom-select.transparent .select-items div {
   border: none;
-  font-family: Open Sans;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -20790,7 +20841,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       padding: 8px 0px;
       cursor: pointer;
       user-select: none;
-      font-family: Open Sans;
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
       font-style: normal;
       font-weight: 600;
       font-size: 14px;
@@ -20810,7 +20861,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       padding: 8px 0px;
       cursor: pointer;
       user-select: none;
-      font-family: Open Sans;
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
       font-style: normal;
       font-weight: 600;
       font-size: 14px;
@@ -20850,7 +20901,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   .make-small-header > p {
     display: flex;
     align-items: center;
-    font-family: Open Sans;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -20859,7 +20910,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   .make-small-header > .edit-button {
     display: flex;
     align-items: center;
-    font-family: Open Sans;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -20923,21 +20974,21 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       .make-label-value:last-child {
         margin-bottom: 0; } }
   .make-label-value > label {
-    font-family: Open Sans;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
     line-height: 18px;
     color: #88898f; }
   .make-label-value > p {
-    font-family: Open Sans;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
     color: #161720; }
   .make-label-value-order > label {
-    font-family: Open Sans;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -20947,7 +20998,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     color: #88898f;
     margin-bottom: 5px; }
   .make-label-value-order > p {
-    font-family: Open Sans;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -21018,7 +21069,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           margin-right: auto;
           padding-left: 14px; }
           .make-delivery-options__options > .item > .description > .text p {
-            font-family: Open Sans;
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
             font-style: normal;
             font-weight: normal;
             font-size: 14px;
@@ -21067,7 +21118,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         .make-delivery-options__options > .item > .description > .price {
           display: flex;
           align-items: center;
-          font-family: Open Sans;
+          font-family: "Open Sans", Helvetica, Arial, sans-serif;
           font-style: normal;
           font-weight: bold;
           font-size: 14px;
@@ -21104,7 +21155,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       display: flex;
       flex: 1;
       flex-flow: column;
-      font-family: Open Sans;
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
       font-style: normal;
       font-weight: bold; }
       .make-orders-container > .order_container .order_details_container > .details div:first-child {
@@ -21129,7 +21180,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   .make-orders-container > .order_container > .order_branch_container {
     background: #ebeef8;
     padding: 7px 16px;
-    font-family: Open Sans;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     margin-bottom: 16px;
@@ -21160,7 +21211,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         background: #88898f;
         color: #ffffff; }
   .make-orders-container > .order_container > .order_items_container {
-    font-family: Open Sans;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-style: normal; }
     .make-orders-container > .order_container > .order_items_container > .order_item_container {
       display: flex;
@@ -21238,7 +21289,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     .make-order-details-container.single {
       padding: 16px 12px; } }
   .make-order-details-container.single > .header {
-    font-family: Open Sans;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -21256,7 +21307,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     margin-bottom: 0; }
 
 .make-order-details-container > .header {
-  font-family: Open Sans;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -21285,7 +21336,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     .make-order-details-container > .more-details {
       flex-flow: column; } }
   .make-order-details-container > .more-details > p {
-    font-family: Open Sans;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -21305,7 +21356,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       font-weight: bold; }
 
 .make-need-textarea > .need-text {
-  font-family: Open Sans;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -21316,7 +21367,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 .make-need-textarea > .list-text {
   margin-top: 4px;
   margin-bottom: 8px;
-  font-family: Open Sans;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -21325,7 +21376,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 
 .make-need-textarea > textarea {
   width: 100%;
-  font-family: Open Sans;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-style: normal;
   padding: 10px;
   border: 1px solid #88898f;
@@ -21345,7 +21396,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       font-size: 14px;
       line-height: 22px; } }
   .make-need-textarea > textarea::placeholder {
-    font-family: Open Sans;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-style: italic;
     font-weight: normal;
     font-size: 16px;
@@ -21374,7 +21425,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     justify-content: space-between;
     margin-bottom: 16px; }
     .make-orders-summary > .summary-item > p {
-      font-family: Open Sans;
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
       font-style: normal;
       font-weight: normal;
       font-size: 16px;
@@ -21389,7 +21440,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         display: flex;
         flex-flow: column; }
         .make-orders-summary > .summary-item.delivery > div > p {
-          font-family: Open Sans;
+          font-family: "Open Sans", Helvetica, Arial, sans-serif;
           font-style: normal;
           font-weight: normal;
           font-size: 16px;
@@ -21405,7 +21456,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
             .make-orders-summary > .summary-item.delivery > div > p:last-child > img {
               margin-right: 10px; }
     .make-orders-summary > .summary-item.total > p {
-      font-family: Open Sans;
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
       font-style: normal;
       font-weight: bold;
       font-size: 16px;
@@ -21420,7 +21471,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     border: 1px solid #EBEEF8; }
 
 .make-terms-agree label {
-  font-family: Open Sans;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -21492,7 +21543,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   padding: 29px 24px;
   border-radius: 4px; }
   .make-checkout-thankyou > p {
-    font-family: Open Sans;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -21529,7 +21580,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     display: flex;
     text-decoration: none;
     margin-bottom: 10px;
-    font-family: Open Sans;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -21565,7 +21616,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       background-position: 100% 50%;
       margin-top: 16px; } }
   .make-email-instruction > p {
-    font-family: Open Sans;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
