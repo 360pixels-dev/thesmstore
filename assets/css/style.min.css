@@ -4120,8 +4120,7 @@ ul {
             font-size: 14px;
             line-height: 22px;
             color: #161720;
-            margin-bottom: 6px;
-            display: flex; }
+            margin-bottom: 6px; }
       .modal--export_csv > .modal-content > .button-container {
         justify-content: start;
         display: flex;
@@ -19436,6 +19435,32 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       font-size: 16px;
       line-height: 24px;
       color: #403f47; }
+
+.header-branch_cms {
+  background-color: #397cee;
+  z-index: 40;
+  height: 88px;
+  width: 100%; }
+  .header-branch_cms > .nav__upper {
+    height: 100%;
+    padding: 0 56px; }
+    .header-branch_cms > .nav__upper > .nav-branch_cms {
+      display: flex;
+      height: 100%; }
+      .header-branch_cms > .nav__upper > .nav-branch_cms > div {
+        margin-right: 24px;
+        height: 100%; }
+        .header-branch_cms > .nav__upper > .nav-branch_cms > div:last-child {
+          margin-right: 0; }
+        .header-branch_cms > .nav__upper > .nav-branch_cms > div > a {
+          height: 100%;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 24px;
+          display: flex;
+          align-items: center;
+          color: #ffffff;
+          text-decoration: none; }
 
 .branch-cms {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
