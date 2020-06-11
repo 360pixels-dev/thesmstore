@@ -210,7 +210,7 @@
                 color: #88898f;
 
                 &::before {
-                    border: 1px solid #88898F;
+                    border: 1px solid #88898f;
                 }
             }
 
@@ -532,7 +532,7 @@
             &.make-custom-checkbox {
                 & > label {
                     &::before {
-                        border: 1px solid #88898F;
+                        border: 1px solid #88898f;
                     }
                 }
             }
@@ -563,6 +563,17 @@
             & > .custom-select {
                 min-width: unset;
                 width: 85%;
+
+                & .select-items {
+                    min-width: 110px !important;
+
+                    & > div {
+                        font-weight: 600 !important;
+                        font-size: 14px !important;
+                        line-height: 22px !important;
+                        color: #161720 !important;
+                    }
+                }
             }
         }
 

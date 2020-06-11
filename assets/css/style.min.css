@@ -4065,6 +4065,85 @@ ul {
           .modal--item > .modal-content > .modal--item-description > .order-item > p {
             font-size: 14px;
             line-height: 22px; } }
+  .modal--export_csv {
+    width: 564px;
+    height: 268px;
+    background: #ffffff;
+    box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    z-index: 99; }
+    @media only screen and (max-width: 1024px) {
+      .modal--export_csv {
+        height: 478px;
+        width: 335px; } }
+    @media only screen and (max-width: tablet) {
+      .modal--export_csv {
+        height: 478px;
+        width: 335px; } }
+    .modal--export_csv > .modal-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 32px; }
+      .modal--export_csv > .modal-content > .header-container {
+        display: flex;
+        justify-content: space-between;
+        flex: 1 0 100%;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 24px; }
+        .modal--export_csv > .modal-content > .header-container > p {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 32px;
+          line-height: 40px;
+          letter-spacing: 1.6px;
+          color: #000000; }
+        .modal--export_csv > .modal-content > .header-container > a {
+          display: flex;
+          align-items: center; }
+      .modal--export_csv > .modal-content > .input-container {
+        justify-content: space-between;
+        display: flex;
+        width: 100%;
+        margin-bottom: 24px; }
+        .modal--export_csv > .modal-content > .input-container > div {
+          max-width: 240px;
+          display: flex;
+          flex-flow: column; }
+          .modal--export_csv > .modal-content > .input-container > div > p {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 22px;
+            color: #161720;
+            margin-bottom: 6px; }
+      .modal--export_csv > .modal-content > .button-container {
+        justify-content: start;
+        display: flex;
+        width: 100%; }
+    .modal--export_csv input[type="date"] {
+      color: #ffffff;
+      width: 240px;
+      min-height: 40px;
+      height: 40px; }
+      .modal--export_csv input[type="date"]::before {
+        content: attr(placeholder);
+        font-family: Open Sans;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        color: #88898f; }
+      .modal--export_csv input[type="date"]:focus, .modal--export_csv input[type="date"]:valid {
+        color: #666666; }
+      .modal--export_csv input[type="date"]:focus::before, .modal--export_csv input[type="date"]:valid::before {
+        content: "" !important; }
   .modal--welcome {
     height: 490px;
     width: 800px;
@@ -19510,7 +19589,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       text-transform: uppercase;
       color: #88898f; }
       .branch-cms-select_all > .make-custom-checkbox > label::before {
-        border: 1px solid #88898F; }
+        border: 1px solid #88898f; }
     .branch-cms-select_all > .make-custom-checkbox > #deselect-all {
       visibility: hidden;
       margin-left: 30px;
@@ -19726,7 +19805,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       display: flex;
       align-items: center; }
       .branch-cms-table__column.make-custom-checkbox > label::before {
-        border: 1px solid #88898F; }
+        border: 1px solid #88898f; }
       .branch-cms-table__column:nth-child(1) {
         flex: 1 0 12%; }
       .branch-cms-table__column:nth-child(2) {
@@ -19745,6 +19824,13 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       .branch-cms-table__column > .custom-select {
         min-width: unset;
         width: 85%; }
+        .branch-cms-table__column > .custom-select .select-items {
+          min-width: 110px !important; }
+          .branch-cms-table__column > .custom-select .select-items > div {
+            font-weight: 600 !important;
+            font-size: 14px !important;
+            line-height: 22px !important;
+            color: #161720 !important; }
     .branch-cms-table__row {
       display: flex;
       flex: 1 0 100%; }

@@ -11,6 +11,32 @@
 
 <body>
     <div class="wrapper">
+
+        <div class="modal active">
+            <div class="modal--export_csv">
+                <div class="modal-content">
+                    <div class="header-container">
+                        <p>EXPORT CSV</p>
+                        <a href="#" class="close"><img src="./assets/images/icons/close-black.svg" alt="" /></a>
+                    </div>
+                    <div class="input-container">
+                        <div>
+                            <p>Date from</p>
+                            <input type="date" id="dateFrom" name="dateFrom" placeholder="Select Date" required>
+                        </div>
+                        <div>
+                            <p>Date to</p>
+                            <input type="date" id="dateTo" name="dateTo" placeholder="Select Date" required>
+                        </div>
+                    </div>
+
+                    <div class="button-container">
+                        <button class="btn--primary button--dark-blue font-cta">Export</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <section class="branch-cms">
             <div>
                 <div class="branch-cms-header">
@@ -20,7 +46,8 @@
                     <p>The SM Store Makati</p>
 
                     <div class="search">
-                        <a href="#" class="search__btn"> <img src="./assets/images/icons/icon-search-black.svg" alt="Search"></a>
+                        <a href="#" class="search__btn"> <img src="./assets/images/icons/icon-search-black.svg"
+                                alt="Search"></a>
                         <input type="text" class="search__input" placeholder="Search...">
                     </div>
                 </div>
@@ -33,7 +60,7 @@
                         <a href="#" id="deselect-all">DELETE ALL</a>
                     </div>
                 </div>
-                
+
 
                 <div class="branch-cms-table">
                     <div class="branch-cms-table__header">

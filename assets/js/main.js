@@ -122,6 +122,10 @@ $(document).ready(function () {
         $('.modal--tos').parent().removeClass('active');
     });
 
+    $('.modal--export_csv .close').click(function () {
+        $('.modal--export_csv').parent().removeClass('active');
+    });
+
     $('.catalog-items .carousel__item').click(function (e) {
         if ($(e.target).hasClass('color-picker-item') || $(e.target).attr('type') == 'checkbox') {
             return false;

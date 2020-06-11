@@ -469,6 +469,109 @@
         }
     }
 
+    &--export_csv {
+        width: 564px;
+        height: 268px;
+        background: #ffffff;
+        box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 8px;
+        z-index: 99;
+
+        @include respond(tablet) {
+            height: 478px;
+            width: 335px;
+        }
+
+        & > .modal-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 32px;
+
+            & > .header-container {
+                display: flex;
+                justify-content: space-between;
+                flex: 1 0 100%;
+                width: 100%;
+                align-items: center;
+                margin-bottom: 24px;
+
+                & > p {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 32px;
+                    line-height: 40px;
+                    letter-spacing: 1.6px;
+                    color: #000000;
+                }
+
+                & > a {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+
+            & > .input-container {
+                justify-content: space-between;
+                display: flex;
+                width: 100%;
+                margin-bottom: 24px;
+
+                & > div {
+                    max-width: 240px;
+                    display: flex;
+                    flex-flow: column;
+
+                    & > p {
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 22px;
+                        color: #161720;
+                        margin-bottom: 6px;
+                    }
+                }
+            }
+
+            & > .button-container {
+                justify-content: start;
+                display: flex;
+                width: 100%;
+            }
+        }
+
+        input[type="date"] {
+            color: #ffffff;
+            width: 240px;
+            min-height: 40px;
+            height: 40px;
+
+            &::before {
+                content: attr(placeholder);
+                font-family: Open Sans;
+                font-style: italic;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 24px;
+                display: flex;
+                align-items: center;
+                color: #88898f;
+            }
+
+            &:focus,
+            &:valid {
+                color: #666666;
+            }
+            &:focus::before,
+            &:valid::before {
+                content: "" !important;
+            }
+        }
+    }
+
     &--welcome {
         height: 490px;
         width: 800px;
