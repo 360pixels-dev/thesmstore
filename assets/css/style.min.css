@@ -19663,6 +19663,14 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         flex: 0 0 50%;
         max-height: 53px;
         height: 53px; }
+        @media only screen and (max-width: 1024px) {
+          .branch-cms-detail_page_table-order_summary > .table-item {
+            max-height: 120px;
+            height: 90px; } }
+        @media only screen and (max-width: tablet) {
+          .branch-cms-detail_page_table-order_summary > .table-item {
+            max-height: 120px;
+            height: 90px; } }
         .branch-cms-detail_page_table-order_summary > .table-item:nth-child(odd) > .value {
           border-right: none; }
         .branch-cms-detail_page_table-order_summary > .table-item:nth-child(n + 3) > .value, .branch-cms-detail_page_table-order_summary > .table-item:nth-child(n + 3) > .description {
@@ -19674,6 +19682,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           align-items: center;
           padding-left: 16px;
           padding-right: 16px;
+          min-width: 130px;
           font-weight: bold;
           font-size: 14px;
           line-height: 19px;
@@ -19716,14 +19725,44 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
             justify-content: flex-end; }
           .branch-cms-detail_page_table-item_summary > .table-header > div:nth-child(1) {
             flex: 1 0 12.5%; }
+            @media only screen and (max-width: 1024px) {
+              .branch-cms-detail_page_table-item_summary > .table-header > div:nth-child(1) {
+                flex: 1 0 14%; } }
+            @media only screen and (max-width: tablet) {
+              .branch-cms-detail_page_table-item_summary > .table-header > div:nth-child(1) {
+                flex: 1 0 14%; } }
           .branch-cms-detail_page_table-item_summary > .table-header > div:nth-child(2) {
             flex: 1 0 52%; }
+            @media only screen and (max-width: 1024px) {
+              .branch-cms-detail_page_table-item_summary > .table-header > div:nth-child(2) {
+                flex: 1 0 38%; } }
+            @media only screen and (max-width: tablet) {
+              .branch-cms-detail_page_table-item_summary > .table-header > div:nth-child(2) {
+                flex: 1 0 38%; } }
           .branch-cms-detail_page_table-item_summary > .table-header > div:nth-child(3) {
             flex: 1 0 12.5%; }
+            @media only screen and (max-width: 1024px) {
+              .branch-cms-detail_page_table-item_summary > .table-header > div:nth-child(3) {
+                flex: 1 0 14%; } }
+            @media only screen and (max-width: tablet) {
+              .branch-cms-detail_page_table-item_summary > .table-header > div:nth-child(3) {
+                flex: 1 0 14%; } }
           .branch-cms-detail_page_table-item_summary > .table-header > div:nth-child(4) {
             flex: 1 0 11.5%; }
+            @media only screen and (max-width: 1024px) {
+              .branch-cms-detail_page_table-item_summary > .table-header > div:nth-child(4) {
+                flex: 1 0 14%; } }
+            @media only screen and (max-width: tablet) {
+              .branch-cms-detail_page_table-item_summary > .table-header > div:nth-child(4) {
+                flex: 1 0 14%; } }
           .branch-cms-detail_page_table-item_summary > .table-header > div:nth-child(5) {
             flex: 1 0 11.5%; }
+            @media only screen and (max-width: 1024px) {
+              .branch-cms-detail_page_table-item_summary > .table-header > div:nth-child(5) {
+                flex: 1 0 20%; } }
+            @media only screen and (max-width: tablet) {
+              .branch-cms-detail_page_table-item_summary > .table-header > div:nth-child(5) {
+                flex: 1 0 20%; } }
       .branch-cms-detail_page_table-item_summary > hr {
         margin: 0 0 20px 0;
         display: flex;
@@ -19747,14 +19786,44 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
             justify-content: flex-end; }
           .branch-cms-detail_page_table-item_summary > .table-row > div:nth-child(1) {
             flex: 1 0 12.5%; }
+            @media only screen and (max-width: 1024px) {
+              .branch-cms-detail_page_table-item_summary > .table-row > div:nth-child(1) {
+                flex: 1 0 14%; } }
+            @media only screen and (max-width: tablet) {
+              .branch-cms-detail_page_table-item_summary > .table-row > div:nth-child(1) {
+                flex: 1 0 14%; } }
           .branch-cms-detail_page_table-item_summary > .table-row > div:nth-child(2) {
             flex: 1 0 52%; }
+            @media only screen and (max-width: 1024px) {
+              .branch-cms-detail_page_table-item_summary > .table-row > div:nth-child(2) {
+                flex: 1 0 38%; } }
+            @media only screen and (max-width: tablet) {
+              .branch-cms-detail_page_table-item_summary > .table-row > div:nth-child(2) {
+                flex: 1 0 38%; } }
           .branch-cms-detail_page_table-item_summary > .table-row > div:nth-child(3) {
             flex: 1 0 12.5%; }
+            @media only screen and (max-width: 1024px) {
+              .branch-cms-detail_page_table-item_summary > .table-row > div:nth-child(3) {
+                flex: 1 0 14%; } }
+            @media only screen and (max-width: tablet) {
+              .branch-cms-detail_page_table-item_summary > .table-row > div:nth-child(3) {
+                flex: 1 0 14%; } }
           .branch-cms-detail_page_table-item_summary > .table-row > div:nth-child(4) {
             flex: 1 0 11.5%; }
+            @media only screen and (max-width: 1024px) {
+              .branch-cms-detail_page_table-item_summary > .table-row > div:nth-child(4) {
+                flex: 1 0 14%; } }
+            @media only screen and (max-width: tablet) {
+              .branch-cms-detail_page_table-item_summary > .table-row > div:nth-child(4) {
+                flex: 1 0 14%; } }
           .branch-cms-detail_page_table-item_summary > .table-row > div:nth-child(5) {
             flex: 1 0 11.5%; }
+            @media only screen and (max-width: 1024px) {
+              .branch-cms-detail_page_table-item_summary > .table-row > div:nth-child(5) {
+                flex: 1 0 20%; } }
+            @media only screen and (max-width: tablet) {
+              .branch-cms-detail_page_table-item_summary > .table-row > div:nth-child(5) {
+                flex: 1 0 20%; } }
       .branch-cms-detail_page_table-item_summary > .table-total {
         display: flex;
         flex: 1 0 100%;
