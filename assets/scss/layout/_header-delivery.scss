@@ -265,12 +265,14 @@
     text-decoration: none;
     margin: 0 16px;
     height: 100%;
+    align-items: center;
 
     @include respond(tablet) {
         display: none;
     }
 
     &__avatar {
+        width: auto !important;
         &__image {
             width: 24px;
             height: 24px;
