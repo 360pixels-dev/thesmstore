@@ -5447,7 +5447,8 @@ header {
       border-radius: 50%;
       margin-right: 8px; }
   .nav-user__hello {
-    align-items: center; }
+    align-items: center;
+    height: 100%; }
   .nav-user__basket__icon {
     margin-right: 13px; }
   .nav-user__basket__count {
