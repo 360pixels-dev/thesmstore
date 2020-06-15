@@ -5430,7 +5430,8 @@ header {
   line-height: 24px;
   color: white;
   text-decoration: none;
-  margin: 0 16px; }
+  margin: 0 16px;
+  height: 100%; }
   @media only screen and (max-width: 1024px) {
     .nav-user {
       display: none; } }
@@ -5443,6 +5444,8 @@ header {
     border-radius: 50px;
     border: 1px solid #e0e0e0;
     margin-right: 8px; }
+  .nav-user__hello {
+    align-items: center; }
   .nav-user__basket__icon {
     margin-right: 13px; }
   .nav-user__basket__count {

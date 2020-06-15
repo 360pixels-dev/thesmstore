@@ -264,6 +264,7 @@
     color: white;
     text-decoration: none;
     margin: 0 16px;
+    height: 100%;
 
     @include respond(tablet) {
         display: none;
@@ -277,6 +278,10 @@
             border: 1px solid #e0e0e0;
             margin-right: 8px;
         }
+    }
+
+    &__hello {
+        align-items: center;
     }
 
     &__basket {
