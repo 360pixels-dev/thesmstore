@@ -273,11 +273,12 @@
 
     &__avatar {
         width: auto !important;
+
         &__image {
-            width: 24px;
-            height: 24px;
-            border-radius: 50px;
-            border: 1px solid #e0e0e0;
+            width: 24px !important;
+            max-height: 24px;
+            border-radius: 50%;
+            // border: 1px solid #e0e0e0;
             margin-right: 8px;
         }
     }
