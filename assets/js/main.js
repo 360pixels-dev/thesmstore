@@ -5,6 +5,11 @@ $(document).ready(function () {
         $('.modal').addClass('active');
     });
 
+    // OPEN EXPORT CSV MODAL
+    $('#openExportModal').click(function () {
+        $('.modal').addClass('active');
+    })
+
     // WIDGET ANIMATION
     $(window).scroll(() => {
         // console.log($(this).scrollTop());
