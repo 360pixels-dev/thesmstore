@@ -235,6 +235,13 @@
         margin-top: 8px;
         margin-left: 16px;
     }
+
+    &-guest {
+        @include respond(mobile) {
+            display: none;
+            visibility: hidden;
+        }
+    }
 }
 
 .link-delivery {

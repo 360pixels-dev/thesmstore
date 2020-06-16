@@ -1071,6 +1071,24 @@ ul {
   box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.25);
   z-index: 199;
   padding: 0 24px 10px 24px; }
+  .nav__mobile-signup-login-item {
+    text-decoration: none;
+    flex: 1;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #161720; }
+    .nav__mobile-signup-login-item > img {
+      margin-right: 11px; }
+  .nav__mobile__signup-login {
+    border-bottom: 1.2px solid #e0e0e0;
+    padding: 15px 0;
+    display: flex;
+    align-items: center; }
   .nav__mobile-container {
     display: none;
     flex-direction: column; }
@@ -5404,6 +5422,14 @@ header {
 .nav__social {
   margin-top: 8px;
   margin-left: 16px; }
+@media only screen and (max-width: 600px) {
+  .nav-guest {
+    display: none;
+    visibility: hidden; } }
+@media only screen and (max-width: mobile) {
+  .nav-guest {
+    display: none;
+    visibility: hidden; } }
 
 .link-delivery {
   display: flex; }
