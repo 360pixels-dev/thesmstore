@@ -1422,7 +1422,6 @@ ul {
     .nav-user > div:nth-of-type(2) #my-basket-dropdown-content {
       position: absolute;
       display: block !important;
-      background-color: red;
       z-index: 100;
       width: 450px;
       height: auto;
