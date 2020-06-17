@@ -178,6 +178,11 @@
           </div>
 
           <div class="item">
+            <div class="slider mobile-slider">
+              <img src="./assets/images/water-jug-big.png" alt="">
+              <img src="./assets/images/water-jug-big.png" alt="">
+              <img src="./assets/images/water-jug-big.png" alt="">
+            </div>
             <div class="item__variants">
               <!-- put class active to put border on default -->
               <img class="active" src="./assets/images/variant-2.png" alt="">
@@ -363,6 +368,15 @@
   <script src="./assets/js/slick.min.js"></script>
   <script src="./assets//js/customselectcolors.js"></script>
   <script src="./assets//js/customselect.js"></script>
+
+  <!-- bxSlider imports & JS for mobile -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.slider').bxSlider();
+    });
+  </script>
 
   <!-- CUSTOM JS -->
   <script src="./assets/js/main.js"></script>
