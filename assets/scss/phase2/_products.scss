@@ -305,7 +305,7 @@
       & > .bx-wrapper {
         margin: 0;
 
-        @include respond(desktop) {
+        @media only screen and (min-width: 624px) {
           display: none;
         }
 

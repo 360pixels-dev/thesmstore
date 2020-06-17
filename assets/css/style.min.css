@@ -18996,10 +18996,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           flex-flow: column; } }
       .product-details > .item > .bx-wrapper {
         margin: 0; }
-        @media only screen and (min-width: 841px) and (max-width: 1400px) {
-          .product-details > .item > .bx-wrapper {
-            display: none; } }
-        @media only screen and (max-width: desktop) {
+        @media only screen and (min-width: 624px) {
           .product-details > .item > .bx-wrapper {
             display: none; } }
         @media only screen and (max-width: 1024px) {
