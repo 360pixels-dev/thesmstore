@@ -764,9 +764,8 @@
                     background-color: transparent;
                 }
 
-                &:hover > #my-basket-dropdown-content {
+                #my-basket-dropdown-content {
                     position: absolute;
-                    visibility: visible !important;
                     display: block !important;
                     background-color: red;
                     z-index: 100;

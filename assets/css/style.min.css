@@ -1419,9 +1419,8 @@ ul {
       height: 100px;
       width: 300px;
       background-color: transparent; }
-    .nav-user > div:nth-of-type(2):hover > #my-basket-dropdown-content {
+    .nav-user > div:nth-of-type(2) #my-basket-dropdown-content {
       position: absolute;
-      visibility: visible !important;
       display: block !important;
       background-color: red;
       z-index: 100;
@@ -1436,10 +1435,10 @@ ul {
       font-family: "Open Sans", Helvetica, Arial, sans-serif;
       font-style: normal;
       padding: 24px; }
-      .nav-user > div:nth-of-type(2):hover > #my-basket-dropdown-content > .top {
+      .nav-user > div:nth-of-type(2) #my-basket-dropdown-content > .top {
         display: flex;
         justify-content: space-between; }
-        .nav-user > div:nth-of-type(2):hover > #my-basket-dropdown-content > .top > div {
+        .nav-user > div:nth-of-type(2) #my-basket-dropdown-content > .top > div {
           display: flex;
           align-items: center;
           font-weight: bold;
@@ -1447,12 +1446,12 @@ ul {
           line-height: 18px;
           text-align: center;
           color: #00a99c; }
-          .nav-user > div:nth-of-type(2):hover > #my-basket-dropdown-content > .top > div > img {
+          .nav-user > div:nth-of-type(2) #my-basket-dropdown-content > .top > div > img {
             margin-right: 8px; }
-        .nav-user > div:nth-of-type(2):hover > #my-basket-dropdown-content > .top > a > img {
+        .nav-user > div:nth-of-type(2) #my-basket-dropdown-content > .top > a > img {
           width: 12px;
           height: 12px; }
-      .nav-user > div:nth-of-type(2):hover > #my-basket-dropdown-content > .div-arrow {
+      .nav-user > div:nth-of-type(2) #my-basket-dropdown-content > .div-arrow {
         background-color: white;
         width: 20px;
         height: 20px;
