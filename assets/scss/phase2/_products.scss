@@ -148,7 +148,7 @@
     & > hr {
       margin-top: 16px;
       margin-bottom: 24px;
-      border: 1px solid #E0E0E0;
+      border: 1px solid #e0e0e0;
     }
 
     & > .header {
@@ -308,6 +308,7 @@
 
         @include respond(mobile) {
           display: block !important;
+          order: 4;
 
           & > div {
             padding: 0;
@@ -374,22 +375,31 @@
 
         margin-right: 24px;
 
+        @include respond(mobile) {
+          margin-right: 0;
+          flex-flow: row;
+          justify-content: space-evenly;
+          margin: 16px 0;
+          order: 2;
+        }
+
+        & > .active {
+          border: 2px solid #0797ff;
+        }
+
         & > img {
           width: 104px;
-          height: 123px;
+          min-width: 104px;
+          max-width: 104px;
+          height: auto;
           object-fit: cover;
-          width: 100%;
-          // height: 160px;
           margin-bottom: 16px;
           box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
 
-          &:first-child {
-            height: 130px;
+          @include respond(mobile) {
+            min-width: unset;
+            width: 90px;
             margin-bottom: 0;
-
-            &:hover {
-              border: unset;
-            }
           }
 
           &:hover {
@@ -402,7 +412,13 @@
         display: flex;
         flex: 1;
 
+        & > img {
+          max-width: 500px;
+        }
+
         @include respond(mobile) {
+          order: 1;
+
           img {
             width: 100%;
           }
@@ -427,6 +443,7 @@
         @include respond(mobile) {
           padding: 24px 12px;
           margin: 0;
+          order: 3;
         }
 
         & > p {
