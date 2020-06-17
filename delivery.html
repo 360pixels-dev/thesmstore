@@ -41,17 +41,19 @@
                 </nav>
 
                 <nav class="nav-user">
-                    <a class="nav-user nav-user__avatar" href="#"><img class="nav-user__avatar__image"
+                    <!-- hide this class to hide the buttons -->
+                    <div class="">
+                        <a class="button-guest button-guest--outline-white font-cta">Login</a>
+                        <a class="button-guest button-guest--pure-white font-cta">Sign up</a>
+                    </div>
+                    <a class="nav-user nav-user__avatar hide" href="#"><img class="nav-user__avatar__image"
                             src="./assets/images/icons/default-user.jpg">Hello, Maan!</a>
                     <a class="nav-user nav-user__basket" href="#"><img class="nav-user__basket__icon"
                             src="./assets/images/icon-basket.svg">My Basket <span
                             class="nav-user__basket__count">5</span></a>
                 </nav>
 
-                <nav class="nav-guest hide">
-                    <a class="button-guest button-guest--outline-white font-cta">Login</a>
-                    <a class="button-guest button-guest--pure-white font-cta">Sign up</a>
-                </nav>
+
             </nav>
 
             <div class="banner-yolk"></div>
@@ -62,7 +64,8 @@
         <nav class="nav__mobile nav__mobile--delivery">
 
             <nav class="nav__mobile__signup-login">
-                <a class="nav__mobile-signup-login-item" href="#"><img src="./assets/images/icons/Account.svg" alt=""> Signup / Login</a>
+                <a class="nav__mobile-signup-login-item" href="#"><img src="./assets/images/icons/Account.svg" alt="">
+                    Signup / Login</a>
             </nav>
 
 
