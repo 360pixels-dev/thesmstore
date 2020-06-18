@@ -13203,6 +13203,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   background-size: 57.4px 57.4px; }
   .signup > div {
     height: 100vh;
+    min-height: 800px;
     display: flex;
     max-width: 1400px;
     position: relative;
