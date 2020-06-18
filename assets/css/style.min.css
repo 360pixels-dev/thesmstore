@@ -15318,7 +15318,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
             display: flex; }
           .delivery-catalog__catalog > .catalog-items > div > div.image-container > .hover-content {
             display: none;
-            background-color: blue;
+            background-color: #18489A;
             bottom: 0;
             position: absolute;
             width: 100%;
