@@ -17193,6 +17193,10 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           @media only screen and (max-width: 600px) {
                 .user-orders__details__pricing__item.to-flex-row > .item_column_big {
                   display: flex; }
+                  .user-orders__details__pricing__item.to-flex-row > .item_column_big > img {
+                    width: 120px;
+                    height: auto;
+                    max-height: 150px; }
                   .user-orders__details__pricing__item.to-flex-row > .item_column_big > div {
                     padding-top: 10px;
                     height: 100%; }
@@ -17276,6 +17280,10 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           @media only screen and (max-width: mobile) {
                 .user-orders__details__pricing__item.to-flex-row > .item_column_big {
                   display: flex; }
+                  .user-orders__details__pricing__item.to-flex-row > .item_column_big > img {
+                    width: 120px;
+                    height: auto;
+                    max-height: 150px; }
                   .user-orders__details__pricing__item.to-flex-row > .item_column_big > div {
                     padding-top: 10px;
                     height: 100%; }

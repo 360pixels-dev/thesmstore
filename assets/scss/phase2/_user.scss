@@ -1259,6 +1259,12 @@
               & > .item_column_big {
                 display: flex;
 
+                & > img {
+                  width: 120px;
+                  height: auto;
+                  max-height: 150px;
+                }
+
                 & > div {
                   padding-top: 10px;
                   height: 100%;
