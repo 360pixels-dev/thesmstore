@@ -15319,7 +15319,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           .delivery-catalog__catalog > .catalog-items > div > div.image-container > .hover-content {
             display: none;
             background-color: blue;
-            bottom: 16px;
+            bottom: 0;
             position: absolute;
             width: 100%;
             height: 70px;
