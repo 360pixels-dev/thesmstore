@@ -5142,8 +5142,7 @@ ul {
         justify-content: start; } }
 
 header {
-  position: relative;
-  z-index: 99; }
+  position: relative; }
 
 .background--coral {
   background-color: #F86A6A; }
@@ -5155,8 +5154,7 @@ header {
 
 .header-delivery {
   height: 350px;
-  background: #15A2B9;
-  z-index: 40; }
+  background: #15A2B9; }
   @media only screen and (max-width: 600px) {
     .header-delivery {
       height: 520px; } }
