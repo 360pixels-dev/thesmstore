@@ -13200,7 +13200,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 .signup {
   width: 100%;
   background: linear-gradient(90deg, #ff7b6d 54.4px, transparent 1%) center, linear-gradient(#ff7b6d 54.4px, transparent 1%) center, #797979;
-  background-size: 57.4px 57.4px; }
+  background-size: 57.4px 57.4px;
+  overflow: auto; }
   .signup > div {
     height: 100vh;
     min-height: 800px;
@@ -13232,11 +13233,12 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         height: auto;
         flex-flow: row wrap; } }
     .signup > div > .auth-bg {
-      height: 100vh;
       width: 693px;
       background: url("../images/auth-bg-transparent.png") no-repeat;
       background-size: cover;
-      background-position: center; }
+      background-position: center;
+      min-height: 800px;
+      height: 100vh; }
       @media only screen and (max-width: 1024px) {
         .signup > div > .auth-bg {
           display: none; } }

@@ -3,6 +3,7 @@
     background: linear-gradient(90deg, #ff7b6d (57.4px - 3px), transparent 1%) center,
         linear-gradient(#ff7b6d (57.4px - 3px), transparent 1%) center, rgb(121, 121, 121);
     background-size: 57.4px 57.4px;
+    overflow: auto;
 
     & > div {
         height: 100vh;
@@ -28,11 +29,13 @@
         }
 
         & > .auth-bg {
-            height: 100vh;
+            // height: 100vh;
             width: 693px;
             background: url("../images/auth-bg-transparent.png") no-repeat;
             background-size: cover;
             background-position: center;
+            min-height: 800px;
+            height: 100vh;
 
             @include respond(tablet) {
                 display: none;
