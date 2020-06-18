@@ -18419,7 +18419,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         width: 120px;
         height: 120px;
         background-position: center;
-        border-radius: 50%; }
+        border-radius: 50%;
+        background-size: cover; }
       @media only screen and (max-width: 600px) {
         .profile__information__picture {
           flex-flow: column; } }

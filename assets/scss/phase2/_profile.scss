@@ -125,6 +125,7 @@ $chilli: #ff4e4e;
         height: 120px;
         background-position: center;
         border-radius: 50%;
+        background-size: cover;
       }
 
       @include respond(mobile) {
