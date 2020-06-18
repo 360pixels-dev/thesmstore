@@ -28,8 +28,6 @@ $chilli: #ff4e4e;
     }
   }
 
-  
-
   & > div {
     max-width: 1400px;
     margin: 0 auto;
@@ -122,6 +120,13 @@ $chilli: #ff4e4e;
       display: flex;
       align-content: center;
 
+      & > .image {
+        width: 120px;
+        height: 120px;
+        background-position: center;
+        border-radius: 50%;
+      }
+
       @include respond(mobile) {
         flex-flow: column;
       }
@@ -150,7 +155,7 @@ $chilli: #ff4e4e;
     & > hr {
       margin-top: 8px;
       margin-bottom: 32px;
-      border: 1px solid #E0E0E0;
+      border: 1px solid #e0e0e0;
     }
 
     &__fields {

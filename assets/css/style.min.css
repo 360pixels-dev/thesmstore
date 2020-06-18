@@ -18415,6 +18415,11 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     .profile__information__picture {
       display: flex;
       align-content: center; }
+      .profile__information__picture > .image {
+        width: 120px;
+        height: 120px;
+        background-position: center;
+        border-radius: 50%; }
       @media only screen and (max-width: 600px) {
         .profile__information__picture {
           flex-flow: column; } }
@@ -18445,7 +18450,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     .profile__information > hr {
       margin-top: 8px;
       margin-bottom: 32px;
-      border: 1px solid #E0E0E0; }
+      border: 1px solid #e0e0e0; }
     .profile__information__fields {
       display: flex;
       flex-flow: row wrap;
