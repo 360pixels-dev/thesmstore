@@ -15318,7 +15318,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
             display: flex; }
           .delivery-catalog__catalog > .catalog-items > div > div.image-container > .hover-content {
             display: none;
-            background-color: #18489A;
+            background-color: #18489a;
             bottom: 0;
             position: absolute;
             width: 100%;
@@ -17351,6 +17351,10 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
             flex-flow: row;
             display: flex;
             align-items: center; }
+            .user-orders__details__pricing__item > .item_column_big > img {
+              width: 120px;
+              height: auto;
+              max-height: 150px; }
             @media only screen and (max-width: 600px) {
               .user-orders__details__pricing__item > .item_column_big > div {
                 display: flex;

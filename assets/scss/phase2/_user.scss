@@ -631,7 +631,7 @@
           & > hr {
             margin-top: 10px;
             margin-bottom: 4px;
-            border: 1px solid #E0E0E0;
+            border: 1px solid #e0e0e0;
           }
 
           & .total-price {
@@ -646,7 +646,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      height: 40px ;
+      height: 40px;
       max-height: 40px;
       margin-top: 30px;
       flex-flow: row wrap;
@@ -1200,7 +1200,7 @@
         }
 
         & hr {
-          border: 1px solid #EBEEF8;
+          border: 1px solid #ebeef8;
           margin: 24px 0;
         }
 
@@ -1353,6 +1353,12 @@
             display: flex;
             align-items: center;
 
+            & > img {
+              width: 120px;
+              height: auto;
+              max-height: 150px;
+            }
+
             @include respond(mobile) {
               & > div {
                 display: flex;
@@ -1492,7 +1498,7 @@
               font-style: normal;
               font-weight: bold;
 
-              &:nth-child(n+4) {
+              &:nth-child(n + 4) {
                 align-self: flex-start;
               }
 
@@ -2005,7 +2011,7 @@
         }
       }
       & > hr {
-        border: 1px solid #EBEEF8;
+        border: 1px solid #ebeef8;
         margin: 16px 0;
       }
 
