@@ -5300,7 +5300,7 @@ header {
 
 .header-profile {
   height: 120px;
-  background-color: #397CEE;
+  background-color: #397cee;
   z-index: 40; }
   @media only screen and (max-width: 600px) {
     .header-profile {
@@ -5475,14 +5475,15 @@ header {
     margin-right: 13px; }
   .nav-user__basket__count {
     color: #397CEE;
-    border-radius: 50px;
+    border-radius: 50%;
     height: 20px;
-    width: 20px;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     background: white;
-    margin-left: 10px; }
+    margin-left: 10px;
+    padding: 5px; }
 
 .button-guest {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;

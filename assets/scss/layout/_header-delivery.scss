@@ -140,7 +140,7 @@
 .header-profile {
     height: 120px;
     // background: $coral;
-    background-color: #397CEE;
+    background-color: #397cee;
     z-index: 40;
 
     @include respond(mobile) {
@@ -166,7 +166,7 @@
 
 .logo-delivery {
     max-height: 53px;
-    
+
     @include respond(tablet) {
         width: 297px;
         margin: auto;
@@ -194,7 +194,7 @@
                 align-items: center;
                 text-decoration: none;
 
-                &:first-child img{
+                &:first-child img {
                     margin-right: 12px;
                 }
 
@@ -216,7 +216,6 @@
                     font-size: 14px;
                     line-height: 22px;
                     color: #397cee;
-                    
                 }
             }
         }
@@ -295,8 +294,6 @@
         height: 100%;
     }
 
-    
-
     &__basket {
         &__icon {
             margin-right: 13px;
@@ -304,14 +301,16 @@
 
         &__count {
             color: $indigo;
-            border-radius: 50px;
+            border-radius: 50%;
             height: 20px;
-            width: 20px;
+            width: auto;
             display: flex;
             justify-content: center;
             align-items: center;
             background: white;
             margin-left: 10px;
+
+            padding: 5px;
         }
     }
 }
