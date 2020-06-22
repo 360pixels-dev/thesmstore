@@ -401,6 +401,12 @@
               align-items: center;
               flex: 3;
 
+              & > img {
+                // height: 300px;
+                max-height: 150px;
+                width: auto;
+              }
+
               & > .item-name {
                 display: flex;
                 flex: 1;
