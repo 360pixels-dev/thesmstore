@@ -21396,7 +21396,6 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       text-transform: uppercase;
       color: #ffffff;
       padding: 6px 16px;
-      max-height: 21px;
       align-self: center; }
       .make-orders-container > .order_container > .order_branch_container > .status-text.cancelled {
         background: #88898f;
@@ -21970,6 +21969,21 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     line-height: 24px; }
     .make-number-input input:focus {
       outline: none; }
+
+.make-div-image-background {
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: 140%; }
+  .make-div-image-background.basket {
+    width: 120px;
+    height: 150px; }
+    @media only screen and (max-width: 600px) {
+      .make-div-image-background.basket {
+        width: 100px; } }
+    @media only screen and (max-width: mobile) {
+      .make-div-image-background.basket {
+        width: 100px; } }
 
 .custom-radio-button[type="radio"]:checked,
 .custom-radio-button[type="radio"]:not(:checked) {

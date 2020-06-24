@@ -1080,3 +1080,19 @@
 
 
 // make image div background
+.make-div-image-background {
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: 140%;
+
+    &.basket {
+        width: 120px;
+        height: 150px;
+
+        @include respond(mobile) {
+            width: 100px;
+            
+        }
+    }
+}
