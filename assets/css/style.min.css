@@ -21754,7 +21754,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       margin-right: 12px; }
 
 .make-email-instruction {
-  background: url("../../assets/images/email-notification.png") no-repeat;
+  background: url("../../assets/images/email-notification.svg") no-repeat;
   background-size: cover;
   height: 100%;
   max-height: 110px;
