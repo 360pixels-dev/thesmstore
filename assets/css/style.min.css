@@ -13492,7 +13492,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     .login > div > .auth-bg {
       height: 100vh;
       width: 693px;
-      background: url("../images/auth-bg-transparent.png") no-repeat;
+      background: url("../images/auth-bg-transparent-login.png") no-repeat;
       background-size: cover;
       background-position: center; }
       @media only screen and (max-width: 1024px) {
@@ -21387,7 +21387,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         align-items: center;
         flex: 3; }
         .make-orders-container > .order_container > .order_items_container > .order_item_container > .item-image-description > img {
-          width: 120px; }
+          max-width: 120px; }
         .make-orders-container > .order_container > .order_items_container > .order_item_container > .item-image-description > .item-name {
           display: flex;
           flex: 1;
