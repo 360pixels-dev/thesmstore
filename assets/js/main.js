@@ -1,19 +1,27 @@
 $(document).ready(function () {
 
     // Input for numbers 
-
     $('.minus').click(function () {
         var $input = $(this).parent().find('input');
         var count = parseInt($input.val()) - 1;
         count = count < 1 ? 1 : count;
         $input.val(count);
         $input.change();
+
+        if (count > 1)
+            $(this).attr("src", "./assets/images/icons/subtract.svg");
+        else
+            $(this).attr("src", "./assets/images/icons/subtract-disabled.svg");
+
+
         return false;
     });
     $('.plus').click(function () {
         var $input = $(this).parent().find('input');
         $input.val(parseInt($input.val()) + 1);
         $input.change();
+
+        $('.minus').attr("src", "./assets/images/icons/subtract.svg");
         return false;
     });
 
