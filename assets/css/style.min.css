@@ -1374,7 +1374,9 @@ ul {
       flex-direction: column;
       position: absolute;
       background-color: #FFFFFF;
-      padding: 16px 16px 16px 11px; }
+      padding: 16px 16px 16px 11px;
+      border-radius: 4px;
+      box-shadow: 0px 5px 7px #e7eaf4; }
       .nav-user > div:nth-of-type(1) > .nav-user__menu > a {
         color: #403F47;
         text-decoration: none;
@@ -21867,6 +21869,44 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   justify-content: center; }
   .make-view-product-hover > a {
     color: white; }
+
+.make-number-input {
+  display: flex;
+  border: 1px solid #88898f;
+  height: 41.62px; }
+  .make-number-input span {
+    cursor: pointer; }
+  .make-number-input .number {
+    margin: 100px; }
+  .make-number-input .minus,
+  .make-number-input .plus {
+    width: 20px;
+    height: 100%;
+    background: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px; }
+  .make-number-input input {
+    height: 100%;
+    width: 80px;
+    text-align: center;
+    font-size: 26px;
+    border: none;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px; }
+    .make-number-input input:focus {
+      outline: none; }
 
 .custom-radio-button[type="radio"]:checked,
 .custom-radio-button[type="radio"]:not(:checked) {

@@ -702,6 +702,9 @@
                     background-color: $white;
                     padding: 16px 16px 16px 11px;
 
+                    border-radius: 4px;
+                    box-shadow: 0px 5px 7px #e7eaf4;
+
                     & > a {
                         color: $dark-gray;
                         text-decoration: none;

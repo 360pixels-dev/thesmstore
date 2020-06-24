@@ -1024,3 +1024,52 @@
         color: white;
     }
 }
+
+.make-number-input {
+    display: flex;
+    border: 1px solid #88898f;
+    // padding: 8px 16px;
+    height: 41.62px;
+
+    span {
+        cursor: pointer;
+    }
+    .number {
+        margin: 100px;
+    }
+    .minus,
+    .plus {
+        width: 20px;
+        height: 100%;
+        background: transparent;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    input {
+        height: 100%;
+        width: 80px;
+        text-align: center;
+        font-size: 26px;
+        border: none;
+        display: inline-block;
+        vertical-align: middle;
+
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
