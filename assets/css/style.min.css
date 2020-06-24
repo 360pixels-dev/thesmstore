@@ -21386,6 +21386,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         flex-flow: row;
         align-items: center;
         flex: 3; }
+        .make-orders-container > .order_container > .order_items_container > .order_item_container > .item-image-description > img {
+          width: 120px; }
         .make-orders-container > .order_container > .order_items_container > .order_item_container > .item-image-description > .item-name {
           display: flex;
           flex: 1;

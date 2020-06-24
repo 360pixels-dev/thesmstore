@@ -414,6 +414,10 @@
                     align-items: center;
                     flex: 3;
 
+                    & > img {
+                        max-width: 120px;
+                    }
+
                     & > .item-name {
                         display: flex;
                         flex: 1;
