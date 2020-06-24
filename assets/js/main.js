@@ -311,7 +311,7 @@ $(document).ready(function () {
 
 
     // TOGGLE USER MENU
-    $('.nav-user div:nth-of-type(1)').click(function () {
+    $('.nav-user .nav-user__hello').click(function () {
         if ($('.nav-user__menu').css('display') == 'none') {
             $('.nav-user__menu').css('display', 'flex');
         }
