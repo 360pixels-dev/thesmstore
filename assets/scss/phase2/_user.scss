@@ -1246,6 +1246,10 @@
                   padding: 0;
                   padding-right: 16px;
 
+                  & > img {
+                    max-width: 120px;
+                  }
+
                   & > div {
                     padding-left: 8px;
                   }

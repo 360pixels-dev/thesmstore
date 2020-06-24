@@ -3,14 +3,26 @@
     position: relative;
     font-family: Arial;
     width: 100%;
-    min-width: 120px;
-    max-width: 200px;
+    min-width: 140px;
+    max-width: 220px;
     height: 40px;
 
     @include respond(mobile) {
         max-width: unset;
     }
 }
+
+// .custom-select.quantity-select {
+
+//     width: 140px;
+
+//     @include respond(mobile) {
+//         max-width: unset;
+//     }
+// }
+
+
+
 
 .custom-select-colors select,
 .custom-select select {

@@ -81,6 +81,10 @@
                     & > .product--small {
                         display: none;
 
+                        & > img {
+                            max-width: 120px;
+                        }
+
                         @include respond(mobile) {
                             display: flex;
                             padding: 0 12px;
