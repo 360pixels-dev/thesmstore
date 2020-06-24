@@ -1375,7 +1375,7 @@ ul {
       position: absolute;
       background-color: #FFFFFF;
       padding: 16px 16px 16px 11px;
-      max-width: 195px;
+      max-width: 200px;
       border-radius: 4px;
       box-shadow: 0px 5px 7px #e7eaf4; }
       .nav-user > div:nth-of-type(1) > .nav-user__menu > a {
@@ -1398,6 +1398,9 @@ ul {
     margin-right: 33px;
     cursor: pointer; }
     .nav-user > div.nav-user__hello > img {
+      width: 24px !important;
+      max-height: 24px;
+      border-radius: 50%;
       margin-right: 8px; }
     .nav-user > div.nav-user__hello > .nav-user__menu {
       top: 68px;
