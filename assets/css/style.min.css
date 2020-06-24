@@ -21974,16 +21974,19 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
-  background-size: 140%; }
+  background-size: cover; }
   .make-div-image-background.basket {
+    max-width: 120px;
     width: 120px;
     height: 150px; }
     @media only screen and (max-width: 600px) {
       .make-div-image-background.basket {
-        width: 100px; } }
+        width: 100px;
+        max-width: 100px; } }
     @media only screen and (max-width: mobile) {
       .make-div-image-background.basket {
-        width: 100px; } }
+        width: 100px;
+        max-width: 100px; } }
 
 .custom-radio-button[type="radio"]:checked,
 .custom-radio-button[type="radio"]:not(:checked) {

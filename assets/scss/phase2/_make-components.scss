@@ -1084,14 +1084,16 @@
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
-    background-size: 140%;
+    background-size: cover;
 
     &.basket {
+        max-width: 120px;
         width: 120px;
         height: 150px;
 
         @include respond(mobile) {
             width: 100px;
+            max-width: 100px;
             
         }
     }
