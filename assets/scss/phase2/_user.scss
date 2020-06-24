@@ -1248,6 +1248,10 @@
 
                   & > img {
                     max-width: 120px;
+
+                    @include respond(mobile) {
+                      max-width: 100px;
+                    }
                   }
 
                   & > div {
