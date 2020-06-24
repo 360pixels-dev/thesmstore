@@ -16339,7 +16339,6 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           text-transform: uppercase;
           color: #ffffff;
           padding: 6px 16px;
-          max-height: 21px;
           align-self: center; }
           .user-orders__items__item__order-branch > .status-text.cancelled {
             background: #88898f;
