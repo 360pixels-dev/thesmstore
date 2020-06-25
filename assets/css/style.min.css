@@ -15981,7 +15981,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   min-height: calc(100vh - 260px);
   height: fit-content; }
   .user > div {
-    width: 1400px;
+    width: 100%;
+    max-width: 1400px;
     height: auto;
     margin: 0 auto;
     display: flex;
@@ -16901,6 +16902,11 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
             width: 11.51%; }
           .user-orders__tbl-row > span:nth-child(6) {
             width: 10.5%; }
+    @media only screen and (max-width: 1240px) {
+      .user-orders__container {
+        width: 100%; }
+        .user-orders__container > .user-orders__basket .user-orders__details__pricing {
+          width: 100%; } }
     .user-orders__container > p {
       font-family: "Open Sans", Helvetica, Arial, sans-serif;
       font-style: normal;
@@ -16920,8 +16926,15 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     .user-orders__basket {
       display: flex;
       flex-flow: row nowrap; }
+      @media only screen and (max-width: 1240px) {
+        .user-orders__basket {
+          flex-direction: column; } }
       .user-orders__basket > .right-column {
         padding-left: 24px; }
+        @media only screen and (max-width: 1240px) {
+          .user-orders__basket > .right-column {
+            padding-left: 0;
+            margin-top: 16px; } }
         @media only screen and (max-width: 600px) {
           .user-orders__basket > .right-column {
             padding-left: 0; } }
