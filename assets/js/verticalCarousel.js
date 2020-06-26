@@ -48,10 +48,12 @@ window.onload = function () {
         images = carousel.getElementsByTagName('img'),
         numImages = images.length,
         imageWidth = Carousel.width,
-        aspectRatio = images[0].width / images[0].height,
+        aspectRatio = 120 / 150,
         imageHeight = imageWidth / aspectRatio,
         padding = Carousel.padding,
         rowHeight = Carousel.rowHeight = imageHeight + 2 * padding;
+
+        console.log(aspectRatio)
     carousel.style.width = imageWidth + 'px';
     for (var i = 0; i < numImages; ++i) {
         var image = images[i],
@@ -65,9 +67,6 @@ window.onload = function () {
         frame.style.height = rowHeight + 'px';
         carousel.insertBefore(frame, image);
         frame.appendChild(image);
-
-        
-        
     }
     Carousel.rowHeight = carousel.getElementsByTagName('div')[0].offsetHeight;
     carousel.style.height = Carousel.numVisible * Carousel.rowHeight + 'px';
