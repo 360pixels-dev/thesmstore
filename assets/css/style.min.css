@@ -19501,11 +19501,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     margin: 0 auto;
     display: flex;
     flex-flow: row wrap; }
-    @media only screen and (max-width: 1224px) {
-      .checkout > div {
-        padding: 0 30px;
-        justify-content: center; } }
-    @media only screen and (max-width: medium-screen) {
+    @media only screen and (max-width: 1460px) {
       .checkout > div {
         padding: 0 30px;
         justify-content: center; } }
@@ -19657,10 +19653,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         @media only screen and (max-width: mobile) {
           .checkout > div > .make-big-right-column > .make-order-details-container ~ .make-orders-container {
             margin-top: 24px !important; } }
-  @media only screen and (max-width: 1224px) {
-    .checkout > div > .make-small-left-column {
-      max-width: 984px; } }
-  @media only screen and (max-width: medium-screen) {
+  @media only screen and (max-width: 1460px) {
     .checkout > div > .make-small-left-column {
       max-width: 984px; } }
   .checkout > div > .make-small-left-column > div {
