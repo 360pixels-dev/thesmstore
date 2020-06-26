@@ -19105,6 +19105,12 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     .product-details > .item {
       padding: 20px 40px;
       display: flex; }
+      @media only screen and (max-width: 1224px) {
+        .product-details > .item {
+          flex-flow: column; } }
+      @media only screen and (max-width: medium-screen) {
+        .product-details > .item {
+          flex-flow: column; } }
       @media only screen and (max-width: 1024px) {
         .product-details > .item {
           flex-flow: column; } }
@@ -19121,15 +19127,19 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           flex-flow: column; } }
       .product-details > .item > .bx-wrapper {
         margin: 0; }
-        @media only screen and (min-width: 624px) {
+        @media only screen and (min-width: 1224px) {
           .product-details > .item > .bx-wrapper {
-            display: none; } }
-        @media only screen and (max-width: 1024px) {
+            display: none;
+            display: ruby-base;
+            page-break-after: \];
+            additive-symbols: url(unicas);
+            line-height: normal; } }
+        @media only screen and (max-width: 1224px) {
           .product-details > .item > .bx-wrapper .bx-controls-direction {
             display: none; }
           .product-details > .item > .bx-wrapper .bx-pager {
             bottom: 30px; } }
-        @media only screen and (max-width: tablet) {
+        @media only screen and (max-width: medium-screen) {
           .product-details > .item > .bx-wrapper .bx-controls-direction {
             display: none; }
           .product-details > .item > .bx-wrapper .bx-pager {
@@ -19225,6 +19235,12 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         flex-flow: column;
         margin-right: 24px;
         justify-content: center; }
+        @media only screen and (max-width: 1224px) {
+          .product-details > .item > .item__variants {
+            display: none; } }
+        @media only screen and (max-width: medium-screen) {
+          .product-details > .item > .item__variants {
+            display: none; } }
         @media only screen and (max-width: 600px) {
           .product-details > .item > .item__variants {
             margin-right: 0;

@@ -318,6 +318,10 @@
       padding: 20px 40px;
       display: flex;
 
+      @include respond(medium-screen) {
+        flex-flow: column;
+      }
+
       @include respond(tablet) {
         flex-flow: column;
       }
@@ -330,11 +334,11 @@
       & > .bx-wrapper {
         margin: 0;
 
-        @media only screen and (min-width: 624px) {
+        @media only screen and (min-width: 1224px) {
           display: none;
         }
 
-        @include respond(tablet) {
+        @include respond(medium-screen) {
           & .bx-controls-direction {
             display: none;
           }
@@ -417,6 +421,10 @@
         flex-flow: column;
         margin-right: 24px;
         justify-content: center;
+
+        @include respond(medium-screen){
+          display: none;
+        }
 
         @include respond(mobile) {
           margin-right: 0;
