@@ -168,12 +168,18 @@
 .make-big-right-column {
     max-width: 984px;
     width: 100%;
+
+    
 }
 
 // Make small left column
 .make-small-left-column {
     max-width: 392px;
     width: 100%;
+
+    // @include respond(medium-screen) {
+    //     max-width: 984px;
+    // }
 }
 
 // Delivery options

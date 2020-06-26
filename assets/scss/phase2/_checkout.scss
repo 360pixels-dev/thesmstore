@@ -3,16 +3,33 @@
     padding-bottom: 30px;
 
     & > div {
-        max-width: 1400px;
+        max-width: 1460px;
         width: 100%;
         height: auto;
         margin: 0 auto;
         display: flex;
         flex-flow: row wrap;
+
+        @include respond(medium-screen) {
+            padding: 0 30px;
+            justify-content: center;
+        }
+
+        @include respond(medium-screen-up) {
+            padding: 0 30px;
+        }
+
+        @include respond(mobile) {
+            padding: 0;
+        }
     }
 
     & > div > .make-big-right-column {
         margin-right: 24px;
+
+        @include respond(medium-screen) {
+            margin: 0px;
+        }
 
         & > div {
             margin-top: 24px;
@@ -99,7 +116,7 @@
 
                 & > hr {
                     margin: 24px 0;
-                    border: 1px solid #E0E0E0;
+                    border: 1px solid #e0e0e0;
 
                     @include respond(mobile) {
                         // display: none;
@@ -141,7 +158,6 @@
             }
 
             & ~ .make-orders-container {
-
                 margin-top: 0 !important;
 
                 @include respond(mobile) {
@@ -152,6 +168,11 @@
     }
 
     & > div > .make-small-left-column {
+
+        @include respond(medium-screen){
+            max-width: 984px;
+        }
+
         & > div {
             margin-top: 24px;
 
@@ -184,7 +205,6 @@
 
     // Style for multiple branch checkout
     &.multiple {
-
         & .make-header-title {
             margin-bottom: 0;
         }
