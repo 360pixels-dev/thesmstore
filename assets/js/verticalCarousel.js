@@ -2,7 +2,7 @@ var Carousel = {
     width: 100,     // Images are forced into a width of this many pixels.
     numVisible: 4,  // The number of images visible at once.
     duration: 600,  // Animation duration in milliseconds.
-    padding: 2      // Vertical padding around each image, in pixels.
+    padding: 4      // Vertical padding around each image, in pixels.
 };
 
 function rotateForward() {
@@ -76,6 +76,11 @@ window.onload = function () {
     wrapper.appendChild(carousel);
     var prevButton = document.getElementById('prev'),
         nextButton = document.getElementById('next');
+
+    if(carousel.children.length < Carousel.numVisible) {
+        prevButton.style.display = 'none';
+        nextButton.style.display = 'none';
+    }
     prevButton.onclick = function () {
         prevButton.disabled = nextButton.disabled = true;
         rotateForward();

@@ -18877,6 +18877,13 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   position: absolute;
   visibility: hidden; }
 
+.vertical-carousel-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .vertical-carousel-buttons > span > img {
+    width: 12px; }
+
 .my-basket-modal {
   background-color: white;
   padding: 15px;

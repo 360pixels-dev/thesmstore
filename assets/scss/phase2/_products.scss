@@ -7,6 +7,18 @@
   visibility: hidden;
 }
 
+.vertical-carousel-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & > span {
+    & > img {
+      width: 12px;
+    }
+  }
+}
+
 .my-basket-modal {
   background-color: white;
   padding: 15px;
