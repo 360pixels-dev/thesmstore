@@ -19223,7 +19223,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       .product-details > .item > .item__variants {
         display: flex;
         flex-flow: column;
-        margin-right: 24px; }
+        margin-right: 24px;
+        justify-content: center; }
         @media only screen and (max-width: 600px) {
           .product-details > .item > .item__variants {
             margin-right: 0;

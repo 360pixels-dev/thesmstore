@@ -41,6 +41,7 @@ function animate(begin, end, finalTask) {
     }, 1000 / 60);
 }
 
+
 window.onload = function () {
     document.getElementById('spinner').style.display = 'none';
     var carousel = Carousel.carousel = document.getElementById('carousel'),
@@ -64,6 +65,9 @@ window.onload = function () {
         frame.style.height = rowHeight + 'px';
         carousel.insertBefore(frame, image);
         frame.appendChild(image);
+
+        
+        
     }
     Carousel.rowHeight = carousel.getElementsByTagName('div')[0].offsetHeight;
     carousel.style.height = Carousel.numVisible * Carousel.rowHeight + 'px';
@@ -77,7 +81,7 @@ window.onload = function () {
     var prevButton = document.getElementById('prev'),
         nextButton = document.getElementById('next');
 
-    if(carousel.children.length < Carousel.numVisible) {
+    if (carousel.children.length < Carousel.numVisible) {
         prevButton.style.display = 'none';
         nextButton.style.display = 'none';
     }

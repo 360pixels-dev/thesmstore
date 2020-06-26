@@ -208,7 +208,8 @@
               </div>
 
               <div class="vertical-carousel-buttons">
-                <span id="prev"><img src="./assets/images/icons/angle-down.svg" style="transform: rotate(180deg); align-items: flex-start;" alt=""></span>
+                <span id="prev"><img src="./assets/images/icons/angle-down.svg"
+                    style="transform: rotate(180deg); align-items: flex-start;" alt=""></span>
               </div>
 
               <div id="carousel">
@@ -232,8 +233,11 @@
             </div>
 
 
-            <div class="item__image">
+            <!-- <div class="item__image">
               <img src="./assets/images/water-jug-big.png" alt="">
+            </div> -->
+
+            <div class="item__image bg-image" id="detailedImage" style="">
             </div>
 
             <div class="item__details">
@@ -477,13 +481,24 @@
   <script>
     $(document).ready(function () {
       $('.slider').bxSlider();
+
+      $("#carousel img").click(function (e) {
+        var href = $(this).attr("src");
+
+        $('.item__image').css('background-image', 'url(' + href + ')');
+        e.preventDefault();
+        return false;
+      });
     });
+
+
   </script>
 
   <!-- CUSTOM JS -->
   <script src="./assets/js/main.js"></script>
   <script src="./assets/js/carousel.js"></script>
   <script src="./assets/js/verticalCarousel.js"></script>
+
 </body>
 
 </html>
