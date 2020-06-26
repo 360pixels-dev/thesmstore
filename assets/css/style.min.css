@@ -18869,6 +18869,14 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   appearance: none;
   background-color: white !important; }
 
+#carouselWrapper {
+  position: relative;
+  overflow: hidden; }
+
+#carousel {
+  position: absolute;
+  visibility: hidden; }
+
 .my-basket-modal {
   background-color: white;
   padding: 15px;
