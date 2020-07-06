@@ -259,7 +259,7 @@ $chilli: #ff4e4e;
 .password {
   width: 100%;
   background-color: $light-periwinkle;
-  min-height: calc(100vh - 225px);
+  min-height: calc(100vh - 194px);
 
   @include respond(mobile) {
     padding-bottom: 60px;

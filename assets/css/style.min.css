@@ -18628,7 +18628,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 .password {
   width: 100%;
   background-color: #F9FBFF;
-  min-height: calc(100vh - 225px); }
+  min-height: calc(100vh - 194px); }
   @media only screen and (max-width: 600px) {
     .password {
       padding-bottom: 60px; } }
