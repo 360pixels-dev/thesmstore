@@ -14478,7 +14478,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         color: #15A2B9; }
       .delivery__banner-text > h1 > span:nth-of-type(2) {
         color: #161720;
-        margin-left: 28%; }
+        margin-left: 25%; }
         @media only screen and (max-width: 600px) {
           .delivery__banner-text > h1 > span:nth-of-type(2) {
             margin-left: 10%; } }
@@ -15978,11 +15978,11 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 .user {
   width: 100%;
   background-color: #F9FBFF;
-  min-height: calc(100vh - 55px);
+  min-height: calc(100vh - 160px);
   height: fit-content; }
   .user > div {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1200px;
     height: auto;
     margin: 0 auto;
     display: flex;

@@ -1,16 +1,16 @@
 .user {
   width: 100%;
   background-color: $light-periwinkle;
-  // min-height: calc(100vh - 260px);
-
+  min-height: calc(100vh - 160px);
+  
   // Adjust style to zoom .9
-  min-height: calc(100vh - 55px);
+  // min-height: calc(100vh - 55px);
   
   height: fit-content;
 
   & > div {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1200px;
     height: auto;
     margin: 0 auto;
     display: flex;
