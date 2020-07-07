@@ -50,7 +50,7 @@ $chilli: #ff4e4e;
 
   &__information {
     background-color: white;
-    
+
     padding: 24px;
     max-width: 912px;
     margin-top: 64px;
@@ -119,6 +119,7 @@ $chilli: #ff4e4e;
     &__picture {
       display: flex;
       align-content: center;
+      margin-bottom: 24px;
 
       & > .image {
         width: 120px;
@@ -163,6 +164,7 @@ $chilli: #ff4e4e;
       display: flex;
       flex-flow: row wrap;
       justify-content: space-between;
+      margin-top: 24px;
 
       @include respond(mobile) {
         flex-flow: column;
@@ -199,7 +201,7 @@ $chilli: #ff4e4e;
           font-size: 16px;
           line-height: 24px;
           color: #403f47;
-          margin-bottom: 16px;
+          margin-bottom: 24px;
 
           &::placeholder {
             font-style: italic;
@@ -369,11 +371,13 @@ $chilli: #ff4e4e;
       flex-flow: row wrap;
       justify-content: space-between;
 
-      & > .field__container {
+      & > .field__container.signup__form-group {
         display: flex;
         flex-flow: column nowrap;
         flex: 1 0 50%;
         max-width: 48%;
+        height: auto;
+        margin-bottom: 16px;
 
         @include respond(mobile) {
           max-width: unset;

@@ -18522,7 +18522,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       margin-top: 10px; }
     .profile__information__picture {
       display: flex;
-      align-content: center; }
+      align-content: center;
+      margin-bottom: 24px; }
       .profile__information__picture > .image {
         width: 120px;
         height: 120px;
@@ -18563,7 +18564,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     .profile__information__fields {
       display: flex;
       flex-flow: row wrap;
-      justify-content: space-between; }
+      justify-content: space-between;
+      margin-top: 24px; }
       @media only screen and (max-width: 600px) {
         .profile__information__fields {
           flex-flow: column; } }
@@ -18599,7 +18601,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           font-size: 16px;
           line-height: 24px;
           color: #403f47;
-          margin-bottom: 16px; }
+          margin-bottom: 24px; }
           .profile__information__fields > .field__container > input::placeholder {
             font-style: italic;
             text-transform: capitalize;
@@ -18776,29 +18778,31 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       display: flex;
       flex-flow: row wrap;
       justify-content: space-between; }
-      .password__information > .current_password > .field__container, .password__information > .new_password > .field__container {
+      .password__information > .current_password > .field__container.signup__form-group, .password__information > .new_password > .field__container.signup__form-group {
         display: flex;
         flex-flow: column nowrap;
         flex: 1 0 50%;
-        max-width: 48%; }
+        max-width: 48%;
+        height: auto;
+        margin-bottom: 16px; }
         @media only screen and (max-width: 600px) {
-          .password__information > .current_password > .field__container, .password__information > .new_password > .field__container {
+          .password__information > .current_password > .field__container.signup__form-group, .password__information > .new_password > .field__container.signup__form-group {
             max-width: unset;
             flex: 1 0 100%; } }
         @media only screen and (max-width: mobile) {
-          .password__information > .current_password > .field__container, .password__information > .new_password > .field__container {
+          .password__information > .current_password > .field__container.signup__form-group, .password__information > .new_password > .field__container.signup__form-group {
             max-width: unset;
             flex: 1 0 100%; } }
-        .password__information > .current_password > .field__container > label, .password__information > .new_password > .field__container > label {
+        .password__information > .current_password > .field__container.signup__form-group > label, .password__information > .new_password > .field__container.signup__form-group > label {
           font-weight: 600;
           font-size: 14px;
           line-height: 22px;
           text-transform: capitalize;
           color: #161720;
           margin-bottom: 6px; }
-          .password__information > .current_password > .field__container > label > span, .password__information > .new_password > .field__container > label > span {
+          .password__information > .current_password > .field__container.signup__form-group > label > span, .password__information > .new_password > .field__container.signup__form-group > label > span {
             color: #ff4e4e; }
-        .password__information > .current_password > .field__container > input, .password__information > .new_password > .field__container > input {
+        .password__information > .current_password > .field__container.signup__form-group > input, .password__information > .new_password > .field__container.signup__form-group > input {
           border: 1px solid #88898f;
           padding: 8px 15px;
           font-weight: 600;
@@ -18807,11 +18811,11 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           color: #403f47;
           margin-bottom: 24px;
           background: url(./../images/icons/password-eye-enable.svg) 95%/3% no-repeat white; }
-          .password__information > .current_password > .field__container > input::placeholder, .password__information > .new_password > .field__container > input::placeholder {
+          .password__information > .current_password > .field__container.signup__form-group > input::placeholder, .password__information > .new_password > .field__container.signup__form-group > input::placeholder {
             font-style: italic;
             text-transform: capitalize;
             font-weight: normal; }
-        .password__information > .current_password > .field__container > .sm-select, .password__information > .new_password > .field__container > .sm-select {
+        .password__information > .current_password > .field__container.signup__form-group > .sm-select, .password__information > .new_password > .field__container.signup__form-group > .sm-select {
           border: 1px solid #88898f;
           padding: 8px 15px;
           font-weight: 600;
@@ -18821,12 +18825,12 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           margin-bottom: 24px;
           width: 100%;
           background: url(./../images/icons/angle-down.svg) 95%/2% no-repeat #eee; }
-          .password__information > .current_password > .field__container > .sm-select:required:invalid, .password__information > .new_password > .field__container > .sm-select:required:invalid {
+          .password__information > .current_password > .field__container.signup__form-group > .sm-select:required:invalid, .password__information > .new_password > .field__container.signup__form-group > .sm-select:required:invalid {
             font-style: italic;
             text-transform: capitalize;
             font-weight: normal;
             color: #88898f; }
-          .password__information > .current_password > .field__container > .sm-select > option, .password__information > .new_password > .field__container > .sm-select > option {
+          .password__information > .current_password > .field__container.signup__form-group > .sm-select > option, .password__information > .new_password > .field__container.signup__form-group > .sm-select > option {
             font-style: normal;
             text-transform: capitalize;
             font-weight: normal;
