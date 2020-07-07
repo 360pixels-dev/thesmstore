@@ -815,6 +815,14 @@
                 }
 
                 #my-basket-dropdown-content {
+                    & .product--small {
+                        & > div {
+                            padding-left: 0;
+                        }
+                    }
+                }
+
+                #my-basket-dropdown-content {
                     position: absolute;
                     display: block !important;
                     z-index: 100;

@@ -1456,6 +1456,8 @@ ul {
       height: 100px;
       width: 300px;
       background-color: transparent; }
+    .nav-user > div:nth-of-type(2) #my-basket-dropdown-content .product--small > div {
+      padding-left: 0; }
     .nav-user > div:nth-of-type(2) #my-basket-dropdown-content {
       position: absolute;
       display: block !important;
