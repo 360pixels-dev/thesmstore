@@ -2,21 +2,41 @@
   width: 100%;
   background-color: $light-periwinkle;
   min-height: calc(100vh - 160px);
-  
+
   // Adjust style to zoom .9
   // min-height: calc(100vh - 55px);
-  
+
   height: fit-content;
+
+  & .make-small-left-column {
+    @include respond(1440px) {
+      max-width: 984px;
+      margin-top: 16px;
+    }
+  }
+
+  & .make-big-right-column {
+    @include respond(1440px) {
+      & > .user-orders__basket {
+        padding-right: 0;
+      }
+    }
+  }
 
   & > div {
     width: 100%;
-    max-width: 1240px;
+    max-width: 1460px;
     height: auto;
     margin: 0 auto;
     display: flex;
     padding: 30px;
     padding-top: 0;
     padding-bottom: 100px;
+    flex-flow: row wrap;
+    
+    @include respond(1440px) {
+      justify-content: center;
+    }
 
     @include respond(tablet) {
       flex-direction: column;
@@ -1006,7 +1026,8 @@
     }
 
     &__basket {
-      display: flex;
+      // display: flex;
+      padding-right: 24px;
       flex-flow: row nowrap;
 
       @media only screen and (max-width: 1240px) {
@@ -1197,7 +1218,7 @@
         background: #ffffff;
         box-shadow: $soft-shadow;
         border-radius: 4px;
-        width: 808px;
+        width: 100%;
         padding: 16px 24px 24px 24px;
 
         @include respond(tablet) {
@@ -1527,7 +1548,7 @@
             }
 
             & > .item_column {
-              flex: 1 1 33%;
+              flex: 1 0 30%;
               flex-flow: column;
               display: flex;
               align-items: flex-start;

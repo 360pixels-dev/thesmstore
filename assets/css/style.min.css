@@ -15980,15 +15980,26 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   background-color: #F9FBFF;
   min-height: calc(100vh - 160px);
   height: fit-content; }
+  @media only screen and (max-width: 1440px) {
+    .user .make-small-left-column {
+      max-width: 984px;
+      margin-top: 16px; } }
+  @media only screen and (max-width: 1440px) {
+    .user .make-big-right-column > .user-orders__basket {
+      padding-right: 0; } }
   .user > div {
     width: 100%;
-    max-width: 1240px;
+    max-width: 1460px;
     height: auto;
     margin: 0 auto;
     display: flex;
     padding: 30px;
     padding-top: 0;
-    padding-bottom: 100px; }
+    padding-bottom: 100px;
+    flex-flow: row wrap; }
+    @media only screen and (max-width: 1440px) {
+      .user > div {
+        justify-content: center; } }
     @media only screen and (max-width: 1024px) {
       .user > div {
         flex-direction: column;
@@ -16924,7 +16935,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       .user-orders__container > p > span {
         font-weight: bold; }
     .user-orders__basket {
-      display: flex;
+      padding-right: 24px;
       flex-flow: row nowrap; }
       @media only screen and (max-width: 1240px) {
         .user-orders__basket {
@@ -17153,7 +17164,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         background: #ffffff;
         box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
         border-radius: 4px;
-        width: 808px;
+        width: 100%;
         padding: 16px 24px 24px 24px; }
         @media only screen and (max-width: 1024px) {
           .user-orders__details__pricing {
@@ -17596,7 +17607,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
               color: #88898f;
               text-decoration: none; }
             .user-orders__details__pricing__item > .item_column_container > .item_column {
-              flex: 1 1 33%;
+              flex: 1 0 30%;
               flex-flow: column;
               display: flex;
               align-items: flex-start;
