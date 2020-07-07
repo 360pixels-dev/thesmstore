@@ -22013,6 +22013,12 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   justify-content: center; }
   .make-view-product-hover > a {
     color: white; }
+  @media only screen and (max-width: 600px) {
+    .make-view-product-hover {
+      display: none !important; } }
+  @media only screen and (max-width: mobile) {
+    .make-view-product-hover {
+      display: none !important; } }
 
 .make-number-input {
   display: flex;

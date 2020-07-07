@@ -1033,6 +1033,10 @@
     & > a {
         color: white;
     }
+
+    @include respond(mobile) {
+        display: none !important;
+    }
 }
 
 .make-number-input {
