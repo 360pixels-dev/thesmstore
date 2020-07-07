@@ -20663,11 +20663,27 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       display: flex;
       flex-flow: row wrap;
       flex: 1 0 100%; }
+      .breadcrumb > div > p > a {
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+        color: #161720;
+        text-decoration: none; }
       .breadcrumb > div > p > img {
         height: 16px;
         margin: auto 12px; }
       .breadcrumb > div > p > span {
         font-weight: bold; }
+        .breadcrumb > div > p > span > a {
+          font-family: "Open Sans", Helvetica, Arial, sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 12px;
+          line-height: 18px;
+          color: #161720;
+          text-decoration: none; }
   .breadcrumb-mobile {
     border-bottom: 1px solid rgba(136, 137, 143, 0.342);
     display: none; }

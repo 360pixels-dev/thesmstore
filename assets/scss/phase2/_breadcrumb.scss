@@ -33,6 +33,16 @@
       flex-flow: row wrap;
       flex: 1 0 100%;
 
+      & > a {
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+        color: #161720;
+        text-decoration: none;
+      }
+
       & > img {
         height: 16px;
         margin: auto 12px;
@@ -40,6 +50,16 @@
 
       & > span {
         font-weight: bold;
+
+        & > a {
+          font-family: "Open Sans", Helvetica, Arial, sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 12px;
+          line-height: 18px;
+          color: #161720;
+          text-decoration: none;
+        }
       }
     }
   }
