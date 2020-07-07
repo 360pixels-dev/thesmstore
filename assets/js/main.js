@@ -105,15 +105,51 @@ $(document).ready(function () {
 
 
     // TOGGLE PASSWORD VISIBILITY
-    $('.signup__form-group .toggle-password, .login__form-group .toggle-password').click(function () {
-        let pass = $('.signup__form-group #password, .login__form-group #password');
+    // $('.signup__form-group .toggle-password, .login__form-group .toggle-password').click(function () {
+    //     let pass = $('.signup__form-group #password, .login__form-group #password');
+    //     if (pass.attr('type') == 'password') {
+    //         pass.attr('type', 'text');
+    //         $('.toggle-password').attr('src', './assets/images/icons/password-eye-enable.svg');
+    //     }
+    //     else {
+    //         pass.attr('type', 'password');
+    //         $('.toggle-password').attr('src', './assets/images/icons/password-eye.svg');
+    //     }
+    // });
+
+    $('#currPass .toggle-password').click(function () {
+        let pass = $('#currPass #password');
         if (pass.attr('type') == 'password') {
             pass.attr('type', 'text');
-            $('.toggle-password').attr('src', './assets/images/icons/password-eye-enable.svg');
+            $('#currPass .toggle-password').attr('src', './assets/images/icons/password-eye-enable.svg');
         }
         else {
             pass.attr('type', 'password');
-            $('.toggle-password').attr('src', './assets/images/icons/password-eye.svg');
+            $('#currPass .toggle-password').attr('src', './assets/images/icons/password-eye.svg');
+        }
+    });
+
+    $('#newPass .toggle-password').click(function () {
+        let pass = $('#newPass #password');
+        if (pass.attr('type') == 'password') {
+            pass.attr('type', 'text');
+            $('#newPass .toggle-password').attr('src', './assets/images/icons/password-eye-enable.svg');
+        }
+        else {
+            pass.attr('type', 'password');
+            $('#newPass .toggle-password').attr('src', './assets/images/icons/password-eye.svg');
+        }
+    });
+
+    $('#confirmPass .toggle-password').click(function () {
+        let pass = $('#confirmPass #password');
+        if (pass.attr('type') == 'password') {
+            pass.attr('type', 'text');
+            $('#confirmPass .toggle-password').attr('src', './assets/images/icons/password-eye-enable.svg');
+        }
+        else {
+            pass.attr('type', 'password');
+            $('#confirmPass .toggle-password').attr('src', './assets/images/icons/password-eye.svg');
         }
     });
 

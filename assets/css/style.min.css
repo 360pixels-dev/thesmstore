@@ -18803,6 +18803,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
             font-size: 16px;
             line-height: 24px;
             color: #403f47; }
+            .password__information > .current_password > .field__container.signup__form-group > div > input:focus, .password__information > .new_password > .field__container.signup__form-group > div > input:focus {
+              outline: none; }
             .password__information > .current_password > .field__container.signup__form-group > div > input::placeholder, .password__information > .new_password > .field__container.signup__form-group > div > input::placeholder {
               font-style: italic;
               text-transform: capitalize;

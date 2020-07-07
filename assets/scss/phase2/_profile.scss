@@ -396,6 +396,10 @@ $chilli: #ff4e4e;
             line-height: 24px;
             color: #403f47;
 
+            &:focus {
+              outline: none;
+            }
+
             &::placeholder {
               font-style: italic;
               text-transform: capitalize;
