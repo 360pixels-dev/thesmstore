@@ -1077,8 +1077,16 @@
                         }
 
                         &:hover {
-                            & > .hover-content {
-                                display: flex;
+                            @include respond(desktop) {
+                                & > .hover-content {
+                                    display: flex;
+                                }
+                            }
+
+                            @include respond(large-screen) {
+                                & > .hover-content {
+                                    display: flex;
+                                }
                             }
                         }
 
