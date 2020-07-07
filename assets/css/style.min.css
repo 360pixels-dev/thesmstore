@@ -15306,10 +15306,10 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       flex-wrap: wrap; }
       @media only screen and (max-width: 1024px) {
         .delivery-catalog__catalog > .catalog-items {
-          justify-content: space-between; } }
+          justify-content: space-evenly; } }
       @media only screen and (max-width: tablet) {
         .delivery-catalog__catalog > .catalog-items {
-          justify-content: space-between; } }
+          justify-content: space-evenly; } }
       @media only screen and (max-width: 600px) {
         .delivery-catalog__catalog > .catalog-items {
           width: 98%;

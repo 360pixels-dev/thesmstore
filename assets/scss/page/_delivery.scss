@@ -1033,7 +1033,7 @@
             //justify-content: space-between;
 
             @include respond(tablet) {
-                justify-content: space-between;
+                justify-content: space-evenly;
             }
 
             @include respond(mobile) {
