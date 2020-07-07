@@ -15421,11 +15421,11 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     @media only screen and (max-width: 600px) {
       .carousel__item img {
         width: 160px;
-        height: 280px; } }
+        height: 240px; } }
     @media only screen and (max-width: mobile) {
       .carousel__item img {
         width: 160px;
-        height: 280px; } }
+        height: 240px; } }
   .carousel__item__link {
     font-weight: 600;
     font-size: 20px;
