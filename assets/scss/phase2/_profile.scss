@@ -377,11 +377,31 @@ $chilli: #ff4e4e;
         flex: 1 0 50%;
         max-width: 48%;
         height: auto;
-        margin-bottom: 16px;
+        margin-bottom: 24px;
 
         @include respond(mobile) {
           max-width: unset;
           flex: 1 0 100%;
+        }
+
+        & > div {
+          border: 1px solid #88898f;
+
+          & > input {
+            width: 90%;
+            border: none;
+            padding: 8px 15px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: #403f47;
+
+            &::placeholder {
+              font-style: italic;
+              text-transform: capitalize;
+              font-weight: normal;
+            }
+          }
         }
 
         & > label {
