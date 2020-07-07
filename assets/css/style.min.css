@@ -15348,10 +15348,6 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           width: 240px;
           height: 360px;
           cursor: pointer; }
-          @media only screen and (max-width: 1230px) {
-            .delivery-catalog__catalog > .catalog-items > div > div.image-container {
-              width: 160px;
-              height: 245px; } }
           @media only screen and (min-width: 841px) and (max-width: 1400px) {
             .delivery-catalog__catalog > .catalog-items > div > div.image-container:hover > .hover-content {
               display: flex; } }
@@ -15510,7 +15506,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 
 @media only screen and (max-width: 414px) {
   .slick-current.slick-active {
-    margin: 0 40px 0 60px !important; } }
+    margin: 0 40px 0 60px !important;
+    width: calc(100vw - 164px) !important; } }
 
 .billpay__header {
   position: relative;

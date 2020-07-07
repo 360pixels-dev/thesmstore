@@ -1072,8 +1072,9 @@
                         cursor: pointer;
 
                         @include respond(1230px) {
-                            width: 160px;
-                            height: 245px;
+                            // the image gets broken, the image will overflow. -paul
+                            // width: 160px;
+                            // height: 245px;
                         }
 
                         &:hover {
@@ -1296,6 +1297,7 @@
 
 .slick-current.slick-active {
     @include respond(414px) {
-        margin: 0 40px 0 60px !important;
+        // margin: 0 40px 0 60px !important;
+        width: calc(100vw - 164px) !important;
     }
 }
