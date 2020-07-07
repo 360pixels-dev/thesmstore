@@ -15506,7 +15506,6 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 
 @media only screen and (max-width: 414px) {
   .slick-current.slick-active {
-    margin: 0 40px 0 60px !important;
     width: calc(100vw - 164px) !important; } }
 
 .billpay__header {
@@ -18415,7 +18414,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         align-items: center;
         padding-left: 12px; } }
   .profile > div {
-    max-width: 1400px;
+    max-width: 1460px;
     margin: 0 auto;
     display: flex;
     flex-flow: row wrap;
@@ -18442,9 +18441,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         height: auto; } }
   .profile__information {
     background-color: white;
-    margin: auto;
     padding: 24px;
-    max-width: 1028px;
+    max-width: 912px;
     margin-top: 64px;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-style: normal;
@@ -18667,7 +18665,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         align-items: center;
         padding-left: 12px; } }
   .password > div {
-    width: 1400px;
+    width: 1460px;
     margin: 0 auto;
     display: flex;
     flex-flow: row;
@@ -18696,9 +18694,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         flex-flow: column; } }
   .password__information {
     background-color: white;
-    margin: auto;
     padding: 24px;
-    max-width: 1028px;
+    max-width: 912px;
     width: 100%;
     margin-top: 64px;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -20646,7 +20643,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   width: 100%;
   background-color: #F9FBFF; }
   .breadcrumb > div {
-    max-width: 1400px;
+    max-width: 1460px;
     width: 100%;
     height: fit-content;
     margin: 0 auto;

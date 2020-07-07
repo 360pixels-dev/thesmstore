@@ -29,7 +29,7 @@ $chilli: #ff4e4e;
   }
 
   & > div {
-    max-width: 1400px;
+    max-width: 1460px;
     margin: 0 auto;
     display: flex;
     flex-flow: row wrap;
@@ -50,9 +50,9 @@ $chilli: #ff4e4e;
 
   &__information {
     background-color: white;
-    margin: auto;
+    
     padding: 24px;
-    max-width: 1028px;
+    max-width: 912px;
     margin-top: 64px;
 
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -278,7 +278,7 @@ $chilli: #ff4e4e;
   }
 
   & > div {
-    width: 1400px;
+    width: 1460px;
     margin: 0 auto;
     display: flex;
     flex-flow: row;
@@ -300,9 +300,8 @@ $chilli: #ff4e4e;
 
   &__information {
     background-color: white;
-    margin: auto;
     padding: 24px;
-    max-width: 1028px;
+    max-width: 912px;
     width: 100%;
     margin-top: 64px;
 
