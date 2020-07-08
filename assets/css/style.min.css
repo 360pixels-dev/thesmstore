@@ -16745,10 +16745,12 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
                   text-align: center;
                   color: #161720;
                   padding-left: 8px; }
-              .user-orders__tbl > .user-orders__tbl-item_mobile > .order_number > img {
+              .user-orders__tbl > .user-orders__tbl-item_mobile > .order_number > a {
                 margin-left: auto;
                 margin-right: 32px;
-                cursor: pointer; } }
+                cursor: pointer;
+                display: flex;
+                align-items: center; } }
       @media only screen and (max-width: mobile) {
         .user-orders__tbl {
           background: #F9FBFF; }
@@ -16840,10 +16842,12 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
                   text-align: center;
                   color: #161720;
                   padding-left: 8px; }
-              .user-orders__tbl > .user-orders__tbl-item_mobile > .order_number > img {
+              .user-orders__tbl > .user-orders__tbl-item_mobile > .order_number > a {
                 margin-left: auto;
                 margin-right: 32px;
-                cursor: pointer; } }
+                cursor: pointer;
+                display: flex;
+                align-items: center; } }
       .user-orders__tbl-header {
         padding: 0 24px;
         background-color: #F0F3FC;

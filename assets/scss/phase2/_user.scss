@@ -33,7 +33,7 @@
     padding-top: 0;
     padding-bottom: 100px;
     flex-flow: row wrap;
-    
+
     @include respond(1440px) {
       justify-content: center;
     }
@@ -880,10 +880,12 @@
               }
             }
 
-            & > img {
+            & > a {
               margin-left: auto;
               margin-right: 32px;
               cursor: pointer;
+              display: flex;
+              align-items: center;
             }
           }
         }
