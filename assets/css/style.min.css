@@ -19068,6 +19068,12 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       .product-similar--small > .product--small > div > .item-price {
         margin-top: auto !important;
         flex: unset; }
+  @media only screen and (max-width: 414px) {
+    .product + .delivery__featured .slick-current.slick-active {
+      width: calc(100vw - 156px) !important; } }
+  @media only screen and (max-width: 414px) {
+    .product + .delivery__featured .delivery__featured-slider .carousel__item__link {
+      max-width: 180px; } }
   .product + .delivery__featured div {
     padding-top: 0;
     padding-bottom: 0; }

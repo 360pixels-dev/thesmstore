@@ -211,6 +211,20 @@
 
   // override padding of sibling section
   & + .delivery__featured {
+    & .slick-current.slick-active {
+      @media only screen and (max-width: 414px) {
+        width: calc(100vw - 156px) !important;
+      }
+    }
+
+    & .delivery__featured-slider {
+      & .carousel__item__link {
+        @media only screen and (max-width: 414px) {
+          max-width: 180px;
+        }
+      }
+    }
+
     div {
       padding-top: 0;
       padding-bottom: 0;
@@ -422,7 +436,7 @@
         margin-right: 24px;
         justify-content: center;
 
-        @include respond(medium-screen){
+        @include respond(medium-screen) {
           display: none;
         }
 
