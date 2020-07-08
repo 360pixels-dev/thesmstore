@@ -15508,7 +15508,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 
 @media only screen and (max-width: 414px) {
   .slick-current.slick-active {
-    width: calc(100vw - 164px) !important; } }
+    width: calc(100vw - 134px) !important; } }
 
 .billpay__header {
   position: relative;
