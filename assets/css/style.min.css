@@ -15350,6 +15350,12 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           width: 240px;
           height: 360px;
           cursor: pointer; }
+          @media only screen and (max-width: 600px) {
+            .delivery-catalog__catalog > .catalog-items > div > div.image-container {
+              height: auto; } }
+          @media only screen and (max-width: mobile) {
+            .delivery-catalog__catalog > .catalog-items > div > div.image-container {
+              height: auto; } }
           @media only screen and (min-width: 841px) and (max-width: 1400px) {
             .delivery-catalog__catalog > .catalog-items > div > div.image-container:hover > .hover-content {
               display: flex; } }
