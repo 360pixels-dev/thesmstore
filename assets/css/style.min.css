@@ -14712,7 +14712,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           height: 60px; }
   .delivery__featured-controls {
     position: absolute;
-    top: 50%;
+    top: 45%;
     transform: translateY(-50%);
     height: 39.76px;
     display: flex;
@@ -14728,10 +14728,10 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         padding: 0 24px 0 0; } }
     @media only screen and (max-width: 600px) {
       .delivery__featured-controls {
-        top: 50%; } }
+        top: 37%; } }
     @media only screen and (max-width: mobile) {
       .delivery__featured-controls {
-        top: 50%; } }
+        top: 37%; } }
     .delivery__featured-controls--right, .delivery__featured-controls--left {
       border-radius: 20px;
       height: 39.76px;

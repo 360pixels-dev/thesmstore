@@ -348,7 +348,7 @@
 
         &-controls {
             position: absolute;
-            top: 50%;
+            top: 45%;
             transform: translateY(-50%);
             height: 39.76px;
             display: flex;
@@ -365,7 +365,7 @@
             }
 
             @include respond(mobile) {
-                top: 50%;
+                top: 37%;
             }
 
             &--right,
