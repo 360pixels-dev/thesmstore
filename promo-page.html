@@ -4,809 +4,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SM Store</title>
+    <title>Delivery - SM Store</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="./assets/css/style.min.css">
-
 </head>
 
 <body>
     <div class="wrapper">
 
         <!-- HEADER -->
-        <header>
-            <nav class="nav__upper nav__upper--default nav__upper--index container-fluid">
-                <ul class="nav__upper-list nav__upper-list-menu">
-                    <li><a href="" class="font-fineprint">About Us</a></li>
-                    <li><a href="" class="font-fineprint">Stores</a></li>
-                    <li><a href="" class="font-fineprint">Contact Us</a></li>
-                </ul>
-                <ul class="nav__upper-list nav__upper-list-forex">
-                    <li><span class="font-fineprint">Forex | <b>$USD</b></span></li>
-                    <li><span class="font-fineprint">Buy ₱50.3500</span></li>
-                    <li><span class="font-fineprint">Sell ₱50.8500</span></li>
-                    <li class="tooltip">
-                        <img src="./assets/images/icons/info-white.svg" alt="">
-                        <div class="bottom">
-                            <p class="font-fineprint">Rates may vary per store. To confirm actual currency exchange
-                                rates, contact customer service at (02)8811-0000.</p>
-                            <i></i>
-                        </div>
-                    </li>
-                </ul>
-                <ul class="nav__upper-list nav__upper-list-misc">
-                    <li><span class="font-fineprint">EN</span> <img src="./assets/images/angle-down.svg"></li>
-                    <li><a href=""><img src="./assets/images/facebook.svg" alt=""></a></li>
-                    <li><a href=""><img src="./assets/images/youtube.svg" alt=""></a></li>
-                    <li><a href=""><img src="./assets/images/instagram.svg" alt=""></a></li>
-                    <li><a href=""><img src="./assets/images/twitter.svg" alt=""></a></li>
+        <header class="header-delivery">
+            <nav
+                class="nav__upper nav__upper--default nav__upper--index container-fluid align__content align__content--right mobile-hide tablet-hide">
+                <ul class="nav__upper-list">
+                    <li class="nav__social"><a href="#"><img src="./assets/images/facebook.svg" alt=""></a></li>
+                    <li class="nav__social"><a href="#"><img src="./assets/images/youtube.svg" alt=""></a></li>
+                    <li class="nav__social"><a href="#"><img src="./assets/images/instagram.svg" alt=""></a></li>
+                    <li class="nav__social"><a href="#"><img src="./assets/images/twitter.svg" alt=""></a></li>
                 </ul>
             </nav>
 
-            <nav class="nav__lower nav_lower--default nav__lower--index container-fluid">
+            <nav class="nav__lower nav_lower--default nav__lower--index nav__delivery container-fluid">
                 <div class="nav__lower-burger">
                     <img class="burger-menu burger-menu-default" src="./assets/images/burger-menu.svg" alt="">
                     <img class="burger-menu burger-menu-close" src="./assets/images/close.svg" alt="" hidden>
                 </div>
 
-                <div class="logo">
-                    <img src="./assets/images/logo.svg" alt="SM Store">
+                <div class="logo-delivery">
+                    <img class="logo-delivery__img" src="./assets/images/logo.svg" alt="SM Store">
                 </div>
 
-                <ul class="nav__lower-menu navanimate">
-                    <li class="nav__lower-menu-item">
-                        <a href="" class="font-headline">What's New</a>
-                        <div class="nav__dropdown container">
-                            <div class="nav__dropdown-cards">
-                                <div class="card--menu card--menu-whatsnew">
-                                    <div class="card__image">
-                                        <img src="./assets/images/cards/card-menu-whatsnew1.png" alt="">
-                                    </div>
-                                    <div class="card__label">
-                                        <a href="" class="btn--text-link font-caption text-semibold">3-Day Sale</a>
-                                    </div>
-                                </div>
-                                <div class="card--menu card--menu-whatsnew">
-                                    <div class="card__image">
-                                        <img src="./assets/images/cards/card-menu-whatsnew2.png" alt="">
-                                    </div>
-                                    <div class="card__label">
-                                        <a href="" class="btn--text-link font-caption text-semibold">3-Day Sale</a>
-                                    </div>
-                                </div>
-                                <div class="card--menu card--menu-whatsnew">
-                                    <div class="card__image">
-                                        <img src="./assets/images/cards/card-menu-whatsnew3.png" alt="">
-                                    </div>
-                                    <div class="card__label">
-                                        <a href="" class="btn--text-link font-caption text-semibold">3-Day Sale</a>
-                                    </div>
-                                </div>
-                                <div class="card--menu card--menu-whatsnew">
-                                    <div class="card__image">
-                                        <img src="./assets/images/cards/card-menu-whatsnew4.png" alt="">
-                                    </div>
-                                    <div class="card__label">
-                                        <a href="" class="btn--text-link font-caption text-semibold">3-Day Sale</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="" class="btn--primary button--black font-cta nav__dropdown-btn">View all</a>
-                        </div>
-                    </li>
-                    <li class="nav__lower-menu-item">
-                        <a href="" class="font-headline">Categories</a>
-                        <div class="nav__dropdown nav__dropdown--categories container">
-                            <div class="nav__dropdown-cards">
-                                <div class="card--menu card--menu-categories">
-                                    <div class="card__image">
-                                        <img src="./assets/images/cards/menu-category1.jpg" alt="">
-                                        <h3 class="font-h3-caps">Women</h3>
-                                    </div>
-                                    <div class="card__label">
-                                        <ul>
-                                            <li><a class="font-caption text-semibold" href="">
-                                                    <img src="./assets/images/icons/icon-shopping-bag.svg" alt="">
-                                                    Women's Sale
-                                                </a></li>
-                                            <li><a class="font-caption text-semibold" href="">
-                                                    <img src="./assets/images/icons/icon-fire.svg" alt="">
-                                                    2020 Style Trends
-                                                </a></li>
-                                            <li><a class="font-caption text-semibold" href="">
-                                                    <img src="./assets/images/icons/icon-calendar.svg" alt="">
-                                                    Women’s Summer Runway Show
-                                                </a></li>
-                                        </ul>
-                                        <a href="" class="btn--text-link font-cta">View all</a>
-                                    </div>
-                                </div>
-                                <div class="card--menu card--menu-categories">
-                                    <div class="card__image">
-                                        <img src="./assets/images/cards/menu-category2.jpg" alt="">
-                                        <h3 class="font-h3-caps">Men</h3>
-                                    </div>
-                                    <div class="card__label">
-                                        <ul>
-                                            <li><a class="font-caption text-semibold" href="">
-                                                    <img src="./assets/images/icons/icon-shopping-bag.svg" alt="">
-                                                    Men’s Summer Sale
-                                                </a></li>
-                                            <li><a class="font-caption text-semibold" href="">
-                                                    <img src="./assets/images/icons/icon-fire.svg" alt="">
-                                                    2020 Style Trends
-                                                </a></li>
-                                            <li><a class="font-caption text-semibold" href="">
-                                                    <img src="./assets/images/icons/icon-calendar.svg" alt="">
-                                                    #DenimCitizens Campaign
-                                                </a></li>
-                                        </ul>
-                                        <a href="" class="btn--text-link font-cta">View all</a>
-                                    </div>
-                                </div>
-                                <div class="card--menu card--menu-categories">
-                                    <div class="card__image">
-                                        <img src="./assets/images/cards/menu-category3.jpg" alt="">
-                                        <h3 class="font-h3-caps">Youth</h3>
-                                    </div>
-                                    <div class="card__label">
-                                        <ul>
-                                            <li><a class="font-caption text-semibold" href="">
-                                                    <img src="./assets/images/icons/icon-shopping-bag.svg" alt="">
-                                                    Youth Sale
-                                                </a></li>
-                                            <li><a class="font-caption text-semibold" href="">
-                                                    <img src="./assets/images/icons/icon-fire.svg" alt="">
-                                                    Gen Z Campaign
-                                                </a></li>
-                                            <li><a class="font-caption text-semibold" href="">
-                                                    <img src="./assets/images/icons/icon-calendar.svg" alt="">
-                                                    WThe Gen Z Runway Show
-                                                </a></li>
-                                        </ul>
-                                        <a href="" class="btn--text-link font-cta">View all</a>
-                                    </div>
-                                </div>
-                                <div class="card--menu card--menu-categories">
-                                    <div class="card__image">
-                                        <img src="./assets/images/cards/menu-category4.jpg" alt="">
-                                        <h3 class="font-h3-caps">Kids</h3>
-                                    </div>
-                                    <div class="card__label">
-                                        <ul>
-                                            <li><a class="font-caption text-semibold" href="">
-                                                    <img src="./assets/images/icons/icon-shopping-bag.svg" alt="">
-                                                    Kids’ Summer Sale
-                                                </a></li>
-                                            <li><a class="font-caption text-semibold" href="">
-                                                    <img src="./assets/images/icons/icon-fire.svg" alt="">
-                                                    Holiday Fashion Fun From SM Kids
-                                                </a></li>
-                                            <li><a class="font-caption text-semibold" href="">
-                                                    <img src="./assets/images/icons/icon-calendar.svg" alt="">
-                                                    Kids’ Summer Runway Show
-                                                </a></li>
-                                        </ul>
-                                        <a href="" class="btn--text-link font-cta">View all</a>
-                                    </div>
-                                </div>
-                                <div class="card--menu card--menu-categories">
-                                    <div class="card__image">
-                                        <img src="./assets/images/cards/menu-category5.jpg" alt="">
-                                        <h3 class="font-h3-caps">Beauty</h3>
-                                    </div>
-                                    <div class="card__label">
-                                        <ul>
-                                            <li><a class="font-caption text-semibold" href="">
-                                                    <img src="./assets/images/icons/icon-shopping-bag.svg" alt="">
-                                                    Glam Session
-                                                </a></li>
-                                            <li><a class="font-caption text-semibold" href="">
-                                                    <img src="./assets/images/icons/icon-fire.svg" alt="">
-                                                    Look Like A Beauty Queen
-                                                </a></li>
-                                            <li><a class="font-caption text-semibold" href="">
-                                                    <img src="./assets/images/icons/icon-calendar.svg" alt="">
-                                                    Makeup Sale
-                                                </a></li>
-                                        </ul>
-                                        <a href="" class="btn--text-link font-cta">View all</a>
-                                    </div>
-                                </div>
-                                <div class="card--menu card--menu-categories">
-                                    <div class="card__image">
-                                        <img src="./assets/images/cards/menu-category6.jpg" alt="">
-                                        <h3 class="font-h3-caps">Home</h3>
-                                    </div>
-                                    <div class="card__label">
-                                        <ul>
-                                            <li><a class="font-caption text-semibold" href="">
-                                                    <img src="./assets/images/icons/icon-shopping-bag.svg" alt="">
-                                                    End of Season Sale
-                                                </a></li>
-                                            <li><a class="font-caption text-semibold" href="">
-                                                    <img src="./assets/images/icons/icon-fire.svg" alt="">
-                                                    Warehouse Sale
-                                                </a></li>
-                                            <li><a class="font-caption text-semibold" href="">
-                                                    <img src="./assets/images/icons/icon-calendar.svg" alt="">
-                                                    SM Home Fair
-                                                </a></li>
-                                        </ul>
-                                        <a href="" class="btn--text-link font-cta">View all</a>
-                                    </div>
-                                </div>
-                                <div class="card--menu card--menu-categories">
-                                    <div class="card__image">
-                                        <img src="./assets/images/cards/menu-category7.jpg" alt="">
-                                        <h3 class="font-h3-caps">Others Categories</h3>
-                                    </div>
-                                    <div class="card__label">
-                                        <ul>
-                                            <li><a class="font-caption text-semibold" href="">
-                                                    <img src="./assets/images/icons/icon-shopping-bag.svg" alt="">
-                                                    5-Day Sale with baby Co.
-                                                </a></li>
-                                            <li><a class="font-caption text-semibold" href="">
-                                                    <img src="./assets/images/icons/icon-fire.svg" alt="">
-                                                    Valentine’s Promo with SM Stationery
-                                                </a></li>
-                                            <li><a class="font-caption text-semibold" href="">
-                                                    <img src="./assets/images/icons/icon-calendar.svg" alt="">
-                                                    End of Season Sale at Ace Hardware
-                                                </a></li>
-                                        </ul>
-                                        <a href="" class="btn--text-link font-cta">View all</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="nav__dropdown-controls">
-                                <button class="nav__dropdown-controls--left">
-                                    <img src="./assets/images/icons/arrow-blue-tail-left.svg" alt="Go Left">
-                                </button>
-                                <button class="nav__dropdown-controls--right">
-                                    <img src="./assets/images/icons/arrow-blue-tail-right.svg" alt="Go Right">
-                                </button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav__lower-menu-item">
-                        <a href="" class="font-headline">Events</a>
-                        <div class="nav__dropdown nav__dropdown--events container">
-                            <div class="nav__dropdown-left">
-                                <h1 class="nav__dropdown-header font-h1-m">Upcoming Events</h1>
-                                <div class="nav__dropdown-cards">
-                                    <div class="card--menu card--menu-event m-r-20">
-                                        <div class="card__image">
-                                            <img src="./assets/images/cards/card-menu-event1.png" alt="">
-                                        </div>
-                                        <div class="card__label">
-                                            <p class="font-eyebrow">Billie Eilish Tour</p>
-                                            <p class="font-eyebrow">Billie Eilish Tour</p>
-                                            <ul>
-                                                <li><span class="font-caption text-semibold" href="">
-                                                        <img src="./assets/images/icons/icon-clock.svg" alt="">
-                                                        11: 00 AM - 5:00 PM <br>Sat - Sun, January 13-14
-                                                    </span></li>
-                                                <li><span class="font-caption text-semibold" href="">
-                                                        <img src="./assets/images/icons/icon-location.svg" alt="">
-                                                        SM Makati
-                                                    </span></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="card--menu card--menu-event m-r-20">
-                                        <div class="card__image">
-                                            <img src="./assets/images/cards/card-menu-event1.png" alt="">
-                                        </div>
-                                        <div class="card__label">
-                                            <p class="font-eyebrow">Billie Eilish Tour</p>
-                                            <p class="font-eyebrow">Billie Eilish Tour</p>
-                                            <ul>
-                                                <li><span class="font-caption text-semibold" href="">
-                                                        <img src="./assets/images/icons/icon-clock.svg" alt="">
-                                                        11: 00 AM - 5:00 PM <br>Sat - Sun, January 13-14
-                                                    </span></li>
-                                                <li><span class="font-caption text-semibold" href="">
-                                                        <img src="./assets/images/icons/icon-location.svg" alt="">
-                                                        SM Makati
-                                                    </span></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="card--menu card--menu-event m-r-20">
-                                        <div class="card__image">
-                                            <img src="./assets/images/cards/card-menu-event1.png" alt="">
-                                        </div>
-                                        <div class="card__label">
-                                            <p class="font-eyebrow">Billie Eilish Tour</p>
-                                            <p class="font-eyebrow">Billie Eilish Tour</p>
-                                            <ul>
-                                                <li><span class="font-caption text-semibold" href="">
-                                                        <img src="./assets/images/icons/icon-clock.svg" alt="">
-                                                        11: 00 AM - 5:00 PM <br>Sat - Sun, January 13-14
-                                                    </span></li>
-                                                <li><span class="font-caption text-semibold" href="">
-                                                        <img src="./assets/images/icons/icon-location.svg" alt="">
-                                                        SM Makati
-                                                    </span></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="" class="btn--primary button--black font-cta nav__dropdown-btn">View all</a>
-                            </div>
+                <nav class="link-delivery">
+                    <a class="link-delivery__item" href="#mechanics">Mechanics</a>
+                    <a class="link-delivery__item" href="#">Browse Essentials</a>
+                    <a class="link-delivery__item" href="#faqs">FAQs</a>
+                </nav>
 
-                            <div class="nav__dropdown-right">
-                                <h1 class="nav__dropdown-header font-h1-m">Event Recaps</h1>
-                                <ul>
-                                    <li><a class="font-caption text-semibold" href="">#TheSMStore Estancia Opening</a>
-                                    </li>
-                                    <li><a class="font-caption text-semibold" href="">The Manila Luzon Show</a></li>
-                                    <li><a class="font-caption text-semibold" href="">The SM Store Olongapo Central
-                                            Grand Opening</a></li>
-                                    <li><a class="font-caption text-semibold" href="">Big Drag Energy: #AquariaAtSM at
-                                            The Block Atrium, SM North EDSA</a></li>
-                                    <li><a class="font-caption text-semibold" href="">Big Drag Energy: #AquariaAtSM at
-                                            Mega Fashion Hall</a></li>
-                                </ul>
-                            </div>
+                <nav class="nav-user">
+                    <!-- hide this class to hide the buttons -->
+                    <div class="">
+                        <a class="button-guest button-guest--outline-white font-cta">Login</a>
+                        <a class="button-guest button-guest--pure-white font-cta">Sign up</a>
+                    </div>
+                    <!-- <a class="nav-user nav-user__avatar" href="#"><img class="nav-user__avatar__image"
+                            src="./assets/images/icons/default-user.jpg">Hello, Maan!</a> -->
 
+                    <div class="nav-user__hello">
+                        <img class="nav-user__avatar" src="./assets/images/icons/default-user.jpg" alt="">
+                        <span>Hello, Maan!</span>
+                        <div class="nav-user__menu">
+                            <a href="#">My Profile and Orders</a>
+                            <a href="#">Logout</a>
                         </div>
-                    </li>
-                    <li class="nav__lower-menu-item">
-                        <a href="" class="font-headline">Services</a>
-                        <div class="nav__dropdown nav__dropdown--services container">
-                            <div class="nav__dropdown-cards">
-                                <div class="services-group-cards">
-                                    <a href="" class="nav__content-item">
-                                        <img src="./assets/images/cards/menu-services1.jpg" alt="">
-                                        <span class="font-headline2">Bill Payment</span>
-                                    </a>
-                                    <a href="" class="nav__content-item">
-                                        <img src="./assets/images/cards/menu-services2.jpg" alt="">
-                                        <span class="font-headline2">Remittance</span>
-                                    </a>
-                                    <a href="" class="nav__content-item">
-                                        <img src="./assets/images/cards/menu-services3.jpg" alt="">
-                                        <span class="font-headline2">SM Tickets</span>
-                                    </a>
-                                </div>
-                                <div class="services-group-cards">
-                                    <a href="" class="nav__content-item">
-                                        <img src="./assets/images/cards/menu-services4.jpg" alt="">
-                                        <span class="font-headline2">Foreign Exchange</span>
-                                    </a>
-                                    <a href="" class="nav__content-item">
-                                        <img src="./assets/images/cards/menu-services5.jpg" alt="">
-                                        <span class="font-headline2">Mobile Reloading</span>
-                                    </a>
-                                    <a href="" class="nav__content-item">
-                                        <img src="./assets/images/cards/menu-services6.jpg" alt="">
-                                        <span class="font-headline2">Click & Collect</span>
-                                    </a>
-                                </div>
-                                <div class="services-group-cards">
-                                    <a href="" class="nav__content-item">
-                                        <img src="./assets/images/cards/menu-services7.jpg" alt="">
-                                        <span class="font-headline2">Package Counter</span>
-                                    </a>
-                                    <a href="" class="nav__content-item">
-                                        <img src="./assets/images/cards/menu-services8.jpg" alt="">
-                                        <span class="font-headline2">SM Advantage</span>
-                                    </a>
-                                    <a href="" class="nav__content-item">
-                                        <img src="./assets/images/cards/menu-services9.jpg" alt="">
-                                        <span class="font-headline2">SM Prestige Lounge</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <a href="" class="btn--primary button--black font-cta nav__dropdown-btn">View all</a>
-                        </div>
-                    </li>
-                    <li class="nav__lower-menu-item">
-                        <a href="" class="font-headline">Gifts</a>
-                        <div class="nav__dropdown nav__dropdown--gifts container">
-                            <div class="nav__dropdown-cards">
-                                <div class="gifts-group-cards">
-                                    <a href="" class="nav__content-item">
-                                        <img src="./assets/images/cards/menu-gifts1.jpg" alt="">
-                                        <span class="font-headline2">Gift Cards</span>
-                                    </a>
-                                    <a href="" class="nav__content-item">
-                                        <img src="./assets/images/cards/menu-gifts2.jpg" alt="">
-                                        <span class="font-headline2">Gift Wrapping</span>
-                                    </a>
-                                    <a href="" class="nav__content-item">
-                                        <img src="./assets/images/cards/menu-gifts3.jpg" alt="">
-                                        <span class="font-headline2">Gift Registry</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav__lower-menu-item">
-                        <a href="" class="font-headline">SM Cares</a>
-                    </li>
-                    <li class="nav__lower-menu-item">
-                        <a href="" class="font-headline">Careers</a>
-                    </li>
-                </ul>
+                    </div>
 
-                <div class="nav__lower-search">
-                    <img src="./assets/images/search.svg" alt="">
-                </div>
+                    <a class="nav-user nav-user__basket" href="#"><img class="nav-user__basket__icon"
+                            src="./assets/images/icon-basket.svg">My Basket <span
+                            class="nav-user__basket__count">5</span></a>
+                </nav>
+
+
             </nav>
 
-
-            <!-- MOBILE MENU -->
-            <nav class="nav__mobile">
-                <ul class="nav__mobile-upper">
-                    <li><a class="nav__mobile-upper-item" data-item="whatsnew">What's New</a></li>
-                    <li><a class="nav__mobile-upper-item" data-item="category">Categories</a></li>
-                    <li><a class="nav__mobile-upper-item" data-item="events">Events</a></li>
-                    <li><a class="nav__mobile-upper-item" data-item="services">Services</a></li>
-                    <li><a class="nav__mobile-upper-item" data-item="gifts">Gifts</a></li>
-                    <li><a class="nav__mobile-upper-item">SM Cares</a></li>
-                    <li><a class="nav__mobile-upper-item">Careers</a></li>
-                </ul>
-                <ul class="nav__mobile-lower">
-                    <li><a href="" class="nav__mobile-lower-item">Stores</a></li>
-                    <li><a href="" class="nav__mobile-lower-item">Contact Us</a></li>
-                </ul>
-                <ul class="nav__mobile-lang">
-                    <li>
-                        <a href="" class="nav__mobile-lang-item"><span>English</span>
-                            <img src="./assets/images/arrow-tail-right.svg" alt=""></a>
-                    </li>
-                </ul>
-            </nav>
-
-            <nav class="nav__mobile-sub">
-                <ul class="nav__mobile-control">
-                    <li>
-                        <a class="nav__mobile-control-back" data-item="">
-                            <img src="./assets/images/long-arrow-left.svg" />
-                            <span>Back</span>
-                        </a>
-                    </li>
-                </ul>
-                <div class="nav__mobile-container nav__mobile--whatsnew">
-                    <div class="nav__mobile-header">
-                        <span class="font-headline nav__mobile-header-title">What's New</span>
-                        <a class="btn--text-link font-cta" href="">View all</a>
-                    </div>
-                    <div class="nav__mobile-content nav__mobile--whatsnew">
-                        <a href="" class="card--menu card--menu-whatsnew">
-                            <div class="card__image">
-                                <img src="./assets/images/cards/card-whatsnew-mobile1.png" alt="">
-                            </div>
-                            <div class="card__label">
-                                <span class="btn--text-link font-caption text-semibold">3-Day Sale</span>
-                            </div>
-                        </a>
-                        <a href="" class="card--menu card--menu-whatsnew">
-                            <div class="card__image">
-                                <img src="./assets/images/cards/card-whatsnew-mobile2.png" alt="">
-                            </div>
-                            <div class="card__label">
-                                <span class="btn--text-link font-caption text-semibold">3-Day Sale</span>
-                            </div>
-                        </a>
-                        <a href="" class="card--menu card--menu-whatsnew">
-                            <div class="card__image">
-                                <img src="./assets/images/cards/card-whatsnew-mobile3.png" alt="">
-                            </div>
-                            <div class="card__label">
-                                <span class="btn--text-link font-caption text-semibold">3-Day Sale</span>
-                            </div>
-                        </a>
-                        <a href="" class="card--menu card--menu-whatsnew">
-                            <div class="card__image">
-                                <img src="./assets/images/cards/card-whatsnew-mobile4.png" alt="">
-                            </div>
-                            <div class="card__label">
-                                <span class="btn--text-link font-caption text-semibold">3-Day Sale</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="nav__mobile-container nav__mobile--category">
-                    <div class="nav__mobile-header">
-                        <span class="font-headline nav__mobile-header-title">Categories</span>
-                    </div>
-                    <div class="nav__mobile-content nav__mobile--category">
-                        <a href="" class="nav__mobile-content-item">
-                            <img src="./assets/images/cards/card-menu-category-mobile1.png" alt="">
-                            <span class="font-headline2">Women</span>
-                        </a>
-                        <a href="" class="nav__mobile-content-item">
-                            <img src="./assets/images/cards/card-menu-category-mobile2.png" alt="">
-                            <span class="font-headline2">Men</span>
-                        </a>
-                        <a href="" class="nav__mobile-content-item">
-                            <img src="./assets/images/cards/card-menu-category-mobile7.png" alt="">
-                            <span class="font-headline2">Youth</span>
-                        </a>
-                        <a href="" class="nav__mobile-content-item">
-                            <img src="./assets/images/cards/card-menu-category-mobile3.png" alt="">
-                            <span class="font-headline2">Kids</span>
-                        </a>
-                        <a href="" class="nav__mobile-content-item">
-                            <img src="./assets/images/cards/card-menu-category-mobile4.png" alt="">
-                            <span class="font-headline2">Beauty</span>
-                        </a>
-                        <a href="" class="nav__mobile-content-item">
-                            <img src="./assets/images/cards/card-menu-category-mobile5.png" alt="">
-                            <span class="font-headline2">Home</span>
-                        </a>
-                        <a href="" class="nav__mobile-content-item">
-                            <img src="./assets/images/cards/card-menu-category-mobile6.png" alt="">
-                            <span class="font-headline2">Other Categories</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="nav__mobile-container nav__mobile--events">
-                    <div class="nav__mobile-header">
-                        <span class="font-headline nav__mobile-header-title">Upcoming Events</span>
-                        <a class="btn--text-link font-cta" href="">View all</a>
-                    </div>
-                    <div class="nav__mobile-content nav__mobile--events">
-                        <a href="" class="card-mobile--events">
-                            <img src="./assets/images/cards/card-menu-events-mobile1.png" alt="">
-                            <div class="card-mobile--events-text">
-                                <p class="font-metadata text-bold">Billie Eilish Tour</p>
-                                <ul>
-                                    <li class="font-caption"><img src="./assets/images/icons/icon-calendar.svg" alt="">
-                                        Sat - Sun, January 13-14</li>
-                                    <li class="font-caption"><img src="./assets/images/icons/icon-location.svg" alt="">
-                                        SM Makati</li>
-                                </ul>
-                            </div>
-                        </a>
-                        <a href="" class="card-mobile--events">
-                            <img src="./assets/images/cards/card-menu-events-mobile2.png" alt="">
-                            <div class="card-mobile--events-text">
-                                <p class="font-metadata text-bold">Kids At Play</p>
-                                <ul>
-                                    <li class="font-caption"><img src="./assets/images/icons/icon-calendar.svg" alt="">
-                                        Sat, January 20</li>
-                                    <li class="font-caption"><img src="./assets/images/icons/icon-location.svg" alt="">
-                                        SM Makati</li>
-                                </ul>
-                            </div>
-                        </a>
-                        <a href="" class="card-mobile--events">
-                            <img src="./assets/images/cards/card-menu-events-mobile3.png" alt="">
-                            <div class="card-mobile--events-text">
-                                <p class="font-metadata text-bold">Peppa Pig's Adventure</p>
-                                <ul>
-                                    <li class="font-caption"><img src="./assets/images/icons/icon-calendar.svg" alt="">
-                                        Sat, January 20</li>
-                                    <li class="font-caption"><img src="./assets/images/icons/icon-location.svg" alt="">
-                                        SM Makati</li>
-                                </ul>
-                            </div>
-                        </a>
-
-
-                        <h1 class="font-headline text-bold">Event Recaps</h1>
-                        <ul>
-                            <li><a class="font-caption text-semibold" href="">#TheSMStore Estancia Opening</a></li>
-                            <li><a class="font-caption text-semibold" href="">The Manila Luzon Show</a></li>
-                            <li><a class="font-caption text-semibold" href="">The SM Store Olongapo Central Grand
-                                    Opening</a></li>
-                            <li><a class="font-caption text-semibold" href="">Big Drag Energy: #AquariaAtSM at The Block
-                                    Atrium, SM North EDSA</a></li>
-                            <li><a class="font-caption text-semibold" href="">Big Drag Energy: #AquariaAtSM at Mega
-                                    Fashion Hall</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="nav__mobile-container nav__mobile--services">
-                    <div class="nav__mobile-header">
-                        <span class="font-headline nav__mobile-header-title">Services</span>
-                        <a class="btn--text-link font-cta" href="">View all</a>
-                    </div>
-                    <div class="nav__mobile-content nav__mobile--services">
-                        <a href="" class="nav__mobile-content-item">
-                            <img src="./assets/images/cards/menu-services-m1.jpg" alt="">
-                            <span class="font-headline2">Bill Payment</span>
-                        </a>
-                        <a href="" class="nav__mobile-content-item">
-                            <img src="./assets/images/cards/menu-services-m2.jpg" alt="">
-                            <span class="font-headline2">Remittance</span>
-                        </a>
-                        <a href="" class="nav__mobile-content-item">
-                            <img src="./assets/images/cards/menu-services-m3.jpg" alt="">
-                            <span class="font-headline2">SM Tickets</span>
-                        </a>
-                        <a href="" class="nav__mobile-content-item">
-                            <img src="./assets/images/cards/menu-services-m4.jpg" alt="">
-                            <span class="font-headline2">Foreign Exchange</span>
-                        </a>
-                        <a href="" class="nav__mobile-content-item">
-                            <img src="./assets/images/cards/menu-services-m5.jpg" alt="">
-                            <span class="font-headline2">Mobile Reloading</span>
-                        </a>
-                        <a href="" class="nav__mobile-content-item">
-                            <img src="./assets/images/cards/menu-services-m6.jpg" alt="">
-                            <span class="font-headline2">Click & Collect</span>
-                        </a>
-                        <a href="" class="nav__mobile-content-item">
-                            <img src="./assets/images/cards/menu-services-m7.jpg" alt="">
-                            <span class="font-headline2">Package Counter</span>
-                        </a>
-                        <a href="" class="nav__mobile-content-item">
-                            <img src="./assets/images/cards/menu-services-m8.jpg" alt="">
-                            <span class="font-headline2">SM Advantage</span>
-                        </a>
-                        <a href="" class="nav__mobile-content-item">
-                            <img src="./assets/images/cards/menu-services-m9.jpg" alt="">
-                            <span class="font-headline2">SM Prestige Lounge</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="nav__mobile-container nav__mobile--gifts">
-                    <div class="nav__mobile-header">
-                        <span class="font-headline nav__mobile-header-title">Gifts</span>
-                    </div>
-                    <div class="nav__mobile-content nav__mobile--gifts">
-                        <a href="" class="nav__mobile-content-item">
-                            <img src="./assets/images/cards/menu-gifts-m1.jpg" alt="">
-                            <span class="font-headline2">Gift Cards</span>
-                        </a>
-                        <a href="" class="nav__mobile-content-item">
-                            <img src="./assets/images/cards/menu-gifts-m2.jpg" alt="">
-                            <span class="font-headline2">Gifts Wrapping</span>
-                        </a>
-                        <a href="" class="nav__mobile-content-item">
-                            <img src="./assets/images/cards/menu-gifts-m3.jpg" alt="">
-                            <span class="font-headline2">Gifts Registry</span>
-                        </a>
-                    </div>
-                </div>
-            </nav>
-            <!-- /MOBILE MENU -->
+            <div class="banner-yolk"></div>
         </header>
         <!-- /HEADER -->
 
-        <!-- WIDGETS -->
-        <!-- <section class="widgets">
-                <div class="widget widget--promos">
-                    <img src="./assets/images/icons/Promos.svg" alt="">
-                    <div class="widget--promos-content">
-                        <div class="widget--promos-header widget-header">
-                            <p class="font-metadata text-bold">Promos</p>
-                            <a href="" class="btn--text-link font-cta">Learn more</a>
-                        </div>
-                        <div class="widget--promos-details">
-                            <p class="font-eyebrow">Big clearance sale</p>
-                            <p class="font-metadata">JAN. 21-23, 2020</p>
-                        </div>
-                    </div>
+        <!-- MOBILE MENU -->
+        <nav class="nav__mobile nav__mobile--delivery">
+
+            <nav class="nav__mobile__signup-login">
+                <a class="nav__mobile-signup-login-item" href="#"><img src="./assets/images/icons/Account.svg" alt="">
+                    Signup / Login</a>
+            </nav>
+
+
+
+            <ul class="nav__mobile-upper">
+                <li><a class="nav__mobile-upper-item" href="#mechanics">Mechanics</a></li>
+                <li><a class="nav__mobile-upper-item" href="#">Browse Essentials</a></li>
+                <li><a class="nav__mobile-upper-item" href="#faqs">FAQS</a></li>
+
+            </ul>
+            <ul class="nav__mobile-social">
+                <li><a href="#"><img src="./assets/images/icons/icon-dark-viber.svg" alt="Viber"></a></li>
+                <li><a href="#"><img src="./assets/images/icons/icon-fb-black.svg" alt="Facebook"></a></li>
+                <li><a href="#"><img src="./assets/images/icons/icon-youtube-black.svg" alt="Youtube"></a></li>
+                <li><a href="#"><img src="./assets/images/icons/icon-ig-black.svg" alt="Instagram"></a></li>
+                <li><a href="#"><img src="./assets/images/icons/icon-twitter-black.svg" alt="Twitter"></a></li>
+            </ul>
+        </nav>
+
+        <section class="promo__banner">
+            <div>
+                <div class="promo__banner-text">
+                    <h1 class="font-hero">
+                        <span class="font-eyebrow font-eyebrow--hero">UP TO 50% OFF ON SELECTED ITEMS</span>
+                        <h1 class="font-titan">Women's <span class="font-titan--newline-right">Sale</span></h1>
+                    </h1>
+                    <p>Promo Period: January 1 - January 31, 2020 </p>
+                    <a href="" class="btn--primary button--black font-cta">Learn More</a>
                 </div>
-                <div class="widget widget--events">
-                    <img src="./assets/images/widget-event-icon.png" alt="">
-                    <div class="widget--events-content">
-                        <div class="widget--events-header widget-header">
-                            <p class="font-metadata text-bold">Events near you</p>
-                            <a href="" class="btn--text-link font-cta">View all</a>
-                        </div>
-                        <div class="widget--events-details">
-                            <p class="font-eyebrow">Big clearance sale</p>
-                            <p class="font-metadata">JAN. 20, 2020, 4PM</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="widget widget--locator">
-                    <img src="./assets/images/icons/Stores.svg" alt="">
-                    <div class="widget--locator-content">
-                        <div class="widget--locator-header widget-header">
-                            <p class="font-metadata text-bold">Stores near you</p>
-                            <a href="" class="btn--text-link font-cta">View all</a>
-                        </div>
-                        <div class="widget--locator-details">
-                            <p class="font-eyebrow">The SM Store Estancia</p>
-                            <p class="font-metadata">OPEN TODAY, 10AM - 10PM</p>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-        <!-- /WIDGETS -->
 
-        <section class="banner container-fluid">
-            <div class="banner__yellow"></div>
-            <div class="banner__pattern"></div>
-
-            <div class="main-carousel active">
-                <div class="banner__featured animated fadeInRight"></div>
-
-                <div class="banner__content animated fadeInRight">
-                    <span class="font-eyebrow font-eyebrow--hero">Get up to 50% discount</span>
-                    <h1 class="font-titan">Women's <span class="font-titan--newline-right">Sale</span></h1>
-                    <div class="banner__btn">
-                        <a href="" class="btn--primary font-cta">Learn more</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="main-carousel">
-                <div class="banner__featured animated fadeInRight"></div>
-
-                <div class="banner__content animated fadeInRight">
-                    <span class="font-eyebrow font-eyebrow--hero">Get up to 50% discount</span>
-                    <h1 class="font-titan">Men's <span class="font-titan--newline-right">Sale</span></h1>
-                    <div class="banner__btn">
-                        <a href="" class="btn--primary font-cta">Learn more</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="main-carousel">
-                <div class="banner__featured animated fadeInRight"></div>
-
-                <div class="banner__content animated fadeInRight">
-                    <span class="font-eyebrow font-eyebrow--hero">Get up to 50% discount</span>
-                    <h1 class="font-titan">Kids' <span class="font-titan--newline-right">Sale</span></h1>
-                    <div class="banner__btn">
-                        <a href="" class="btn--primary font-cta">Learn more</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="main-carousel">
-                <div class="banner__featured animated fadeInRight"></div>
-
-                <div class="banner__content animated fadeInRight">
-                    <span class="font-eyebrow font-eyebrow--hero">Get up to 50% discount</span>
-                    <h1 class="font-titan">Beauty <span class="font-titan--newline-right">Sale</span></h1>
-                    <div class="banner__btn">
-                        <a href="" class="btn--primary font-cta">Learn more</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="banner__pagination pagination-dot">
-
-                <input type="radio" id="slide1" name="activator" checked="checked" type="text"
-                    class="pagination-dot__activator">
-                <label class="pagination-dot__indicator" for="slide1"></label>
-
-                <input type="radio" id="slide2" name="activator" type="text" class="pagination-dot__activator">
-                <label class="pagination-dot__indicator" for="slide2"></label>
-
-                <input type="radio" id="slide3" name="activator" type="text" class="pagination-dot__activator">
-                <label class="pagination-dot__indicator" for="slide3"></label>
-
-                <input type="radio" id="slide4" name="activator" type="text" class="pagination-dot__activator">
-                <label class="pagination-dot__indicator" for="slide4"></label>
-
-            </div>
-        </section>
-        </section>
-
-
-
-        <!-- EVENTS -->
-        <section class="featured-events container-fluid">
-            <div class="container">
-                <div class="featured-events__btn">
-                    <a href="" class="btn--text-link font-cta">View all events</a>
-                </div>
-                <div class="featured-events__content">
-                    <div class="featured-events__title">
-                        <h2>In-store Events</h2>
-                        <p class="featured-events__title-month">January</p>
-                    </div>
-                    <div class="featured-events__details">
-                        <!-- generated by javascript - carousel.js -->
-                    </div>
-
-                    <div class="featured-events__slider">
-                        <!-- generated by javascript - carousel.js -->
-                    </div>
+                <div class="featured-events__slider">
+                    <!-- generated by javascript - carousel.js -->
                 </div>
 
                 <div class="featured-events__footer">
@@ -815,211 +116,277 @@
                     <button class="controls__arrow controls__arrow--right" href=""><img
                             src="./assets/images/arrow-tail-right.svg" alt=""></button>
                 </div>
-
             </div>
+
+
+
         </section>
-        <!-- /EVENTS -->
 
-        <!-- CATALOG -->
-        <section class="featured-stories">
-            <div class="featured-stories__box container-fluid">
 
-            </div>
-
-            <div class="featured-stories__container">
-                <div class="featured-stories__header">
-                    <h2 class="font-h2-hero">Catalog</h2>
-                    <a href="" class="btn--text-link font-cta">View all</a>
-                    <p>Your ultimate guide to this season’s fashion, style, beauty, and shopping finds at The SM Store.
-                    </p>
-                </div>
-                <!--.featured-stories__header-->
-
-                <div class="featured-stories__slider">
-                    <div class="featured-stories__details">
-                        <!-- generate by js - carousel.js -->
+        <section class="delivery__steps">
+            <div>
+                <div>
+                    <div class="delivery__steps-header">
+                        <h2 class="font-h2-caps text-bold">We got you</h2>
+                        <p class="font-eyebrow-semi">Stay at home and have your essentials delivered from The SM Store
+                        </p>
                     </div>
-                    <div class="featured-stories__images">
-                        <!-- generate by js - carousel.js -->
-                    </div>
-                </div>
-                <!--.featured-stories__slider-->
 
-                <div class="featured-stories__controls controls">
-                    <button class="controls__arrow controls__arrow--left"><img src="./assets/images/arrow-tail-left.svg"
-                            alt=""></button>
-                    <button class="controls__arrow controls__arrow--right"><img
-                            src="./assets/images/arrow-tail-right.svg" alt=""></button>
-                </div>
-                <!--.featured-stories__controls controls-->
-            </div>
-            <!--.featured-stories__container-->
-
-            <div class="featured-stories__shadow"></div>
-
-            <div class="featured-stories__shadow container-fluid"></div>
-        </section>
-        <!-- /CATALOG -->
-
-        <!-- VIDEO -->
-        <section class="featured-video">
-            <div class="featured-video__bg container-fluid"></div>
-            <div class="featured-video__content container">
-
-                <div class="featured-video__video">
-                    <!-- generated by js - carousel.js -->
-                </div>
-
-                <div class="featured-video__text">
-                    <!-- generated by js - carousel.js -->
-                </div>
-
-                <div class="featured-video__controls controls">
-                    <button class="controls__arrow controls__arrow--left" href=""><img
-                            src="./assets/images/arrow-tail-left.svg" alt=""></button>
-                    <button class="controls__arrow controls__arrow--right" href=""><img
-                            src="./assets/images/arrow-tail-right.svg" alt=""></button>
-                </div>
-                <!--.featured-video__controls controls -->
-            </div>
-        </section>
-        <!-- /VIDEO -->
-
-        <!-- BLOG -->
-        <section class="featured-blog container">
-            <h2 class="featured-blog__title font-h2-hero">Latest in fashion</h2>
-            <p class="featured-blog__subtitle font-eyebrow">All the freshest style inspirations in one place.</p>
-            <a href="" class="featured-blog__btn font-cta btn--text-link">View all</a>
-
-            <div class="featured-blog__cards">
-
-                <div class="featured-blog__card">
-                    <img src="./assets/images/thumbnail-blog-fashion.jpg" alt="Fashion">
-                    <span class="featured-blog__card--category font-eyebrow-medium">Fashion</span>
-                    <h4 class="featured-blog__card--title font-h4">2020 Beauty Trends</h4>
-                    <a href="" class="featured-blog__card--btn btn--text-link font-cta">Read more</a>
-                </div>
-
-                <div class="featured-blog__card">
-                    <img src="./assets/images/thumbnail-blog-women.jpg" alt="Women">
-                    <span class="featured-blog__card--category font-eyebrow-medium">Women</span>
-                    <h4 class="featured-blog__card--title font-h4">Classic Forever Pieces</h4>
-                    <a href="" class="featured-blog__card--btn btn--text-link font-cta">Read more</a>
-                </div>
-
-                <div class="featured-blog__card">
-                    <img src="./assets/images/thumbnail-blog-men.jpg" alt="Men">
-                    <span class="featured-blog__card--category font-eyebrow-medium">Men</span>
-                    <h4 class="featured-blog__card--title font-h4">SM Men's Fashion Spring 2020 Lookbook</h4>
-                    <a href="" class="featured-blog__card--btn btn--text-link font-cta">Read more</a>
-                </div>
-
-                <div class="featured-blog__card">
-                    <img src="./assets/images/thumbnail-blog-fashion-02.jpg" alt="Fashion">
-                    <span class="featured-blog__card--category font-eyebrow-medium">Fashion</span>
-                    <h4 class="featured-blog__card--title font-h4">Summer Hits</h4>
-                    <a href="" class="featured-blog__card--btn btn--text-link font-cta">Read more</a>
-                </div>
-
-            </div>
-            <button class="btn--primary button--black font-cta">Load more</button>
-        </section>
-        <!-- /BLOG -->
-
-
-        <!-- FOOTER -->
-        <footer class="footer">
-            <div class="footer__messenger">
-                <button class="btn--icon text-semibold"><img src="./assets/images/messenger.svg"> Chat With Us</button>
-            </div>
-            <div class="footer__content">
-                <div class="row">
-                    <div>
-                        <p class="footer__content--col-header font-metadata text-bold">Services</p>
-                        <ul class="footer__content--col-items">
-                            <li><a href="" class="font-caption">Bills Payment</a></li>
-                            <li><a href="" class="font-caption">SM Tickets</a></li>
-                            <li><a href="" class="font-caption">Foreign Exchange</a></li>
-                            <li><a href="" class="font-caption">Prepaid Cards and Mobile Reloading</a></li>
-                            <li><a href="" class="font-caption">Click & Collect</a></li>
-                            <li><a href="" class="font-caption">Personal Shopping Assistant</a></li>
-                            <li><a href="" class="font-caption">Foreign Exchange</a></li>
-                            <li><a href="" class="font-caption">Package Counter</a></li>
-                            <li><a href="" class="font-caption">Gift Cards</a></li>
-                            <li><a href="" class="font-caption">Gift Wrapping</a></li>
-                            <li><a href="" class="font-caption">Gift Registry</a></li>
-                            <li><a href="" class="font-caption">SM Advantage</a></li>
-                            <li><a href="" class="font-caption">SM Prestige Lounge</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <p class="footer__content--col-header font-metadata text-bold">Corporate</p>
-                        <ul class="footer__content--col-items">
-                            <li><a href="" class="font-caption">About Us</a></li>
-                            <li><a href="" class="font-caption">Our Brands</a></li>
-                            <li><a href="" class="font-caption">Press Releases</a></li>
-                            <li><a href="" class="font-caption">Advocacy (CSR)</a></li>
-                            <li><a href="" class="font-caption">Stores</a></li>
-                            <li><a href="" class="font-caption">Careers</a></li>
-                            <li><a href="" class="font-caption">Contact Us</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <p class="footer__content--col-header font-metadata text-bold">Customer Service</p>
-                        <ul class="footer__content--col-items">
-                            <li><a href="" class="font-caption">Privacy & Cookie Policy</a></li>
-                            <li><a href="" class="font-caption">Terms & Conditions</a></li>
-                            <li><a href="" class="font-caption">Return & Exchange Policy</a></li>
-                            <li><a href="" class="font-caption">Help & Support</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <p class="footer__content--col-header font-metadata text-bold">Like being first?</p>
-                        <div class="footer__content--col-items">
-                            <p class="font-caption">Get can't miss style news, before everybody else.</p>
-                            <div class="footer__input-group">
-                                <input class="font-caption" type="text">
-                                <button class="btn--primary font-cta">Sign up</button>
+                    <div class="delivery__steps-content">
+                        <div>
+                            <div class="step-header">
+                                <img src="./assets/images/icons/delivery-step1.svg" alt="">
+                                <span class="font-eyebrow">Step 1</span>
                             </div>
-                            <p class="font-caption-bold">FOR MORE DISCOUNTS AND OFFERS, FOLLOW US ON</p>
-                            <div class="footer__social-media">
-                                <ul>
-                                    <li><a href=""><img src="./assets/images/facebook.svg" alt=""></a></li>
-                                    <li><a href=""><img src="./assets/images/youtube.svg" alt=""></a></li>
-                                    <li><a href=""><img src="./assets/images/instagram.svg" alt=""></a></li>
-                                    <li><a href=""><img src="./assets/images/twitter.svg" alt=""></a></li>
-                                </ul>
+                            <p>Select an item from our catalog or speak to your branch representative for anything else
+                                you
+                                might need.</p>
+                        </div>
+                        <div>
+                            <div class="step-header">
+                                <img src="./assets/images/icons/delivery-step2.svg" alt="">
+                                <span class="font-eyebrow">Step 2</span>
                             </div>
+                            <p>Wait for an order confirmation from a branch representative including instructions on
+                                payment
+                                and delivery.</p>
+                        </div>
+                        <div>
+                            <div class="step-header">
+                                <img src="./assets/images/icons/delivery-step3.svg" alt="">
+                                <span class="font-eyebrow">Step 3</span>
+                            </div>
+                            <p>Once paid, wait for your item to be delivered to your doorstep!</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="footer__copyright">
-                <span class="footer__copyright--text font-caption">&copy; 2020 The SM Store. All rights reserved.</span>
+        </section>
+
+
+        <section class="delivery__featured">
+            <div>
+                <div class="delivery__featured-header">
+                    <h2 class="font-h2-caps delivery__h2">Featured Essentials</h2>
+                    <a href="" class="btn--text-link font-cta">Browse all</a>
+                </div>
+
+                <div class="delivery__featured-slider">
+                    <div class="carousel__item">
+
+                        <div style="position: relative;">
+                            <img src="./assets/images/delivery-item1.jpg" alt="">
+
+                            <!-- style: fix the excess space when on bottom: 0 -->
+                            <div class="make-view-product-hover" style="bottom: 5px;">
+                                <a href="" class="btn--text-link font-cta">VIEW PRODUCT</a>
+                            </div>
+                        </div>
+
+
+                        <span>Cetaphil</span>
+                        <a class="carousel__item__link">
+                            <h4 class="font-h4">Foaming Cleanser</h4>
+                        </a>
+                        <h4 class="font-h4 text-bold">₱429.00</h4>
+                    </div>
+                    <div class="carousel__item">
+                        <!-- <a><img src="./assets/images/delivery-item2.jpg" alt=""></a> -->
+
+                        <div style="position: relative;">
+                            <img src="./assets/images/delivery-item2.jpg" alt="">
+
+                            <!-- style: fix the excess space when on bottom: 0 -->
+                            <div class="make-view-product-hover" style="bottom: 5px;">
+                                <a href="" class="btn--text-link font-cta">VIEW PRODUCT</a>
+                            </div>
+                        </div>
+
+                        <span>Watsons</span>
+                        <a class="carousel__item__link">
+                            <h4 class="font-h4">Washable Gloves</h4>
+                        </a>
+                        <h4 class="font-h4 text-bold">₱49.75</h4>
+                    </div>
+                    <div class="carousel__item">
+                        <!-- <a><img src="./assets/images/delivery-item3.jpg" alt=""></a> -->
+
+                        <div style="position: relative;">
+                            <img src="./assets/images/delivery-item3.jpg" alt="">
+
+                            <!-- style: fix the excess space when on bottom: 0 -->
+                            <div class="make-view-product-hover" style="bottom: 5px;">
+                                <a href="" class="btn--text-link font-cta">VIEW PRODUCT</a>
+                            </div>
+                        </div>
+
+                        <span>Watsons</span>
+                        <a class="carousel__item__link">
+                            <h4 class="font-h4">Facial Tissues</h4>
+                        </a>
+                        <h4 class="font-h4 text-bold">₱149.00</h4>
+                    </div>
+                    <div class="carousel__item">
+                        <!-- <a><img src="./assets/images/delivery-item4.jpg" alt=""></a> -->
+
+                        <div style="position: relative;">
+                            <img src="./assets/images/delivery-item4.jpg" alt="">
+
+                            <!-- style: fix the excess space when on bottom: 0 -->
+                            <div class="make-view-product-hover" style="bottom: 5px;">
+                                <a href="" class="btn--text-link font-cta">VIEW PRODUCT</a>
+                            </div>
+                        </div>
+
+                        <span>Watsons</span>
+                        <a class="carousel__item__link">
+                            <h4 class="font-h4">Invigorating Wet Wipes</h4>
+                        </a>
+                        <h4 class="font-h4 text-bold">₱79.00</h4>
+                    </div>
+                    <div class="carousel__item">
+                        <!-- <a><img src="./assets/images/delivery-item4.jpg" alt=""></a> -->
+
+                        <div style="position: relative;">
+                            <img src="./assets/images/delivery-item4.jpg" alt="">
+
+                            <!-- style: fix the excess space when on bottom: 0 -->
+                            <div class="make-view-product-hover" style="bottom: 5px;">
+                                <a href="" class="btn--text-link font-cta">VIEW PRODUCT</a>
+                            </div>
+                        </div>
+
+                        <span>Watsons</span>
+                        <a class="carousel__item__link">
+                            <h4 class="font-h4">Invigorating Wet Wipes</h4>
+                        </a>
+                        <h4 class="font-h4 text-bold">₱79.00</h4>
+                    </div>
+                    <div class="carousel__item">
+                        <!-- <a><img src="./assets/images/delivery-item4.jpg" alt=""></a> -->
+
+                        <div style="position: relative;">
+                            <img src="./assets/images/delivery-item4.jpg" alt="">
+
+                            <!-- style: fix the excess space when on bottom: 0 -->
+                            <div class="make-view-product-hover" style="bottom: 5px;">
+                                <a href="" class="btn--text-link font-cta">VIEW PRODUCT</a>
+                            </div>
+                        </div>
+
+                        <span>Watsons</span>
+                        <a class="carousel__item__link">
+                            <h4 class="font-h4">Invigorating Wet Wipes</h4>
+                        </a>
+                        <h4 class="font-h4 text-bold">₱79.00</h4>
+                    </div>
+                </div>
+
+                <div class="delivery__featured-controls">
+                    <button class="delivery__featured-controls--left"></button>
+                    <button class="delivery__featured-controls--right"></button>
+                </div>
             </div>
+        </section>
+
+        <section class="delivery__mechanics">
+            <div>
+                <div class="accordion" id="mechanics">
+                    <div class="accordion__header">
+                        <p class="font-headline-bold">Mechanics</p>
+                        <img src="./assets/images/icons/angle-down-black.svg" alt="">
+                    </div>
+                    <div class="accordion__content">
+                        <p>To serve you better during this time, the following The SM Store branches will offer and
+                            deliver selected essential items to your home:</p>
+
+                        <ul>
+                            <li>Bacolod</li>
+                            <li>Cagayan de Oro (Uptown)</li>
+                            <li>CDO Downtown Premier</li>
+                            <li>Delgado</li>
+                            <li>Iloilo</li>
+                        </ul>
+
+                        <p>More branches will be offering this service soon — please stay tuned for updates.</p>
+                        <p>Browse through our catalog, submit an order form, and our branch representative will reach
+                            out to you with further instructions on payment and delivery.</p>
+
+                    </div>
+                </div>
+                <div class="accordion" id="faqs">
+                    <div class="accordion__header">
+                        <p class="font-headline-bold">FAQs</p>
+                        <img src="./assets/images/icons/angle-down-black.svg" alt="">
+                    </div>
+                    <div class="accordion__content">
+
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion__header">
+                        <p class="font-headline-bold">How to reach us</p>
+                        <img src="./assets/images/icons/angle-down-black.svg" alt="">
+                    </div>
+                    <div class="accordion__content">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- FOOTER -->
+        <footer class="footer__delivery">
+            <div>
+                <a class="font-caption">Privacy And Cookie Policy</a>
+                <a class="font-caption">Terms and Conditions</a>
+            </div>
+            <span class="font-caption">© 2020 The SM Store. All rights reserved.</span>
         </footer>
         <!-- /FOOTER -->
 
-    </div> <!-- /wrapper -->
-
-    <!-- COOKIE POLICY -->
-    <!-- <div class="cookie__container">
-            <p class="font-caption cookie__text">The SM Store values your rights to keep your data secure under the Data Privacy Act. This website uses cookies to help enhance your online experience. Continue to browse if you agree to our Cookie Policy; otherwise, kindly update your cookie settings. Check out our Privacy Policy page too for more information on how we protect your privacy.</p>
+        <!-- COOKIE POLICY -->
+        <!-- <div class="cookie__container">
+            <p class="font-caption cookie__text">The SM Store values your rights to keep your data secure under the Data
+                Privacy Act. This website uses cookies to help enhance your online experience. Continue to browse if you
+                agree to our Cookie Policy; otherwise, kindly update your cookie settings. Check out our Privacy Policy
+                page too for more information on how we protect your privacy.</p>
 
             <div class="cookie__btn">
-                <a href="" class="btn--primary font-cta">Settings</a>
-                <a href="" class="btn--primary font-cta">Got it</a>
+                <button href="#" class="btn--primary btn--primary--white-line font-cta">Got it</button>
+                <a href="#" class="btn--primary font-cta">Learn more</a>
             </div>
         </div> -->
-    <!-- /COOKIE POLICY -->
+        <!-- /COOKIE POLICY -->
 
+        <!-- WELCOME MODAL -->
+        <!-- <div class="modal active">
+            <div class="modal--welcome">
+                <div class="modal-content">
+                    <img src="./assets/images/welcome-modal.jpg" alt="">
+                    <img src="./assets/images/welcome-modal-m.jpg" alt="">
+                    <h2 class="font-h2-caps">
+                        <span>The SM Store's</span>
+                        <span>Call to deliver</span>
+                    </h2>
+                    <p>To serve you better during this time, we’ll deliver essential items to your home!</p>
+                    <button class="btn--primary button--dark-blue font-cta">Okay, got it!</button>
+                </div>
+            </div>
+        </div> -->
+        <!-- END - ITEM MODAL -->
+
+
+    </div> <!-- /wrapper -->
+
+    <!-- IMPORTS -->
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+
+    <!-- CUSTOM JS -->
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/carousel.js"></script>
 </body>
-
-<!-- IMPORTS -->
-<script src="assets/js/jquery.js"></script>
-
-<!-- CUSTOM JS -->
-<script src="assets/js/main.js"></script>
-<script src="assets/js/carousel.js"></script>
 
 </html>

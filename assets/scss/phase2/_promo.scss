@@ -1,0 +1,150 @@
+.promo {
+    &__banner {
+        margin-top: -227px;
+        position: relative;
+        width: 100%;
+        z-index: 40;
+
+        @include respond(mobile) {
+            margin-top: -436px;
+        }
+
+        & > div {
+            margin: 0 auto;
+            width: 1314px;
+            background-color: $opal;
+            height: 550px;
+            display: flex;
+            flex-flow: row wrap;
+            padding: 42px 47px 0 67px;
+
+            @include respond(tablet) {
+                width: 80%;
+                margin: auto;
+                padding: 19px 0 16px 19px;
+                flex-direction: column-reverse;
+            }
+
+            @include respond(mobile) {
+                width: 94%;
+                margin: auto;
+                height: 424px;
+                padding: 19px 0 16px 19px;
+                flex-direction: column-reverse;
+                justify-content: flex-end;
+            }
+
+            & > div.image-container {
+                display: flex;
+                background: red;
+                flex: 1;
+                overflow: hidden;
+
+                & > img {
+                    position: relative;
+                    width: auto;
+
+                    @include respond(1024px) {
+                        position: relative;
+                        top: 120px;
+                    }
+
+                    @include respond(tablet) {
+                        padding: 0;
+                        top: 0;
+                        position: relative;
+                        width: 80%;
+                        height: auto;
+                        margin: auto;
+                    }
+
+                    @include respond(mobile) {
+                        width: 329px;
+                        margin: 0;
+                        top: 0;
+                        display: flex;
+                        align-self: flex-end;
+                    }
+                }
+            }
+
+            .featured-events__slider {
+                margin-left: 490px !important;
+            }
+
+            .featured-events__footer {
+                flex: 1 0 100%;
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+
+        &-text {
+            margin-top: 92px;
+            width: 490px;
+            height: 336px;
+            display: flex;
+            flex-direction: column;
+            z-index: 40;
+            justify-content: space-between;
+
+            @include respond(tablet) {
+                margin-top: 0;
+                width: 100%;
+            }
+
+            @include respond(mobile) {
+                height: min-content;
+            }
+
+            & > h1 {
+                @include respond(tablet) {
+                    margin-top: 20px;
+                    font-size: 32px;
+                    line-height: 40px;
+                }
+
+                &.font-hero {
+                    & > span {
+                        color: #403f47;
+                    }
+                }
+
+                &.font-titan {
+                    display: block;
+                    color: $coral;
+
+                    & > span {
+                        color: $black;
+                    }
+                }
+            }
+
+            & > p {
+                text-align: right;
+                width: 100%;
+                padding-right: 32px;
+
+                @include respond(tablet) {
+                    width: auto;
+                    margin-right: 20px;
+                }
+
+                @include respond(mobile) {
+                    display: none;
+                }
+            }
+
+            & > a {
+                width: 241px;
+                height: 48px;
+                align-self: flex-end;
+                margin-right: 32px;
+
+                @include respond(mobile) {
+                    align-self: flex-start;
+                }
+            }
+        }
+    }
+}

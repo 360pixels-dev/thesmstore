@@ -20568,6 +20568,170 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           letter-spacing: 0.02em;
           color: #161720; }
 
+.promo__banner {
+  margin-top: -227px;
+  position: relative;
+  width: 100%;
+  z-index: 40; }
+  @media only screen and (max-width: 600px) {
+    .promo__banner {
+      margin-top: -436px; } }
+  @media only screen and (max-width: mobile) {
+    .promo__banner {
+      margin-top: -436px; } }
+  .promo__banner > div {
+    margin: 0 auto;
+    width: 1314px;
+    background-color: #FAFBFC;
+    height: 550px;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 42px 47px 0 67px; }
+    @media only screen and (max-width: 1024px) {
+      .promo__banner > div {
+        width: 80%;
+        margin: auto;
+        padding: 19px 0 16px 19px;
+        flex-direction: column-reverse; } }
+    @media only screen and (max-width: tablet) {
+      .promo__banner > div {
+        width: 80%;
+        margin: auto;
+        padding: 19px 0 16px 19px;
+        flex-direction: column-reverse; } }
+    @media only screen and (max-width: 600px) {
+      .promo__banner > div {
+        width: 94%;
+        margin: auto;
+        height: 424px;
+        padding: 19px 0 16px 19px;
+        flex-direction: column-reverse;
+        justify-content: flex-end; } }
+    @media only screen and (max-width: mobile) {
+      .promo__banner > div {
+        width: 94%;
+        margin: auto;
+        height: 424px;
+        padding: 19px 0 16px 19px;
+        flex-direction: column-reverse;
+        justify-content: flex-end; } }
+    .promo__banner > div > div.image-container {
+      display: flex;
+      background: red;
+      flex: 1;
+      overflow: hidden; }
+      .promo__banner > div > div.image-container > img {
+        position: relative;
+        width: auto; }
+        @media only screen and (max-width: 1024px) {
+          .promo__banner > div > div.image-container > img {
+            position: relative;
+            top: 120px; } }
+        @media only screen and (max-width: 1024px) {
+          .promo__banner > div > div.image-container > img {
+            padding: 0;
+            top: 0;
+            position: relative;
+            width: 80%;
+            height: auto;
+            margin: auto; } }
+        @media only screen and (max-width: tablet) {
+          .promo__banner > div > div.image-container > img {
+            padding: 0;
+            top: 0;
+            position: relative;
+            width: 80%;
+            height: auto;
+            margin: auto; } }
+        @media only screen and (max-width: 600px) {
+          .promo__banner > div > div.image-container > img {
+            width: 329px;
+            margin: 0;
+            top: 0;
+            display: flex;
+            align-self: flex-end; } }
+        @media only screen and (max-width: mobile) {
+          .promo__banner > div > div.image-container > img {
+            width: 329px;
+            margin: 0;
+            top: 0;
+            display: flex;
+            align-self: flex-end; } }
+    .promo__banner > div .featured-events__slider {
+      margin-left: 490px !important; }
+    .promo__banner > div .featured-events__footer {
+      flex: 1 0 100%;
+      display: flex;
+      justify-content: flex-end; }
+  .promo__banner-text {
+    margin-top: 92px;
+    width: 490px;
+    height: 336px;
+    display: flex;
+    flex-direction: column;
+    z-index: 40;
+    justify-content: space-between; }
+    @media only screen and (max-width: 1024px) {
+      .promo__banner-text {
+        margin-top: 0;
+        width: 100%; } }
+    @media only screen and (max-width: tablet) {
+      .promo__banner-text {
+        margin-top: 0;
+        width: 100%; } }
+    @media only screen and (max-width: 600px) {
+      .promo__banner-text {
+        height: min-content; } }
+    @media only screen and (max-width: mobile) {
+      .promo__banner-text {
+        height: min-content; } }
+    @media only screen and (max-width: 1024px) {
+      .promo__banner-text > h1 {
+        margin-top: 20px;
+        font-size: 32px;
+        line-height: 40px; } }
+    @media only screen and (max-width: tablet) {
+      .promo__banner-text > h1 {
+        margin-top: 20px;
+        font-size: 32px;
+        line-height: 40px; } }
+    .promo__banner-text > h1.font-hero > span {
+      color: #403f47; }
+    .promo__banner-text > h1.font-titan {
+      display: block;
+      color: #F86A6A; }
+      .promo__banner-text > h1.font-titan > span {
+        color: #161720; }
+    .promo__banner-text > p {
+      text-align: right;
+      width: 100%;
+      padding-right: 32px; }
+      @media only screen and (max-width: 1024px) {
+        .promo__banner-text > p {
+          width: auto;
+          margin-right: 20px; } }
+      @media only screen and (max-width: tablet) {
+        .promo__banner-text > p {
+          width: auto;
+          margin-right: 20px; } }
+      @media only screen and (max-width: 600px) {
+        .promo__banner-text > p {
+          display: none; } }
+      @media only screen and (max-width: mobile) {
+        .promo__banner-text > p {
+          display: none; } }
+    .promo__banner-text > a {
+      width: 241px;
+      height: 48px;
+      align-self: flex-end;
+      margin-right: 32px; }
+      @media only screen and (max-width: 600px) {
+        .promo__banner-text > a {
+          align-self: flex-start; } }
+      @media only screen and (max-width: mobile) {
+        .promo__banner-text > a {
+          align-self: flex-start; } }
+
 .side_nav {
   display: flex;
   flex-direction: column;
