@@ -1129,25 +1129,38 @@
 
 .make-blue-box {
     display: flex;
-    flex-flow: column;
     align-items: center;
-    padding: 12px;
-    background: #18489a;
+    padding: 16px 32px;
+    background: #18489a !important;
+    margin: 0 80px;
+
+    @include respond(mobile) {
+        margin: 32px 12px;
+        flex-flow: column;
+        padding: 16px;
+    }
 
     & > img {
         width: fit-content;
     }
 
     & > p {
-        font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        padding-left: 24px;
+        font-family: Open Sans;
         font-style: normal;
         font-weight: 600;
-        font-size: 14px;
-        line-height: 22px;
+        font-size: 20px;
+        line-height: 30px;
         display: flex;
         align-items: center;
-        text-align: center;
         color: #ffffff;
-        margin-top: 19px;
+
+        @include respond(mobile) {
+            text-align: center;
+            font-size: 14px;
+            line-height: 22px;
+            padding-left: 0;
+            margin-top: 16px;
+        }
     }
 }
