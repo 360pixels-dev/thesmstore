@@ -10,12 +10,16 @@
         display: flex;
         flex-flow: row wrap;
 
-        @media only screen and (max-width: 1460px) {
+        @include respond(1199px) {
             padding: 0 30px;
             justify-content: center;
         }
 
-        @include respond(medium-screen-up) {
+        // @include respond(medium-screen-up) {
+        //     padding: 0 30px;
+        // }
+
+        @media only screen and (min-width: 1200px) {
             padding: 0 30px;
         }
 
@@ -25,7 +29,14 @@
     }
 
     & > div > .make-big-right-column {
-        margin-right: 24px;
+        display: flex;
+        padding-right: 24px;
+        flex-flow: wrap;
+        flex: 1;
+
+        @include respond(1199px) {
+            padding-right: 0;
+        }
 
         @include respond(medium-screen) {
             margin: 0px;
@@ -77,6 +88,7 @@
 
         & > .make-orders-container {
             margin-top: 24px;
+            width: 100%;
 
             & > .order_container {
                 @include respond(mobile) {
@@ -168,7 +180,7 @@
     }
 
     & > div > .make-small-left-column {
-        @media only screen and (max-width: 1460px) {
+        @media only screen and (max-width: 1199px) {
             max-width: 984px;
         }
 

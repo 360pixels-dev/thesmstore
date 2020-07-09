@@ -19556,14 +19556,11 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     margin: 0 auto;
     display: flex;
     flex-flow: row wrap; }
-    @media only screen and (max-width: 1460px) {
+    @media only screen and (max-width: 1199px) {
       .checkout > div {
         padding: 0 30px;
         justify-content: center; } }
-    @media only screen and (min-width: 1224px) {
-      .checkout > div {
-        padding: 0 30px; } }
-    @media only screen and (max-width: medium-screen-up) {
+    @media only screen and (min-width: 1200px) {
       .checkout > div {
         padding: 0 30px; } }
     @media only screen and (max-width: 600px) {
@@ -19573,7 +19570,13 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       .checkout > div {
         padding: 0; } }
   .checkout > div > .make-big-right-column {
-    margin-right: 24px; }
+    display: flex;
+    padding-right: 24px;
+    flex-flow: wrap;
+    flex: 1; }
+    @media only screen and (max-width: 1199px) {
+      .checkout > div > .make-big-right-column {
+        padding-right: 0; } }
     @media only screen and (max-width: 1224px) {
       .checkout > div > .make-big-right-column {
         margin: 0px; } }
@@ -19620,7 +19623,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
               margin: 0;
               margin-top: 8px; } }
     .checkout > div > .make-big-right-column > .make-orders-container {
-      margin-top: 24px; }
+      margin-top: 24px;
+      width: 100%; }
       @media only screen and (max-width: 600px) {
         .checkout > div > .make-big-right-column > .make-orders-container > .order_container {
           padding: 0;
@@ -19708,7 +19712,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         @media only screen and (max-width: mobile) {
           .checkout > div > .make-big-right-column > .make-order-details-container ~ .make-orders-container {
             margin-top: 24px !important; } }
-  @media only screen and (max-width: 1460px) {
+  @media only screen and (max-width: 1199px) {
     .checkout > div > .make-small-left-column {
       max-width: 984px; } }
   .checkout > div > .make-small-left-column > div {
