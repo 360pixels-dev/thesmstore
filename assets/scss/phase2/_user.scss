@@ -860,52 +860,75 @@
           & > .order_number {
             background: white;
             display: flex;
-            padding: 16px 0;
+            padding: 16px 20px;
+            flex-flow: row wrap;
 
-            & > div {
-              & > p {
-                font-family: "Open Sans", Helvetica, Arial, sans-serif;
-                font-style: normal;
-                font-weight: 600;
-                font-size: 12px;
-                line-height: 18px;
-                text-align: right;
-                letter-spacing: 2px;
-                text-transform: uppercase;
-                color: #88898f;
-                padding: 2px 0;
-                padding-left: 20px;
-                display: flex;
-                align-items: center;
+            & div {
+              width: 100%;
 
-                &:first-child {
-                  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-                  font-style: normal;
-                  font-weight: bold;
-                  font-size: 20px;
-                  line-height: 30px;
-                  color: #161720;
-                }
+              & > div {
+                width: 100%;
+                margin-bottom: 8px;
 
-                & > span {
+                & > p {
                   font-family: "Open Sans", Helvetica, Arial, sans-serif;
                   font-style: normal;
                   font-weight: 600;
-                  font-size: 16px;
-                  line-height: 24px;
-                  text-align: center;
-                  color: #161720;
-                  padding-left: 8px;
+                  font-size: 12px;
+                  line-height: 18px;
+                  text-align: right;
+                  letter-spacing: 2px;
+                  text-transform: uppercase;
+                  color: #88898f;
+                  padding: 2px 0;
+                  width: 100%;
+
+                  display: flex;
+                  align-items: center;
+
+                  &:first-child {
+                    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 20px;
+                    line-height: 30px;
+                    color: #161720;
+                  }
+
+                  & > a {
+                    // margin-left: auto;
+                    // margin-right: 32px;
+                    // cursor: pointer;
+                    // display: flex;
+                    // align-items: center;
+
+                    display: flex;
+                    text-align: start;
+                    flex: 1;
+                    justify-content: flex-end;
+                    width: 100%;
+
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 20px;
+                    letter-spacing: 1.6px;
+                    text-transform: uppercase;
+                    color: #403f47;
+                    text-decoration: none;
+                  }
+
+                  & > span {
+                    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 24px;
+                    text-align: center;
+                    color: #161720;
+                    padding-left: 8px;
+                  }
                 }
               }
-            }
-
-            & > a {
-              margin-left: auto;
-              margin-right: 32px;
-              cursor: pointer;
-              display: flex;
-              align-items: center;
             }
           }
         }

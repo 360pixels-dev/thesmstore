@@ -168,8 +168,6 @@
 .make-big-right-column {
     max-width: 984px;
     width: 100%;
-
-    
 }
 
 // Make small left column
@@ -1087,7 +1085,6 @@
     }
 }
 
-
 // make image div background
 .make-div-image-background {
     background-position: center;
@@ -1104,7 +1101,28 @@
         @include respond(mobile) {
             width: 100px;
             max-width: 100px;
-            
         }
+    }
+}
+
+.make-status-text {
+    background: #55c9a5;
+    border-radius: 100px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 6px 16px;
+    // max-height: 21px;
+    align-self: center;
+    width: fit-content !important;
+
+    &.cancelled {
+        background: #88898f;
+        color: #ffffff;
     }
 }
