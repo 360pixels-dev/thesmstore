@@ -22121,7 +22121,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   .make-div-image-background.basket {
     max-width: 120px;
     width: 120px;
-    height: 150px; }
+    height: 150px;
+    min-width: 120px; }
     @media only screen and (max-width: 600px) {
       .make-div-image-background.basket {
         width: 100px;

@@ -1099,6 +1099,7 @@
         max-width: 120px;
         width: 120px;
         height: 150px;
+        min-width: 120px;
 
         @include respond(mobile) {
             width: 100px;
