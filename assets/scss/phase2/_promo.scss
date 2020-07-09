@@ -27,6 +27,8 @@
                 margin: auto;
                 padding: 19px 0 16px 19px;
                 flex-direction: column-reverse;
+                justify-content: flex-end;
+                height: 600px;
             }
 
             @include respond(mobile) {
@@ -105,6 +107,8 @@
             @include respond(tablet) {
                 margin-top: 0;
                 width: 100%;
+                position: absolute;
+                top: 354px;
             }
 
             @include respond(mobile) {
@@ -129,6 +133,10 @@
                 &.font-titan {
                     display: block;
                     color: $coral;
+
+                    @include respond(mobile) {
+                        letter-spacing: 1.6px;
+                    }
 
                     & > span {
                         color: $black;
