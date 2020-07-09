@@ -1,26 +1,27 @@
 .promo {
     &__banner {
-        margin-top: -573px;
+        margin-top: -210px;
         position: relative;
         width: 100%;
         z-index: 40;
 
-        @include respond(tablet) {
-            margin-top: -616px;
-        }
+        // @include respond(tablet) {
+        //     margin-top: -616px;
+        // }
 
         @include respond(mobile) {
-            margin-top: -616px;
+            margin-top: -435px;
         }
 
         & > div {
             margin: 0 auto;
-            width: 1314px;
+            max-width: 1314px;
+            width: 100%;
             background-color: $opal;
-            height: 550px;
+            height: 580px;
             display: flex;
             flex-flow: row wrap;
-            padding: 42px 47px 0 67px;
+            padding: 42px 47px 30px 67px;
 
             @include respond(tablet) {
                 width: 80%;
@@ -28,7 +29,7 @@
                 padding: 19px 0 16px 19px;
                 flex-direction: column-reverse;
                 justify-content: flex-end;
-                height: 600px;
+                height: 490px;
             }
 
             @include respond(mobile) {
@@ -38,7 +39,7 @@
                 padding: 19px 0 16px 19px;
                 flex-direction: column-reverse;
                 justify-content: flex-end;
-                height: 600px;
+                height: 490px;
             }
 
             & > div.image-container {
@@ -76,11 +77,20 @@
             }
 
             .featured-events__slider {
-                margin-left: 490px !important;
+                margin-left: 394px;
 
                 @include respond(tablet) {
                     margin-left: 0 !important;
                     position: absolute;
+                }
+
+                .featured-events__slider-event > img {
+                    height: 425px;
+                    width: auto;
+
+                    @include respond(mobile) {
+                        height: 190px;
+                    }
                 }
             }
 
@@ -88,6 +98,7 @@
                 flex: 1 0 100%;
                 display: flex;
                 justify-content: flex-end;
+                margin-top: 0;
 
                 @include respond(tablet) {
                     bottom: 20px;
@@ -97,7 +108,7 @@
 
         &-text {
             margin-top: 92px;
-            width: 490px;
+            width: 400px;
             height: 336px;
             display: flex;
             flex-direction: column;
@@ -114,7 +125,7 @@
             @include respond(mobile) {
                 height: min-content;
                 position: absolute;
-                top: 354px;
+                top: 190px;
             }
 
             & > h1 {
@@ -125,6 +136,15 @@
                 }
 
                 &.font-hero {
+                    & > .font-eyebrow {
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 22px;
+                        letter-spacing: 3px;
+                        text-transform: uppercase;
+                        color: #403f47;
+                    }
+
                     & > span {
                         color: #403f47;
                     }
@@ -132,10 +152,16 @@
 
                 &.font-titan {
                     display: block;
+                    font-size: 64px;
+                    line-height: 72px;
+                    letter-spacing: 4px;
+                    text-transform: uppercase;
                     color: $coral;
+                    padding-left: 24px;
 
                     @include respond(mobile) {
                         letter-spacing: 1.6px;
+                        padding-left: 0;
                     }
 
                     & > span {
@@ -152,6 +178,10 @@
                 text-align: right;
                 width: 100%;
                 padding-right: 32px;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 22px;
+                color: #403f47;
 
                 @include respond(tablet) {
                     width: auto;
@@ -162,7 +192,7 @@
             }
 
             & > a {
-                width: 241px;
+                width: auto;
                 height: 48px;
                 align-self: flex-end;
                 margin-right: 32px;
