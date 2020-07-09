@@ -17,7 +17,7 @@ for (i = 0; i < x.length; i++) {
     b.setAttribute("class", "select-items select-hide");
     for (j = 0; j < selElmnt.length; j++) {
 
-        if (selElmnt.options[j].value == "default") {
+        if (selElmnt.options[j].value == "") {
             continue;
         }
 

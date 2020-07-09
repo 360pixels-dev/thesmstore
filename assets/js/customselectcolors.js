@@ -15,7 +15,7 @@ for (i = 0; i < x.length; i++) {
     for (j = 0; j < selElmnt.length; j++) {
 
         // remove default element from being selected
-        if(selElmnt.options[j].value == "default") {
+        if(selElmnt.options[j].value == "") {
             continue;
         }
 
