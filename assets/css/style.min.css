@@ -19701,7 +19701,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     .checkout > div > .make-big-right-column > .make-order-details-container {
       background-color: white;
       padding: 24px;
-      padding-bottom: 0; }
+      padding-bottom: 0;
+      width: 100%; }
       .checkout > div > .make-big-right-column > .make-order-details-container > .more-details {
         margin-bottom: 0; }
       .checkout > div > .make-big-right-column > .make-order-details-container ~ .make-orders-container {
@@ -19746,7 +19747,9 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       font-weight: normal;
       font-size: 16px;
       line-height: 24px;
-      color: #403f47; }
+      color: #403f47;
+      background-color: white;
+      margin-bottom: 24px; }
 
 .header-branch_cms {
   background-color: #397cee;
