@@ -1126,3 +1126,28 @@
         color: #ffffff;
     }
 }
+
+.make-blue-box {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 12px;
+    background: #18489a;
+
+    & > img {
+        width: fit-content;
+    }
+
+    & > p {
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #ffffff;
+        margin-top: 19px;
+    }
+}

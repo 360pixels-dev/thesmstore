@@ -9,7 +9,7 @@
         //     margin-top: -616px;
         // }
 
-        @include respond(mobile) {
+        @include respond(1025px) {
             margin-top: -435px;
         }
 
@@ -32,7 +32,7 @@
                 height: 490px;
             }
 
-            @include respond(mobile) {
+            @include respond(1025px) {
                 width: 94%;
                 margin: auto;
                 // height: 424px;
@@ -66,7 +66,7 @@
                         margin: auto;
                     }
 
-                    @include respond(mobile) {
+                    @include respond(1025px) {
                         width: 329px;
                         margin: 0;
                         top: 0;
@@ -88,7 +88,7 @@
                     height: 425px;
                     width: auto;
 
-                    @include respond(mobile) {
+                    @include respond(1025px) {
                         height: 190px;
                     }
                 }
@@ -122,15 +122,15 @@
                 top: 354px;
             }
 
-            @include respond(mobile) {
+            @include respond(1025px) {
                 height: min-content;
                 position: absolute;
                 top: 190px;
+                padding-top: 20px;
             }
 
             & > h1 {
                 @include respond(tablet) {
-                    margin-top: 20px;
                     font-size: 32px;
                     line-height: 40px;
                 }
@@ -159,9 +159,10 @@
                     color: $coral;
                     padding-left: 24px;
 
-                    @include respond(mobile) {
+                    @include respond(1025px) {
                         letter-spacing: 1.6px;
                         padding-left: 0;
+                        margin-top: 2px;
                     }
 
                     & > span {
@@ -197,7 +198,7 @@
                 align-self: flex-end;
                 margin-right: 32px;
 
-                @include respond(mobile) {
+                @include respond(1025px) {
                     align-self: flex-start;
                 }
             }
