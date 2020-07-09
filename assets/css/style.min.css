@@ -20569,16 +20569,22 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           color: #161720; }
 
 .promo__banner {
-  margin-top: -227px;
+  margin-top: -573px;
   position: relative;
   width: 100%;
   z-index: 40; }
+  @media only screen and (max-width: 1024px) {
+    .promo__banner {
+      margin-top: -616px; } }
+  @media only screen and (max-width: tablet) {
+    .promo__banner {
+      margin-top: -616px; } }
   @media only screen and (max-width: 600px) {
     .promo__banner {
-      margin-top: -436px; } }
+      margin-top: -616px; } }
   @media only screen and (max-width: mobile) {
     .promo__banner {
-      margin-top: -436px; } }
+      margin-top: -616px; } }
   .promo__banner > div {
     margin: 0 auto;
     width: 1314px;
@@ -20603,18 +20609,18 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       .promo__banner > div {
         width: 94%;
         margin: auto;
-        height: 424px;
         padding: 19px 0 16px 19px;
         flex-direction: column-reverse;
-        justify-content: flex-end; } }
+        justify-content: flex-end;
+        height: 600px; } }
     @media only screen and (max-width: mobile) {
       .promo__banner > div {
         width: 94%;
         margin: auto;
-        height: 424px;
         padding: 19px 0 16px 19px;
         flex-direction: column-reverse;
-        justify-content: flex-end; } }
+        justify-content: flex-end;
+        height: 600px; } }
     .promo__banner > div > div.image-container {
       display: flex;
       background: red;
@@ -20659,10 +20665,24 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
             align-self: flex-end; } }
     .promo__banner > div .featured-events__slider {
       margin-left: 490px !important; }
+      @media only screen and (max-width: 1024px) {
+        .promo__banner > div .featured-events__slider {
+          margin-left: 0 !important;
+          position: absolute; } }
+      @media only screen and (max-width: tablet) {
+        .promo__banner > div .featured-events__slider {
+          margin-left: 0 !important;
+          position: absolute; } }
     .promo__banner > div .featured-events__footer {
       flex: 1 0 100%;
       display: flex;
       justify-content: flex-end; }
+      @media only screen and (max-width: 1024px) {
+        .promo__banner > div .featured-events__footer {
+          bottom: 20px; } }
+      @media only screen and (max-width: tablet) {
+        .promo__banner > div .featured-events__footer {
+          bottom: 20px; } }
   .promo__banner-text {
     margin-top: 92px;
     width: 490px;
@@ -20681,10 +20701,14 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         width: 100%; } }
     @media only screen and (max-width: 600px) {
       .promo__banner-text {
-        height: min-content; } }
+        height: min-content;
+        position: absolute;
+        top: 354px; } }
     @media only screen and (max-width: mobile) {
       .promo__banner-text {
-        height: min-content; } }
+        height: min-content;
+        position: absolute;
+        top: 354px; } }
     @media only screen and (max-width: 1024px) {
       .promo__banner-text > h1 {
         margin-top: 20px;
@@ -20702,6 +20726,12 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       color: #F86A6A; }
       .promo__banner-text > h1.font-titan > span {
         color: #161720; }
+        @media only screen and (max-width: 1024px) {
+          .promo__banner-text > h1.font-titan > span {
+            display: contents; } }
+        @media only screen and (max-width: tablet) {
+          .promo__banner-text > h1.font-titan > span {
+            display: contents; } }
     .promo__banner-text > p {
       text-align: right;
       width: 100%;
@@ -20709,17 +20739,15 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       @media only screen and (max-width: 1024px) {
         .promo__banner-text > p {
           width: auto;
-          margin-right: 20px; } }
+          margin-right: 20px;
+          text-align: left;
+          margin: 8px 0; } }
       @media only screen and (max-width: tablet) {
         .promo__banner-text > p {
           width: auto;
-          margin-right: 20px; } }
-      @media only screen and (max-width: 600px) {
-        .promo__banner-text > p {
-          display: none; } }
-      @media only screen and (max-width: mobile) {
-        .promo__banner-text > p {
-          display: none; } }
+          margin-right: 20px;
+          text-align: left;
+          margin: 8px 0; } }
     .promo__banner-text > a {
       width: 241px;
       height: 48px;

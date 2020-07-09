@@ -1,12 +1,16 @@
 .promo {
     &__banner {
-        margin-top: -227px;
+        margin-top: -573px;
         position: relative;
         width: 100%;
         z-index: 40;
 
+        @include respond(tablet) {
+            margin-top: -616px;
+        }
+
         @include respond(mobile) {
-            margin-top: -436px;
+            margin-top: -616px;
         }
 
         & > div {
@@ -28,10 +32,11 @@
             @include respond(mobile) {
                 width: 94%;
                 margin: auto;
-                height: 424px;
+                // height: 424px;
                 padding: 19px 0 16px 19px;
                 flex-direction: column-reverse;
                 justify-content: flex-end;
+                height: 600px;
             }
 
             & > div.image-container {
@@ -70,12 +75,21 @@
 
             .featured-events__slider {
                 margin-left: 490px !important;
+
+                @include respond(tablet) {
+                    margin-left: 0 !important;
+                    position: absolute;
+                }
             }
 
             .featured-events__footer {
                 flex: 1 0 100%;
                 display: flex;
                 justify-content: flex-end;
+
+                @include respond(tablet) {
+                    bottom: 20px;
+                }
             }
         }
 
@@ -95,6 +109,8 @@
 
             @include respond(mobile) {
                 height: min-content;
+                position: absolute;
+                top: 354px;
             }
 
             & > h1 {
@@ -116,6 +132,10 @@
 
                     & > span {
                         color: $black;
+
+                        @include respond(tablet) {
+                            display: contents;
+                        }
                     }
                 }
             }
@@ -128,10 +148,8 @@
                 @include respond(tablet) {
                     width: auto;
                     margin-right: 20px;
-                }
-
-                @include respond(mobile) {
-                    display: none;
+                    text-align: left;
+                    margin: 8px 0;
                 }
             }
 

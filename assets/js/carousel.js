@@ -18,7 +18,7 @@ $(document).ready(function() {
     var eventsArr = [
         {
             isActive: true,
-            url: './assets/images/event_img.jpg',
+            url: './assets/images/banner-promo.png',
             month: 'January',
             day: '20',
             year: '2020',
