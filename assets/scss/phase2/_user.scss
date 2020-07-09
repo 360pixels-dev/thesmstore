@@ -10,15 +10,31 @@
 
   & .make-small-left-column {
     @include respond(1440px) {
+      // max-width: 984px;
+      // margin-top: 16px;
+    }
+
+    @include respond(1199px) {
       max-width: 984px;
       margin-top: 16px;
     }
   }
 
   & .make-big-right-column {
+    width: unset;
+    display: flex;
+    flex: 1;
+
     @include respond(1440px) {
       & > .user-orders__basket {
-        padding-right: 0;
+        // padding-right: 0;
+      }
+    }
+
+    @include respond(1199px) {
+      & > .user-orders__basket {
+        padding-right: 0 !important;
+        width: 100%;
       }
     }
   }
@@ -35,6 +51,10 @@
     flex-flow: row wrap;
 
     @include respond(1440px) {
+      // justify-content: center;
+    }
+
+    @include respond(1199px) {
       justify-content: center;
     }
 

@@ -15991,13 +15991,18 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   background-color: #F9FBFF;
   min-height: calc(100vh - 160px);
   height: fit-content; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 1199px) {
     .user .make-small-left-column {
       max-width: 984px;
       margin-top: 16px; } }
-  @media only screen and (max-width: 1440px) {
-    .user .make-big-right-column > .user-orders__basket {
-      padding-right: 0; } }
+  .user .make-big-right-column {
+    width: unset;
+    display: flex;
+    flex: 1; }
+    @media only screen and (max-width: 1199px) {
+      .user .make-big-right-column > .user-orders__basket {
+        padding-right: 0 !important;
+        width: 100%; } }
   .user > div {
     width: 100%;
     max-width: 1460px;
@@ -16008,7 +16013,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     padding-top: 0;
     padding-bottom: 100px;
     flex-flow: row wrap; }
-    @media only screen and (max-width: 1440px) {
+    @media only screen and (max-width: 1199px) {
       .user > div {
         justify-content: center; } }
     @media only screen and (max-width: 1024px) {
