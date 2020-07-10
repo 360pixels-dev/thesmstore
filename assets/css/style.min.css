@@ -22359,6 +22359,13 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         padding-left: 0;
         margin-top: 16px; } }
 
+.make-flex-box {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .make-flex-box > .font-hero.subpage-title {
+    margin: 32px 0 0 0 !important; }
+
 .custom-radio-button[type="radio"]:checked,
 .custom-radio-button[type="radio"]:not(:checked) {
   position: absolute;

@@ -1164,3 +1164,14 @@
         }
     }
 }
+
+// special targetted component
+.make-flex-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & > .font-hero.subpage-title {
+        margin: 32px 0 0 0 !important;
+    }
+}
