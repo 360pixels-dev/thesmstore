@@ -1171,6 +1171,11 @@
     align-items: center;
     justify-content: center;
 
+    @include respond(mobile) {
+        justify-content: start;
+        padding-left: 16px;
+    }
+
     & > .font-hero.subpage-title {
         margin: 32px 0 0 0 !important;
     }
