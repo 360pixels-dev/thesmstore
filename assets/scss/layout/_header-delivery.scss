@@ -51,14 +51,14 @@
         & > h1 {
             position: absolute;
             color: $white;
-            margin: 206px 0 0 256px;
+            margin: 32px 0 0 0 !important;
 
             @include respond(large-screen) {
-                margin: 10% 0 0 18%;
+                margin: 32px 0 0 0 !important;
             }
 
             @include respond(tablet) {
-                margin: 113px 0 0 20px;
+                margin: 32px 0 0 0 !important;
                 font-size: 32px;
                 line-height: 40px;
             }

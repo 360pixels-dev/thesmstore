@@ -5253,18 +5253,18 @@ header {
     .header-delivery--privacy-policy > h1 {
       position: absolute;
       color: #FFFFFF;
-      margin: 206px 0 0 256px; }
+      margin: 32px 0 0 0 !important; }
       @media only screen and (min-width: 1401px) {
         .header-delivery--privacy-policy > h1 {
-          margin: 10% 0 0 18%; } }
+          margin: 32px 0 0 0 !important; } }
       @media only screen and (max-width: 1024px) {
         .header-delivery--privacy-policy > h1 {
-          margin: 113px 0 0 20px;
+          margin: 32px 0 0 0 !important;
           font-size: 32px;
           line-height: 40px; } }
       @media only screen and (max-width: tablet) {
         .header-delivery--privacy-policy > h1 {
-          margin: 113px 0 0 20px;
+          margin: 32px 0 0 0 !important;
           font-size: 32px;
           line-height: 40px; } }
       @media only screen and (max-width: 820px) {
