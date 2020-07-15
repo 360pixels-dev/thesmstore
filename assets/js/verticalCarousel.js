@@ -60,11 +60,15 @@ window.onload = function () {
             frame = document.createElement('div');
         frame.className = 'pictureFrame';
         var aspectRatio = image.offsetWidth / image.offsetHeight;
-        image.style.width = frame.style.width = imageWidth + 'px';
+        // image.style.width = frame.style.width = imageWidth + 'px';
         image.style.height = imageHeight + 'px';
         image.style.paddingTop = padding + 'px';
         image.style.paddingBottom = padding + 'px';
         frame.style.height = rowHeight + 'px';
+        frame.style.position = "relative";
+        image.style.position = "absolute";
+        image.style.left = "-10.9px";
+
         carousel.insertBefore(frame, image);
         frame.appendChild(image);
     }
