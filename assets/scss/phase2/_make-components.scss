@@ -1203,6 +1203,6 @@
     right: -100px !important;
 
     @include respond(mobile) {
-        right: -40px;
+        right: -40px !important;
     }
 }
