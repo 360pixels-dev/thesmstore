@@ -1967,10 +1967,10 @@ ul {
   padding: 88px 24px 20px 24px; }
   @media only screen and (max-width: 820px) {
     .big-header {
-      height: 344px; } }
+      height: 300px; } }
   @media only screen and (max-width: mobile) {
     .big-header {
-      height: 344px; } }
+      height: 300px; } }
   .big-header--beauty-trends {
     background: url("../../assets/images/banner-beauty-trends.jpg") no-repeat;
     background-size: cover;
