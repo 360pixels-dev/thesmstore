@@ -22388,10 +22388,10 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 
 .make-position {
   right: -100px !important; }
-  @media only screen and (max-width: 820px) {
+  @media only screen and (max-width: 1024px) {
     .make-position {
       right: -40px !important; } }
-  @media only screen and (max-width: mobile) {
+  @media only screen and (max-width: tablet) {
     .make-position {
       right: -40px !important; } }
 

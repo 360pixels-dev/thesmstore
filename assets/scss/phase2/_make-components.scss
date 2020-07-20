@@ -1202,7 +1202,7 @@
 .make-position {
     right: -100px !important;
 
-    @include respond(mobile) {
+    @include respond(tablet) {
         right: -40px !important;
     }
 }
