@@ -3,6 +3,10 @@
     background: $aqua;
     // z-index: 40;
 
+    &.height75 {
+        height: 0;
+    }
+
     @include respond(mobile) {
         height: 520px;
     }

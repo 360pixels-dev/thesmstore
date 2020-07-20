@@ -60,6 +60,10 @@
         right: 0;
         bottom: 0;
 
+        &.height75 {
+            height: 75%;
+        }
+
         @include respond(360px) {
             right: -28px;
             //height: 378px;
