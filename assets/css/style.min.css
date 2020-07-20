@@ -22386,17 +22386,13 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   .make-flex-box > .font-hero.subpage-title {
     margin: 32px 0 0 0 !important; }
 
-.make-promo-banner-title > .second-line-title > .spacer {
-  visibility: hidden; }
-.make-promo-banner-title > .second-line-title > .second-line-text {
-  position: absolute;
-  right: -100px;
-  top: 0; }
+.make-position {
+  right: -100px !important; }
   @media only screen and (max-width: 820px) {
-    .make-promo-banner-title > .second-line-title > .second-line-text {
+    .make-position {
       right: -40px; } }
   @media only screen and (max-width: mobile) {
-    .make-promo-banner-title > .second-line-title > .second-line-text {
+    .make-position {
       right: -40px; } }
 
 .custom-radio-button[type="radio"]:checked,
