@@ -5476,6 +5476,8 @@ header {
     line-height: 24px;
     text-decoration: none;
     margin: 0 16px; }
+    .link-delivery__item.margin40 {
+      margin-right: 40px; }
   @media only screen and (max-width: 1024px) {
     .link-delivery {
       display: none; } }
@@ -22366,11 +22368,11 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   @media only screen and (max-width: 820px) {
     .make-flex-box {
       justify-content: start;
-      padding: 16px; } }
+      padding-left: 16px; } }
   @media only screen and (max-width: mobile) {
     .make-flex-box {
       justify-content: start;
-      padding: 16px; } }
+      padding-left: 16px; } }
   .make-flex-box > .font-hero.subpage-title {
     margin: 32px 0 0 0 !important; }
 

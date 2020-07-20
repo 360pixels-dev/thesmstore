@@ -258,6 +258,10 @@
         line-height: 24px;
         text-decoration: none;
         margin: 0 16px;
+
+        &.margin40 {
+            margin-right: 40px;
+        }
     }
 
     @include respond(tablet) {
