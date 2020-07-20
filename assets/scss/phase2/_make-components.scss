@@ -1181,20 +1181,28 @@
     }
 }
 
-.make-promo-banner-title {
-    & > .second-line-title {
-        & > .spacer {
-            visibility: hidden;
-        }
+// .make-promo-banner-title {
+//     & > .second-line-title {
+//         & > .spacer {
+//             visibility: hidden;
+//         }
 
-        & > .second-line-text {
-            position: absolute;
-            right: -100px;
-            top: 0;
+//         & > .second-line-text {
+//             position: absolute;
+//             right: -100px;
+//             top: 0;
 
-            @include respond(mobile) {
-                right: -40px;
-            }
-        }
+//             @include respond(mobile) {
+//                 right: -40px;
+//             }
+//         }
+//     }
+// }
+
+.make-position {
+    right: -100px !important;
+
+    @include respond(mobile) {
+        right: -40px;
     }
 }
