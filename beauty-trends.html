@@ -696,7 +696,30 @@
 
                     <div class="blog-img">
                         <div class="blog-img--row">
-                            <img class="blog-img--col1" src="./assets/images/beauty-trends-img-03.jpg" alt="">
+
+                            <div class="product-tooltip">
+                                <img src="./assets/images/beauty-trends-img-03.jpg" alt="">
+                                <div class="product-tooltip__trigger product-tooltip__trigger--jeffree"> </div>
+                                <div class="product-tooltip__box"> Click to view product</div>
+
+                                <div class="product-tooltip__content product-tooltip__content--hide">
+                                    <div class="product-tooltip__image-container">
+                                        <img src="./assets/images/product-tooltip-image.jpg" alt="product image">
+                                    </div>
+
+                                    <div class="product-tooltip__text-container">
+                                        <p class="product-tooltip__brand-name">Jeffree Star Cosmetics</p>
+                                        <p class="product-tooltip__product-name">Supreme Frost Pro Palette</p>
+                                        <p class="product-tooltip__product-price">₱4,975.00</p>
+                                        <p class="product-tooltip__product-note">Item availability may vary per store.</p>
+                                    </div>
+                                </div>
+
+
+                                
+                            </div>
+
+                          
                         </div>
 
                         <div class="blog-img--row">
@@ -861,4 +884,30 @@
 
         </div> <!-- /wrapper -->
     </body>
+
+        <!-- IMPORTS -->
+        <script src="assets/js/jquery.js"></script>
+
+        <!-- CUSTOM JS -->
+
+        <script>
+            $(document).ready(function(){
+        
+                $('.product-tooltip__trigger').click(function() {
+                    $('.product-tooltip__box').addClass('product-tooltip__box--show');
+                    $('.product-tooltip__trigger').addClass('product-tooltip__trigger--active');
+                });
+
+                $('.product-tooltip__box').click(function() {
+                    $('.product-tooltip__content').addClass('product-tooltip__content--show');
+                    $('.product-tooltip__box').removeClass('product-tooltip__box--show');
+                });
+
+            
+
+                
+            });
+        </script>
+
+    
 </html>
