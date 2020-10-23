@@ -1,1015 +1,1063 @@
 .banner {
-    background-color: #F05D6B;
-    position: relative;
-    // height: 792px;
-    height: 100vh;
+  background-color: #ffa8ae;
+  position: relative;
+  // height: 792px;
+  height: 93vh;
+
+  @include respond(mobile) {
+    height: 500px;
+  }
+
+  &__yellow {
+    background-color: $lemon;
+    background-image: url("../images/dots.png");
+    background-size: contain;
+    background-position: bottom;
+    width: 100%;
+    height: 286px;
+    position: absolute;
+    top: 84px;
 
     @include respond(mobile) {
-        height: 500px;
+      left: 0;
+      //width: 260px;
+      width: 100%;
+      height: 221px;
+      top: 0;
+      background-size: 200% 80%;
     }
+  }
 
-    &__yellow {
-        background-color: $bee;
-        width: 30%;
-        height: 55.17%;
-        position: absolute;
-        top: -9.15%;
-
-        @include respond(mobile) {
-            left: 0;
-            //width: 260px;
-            width: 80%;
-            height: 221px;
-            top: 0;
-        }
-    }
-
-    &__pattern {
-        background-image: repeating-radial-gradient(center center, rgba(0,0,0,0.2), rgba(0,0,0,0.2) 2px, transparent 1px, transparent 100%) !important;
-        background-size: 50px 50px;
-        height: 55.17%;
-        width: 100%;
-        position: absolute;
-        top: -9.15%;
-        right: 400px;
-
-        @include respond(tablet) {
-            right: 204px;
-        }
-
-        @include respond(mobile) {
-            right: 94px;
-        }
-    }
-
-    .main-carousel {
-        display: none;
-
-        &.active {
-            display: block;
-        }
-    }
-
-    &__featured {
-        background-repeat: no-repeat;
-        background-position: center top;
-        background-size: cover;
-        width:78%;
-        // height: 85%;
-        height: 82%;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-
-        &.height75 {
-            height: 75%;
-        }
-
-        @include respond(360px) {
-            right: -28px;
-            //height: 378px;
-            height: 85%;
-        }
-
-        &:nth-of-type(1) {
-            background-image: url('../images/carousel-img-01.jpg');
-
-            @include respond(360px) {
-                background-image: url('../images/m-carousel-img-01.jpg');
-            }
-        }
-    }
-
-
-    &__content {
-        position: absolute;
-        top: 50.63%;
-        color: $white;
-        width: 691px;
-        width: 49%;
-        margin-left: 88px;
-
-        @include respond(tablet) {
-            width: 74%;
-            margin-left: 16px;
-        }
-
-        @include respond(mobile) {
-            margin-left: 12px;
-            top: 58.12%;
-        }
-
-        & h1:nth-of-type(2) {
-            text-align: right;
-        }
-    }
-
-    
-    &__pagination {
-        position: absolute;
-        top: 50%;
-        transform: translate(0, -50%);
-        right: 32px;
-        z-index: 9;
-
-        @include respond(tablet) {
-            top: 95%;
-            left: 50%;
-            display: flex;
-            justify-content: center;
-            transform: translate(-50%, -50%);
-        }
-    }
-
-    &__btn {
-        display: block;
-        margin-top: 8px;
-
-        @include respond(mobile) {
-            margin-top: 15px;
-        }
-    }
-}
-
-.banner-inner { 
+  &__new-banner {
     position: relative;
-    min-height: 318px;
-    height: auto;
-    //padding: 40px 20px;
-    display: flex;
-    justify-content: center;
+    float: right;
+  }
+
+  &__shadow-gradient {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    position: absolute;
+    width: 100%;
+    height: 88px;
+    top: 84px;
+    z-index: 5;
 
     @include respond(tablet) {
-        min-height: 200px;
+      top: 56px;
     }
-    
-    &--blank {
-        background-color: $dark-gray;
-    }
-    
-    &--whatsnew {
-        background: url('../../assets/images/banner-whatsnew.png') no-repeat;
-        background-size: cover;
-        background-position: center right; 
-        align-items: center;
-        height: 350px;
+  }
 
-        @include respond(tablet) {
-            justify-content: flex-start;
-            align-items: flex-end;
-            padding-bottom: 40px;
-            padding-left: 10%;
-            height: 200px;
-            background-position: 81% 50%; 
-        }
+  &__pattern {
+    background-image: repeating-radial-gradient(
+      center center,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2) 2px,
+      transparent 1px,
+      transparent 100%
+    ) !important;
+    background-repeat: repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    height: 55.17%;
+    width: 100%;
+    position: relative;
+    // top: -9.15%;
+    // right: 400px;
 
-        @include respond(tablet) {
-            
-        }
-
-        & h1 {
-            margin-top: 30px;
-            padding-bottom: 12px;
-            border-bottom: 8px solid $lemon;
-            color: $white;
-
-            @include respond(tablet) {
-                font-size: 32px;
-                line-height: 40px;
-                padding-bottom: 5px;
-                border-bottom: 4px solid $lemon;
-                justify-content: start;
-            }
-
-        }
-    }
-    
-    &--events {
-        background: url('../../assets/images/banner-events.png') no-repeat;
-        @include bgcover;
-        align-items: center;
-
-        @include respond(tablet) {
-            height: 345px;
-        }
-
-        @include respond(mobile) {
-            background: url('../../assets/images/banner-events-m.jpg') no-repeat;
-            @include bgcover;
-        }
-
-        & p {
-            margin-top: 60px;
-            font-weight: 600;
-            margin-bottom: 16px;
-            color: $white;
-        }
-
-        & h1 {
-            margin-bottom: 16px;
-            color: $white;
-        }
-
-        &__input-group {
-            width: 600px;
-            height: 65px;
-            background: rgba(64, 63, 71, 0.5);
-            // opacity: 0.3;
-            border: 2px solid #FFFFFF;
-            box-sizing: border-box;
-            display: flex;
-            align-items: center;
-            padding: 0 20px;
-
-            @include respond(tablet) {
-                width: 90%;
-                height: 56px;
-            }
-
-            & img {
-                height: 24px;
-                opacity: 1;
-            }
-
-            & input {
-                border: 0;
-                background-color: transparent;
-                flex: 0 0 544‬px;
-                width: 100%;
-                color: $white;
-                font-size: 16px;
-
-                
-                &::placeholder {
-                    color:#fff;
-                }
-
-                &:hover,
-                &:active,
-                &:focus {
-                    outline: none;
-                }
-            }
-        }
+    @include respond(tablet) {
+      right: 204px;
     }
 
+    @include respond(mobile) {
+      right: 94px;
+    }
+  }
 
-    &--stories {
-        background: url('../../assets/images/banner-stories.jpg') no-repeat;
-        @include bgcover;
+  .main-carousel {
+    display: none;
 
-        @include respond(tablet) {
-            background: url('../../assets/images/banner-stories.jpg') no-repeat;
-            @include bgcover;
-        }
+    &.active {
+      display: block;
+    }
+  }
 
-        @include respond(mobile) {
-            background: url('../../assets/images/banner-stories-m.jpg') no-repeat;
-            @include bgcover;
-        }
+  &__featured {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    width: 79%;
+    // height: 85%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    &.height75 {
+      height: 75%;
     }
 
-    &--advocacy {
-        background: url('../../assets/images/banner-advocacy.png') no-repeat;
-        @include bgcover;
-
-        @include respond(tablet) {
-            background: url('../../assets/images/banner-advocacy-m.png') no-repeat;
-            @include bgcover;
-        }
+    @include respond(360px) {
+      right: -28px;
+      //height: 378px;
+      position: absolute;
+      top: 55px;
+      height: 100%;
     }
 
-    &--about {
-        background: url('../../assets/images/banner-about.png') no-repeat;
-        height: 350px;
-        background-size: cover;
-        background-position: top right; 
-        flex-direction: column;
+    &:nth-of-type(1) {
+      background-image: url("../images/new-banner.jpg");
 
-        & > div {
-            width: 90%;
+      @include respond(360px) {
+        background-image: url("../images/new-banner.jpg");
+      }
+    }
+  }
 
-            & h1 {
-                color: $white;
-                margin-top: 100px;
-            }
-        }
+  &__content {
+    position: absolute;
+    top: 50.63%;
+    color: $white;
+    width: 691px;
+    width: 49%;
+    margin-left: 88px;
 
-        @include respond(mobile) {
-            height: 200px;
-            background: url('../../assets/images/banner-about-m.png') no-repeat;
-            background-size: cover;
-            background-position: top right; 
-            flex-direction: column;
-        }
+    @include respond(tablet) {
+      width: 74%;
+      margin-left: 16px;
     }
 
-    &--contacts {
-        background: url('../../assets/images/banner-contacts.jpg') no-repeat;
-        height: 350px;
-        background-size: cover;
-        background-position: top right; 
-        flex-direction: column;
-
-        & > div {
-            width: 90%;
-
-            & h1 {
-                color: $white;
-                margin-top: 100px;
-            }
-        }
-
-        @include respond(mobile) {
-            height: 200px;
-            background: url('../../assets/images/banner-contacts-m.png') no-repeat;
-            background-size: cover;
-            background-position: top right; 
-            flex-direction: column;
-        }
+    @include respond(mobile) {
+      margin-left: 12px;
+      top: 58.12%;
     }
 
-    &--help {
-        background: url('../../assets/images/banner-help.jpg') no-repeat;
-        height: 350px;
-        background-size: cover;
-        background-position: top right; 
-        flex-direction: column;
+    & h1:nth-of-type(2) {
+      text-align: right;
+    }
+  }
 
-        & > div {
-            width: 90%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+  &__pagination {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 32px;
+    z-index: 9;
 
-            & h2 {
-                color: $white;
-                margin-top: 53px;
-                margin-bottom: 16px;
+    @include respond(tablet) {
+      top: 95%;
+      left: 50%;
+      display: flex;
+      justify-content: center;
+      transform: translate(-50%, -50%);
+    }
+  }
 
-                @include respond(1400px) {
-                    padding-left: 0;
-                }
+  &__btn {
+    display: block;
+    margin-top: 8px;
 
-                @include respond(tablet) {
-                    text-align: center;
-                }
-            }
-        }
-
-        &__input-group {
-            width: 717px;
-            height: 65px;
-            background: rgba(64, 63, 71, 0.5);
-            border: 2px solid #FFFFFF;
-            box-sizing: border-box;
-            display: flex;
-            align-items: center;
-            padding: 0 20px;
-
-            @include respond(tablet) {
-                width: 90%;
-                height: 56px;
-            }
-
-            & img {
-                height: 24px;
-                opacity: 1;
-
-                @include respond(mobile) {
-                    display: none;
-                }
-            }
-
-            & input {
-                border: 0;
-                background-color: transparent;
-                flex: 0 0 544‬px;
-                width: 100%;
-                color: $white;
-                font-size: 16px;
-
-                
-                &::placeholder {
-                    color:#fff;
-                }
-
-                &:hover,
-                &:active,
-                &:focus {
-                    outline: none;
-                }
-            }
-        }
-
-        @include respond(mobile) {
-            height: 345px;
-            background: url('../../assets/images/banner-help-m.jpg') no-repeat;
-            background-size: cover;
-            background-position: top right; 
-            flex-direction: column;
-        }
+    & .white {
+      a {
+        background: $white;
+        color: $black;
+      }
     }
 
-
-    &--services {
-        background: url('../../assets/images/banner-services.jpg') no-repeat;
-        @include bgcover;
-
-        @include respond(tablet) {
-            background: url('../../assets/images/banner-services.jpg') no-repeat;
-            @include bgcover;
-        }
-
-        @include respond(mobile) {
-            background: url('../../assets/images/banner-services-m.jpg') no-repeat;
-            @include bgcover;
-            flex-direction: column;
-
-            & > div {
-                width: 90%;
-    
-                & h1 {
-                    color: $white;
-                    margin-top: 100px;
-                }
-            }
-        }
+    @include respond(mobile) {
+      margin-top: 15px;
     }
-
+  }
 }
 
+.banner-inner {
+  position: relative;
+  min-height: 318px;
+  height: auto;
+  //padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+
+  @include respond(tablet) {
+    min-height: 200px;
+  }
+
+  &--blank {
+    background-color: $dark-gray;
+  }
+
+  &--whatsnew {
+    background: url("../../assets/images/banner-whatsnew.png") no-repeat;
+    background-size: cover;
+    background-position: center right;
+    align-items: center;
+    height: 350px;
+
+    @include respond(tablet) {
+      justify-content: flex-start;
+      align-items: flex-end;
+      padding-bottom: 40px;
+      padding-left: 10%;
+      height: 200px;
+      background-position: 81% 50%;
+    }
+
+    @include respond(tablet) {
+    }
+
+    & h1 {
+      margin-top: 30px;
+      padding-bottom: 12px;
+      border-bottom: 8px solid $lemon;
+      color: $white;
+
+      @include respond(tablet) {
+        font-size: 32px;
+        line-height: 40px;
+        padding-bottom: 5px;
+        border-bottom: 4px solid $lemon;
+        justify-content: start;
+      }
+    }
+  }
+
+  &--events {
+    background: url("../../assets/images/banner-events.png") no-repeat;
+    @include bgcover;
+    align-items: center;
+
+    @include respond(tablet) {
+      height: 345px;
+    }
+
+    @include respond(mobile) {
+      background: url("../../assets/images/banner-events-m.jpg") no-repeat;
+      @include bgcover;
+    }
+
+    & p {
+      margin-top: 60px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: $white;
+    }
+
+    & h1 {
+      margin-bottom: 16px;
+      color: $white;
+    }
+
+    &__input-group {
+      width: 600px;
+      height: 65px;
+      background: rgba(64, 63, 71, 0.5);
+      // opacity: 0.3;
+      border: 2px solid #ffffff;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+
+      @include respond(tablet) {
+        width: 90%;
+        height: 56px;
+      }
+
+      & img {
+        height: 24px;
+        opacity: 1;
+      }
+
+      & input {
+        border: 0;
+        background-color: transparent;
+        flex: 0 0 544‬px;
+        width: 100%;
+        color: $white;
+        font-size: 16px;
+
+        &::placeholder {
+          color: #fff;
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+
+  &--stories {
+    background: url("../../assets/images/banner-stories.jpg") no-repeat;
+    @include bgcover;
+
+    @include respond(tablet) {
+      background: url("../../assets/images/banner-stories.jpg") no-repeat;
+      @include bgcover;
+    }
+
+    @include respond(mobile) {
+      background: url("../../assets/images/banner-stories-m.jpg") no-repeat;
+      @include bgcover;
+    }
+  }
+
+  &--advocacy {
+    background: url("../../assets/images/banner-advocacy.png") no-repeat;
+    @include bgcover;
+
+    @include respond(tablet) {
+      background: url("../../assets/images/banner-advocacy-m.png") no-repeat;
+      @include bgcover;
+    }
+  }
+
+  &--about {
+    background: url("../../assets/images/banner-about.png") no-repeat;
+    height: 350px;
+    background-size: cover;
+    background-position: top right;
+    flex-direction: column;
+
+    & > div {
+      width: 90%;
+
+      & h1 {
+        color: $white;
+        margin-top: 100px;
+      }
+    }
+
+    @include respond(mobile) {
+      height: 200px;
+      background: url("../../assets/images/banner-about-m.png") no-repeat;
+      background-size: cover;
+      background-position: top right;
+      flex-direction: column;
+    }
+  }
+
+  &--contacts {
+    background: url("../../assets/images/banner-contacts.jpg") no-repeat;
+    height: 350px;
+    background-size: cover;
+    background-position: top right;
+    flex-direction: column;
+
+    & > div {
+      width: 90%;
+
+      & h1 {
+        color: $white;
+        margin-top: 100px;
+      }
+    }
+
+    @include respond(mobile) {
+      height: 200px;
+      background: url("../../assets/images/banner-contacts-m.png") no-repeat;
+      background-size: cover;
+      background-position: top right;
+      flex-direction: column;
+    }
+  }
+
+  &--help {
+    background: url("../../assets/images/banner-help.jpg") no-repeat;
+    height: 350px;
+    background-size: cover;
+    background-position: top right;
+    flex-direction: column;
+
+    & > div {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      & h2 {
+        color: $white;
+        margin-top: 53px;
+        margin-bottom: 16px;
+
+        @include respond(1400px) {
+          padding-left: 0;
+        }
+
+        @include respond(tablet) {
+          text-align: center;
+        }
+      }
+    }
+
+    &__input-group {
+      width: 717px;
+      height: 65px;
+      background: rgba(64, 63, 71, 0.5);
+      border: 2px solid #ffffff;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+
+      @include respond(tablet) {
+        width: 90%;
+        height: 56px;
+      }
+
+      & img {
+        height: 24px;
+        opacity: 1;
+
+        @include respond(mobile) {
+          display: none;
+        }
+      }
+
+      & input {
+        border: 0;
+        background-color: transparent;
+        flex: 0 0 544‬px;
+        width: 100%;
+        color: $white;
+        font-size: 16px;
+
+        &::placeholder {
+          color: #fff;
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    @include respond(mobile) {
+      height: 345px;
+      background: url("../../assets/images/banner-help-m.jpg") no-repeat;
+      background-size: cover;
+      background-position: top right;
+      flex-direction: column;
+    }
+  }
+
+  &--services {
+    background: url("../../assets/images/banner-services.jpg") no-repeat;
+    @include bgcover;
+
+    @include respond(tablet) {
+      background: url("../../assets/images/banner-services.jpg") no-repeat;
+      @include bgcover;
+    }
+
+    @include respond(mobile) {
+      background: url("../../assets/images/banner-services-m.jpg") no-repeat;
+      @include bgcover;
+      flex-direction: column;
+
+      & > div {
+        width: 90%;
+
+        & h1 {
+          color: $white;
+          margin-top: 100px;
+        }
+      }
+    }
+  }
+}
 
 .big-header {
-    position: relative;
-    display: flex;
-    height: 550px;
-    align-items: flex-start;
-    padding: 88px 24px 20px 24px;    
-    
+  position: relative;
+  display: flex;
+  height: 550px;
+  align-items: flex-start;
+  padding: 88px 24px 20px 24px;
+
+  @include respond(mobile) {
+    height: 300px;
+  }
+
+  &--beauty-trends {
+    background: url("../../assets/images/banner-beauty-trends.jpg") no-repeat;
+    @include bgcover;
+
+    @include respond(tablet) {
+      background: url("../../assets/images/banner-beauty-trends.jpg") no-repeat;
+      @include bgcover;
+    }
+
     @include respond(mobile) {
-        height: 300px;
+      background: url("../../assets/images/banner-beauty-trends-m.jpg")
+        no-repeat;
+      @include bgcover;
+    }
+  }
+
+  &--3ds {
+    background: url("../../assets/images/banner-3ds.png") no-repeat;
+    @include bgcover;
+
+    @include respond(mobile) {
+      background: url("../../assets/images/banner-3ds-m.png") no-repeat;
+      @include bgcover;
+    }
+  }
+
+  &--promo {
+    background: url("../../assets/images/banner-whatsnew-promo.png") no-repeat;
+    @include bgcover;
+
+    @include respond(mobile) {
+      background: url("../../assets/images/banner-whatsnew-promo-m.png")
+        no-repeat;
+      @include bgcover;
+    }
+  }
+
+  &--press-release {
+    background: url("../../assets/images/banner-press-release-blog.png")
+      no-repeat;
+    @include bgcover;
+  }
+
+  &--event-fl {
+    background: url("../../assets/images/banner-events-fashion-lifestyle.png")
+      no-repeat;
+    @include bgcover;
+
+    @include respond(mobile) {
+      background: url("../../assets/images/banner-events-fashion-lifestyle-m.png")
+        no-repeat;
+      @include bgcover;
+    }
+  }
+
+  &--event-k {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.25) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url("../../assets/images/banner-events-kids.png");
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    @include bgcover;
+
+    @include respond(mobile) {
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.25) 0%,
+          rgba(0, 0, 0, 0) 100%
+        ),
+        url("../../assets/images/banner-events-kids.png");
+      background-blend-mode: multiply;
+      background-repeat: no-repeat;
+      @include bgcover;
+    }
+  }
+
+  &--quiz {
+    background: url("../../assets/images/banner-quiz.jpg") no-repeat;
+    @include bgcover;
+
+    @include respond(tablet) {
+      background: url("../../assets/images/banner-quiz.jpg") no-repeat;
+      @include bgcover;
     }
 
-    &--beauty-trends{
-        background: url('../../assets/images/banner-beauty-trends.jpg') no-repeat;
-        @include bgcover;
-
-        @include respond(tablet) {
-            background: url('../../assets/images/banner-beauty-trends.jpg') no-repeat;
-            @include bgcover;
-        }
-
-        @include respond(mobile) {
-            background: url('../../assets/images/banner-beauty-trends-m.jpg') no-repeat;
-            @include bgcover;
-        }
-    }       
-    
-    &--3ds {
-        background: url('../../assets/images/banner-3ds.png') no-repeat;
-        @include bgcover;
-
-        @include respond(mobile) {
-            background: url('../../assets/images/banner-3ds-m.png') no-repeat;
-            @include bgcover;
-        }
+    @include respond(mobile) {
+      background: url("../../assets/images/banner-quiz-m.jpg") no-repeat;
+      @include bgcover;
     }
-
-    &--promo {
-        background: url('../../assets/images/banner-whatsnew-promo.png') no-repeat;
-        @include bgcover;
-
-        @include respond(mobile) {
-            background: url('../../assets/images/banner-whatsnew-promo-m.png') no-repeat;
-            @include bgcover;
-        }
-    } 
-
-    &--press-release {
-        background: url('../../assets/images/banner-press-release-blog.png') no-repeat;
-        @include bgcover;
-    }   
-
-    &--event-fl {
-        background: url('../../assets/images/banner-events-fashion-lifestyle.png') no-repeat;
-        @include bgcover;
-
-        @include respond(mobile) {
-            background: url('../../assets/images/banner-events-fashion-lifestyle-m.png') no-repeat;
-            @include bgcover;
-        }
-    }
-
-    &--event-k {
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%), url('../../assets/images/banner-events-kids.png');
-        background-blend-mode: multiply;
-        background-repeat: no-repeat;
-        @include bgcover;
-
-        @include respond(mobile) {
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%), url('../../assets/images/banner-events-kids.png');
-            background-blend-mode: multiply;
-            background-repeat: no-repeat;
-            @include bgcover;
-        }
-    }
-
-    &--quiz{
-        background: url('../../assets/images/banner-quiz.jpg') no-repeat;
-        @include bgcover;
-
-        @include respond(tablet) {
-            background: url('../../assets/images/banner-quiz.jpg') no-repeat;
-            @include bgcover;
-        }
-
-        @include respond(mobile) {
-            background: url('../../assets/images/banner-quiz-m.jpg') no-repeat;
-            @include bgcover;
-        }
-    }      
-
+  }
 }
 
 // BANNER MIXINS
 @mixin banner-small-m--bc {
-    background-size: 100% 200px;
-    height: 250px;
+  background-size: 100% 200px;
+  height: 250px;
 }
 @mixin banner-small-m {
-    background-size: 100% 200px;
-    height: 200px;
+  background-size: 100% 200px;
+  height: 200px;
 }
 
 // BREADCRUMBS MIXINS
 @mixin breadcrumbs--white {
-    color: $white;
-    &:not(:last-child) {
-        background: url(../../assets/images/arrow-right.svg) no-repeat right center;
-    }
+  color: $white;
+  &:not(:last-child) {
+    background: url(../../assets/images/arrow-right.svg) no-repeat right center;
+  }
 }
 
 @mixin breadcrumbs--black {
-    color: $black;
-    &:not(:last-child) {
-        background: url(../../assets/images/arrow-right-black.svg) no-repeat right center;
-    }
+  color: $black;
+  &:not(:last-child) {
+    background: url(../../assets/images/arrow-right-black.svg) no-repeat right
+      center;
+  }
 }
 
 @mixin breadcrumbs--gray {
-    color: $dark-gray;
-    &:not(:last-child) {
-        background: url(../../assets/images/arrow-right-gray.svg) no-repeat right center;
-    }
+  color: $dark-gray;
+  &:not(:last-child) {
+    background: url(../../assets/images/arrow-right-gray.svg) no-repeat right
+      center;
+  }
 }
 
 // BANNER
 .banner-section {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 26px;
+
+  @include respond(mobile) {
+    padding: 0 8px;
+  }
+
+  &__hr {
     width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 0 26px;
+    height: 1px;
+    display: block;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    position: relative;
+    top: 112px;
 
     @include respond(mobile) {
-        padding: 0 8px;
+      display: none;
+    }
+  }
+
+  &__breadcrumbs {
+    position: relative;
+    top: 128px;
+    height: 34px;
+
+    @include respond(mobile) {
+      position: absolute;
+      padding: 9px 0;
+      top: 210px;
+      height: 40px;
     }
 
-    &__hr {
-        width: 100%;
-        height: 1px;
-        display: block;
-        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
-        position: relative;
-        top: 112px;
+    & > a {
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: normal;
+      margin-right: 12px;
+      white-space: nowrap;
+      padding: 0 16px 0 0;
+      display: inline-block;
+
+      @include respond(mobile) {
+        font-size: 14px;
+        line-height: 22px;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &:last-child {
+        font-weight: bold;
+      }
+    }
+  }
+
+  &__title {
+    position: relative;
+    color: $white;
+    margin-left: 18.32%;
+    top: 174px;
+
+    @include respond(tablet) {
+      font-size: 32px;
+      line-height: 40px;
+      letter-spacing: 4px;
+    }
+
+    @include respond(mobile) {
+      margin-left: calc(7.77% - 8px);
+      top: 113px;
+    }
+  }
+
+  &--small {
+    height: 350px;
+  }
+
+  &--all-blogs {
+    background-image: url("../../assets/images/banner-all-blogs.jpg");
+
+    @include respond(mobile) {
+      background-image: url("../../assets/images/banner-all-blogs-m.jpg");
+      @include banner-small-m--bc;
+    }
+
+    & > .banner-section__breadcrumbs {
+      & > a {
+        @include breadcrumbs--white;
 
         @include respond(mobile) {
+          @include breadcrumbs--gray;
+        }
+      }
+    }
+
+    & > .banner-section__title {
+      margin-left: 13.71%;
+      top: 142px;
+      max-width: 780px;
+
+      @include respond(tablet) {
+        font-size: 24px;
+        line-height: 32px;
+      }
+
+      @include respond(mobile) {
+        top: 81px;
+        width: 80%;
+        margin-left: 20px;
+      }
+    }
+  }
+
+  &--all-magazine {
+    background-image: url("../../assets/images/banner-all-magazine.jpg");
+
+    @include respond(mobile) {
+      background-image: url("../../assets/images/banner-all-magazine-m.jpg");
+      @include banner-small-m--bc;
+    }
+
+    & > .banner-section__breadcrumbs {
+      & > a {
+        @include breadcrumbs--white;
+
+        @include respond(mobile) {
+          @include breadcrumbs--gray;
+        }
+      }
+    }
+  }
+
+  &--omnibus {
+    background-image: url("../../assets/images/banner-omnibus.jpg");
+
+    @include respond(mobile) {
+      background-image: url("../../assets/images/banner-omnibus-m.jpg");
+      @include banner-small-m--bc;
+    }
+
+    & > .banner-section__breadcrumbs {
+      & > a {
+        @include breadcrumbs--white;
+
+        @include respond(mobile) {
+          @include breadcrumbs--gray;
+
+          &:nth-of-type(1) {
             display: none;
+          }
         }
+      }
     }
 
-    &__breadcrumbs { 
-        position: relative;
-        top: 128px;
-        height: 34px;
+    & > .banner-section__title {
+      @include respond(tablet) {
+        font-size: 24px;
+        line-height: 32px;
+      }
+
+      @include respond(mobile) {
+        margin-left: 20px;
+      }
+    }
+  }
+
+  &--viber {
+    background-image: url("../../assets/images/banner-viber.jpg");
+
+    @include respond(mobile) {
+      background-image: url("../../assets/images/banner-viber-m.jpg");
+      @include banner-small-m--bc;
+    }
+
+    & > .banner-section__breadcrumbs {
+      & > a {
+        @include breadcrumbs--white;
 
         @include respond(mobile) {
-            position: absolute;
-            padding: 9px 0;
-            top: 210px;
-            height: 40px;
+          @include breadcrumbs--black;
+
+          &:nth-of-type(1) {
+            display: none;
+          }
         }
-
-        & > a {
-            text-decoration: none;
-            font-size: 12px;
-            font-weight: normal;
-            margin-right: 12px;
-            white-space: nowrap;
-            padding: 0 16px 0 0;
-            display: inline-block;
-
-            @include respond(mobile) {
-                font-size: 14px;
-                line-height: 22px;
-            }
-
-            &:hover {
-                text-decoration: underline;
-            }
-
-            &:last-child {
-                font-weight: bold;
-            }
-        }
+      }
     }
 
-    &__title {
-        position: relative;
+    & > .banner-section__title {
+      @include respond(mobile) {
+        top: 90px !important;
+      }
+    }
+  }
+
+  &--men {
+    background-image: url("../../assets/images/banner-mens.jpg");
+
+    @include respond(mobile) {
+      background-image: url("../../assets/images/banner-mens-m.jpg");
+      @include banner-small-m;
+    }
+  }
+
+  &--women {
+    background-image: url("../../assets/images/banner-women.jpg");
+
+    @include respond(mobile) {
+      background-image: url("../../assets/images/banner-women-m.jpg");
+      @include banner-small-m;
+    }
+  }
+
+  &--kids {
+    background-image: url("../../assets/images/banner-kids.jpg");
+
+    @include respond(mobile) {
+      background-image: url("../../assets/images/banner-kids-m.jpg");
+      @include banner-small-m;
+    }
+  }
+
+  &--youth {
+    background-image: url("../../assets/images/banner-youth.jpg");
+
+    @include respond(mobile) {
+      background-image: url("../../assets/images/banner-youth-m.jpg");
+      @include banner-small-m;
+    }
+  }
+
+  &--home {
+    background-image: url("../../assets/images/banner-home.jpg");
+
+    @include respond(mobile) {
+      background-image: url("../../assets/images/banner-home-m.jpg");
+      @include banner-small-m;
+    }
+  }
+
+  &--beauty {
+    background-image: url("../../assets/images/banner-beauty.jpg");
+
+    @include respond(mobile) {
+      background-image: url("../../assets/images/banner-beauty-m.jpg");
+      @include banner-small-m;
+    }
+  }
+
+  &--other {
+    background-image: url("../../assets/images/banner-other.jpg");
+
+    @include respond(mobile) {
+      background-image: url("../../assets/images/banner-other-m.jpg");
+      @include banner-small-m;
+    }
+
+    & > .banner-section__title {
+      @include respond(mobile) {
+        top: 90px;
+      }
+    }
+  }
+
+  &--sm-cares {
+    background-image: url("../../assets/images/banner-sm-cares.jpg");
+
+    @include respond(mobile) {
+      background-image: url("../../assets/images/banner-sm-cares-m.jpg");
+      @include banner-small-m;
+    }
+  }
+
+  &--press-release {
+    background-image: url("../../assets/images/banner-press-release.jpg");
+
+    @include respond(mobile) {
+      background-image: url("../../assets/images/banner-press-release-m.jpg");
+      @include banner-small-m;
+    }
+  }
+
+  &--forex {
+    background-image: url("../../assets/images/banner-services-forex.jpg");
+
+    @include respond(mobile) {
+      background-image: url("../../assets/images/banner-services-forex-m.jpg");
+      @include banner-small-m--bc;
+    }
+
+    & > .banner-section__breadcrumbs {
+      & > a {
+        @include respond(mobile) {
+          @include breadcrumbs--black;
+
+          &:nth-of-type(1) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    & > .banner-section__title {
+      @include respond(mobile) {
+        top: 90px !important;
+      }
+    }
+  }
+
+  &--billpay {
+    background-image: url("../../assets/images/banner-billpay.jpg");
+
+    @include respond(mobile) {
+      background-image: url("../../assets/images/banner-billpay-m.jpg");
+      @include banner-small-m--bc;
+    }
+
+    & > .banner-section__breadcrumbs {
+      & > a {
         color: $white;
-        margin-left: 18.32%;
-        top: 174px;
+        @include respond(mobile) {
+          @include breadcrumbs--black;
 
-        @include respond(tablet) {
-            font-size: 32px;
-            line-height: 40px;
-            letter-spacing: 4px;
+          &:nth-of-type(1) {
+            display: none;
+          }
         }
+      }
+    }
+
+    & > .banner-section__title {
+      @include respond(mobile) {
+        top: 90px !important;
+      }
+    }
+  }
+
+  &--gift-registry {
+    background-image: url("../../assets/images/banner-gift-registry.jpg");
+
+    @include respond(mobile) {
+      background-image: url("../../assets/images/banner-gift-registry-m.jpg");
+      @include banner-small-m--bc;
+    }
+
+    & > .banner-section__breadcrumbs {
+      & > a {
+        @include breadcrumbs--white;
 
         @include respond(mobile) {
-            margin-left: calc(7.77% - 8px);
-            top: 113px;
+          @include breadcrumbs--gray;
+
+          &:nth-of-type(1) {
+            display: none;
+          }
         }
+      }
     }
 
-    &--small {
-        height: 350px;
+    & > .banner-section__title {
+      @include respond(mobile) {
+        top: 90px !important;
+        width: 187px;
+      }
+    }
+  }
+
+  &--gift-card {
+    background-image: url("../../assets/images/banner-gift-card.jpg");
+
+    @include respond(mobile) {
+      background-image: url("../../assets/images/banner-gift-card-m.jpg");
+      @include banner-small-m--bc;
     }
 
-    &--all-blogs {
-        background-image: url('../../assets/images/banner-all-blogs.jpg');
+    & > .banner-section__breadcrumbs {
+      & > a {
+        @include breadcrumbs--white;
 
         @include respond(mobile) {
-            background-image: url('../../assets/images/banner-all-blogs-m.jpg');
-            @include banner-small-m--bc;
+          @include breadcrumbs--gray;
+
+          &:nth-of-type(1) {
+            display: none;
+          }
         }
-
-        & > .banner-section__breadcrumbs {
-            & > a {
-                @include breadcrumbs--white;
-
-                @include respond(mobile) {
-                    @include breadcrumbs--gray;
-                }
-            }
-        }
-
-        & > .banner-section__title {
-            margin-left: 13.71%;
-            top: 142px;
-            max-width: 780px;
-
-            @include respond(tablet) {
-                font-size: 24px;
-                line-height: 32px;
-            }
-
-            @include respond(mobile) {
-                top: 81px;
-                width: 80%;
-                margin-left: 20px;
-            }
-        }
+      }
     }
 
-    &--all-magazine {
-        background-image: url('../../assets/images/banner-all-magazine.jpg');
+    & > .banner-section__title {
+      @include respond(mobile) {
+        top: 90px !important;
+        width: 187px;
+      }
+    }
+  }
+
+  &--gift-wrapping {
+    background-image: url("../../assets/images/banner-gift-wrapping.jpg");
+
+    @include respond(mobile) {
+      background-image: url("../../assets/images/banner-gift-wrapping-m.jpg");
+      @include banner-small-m--bc;
+    }
+
+    & > .banner-section__breadcrumbs {
+      & > a {
+        @include breadcrumbs--white;
 
         @include respond(mobile) {
-            background-image: url('../../assets/images/banner-all-magazine-m.jpg');
-            @include banner-small-m--bc;
-        }
+          @include breadcrumbs--gray;
 
-        & > .banner-section__breadcrumbs {
-            & > a {
-                @include breadcrumbs--white;
-
-                @include respond(mobile) {
-                    @include breadcrumbs--gray;
-                }
-            }
+          &:nth-of-type(1) {
+            display: none;
+          }
         }
+      }
     }
 
-    &--omnibus {
-        background-image: url('../../assets/images/banner-omnibus.jpg');
-
-        @include respond(mobile) {
-            background-image: url('../../assets/images/banner-omnibus-m.jpg');
-            @include banner-small-m--bc;
-        }
-
-        & > .banner-section__breadcrumbs {
-            & > a {
-                @include breadcrumbs--white;
-
-                @include respond(mobile) {
-                    @include breadcrumbs--gray;
-
-                    &:nth-of-type(1) {
-                        display: none;
-                    }
-                }
-            }
-        }
-
-        & > .banner-section__title {
-             
-            @include respond(tablet) {
-                font-size: 24px;
-                line-height: 32px;
-            }
-
-            @include respond(mobile) {
-                margin-left: 20px;
-            }
-        }
+    & > .banner-section__title {
+      @include respond(mobile) {
+        top: 90px !important;
+        width: 187px;
+      }
     }
-
-    &--viber {
-        background-image: url('../../assets/images/banner-viber.jpg');
-
-        @include respond(mobile) {
-            background-image: url('../../assets/images/banner-viber-m.jpg');
-            @include banner-small-m--bc;
-        }
-
-        & > .banner-section__breadcrumbs {
-            & > a {
-                @include breadcrumbs--white;
-
-                @include respond(mobile) {
-                    @include breadcrumbs--black;
-
-                    &:nth-of-type(1) {
-                        display: none;
-                    }
-                }
-            }
-        }
-
-        & > .banner-section__title {
-            @include respond(mobile) {
-                top: 90px !important;
-            }
-        }
-    }
-
-    &--men {
-        background-image: url('../../assets/images/banner-mens.jpg');
-
-        @include respond(mobile) {
-            background-image: url('../../assets/images/banner-mens-m.jpg');
-            @include banner-small-m;
-        }
-    }
-
-    &--women {
-        background-image: url('../../assets/images/banner-women.jpg');
-
-        @include respond(mobile) {
-            background-image: url('../../assets/images/banner-women-m.jpg');
-            @include banner-small-m;
-        }
-    }
-
-    &--kids {
-        background-image: url('../../assets/images/banner-kids.jpg');
-
-        @include respond(mobile) {
-            background-image: url('../../assets/images/banner-kids-m.jpg');
-            @include banner-small-m;
-        }
-    }
-
-    &--youth {
-        background-image: url('../../assets/images/banner-youth.jpg');
-
-        @include respond(mobile) {
-            background-image: url('../../assets/images/banner-youth-m.jpg');
-            @include banner-small-m;
-        }
-    }
-
-    &--home {
-        background-image: url('../../assets/images/banner-home.jpg');
-
-        @include respond(mobile) {
-            background-image: url('../../assets/images/banner-home-m.jpg');
-            @include banner-small-m;
-        }
-    }
-
-    &--beauty {
-        background-image: url('../../assets/images/banner-beauty.jpg');
-
-        @include respond(mobile) {
-            background-image: url('../../assets/images/banner-beauty-m.jpg');
-            @include banner-small-m;
-        }
-    }
-
-    &--other {
-        background-image: url('../../assets/images/banner-other.jpg');
-
-        @include respond(mobile) {
-            background-image: url('../../assets/images/banner-other-m.jpg');
-            @include banner-small-m;
-        }
-
-        & > .banner-section__title {
-            @include respond(mobile) {
-                top: 90px;
-            }
-        }
-    }
-
-    &--sm-cares {
-        background-image: url('../../assets/images/banner-sm-cares.jpg');
-
-        @include respond(mobile) {
-            background-image: url('../../assets/images/banner-sm-cares-m.jpg');
-            @include banner-small-m;
-        }
-    }
-
-    &--press-release {
-        background-image: url('../../assets/images/banner-press-release.jpg');
-
-        @include respond(mobile) {
-            background-image: url('../../assets/images/banner-press-release-m.jpg');
-            @include banner-small-m;
-        }
-    }
-
-    &--forex {
-        background-image: url('../../assets/images/banner-services-forex.jpg');
-
-        @include respond(mobile) {
-            background-image: url('../../assets/images/banner-services-forex-m.jpg');
-            @include banner-small-m--bc;
-        }
-
-        & > .banner-section__breadcrumbs {
-            & > a {
-                @include respond(mobile) {
-                    @include breadcrumbs--black;
-
-                    &:nth-of-type(1) {
-                        display: none;
-                    }
-                }
-            }
-        }
-
-        & > .banner-section__title {
-            @include respond(mobile) {
-                top: 90px !important;
-            }
-        }
-    }
-
-    &--billpay {
-        background-image: url('../../assets/images/banner-billpay.jpg');
-
-        @include respond(mobile) {
-            background-image: url('../../assets/images/banner-billpay-m.jpg');
-            @include banner-small-m--bc;
-        }
-
-        & > .banner-section__breadcrumbs {
-            & > a {
-                color: $white;
-                @include respond(mobile) {
-                    @include breadcrumbs--black;
-
-                    &:nth-of-type(1) {
-                        display: none;
-                    }
-                }
-            }
-        }
-
-        & > .banner-section__title {
-            @include respond(mobile) {
-                top: 90px !important;
-            }
-        }
-    }
-
-
-    &--gift-registry {
-        background-image: url('../../assets/images/banner-gift-registry.jpg');
-
-        @include respond(mobile) {
-            background-image: url('../../assets/images/banner-gift-registry-m.jpg');
-            @include banner-small-m--bc;
-        }
-
-        & > .banner-section__breadcrumbs {
-
-            & > a {
-                @include breadcrumbs--white;
-
-                @include respond(mobile) {
-                    @include breadcrumbs--gray;
-
-                    &:nth-of-type(1) {
-                        display: none;
-                    }
-                }
-            }
-        }
-        
-        & > .banner-section__title {
-            @include respond(mobile) {
-                top: 90px !important;
-                width: 187px;
-            }
-        }
-    }
-
-    &--gift-card {
-        background-image: url('../../assets/images/banner-gift-card.jpg');
-
-        @include respond(mobile) {
-            background-image: url('../../assets/images/banner-gift-card-m.jpg');
-            @include banner-small-m--bc;
-        }
-
-        & > .banner-section__breadcrumbs {
-            
-            & > a {
-                @include breadcrumbs--white;
-
-                @include respond(mobile) {
-                    @include breadcrumbs--gray;
-
-                    &:nth-of-type(1) {
-                        display: none;
-                    }
-                }
-            }
-        }
-        
-        & > .banner-section__title {
-            @include respond(mobile) {
-                top: 90px !important;
-                width: 187px;
-            }
-        }
-    }
-
-    &--gift-wrapping {
-        background-image: url('../../assets/images/banner-gift-wrapping.jpg');
-
-        @include respond(mobile) {
-            background-image: url('../../assets/images/banner-gift-wrapping-m.jpg');
-            @include banner-small-m--bc;
-        }
-
-        & > .banner-section__breadcrumbs {
-            
-            & > a {
-                @include breadcrumbs--white;
-
-                @include respond(mobile) {
-                    @include breadcrumbs--gray;
-
-                    &:nth-of-type(1) {
-                        display: none;
-                    }
-                }
-            }
-        }
-        
-        & > .banner-section__title {
-            @include respond(mobile) {
-                top: 90px !important;
-                width: 187px;
-            }
-        }
-    }
+  }
 }
 
 .banner-yolk {
-    background-image: url('../../assets/images/pattern-yolk.png');
-    background-position: center center;
-    width: 437px;
-    height: 350px;
-    position: absolute;
+  background-image: url("../../assets/images/pattern-yolk.png");
+  background-position: center center;
+  width: 437px;
+  height: 350px;
+  position: absolute;
 
-    @include respond(mobile) {
-       width: 74%;
-    }
+  @include respond(mobile) {
+    width: 74%;
+  }
 }
