@@ -365,6 +365,9 @@ p {
   letter-spacing: 1.6px;
   text-transform: uppercase;
 }
+.font-h1--center {
+  text-align: center;
+}
 .font-h2 {
   font-family: "Josefin Sans";
   font-size: 32px;
@@ -1176,7 +1179,7 @@ ul {
 .nav__upper .menu .categories,
 .nav__upper .menu .services,
 .nav__upper .menu .whatsnew {
-  margin-top: 15px;
+  margin-top: 16px;
   left: 50%;
   width: 308px;
   right: auto;
@@ -1469,6 +1472,9 @@ ul {
 .nav__upper-menu-item > a {
   position: relative;
   font-weight: 600;
+  font-family: "Open Sans";
+  font-size: 16px;
+  line-height: 24px;
 }
 .nav__upper-menu-item > a::after {
   content: "";
@@ -1587,8 +1593,10 @@ ul {
   color: #fff;
   cursor: pointer;
   font-size: 20px;
+}
+.nav__upper .search-container .search-main .search-button img {
   padding-right: 20px;
-  padding-top: 5px;
+  padding-bottom: 5px;
 }
 @media only screen and (max-width: 1024px) {
   .nav__upper .search-container .search-main .search-button {
@@ -1723,6 +1731,9 @@ ul {
     height: 56px;
     padding: 16px;
   }
+}
+.nav__lower .store-selector {
+  font-family: "Open Sans";
 }
 @media only screen and (max-width: 1024px) {
   .nav__lower .store-selector {
@@ -2489,6 +2500,7 @@ ul {
 @media only screen and (max-width: 360px) {
   .banner__featured:nth-of-type(1) {
     background-image: url("../images/new-banner.jpg");
+    height: 300px;
   }
 }
 .banner__content {
@@ -8387,14 +8399,15 @@ header {
   position: absolute;
   right: 4%;
   top: -24px;
-  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.15);
-  border-radius: 50%;
   z-index: 99;
 }
 .footer__messenger button {
   color: #007fff;
   font-size: 16px;
   line-height: 24px;
+}
+.footer__messenger button img {
+  margin: 0;
 }
 @media only screen and (max-width: 1024px) {
   .footer__messenger {
@@ -8406,12 +8419,16 @@ header {
     display: none;
   }
 }
+.footer img {
+  padding: 0;
+}
 .footer__messenger-mobile {
   display: none;
   left: 75%;
   position: relative;
   border-radius: 50%;
   z-index: 100;
+  background: #fff9f9;
 }
 @media only screen and (max-width: 1024px) {
   .footer__messenger-mobile {
@@ -8427,6 +8444,9 @@ header {
   color: #007fff;
   font-size: 16px;
   line-height: 24px;
+}
+.footer__messenger-mobile img {
+  padding: 0px;
 }
 .footer__content {
   padding: 48px 72px 50px 72px;
@@ -31126,17 +31146,26 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 
 #store-selector-drawer {
   display: none;
+  z-index: 9999;
+}
+@media only screen and (max-width: 1024px) {
+  #store-selector-drawer {
+    width: 266px;
+  }
+}
+@media only screen and (max-width: tablet) {
+  #store-selector-drawer {
+    width: 266px;
+  }
 }
 
 .make-store-selector-drawer {
-  overflow: hidden;
   position: absolute;
   top: 163px;
   left: 0;
   height: 82%;
   width: 399px;
   background: white;
-  z-index: 10;
 }
 .make-store-selector-drawer ul li > div {
   display: flex;
@@ -31393,6 +31422,180 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 .sel .selected {
   background-color: #0067b3;
   color: white;
+}
+
+.gift-section {
+  background: #fff9f9;
+}
+.gift-section h2,
+.gift-section h4,
+.gift-section h5 {
+  margin: 0;
+}
+.gift-section .container {
+  padding-top: 4%;
+}
+.gift-section .container .center {
+  text-align: center;
+  padding: auto;
+  margin: auto;
+}
+.gift-section__heading {
+  padding-bottom: 3.5%;
+}
+.gift-section__cards {
+  display: flex;
+  padding-bottom: 5%;
+}
+.gift-section__card {
+  background: #ffffff;
+  border-radius: 4px;
+  padding: 0;
+  width: 392px;
+  margin: 0 12px;
+}
+.gift-section__card-description {
+  padding: 18px 24px 32px 18px;
+}
+.gift-section__card-description p {
+  margin-top: 2%;
+  margin-bottom: 10%;
+}
+.gift-section__card-description .red {
+  color: #af111c;
+}
+
+.order-gift-section {
+  background: #ffffff;
+}
+.order-gift-section h2,
+.order-gift-section h5 {
+  margin: 0;
+}
+.order-gift-section button {
+  display: flex;
+  color: #161720;
+  border: 1px solid black;
+}
+.order-gift-section .container {
+  padding: 5%;
+}
+.order-gift-section .container .center {
+  text-align: center;
+  padding: auto;
+  margin: auto;
+}
+.order-gift-section__heading {
+  padding-bottom: 3.5%;
+}
+.order-gift-section__cards {
+  display: flex;
+  justify-content: center;
+}
+.order-gift-section__card {
+  background: #ffffff;
+  border-radius: 4px;
+  padding: 0;
+  width: 656px;
+  margin: 0 12px;
+}
+.order-gift-section__card-description p {
+  margin: 5%;
+  text-align: center;
+}
+
+.featured-video {
+  height: 584px;
+  background: #ffd95a;
+}
+.featured-video__pink {
+  background: #ea8c8c;
+  padding: 6%;
+  width: 689px;
+  height: 446px;
+  float: right;
+  color: #ffffff;
+}
+.featured-video__pink p {
+  color: #ffffff;
+}
+.featured-video__pink .bee {
+  color: #ffcd4e;
+}
+.featured-video__video img {
+  position: absolute;
+  top: 10%;
+  left: 8%;
+}
+
+.featured-categories {
+  background: #ffffff;
+}
+.featured-categories h2,
+.featured-categories h3,
+.featured-categories h5 {
+  margin: 0;
+}
+.featured-categories .container {
+  padding: 5%;
+}
+.featured-categories .container .center {
+  text-align: center;
+  padding: auto;
+  margin: auto;
+}
+.featured-categories__heading {
+  padding-bottom: 3.5%;
+}
+.featured-categories__cards {
+  display: flex;
+  justify-content: center;
+}
+.featured-categories__card {
+  border-radius: 4px;
+  padding: 0;
+  width: 311px;
+  margin: 0 12px;
+}
+.featured-categories__card-description h2 {
+  margin: 8%;
+  text-align: center;
+}
+
+.sm-cares {
+  background: #fff9f9;
+}
+.sm-cares h2,
+.sm-cares h5 {
+  margin: 0;
+}
+.sm-cares .container {
+  padding: 5%;
+}
+.sm-cares .container .center {
+  text-align: center;
+  padding: auto;
+  margin: auto;
+}
+.sm-cares__heading {
+  padding-bottom: 3.5%;
+}
+.sm-cares__cards {
+  display: flex;
+  justify-content: center;
+}
+.sm-cares__card {
+  padding: 0;
+}
+.sm-cares__card img {
+  margin: 0 12px;
+}
+.sm-cares__card-description p {
+  margin: 5%;
+  text-align: center;
+}
+.sm-cares__card-description .red {
+  color: #af111c;
 }
 
 /*# sourceMappingURL=style.min.css.map */

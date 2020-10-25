@@ -47,7 +47,7 @@
       .categories,
       .services,
       .whatsnew {
-        margin-top: 15px;
+        margin-top: 16px;
         left: 50%;
         width: 308px;
         right: auto;
@@ -328,6 +328,9 @@
         & > a {
           position: relative;
           font-weight: 600;
+          font-family: "Open Sans";
+          font-size: 16px;
+          line-height: 24px;
 
           &::after {
             content: "";
@@ -461,8 +464,11 @@
           color: #fff;
           cursor: pointer;
           font-size: 20px;
-          padding-right: 20px;
-          padding-top: 5px;
+
+          img {
+            padding-right: 20px;
+            padding-bottom: 5px;
+          }
 
           @include respond(tablet) {
             height: 32px;
@@ -591,6 +597,7 @@
     }
 
     & .store-selector {
+      font-family: "Open Sans";
       @include respond(tablet) {
         display: none;
       }

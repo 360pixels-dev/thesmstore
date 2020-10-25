@@ -1,0 +1,216 @@
+.gift-section {
+  background: #fff9f9;
+  h2,
+  h4,
+  h5 {
+    margin: 0;
+  }
+
+  .container {
+    padding-top: 4%;
+
+    & .center {
+      text-align: center;
+      padding: auto;
+      margin: auto;
+    }
+  }
+
+  &__heading {
+    padding-bottom: 3.5%;
+  }
+
+  &__cards {
+    display: flex;
+    padding-bottom: 5%;
+  }
+
+  &__card {
+    background: $white;
+    border-radius: 4px;
+    padding: 0;
+    width: 392px;
+    margin: 0 12px;
+
+    &-description {
+      padding: 18px 24px 32px 18px;
+      p {
+        margin-top: 2%;
+        margin-bottom: 10%;
+      }
+
+      & .red {
+        color: $blood-red;
+      }
+    }
+  }
+}
+
+.order-gift-section {
+  background: $white;
+  h2,
+  h5 {
+    margin: 0;
+  }
+
+  button {
+    display: flex;
+    color: $black;
+    border: 1px solid black;
+  }
+
+  .container {
+    padding: 5%;
+
+    & .center {
+      text-align: center;
+      padding: auto;
+      margin: auto;
+    }
+  }
+
+  &__heading {
+    padding-bottom: 3.5%;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__card {
+    background: $white;
+    border-radius: 4px;
+    padding: 0;
+    width: 656px;
+    margin: 0 12px;
+
+    &-description {
+      p {
+        margin: 5%;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.featured-video {
+  height: 584px;
+  background: #ffd95a;
+
+  &__pink {
+    background: $blush-pink;
+    padding: 6%;
+    width: 689px;
+    height: 446px;
+    float: right;
+
+    color: $white;
+
+    p {
+      color: $white;
+    }
+
+    & .bee {
+      color: $bee;
+    }
+  }
+
+  &__video {
+    img {
+      position: absolute;
+      top: 10%;
+      left: 8%;
+    }
+  }
+}
+
+.featured-categories {
+  background: $white;
+
+  h2,
+  h3,
+  h5 {
+    margin: 0;
+  }
+
+  .container {
+    padding: 5%;
+
+    & .center {
+      text-align: center;
+      padding: auto;
+      margin: auto;
+    }
+  }
+
+  &__heading {
+    padding-bottom: 3.5%;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__card {
+    border-radius: 4px;
+    padding: 0;
+    width: 311px;
+    margin: 0 12px;
+
+    &-description {
+      h2 {
+        margin: 8%;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.sm-cares {
+  background: #fff9f9;
+
+  h2,
+  h5 {
+    margin: 0;
+  }
+
+  .container {
+    padding: 5%;
+
+    & .center {
+      text-align: center;
+      padding: auto;
+      margin: auto;
+    }
+  }
+
+  &__heading {
+    padding-bottom: 3.5%;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__card {
+    padding: 0;
+
+    img {
+      margin: 0 12px;
+    }
+
+    &-description {
+      p {
+        margin: 5%;
+        text-align: center;
+      }
+
+      & .red {
+        color: $blood-red;
+      }
+    }
+  }
+}

@@ -112,6 +112,7 @@
 
       @include respond(360px) {
         background-image: url("../images/new-banner.jpg");
+        height: 300px;
       }
     }
   }

@@ -2,8 +2,6 @@ function openStoreSelector() {
     let drawer = document.getElementById("store-selector-drawer")
     let overlay = document.getElementById("store-selector-overlay")
 
-    
-
     if (drawer.style.display === 'block' || overlay.style.display === 'block') {
         drawer.style.display = "none";
         overlay.style.display = "none";
@@ -13,8 +11,6 @@ function openStoreSelector() {
         drawer.style.display = "block";
         overlay.style.display = "block";
     }
-
-
 }
 
 function closeStoreSelector() {
