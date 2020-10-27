@@ -94,8 +94,8 @@
   }
 }
 
-.featured-video {
-  height: 584px;
+.f-video {
+  height: 584px !important;
   background: #ffd95a;
 
   &__pink {
@@ -118,9 +118,9 @@
 
   &__video {
     img {
-      position: absolute;
-      top: 10%;
+      position: relative;
       left: 8%;
+      margin-top: 3.5%;
     }
   }
 }

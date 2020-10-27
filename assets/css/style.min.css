@@ -31532,11 +31532,11 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   text-align: center;
 }
 
-.featured-video {
-  height: 584px;
+.f-video {
+  height: 584px !important;
   background: #ffd95a;
 }
-.featured-video__pink {
+.f-video__pink {
   background: #ea8c8c;
   padding: 6%;
   width: 689px;
@@ -31544,16 +31544,16 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   float: right;
   color: #ffffff;
 }
-.featured-video__pink p {
+.f-video__pink p {
   color: #ffffff;
 }
-.featured-video__pink .bee {
+.f-video__pink .bee {
   color: #ffcd4e;
 }
-.featured-video__video img {
-  position: absolute;
-  top: 10%;
+.f-video__video img {
+  position: relative;
   left: 8%;
+  margin-top: 3.5%;
 }
 
 .featured-categories {
