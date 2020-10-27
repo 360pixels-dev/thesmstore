@@ -830,6 +830,33 @@ button {
   padding: 16px 24px;
   color: #ffffff;
 }
+.btn--primary-black {
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  height: 48px;
+  border: 1px solid #ffffff;
+  padding: 16px 24px;
+  background-color: #ffffff;
+  color: #161720;
+}
+.btn--primary-black:hover {
+  background-color: transparent;
+  color: #ffffff;
+  transition: 0.5s;
+}
+.btn--primary-black:hover::after {
+  content: "——";
+  letter-spacing: -4px;
+  margin-left: 16px;
+  transition: 0.2s;
+}
+.btn--primary-black::after {
+  color: #f86a6a;
+  content: "——";
+  letter-spacing: -2px;
+  margin-left: 8px;
+}
 .btn--primary:hover {
   background-color: #ffffff;
   color: #161720;
@@ -2416,10 +2443,6 @@ ul {
     background-size: 200% 80%;
   }
 }
-.banner__new-banner {
-  position: relative;
-  float: right;
-}
 .banner__shadow-gradient {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
   position: absolute;
@@ -2495,12 +2518,21 @@ ul {
   }
 }
 .banner__featured:nth-of-type(1) {
-  background-image: url("../images/new-banner.jpg");
+  background-image: url("../images/new-banner1.jpg");
 }
 @media only screen and (max-width: 360px) {
   .banner__featured:nth-of-type(1) {
-    background-image: url("../images/new-banner.jpg");
-    height: 300px;
+    background-image: url("../images/new-banner1.jpg");
+    height: 445px;
+  }
+}
+.banner__featured:nth-of-type(2) {
+  background-image: url("../images/new-banner2.jpg");
+}
+@media only screen and (max-width: 360px) {
+  .banner__featured:nth-of-type(2) {
+    background-image: url("../images/new-banner2.jpg");
+    height: 445px;
   }
 }
 .banner__content {
@@ -2547,7 +2579,7 @@ ul {
 }
 @media only screen and (max-width: 1024px) {
   .banner__pagination {
-    top: 95%;
+    top: 96%;
     left: 50%;
     display: flex;
     justify-content: center;
@@ -2556,7 +2588,7 @@ ul {
 }
 @media only screen and (max-width: tablet) {
   .banner__pagination {
-    top: 95%;
+    top: 96%;
     left: 50%;
     display: flex;
     justify-content: center;
@@ -2566,10 +2598,6 @@ ul {
 .banner__btn {
   display: block;
   margin-top: 8px;
-}
-.banner__btn .white a {
-  background: #ffffff;
-  color: #161720;
 }
 @media only screen and (max-width: 820px) {
   .banner__btn {
