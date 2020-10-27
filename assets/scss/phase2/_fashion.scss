@@ -1,0 +1,186 @@
+.header-banner,
+.shop-online {
+  height: 355px;
+}
+
+.header-banner {
+  margin-top: 11px;
+  background-image: url("../images/fashion-header-banner.png");
+}
+
+.sale {
+  background-color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 474px;
+
+  &__image {
+    position: relative;
+    bottom: 10%;
+    width: 1238px;
+    height: 250px;
+    background-image: url("../images/new-sale-banner.png");
+  }
+}
+
+.about-fashion {
+  height: 584px;
+  background: #fff9f9;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  &__left {
+    position: relative;
+    left: 0;
+    top: 15%;
+    background-image: url("../images/about-fashion1.png");
+    width: 376px;
+    height: 556px;
+    float: left;
+
+    & > button {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      right: auto;
+      transform: translate(-50%, 0);
+      margin-bottom: 10%;
+    }
+  }
+
+  &__right {
+    position: relative;
+    right: 0;
+    bottom: 15%;
+    background-image: url("../images/about-fashion2.png");
+    width: 376px;
+    height: 556px;
+    float: right;
+
+    & > button {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      right: auto;
+      transform: translate(-50%, 0);
+      margin-bottom: 10%;
+    }
+  }
+
+  &__content {
+    position: relative;
+
+    & > div {
+      padding: 23%;
+      text-align: center;
+
+      & > h1 {
+        font-size: 52px;
+        letter-spacing: 4px;
+        color: $blush-pink;
+        margin: 5% 0;
+      }
+
+      & > span,
+      p {
+        color: #656565;
+      }
+    }
+  }
+}
+
+.fashion-categories {
+  background: $white;
+
+  h2,
+  h3,
+  h5 {
+    margin: 0;
+  }
+
+  .container {
+    padding: 8% 0 5% 0;
+
+    & .center {
+      text-align: center;
+      padding: auto;
+      margin: auto;
+    }
+  }
+
+  &__heading {
+    padding-bottom: 3.5%;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__card {
+    border-radius: 4px;
+    padding: 0;
+    width: 311px;
+    margin: 0 25px;
+
+    &-description {
+      h2 {
+        margin: 8%;
+        text-align: center;
+      }
+    }
+
+    & > a,
+    a:hover,
+    a:visited {
+      text-decoration: none;
+      color: $black;
+    }
+  }
+}
+
+.fashion-featured-video {
+  height: 584px !important;
+  background: $cream;
+
+  &__pink {
+    background: $blush-pink;
+    padding: 6%;
+    width: 689px;
+    height: 446px;
+    float: right;
+
+    color: $white;
+
+    p {
+      color: $white;
+      width: 70%;
+      font-weight: 400;
+    }
+  }
+
+  &__video {
+    img {
+      position: relative;
+      left: 8%;
+      margin-top: 3.5%;
+    }
+  }
+}
+
+.shop-online {
+  background-color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 355px;
+
+  &__image {
+    position: relative;
+    width: 1238px;
+    height: 250px;
+    background-image: url("../images/shop-online-banner.png");
+  }
+}
