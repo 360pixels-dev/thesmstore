@@ -74,7 +74,6 @@
     position: relative;
     border-radius: 50%;
     z-index: 100;
-    background: #fff9f9;
 
     @include respond(tablet) {
       display: block;

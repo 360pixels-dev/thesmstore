@@ -53,6 +53,11 @@
     margin: 0;
   }
 
+  h5,
+  p {
+    color: $dark-gray;
+  }
+
   button {
     display: flex;
     color: $black;
@@ -85,10 +90,87 @@
     width: 656px;
     margin: 0 12px;
 
+    &-image1,
+    &-image2 {
+      cursor: pointer;
+      width: 656px;
+      height: 348px;
+
+      h2 {
+        position: relative;
+        top: 35%;
+        left: 3%;
+        color: $white;
+        width: 300px;
+      }
+    }
+
+    &-image1 {
+      background-image: url("../images/cards/card-order-gift1.png");
+    }
+
+    &-image2 {
+      background-image: url("../images/cards/card-order-gift2.png");
+    }
+
     &-description {
       p {
         margin: 5%;
         text-align: center;
+      }
+    }
+  }
+
+  @include respond(tablet) {
+    .container {
+      padding: 15px;
+      margin-bottom: 15%;
+    }
+
+    h2 {
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: 1.6px;
+    }
+
+    h5 {
+      font-size: 16px;
+      padding: 0 13px;
+    }
+
+    &__cards {
+      flex-wrap: wrap;
+    }
+
+    &__card {
+      &-image1,
+      &-image2 {
+        width: 330px;
+        height: 82px;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        h2 {
+          line-height: 24px;
+          width: 166px;
+          top: 25%;
+          left: 8%;
+        }
+      }
+
+      &-image1 {
+        background-image: url("../images/cards/card-order-gift1-m.png");
+      }
+
+      &-image2 {
+        background-image: url("../images/cards/card-order-gift2-m.png");
+      }
+
+      &-description {
+        p {
+          margin: 5% 0;
+          font-size: 16px;
+        }
       }
     }
   }

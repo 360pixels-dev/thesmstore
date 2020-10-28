@@ -1,3 +1,11 @@
+.fashion-nav {
+  background: transparent !important;
+
+  @include respond(tablet) {
+    background: $indigo !important;
+  }
+}
+
 .header-banner,
 .shop-online {
   height: 355px;
@@ -6,6 +14,27 @@
 .header-banner {
   margin-top: 11px;
   background-image: url("../images/fashion-header-banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  & > h1 {
+    color: $white;
+    position: relative;
+    top: 60%;
+    left: 15%;
+  }
+
+  @include respond(tablet) {
+    margin-top: 56px;
+    height: 167px;
+    background-size: contain auto;
+
+    & > h1 {
+      top: 48%;
+      left: 10%;
+    }
+  }
 }
 
 .sale {
@@ -21,72 +50,191 @@
     width: 1238px;
     height: 250px;
     background-image: url("../images/new-sale-banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @include respond(tablet) {
+    height: 274px;
+
+    &__image {
+      width: 336px;
+      height: 177px;
+      padding: 12px;
+
+      background-size: 336px 177px;
+      background-size: cover;
+      background-position: center;
+      bottom: 0%;
+
+      &-content {
+        color: $white;
+        padding-left: 38%;
+
+        h5 {
+          margin-bottom: 0;
+        }
+
+        h1 {
+          margin: 0;
+        }
+
+        p {
+          color: $white;
+          font-size: 12px;
+          line-height: 18px;
+          margin-bottom: 10px;
+        }
+      }
+    }
   }
 }
 
 .about-fashion {
-  height: 584px;
   background: #fff9f9;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 
-  &__left {
-    position: relative;
-    left: 0;
-    top: 15%;
-    background-image: url("../images/about-fashion1.png");
-    width: 376px;
-    height: 556px;
-    float: left;
+  &__mobile-container {
+    display: none;
+    height: 522px;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 10% 0;
 
-    & > button {
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      right: auto;
-      transform: translate(-50%, 0);
-      margin-bottom: 10%;
+    img {
+      width: 160px;
+      height: 245px;
     }
-  }
 
-  &__right {
-    position: relative;
-    right: 0;
-    bottom: 15%;
-    background-image: url("../images/about-fashion2.png");
-    width: 376px;
-    height: 556px;
-    float: right;
-
-    & > button {
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      right: auto;
-      transform: translate(-50%, 0);
-      margin-bottom: 10%;
+    button {
+      background: transparent;
+      border: none;
+      width: 160px;
+      padding: 0;
+      text-align: left;
     }
-  }
 
-  &__content {
-    position: relative;
-
-    & > div {
-      padding: 23%;
+    &__content {
       text-align: center;
+      flex-grow: 2;
+      justify-content: center;
+      align-items: flex-start;
 
-      & > h1 {
-        font-size: 52px;
-        letter-spacing: 4px;
+      h1 {
         color: $blush-pink;
-        margin: 5% 0;
       }
 
-      & > span,
       p {
-        color: #656565;
+        color: #2c2e2f;
       }
+
+      &-link-container {
+        width: 100%;
+        padding-top: 8%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__left,
+        &__right {
+          margin: 8px;
+          width: 160px;
+        }
+
+        &__left {
+          justify-content: flex-start !important;
+        }
+
+        &__right {
+          justify-content: flex-end !important;
+        }
+      }
+    }
+  }
+
+  &__desktop-container {
+    display: flex;
+    height: 584px;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+
+    &__left {
+      justify-content: flex-start;
+    }
+
+    &__right {
+      justify-content: flex-end;
+    }
+
+    &__left {
+      position: relative;
+      left: 0;
+      top: 15%;
+      background-image: url("../images/about-fashion1.png");
+      width: 376px;
+      height: 556px;
+
+      & > button {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        right: auto;
+        transform: translate(-50%, 0);
+        margin-bottom: 10%;
+      }
+    }
+
+    &__right {
+      position: relative;
+      right: 0;
+      bottom: 15%;
+      background-image: url("../images/about-fashion2.png");
+      width: 376px;
+      height: 556px;
+
+      & > button {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        right: auto;
+        transform: translate(-50%, 0);
+        margin-bottom: 10%;
+      }
+    }
+
+    &__content {
+      position: relative;
+
+      & > div {
+        padding: 23%;
+        text-align: center;
+
+        & > h1 {
+          font-size: 52px;
+          letter-spacing: 4px;
+          color: $blush-pink;
+          margin: 5% 0;
+        }
+
+        & > span,
+        p {
+          color: #656565;
+        }
+      }
+    }
+  }
+
+  @include respond(tablet) {
+    &__desktop-container {
+      display: none;
+    }
+
+    &__mobile-container {
+      display: flex;
     }
   }
 }
@@ -116,19 +264,20 @@
 
   &__cards {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
   }
 
   &__card {
+    width: 254px;
     border-radius: 4px;
     padding: 0;
-    width: 311px;
     margin: 0 25px;
 
     &-description {
       h2 {
         margin: 8%;
         text-align: center;
+        color: $dark-gray;
       }
     }
 
@@ -139,33 +288,179 @@
       color: $black;
     }
   }
+
+  @include respond(tablet) {
+    &__cards {
+      padding: 10% 0;
+
+      justify-content: center;
+    }
+
+    &__card {
+      width: 150px;
+      margin: 0 7.5px;
+
+      img {
+        height: 150px;
+        width: 150px;
+      }
+
+      h2 {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
 }
 
 .fashion-featured-video {
   height: 584px !important;
   background: $cream;
 
-  &__pink {
-    background: $blush-pink;
-    padding: 6%;
-    width: 689px;
-    height: 446px;
-    float: right;
+  @include respond(mobile) {
+    height: 551px !important;
+  }
 
-    color: $white;
+  &__mobile-container {
+    display: none;
+    justify-content: flex-end;
 
-    p {
-      color: $white;
-      width: 70%;
-      font-weight: 400;
+    &__pink {
+      display: flex;
+      justify-content: flex-end;
+      background: $blush-pink;
+      position: absolute;
+      width: 276px;
+      height: 497px;
+      padding-right: 12px;
+
+      &--content {
+        padding-top: 24px;
+        color: $white;
+        margin-left: 10%;
+        text-align: right;
+
+        h2 {
+          margin-top: 1%;
+          font-size: 26px;
+          margin-right: 18%;
+          margin-bottom: 0;
+        }
+
+        p {
+          color: $white;
+          text-align: left;
+          margin-left: 26%;
+          font-weight: 400;
+        }
+
+        &__video {
+          padding-top: 3%;
+          position: relative;
+          color: $white;
+          z-index: 20;
+          margin: 3% 37%;
+
+          img:nth-of-type(1) {
+            width: 335px;
+            height: 215px;
+          }
+
+          & div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
     }
   }
 
-  &__video {
-    img {
-      position: relative;
-      left: 8%;
-      margin-top: 3.5%;
+  &__desktop-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+
+    &__pink {
+      display: flex;
+      justify-content: flex-end;
+      background: $blush-pink;
+      position: absolute;
+      padding: 5% 15% 11% 100px;
+
+      &--description {
+        color: $white;
+
+        padding: 7% 3%;
+
+        h2,
+        p {
+          width: 200%;
+        }
+
+        p {
+          color: $white;
+          font-weight: 400;
+        }
+      }
+    }
+
+    @include respond(large-screen) {
+      &__video {
+        position: relative;
+        color: $white;
+        width: 704px;
+        z-index: 20;
+        margin: 3% 37%;
+
+        & div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+
+    @include respond(desktop) {
+      &__video {
+        position: relative;
+        color: $white;
+        width: 704px;
+        z-index: 20;
+        margin: 3% 45%;
+
+        & div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+
+    @include respond(1600px) {
+      &__video {
+        position: relative;
+        color: $white;
+        width: 704px;
+        z-index: 20;
+        margin: 3% 41%;
+
+        & div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  @include respond(mobile) {
+    &__desktop-container {
+      display: none;
+    }
+
+    &__mobile-container {
+      display: flex;
     }
   }
 }
@@ -182,5 +477,23 @@
     width: 1238px;
     height: 250px;
     background-image: url("../images/shop-online-banner.png");
+    background-size: contain;
+  }
+
+  @include respond(tablet) {
+    height: 204px;
+    margin-bottom: 30px;
+
+    &__image {
+      width: 336px;
+      height: 177px;
+      padding: 12px;
+      margin-top: 50px;
+
+      background-size: 336px 177px;
+      background-size: cover;
+      background-position: center;
+      bottom: 0%;
+    }
   }
 }

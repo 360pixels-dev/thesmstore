@@ -213,7 +213,7 @@
             <!-- /NAV UPPER -->
 
             <!-- NAV LOWER -->
-            <nav class="nav__lower nav_lower--default nav__lower--index container-fluid" style="background: transparent;">
+            <nav class="nav__lower nav_lower--default nav__lower--index container-fluid fashion-nav">
                 <div class="store-selector">
                     <p class="white">
                         <span class="white font-h5--uppercase font-h5--two-space">My Store <span class="thin-orange">(Closes at 9PM)</span></span>
@@ -326,8 +326,10 @@
 
         <!-- BANNER IMAGE -->
         <section class="header-banner container-fluid">
+
+            <h1 class="font-hero">Fashion</h1>
             
-            <!-- <div class="banner__shadow-gradient"></div> -->
+            <div class="banner__shadow-gradient"></div>
             
         </section>
         <!-- /BANNER IMAGE -->
@@ -337,7 +339,10 @@
 
             <div class="sale__image">
                 <div class="sale__image-content">
-                    
+                    <h5 class="font-eyebrow-medium">Women's Bags</h5>
+                    <h1 class="font-h1-m">10 on Sale</h1>
+                    <p>Lorem Ipsum Dolor Set</p>
+                    <button class="btn--primary btn--primary--white-line font-cta">See Catalog</button>
                 </div>
             </div>
 
@@ -345,23 +350,46 @@
         <!-- /SALE -->
 
         <!-- ABOUT FASHION -->
-        <div class="about-fashion">
-            <div class="about-fashion__left">
-                <button class="btn--primary-black font-cta">Learn More</button>
-            </div>
-
-            <div class="about-fashion__content">
-                <div>
-                    <span class="font-eyebrow">Lorem Ipsum Dolor Sit Amet</span>
-                    <h1 class="font-h1">All About Fashion</h1>
-                    <p class="normal-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
+        <section class="about-fashion">
+            <div class="about-fashion__mobile-container">
+                <div class="about-fashion__mobile-container__content">
+                    <h1 class="font-hero-m">All About Fashion</h1>
+                    <p class="normal-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <div class="about-fashion__mobile-container__content-link-container">
+                        <div class="about-fashion__mobile-container__content-link-container__left">
+                            <img src="./assets/images/about-fashion1.png" alt="">
+                            <button class="btn--primary-black font-cta">Learn More</button>
+                        </div>
+            
+                        <div class="about-fashion__mobile-container__content-link-container__right">
+                            <img src="./assets/images/about-fashion2.png" alt="">
+                            <button class="btn--primary-black font-cta">Learn More</button>
+                        </div>
+                    </div>
+                            
                 </div>
             </div>
 
-            <div class="about-fashion__right">
-                <button class="btn--primary-black font-cta">Learn More</button>
+            <div class="about-fashion__desktop-container">
+                <div class="about-fashion__desktop-container__left">
+                    <button class="btn--primary-black font-cta">Learn More</button>
+                </div>
+    
+                <div class="about-fashion__desktop-container__content">
+                    <div>
+                        <span class="font-eyebrow">Lorem Ipsum Dolor Sit Amet</span>
+                        <h1 class="font-h1">All About Fashion</h1>
+                        <p class="normal-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+    
+                <div class="about-fashion__desktop-container__right">
+                    <button class="btn--primary-black font-cta">Learn More</button>
+                </div>
             </div>
-        </div>
+
+            
+        </section>
         <!-- /ABOUT FASHION -->
 
         <!-- FASHION CATEGORIES -->
@@ -403,9 +431,7 @@
                             </div>
                         </a>
                     </div>
-                </div>
 
-                <div class="fashion-categories__cards">
                     <div class="fashion-categories__card">
                         <a href="#">
                             <img src="./assets/images/cards/card-mens-apparel.png" alt="">
@@ -456,14 +482,18 @@
 
                 <div class="order-gift-section__cards">
                     <div class="order-gift-section__card">
-                        <img src="./assets/images/cards/card-order-gift1.png" alt="">
+                        <div class="order-gift-section__card-image1">
+                            <h2 class="font-h1 font-h1--center">Next-Day Delivery</h2>
+                        </div>
                         <div class="order-gift-section__card-description">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                         </div>
                     </div>
                     
                     <div class="order-gift-section__card">
-                        <img src="./assets/images/cards/card-order-gift2.png" alt="">
+                        <div class="order-gift-section__card-image2">
+                            <h2 class="font-h1 font-h1--center">Curbside Pick-up</h2>
+                        </div>
                         <div class="order-gift-section__card-description">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                         </div>
@@ -477,15 +507,43 @@
 
         <!-- FEATURED VIDEO -->
         <section class="fashion-featured-video container-fluid">
-            <div class="fashion-featured-video__pink">
-                <span>Featured Video</span>
-                <h2 class="font-h1">Video Title</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <div class="fashion-featured-video__desktop-container">
+                <div class="fashion-featured-video__desktop-container__pink" style="display: flex; justify-content: flex-end;">
+                    <div class="fashion-featured-video__desktop-container__pink--description">
+                        <span>Featured Video</span>
+                        <h2 class="font-h1">Video Title</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </div>
+                </div>
+
+                <div class="fashion-featured-video__desktop-container__video">
+                    <a href="#">
+                        <div class="fasion-featured-video__desktop-container__video--video">
+                            <img src="./assets/images/fashion-featured-video.png" alt="">
+                            <img src="./assets/images/play-video.svg" alt="" style="position: absolute;">
+                        </div>
+                    </a>
+                </div>
             </div>
 
-            <div class="fashion-featured-video__video">
-                <img src="./assets/images/fashion-featured-video.png" alt="">
+            <div class="fashion-featured-video__mobile-container">
+                <div class="fashion-featured-video__mobile-container__pink" style="display: flex; justify-content: flex-end;">
+                    <div class="fashion-featured-video__mobile-container__pink--content">
+                        <span>Featured Video</span>
+                        <div class="fashion-featured-video__mobile-container__pink--content__video">
+                            <a href="#">
+                                <div class="fasion-featured-video__mobile-container__pink--content__video-container">
+                                    <img src="./assets/images/fashion-featured-video.png" alt="">
+                                    <img src="./assets/images/play-video.svg" alt="" style="position: absolute;">
+                                </div>
+                            </a>
+                        </div>
+                        <h2 class="font-h1">Video Title</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+                    </div>
+                </div>
             </div>
+
         </section>
         <!-- /FEATURED VIDEO -->
 
