@@ -416,7 +416,7 @@
                     width: 100%;
                 }
 
-                &.active {
+                & > .active {
                     & > .accordion__header {
                         & > img {
                             transform: rotate(180deg);
@@ -537,7 +537,8 @@
             flex-wrap: wrap;
 
             & > span {
-                background: url("../../assets/images/icons/tag-close.svg") no-repeat right 3px center $cerulean;
+                background: url("../../assets/images/icons/tag-close.svg")
+                    no-repeat right 3px center $cerulean;
                 background-color: $cerulean;
                 height: 31px;
                 padding: 7px 25px 7px 8px;
@@ -996,7 +997,8 @@
                     height: 40px;
                     width: 122px;
                     padding: 9px 0 9px 16px;
-                    background: url("../../assets/images/icons/angle-down-black.svg") 90% / 8% no-repeat $white;
+                    background: url("../../assets/images/icons/angle-down-black.svg")
+                        90% / 8% no-repeat $white;
                     border: none;
                     outline: none;
                     border: none;
@@ -1011,7 +1013,8 @@
                     -webkit-appearance: none;
                     -moz-appearance: none;
                     appearance: none;
-                    background: url("../../assets/images/icons/angle-down-black.svg") 90% / 8% no-repeat $white;
+                    background: url("../../assets/images/icons/angle-down-black.svg")
+                        90% / 8% no-repeat $white;
                     border: 1px solid $gray;
                     outline: none;
 

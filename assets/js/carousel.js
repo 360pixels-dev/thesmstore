@@ -90,9 +90,20 @@ $(document).ready(function() {
             $('.featured-events__slider').append(
             `<div class="featured-events__slider-event ${eventsArr[x].isActive ? 'active' : ''}">
                 <img src="${eventsArr[x].url}" alt="">
-                <div>
-                    <p class="font-cta">${eventsArr[x].month.substr(0,3)}</p>
-                    <p class="font-hero-m">${eventsArr[x].day}</p>
+                <div class="gift-section__card-description">
+                    <h3 class="featured-events__details-title">${eventsArr[0].title}</h3>
+                    <p class="featured-events__details-description">${eventsArr[0].desc}</p>
+                    <div class="featured-events__details-datetime">
+                        <img src="./assets/images/icons/icon-clock.svg" alt="">
+                        <span class="font-eyebrow">${eventsArr[0].month + eventsArr[0].day}</span>
+                    </div>
+            
+                    <div class="featured-events__details-venue">
+                        <img src="./assets/images/icons/icon-location.svg" alt="">
+                        <p class="text-semibold">${eventsArr[0].branch}</p>
+                    </div>
+            
+                    <a href="${eventsArr[0].pageUrl}" class="btn--text-link font-cta">Learn more</a>
                 </div>
             </div>
             `);

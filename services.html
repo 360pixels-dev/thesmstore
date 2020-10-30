@@ -7,6 +7,9 @@
     <title>SM Store</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" />
+    
     <link rel="stylesheet" href="./assets/css/w3.min.css">
     <link rel="stylesheet" href="./assets/css/style.min.css">
 </head>
@@ -347,6 +350,68 @@
         </section>
         <!-- /FEATURED SERVICES -->
 
+        <!-- FEATURED SERVICES MOBILE -->
+        <section class="featured-services-mobile container-fluid">
+            <div class="container" style="margin: 0;">
+                <h5 class="font-h5--uppercase">Featured Services</h5>
+                <img src="./assets/images/call-to-deliver.png" alt="">
+                <h1 class="font-h1">Call to Deliver</h1>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p>
+            </div>
+        </section>
+        <!-- /FEATURED SERVICES MOBILE -->
+
+        <!-- MOBILE GIFT CARDS CAROUSEL -->
+
+        <section class="mobile-carousel-gift-section container-fluid">
+            <div class="container">
+                <div class="mobile-carousel-__heading">
+                    <h5 class="font-h5--uppercase" style="color: black; padding: 0 12px; font-size: 18px;">Gifts</h5>
+                </div>
+
+                <div class="mobile-carousel-gift-section__cards">
+                    <div class="mobile-carousel-gift-section__card carousel-item active">
+                        <img src="./assets/images/cards/card-services-gift1.png" alt="">
+                        <div class="mobile-carousel-gift-section__card-description">
+                            <h4 class="font-h1-m">Gift Registry</h4>
+                            <p>Pellentesque id volutpat arcu. In pellentesque nisi vitae elit pharetra.</p>
+                            <a href="#" class="btn--text-link font-cta">Learn More</a>
+                        </div>
+                    </div>
+                    
+                    <div class="mobile-carousel-gift-section__card">
+                        <img src="./assets/images/cards/card-services-gift2.png" alt="">
+                        <div class="mobile-carousel-gift-section__card-description">
+                            <h4 class="font-h1-m">Gift Cards</h4>
+                            <p>Pellentesque id volutpat arcu. In pellentesque nisi vitae elit pharetra.</p>
+                            <a href="#" class="btn--text-link font-cta">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="mobile-carousel-gift-section__card">
+                        <img src="./assets/images/cards/card-services-gift3.png" alt="">
+                        <div class="mobile-carousel-gift-section__card-description">
+                            <h4 class="font-h1-m">Gift Wrapping</h4>
+                            <p>Pellentesque id volutpat arcu. In pellentesque nisi vitae elit pharetra.</p>
+                            <a href="#" class="btn--text-link font-cta">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="controllers">
+                    <button id="leftArrow" class="controls__arrow controls__arrow--left leftArrow" href="">
+                        <img src="./assets/images/arrow-tail-left.svg" alt="">
+                    </button>
+                    <button id="rightArrow" class="controls__arrow controls__arrow--right rightArrow" href="">
+                        <img src="./assets/images/arrow-tail-right.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- /MOBILE GIFT CARDS CAROUSEL -->
+
         <!-- GIFT CARDS -->
         <section class="gift-section container-fluid">
             <div class="container">
@@ -354,8 +419,8 @@
                     <h5 class="font-h5--uppercase" style="color: black; padding: 0 12px; font-size: 18px;">Gifts</h5>
                 </div>
 
-                <div class="gift-section__cards">
-                    <div class="gift-section__card">
+                <div class="gift-section__cards ">
+                    <div class="gift-section__card carousel-item active">
                         <img src="./assets/images/cards/card-services-gift1.png" alt="">
                         <div class="gift-section__card-description">
                             <h4 class="font-h1-m">Gift Registry</h4>
@@ -676,10 +741,15 @@
 
 <!-- IMPORTS -->
 <script src="assets/js/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous"></script>
+
 
 <!-- CUSTOM JS -->
 <script src="assets/js/main.js"></script>
+<script src="assets/js/bcSwipe.min.js"></script>
 <script src="assets/js/carousel.js"></script>
+<script src="assets/js/newmobilecarousel.js"></script>
 <script src="assets/js/footeraccordion.js"></script>
 <script src="assets/js/mobiledropdown.js"></script>
 <script src="assets/js/storeselector.js"></script>

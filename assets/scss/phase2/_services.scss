@@ -26,6 +26,10 @@
 }
 
 .featured-services {
+    @include respond(mobile) {
+        display: none;
+    }
+
     height: 527px;
 
     display: flex;
@@ -57,6 +61,139 @@
     }
 }
 
+.featured-services-mobile {
+    display: none;
+
+    @include respond(mobile) {
+        display: flex;
+        align-items: center;
+    }
+
+    height: 527px;
+
+    & .container {
+        vertical-align: middle;
+        img {
+            height: 215px;
+            width: 335px;
+
+            padding: auto;
+            margin: 5% auto;
+        }
+
+        h5 {
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: 2px;
+            padding: 0;
+            margin: 0;
+            color: $black;
+        }
+
+        h1 {
+            text-transform: none;
+            font-size: 32px;
+            line-height: 40px;
+            letter-spacing: 1.6px;
+        }
+
+        p {
+            color: $dark-gray;
+        }
+    }
+}
+
+.mobile-carousel-gift-section {
+    display: none;
+    background: #fff9f9;
+
+    h2,
+    h4,
+    h5 {
+        margin: 0;
+    }
+
+    @include respond(mobile) {
+        display: block;
+    }
+
+    .container {
+        padding-top: 15%;
+        padding-bottom: 15%;
+        margin: 0;
+        background: #fff9f9;
+
+        & .center {
+            text-align: center;
+            padding: auto;
+            margin: auto;
+        }
+    }
+
+    .controllers {
+        button {
+            background: transparent;
+        }
+    }
+
+    &__heading {
+        padding-bottom: 3.5%;
+    }
+
+    &__cards {
+        display: flex;
+        padding: 5% 0;
+        width: 360px;
+        background: #fff9f9 !important;
+    }
+
+    &__card {
+        background: $white;
+        border-radius: 4px;
+        padding: 0;
+        width: 304px;
+        height: 352px;
+        margin: 0 4px;
+
+        img {
+            width: 304px;
+            height: 192px;
+        }
+
+        a {
+            margin-bottom: 4%;
+        }
+
+        &-description {
+            padding: 18px 24px 32px 18px;
+            p {
+                margin-top: 2%;
+                margin-bottom: 5%;
+                width: 304px;
+            }
+
+            & .red {
+                color: $blood-red;
+            }
+        }
+    }
+}
+
+.slick-current.slick-active {
+    @include respond(820px) {
+        // margin: 0 40px 0 60px !important;
+        width: calc(100vw - 45px) !important;
+    }
+}
+
+.slick-slide div div {
+    width: auto !important;
+}
+
+.slick-slider {
+    background: #fff9f9;
+}
+
 .instore-services {
     &.container {
         margin-top: 5%;
@@ -71,10 +208,10 @@
         background: $opal;
         border-radius: 4px;
         box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
-        height: 245px;
-        width: 384px;
-        padding: 28px 24px;
-        margin: 16px 12px;
+        height: auto;
+        width: 347px;
+        padding: 30px 16px;
+        margin: 16px 6px;
         transition: 0.6s ease-out;
 
         &:hover {
@@ -92,8 +229,8 @@
             h1 {
                 line-height: 28px;
                 padding-left: 19px;
-                letter-spacing: 4px;
-                font-size: 20px;
+                letter-spacing: 1.6px;
+                font-size: 16px;
             }
         }
     }
