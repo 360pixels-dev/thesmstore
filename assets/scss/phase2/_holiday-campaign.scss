@@ -288,16 +288,69 @@
     align-items: center;
     height: 355px;
 
+    &__thumbnail {
+        background: linear-gradient(263.77deg, #fde514 11.15%, #c63b44 84.73%);
+        width: 493px;
+        height: 137px;
+        display: flex;
+        margin: 57px 0 57px 65px;
+        justify-content: center;
+
+        h1 {
+            font-size: 144px;
+            color: $white;
+            margin-top: 25px;
+        }
+
+        @include respond(tablet) {
+            display: none;
+        }
+    }
+
+    &__mobile-thumbnail {
+        display: none;
+
+        @include respond(tablet) {
+            display: flex;
+            align-items: center;
+            padding-top: 10px;
+
+            width: 110px;
+            height: 143px;
+
+            margin-right: 14px;
+
+            background: linear-gradient(
+                263.77deg,
+                #fde514 11.15%,
+                #c63b44 84.73%
+            );
+
+            h1 {
+                margin-top: 16px;
+                font-size: 96px;
+                text-align: right;
+                line-height: 76px;
+                color: $white;
+            }
+        }
+    }
+
     &__image {
         position: relative;
         width: 1238px;
         height: 250px;
-        background-image: url("../images/holiday-campaign-promo-banner.png");
-        background-size: contain;
+        background: linear-gradient(90deg, #fde514 0%, #c63b44 100%);
+        display: flex;
+        justify-content: space-around;
 
         &-content {
             color: $white;
-            padding: 2% 0 0 58%;
+            padding: 25px 120px 0 0;
+
+            h1 {
+                margin: 10px 0 0 0;
+            }
 
             h5 {
                 margin-bottom: 0;
@@ -319,11 +372,20 @@
 
     @include respond(tablet) {
         height: 274px;
+        padding: 24px 0 0 0;
+
+        &__thumbnail {
+            h1 {
+                width: 100%;
+                height: 100%;
+            }
+        }
 
         &__image {
             margin: 12px;
+            padding: 12px;
             width: 100%;
-            height: 90%;
+            height: 177px;
 
             background-size: 336px 177px;
             background-size: cover;
@@ -337,9 +399,13 @@
                 display: flex;
                 flex-direction: column;
                 padding: 10 % 10% 0 0;
+                width: 65%;
 
                 h5 {
                     margin-bottom: 0;
+                    font-size: 12px;
+                    letter-spacing: 2px;
+                    line-height: 18px;
                 }
 
                 h1 {
@@ -398,6 +464,31 @@
 
         h2 {
             letter-spacing: normal;
+        }
+    }
+
+    @include respond(tablet) {
+        background: $white;
+        span {
+            margin-left: 25px;
+        }
+        &__cards {
+            flex-wrap: wrap;
+            padding: 0;
+        }
+        &__card {
+            width: 160px;
+            margin: 8px;
+
+            img {
+                height: 245px;
+                width: 160px;
+                margin-bottom: 17px;
+            }
+
+            h2 {
+                margin-bottom: 32px;
+            }
         }
     }
 }
