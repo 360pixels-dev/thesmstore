@@ -32949,7 +32949,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 .holiday-campaign-main-content__container {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   padding: 5% 0;
 }
 .holiday-campaign-main-content__container img {
@@ -32974,7 +32974,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   display: flex;
   align-items: flex-end;
   position: absolute;
-  margin-top: 6%;
+  margin-top: 110px;
   float: left;
   background: #ffeecd;
   height: 497px;
@@ -32985,7 +32985,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   align-items: flex-end;
   justify-content: flex-end;
   position: absolute;
-  margin: 3% 0 0 40%;
+  margin: 45px 0 0 600px;
   background: #ffeecd;
   height: 497px;
   width: 624px;
@@ -33020,6 +33020,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 .holiday-campaign-main-content__description-left h1 {
   line-height: 48px;
+  letter-spacing: 0;
 }
 .holiday-campaign-main-content__description-left h5 {
   font-size: 18px;
