@@ -242,6 +242,9 @@
     }
 
     @include respond(tablet) {
+        &__cards {
+            width: 100%;
+        }
         &__card {
             background: $opal;
             border-radius: 4px;

@@ -32636,6 +32636,9 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   font-size: 16px;
 }
 @media only screen and (max-width: 1024px) {
+  .instore-services__cards {
+    width: 100%;
+  }
   .instore-services__card {
     background: #fafbfc;
     border-radius: 4px;
@@ -32665,6 +32668,9 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   }
 }
 @media only screen and (max-width: tablet) {
+  .instore-services__cards {
+    width: 100%;
+  }
   .instore-services__card {
     background: #fafbfc;
     border-radius: 4px;
