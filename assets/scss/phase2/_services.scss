@@ -207,6 +207,7 @@
     &__cards {
         display: flex;
         flex-wrap: wrap;
+        width: 1500px;
     }
 
     &__card {
@@ -214,9 +215,9 @@
         border-radius: 4px;
         box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
         height: auto;
-        width: 347px;
-        padding: 30px 16px;
-        margin: 16px 6px;
+        width: 396px;
+        padding: 30px 24px;
+        margin: 16px 12px;
         transition: 0.6s ease-out;
 
         &:hover {
@@ -236,6 +237,39 @@
                 padding-left: 19px;
                 letter-spacing: 1.6px;
                 font-size: 16px;
+            }
+        }
+    }
+
+    @include respond(tablet) {
+        &__card {
+            background: $opal;
+            border-radius: 4px;
+            box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
+            height: auto;
+            width: 347px;
+            padding: 30px 16px;
+            margin: 16px 6px;
+            transition: 0.6s ease-out;
+
+            &:hover {
+                box-shadow: none;
+                transition: 0.2s ease-out;
+                cursor: pointer;
+            }
+
+            &-icontext {
+                display: flex;
+                align-items: center;
+                height: 60px;
+                margin-bottom: 5%;
+
+                h1 {
+                    line-height: 28px;
+                    padding-left: 19px;
+                    letter-spacing: 1.6px;
+                    font-size: 16px;
+                }
             }
         }
     }
