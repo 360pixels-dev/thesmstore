@@ -53,6 +53,8 @@
 }
 
 .holiday-campaign-main-content {
+    background: $white;
+
     &__container {
         width: 100%;
         display: flex;
@@ -232,6 +234,49 @@
                     height: 30px;
                 }
             }
+        }
+    }
+}
+
+.more-from-sm {
+    background: #fff9f9;
+
+    span {
+        margin-top: 40px;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24.51px;
+        letter-spacing: 1.5px;
+
+        position: relative;
+        left: -3%;
+    }
+
+    .container {
+        padding: 40px 0 0 0;
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__card {
+        width: 311px;
+        margin: 40px 12.5px 20px 12.5px;
+        text-align: center;
+
+        img,
+        h2 {
+            width: auto;
+        }
+
+        img {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            letter-spacing: normal;
         }
     }
 }
