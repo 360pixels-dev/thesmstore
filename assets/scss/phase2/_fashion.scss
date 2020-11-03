@@ -89,9 +89,8 @@
         &__image {
             margin: 12px;
             width: 100%;
-            height: 90%;
+            height: 80%;
 
-            background-size: 336px 177px;
             background-size: cover;
             background-position: center;
             bottom: 0%;
@@ -102,7 +101,8 @@
                 color: $white;
                 display: flex;
                 flex-direction: column;
-                padding: 10 % 10% 0 0;
+                justify-content: center;
+                padding: 0% 5% 0 2%;
 
                 h5 {
                     margin-bottom: 0;
@@ -513,6 +513,7 @@
         height: 250px;
         background-image: url("../images/shop-online-banner.png");
         background-size: contain;
+        background-repeat: no-repeat;
 
         &-content {
             color: $white;
@@ -545,31 +546,36 @@
     }
 
     @include respond(tablet) {
-        height: 204px;
-        margin-bottom: 30px;
+        height: 274px;
+        padding: 24px 0 0 0;
 
         &__image {
-            width: 336px;
-            height: 177px;
-            padding: 12px;
-            margin-top: 50px;
+            margin: 12px;
+            width: 100%;
+            height: 80%;
 
-            background-size: 336px 177px;
             background-size: cover;
             background-position: center;
             bottom: 0%;
+            display: flex;
+            justify-content: flex-end;
 
             &-content {
                 color: $white;
-                padding-left: 33%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0% 5% 0 2%;
+                width: 65%;
 
                 h5 {
-                    margin: 0;
+                    margin-bottom: 0;
                 }
 
                 h1 {
-                    text-transform: none;
-                    letter-spacing: 1.6px;
+                    margin: 0;
+                    font-size: 20px;
+                    line-height: 28px;
                 }
 
                 p {
@@ -580,10 +586,7 @@
                 }
 
                 button {
-                    font-size: 12px;
-                    line-height: 16.34px;
-                    padding: 0 24px;
-                    height: 30px;
+                    padding: 0;
                 }
             }
         }

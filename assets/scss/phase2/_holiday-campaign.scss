@@ -19,8 +19,11 @@
         background-size: contain auto;
 
         & > h1 {
-            top: 48%;
+            top: 35%;
             left: 10%;
+            font-size: 24px;
+            letter-spacing: 4px;
+            line-height: 40px;
         }
     }
 }
@@ -50,10 +53,42 @@
         justify-content: center;
         align-items: center;
     }
+
+    @include respond(tablet) {
+        &__container {
+            padding: 10% 0;
+        }
+        &__heading {
+            h2 {
+                font-size: 24px;
+                line-height: 32px;
+                letter-spacing: 1.6px;
+            }
+
+            p {
+                margin: 0 28px 41px 28px;
+            }
+        }
+
+        &__video {
+            height: 215px;
+            width: auto;
+            margin: 0 12px 10px 12px;
+
+            img {
+                height: 71px;
+                width: 71px;
+            }
+        }
+    }
 }
 
 .holiday-campaign-main-content {
     background: $white;
+
+    @include respond(tablet) {
+        display: none;
+    }
 
     &__container {
         width: 100%;
@@ -156,6 +191,95 @@
     }
 }
 
+.mobile-holiday-campaign-main-content {
+    display: none;
+
+    @include respond(tablet) {
+        display: block;
+    }
+
+    &__section {
+        display: flex;
+    }
+    &__image1 {
+        position: absolute;
+        background: url("../images/holiday-campaign-content1.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        width: 348px;
+        height: 400px;
+
+        right: 0;
+        left: auto;
+    }
+
+    &__image2 {
+        position: absolute;
+        background: url("../images/holiday-campaign-content2.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        width: 348px;
+        height: 400px;
+
+        left: 0;
+        right: auto;
+    }
+
+    &__image3 {
+        position: absolute;
+        background: url("../images/holiday-campaign-content3.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        width: 348px;
+        height: 400px;
+
+        right: 0;
+        left: auto;
+    }
+
+    &__yellow {
+        background: $faint-yellow;
+        width: 348px;
+        height: 400px;
+        margin-top: 10%;
+    }
+
+    &__yellow-right {
+        background: $faint-yellow;
+        width: 348px;
+        height: 400px;
+        margin-top: 10%;
+
+        position: absolute;
+        right: 0;
+        left: auto;
+    }
+
+    &__invisible {
+        height: 400px;
+        margin-bottom: 10%;
+    }
+
+    &__description {
+        padding: 12px;
+        margin-bottom: 62px;
+
+        h5 {
+            color: $black;
+        }
+
+        .red {
+            color: $blood-red;
+        }
+    }
+}
+
 .holiday-campaign-promo-banner {
     background-color: $white;
     display: flex;
@@ -193,31 +317,34 @@
     }
 
     @include respond(tablet) {
-        height: 204px;
-        margin-bottom: 30px;
+        height: 274px;
 
         &__image {
-            width: 336px;
-            height: 177px;
-            padding: 12px;
-            margin-top: 50px;
+            margin: 12px;
+            width: 100%;
+            height: 90%;
 
             background-size: 336px 177px;
             background-size: cover;
             background-position: center;
             bottom: 0%;
+            display: flex;
+            justify-content: flex-end;
 
             &-content {
                 color: $white;
-                padding-left: 33%;
+                display: flex;
+                flex-direction: column;
+                padding: 10 % 10% 0 0;
 
                 h5 {
-                    margin: 0;
+                    margin-bottom: 0;
                 }
 
                 h1 {
-                    text-transform: none;
-                    letter-spacing: 1.6px;
+                    margin: 0;
+                    font-size: 20px;
+                    line-height: 28px;
                 }
 
                 p {
@@ -225,13 +352,6 @@
                     font-size: 12px;
                     line-height: 18px;
                     margin-bottom: 10px;
-                }
-
-                button {
-                    font-size: 12px;
-                    line-height: 16.34px;
-                    padding: 0 24px;
-                    height: 30px;
                 }
             }
         }

@@ -31840,8 +31840,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   .sale__image {
     margin: 12px;
     width: 100%;
-    height: 90%;
-    background-size: 336px 177px;
+    height: 80%;
     background-size: cover;
     background-position: center;
     bottom: 0%;
@@ -31852,7 +31851,8 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
     color: #ffffff;
     display: flex;
     flex-direction: column;
-    padding: 0% 0 0;
+    justify-content: center;
+    padding: 0% 5% 0 2%;
   }
   .sale__image-content h5 {
     margin-bottom: 0;
@@ -31876,8 +31876,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   .sale__image {
     margin: 12px;
     width: 100%;
-    height: 90%;
-    background-size: 336px 177px;
+    height: 80%;
     background-size: cover;
     background-position: center;
     bottom: 0%;
@@ -31888,7 +31887,8 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
     color: #ffffff;
     display: flex;
     flex-direction: column;
-    padding: 0% 0 0;
+    justify-content: center;
+    padding: 0% 5% 0 2%;
   }
   .sale__image-content h5 {
     margin-bottom: 0;
@@ -32287,6 +32287,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   height: 250px;
   background-image: url("../images/shop-online-banner.png");
   background-size: contain;
+  background-repeat: no-repeat;
 }
 .shop-online__image-content {
   color: #ffffff;
@@ -32315,29 +32316,34 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 @media only screen and (max-width: 1024px) {
   .shop-online {
-    height: 204px;
-    margin-bottom: 30px;
+    height: 274px;
+    padding: 24px 0 0 0;
   }
   .shop-online__image {
-    width: 336px;
-    height: 177px;
-    padding: 12px;
-    margin-top: 50px;
-    background-size: 336px 177px;
+    margin: 12px;
+    width: 100%;
+    height: 80%;
     background-size: cover;
     background-position: center;
     bottom: 0%;
+    display: flex;
+    justify-content: flex-end;
   }
   .shop-online__image-content {
     color: #ffffff;
-    padding-left: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0% 5% 0 2%;
+    width: 65%;
   }
   .shop-online__image-content h5 {
-    margin: 0;
+    margin-bottom: 0;
   }
   .shop-online__image-content h1 {
-    text-transform: none;
-    letter-spacing: 1.6px;
+    margin: 0;
+    font-size: 20px;
+    line-height: 28px;
   }
   .shop-online__image-content p {
     color: #ffffff;
@@ -32346,37 +32352,39 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
     margin-bottom: 10px;
   }
   .shop-online__image-content button {
-    font-size: 12px;
-    line-height: 16.34px;
-    padding: 0 24px;
-    height: 30px;
+    padding: 0;
   }
 }
 @media only screen and (max-width: tablet) {
   .shop-online {
-    height: 204px;
-    margin-bottom: 30px;
+    height: 274px;
+    padding: 24px 0 0 0;
   }
   .shop-online__image {
-    width: 336px;
-    height: 177px;
-    padding: 12px;
-    margin-top: 50px;
-    background-size: 336px 177px;
+    margin: 12px;
+    width: 100%;
+    height: 80%;
     background-size: cover;
     background-position: center;
     bottom: 0%;
+    display: flex;
+    justify-content: flex-end;
   }
   .shop-online__image-content {
     color: #ffffff;
-    padding-left: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0% 5% 0 2%;
+    width: 65%;
   }
   .shop-online__image-content h5 {
-    margin: 0;
+    margin-bottom: 0;
   }
   .shop-online__image-content h1 {
-    text-transform: none;
-    letter-spacing: 1.6px;
+    margin: 0;
+    font-size: 20px;
+    line-height: 28px;
   }
   .shop-online__image-content p {
     color: #ffffff;
@@ -32385,10 +32393,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
     margin-bottom: 10px;
   }
   .shop-online__image-content button {
-    font-size: 12px;
-    line-height: 16.34px;
-    padding: 0 24px;
-    height: 30px;
+    padding: 0;
   }
 }
 
@@ -32769,8 +32774,11 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
     background-size: contain auto;
   }
   .holiday-campaign-header-banner > h1 {
-    top: 48%;
+    top: 35%;
     left: 10%;
+    font-size: 24px;
+    letter-spacing: 4px;
+    line-height: 40px;
   }
 }
 @media only screen and (max-width: tablet) {
@@ -32780,8 +32788,11 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
     background-size: contain auto;
   }
   .holiday-campaign-header-banner > h1 {
-    top: 48%;
+    top: 35%;
     left: 10%;
+    font-size: 24px;
+    letter-spacing: 4px;
+    line-height: 40px;
   }
 }
 
@@ -32808,9 +32819,63 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   justify-content: center;
   align-items: center;
 }
+@media only screen and (max-width: 1024px) {
+  .campaign-video__container {
+    padding: 10% 0;
+  }
+  .campaign-video__heading h2 {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 1.6px;
+  }
+  .campaign-video__heading p {
+    margin: 0 28px 41px 28px;
+  }
+  .campaign-video__video {
+    height: 215px;
+    width: auto;
+    margin: 0 12px 10px 12px;
+  }
+  .campaign-video__video img {
+    height: 71px;
+    width: 71px;
+  }
+}
+@media only screen and (max-width: tablet) {
+  .campaign-video__container {
+    padding: 10% 0;
+  }
+  .campaign-video__heading h2 {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 1.6px;
+  }
+  .campaign-video__heading p {
+    margin: 0 28px 41px 28px;
+  }
+  .campaign-video__video {
+    height: 215px;
+    width: auto;
+    margin: 0 12px 10px 12px;
+  }
+  .campaign-video__video img {
+    height: 71px;
+    width: 71px;
+  }
+}
 
 .holiday-campaign-main-content {
   background: #ffffff;
+}
+@media only screen and (max-width: 1024px) {
+  .holiday-campaign-main-content {
+    display: none;
+  }
+}
+@media only screen and (max-width: tablet) {
+  .holiday-campaign-main-content {
+    display: none;
+  }
 }
 .holiday-campaign-main-content__container {
   width: 100%;
@@ -32895,6 +32960,85 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   color: #403f47;
 }
 
+.mobile-holiday-campaign-main-content {
+  display: none;
+}
+@media only screen and (max-width: 1024px) {
+  .mobile-holiday-campaign-main-content {
+    display: block;
+  }
+}
+@media only screen and (max-width: tablet) {
+  .mobile-holiday-campaign-main-content {
+    display: block;
+  }
+}
+.mobile-holiday-campaign-main-content__section {
+  display: flex;
+}
+.mobile-holiday-campaign-main-content__image1 {
+  position: absolute;
+  background: url("../images/holiday-campaign-content1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 348px;
+  height: 400px;
+  right: 0;
+  left: auto;
+}
+.mobile-holiday-campaign-main-content__image2 {
+  position: absolute;
+  background: url("../images/holiday-campaign-content2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 348px;
+  height: 400px;
+  left: 0;
+  right: auto;
+}
+.mobile-holiday-campaign-main-content__image3 {
+  position: absolute;
+  background: url("../images/holiday-campaign-content3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 348px;
+  height: 400px;
+  right: 0;
+  left: auto;
+}
+.mobile-holiday-campaign-main-content__yellow {
+  background: #ffeecd;
+  width: 348px;
+  height: 400px;
+  margin-top: 10%;
+}
+.mobile-holiday-campaign-main-content__yellow-right {
+  background: #ffeecd;
+  width: 348px;
+  height: 400px;
+  margin-top: 10%;
+  position: absolute;
+  right: 0;
+  left: auto;
+}
+.mobile-holiday-campaign-main-content__invisible {
+  height: 400px;
+  margin-bottom: 10%;
+}
+.mobile-holiday-campaign-main-content__description {
+  padding: 12px;
+  margin-bottom: 62px;
+}
+.mobile-holiday-campaign-main-content__description h5 {
+  color: #161720;
+}
+.mobile-holiday-campaign-main-content__description .red {
+  color: #af111c;
+}
+
 .holiday-campaign-promo-banner {
   background-color: #ffffff;
   display: flex;
@@ -32929,80 +33073,74 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 @media only screen and (max-width: 1024px) {
   .holiday-campaign-promo-banner {
-    height: 204px;
-    margin-bottom: 30px;
+    height: 274px;
   }
   .holiday-campaign-promo-banner__image {
-    width: 336px;
-    height: 177px;
-    padding: 12px;
-    margin-top: 50px;
+    margin: 12px;
+    width: 100%;
+    height: 90%;
     background-size: 336px 177px;
     background-size: cover;
     background-position: center;
     bottom: 0%;
+    display: flex;
+    justify-content: flex-end;
   }
   .holiday-campaign-promo-banner__image-content {
     color: #ffffff;
-    padding-left: 33%;
+    display: flex;
+    flex-direction: column;
+    padding: 0% 0 0;
   }
   .holiday-campaign-promo-banner__image-content h5 {
-    margin: 0;
+    margin-bottom: 0;
   }
   .holiday-campaign-promo-banner__image-content h1 {
-    text-transform: none;
-    letter-spacing: 1.6px;
+    margin: 0;
+    font-size: 20px;
+    line-height: 28px;
   }
   .holiday-campaign-promo-banner__image-content p {
     color: #ffffff;
     font-size: 12px;
     line-height: 18px;
     margin-bottom: 10px;
-  }
-  .holiday-campaign-promo-banner__image-content button {
-    font-size: 12px;
-    line-height: 16.34px;
-    padding: 0 24px;
-    height: 30px;
   }
 }
 @media only screen and (max-width: tablet) {
   .holiday-campaign-promo-banner {
-    height: 204px;
-    margin-bottom: 30px;
+    height: 274px;
   }
   .holiday-campaign-promo-banner__image {
-    width: 336px;
-    height: 177px;
-    padding: 12px;
-    margin-top: 50px;
+    margin: 12px;
+    width: 100%;
+    height: 90%;
     background-size: 336px 177px;
     background-size: cover;
     background-position: center;
     bottom: 0%;
+    display: flex;
+    justify-content: flex-end;
   }
   .holiday-campaign-promo-banner__image-content {
     color: #ffffff;
-    padding-left: 33%;
+    display: flex;
+    flex-direction: column;
+    padding: 0% 0 0;
   }
   .holiday-campaign-promo-banner__image-content h5 {
-    margin: 0;
+    margin-bottom: 0;
   }
   .holiday-campaign-promo-banner__image-content h1 {
-    text-transform: none;
-    letter-spacing: 1.6px;
+    margin: 0;
+    font-size: 20px;
+    line-height: 28px;
   }
   .holiday-campaign-promo-banner__image-content p {
     color: #ffffff;
     font-size: 12px;
     line-height: 18px;
     margin-bottom: 10px;
-  }
-  .holiday-campaign-promo-banner__image-content button {
-    font-size: 12px;
-    line-height: 16.34px;
-    padding: 0 24px;
-    height: 30px;
   }
 }
 
