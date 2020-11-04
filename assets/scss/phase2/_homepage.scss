@@ -127,8 +127,7 @@
 
     @include respond(tablet) {
         .container {
-            padding: 15px;
-            margin-bottom: 15%;
+            padding: 15% 3%;
         }
 
         h2 {
@@ -252,9 +251,101 @@
             }
         }
     }
+
+    @include respond(tablet) {
+        .container {
+            padding: 10% 0;
+        }
+
+        &__heading {
+            margin: 2% 0;
+            h2 {
+                font-size: 24px;
+                line-height: 32px;
+                letter-spacing: 1.6px;
+                margin: 2% 0;
+            }
+        }
+
+        &__cards {
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        &__card {
+            width: 160px;
+            margin: 8px;
+
+            img {
+                width: 160px;
+                height: 245px;
+            }
+        }
+    }
+}
+
+.mobile-sm-cares {
+    display: none;
+    padding: 10% 0;
+
+    @include respond(tablet) {
+        display: flex;
+    }
+
+    &__heading {
+        text-align: center;
+        margin: 10% 0;
+
+        h2 {
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: 1.6px;
+        }
+    }
+
+    &__cards {
+        width: 100%;
+    }
+
+    &__card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 336px;
+            height: 268px;
+        }
+
+        h3 {
+            width: 336px;
+            height: 268px;
+            position: absolute;
+            z-index: 10;
+            color: $white;
+            text-align: center;
+            margin-top: 120px;
+        }
+    }
+
+    .container {
+        .controllers {
+            float: right;
+
+            button {
+                background: transparent;
+                margin-left: 32px;
+                margin-top: 32px;
+            }
+        }
+    }
 }
 
 .sm-cares {
+    @include respond(tablet) {
+        display: none;
+    }
+
     background: #fff9f9;
 
     h2,
@@ -283,20 +374,18 @@
 
     &__card {
         padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         img {
             margin: 0 12px;
         }
 
-        &-description {
-            p {
-                margin: 5%;
-                text-align: center;
-            }
-
-            & .red {
-                color: $blood-red;
-            }
+        h3 {
+            position: absolute;
+            z-index: 10;
+            color: $white;
         }
     }
 }
