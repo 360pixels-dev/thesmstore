@@ -31187,15 +31187,16 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 #store-selector-drawer {
   display: none;
   z-index: 9999;
+  width: 399px !important;
 }
 @media only screen and (max-width: 1024px) {
   #store-selector-drawer {
-    width: 266px;
+    width: 312px !important;
   }
 }
 @media only screen and (max-width: tablet) {
   #store-selector-drawer {
-    width: 266px;
+    width: 312px !important;
   }
 }
 
@@ -31206,6 +31207,16 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   height: 82%;
   width: 399px;
   background: white;
+}
+@media only screen and (max-width: 1024px) {
+  .make-store-selector-drawer {
+    width: 312px;
+  }
+}
+@media only screen and (max-width: tablet) {
+  .make-store-selector-drawer {
+    width: 312px;
+  }
 }
 .make-store-selector-drawer ul li > div {
   display: flex;
