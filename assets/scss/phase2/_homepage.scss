@@ -148,16 +148,30 @@
         &__card {
             &-image1,
             &-image2 {
-                width: 330px;
+                width: auto;
                 height: 82px;
                 background-size: contain;
                 background-repeat: no-repeat;
+                background-position: center;
 
                 h2 {
                     line-height: 24px;
                     width: 166px;
-                    top: 25%;
-                    left: 8%;
+                    top: 55%;
+                    bottom: auto;
+                    transform: translate(0, -50%);
+                    right: -23%;
+                    left: auto;
+
+                    @include respond(mobile) {
+                        right: -9%;
+                        left: auto;
+                    }
+
+                    @include respond(320px) {
+                        right: -4%;
+                        left: auto;
+                    }
                 }
             }
 
@@ -217,6 +231,12 @@
     h3,
     h5 {
         margin: 0;
+    }
+
+    a,
+    a:hover,
+    a:visited {
+        text-decoration: none;
     }
 
     .container {

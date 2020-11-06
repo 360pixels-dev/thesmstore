@@ -242,8 +242,14 @@
     }
 
     @include respond(tablet) {
+        .container {
+            max-width: 900px;
+        }
+
         &__cards {
             width: 100%;
+            justify-content: center;
+            flex-wrap: wrap;
         }
         &__card {
             background: $opal;

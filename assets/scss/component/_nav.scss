@@ -151,7 +151,7 @@
             background: #fff;
             position: absolute;
             top: 100%;
-            width: 308px;
+            width: auto;
             left: 0;
 
             & .arrow-left {
@@ -245,7 +245,7 @@
 
             & .mobile-menu-button {
                 display: flex;
-                justify-content: space-evenly;
+                justify-content: center;
                 align-items: center;
                 margin: auto;
                 padding: auto;
@@ -266,6 +266,12 @@
         & .logo {
             flex: 0 0 20%;
 
+            @include respond(320px) {
+                img {
+                    width: 110px !important;
+                }
+            }
+
             @include respond(tablet) {
                 flex: 0;
             }
@@ -274,7 +280,7 @@
                 @include respond(tablet) {
                     padding: auto;
                     margin: auto;
-                    width: 149px;
+                    width: auto;
                     height: 26px;
                     position: relative;
                     top: 3px;
@@ -427,12 +433,14 @@
 
                 margin-right: 12px;
 
-                @media only screen and (min-width: 1024px) and (max-width: 1300px) {
-                    width: 322px;
+                @media only screen and (min-width: 1025px) and (max-width: 1300px) {
+                    width: 300px;
+                    margin-right: 6px;
                 }
 
                 @include respond(mobile) {
-                    width: 94px;
+                    width: auto;
+                    margin-right: 0;
                 }
 
                 & .search-term {
