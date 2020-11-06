@@ -1286,12 +1286,20 @@ ul {
 .nav__upper .mobile-menu-button {
   display: none;
 }
+.nav__upper .mobile-menu-button .mobile-menu-arrow {
+  transform: rotate(0deg);
+  transition: transform 0.15s linear;
+}
+.nav__upper .mobile-menu-button .mobile-menu-arrow.active {
+  transform: rotate(180deg);
+  transition: transform 0.15s linear;
+}
 .nav__upper #mobile-menu {
   display: none;
   background: #fff;
   position: absolute;
   top: 100%;
-  width: auto;
+  width: 308px;
   left: 0;
 }
 .nav__upper #mobile-menu .arrow-left {
@@ -1354,7 +1362,7 @@ ul {
 .nav__upper #mobile-menu:after {
   content: " ";
   position: absolute;
-  right: 90px;
+  right: 100px;
   top: -15px;
   border-top: none;
   border-right: 8px solid transparent;
@@ -1786,6 +1794,9 @@ ul {
     display: none;
   }
 }
+.nav__lower .store-selector span {
+  margin-right: 35px;
+}
 .nav__lower .store-selector .white {
   color: #ffffff !important;
 }
@@ -1794,7 +1805,12 @@ ul {
   color: #ffcd4e;
 }
 .nav__lower .store-selector .store-selector-arrow {
-  padding-left: 35px;
+  transform: rotate(0deg);
+  transition: transform 0.15s linear;
+}
+.nav__lower .store-selector .store-selector-arrow.active {
+  transform: rotate(180deg);
+  transition: transform 0.15s linear;
 }
 .nav__lower .mobile-store-selector {
   display: none;
@@ -1816,6 +1832,14 @@ ul {
 .nav__lower .mobile-store-selector .thin-orange {
   font-weight: 600;
   color: #ffcd4e;
+}
+.nav__lower .mobile-store-selector .mobile-store-selector-arrow {
+  transform: rotate(0deg);
+  transition: transform 0.15s linear;
+}
+.nav__lower .mobile-store-selector .mobile-store-selector-arrow.active {
+  transform: rotate(180deg);
+  transition: transform 0.15s linear;
 }
 .nav__lower .menu {
   width: 20%;

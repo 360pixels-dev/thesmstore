@@ -2,9 +2,11 @@ function showHideMenu(ele) {
     let menu = document.getElementById(ele);
     let menuList = document.getElementById('mobile-menu-list')
     let menus = document.getElementsByClassName('mobile-menu-item')
+    let menuArrow = document.getElementById("mobile-menu-arrow")
 
     if (menu !== null) {
         if (menu.style.display === "block") {
+            menuArrow.className = "mobile-menu-arrow"
             menu.style.display = 'none'
             menuList.style = 'block'
             for (let i = 0; i < menus.length; i++) {
@@ -13,6 +15,7 @@ function showHideMenu(ele) {
         }
         else {
             menu.style.display = 'block'
+            menuArrow.className = "mobile-menu-arrow active"
         }
         return false;
     }
