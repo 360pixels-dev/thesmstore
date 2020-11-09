@@ -4,8 +4,6 @@ function openStoreSelector() {
     let storeSelectorArrow = document.getElementById("store-selector-arrow")
     let mobileStoreSelectorArrow = document.getElementById("mobile-store-selector-arrow")
 
-    console.log("ARROW", mobileStoreSelectorArrow)
-
 
     if (drawer.style.display === 'block' || overlay.style.display === 'block') {
         drawer.style.display = "none";

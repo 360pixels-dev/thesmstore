@@ -162,7 +162,14 @@
             position: absolute;
             top: 100%;
             width: 308px;
-            left: 0;
+
+            @include respond(mobile) {
+                left: 0 !important;
+            }
+
+            @media only screen and (min-width: 841px) and (max-width: 1024px) {
+                left: 36% !important;
+            }
 
             & .arrow-left {
                 position: absolute;
@@ -247,6 +254,14 @@
             border-right: 8px solid transparent;
             border-left: 8px solid transparent;
             border-bottom: 15px solid #fff;
+
+            @include respond(320px) {
+                right: 140px !important;
+            }
+
+            @media only screen and (min-width: 841px) and (max-width: 1024px) {
+                right: 48% !important;
+            }
         }
 
         @include respond(tablet) {

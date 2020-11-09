@@ -77,6 +77,10 @@
             height: 215px;
             width: 335px;
 
+            @include respond(320px) {
+                width: 296px;
+            }
+
             padding: auto;
             margin: 5% auto;
         }

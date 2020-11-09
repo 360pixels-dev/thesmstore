@@ -1300,7 +1300,21 @@ ul {
   position: absolute;
   top: 100%;
   width: 308px;
-  left: 0;
+}
+@media only screen and (max-width: 820px) {
+  .nav__upper #mobile-menu {
+    left: 0 !important;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .nav__upper #mobile-menu {
+    left: 0 !important;
+  }
+}
+@media only screen and (min-width: 841px) and (max-width: 1024px) {
+  .nav__upper #mobile-menu {
+    left: 36% !important;
+  }
 }
 .nav__upper #mobile-menu .arrow-left {
   position: absolute;
@@ -1368,6 +1382,16 @@ ul {
   border-right: 8px solid transparent;
   border-left: 8px solid transparent;
   border-bottom: 15px solid #fff;
+}
+@media only screen and (max-width: 320px) {
+  .nav__upper #mobile-menu:after {
+    right: 140px !important;
+  }
+}
+@media only screen and (min-width: 841px) and (max-width: 1024px) {
+  .nav__upper #mobile-menu:after {
+    right: 48% !important;
+  }
 }
 @media only screen and (max-width: 1024px) {
   .nav__upper {
@@ -32785,6 +32809,11 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   width: 335px;
   padding: auto;
   margin: 5% auto;
+}
+@media only screen and (max-width: 320px) {
+  .featured-services-mobile .container img {
+    width: 296px;
+  }
 }
 .featured-services-mobile .container h5 {
   font-size: 12px;
