@@ -36,8 +36,11 @@
         right: 24px;
         height: 30px;
         width: 30px;
-        padding: 6px;
         cursor: pointer;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     &__content {

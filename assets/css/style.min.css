@@ -1168,7 +1168,7 @@ ul {
   padding: 0 24px;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
@@ -1768,7 +1768,7 @@ ul {
   margin: 0 0 0 24px;
 }
 .nav__lower {
-  position: relative;
+  position: fixed;
   display: flex;
   height: 76px;
   background: #397cee;
@@ -2673,6 +2673,7 @@ ul {
 }
 
 .banner-inner {
+  margin-top: 88px;
   position: relative;
   min-height: 318px;
   height: auto;
@@ -2741,6 +2742,42 @@ ul {
     padding-bottom: 5px;
     border-bottom: 4px solid #fce513;
     justify-content: start;
+  }
+}
+.banner-inner--whatsnew-findevents {
+  background: url("../../assets/images/banner-whatsnew-findevents.png") no-repeat;
+  background-size: cover;
+  background-position: center right;
+  height: 350px;
+}
+.banner-inner--whatsnew-findevents .banner-container {
+  margin-bottom: 40px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.banner-inner--whatsnew-findevents .banner-container .container-1224 {
+  margin: 0;
+  width: 600px;
+}
+@media only screen and (max-width: 1223px) {
+  .banner-inner--whatsnew-findevents .banner-container .container-1224 {
+    width: 90%;
+    margin: 0 5%;
+  }
+}
+@media only screen and (max-width: 820px) {
+  .banner-inner--whatsnew-findevents .banner-container .container-1224 {
+    width: auto;
+    margin: 0 12px;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .banner-inner--whatsnew-findevents .banner-container .container-1224 {
+    width: auto;
+    margin: 0 12px;
   }
 }
 .banner-inner--events {
@@ -5611,8 +5648,10 @@ ul {
   right: 24px;
   height: 30px;
   width: 30px;
-  padding: 6px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .modal__content {
   display: flex;
@@ -15269,12 +15308,23 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
     min-height: min-content;
     padding: 0 0 24px 0;
   }
+  .events-slider__arrows {
+    display: none;
+  }
 }
 @media only screen and (max-width: mobile) {
   .events-slider {
     min-height: min-content;
     padding: 0 0 24px 0;
   }
+  .events-slider__arrows {
+    display: none;
+  }
+}
+.events-slider__arrows {
+  width: 155px;
+  margin-top: 30px;
+  align-items: center;
 }
 .events-slider__content {
   height: 432px;
@@ -15387,6 +15437,10 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
     text-transform: uppercase;
     text-align: left;
   }
+}
+.events-slider__details > span {
+  text-align: center;
+  width: 161px;
 }
 .events-slider__details-year {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -31242,7 +31296,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 
 #store-selector-drawer {
   display: none;
-  z-index: 9999;
+  z-index: 22;
   width: 399px !important;
 }
 @media only screen and (max-width: 1024px) {
@@ -31993,7 +32047,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 
 .fashion-nav {
-  background: transparent !important;
+  background: transparent;
 }
 @media only screen and (max-width: 1024px) {
   .fashion-nav {
@@ -32012,7 +32066,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 
 .fashion-header-banner {
-  margin-top: 11px;
+  margin-top: 88px;
   background-image: url("../images/fashion-header-banner.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -32714,7 +32768,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 
 .services-header-banner {
   height: 355px;
-  margin-top: 11px;
+  margin-top: 88px;
   background-image: url("../images/services-header-banner.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -33154,7 +33208,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 
 .holiday-campaign-header-banner {
   height: 355px;
-  margin-top: 11px;
+  margin-top: 88px;
   background-image: url("../images/holiday-campaign-header-banner.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -33711,6 +33765,52 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   .more-from-sm__card h2 {
     margin-bottom: 32px;
   }
+}
+
+.findevents__menu {
+  display: flex;
+  margin: 40px 90px 20px 0;
+}
+.findevents__menu-items {
+  display: flex;
+  flex-grow: 3;
+  justify-content: center;
+  align-items: center;
+}
+.findevents__menu-items > ul {
+  list-style-type: none;
+}
+.findevents__menu-item {
+  display: flex;
+  display: inline-block;
+  margin: 0 20px;
+}
+.findevents__menu-item > a {
+  text-decoration: none;
+  color: #88898f;
+}
+.findevents__menu .active {
+  font-weight: bold;
+}
+.findevents__menu .active > a {
+  color: #161720;
+}
+.findevents__menu__event-location {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+.findevents__menu__event-location > span {
+  letter-spacing: 3px;
+}
+.findevents__menu__event-location > b,
+.findevents__menu__event-location strong {
+  letter-spacing: 4px;
+}
+
+.card--event-details.bold p {
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.min.css.map */

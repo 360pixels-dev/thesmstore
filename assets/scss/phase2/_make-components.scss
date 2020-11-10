@@ -1209,7 +1209,7 @@
 
 #store-selector-drawer {
     display: none;
-    z-index: 9999;
+    z-index: 22;
     width: 399px !important;
 
     @include respond(tablet) {

@@ -3,16 +3,19 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About Us | SM Store</title>
+        <title>Find Events | SM Store</title>
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-        <link rel="stylesheet" href="./assets/css/style.min.css">
-        <link rel="stylesheet" href="./assets/css/w3.min.css">
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" /> -->
 
+        <link rel="stylesheet" href="./assets/css/w3.min.css">
+        <link rel="stylesheet" href="./assets/css/style.min.css">
     </head>
     <body>
         <div class="wrapper">
 
+            <!-- TRANSPARENT -->
             <!-- HEADER -->
             <header>
                 <!-- NAV UPPER -->
@@ -245,198 +248,278 @@
             </header>
             <!-- /HEADER -->
 
-            <aside>
-                <div id="store-selector-drawer" class="make-store-selector-drawer w3-sidebar w3-bar-block w3-animate-top">
+            <!-- STORE SELECTOR -->
+            <div id="store-selector-drawer" class="make-store-selector-drawer w3-sidebar w3-bar-block w3-animate-top">
+                <ul>
+                    <li>
+                        <div>
+                            <span class="font-h4 font-h4--center" style="padding-top: 20px; width: 100%;"><strong>Select a store</strong></span>
+                        </div>
+                        
+                        <div>
+                            <input type="text" placeholder="Find your nearest store">
+                        </div>
+            
+                        <div style="justify-content: center; margin-bottom: 21px;">
+                            <img src="./assets/images/target-location.svg" alt="" style="padding-right: 8px;"> <span class="font-metadata">Use Current Location</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <span class="font-headline" style="padding: 14px 8px 9px 14px;"><strong>The SM Store Cubao</strong></span>
+                            <span class="selected-store">My Store</span>
+                        </div>
+                        <div style="padding-left: 14px; margin-bottom: 8px;"><p>SM Cubao, Times Square Avenue, Cubao, Quezon City</p></div>
+                        <div style="padding-left: 14px; margin-bottom: 16px;">
+                            <span class="font-caption-bold" style="color: #55c9a5; letter-spacing: 1.6px;">Open Today Until 9PM</span>
+                        </div>
+    
+                        <div><span class="font-cta btn--primary" style="padding-left: 14px;">Store Info</span></div>
+                    </li>
+                    <li>
+                        <div>
+                            <span class="font-headline" style="padding: 14px 8px 9px 14px;"><strong>The SM Store Cubao</strong></span>
+                        </div>
+                        <div style="padding-left: 14px; margin-bottom: 8px;"><p>SM Cubao, Times Square Avenue, Cubao, Quezon City</p></div>
+                        <div style="padding-left: 14px; margin-bottom: 16px;">
+                            <span class="font-caption-bold" style="color: #55c9a5; letter-spacing: 1.6px;">Open Today Until 9PM</span>
+                        </div>
+    
+                        <div><span class="font-cta btn--primary" style="padding-left: 14px;">Store Info</span><span class="font-cta btn--primary" style="padding-left: 0;">Make My Store</span></div>
+                    </li>
+                    <li>
+                        <div>
+                            <span class="font-headline" style="padding: 14px 8px 9px 14px;"><strong>The SM Store Cubao</strong></span>
+                        </div>
+                        <div style="padding-left: 14px; margin-bottom: 8px;"><p>SM Cubao, Times Square Avenue, Cubao, Quezon City</p></div>
+                        <div style="padding-left: 14px; margin-bottom: 16px;">
+                            <span class="font-caption-bold" style="color: #55c9a5; letter-spacing: 1.6px;">Open Today Until 9PM</span>
+                        </div>
+    
+                        <div><span class="font-cta btn--primary" style="padding-left: 14px;">Store Info</span><span class="font-cta btn--primary" style="padding-left: 0;">Make My Store</span></div>
+                    </li>
+                    <li>
+                        <div>
+                            <span class="font-headline" style="padding: 14px 8px 9px 14px;"><strong>The SM Store Cubao</strong></span>
+                        </div>
+                        <div style="padding-left: 14px; margin-bottom: 8px;"><p>SM Cubao, Times Square Avenue, Cubao, Quezon City</p></div>
+                        <div style="padding-left: 14px; margin-bottom: 16px;">
+                            <span class="font-caption-bold" style="color: #55c9a5; letter-spacing: 1.6px;">Open Today Until 9PM</span>
+                        </div>
+    
+                        <div><span class="font-cta btn--primary" style="padding-left: 14px;">Store Info</span><span class="font-cta btn--primary" style="padding-left: 0;">Make My Store</span></div>
+                    </li>
+                    <li>
+                        <div>
+                            <span class="font-headline" style="padding: 14px 8px 9px 14px;"><strong>The SM Store Cubao</strong></span>
+                        </div>
+                        <div style="padding-left: 14px; margin-bottom: 8px;"><p>SM Cubao, Times Square Avenue, Cubao, Quezon City</p></div>
+                        <div style="padding-left: 14px; margin-bottom: 16px;">
+                            <span class="font-caption-bold" style="color: #55c9a5; letter-spacing: 1.6px;">Open Today Until 9PM</span>
+                        </div>
+    
+                        <div><span class="font-cta btn--primary" style="padding-left: 14px;">Store Info</span><span class="font-cta btn--primary" style="padding-left: 0;">Make My Store</span></div>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="w3-overlay w3-animate-top" onclick="closeStoreSelector()" style="cursor: pointer; z-index: 20; overflow-y: scroll;" id="store-selector-overlay"></div>
+            <!-- /STORE SELECTOR -->
+            
+            <!-- HERO BANNER -->
+            <section class="banner-inner banner-inner--whatsnew-findevents container-fluid">
+                <div class="banner-container">
+                    <span>#EventsAtSM</span>
+                    <h1 class="font-hero">Find Events</h1>
+                    <div class="container-1224">
+                        <div class="container-search--result">
+                            <div class="search">
+                                <a href="#" class="search__btn"> <img src="./assets/images/icon-search.svg" alt="Search"></a>
+                                <input type="text" class="search__input" placeholder="Search an event">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /HERO BANNER -->
+
+            <section class="findevents__menu container-fluid">
+                <div class="findevents__menu-items">
                     <ul>
-                        <li>
-                            <div>
-                                <span class="font-h4 font-h4--center" style="padding-top: 20px; width: 100%;"><strong>Select a store</strong></span>
-                            </div>
-                            
-                            <div>
-                                <input type="text" placeholder="Find your nearest store">
-                            </div>
-                
-                            <div style="justify-content: center; margin-bottom: 21px;">
-                                <img src="./assets/images/target-location.svg" alt="" style="padding-right: 8px;"> <span class="font-metadata">Use Current Location</span>
-                            </div>
+                        <li class="findevents__menu-item active">
+                            <a href="#">All</a>
                         </li>
-                        <li>
-                            <div>
-                                <span class="font-headline" style="padding: 14px 8px 9px 14px;"><strong>The SM Store Cubao</strong></span>
-                                <span class="selected-store">My Store</span>
-                            </div>
-                            <div style="padding-left: 14px; margin-bottom: 8px;"><p>SM Cubao, Times Square Avenue, Cubao, Quezon City</p></div>
-                            <div style="padding-left: 14px; margin-bottom: 16px;">
-                                <span class="font-caption-bold" style="color: #55c9a5; letter-spacing: 1.6px;">Open Today Until 9PM</span>
-                            </div>
-        
-                            <div><span class="font-cta btn--primary" style="padding-left: 14px;">Store Info</span></div>
+                        <li class="findevents__menu-item">
+                            <a href="#">Kids</a>
                         </li>
-                        <li>
-                            <div>
-                                <span class="font-headline" style="padding: 14px 8px 9px 14px;"><strong>The SM Store Cubao</strong></span>
-                            </div>
-                            <div style="padding-left: 14px; margin-bottom: 8px;"><p>SM Cubao, Times Square Avenue, Cubao, Quezon City</p></div>
-                            <div style="padding-left: 14px; margin-bottom: 16px;">
-                                <span class="font-caption-bold" style="color: #55c9a5; letter-spacing: 1.6px;">Open Today Until 9PM</span>
-                            </div>
-        
-                            <div><span class="font-cta btn--primary" style="padding-left: 14px;">Store Info</span><span class="font-cta btn--primary" style="padding-left: 0;">Make My Store</span></div>
+                        <li class="findevents__menu-item">
+                            <a href="#">Fashion & Lifestyle</a>
                         </li>
-                        <li>
-                            <div>
-                                <span class="font-headline" style="padding: 14px 8px 9px 14px;"><strong>The SM Store Cubao</strong></span>
-                            </div>
-                            <div style="padding-left: 14px; margin-bottom: 8px;"><p>SM Cubao, Times Square Avenue, Cubao, Quezon City</p></div>
-                            <div style="padding-left: 14px; margin-bottom: 16px;">
-                                <span class="font-caption-bold" style="color: #55c9a5; letter-spacing: 1.6px;">Open Today Until 9PM</span>
-                            </div>
-        
-                            <div><span class="font-cta btn--primary" style="padding-left: 14px;">Store Info</span><span class="font-cta btn--primary" style="padding-left: 0;">Make My Store</span></div>
-                        </li>
-                        <li>
-                            <div>
-                                <span class="font-headline" style="padding: 14px 8px 9px 14px;"><strong>The SM Store Cubao</strong></span>
-                            </div>
-                            <div style="padding-left: 14px; margin-bottom: 8px;"><p>SM Cubao, Times Square Avenue, Cubao, Quezon City</p></div>
-                            <div style="padding-left: 14px; margin-bottom: 16px;">
-                                <span class="font-caption-bold" style="color: #55c9a5; letter-spacing: 1.6px;">Open Today Until 9PM</span>
-                            </div>
-        
-                            <div><span class="font-cta btn--primary" style="padding-left: 14px;">Store Info</span><span class="font-cta btn--primary" style="padding-left: 0;">Make My Store</span></div>
-                        </li>
-                        <li>
-                            <div>
-                                <span class="font-headline" style="padding: 14px 8px 9px 14px;"><strong>The SM Store Cubao</strong></span>
-                            </div>
-                            <div style="padding-left: 14px; margin-bottom: 8px;"><p>SM Cubao, Times Square Avenue, Cubao, Quezon City</p></div>
-                            <div style="padding-left: 14px; margin-bottom: 16px;">
-                                <span class="font-caption-bold" style="color: #55c9a5; letter-spacing: 1.6px;">Open Today Until 9PM</span>
-                            </div>
-        
-                            <div><span class="font-cta btn--primary" style="padding-left: 14px;">Store Info</span><span class="font-cta btn--primary" style="padding-left: 0;">Make My Store</span></div>
+                        <li class="findevents__menu-item">
+                            <a href="#">Campaigns</a>
                         </li>
                     </ul>
                 </div>
-        
-                <div class="w3-overlay w3-animate-top" onclick="closeStoreSelector()" style="cursor: pointer; z-index: 9998;" id="store-selector-overlay"></div>
-            </aside>
 
-            
-
-            
-            <section class="banner-inner banner-inner--about container-fluid">
-                <div class="container">
-                    <h1 class="font-hero banner-page__headings">About Us</h1>
-                </div>
-            </section>
-            
-            
-            <section class="about-main">
-                <div>
-                    <div class="about-main-bg"></div>
-                    <img src="./assets/images/about-main.png" alt="" class="about-main-img">
-
-                    <div class="about-main-content">
-                        <h1 class="font-hero">The SM Store</h1>
-                        <p>
-                            The SM Store is the Philippines’ largest department store chain with 65 branches nationwide—with a great selection of menswear, womenswear, childrenswear, all kinds of beauty products, and things for the home. You can also find stationery, electronic gadgets, snacks, toys, hardware, and fun Philippine souvenirs here.
-                            <br><br>
-                            Beyond merchandise, The SM Store provides services such as bills payment, ticketing, remittance, currency exchange, free gift wrapping, clothing alterations, home delivery, and most recently, click & collect.
-                            <br><br>
-                            Since our first store opened in 1958, The SM Store has been a long-time favorite one-stop-shop with the best product variety, shopping convenience, and value for money.
-                            <br><br>
-                            The SM Store carries this ease of shopping online with www.thesmstore.com, combining the benefits of browsing online and shopping in-store. Stay up to date with the latest in fashion and be the first to see what’s new in our stores via TheSMStore.com. 
-                            <br><br>
-                            As we always say, <b>"We've got it all for you!"</b>
-                        </p>
-                    </div>
+                <div class="findevents__menu__event-location">
+                    <span class="font-eyebrow-semi">In-store events in <img src="./assets/images/icons/leaflet-chili.svg" alt=""> <strong>Makati City</strong></span>
                 </div>
             </section>
 
-            <section class="about-carousel">
-                <div>
-                    <div class="about-carousel__image">
-                        <img class="about-sm-cares-img" src="./assets/images/about-sm-cares.jpg" />
-                    </div>
-                    <div class="about-carousel__text">
-                        <span class="font-eyebrow-semi">SM Cares</span>
-                        <h1 class="font-h1">
-                            <span>Share-a-toy</span>
-                            <span>make a</span>
-                            <span>child happy</span>
-                        </h1>
-                        <p>The SM Group continues to put smiles on children’s faces with its annual Share-A-Toy. Make A Child Happy toy drive.</p>
-                        <a href="" class="btn--primary font-cta">View</a>
-                    </div>
-                    
-                    <div class="about-carousel__controls controls">
-                        <button class="controls__arrow controls__arrow--left" href=""><img src="./assets/images/arrow-tail-left.svg" alt=""></button>
-                        <button class="controls__arrow controls__arrow--right" href=""><img src="./assets/images/arrow-tail-right.svg" alt=""></button>
-                    </div> 
-                </div>
-            </section>
+            <!-- DATED EVENTS -->
+            <section class="events-slider container whats-new__featured-events" style="padding-top: 0; margin: 0;">
+                <div class="events-slider__content">
+                    <div class="events-slider__details">
+                        <h2 class="font-h2-hero featured-events__details--title text-right">January</h2>
+                        <span class="font-eyebrow">2020</span>
 
-            <section class="about-carousel-lg">
-                <div>
-                    <div class="about-carousel-lg__header">
-                        <h2 class="font-h2-hero">Press Releases</h2>
-                        <a href="" class="btn--text-link font-cta">View all</a>
+                        <div class="events-slider__arrows">
+                            <a class="controls__arrow controls__arrow--left" href="#"><img src="./assets/images/arrow-tail-left.svg" alt=""></a>
+                            <a class="controls__arrow controls__arrow--right" href="#"><img src="./assets/images/arrow-tail-right.svg" alt=""></a>
+                        </div> 
                     </div>
-                    <div class="about-carousel-lg__img">
-                        <h1 class="font-hero">The SM Store wins at ice</h1>
-                        <a href="" class="btn--primary font-cta">Read</a>
-                    </div>
-                    <div class="about-carousel-lg__controls controls">
-                        <button class="controls__arrow controls__arrow--left" href=""><img src="./assets/images/arrow-tail-left.svg" alt=""></button>
-                        <button class="controls__arrow controls__arrow--right" href=""><img src="./assets/images/arrow-tail-right.svg" alt=""></button>
-                    </div> 
-                </div>
-            </section>
-            
-            <section class="about-careers">
-                <div>
-                    <div class="about-careers__header">
-                        <h2 class="font-h2-hero">Careers</h2>
-                        <a href="" class="btn--text-link font-cta">View all</a>
-                    </div>
-                    <div class="about-careers__listing">
-                        <div>
-                            <h4 class="font-h4">IT Associate</h4>
-                            <span><img src="./assets/images/icons/icon-location.svg" alt="">Head Office</span>
-                            <a href="" class="btn--text-link font-cta">Apply now</a>
+
+                    <div class="events-slider__slider">
+                        <div class="card--event">
+                            <img class="card--event-poster" src="./assets/images/cards/card-event.png" alt="">
+                            <div class="card--event-details bold">
+                                <p class="font-eyebrow card--event-details-month">Jan</p>
+                                <h1 class="font-h1 card--event-details-day">13-14</h1>
+                                <p class="font-eyebrow card--event-details-title">Billie Eilish Tour</p>
+                            </div>
                         </div>
-                        <div>
-                            <h4 class="font-h4">Selling Department Supervisor</h4>
-                            <span><img src="./assets/images/icons/icon-location.svg" alt="">The SM Store Grand Central</span>
-                            <a href="" class="btn--text-link font-cta">Apply now</a>
+
+                        <div class="card--event">
+                            <img class="card--event-poster" src="./assets/images/cards/card-event2.png" alt="">
+                            <div class="card--event-details bold">
+                                <p class="font-eyebrow card--event-details-month">Jan</p>
+                                <h1 class="font-h1 card--event-details-day">20</h1>
+                                <p class="font-eyebrow card--event-details-title" style="width: 62%;">Kids At Play</p>
+                            </div>
                         </div>
-                        <div>
-                            <h4 class="font-h4">Accounting Clerk</h4>
-                            <span><img src="./assets/images/icons/icon-location.svg" alt="">The SM Store Delgado</span>
-                            <a href="" class="btn--text-link font-cta">Apply now</a>
+
+                        <div class="card--event">
+                            <img class="card--event-poster" src="./assets/images/cards/card-event3.png" alt="">
+                            <div class="card--event-details bold">
+                                <p class="font-eyebrow card--event-details-month">Jan</p>
+                                <h1 class="font-h1 card--event-details-day">23-25</h1>
+                                <p class="font-eyebrow card--event-details-title" style="width: 100%;">Peppa Pig's Adventure</p>
+                            </div>
+                        </div>
+
+                        <div class="card--event">
+                            <img class="card--event-poster" src="./assets/images/cards/card-event4.png" alt="">
+                            <div class="card--event-details bold">
+                                <p class="font-eyebrow card--event-details-month">Jan</p>
+                                <h1 class="font-h1 card--event-details-day">13-14</h1>
+                                <p class="font-eyebrow card--event-details-title" style="width: 76%;">Big Drag Energy: #Aquaria</p>
+                            </div>
+                        </div>
+
+                        <div class="card--event">
+                            <img class="card--event-poster" src="./assets/images/cards/card-event.png" alt="">
+                            <div class="card--event-details bold">
+                                <p class="font-eyebrow card--event-details-month">Jan</p>
+                                <h1 class="font-h1 card--event-details-day">13-14</h1>
+                                <p class="font-eyebrow card--event-details-title">Billie Eilish Tour</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
 
-            <section style="margin-bottom: 20px;">
-                <div class="footer__messenger-mobile">
-                    <button class="btn--icon"><img src="./assets/images/messenger.svg"></button>
+                <div class="events__footer mobile-show">
+                    <a class="controls__arrow controls__arrow--left" href="#"><img src="./assets/images/arrow-tail-left.svg" alt=""></a>
+                    <a class="controls__arrow controls__arrow--right" href="#"><img src="./assets/images/arrow-tail-right.svg" alt=""></a>
+                </div> 
+            </section>
+            <!-- /DATED EVENTS -->
+            
+            <!-- UPCOMING EVENTS -->
+            <section class="events-slider container whats-new__featured-events" style="padding-top: 0; margin: 0;">
+                <div class="events-slider__content">
+                    <div class="events-slider__details">
+                        <h2 class="font-h2-hero featured-events__details--title text-right">Upcoming</h2>
+
+                        <div class="events-slider__arrows">
+                            <a class="controls__arrow controls__arrow--left" href=""><img src="./assets/images/arrow-tail-left.svg" alt=""></a>
+                            <a class="controls__arrow controls__arrow--right" href=""><img src="./assets/images/arrow-tail-right.svg" alt=""></a>
+                        </div> 
+                    </div>
+
+                    <div class="events-slider__slider">
+                        <div class="card--event">
+                            <img class="card--event-poster" src="./assets/images/cards/card-event.png" alt="">
+                            <div class="card--event-details bold">
+                                <p class="font-eyebrow card--event-details-month">Feb</p>
+                                <h1 class="font-h1 card--event-details-day">13-14</h1>
+                                <p class="font-eyebrow card--event-details-title">Billie Eilish Tour</p>
+                            </div>
+                        </div>
+
+                        <div class="card--event">
+                            <img class="card--event-poster" src="./assets/images/cards/card-event5.png" alt="">
+                            <div class="card--event-details bold">
+                                <p class="font-eyebrow card--event-details-month">Feb</p>
+                                <h1 class="font-h1 card--event-details-day">20</h1>
+                                <p class="font-eyebrow card--event-details-title">Women's Sale</p>
+                            </div>
+                        </div>
+
+                        <div class="card--event">
+                            <img class="card--event-poster" src="./assets/images/cards/card-event6.png" alt="">
+                            <div class="card--event-details bold">
+                                <p class="font-eyebrow card--event-details-month">Feb</p>
+                                <h1 class="font-h1 card--event-details-day">29</h1>
+                                <p class="font-eyebrow card--event-details-title" style="width: 62%;">Makin' It With Patrick Starrr</p>
+                            </div>
+                        </div>
+
+                        <div class="card--event">
+                            <img class="card--event-poster" src="./assets/images/cards/card-event7.png" alt="">
+                            <div class="card--event-details bold">
+                                <p class="font-eyebrow card--event-details-month">Feb</p>
+                                <h1 class="font-h1 card--event-details-day">13-14</h1>
+                                <p class="font-eyebrow card--event-details-title">Bags Sale</p>
+                            </div>
+                        </div>
+
+                        <div class="card--event">
+                            <img class="card--event-poster" src="./assets/images/cards/card-event.png" alt="">
+                            <div class="card--event-details bold">
+                                <p class="font-eyebrow card--event-details-month">Feb</p>
+                                <h1 class="font-h1 card--event-details-day">13-14</h1>
+                                <p class="font-eyebrow card--event-details-title">Billie Eilish Tour</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="events__footer mobile-show">
+                    <a class="controls__arrow controls__arrow--left" href=""><img src="./assets/images/arrow-tail-left.svg" alt=""></a>
+                    <a class="controls__arrow controls__arrow--right" href=""><img src="./assets/images/arrow-tail-right.svg" alt=""></a>
+                </div> 
+            </section>
+            <!-- /UPCOMING EVENTS -->
+            
+            <!-- MESSENGER-MOBILE -->
+            <section>
+                <div class="footer__messenger-mobile" style="margin-bottom: 20px;">
+                    <button class="btn--icon"><img src="./assets/images/messenger.svg" style="margin: 0px;"></button>
                 </div>
             </section>
+            <!-- /MESSENGER-MOBILE -->
 
             <!-- FOOTER -->
             <footer class="footer">
                 <div class="footer__forex">
                     <p class="font-caption"><span>Forex | <strong>$USD</strong> Buy</span> &#8369;50.3500<span> Sell</span> &#8369;50.8500 &nbsp;<img src="./assets/images/icon-info.svg" alt=""></p>
-    
                 </div>
+
                 <div class="footer__messenger">
-                    <button class="btn--icon"><img src="./assets/images/messenger.svg"></button>
+                    <button class="btn--icon"><img src="./assets/images/messenger.svg" style="margin: 0px;"></button>
                 </div>
-                
+
+
                 <div class="footer__content">
                     <div class="row">
                         <div>
@@ -504,7 +587,7 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- MOBILE CONTENT -->
                 <div class="footer__mobile-content">
                     <div class="row">
@@ -573,11 +656,11 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="footer__copyright">
                     <div class="footer_copyright--column">
                         <img src="./assets/images/logo.svg" alt="SM Store">
-                        <p style="text-align: center;">We've got it all for you!</p>
+                        <p style="text-align: center;  margin: 4px;">We've got it all for you!</p>
                         <p class="footer__copyright--text font-caption">&copy; 2020 The SM Store. All rights reserved.</p>
                     </div>
                 </div>
@@ -589,10 +672,12 @@
 
     <!-- IMPORTS -->
     <script src="assets/js/jquery.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous"></script> -->
 
     <!-- CUSTOM JS -->
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/carousel.js"></script>
+    <!-- <script src="assets/js/horizontal-carousel.js"></script> -->
     <script src="assets/js/footeraccordion.js"></script>
     <script src="assets/js/mobiledropdown.js"></script>
     <script src="assets/js/storeselector.js"></script>

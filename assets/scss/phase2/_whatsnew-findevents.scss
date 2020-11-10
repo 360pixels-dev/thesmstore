@@ -1,0 +1,55 @@
+.findevents__menu {
+    display: flex;
+    margin: 40px 90px 20px 0;
+
+    &-items {
+        display: flex;
+        flex-grow: 3;
+        justify-content: center;
+        align-items: center;
+
+        & > ul {
+            list-style-type: none;
+        }
+    }
+
+    &-item {
+        display: flex;
+        display: inline-block;
+        margin: 0 20px;
+
+        & > a {
+            text-decoration: none;
+            color: $gray;
+        }
+    }
+
+    .active {
+        font-weight: bold;
+        & > a {
+            color: $black;
+        }
+    }
+
+    &__event-location {
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
+        align-items: center;
+
+        & > span {
+            letter-spacing: 3px;
+        }
+
+        & > b,
+        strong {
+            letter-spacing: 4px;
+        }
+    }
+}
+
+.card--event-details.bold {
+    p {
+        font-weight: bold;
+    }
+}

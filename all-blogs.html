@@ -12,9 +12,17 @@
     <body>
         <div class="wrapper">
 
-            <!-- COLORED -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        <link rel="stylesheet" href="./assets/css/w3.min.css">
+        <link rel="stylesheet" href="./assets/css/style.min.css">
+    </head>
+    <body>
+        <div class="wrapper">
+
+            <!-- TRANSPARENT -->
             <!-- HEADER -->
             <header>
+                <!-- NAV UPPER -->
                 <nav class="nav__upper nav__upper--default nav__upper--index container-fluid">
 
                     <div class="logo">
@@ -208,8 +216,10 @@
                         </div>
                     </div>
                 </nav>
+                <!-- /NAV UPPER -->
 
-                <nav class="nav__lower nav_lower--default nav__lower--index container-fluid">
+                <!-- NAV LOWER -->
+                <nav class="nav__lower nav_lower--default nav__lower--index container-fluid fashion-nav">
                     <div class="store-selector">
                         <p class="white">
                             <span class="white font-h5--uppercase font-h5--two-space">My Store <span class="thin-orange">(Closes at 9PM)</span></span>
@@ -237,11 +247,13 @@
                         </p>
                     </div>
                 </nav>
+                <!-- NAV LOWER -->
+
             </header>
             <!-- /HEADER -->
 
             <!-- STORE SELECTOR -->
-            <div id="store-selector-drawer" class="make-store-selector-drawer w3-sidebar w3-bar-block w3-animate-left">
+            <div id="store-selector-drawer" class="make-store-selector-drawer w3-sidebar w3-bar-block w3-animate-top">
                 <ul>
                     <li>
                         <div>
@@ -315,28 +327,30 @@
                 </ul>
             </div>
     
-            <div class="w3-overlay w3-animate-opacity" onclick="closeStoreSelector()" style="cursor: pointer; z-index: 20; overflow-y: scroll;" id="store-selector-overlay"></div>
+            <div class="w3-overlay w3-animate-top" onclick="closeStoreSelector()" style="cursor: pointer; z-index: 20; overflow-y: scroll;" id="store-selector-overlay"></div>
             <!-- /STORE SELECTOR -->
             
-            <section class="banner-section banner-section--small banner-section--all-blogs">
-                <div class="banner-section__hr"></div>
+            <section class="banner-section banner-section--small banner-section--all-blogs" style="padding: 0">
+                <div class="banner__shadow-gradient"></div>
+
+                <!-- <div class="banner-section__hr"></div>
 
                 <nav class="banner-section__breadcrumbs" style="margin-top: 20px;">
                     <a href="#">The SM Store</a>
                     <a href="#">All Articles</a>
-                </nav>
+                </nav> -->
 
                 <h1 class="font-hero banner-section__title">All the latest reads & campaigns</h1>
             </section>
 
             
             <section class="press-release-blog m-t-20">
-                <div class="press-release-blog__content container">
+                <div class="press-release-blog__content container" style="padding-top: 24px;">
                     
                     <div class="row-content blog-filter-dropdown">
                         <p class="font-metadata text-bold">Filter</p>
                         <select class="font-caption text-semibold">
-                            <option value="All">All</option>
+                            <option value="All">All Article</option>
                             <option value="All">Men's</option>
                             <option value="All">Women's</option>
                         </select>
