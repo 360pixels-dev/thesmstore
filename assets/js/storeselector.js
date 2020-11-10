@@ -5,9 +5,13 @@ function openStoreSelector() {
     let mobileStoreSelectorArrow = document.getElementById("mobile-store-selector-arrow")
     let lowerNav = document.getElementsByClassName("fashion-nav")
 
+    console.log(lowerNav)
+
     if (drawer.style.display === 'block' || overlay.style.display === 'block') {
 
-        lowerNav[0].style.background = "transparent"
+        if (lowerNav.length !== 0) {
+            lowerNav[0].style.background = "transparent"
+        }
         drawer.style.display = "none";
         drawer.className = "make-store-selector-drawer w3-sidebar w3-bar-block w3-animate-top"
         overlay.style.display = "none";
@@ -16,7 +20,9 @@ function openStoreSelector() {
 
     } else {
 
-        lowerNav[0].style.background = "#397cee"
+        if (lowerNav.length !== 0) {
+            lowerNav[0].style.background = "#397cee"
+        }
         drawer.style.display = "block";
         drawer.className = "make-store-selector-drawer w3-sidebar w3-bar-block w3-animate-top active"
         overlay.style.display = "block";
@@ -28,7 +34,9 @@ function openStoreSelector() {
 
 function closeStoreSelector() {
     
-    document.getElementsByClassName("fashion-nav")[0].style.background = "transparent"
+    if (document.getElementsByClassName("fashion-nav").length === 0) {
+        document.getElementsByClassName("fashion-nav")[0].style.background = "transparent"
+    }
     document.getElementById("store-selector-drawer").style.display = "none";
     document.getElementById("store-selector-overlay").style.display = "none";
 }
