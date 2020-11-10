@@ -171,7 +171,6 @@
 }
 
 .banner-inner {
-    margin-top: 88px;
     position: relative;
     min-height: 318px;
     height: auto;
@@ -254,6 +253,7 @@
     }
 
     &--events {
+        margin-top: 88px !important;
         background: url("../../assets/images/banner-events.png") no-repeat;
         @include bgcover;
         align-items: center;
