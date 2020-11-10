@@ -46,10 +46,16 @@
     }
 
     &__video {
-        height: 531px;
-        background: $christmas-red;
+        height: 551px;
+        // background: $christmas-red;
+        background: url("../images/omnibus-campaign-vid.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
         margin: 5% 7% 1% 7%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
