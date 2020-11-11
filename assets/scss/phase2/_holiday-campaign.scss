@@ -48,10 +48,14 @@
     &__video {
         height: 551px;
         // background: $christmas-red;
-        background: url("../images/holiday-campaign-vid.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
+        // background: url("../images/holiday-campaign-vid.png");
+        // background-size: contain;
+        // background-repeat: no-repeat;
+        // background-position: center;
+        .holiday-campaign-video {
+            position: absolute;
+            height: 531px;
+        }
 
         margin: 5% 7% 1% 7%;
         display: flex;
@@ -81,7 +85,12 @@
             width: auto;
             margin: 0 12px 10px 12px;
 
-            img {
+            .holiday-campaign-video {
+                height: 215px;
+                width: 336px;
+            }
+
+            .play-button {
                 height: 71px;
                 width: 71px;
             }

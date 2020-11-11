@@ -33312,15 +33312,15 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 .campaign-video__video {
   height: 551px;
-  background: url("../images/holiday-campaign-vid.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
   margin: 5% 7% 1% 7%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.campaign-video__video .holiday-campaign-video {
+  position: absolute;
+  height: 531px;
 }
 @media only screen and (max-width: 1024px) {
   .campaign-video__container {
@@ -33339,7 +33339,11 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
     width: auto;
     margin: 0 12px 10px 12px;
   }
-  .campaign-video__video img {
+  .campaign-video__video .holiday-campaign-video {
+    height: 215px;
+    width: 336px;
+  }
+  .campaign-video__video .play-button {
     height: 71px;
     width: 71px;
   }
@@ -33361,7 +33365,11 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
     width: auto;
     margin: 0 12px 10px 12px;
   }
-  .campaign-video__video img {
+  .campaign-video__video .holiday-campaign-video {
+    height: 215px;
+    width: 336px;
+  }
+  .campaign-video__video .play-button {
     height: 71px;
     width: 71px;
   }
