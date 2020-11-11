@@ -1,3 +1,41 @@
+.colorize {
+    background: $indigo !important;
+    transition: 0.3s ease-out;
+}
+
+.sticky {
+    position: fixed !important;
+    animation-name: catchup;
+    animation-duration: 0.3s;
+    transition: 0.3s ease-out !important;
+}
+
+.sticky2 {
+    position: fixed !important;
+    animation-name: catchup2;
+    animation-duration: 0.3s;
+    animation-delay: 0.1s;
+    transition: 0.3s ease-out !important;
+}
+
+@keyframes catchup {
+    from {
+        top: -100px;
+    }
+    to {
+        top: 0px;
+    }
+}
+
+@keyframes catchup2 {
+    from {
+        top: 0px;
+    }
+    to {
+        top: 88px;
+    }
+}
+
 .nav {
     &__upper {
         display: flex;
@@ -5,10 +43,11 @@
         padding: 0 24px;
         justify-content: space-between;
         align-items: center;
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 0;
         z-index: 999;
+        transition: 10.3s ease-out;
 
         & .menu {
             ul {
@@ -610,7 +649,7 @@
     }
 
     &__lower {
-        position: fixed;
+        position: absolute;
         display: flex;
         height: 76px;
         // background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
@@ -621,6 +660,7 @@
         top: 87px;
         left: 0;
         z-index: 998;
+        transition: 0.3s ease-in;
 
         @include respond(tablet) {
             top: 0;

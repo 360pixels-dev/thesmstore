@@ -1,3 +1,13 @@
+window.addEventListener("scroll", () => {
+    let upperNavMenu = document.getElementsByClassName("nav__upper")
+    let lowerNavMenu = document.getElementsByClassName("nav__lower")
+
+    upperNavMenu[0].classList.toggle("sticky", pageYOffset > 100)
+
+    lowerNavMenu[0].classList.toggle("sticky2", pageYOffset > 100)
+    lowerNavMenu[0].classList.toggle("colorize", pageYOffset > 100)
+})
+
 function openStoreSelector() {
     let drawer = document.getElementById("store-selector-drawer")
     let overlay = document.getElementById("store-selector-overlay")

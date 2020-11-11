@@ -1162,16 +1162,53 @@ ul {
   list-style-type: none;
 }
 
+.colorize {
+  background: #397cee !important;
+  transition: 0.3s ease-out;
+}
+
+.sticky {
+  position: fixed !important;
+  animation-name: catchup;
+  animation-duration: 0.3s;
+  transition: 0.3s ease-out !important;
+}
+
+.sticky2 {
+  position: fixed !important;
+  animation-name: catchup2;
+  animation-duration: 0.3s;
+  animation-delay: 0.1s;
+  transition: 0.3s ease-out !important;
+}
+
+@keyframes catchup {
+  from {
+    top: -100px;
+  }
+  to {
+    top: 0px;
+  }
+}
+@keyframes catchup2 {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 88px;
+  }
+}
 .nav__upper {
   display: flex;
   height: 88px;
   padding: 0 24px;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 999;
+  transition: 10.3s ease-out;
 }
 .nav__upper .menu {
   /* This hides the dropdowns */
@@ -1768,7 +1805,7 @@ ul {
   margin: 0 0 0 24px;
 }
 .nav__lower {
-  position: fixed;
+  position: absolute;
   display: flex;
   height: 76px;
   background: #397cee;
@@ -1778,6 +1815,7 @@ ul {
   top: 87px;
   left: 0;
   z-index: 998;
+  transition: 0.3s ease-in;
 }
 @media only screen and (max-width: 1024px) {
   .nav__lower {
