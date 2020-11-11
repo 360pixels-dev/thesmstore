@@ -204,11 +204,11 @@ $(document).ready(function() {
     // CAROUSEL - VIDEOS
     var videoArr = [
         {
-            header: 'Official Campaign Video',
-            title1: 'SM Real',
-            title2: 'Beauty',
-            content: 'From the latest KBeauty trends and products to the hottest styles in fashion—discover real beauty today.',
-            videoUrl: 'https://file-examples.com/wp-content/uploads/2017/04/file_example_MP4_480_1_5MG.mp4'
+            header: 'Featured Video',
+            title1: 'Alex Gonzaga<br>For <span style="color: #0067b3;">#SMCall<br>ToDeliver</span',
+            title2: '',
+            content: 'Stay home, give us a call, and have your items delivered in as easy as 1-2-3!',
+            videoUrl: 'https://file-examples.com/wp-content/uploads/2017/04/file_example_MP4_480_1_5MG.mp4',
         },
         {
             header: 'Women Video',
@@ -219,8 +219,9 @@ $(document).ready(function() {
         },
     ];
 
-    populateVideoDetails();
-    populateVideoSlider();
+    // populateVideoDetails();
+    // populateVideoSlider();
+    populateTemporaryVideoSlider()
     
     $('.featured-video__controls .controls__arrow').click(function() {
         var dir = $(this).attr('class').split('--')[1];
@@ -235,8 +236,10 @@ $(document).ready(function() {
         }
         videoArr[0].isActive = true;
         
-        populateVideoDetails(); // CHANGE EVENT DETAILS
-        populateVideoSlider(); // REARRANGE EVENT SLIDER
+        // populateVideoDetails(); // CHANGE EVENT DETAILS
+        // populateVideoSlider(); // REARRANGE EVENT SLIDER
+        populateTemporaryVideoSlider(); // TEMPORARY VIDEO SLIDER
+
     });
     
     function populateVideoDetails() {
@@ -244,8 +247,9 @@ $(document).ready(function() {
         $('.featured-video__text').html(`
             <span class="font-eyebrow">${videoArr[0].header}</span>
             <h1 class="font-hero">
-                <span>${videoArr[0].title1}</span> 
-                <span>${videoArr[0].title2}</span>
+                <span style="font-size: 48px; line-height: 58px;">${videoArr[0].title1}</span> 
+                <span style="font-size: 48px; line-height: 58px;">${videoArr[0].title2}</span>
+                ${videoArr[0].title3 ? `<span style="font-size: 48px; line-height: 58px;">${videoArr[0].title3}</span>` : ``}
             </h1>
             <p>${videoArr[0].content}</p>
         `);
@@ -254,6 +258,12 @@ $(document).ready(function() {
         
         $('.featured-video__video').html(`
             <video class="featured-video__video-file" playsinline="" autoplay="" muted="" loop="" src="${videoArr[0].videoUrl}" class="ng-star-inserted"></video>
+        `);
+    }
+    function populateTemporaryVideoSlider() {
+        
+        $('.featured-video__video').html(`
+            <img src="./assets/images/featured-video-ctd.png" alt="">
         `);
     }
     
