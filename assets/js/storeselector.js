@@ -2,10 +2,10 @@ window.addEventListener("scroll", () => {
     let upperNavMenu = document.getElementsByClassName("nav__upper")
     let lowerNavMenu = document.getElementsByClassName("nav__lower")
 
-    upperNavMenu[0].classList.toggle("sticky", pageYOffset > 100)
+    upperNavMenu[0].classList.toggle("sticky", pageYOffset > 88)
 
-    lowerNavMenu[0].classList.toggle("sticky2", pageYOffset > 100)
-    lowerNavMenu[0].classList.toggle("colorize", pageYOffset > 0)
+    lowerNavMenu[0].classList.toggle("sticky2", pageYOffset > 88)
+    lowerNavMenu[0].classList.toggle("colorize", pageYOffset > 88)
 })
 
 function openStoreSelector() {

@@ -1,19 +1,20 @@
 .colorize {
+    // background: rgba(57, 124, 238, 0.9) !important;
     background: $indigo !important;
-    transition: 0.3s ease-out;
+    transition: 0.6s ease-out;
 }
 
 .sticky {
     position: fixed !important;
     animation-name: catchup;
-    animation-duration: 0.6s;
+    animation-duration: 0.5s;
     transition: 0.3s ease-out !important;
 }
 
 .sticky2 {
     position: fixed !important;
     animation-name: catchup2;
-    animation-duration: 0.6s;
+    animation-duration: 0.5s;
     transition: 0.3s ease-out !important;
 }
 
@@ -46,7 +47,6 @@
         top: 0;
         left: 0;
         z-index: 999;
-        transition: 10.3s ease-out;
 
         & .menu {
             ul {
