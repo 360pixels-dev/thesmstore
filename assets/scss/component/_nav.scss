@@ -6,21 +6,20 @@
 .sticky {
     position: fixed !important;
     animation-name: catchup;
-    animation-duration: 0.3s;
+    animation-duration: 0.6s;
     transition: 0.3s ease-out !important;
 }
 
 .sticky2 {
     position: fixed !important;
     animation-name: catchup2;
-    animation-duration: 0.3s;
-    animation-delay: 0.1s;
+    animation-duration: 0.6s;
     transition: 0.3s ease-out !important;
 }
 
 @keyframes catchup {
     from {
-        top: -100px;
+        top: -88px;
     }
     to {
         top: 0px;

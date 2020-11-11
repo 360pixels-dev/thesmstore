@@ -5,7 +5,7 @@ window.addEventListener("scroll", () => {
     upperNavMenu[0].classList.toggle("sticky", pageYOffset > 100)
 
     lowerNavMenu[0].classList.toggle("sticky2", pageYOffset > 100)
-    lowerNavMenu[0].classList.toggle("colorize", pageYOffset > 100)
+    lowerNavMenu[0].classList.toggle("colorize", pageYOffset > 0)
 })
 
 function openStoreSelector() {
