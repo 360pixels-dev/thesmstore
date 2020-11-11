@@ -14985,12 +14985,14 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   }
 }
 .events__filter--category span {
+  color: #88898f;
   margin-right: 40px;
   white-space: nowrap;
   cursor: pointer;
 }
 .events__filter--category span.active {
   font-weight: bold;
+  color: #161720;
 }
 .events__filter--location {
   display: flex;
