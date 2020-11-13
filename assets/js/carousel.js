@@ -221,7 +221,7 @@ $(document).ready(function() {
 
     // populateVideoDetails();
     // populateVideoSlider();
-    populateTemporaryVideoSlider()
+    // populateTemporaryVideoSlider()
     
     $('.featured-video__controls .controls__arrow').click(function() {
         var dir = $(this).attr('class').split('--')[1];
@@ -238,7 +238,7 @@ $(document).ready(function() {
         
         // populateVideoDetails(); // CHANGE EVENT DETAILS
         // populateVideoSlider(); // REARRANGE EVENT SLIDER
-        populateTemporaryVideoSlider(); // TEMPORARY VIDEO SLIDER
+        // populateTemporaryVideoSlider(); // TEMPORARY VIDEO SLIDER
 
     });
     

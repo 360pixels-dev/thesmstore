@@ -404,21 +404,26 @@
             <!-- VIDEO -->
             <section class="featured-video">
                 <div class="featured-video__bg container-fluid"></div>         
-                <div class="featured-video__content container">
+                <div class="featured-video__content container" style="max-width: 1244px;">
                     <div class="featured-video__video">
-
-                        <img src="./assets/images/featured-video-ctd.png" alt="">
+                        
+                        <div class="featured-video__video-file" style="display: flex; justify-content: center; align-items: center; cursor: pointer;">
+                            <img class="featured-video__video-file" src="./assets/images/featured-video-ctd.png" alt="">
+                            <img src="./assets/images/play-video.svg" alt="" style="position: absolute; opacity: 0.6; z-index: 51;">
+                        </div>
 
                         <!-- <video class="featured-video__video-file" playsinline="" autoplay="" muted="" loop="" src="https://storage.coverr.co/videos/coverr-meditation-couple-in-the-park-1566577927549?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjExNDMyN0NEOTRCMUFCMTFERTE3IiwiaWF0IjoxNTgyNzcyNzk2fQ.02ngrtvWjl3gOlqlCqYXerXmA9N2JcoUqXH-gu66oiA" poster="https://storage.coverr.co/posters/coverr-meditation-couple-in-the-park-1566577927549" class="ng-star-inserted"></video> -->
                     </div> <!--.featured-video__video -->
 
-                    <div class="featured-video__text" style="margin-left: 26px;">
+                    <div class="featured-video__text">
                         <span class="font-eyebrow">Featured Video</span>
-                        <p class="font-hero" style="font-size: 48px; line-height: 58px; letter-spacing: 1.6px; width: 100%">
-                            Alex Gonzaga For #SMCall<br>ToDeliver
-                        </p>
+                        <h1 class="font-hero">
+                            Alex Gonzaga <br>For <span style="color: #0067b3">#SMCall<br><span style="visibility: hidden;">For </span>ToDeliver</span>
+                        </h1>
                         <p>Stay home, give us a call, and have your items delivered in as easy as 1-2-3!</p>
                     </div> <!--.featured-video__text -->
+
+                    
 
                     <div class="featured-video__controls controls">
                         <button class="controls__arrow controls__arrow--left" href="#"><img src="./assets/images/arrow-tail-left.svg" alt=""></button>
