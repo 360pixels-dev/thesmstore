@@ -12991,9 +12991,11 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 .featured-video__text {
   flex: 0 0 34%;
   z-index: 99;
+  margin-top: 30px;
 }
 @media only screen and (max-width: 1024px) {
   .featured-video__text {
+    margin-top: 0;
     text-align: right;
   }
   .featured-video__text > h1,
@@ -13003,6 +13005,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 @media only screen and (max-width: tablet) {
   .featured-video__text {
+    margin-top: 0;
     text-align: right;
   }
   .featured-video__text > h1,
@@ -34363,6 +34366,69 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 .ctd__support > div > a {
   margin: 0 auto;
   width: 205px;
+}
+.ctd-accordion {
+  width: 70%;
+  max-width: 14000px;
+  margin: 2rem auto;
+  padding: 2rem 0;
+}
+.ctd-accordion__item {
+  background: #ffffff;
+  color: #161720;
+  margin: 1rem 0;
+}
+.ctd-accordion__item-header {
+  border: 1px solid #ebeef8;
+  border-radius: 4px 4px 0px 0px;
+  padding: 20px 16px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-weight: bold;
+  line-height: 24px;
+  cursor: pointer;
+}
+.ctd-accordion__item-header:after {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  content: url("../images/icons/angle-down-black.svg");
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  right: 1rem;
+  transition: 0.3s ease-in;
+}
+.ctd-accordion__item-header.active:after {
+  display: flex;
+  align-items: center;
+  transform: rotate(180deg);
+  transition: 0.3s ease-out;
+}
+.ctd-accordion__item-body {
+  border: 1px solid #ebeef8;
+  box-shadow: inset 0px 2px 5px rgba(235, 239, 250, 0.5);
+  border-radius: 0px 0px 4px 4px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+.ctd-accordion__item-body-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px 24px;
+}
+.ctd-accordion__item-body-content span {
+  line-height: 64px;
+}
+.ctd-accordion__item-body-content > ul {
+  list-style-type: disc;
+  margin-left: 40px;
+}
+.ctd-accordion__item-body-content > ul em {
+  color: #88898f;
 }
 
 /*# sourceMappingURL=style.min.css.map */
