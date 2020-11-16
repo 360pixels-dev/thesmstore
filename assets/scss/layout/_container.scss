@@ -8,27 +8,25 @@
     //padding: 0 $gutter-desktop;
     margin: 0 auto;
 
-
     @include respond(tablet) {
         max-width: 600px;
-        padding: 0 $gutter-tablet; 
+        padding: 0 $gutter-tablet;
     }
 
-    @include respond(mobile) {    
+    @include respond(mobile) {
         max-width: 360px;
         padding: 0 $gutter-mobile;
     }
 }
 
 .container-fluid {
-    width: 100%; 
+    width: 100%;
     margin: 0 auto;
 
     &--gutter {
         padding: 0 26px;
     }
 }
-
 
 .container-1238 {
     display: flex;
@@ -48,26 +46,25 @@
 
     @include respond(1200px) {
         width: 80%;
-        padding: 0 $gutter-tablet; 
+        padding: 0 $gutter-tablet;
     }
 
     @include respond(1200px) {
         width: 80%;
-        padding: 0 $gutter-tablet; 
+        padding: 0 $gutter-tablet;
     }
 
     @include respond(tablet) {
         width: 600px;
-        
-        padding: 0 $gutter-tablet; 
+
+        padding: 0 $gutter-tablet;
     }
 
-    @include respond(mobile) {    
+    @include respond(mobile) {
         width: 360px;
         padding: 0 $gutter-mobile;
     }
 }
-
 
 .row {
     display: flex;
@@ -107,7 +104,7 @@
     min-height: 500px;
     background: $white;
     padding: 58px;
-    
+
     @include respond(mobile) {
         margin: -124px 0 40px 0;
         width: 100% !important;
@@ -141,6 +138,10 @@
 
     &--lemon {
         border: 15px solid $lemon;
+        @include respond(tablet) {
+            margin: 0px auto 40px auto;
+            padding: 21px 21px 41px 21px;
+        }
     }
 
     @include respond(1040px) {
@@ -164,10 +165,4 @@
         width: 100%;
         padding: 12px;
     }
-
 }
-
-
-
-
-

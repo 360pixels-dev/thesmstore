@@ -1,5 +1,5 @@
 .banner {
-    background-color: #F05D6B;
+    background-color: #f05d6b;
     position: relative;
     // height: 792px;
     height: 100vh;
@@ -25,7 +25,13 @@
     }
 
     &__pattern {
-        background-image: repeating-radial-gradient(center center, rgba(0,0,0,0.2), rgba(0,0,0,0.2) 2px, transparent 1px, transparent 100%) !important;
+        background-image: repeating-radial-gradient(
+            center center,
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2) 2px,
+            transparent 1px,
+            transparent 100%
+        ) !important;
         background-size: 50px 50px;
         height: 55.17%;
         width: 100%;
@@ -54,7 +60,7 @@
         background-repeat: no-repeat;
         background-position: center top;
         background-size: cover;
-        width:78%;
+        width: 78%;
         // height: 85%;
         height: 82%;
         position: absolute;
@@ -72,14 +78,13 @@
         }
 
         &:nth-of-type(1) {
-            background-image: url('../images/carousel-img-01.jpg');
+            background-image: url("../images/carousel-img-01.jpg");
 
             @include respond(360px) {
-                background-image: url('../images/m-carousel-img-01.jpg');
+                background-image: url("../images/m-carousel-img-01.jpg");
             }
         }
     }
-
 
     &__content {
         position: absolute;
@@ -104,7 +109,6 @@
         }
     }
 
-    
     &__pagination {
         position: absolute;
         top: 50%;
@@ -131,7 +135,7 @@
     }
 }
 
-.banner-inner { 
+.banner-inner {
     position: relative;
     min-height: 318px;
     height: auto;
@@ -142,15 +146,15 @@
     @include respond(tablet) {
         min-height: 200px;
     }
-    
+
     &--blank {
         background-color: $dark-gray;
     }
-    
+
     &--whatsnew {
-        background: url('../../assets/images/banner-whatsnew.png') no-repeat;
+        background: url("../../assets/images/banner-whatsnew.png") no-repeat;
         background-size: cover;
-        background-position: center right; 
+        background-position: center right;
         align-items: center;
         height: 350px;
 
@@ -160,11 +164,10 @@
             padding-bottom: 40px;
             padding-left: 10%;
             height: 200px;
-            background-position: 81% 50%; 
+            background-position: 81% 50%;
         }
 
         @include respond(tablet) {
-            
         }
 
         & h1 {
@@ -180,12 +183,11 @@
                 border-bottom: 4px solid $lemon;
                 justify-content: start;
             }
-
         }
     }
-    
+
     &--events {
-        background: url('../../assets/images/banner-events.png') no-repeat;
+        background: url("../../assets/images/banner-events.png") no-repeat;
         @include bgcover;
         align-items: center;
 
@@ -194,7 +196,7 @@
         }
 
         @include respond(mobile) {
-            background: url('../../assets/images/banner-events-m.jpg') no-repeat;
+            background: url("../../assets/images/banner-events-m.jpg") no-repeat;
             @include bgcover;
         }
 
@@ -215,7 +217,7 @@
             height: 65px;
             background: rgba(64, 63, 71, 0.5);
             // opacity: 0.3;
-            border: 2px solid #FFFFFF;
+            border: 2px solid #ffffff;
             box-sizing: border-box;
             display: flex;
             align-items: center;
@@ -239,9 +241,8 @@
                 color: $white;
                 font-size: 16px;
 
-                
                 &::placeholder {
-                    color:#fff;
+                    color: #fff;
                 }
 
                 &:hover,
@@ -253,37 +254,38 @@
         }
     }
 
-
     &--stories {
-        background: url('../../assets/images/banner-stories.jpg') no-repeat;
+        background: url("../../assets/images/banner-stories.jpg") no-repeat;
         @include bgcover;
 
         @include respond(tablet) {
-            background: url('../../assets/images/banner-stories.jpg') no-repeat;
+            background: url("../../assets/images/banner-stories.jpg") no-repeat;
             @include bgcover;
         }
 
         @include respond(mobile) {
-            background: url('../../assets/images/banner-stories-m.jpg') no-repeat;
+            background: url("../../assets/images/banner-stories-m.jpg")
+                no-repeat;
             @include bgcover;
         }
     }
 
     &--advocacy {
-        background: url('../../assets/images/banner-advocacy.png') no-repeat;
+        background: url("../../assets/images/banner-advocacy.png") no-repeat;
         @include bgcover;
 
         @include respond(tablet) {
-            background: url('../../assets/images/banner-advocacy-m.png') no-repeat;
+            background: url("../../assets/images/banner-advocacy-m.png")
+                no-repeat;
             @include bgcover;
         }
     }
 
     &--about {
-        background: url('../../assets/images/banner-about.png') no-repeat;
+        background: url("../../assets/images/banner-about.png") no-repeat;
         height: 350px;
         background-size: cover;
-        background-position: top right; 
+        background-position: top right;
         flex-direction: column;
 
         & > div {
@@ -297,18 +299,18 @@
 
         @include respond(mobile) {
             height: 200px;
-            background: url('../../assets/images/banner-about-m.png') no-repeat;
+            background: url("../../assets/images/banner-about-m.png") no-repeat;
             background-size: cover;
-            background-position: top right; 
+            background-position: top right;
             flex-direction: column;
         }
     }
 
     &--contacts {
-        background: url('../../assets/images/banner-contacts.jpg') no-repeat;
+        background: url("../../assets/images/banner-contacts.jpg") no-repeat;
         height: 350px;
         background-size: cover;
-        background-position: top right; 
+        background-position: top right;
         flex-direction: column;
 
         & > div {
@@ -322,18 +324,19 @@
 
         @include respond(mobile) {
             height: 200px;
-            background: url('../../assets/images/banner-contacts-m.png') no-repeat;
+            background: url("../../assets/images/banner-contacts-m.png")
+                no-repeat;
             background-size: cover;
-            background-position: top right; 
+            background-position: top right;
             flex-direction: column;
         }
     }
 
     &--help {
-        background: url('../../assets/images/banner-help.jpg') no-repeat;
+        background: url("../../assets/images/banner-help.jpg") no-repeat;
         height: 350px;
         background-size: cover;
-        background-position: top right; 
+        background-position: top right;
         flex-direction: column;
 
         & > div {
@@ -361,7 +364,7 @@
             width: 717px;
             height: 65px;
             background: rgba(64, 63, 71, 0.5);
-            border: 2px solid #FFFFFF;
+            border: 2px solid #ffffff;
             box-sizing: border-box;
             display: flex;
             align-items: center;
@@ -389,9 +392,8 @@
                 color: $white;
                 font-size: 16px;
 
-                
                 &::placeholder {
-                    color:#fff;
+                    color: #fff;
                 }
 
                 &:hover,
@@ -404,31 +406,31 @@
 
         @include respond(mobile) {
             height: 345px;
-            background: url('../../assets/images/banner-help-m.jpg') no-repeat;
+            background: url("../../assets/images/banner-help-m.jpg") no-repeat;
             background-size: cover;
-            background-position: top right; 
+            background-position: top right;
             flex-direction: column;
         }
     }
 
-
     &--services {
-        background: url('../../assets/images/banner-services.jpg') no-repeat;
+        background: url("../../assets/images/banner-services.jpg") no-repeat;
         @include bgcover;
 
         @include respond(tablet) {
-            background: url('../../assets/images/banner-services.jpg') no-repeat;
+            background: url("../../assets/images/banner-services.jpg") no-repeat;
             @include bgcover;
         }
 
         @include respond(mobile) {
-            background: url('../../assets/images/banner-services-m.jpg') no-repeat;
+            background: url("../../assets/images/banner-services-m.jpg")
+                no-repeat;
             @include bgcover;
             flex-direction: column;
 
             & > div {
                 width: 90%;
-    
+
                 & h1 {
                     color: $white;
                     margin-top: 100px;
@@ -436,100 +438,115 @@
             }
         }
     }
-
 }
-
 
 .big-header {
     position: relative;
     display: flex;
     height: 550px;
     align-items: flex-start;
-    padding: 88px 24px 20px 24px;    
-    
+    padding: 88px 24px 20px 24px;
+
     @include respond(mobile) {
         height: 300px;
     }
 
-    &--beauty-trends{
-        background: url('../../assets/images/banner-beauty-trends.jpg') no-repeat;
+    &--beauty-trends {
+        background: url("../../assets/images/banner-beauty-trends.jpg")
+            no-repeat;
         @include bgcover;
 
         @include respond(tablet) {
-            background: url('../../assets/images/banner-beauty-trends.jpg') no-repeat;
+            background: url("../../assets/images/banner-beauty-trends.jpg")
+                no-repeat;
             @include bgcover;
         }
 
         @include respond(mobile) {
-            background: url('../../assets/images/banner-beauty-trends-m.jpg') no-repeat;
+            background: url("../../assets/images/banner-beauty-trends-m.jpg")
+                no-repeat;
             @include bgcover;
         }
-    }       
-    
+    }
+
     &--3ds {
-        background: url('../../assets/images/banner-3ds.png') no-repeat;
+        background: url("../../assets/images/banner-3ds.png") no-repeat;
         @include bgcover;
 
         @include respond(mobile) {
-            background: url('../../assets/images/banner-3ds-m.png') no-repeat;
+            background: url("../../assets/images/banner-3ds-m.png") no-repeat;
             @include bgcover;
         }
     }
 
     &--promo {
-        background: url('../../assets/images/banner-whatsnew-promo.png') no-repeat;
+        background: url("../../assets/images/banner-whatsnew-promo.png")
+            no-repeat;
         @include bgcover;
 
         @include respond(mobile) {
-            background: url('../../assets/images/banner-whatsnew-promo-m.png') no-repeat;
+            background: url("../../assets/images/banner-whatsnew-promo-m.png")
+                no-repeat;
             @include bgcover;
         }
-    } 
+    }
 
     &--press-release {
-        background: url('../../assets/images/banner-press-release-blog.png') no-repeat;
+        background: url("../../assets/images/banner-press-release-blog.png")
+            no-repeat;
         @include bgcover;
-    }   
+    }
 
     &--event-fl {
-        background: url('../../assets/images/banner-events-fashion-lifestyle.png') no-repeat;
+        background: url("../../assets/images/banner-events-fashion-lifestyle.png")
+            no-repeat;
         @include bgcover;
 
         @include respond(mobile) {
-            background: url('../../assets/images/banner-events-fashion-lifestyle-m.png') no-repeat;
+            background: url("../../assets/images/banner-events-fashion-lifestyle-m.png")
+                no-repeat;
             @include bgcover;
         }
     }
 
     &--event-k {
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%), url('../../assets/images/banner-events-kids.png');
+        background: linear-gradient(
+                180deg,
+                rgba(0, 0, 0, 0.25) 0%,
+                rgba(0, 0, 0, 0) 100%
+            ),
+            url("../../assets/images/banner-events-kids.png");
         background-blend-mode: multiply;
         background-repeat: no-repeat;
         @include bgcover;
 
         @include respond(mobile) {
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%), url('../../assets/images/banner-events-kids.png');
+            background: linear-gradient(
+                    180deg,
+                    rgba(0, 0, 0, 0.25) 0%,
+                    rgba(0, 0, 0, 0) 100%
+                ),
+                url("../../assets/images/banner-events-kids.png");
             background-blend-mode: multiply;
             background-repeat: no-repeat;
             @include bgcover;
         }
     }
 
-    &--quiz{
-        background: url('../../assets/images/banner-quiz.jpg') no-repeat;
+    &--quiz {
+        background: url("../../assets/images/banner-quiz.jpg") no-repeat;
         @include bgcover;
 
         @include respond(tablet) {
-            background: url('../../assets/images/banner-quiz.jpg') no-repeat;
+            background: url("../../assets/images/banner-quiz.jpg") no-repeat;
             @include bgcover;
         }
 
         @include respond(mobile) {
-            background: url('../../assets/images/banner-quiz-m.jpg') no-repeat;
+            background: url("../../assets/images/banner-quiz-m.jpg") no-repeat;
             @include bgcover;
         }
-    }      
-
+    }
 }
 
 // BANNER MIXINS
@@ -546,21 +563,24 @@
 @mixin breadcrumbs--white {
     color: $white;
     &:not(:last-child) {
-        background: url(../../assets/images/arrow-right.svg) no-repeat right center;
+        background: url(../../assets/images/arrow-right.svg) no-repeat right
+            center;
     }
 }
 
 @mixin breadcrumbs--black {
     color: $black;
     &:not(:last-child) {
-        background: url(../../assets/images/arrow-right-black.svg) no-repeat right center;
+        background: url(../../assets/images/arrow-right-black.svg) no-repeat
+            right center;
     }
 }
 
 @mixin breadcrumbs--gray {
     color: $dark-gray;
     &:not(:last-child) {
-        background: url(../../assets/images/arrow-right-gray.svg) no-repeat right center;
+        background: url(../../assets/images/arrow-right-gray.svg) no-repeat
+            right center;
     }
 }
 
@@ -579,7 +599,11 @@
         width: 100%;
         height: 1px;
         display: block;
-        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+        background: linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 1) 0%,
+            rgba(255, 255, 255, 0) 100%
+        );
         position: relative;
         top: 112px;
 
@@ -588,7 +612,7 @@
         }
     }
 
-    &__breadcrumbs { 
+    &__breadcrumbs {
         position: relative;
         top: 128px;
         height: 34px;
@@ -647,10 +671,10 @@
     }
 
     &--all-blogs {
-        background-image: url('../../assets/images/banner-all-blogs.jpg');
+        background-image: url("../../assets/images/banner-all-blogs.jpg");
 
         @include respond(mobile) {
-            background-image: url('../../assets/images/banner-all-blogs-m.jpg');
+            background-image: url("../../assets/images/banner-all-blogs-m.jpg");
             @include banner-small-m--bc;
         }
 
@@ -683,10 +707,10 @@
     }
 
     &--all-magazine {
-        background-image: url('../../assets/images/banner-all-magazine.jpg');
+        background-image: url("../../assets/images/banner-all-magazine.jpg");
 
         @include respond(mobile) {
-            background-image: url('../../assets/images/banner-all-magazine-m.jpg');
+            background-image: url("../../assets/images/banner-all-magazine-m.jpg");
             @include banner-small-m--bc;
         }
 
@@ -702,10 +726,10 @@
     }
 
     &--omnibus {
-        background-image: url('../../assets/images/banner-omnibus.jpg');
+        background-image: url("../../assets/images/banner-omnibus.jpg");
 
         @include respond(mobile) {
-            background-image: url('../../assets/images/banner-omnibus-m.jpg');
+            background-image: url("../../assets/images/banner-omnibus-m.jpg");
             @include banner-small-m--bc;
         }
 
@@ -724,7 +748,6 @@
         }
 
         & > .banner-section__title {
-             
             @include respond(tablet) {
                 font-size: 24px;
                 line-height: 32px;
@@ -737,10 +760,10 @@
     }
 
     &--viber {
-        background-image: url('../../assets/images/banner-viber.jpg');
+        background-image: url("../../assets/images/banner-viber.jpg");
 
         @include respond(mobile) {
-            background-image: url('../../assets/images/banner-viber-m.jpg');
+            background-image: url("../../assets/images/banner-viber-m.jpg");
             @include banner-small-m--bc;
         }
 
@@ -766,64 +789,64 @@
     }
 
     &--men {
-        background-image: url('../../assets/images/banner-mens.jpg');
+        background-image: url("../../assets/images/banner-mens.jpg");
 
         @include respond(mobile) {
-            background-image: url('../../assets/images/banner-mens-m.jpg');
+            background-image: url("../../assets/images/banner-mens-m.jpg");
             @include banner-small-m;
         }
     }
 
     &--women {
-        background-image: url('../../assets/images/banner-women.jpg');
+        background-image: url("../../assets/images/banner-women.jpg");
 
         @include respond(mobile) {
-            background-image: url('../../assets/images/banner-women-m.jpg');
+            background-image: url("../../assets/images/banner-women-m.jpg");
             @include banner-small-m;
         }
     }
 
     &--kids {
-        background-image: url('../../assets/images/banner-kids.jpg');
+        background-image: url("../../assets/images/banner-kids.jpg");
 
         @include respond(mobile) {
-            background-image: url('../../assets/images/banner-kids-m.jpg');
+            background-image: url("../../assets/images/banner-kids-m.jpg");
             @include banner-small-m;
         }
     }
 
     &--youth {
-        background-image: url('../../assets/images/banner-youth.jpg');
+        background-image: url("../../assets/images/banner-youth.jpg");
 
         @include respond(mobile) {
-            background-image: url('../../assets/images/banner-youth-m.jpg');
+            background-image: url("../../assets/images/banner-youth-m.jpg");
             @include banner-small-m;
         }
     }
 
     &--home {
-        background-image: url('../../assets/images/banner-home.jpg');
+        background-image: url("../../assets/images/banner-home.jpg");
 
         @include respond(mobile) {
-            background-image: url('../../assets/images/banner-home-m.jpg');
+            background-image: url("../../assets/images/banner-home-m.jpg");
             @include banner-small-m;
         }
     }
 
     &--beauty {
-        background-image: url('../../assets/images/banner-beauty.jpg');
+        background-image: url("../../assets/images/banner-beauty.jpg");
 
         @include respond(mobile) {
-            background-image: url('../../assets/images/banner-beauty-m.jpg');
+            background-image: url("../../assets/images/banner-beauty-m.jpg");
             @include banner-small-m;
         }
     }
 
     &--other {
-        background-image: url('../../assets/images/banner-other.jpg');
+        background-image: url("../../assets/images/banner-other.jpg");
 
         @include respond(mobile) {
-            background-image: url('../../assets/images/banner-other-m.jpg');
+            background-image: url("../../assets/images/banner-other-m.jpg");
             @include banner-small-m;
         }
 
@@ -835,28 +858,28 @@
     }
 
     &--sm-cares {
-        background-image: url('../../assets/images/banner-sm-cares.jpg');
+        background-image: url("../../assets/images/banner-sm-cares.jpg");
 
         @include respond(mobile) {
-            background-image: url('../../assets/images/banner-sm-cares-m.jpg');
+            background-image: url("../../assets/images/banner-sm-cares-m.jpg");
             @include banner-small-m;
         }
     }
 
     &--press-release {
-        background-image: url('../../assets/images/banner-press-release.jpg');
+        background-image: url("../../assets/images/banner-press-release.jpg");
 
         @include respond(mobile) {
-            background-image: url('../../assets/images/banner-press-release-m.jpg');
+            background-image: url("../../assets/images/banner-press-release-m.jpg");
             @include banner-small-m;
         }
     }
 
     &--forex {
-        background-image: url('../../assets/images/banner-services-forex.jpg');
+        background-image: url("../../assets/images/banner-services-forex.jpg");
 
         @include respond(mobile) {
-            background-image: url('../../assets/images/banner-services-forex-m.jpg');
+            background-image: url("../../assets/images/banner-services-forex-m.jpg");
             @include banner-small-m--bc;
         }
 
@@ -880,10 +903,10 @@
     }
 
     &--billpay {
-        background-image: url('../../assets/images/banner-billpay.jpg');
+        background-image: url("../../assets/images/banner-billpay.jpg");
 
         @include respond(mobile) {
-            background-image: url('../../assets/images/banner-billpay-m.jpg');
+            background-image: url("../../assets/images/banner-billpay-m.jpg");
             @include banner-small-m--bc;
         }
 
@@ -907,17 +930,15 @@
         }
     }
 
-
     &--gift-registry {
-        background-image: url('../../assets/images/banner-gift-registry.jpg');
+        background-image: url("../../assets/images/banner-gift-registry.jpg");
 
         @include respond(mobile) {
-            background-image: url('../../assets/images/banner-gift-registry-m.jpg');
+            background-image: url("../../assets/images/banner-gift-registry-m.jpg");
             @include banner-small-m--bc;
         }
 
         & > .banner-section__breadcrumbs {
-
             & > a {
                 @include breadcrumbs--white;
 
@@ -930,7 +951,7 @@
                 }
             }
         }
-        
+
         & > .banner-section__title {
             @include respond(mobile) {
                 top: 90px !important;
@@ -940,15 +961,14 @@
     }
 
     &--gift-card {
-        background-image: url('../../assets/images/banner-gift-card.jpg');
+        background-image: url("../../assets/images/banner-gift-card.jpg");
 
         @include respond(mobile) {
-            background-image: url('../../assets/images/banner-gift-card-m.jpg');
+            background-image: url("../../assets/images/banner-gift-card-m.jpg");
             @include banner-small-m--bc;
         }
 
         & > .banner-section__breadcrumbs {
-            
             & > a {
                 @include breadcrumbs--white;
 
@@ -961,7 +981,7 @@
                 }
             }
         }
-        
+
         & > .banner-section__title {
             @include respond(mobile) {
                 top: 90px !important;
@@ -971,15 +991,14 @@
     }
 
     &--gift-wrapping {
-        background-image: url('../../assets/images/banner-gift-wrapping.jpg');
+        background-image: url("../../assets/images/banner-gift-wrapping.jpg");
 
         @include respond(mobile) {
-            background-image: url('../../assets/images/banner-gift-wrapping-m.jpg');
+            background-image: url("../../assets/images/banner-gift-wrapping-m.jpg");
             @include banner-small-m--bc;
         }
 
         & > .banner-section__breadcrumbs {
-            
             & > a {
                 @include breadcrumbs--white;
 
@@ -992,7 +1011,7 @@
                 }
             }
         }
-        
+
         & > .banner-section__title {
             @include respond(mobile) {
                 top: 90px !important;
@@ -1003,13 +1022,13 @@
 }
 
 .banner-yolk {
-    background-image: url('../../assets/images/pattern-yolk.png');
+    background-image: url("../../assets/images/pattern-yolk.png");
     background-position: center center;
     width: 437px;
     height: 350px;
     position: absolute;
 
     @include respond(mobile) {
-       width: 74%;
+        width: 74%;
     }
 }

@@ -39,6 +39,10 @@
             color: $black;
             text-align: center;
             border: 1px solid $mid-gray;
+
+            @include respond(mobile) {
+                font-size: 14px;
+            }
         }
 
         &-content {
@@ -46,11 +50,15 @@
 
             & > span {
                 flex-basis: 50%;
-                padding: 16px 24px;
+                padding: 16px 8px;
                 color: $black;
                 text-align: center;
                 border: 1px solid $mid-gray;
                 border-top: none;
+
+                @include respond(mobile) {
+                    font-size: 14px;
+                }
 
                 &:nth-of-type(1) {
                     background-color: #f9fbff;

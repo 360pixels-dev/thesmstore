@@ -1,5 +1,4 @@
 .whats-new {
-
     &__3daysale {
         background-color: $pacific;
         padding: 44px 0;
@@ -7,7 +6,6 @@
         @include respond(tablet) {
             padding: 24px 14px;
         }
-
 
         &__container {
             width: 1314px;
@@ -29,10 +27,6 @@
                 flex-direction: column-reverse;
                 padding: 0;
             }
-
-         
-
-          
         }
 
         &__description {
@@ -44,26 +38,25 @@
             }
 
             p {
-              margin-bottom: 32px;
-              @include respond(tablet) {
-                font-size: 14px;
-                line-height: 22px;
-                margin-bottom: 10px;
+                margin-bottom: 32px;
+                @include respond(tablet) {
+                    font-size: 14px;
+                    line-height: 22px;
+                    margin-bottom: 10px;
+                }
             }
 
+            &__h1 {
+                @include respond(tablet) {
+                    font-size: 24px;
+                    line-height: 32px;
+                    letter-spacing: 1.6px;
+                }
             }
 
-           &__h1 {
-            @include respond(tablet) {
-                font-size: 24px;
-                line-height: 32px;
-                letter-spacing: 1.6px;
+            &__btn {
+                display: inline-flex;
             }
-           }
-
-           &__btn {
-               display: inline-flex;
-           }
         }
 
         &__image {
@@ -134,36 +127,32 @@
                     }
 
                     &:nth-of-type(2) {
-                        color: #2C2E2F;
+                        color: #2c2e2f;
 
                         @include respond(mobile) {
                             font-size: 14px;
                         }
                     }
-                    
                 }
             }
         }
     }
 
     &__promos {
-        padding:80px 20px;
+        padding: 80px 20px;
         position: relative;
         //min-height: 759px;
         background-color: $blush;
 
         @include respond(tablet) {
             padding: 40px 12px;
-         }
-
-         
+        }
 
         &-container {
             display: flex;
             flex-direction: column;
             width: 1224px;
             margin: auto;
-            
         }
 
         &-cards {
@@ -208,7 +197,7 @@
             height: min-content;
             margin-bottom: -70px;
         }
-        
+
         & > img {
             @include respond(tablet) {
                 width: 100%;
@@ -257,6 +246,12 @@
 
         & > p {
             margin-top: 10px;
+
+            @include respond(mobile) {
+                width: 90%;
+                text-align: left;
+                margin: 10px auto;
+            }
         }
     }
 
@@ -309,19 +304,35 @@
             & > li {
                 margin-bottom: 16px;
                 color: $black;
+
+                @include respond(mobile) {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        & > p {
+            & > br {
+                display: none;
+            }
+            @include respond(mobile) {
+                font-size: 14px;
+
+                & > br {
+                    display: block;
+                }
             }
         }
     }
 
     & .store-hours {
-
         @include respond(tablet) {
             padding: 24px 16px;
             width: 100%;
         }
 
         & > .store-branches {
-            background-color: #EFF3FD;
+            background-color: #eff3fd;
             padding: 32px;
             min-height: 150px;
             display: flex;
@@ -329,14 +340,18 @@
             align-items: center;
             margin-top: 80px;
 
+            .tbl__3ds-m-date:nth-of-type(even) {
+                background-color: #f9fbff;
+            }
+
             @include respond(tablet) {
                 margin-top: 40px;
             }
-            
+
             & > h1 {
                 margin-bottom: 32px;
                 text-align: center;
-            }   
+            }
 
             & > div {
                 display: flex;
@@ -373,9 +388,4 @@
             align-self: flex-end;
         }
     }
-
-  
-
 }
-
-
