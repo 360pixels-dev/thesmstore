@@ -1,0 +1,33 @@
+.heading-text {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 32px;
+    }
+
+
+ .banner-page {
+     &__headings {
+        text-align: left;
+        
+        margin-top: 120px;
+        color: $white;
+
+        @include respond(1400px) {
+            padding-left: 20%;
+         }
+
+        @include respond(tablet) {
+            padding-left: 0;
+            margin-top: 10px;
+
+            font-size:32px;
+            padding:0 16px;
+         }
+
+         @include respond(mobile) {
+            padding:0 16px;
+         }
+     }
+ }
+    

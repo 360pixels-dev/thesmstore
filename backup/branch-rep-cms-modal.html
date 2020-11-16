@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery - SM Store</title>
+
+    <link rel="stylesheet" href="./assets/css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="modal active">
+            <div class="modal--export_csv">
+                <div class="modal-content">
+                    <div class="header-container">
+                        <p>EXPORT CSV</p>
+                        <a href="#" class="close"><img src="./assets/images/icons/close-black.svg" alt="" /></a>
+                    </div>
+                    <div class="input-container">
+                        <div>
+                            <p>Date from</p>
+                            <input type="date" id="dateFrom" name="dateFrom" placeholder="Select Date" required>
+                        </div>
+                        <div>
+                            <p>Date to</p>
+                            <input type="date" id="dateTo" name="dateTo" placeholder="Select Date" required>
+                        </div>
+                    </div>
+
+                    <div class="button-container">
+                        <button class="btn--primary button--dark-blue font-cta">Export</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="branch-cms">
+            <div>
+                <div class="branch-cms-header">
+                    ORDERS
+                </div>
+                <div class="branch-cms-branch">
+                    <p>The SM Store Makati</p>
+
+                    <div class="search">
+                        <a href="#" class="search__btn"> <img src="./assets/images/icons/icon-search-black.svg"
+                                alt="Search"></a>
+                        <input type="text" class="search__input" placeholder="Search...">
+                    </div>
+                </div>
+
+                <div class="branch-cms-select_all">
+                    <div class="make-custom-checkbox">
+                        <input type="checkbox" id="checkbox_select-all">
+                        <label class="selectAll" for="checkbox_select-all">SELECT ALL</label>
+
+                        <a href="#" id="deselect-all">DELETE ALL</a>
+                    </div>
+                </div>
+
+
+                <div class="branch-cms-table">
+                    <div class="branch-cms-table__header">
+                        <!-- <div class="make-custom-checkbox branch-cms-table__column">
+                            <input type="checkbox" id="checkbox_all">
+                            <label class="selectAll" for="checkbox_all">ORDER NO.
+                                <a href="#">
+                                    <img src="./assets/images/icons/column-sort.png" alt="" />
+                                </a>
+                            </label>
+                        </div> -->
+                        <div class="branch-cms-table__column">
+                            <p>Order No.<a href="#"><img src="./assets/images/icons/column-sort.png" alt="" /></a>
+                            </p>
+                        </div>
+
+                        <div class="branch-cms-table__column">
+                            <p>DATE ORDERED<a href="#"><img src="./assets/images/icons/column-sort.png" alt="" /></a>
+                            </p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>Customer<a href="#"><img src="./assets/images/icons/column-sort.png" alt="" /></a></p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>email</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>mobile</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>order status<a href="#"><img src="./assets/images/icons/column-sort.png" alt="" /></a>
+                            </p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>actions</p>
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <div class="branch-cms-table__row">
+                        <div class="make-custom-checkbox branch-cms-table__column">
+                            <input type="checkbox" id="checkbox_1">
+                            <label class="selectAll text-bold" for="checkbox_1">#FUGUIAT</label>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>14 May, 2020 09:13</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>Victoria Cooper</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>ken.wright@example.com</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>+63 917 123 4567</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>Awaiting Confirmation</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <div class="custom-select transparent">
+                                <select>
+                                    <option value="default" selected>Actions</option>
+                                    <option value="1">View</option>
+                                    <option value="2">Edit</option>
+                                    <option value="4">Export CSV</option>
+                                    <option value="3">Delete</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <div class="branch-cms-table__row">
+                        <div class="make-custom-checkbox branch-cms-table__column">
+                            <input type="checkbox" id="checkbox_2">
+                            <label class="selectAll text-bold" for="checkbox_2">#culpaA</label>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>14 May, 2020 09:13</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>Annette Mckinney</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>donald.phillips@example.com</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>+63 917 123 4567</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>Awaiting Confirmation</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <div class="custom-select transparent">
+                                <select>
+                                    <option value="default" selected>Actions</option>
+                                    <option value="1">View</option>
+                                    <option value="2">Edit</option>
+                                    <option value="4">Export CSV</option>
+                                    <option value="3">Delete</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <div class="branch-cms-table__row">
+                        <div class="make-custom-checkbox branch-cms-table__column">
+                            <input type="checkbox" id="checkbox_3">
+                            <label class="selectAll text-bold" for="checkbox_3">#conseq</label>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>14 May, 2020 09:13</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>Eleanor Cooper</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>alice.bryant@example.com</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>+63 917 123 4567</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>Processing</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <div class="custom-select transparent">
+                                <select>
+                                    <option value="default" selected>Actions</option>
+                                    <option value="1">View</option>
+                                    <option value="2">Edit</option>
+                                    <option value="4">Export CSV</option>
+                                    <option value="3">Delete</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <div class="branch-cms-table__row">
+                        <div class="make-custom-checkbox branch-cms-table__column">
+                            <input type="checkbox" id="checkbox_4">
+                            <label class="selectAll text-bold" for="checkbox_4">#adlqui</label>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>14 May, 2020 09:13</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>Greg Webb</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>alma.lawson@example.com</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>+63 917 123 4567</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>Preparing Order</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <div class="custom-select transparent">
+                                <select>
+                                    <option value="default" selected>Actions</option>
+                                    <option value="1">View</option>
+                                    <option value="2">Edit</option>
+                                    <option value="4">Export CSV</option>
+                                    <option value="3">Delete</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <div class="branch-cms-table__row">
+                        <div class="make-custom-checkbox branch-cms-table__column">
+                            <input type="checkbox" id="checkbox_5">
+                            <label class="selectAll text-bold" for="checkbox_5">#anajet</label>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>14 May, 2020 09:13</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>Beth Simmmons</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>alexa.matthews@example.com</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>+63 917 123 4567</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>Waiting for Payment</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <div class="custom-select transparent">
+                                <select>
+                                    <option value="default" selected>Actions</option>
+                                    <option value="1">View</option>
+                                    <option value="2">Edit</option>
+                                    <option value="4">Export CSV</option>
+                                    <option value="3">Delete</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <div class="branch-cms-table__row">
+                        <div class="make-custom-checkbox branch-cms-table__column">
+                            <input type="checkbox" id="checkbox_6">
+                            <label class="selectAll text-bold" for="checkbox_6">#aipsum</label>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>14 May, 2020 09:13</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>Gregor Webb</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>darrell.duncan@example.com</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>+63 917 123 4567</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>Waiting for Payment</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <div class="custom-select transparent">
+                                <select>
+                                    <option value="default" selected>Actions</option>
+                                    <option value="1">View</option>
+                                    <option value="2">Edit</option>
+                                    <option value="4">Export CSV</option>
+                                    <option value="3">Delete</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <div class="branch-cms-table__row">
+                        <div class="make-custom-checkbox branch-cms-table__column">
+                            <input type="checkbox" id="checkbox_7">
+                            <label class="selectAll text-bold" for="checkbox_7">#dolor</label>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>14 May, 2020 09:13</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>Theresa Watson</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>debra.holt@example.com</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>+63 917 123 4567</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p class="text-cancelled">Cancelled</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <div class="custom-select transparent">
+                                <select>
+                                    <option value="default" selected>Actions</option>
+                                    <option value="1">View</option>
+                                    <option value="2">Edit</option>
+                                    <option value="4">Export CSV</option>
+                                    <option value="3">Delete</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <div class="branch-cms-table__row">
+                        <div class="make-custom-checkbox branch-cms-table__column">
+                            <input type="checkbox" id="checkbox_8">
+                            <label class="selectAll text-bold" for="checkbox_8">#laelit</label>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>14 May, 2020 09:13</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>Judith Lane</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>bill.sanders@example.com</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>+63 917 123 4567</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p class="text-completed">Completed</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <div class="custom-select transparent">
+                                <select>
+                                    <option value="default" selected>Actions</option>
+                                    <option value="1">View</option>
+                                    <option value="2">Edit</option>
+                                    <option value="4">Export CSV</option>
+                                    <option value="3">Delete</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <div class="branch-cms-table__row">
+                        <div class="make-custom-checkbox branch-cms-table__column">
+                            <input type="checkbox" id="checkbox_9">
+                            <label class="selectAll text-bold" for="checkbox_9">#ipsum</label>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>14 May, 2020 09:13</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>Ronald Russel</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>jackson.graham@example.com</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>+63 917 123 4567</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p class="text-completed">Completed</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <div class="custom-select transparent">
+                                <select>
+                                    <option value="default" selected>Actions</option>
+                                    <option value="1">View</option>
+                                    <option value="2">Edit</option>
+                                    <option value="4">Export CSV</option>
+                                    <option value="3">Delete</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <div class="branch-cms-table__row">
+                        <div class="make-custom-checkbox branch-cms-table__column">
+                            <input type="checkbox" id="checkbox_10">
+                            <label class="selectAll text-bold" for="checkbox_10">#tempor</label>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>14 May, 2020 09:13</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>Cameron Mccoy</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>lillie.foster@example.com</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p>+63 917 123 4567</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <p class="text-completed">Completed</p>
+                        </div>
+                        <div class="branch-cms-table__column">
+                            <div class="custom-select transparent">
+                                <select>
+                                    <option value="default" selected>Actions</option>
+                                    <option value="1">View</option>
+                                    <option value="2">Edit</option>
+                                    <option value="4">Export CSV</option>
+                                    <option value="3">Delete</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr />
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- FOOTER -->
+        <!-- <footer class="footer__delivery">
+            <div>
+                <a class="font-caption">Privacy And Cookie Policy</a>
+                <a class="font-caption">Terms and Conditions</a>
+            </div>
+            <span class="font-caption">© 2020 The SM Store. All rights reserved.</span>
+        </footer> -->
+        <!-- /FOOTER -->
+
+
+    </div> <!-- /wrapper -->
+
+    <!-- IMPORTS -->
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets//js/customselect.js"></script>
+
+    <!-- CUSTOM JS -->
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/carousel.js"></script>
+</body>
+
+</html>

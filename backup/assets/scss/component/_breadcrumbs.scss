@@ -1,0 +1,43 @@
+.breadcrumbs {
+    padding-top: 16px;
+    width: 100%;
+
+    &__link {
+        color:$white;
+        text-decoration: none;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: normal;
+        background: url(../../assets/images/arrow-right.svg) no-repeat right center;
+        padding-right: 12px;
+        margin-right: 12px;
+
+        &:last-child {
+            font-weight: bold;
+            background: none;
+        }
+
+        @include respond(mobile) {
+            display: none;
+        }
+
+        &--dark {
+            color: $black !important;
+            background: url(../../assets/images/arrow-right-dark.svg) no-repeat right center;
+        }
+    }
+}
+
+.border--gradient {
+    margin-top: 25px;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+
+    @include respond(mobile) {
+        display: none;
+    }
+}
+
+

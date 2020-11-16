@@ -34,7 +34,7 @@
             rgba(0, 0, 0, 0.2) 0%,
             rgba(0, 0, 0, 0) 100%
         );
-        position: fixed;
+        position: absolute;
         width: 100%;
         height: 88px;
         top: 84px;
@@ -42,6 +42,7 @@
 
         @include respond(tablet) {
             top: 112px;
+            left: 0;
         }
     }
 
@@ -187,6 +188,7 @@
     }
 
     &--whatsnew {
+        margin-top: 88px !important;
         background: url("../../assets/images/banner-whatsnew.png") no-repeat;
         background-size: cover;
         background-position: center right;
@@ -710,11 +712,14 @@
         position: relative;
         top: 128px;
         height: 34px;
+        display: none;
 
         @include respond(mobile) {
+            display: block;
             position: absolute;
             padding: 9px 0;
-            top: 210px;
+            // top: 210px;
+            top: 310px;
             height: 40px;
         }
 
@@ -971,7 +976,10 @@
     }
 
     &--forex {
+        margin-top: 88px;
         background-image: url("../../assets/images/banner-services-forex.jpg");
+        background-size: cover;
+        background-position: center right;
 
         @include respond(mobile) {
             background-image: url("../../assets/images/banner-services-forex-m.jpg");
@@ -979,6 +987,7 @@
         }
 
         & > .banner-section__breadcrumbs {
+            position: absolute;
             & > a {
                 @include respond(mobile) {
                     @include breadcrumbs--black;
@@ -993,15 +1002,20 @@
         & > .banner-section__title {
             @include respond(mobile) {
                 top: 90px !important;
+                text-align: left;
             }
         }
     }
 
     &--billpay {
+        margin-top: 88px !important;
         background-image: url("../../assets/images/banner-billpay.jpg");
+        background-size: cover;
+        background-position: center right;
 
         @include respond(mobile) {
             background-image: url("../../assets/images/banner-billpay-m.jpg");
+            background-size: cover;
             @include banner-small-m--bc;
         }
 
@@ -1021,6 +1035,8 @@
         & > .banner-section__title {
             @include respond(mobile) {
                 top: 90px !important;
+                text-align: left;
+                width: 50%;
             }
         }
     }
@@ -1028,6 +1044,8 @@
     &--ctd {
         margin-top: 88px;
         background-image: url("../../assets/images/banner-delivery.jpg");
+        background-size: cover;
+        background-position: center right;
 
         @include respond(mobile) {
             background-image: url("../../assets/images/banner-delivery-m.jpg");
@@ -1050,6 +1068,7 @@
         & > .banner-section__title {
             @include respond(mobile) {
                 top: 90px !important;
+                text-align: left;
             }
         }
     }
@@ -1057,6 +1076,8 @@
     &--gift-registry {
         margin-top: 88px;
         background-image: url("../../assets/images/banner-gift-registry.jpg");
+        background-size: cover;
+        background-position: center right;
 
         @include respond(mobile) {
             background-image: url("../../assets/images/banner-gift-registry-m.jpg");
@@ -1088,6 +1109,8 @@
     &--gift-card {
         margin-top: 88px;
         background-image: url("../../assets/images/banner-gift-card.jpg");
+        background-size: cover;
+        background-position: center right;
 
         @include respond(mobile) {
             background-image: url("../../assets/images/banner-gift-card-m.jpg");
@@ -1119,6 +1142,8 @@
     &--gift-wrapping {
         margin-top: 88px;
         background-image: url("../../assets/images/banner-gift-wrapping.jpg");
+        background-size: cover;
+        background-position: center right;
 
         @include respond(mobile) {
             background-image: url("../../assets/images/banner-gift-wrapping-m.jpg");

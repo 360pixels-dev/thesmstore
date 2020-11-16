@@ -1,0 +1,52 @@
+.cookie {
+
+    &__container {
+        position: fixed;
+        display: flex;
+        // display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        bottom: 53px;
+        right: 0;
+        height: 240px;
+        width: 460px;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 20px 24px;
+        z-index: 999;
+
+        @include respond(mobile) {
+            width: 100%;
+            padding: 16px 12px;
+
+            bottom: 0;
+        }
+    }
+
+    &__text {
+        color: $white;
+    }
+    
+    &__btn {
+        display: flex;
+        justify-content: flex-end;
+
+        @include respond(mobile) {
+            justify-content: flex-start;
+        }
+
+        & > .btn--primary {
+            margin-left: 16px;
+
+            @include respond(mobile) {
+                margin-right: 16px;
+                margin-left: 0;
+            }
+
+            &:nth-child(2) {
+                background-color: $white;
+                color: $black;
+            }
+        }
+    }
+
+}

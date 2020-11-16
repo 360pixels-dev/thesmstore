@@ -1,0 +1,207 @@
+.promo {
+    &__banner {
+        margin-top: -210px;
+        position: relative;
+        width: 100%;
+        z-index: 40;
+
+        // @include respond(tablet) {
+        //     margin-top: -616px;
+        // }
+
+        @include respond(1025px) {
+            margin-top: -435px;
+        }
+
+        & > div {
+            margin: 0 auto;
+            max-width: 1314px;
+            width: 100%;
+            background-color: $opal;
+            height: 580px;
+            display: flex;
+            flex-flow: row wrap;
+            padding: 42px 47px 30px 67px;
+
+            @include respond(tablet) {
+                width: 80%;
+                margin: auto;
+                padding: 19px 0 16px 19px;
+                flex-direction: column-reverse;
+                justify-content: flex-end;
+                height: 490px;
+            }
+
+            @include respond(1025px) {
+                width: 94%;
+                margin: auto;
+                // height: 424px;
+                padding: 19px 0 16px 19px;
+                flex-direction: column-reverse;
+                justify-content: flex-end;
+                height: 490px;
+            }
+
+            & > div.image-container {
+                display: flex;
+                background: red;
+                flex: 1;
+                overflow: hidden;
+
+                & > img {
+                    position: relative;
+                    width: auto;
+
+                    @include respond(1024px) {
+                        position: relative;
+                        top: 120px;
+                    }
+
+                    @include respond(tablet) {
+                        padding: 0;
+                        top: 0;
+                        position: relative;
+                        width: 80%;
+                        height: auto;
+                        margin: auto;
+                    }
+
+                    @include respond(1025px) {
+                        width: 329px;
+                        margin: 0;
+                        top: 0;
+                        display: flex;
+                        align-self: flex-end;
+                    }
+                }
+            }
+
+            .featured-events__slider {
+                margin-left: 394px;
+
+                @include respond(tablet) {
+                    margin-left: 0 !important;
+                    position: absolute;
+                }
+
+                .featured-events__slider-event > img {
+                    height: 425px;
+                    width: auto;
+
+                    @include respond(1025px) {
+                        height: 190px;
+                    }
+                }
+            }
+
+            .featured-events__footer {
+                flex: 1 0 100%;
+                display: flex;
+                justify-content: flex-end;
+                margin-top: 0;
+
+                @include respond(tablet) {
+                    bottom: 20px;
+                }
+            }
+        }
+
+        &-text {
+            margin-top: 92px;
+            width: 400px;
+            height: 336px;
+            display: flex;
+            flex-direction: column;
+            z-index: 40;
+            justify-content: space-between;
+
+            @include respond(tablet) {
+                margin-top: 0;
+                width: 100%;
+                position: absolute;
+                top: 354px;
+            }
+
+            @include respond(1025px) {
+                height: min-content;
+                position: absolute;
+                top: 190px;
+                padding-top: 20px;
+            }
+
+            & > h1 {
+                @include respond(tablet) {
+                    font-size: 32px;
+                    line-height: 40px;
+                }
+
+                &.font-hero {
+                    & > .font-eyebrow {
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 22px;
+                        letter-spacing: 3px;
+                        text-transform: uppercase;
+                        color: #403f47;
+                    }
+
+                    & > span {
+                        color: #403f47;
+                    }
+                }
+
+                &.font-titan {
+                    display: block;
+                    font-size: 64px;
+                    line-height: 72px;
+                    letter-spacing: 4px;
+                    text-transform: uppercase;
+                    color: $coral;
+                    padding-left: 24px;
+
+                    @include respond(1025px) {
+                        letter-spacing: 1.6px;
+                        padding-left: 0;
+                        margin-top: 2px;
+                    }
+
+                    & > span {
+                        color: $black;
+
+                        @include respond(tablet) {
+                            display: contents;
+                        }
+                    }
+                }
+            }
+
+            & > p {
+                text-align: right;
+                width: 100%;
+                padding-right: 32px;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 22px;
+                color: #403f47;
+
+                @include respond(tablet) {
+                    width: auto;
+                    margin-right: 20px;
+                    text-align: left;
+                    margin: 8px 0;
+                }
+            }
+
+            & > a {
+                width: auto;
+                height: 48px;
+                align-self: flex-end;
+                margin-right: 32px;
+
+                @include respond(1025px) {
+                    align-self: flex-start;
+                }
+            }
+        }
+    }
+}

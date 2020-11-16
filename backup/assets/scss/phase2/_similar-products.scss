@@ -1,0 +1,105 @@
+// .similar {
+//   width: 100%;
+//   background-color: $light-periwinkle;
+//   min-height: calc(100vh - 160px);
+//   height: fit-content;
+
+//   & > div {
+//     max-width: 1400px;
+//     width: 100%;
+//     height: auto;
+//     margin: 0 auto;
+//     display: flex;
+//     padding: 30px;
+//     padding-top: 0;
+//     padding-bottom: 100px;
+//   }
+
+//   &-products {
+//     width: 100%;
+//     padding: 0 40px;
+
+//     &__header {
+//       display: flex;
+//       justify-content: space-between;
+//       flex: 1 0 100%;
+//       margin-bottom: 56px;
+
+//       & > p {
+//         display: flex;
+//         font-family: Josefin Sans;
+//         font-style: normal;
+//         font-weight: bold;
+//         font-size: 32px;
+//         line-height: 40px;
+//         /* identical to box height, or 125% */
+
+//         display: flex;
+//         align-items: center;
+//         letter-spacing: 1.6px;
+//         text-transform: uppercase;
+
+//         color: #000000;
+//       }
+
+//       & > a {
+//         display: flex;
+//         align-self: flex-end;
+//       }
+//     }
+
+//     &__carousel {
+//       display: flex;
+
+//       & > button {
+//         background-color: white;
+//         padding: 12px;
+//         border-radius: 50%;
+//         box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
+//         border: 1px solid #E0E0E0;
+//         width: 40px;
+//         height: 40px;
+//         display: flex;
+//         align-self: center;
+//         margin-bottom: 100px;
+
+//         &:hover {
+//           background-color: rgba(156, 140, 140, 0.658);
+//         }
+//       }
+
+//       &-item {
+//         flex: 1 0 25%;
+//         display: flex;
+//         flex-flow: column;
+//         align-items: center;
+//         font-family: "Open Sans", Helvetica, Arial, sans-serif;
+//         font-style: normal;
+
+//         & > .item-category {
+//           font-weight: bold;
+//           font-size: 12px;
+//           line-height: 16px;
+//           text-align: center;
+//           letter-spacing: 1.6px;
+//           text-transform: uppercase;
+//           color: #88898f;
+//           margin: 16px 0;
+//         }
+//         & > .item-name {
+//           font-weight: 600;
+//           font-size: 20px;
+//           line-height: 30px;
+//           color: #403f47;
+//           margin-bottom: 16px;
+//         }
+//         & > .item-price {
+//           font-weight: bold;
+//           font-size: 20px;
+//           line-height: 30px;
+//           color: #403f47;
+//         }
+//       }
+//     }
+//   }
+// }

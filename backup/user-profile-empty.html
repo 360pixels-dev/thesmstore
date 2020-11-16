@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery - SM Store</title>
+
+    <link rel="stylesheet" href="./assets/css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <!-- HEADER -->
+        <header class="header-profile">
+            <nav
+                class="nav__upper nav__upper--default nav__upper--index container-fluid align__content align__content--right mobile-hide tablet-hide">
+                <ul class="nav__upper-list">
+                    <li class="nav__social"><a href="#"><img src="./assets/images/facebook.svg" alt=""></a></li>
+                    <li class="nav__social"><a href="#"><img src="./assets/images/youtube.svg" alt=""></a></li>
+                    <li class="nav__social"><a href="#"><img src="./assets/images/instagram.svg" alt=""></a></li>
+                    <li class="nav__social"><a href="#"><img src="./assets/images/twitter.svg" alt=""></a></li>
+                </ul>
+            </nav>
+
+            <nav class="nav__lower nav_lower--default nav__lower--index nav__delivery container-fluid">
+                <div class="nav__lower-burger">
+                    <img class="burger-menu burger-menu-default" src="./assets/images/burger-menu.svg" alt="">
+                    <img class="burger-menu burger-menu-close" src="./assets/images/close.svg" alt="" hidden>
+                </div>
+
+                <div class="logo-delivery">
+                    <img class="logo-delivery__img" src="./assets/images/logo.svg" alt="SM Store">
+                </div>
+
+                <nav class="link-delivery">
+                    <a class="link-delivery__item" href="#mechanics">Mechanics</a>
+                    <a class="link-delivery__item" href="#">Browse Essentials</a>
+                    <a class="link-delivery__item" href="#faqs">FAQs</a>
+                </nav>
+
+                <nav class="nav-user hide">
+                    <a class="nav-user nav-user__avatar" href="#"><img class="nav-user__avatar__image"
+                            src="./assets/images/profile-avatar.jpg">Hello, Maan!</a>
+                    <a class="nav-user nav-user__basket" href="#"><img class="nav-user__basket__icon"
+                            src="./assets/images/icon-basket.svg">My Basket</a>
+                </nav>
+
+                <nav class="nav-guest hide">
+                    <a class="button-guest button-guest--outline-white font-cta">Login</a>
+                    <a class="button-guest button-guest--pure-white font-cta">Sign up</a>
+                </nav>
+
+                <nav class="nav-user">
+                    <div class="nav-user__hello">
+                        <img class="nav-user__avatar" src="./assets/images/avatar.png" alt="">
+                        <span>Hello, Maan!</span>
+                        <div class="nav-user__menu">
+                            <a href="#">My Profile and Orders</a>
+                            <a href="#">Logout</a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <a href="">
+                            <img src="./assets/images/icons/cart.svg" alt="">
+                            My Basket
+                        </a>
+                    </div>
+                </nav>
+            </nav>
+        </header>
+        <!-- /HEADER -->
+
+        <!-- MOBILE MENU -->
+        <nav class="nav__mobile nav__mobile--delivery">
+            <ul class="nav__mobile-upper">
+                <li><a class="nav__mobile-upper-item" href="#mechanics">Mechanics</a></li>
+                <li><a class="nav__mobile-upper-item" href="#">Browse Essentials</a></li>
+                <li><a class="nav__mobile-upper-item" href="#faqs">FAQS</a></li>
+            </ul>
+
+            <ul class="nav__mobile-lower">
+                <li><a class="nav__mobile-lower-item" href="#">My Orders</a></li>
+                <li><a class="nav__mobile-lower-item" href="#">My Profile</a></li>
+                <li><a class="nav__mobile-lower-item" href="#">Change Password</a></li>
+                <li><a class="nav__mobile-lower-item" href="#">Log out</a></li>
+            </ul>
+
+            <ul class="nav__mobile-social">
+                <li><a href="#"><img src="./assets/images/icons/icon-dark-viber.svg" alt="Viber"></a></li>
+                <li><a href="#"><img src="./assets/images/icons/icon-fb-black.svg" alt="Facebook"></a></li>
+                <li><a href="#"><img src="./assets/images/icons/icon-youtube-black.svg" alt="Youtube"></a></li>
+                <li><a href="#"><img src="./assets/images/icons/icon-ig-black.svg" alt="Instagram"></a></li>
+                <li><a href="#"><img src="./assets/images/icons/icon-twitter-black.svg" alt="Twitter"></a></li>
+            </ul>
+        </nav>
+
+        <section class="breadcrumb">
+            <div>
+                <p>Home <img src="./assets/images/icons/angle-right.svg" alt=""><span>My Orders</span> </p>
+            </div>
+        </section>
+
+        <section class="breadcrumb-mobile">
+            <div>
+                <a href="#"><img src="./assets/images/icons/angle-left.svg" alt=""></a>
+                <p><img src="./assets/images/icons/cart.svg" alt="">My Orders</p>
+            </div>
+        </section>
+
+        <section class="user">
+            <div>
+                <div class="side_nav">
+                    <div class="side_nav-header">
+                        <p>Hello, Maan</p>
+                    </div>
+                    <div class="side_nav-nav">
+                        <ul>
+                            <li class="active"><a href="#"><img src="./assets/images/icons/Cart.svg" alt="">My
+                                    Orders</a></li>
+                            <li><a href="#"><img src="./assets/images/icons/Account.svg" alt="">My profile</a></li>
+                            <li><a href="#"><img src="./assets/images/icons/Password.svg" alt="">Change Password</a>
+                            </li>
+                            <li><a href="#"><img src="./assets/images/icons/Sign-out.svg" alt="">Sign Out</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- <div class="user-profile mobile-only">
+                    <div class="user-profile__header">
+                        <p>My Profile</p>
+                    </div>
+                    <div>
+                        <div class="user-profile__avatar">
+                            <img src="./assets/images/avatar.png" alt="">
+                            <div>
+                                <span class="font-callout">Maan Parafina</span>
+                                <span class="view-profile-text">View Profile</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="user-orders mobile-only">
+                    <div class="user-orders__header">
+                        <div class="custom-select transparent orders-status">
+                            <select>
+                                <option selected >All Orders</option>
+                                <option value="1">Processing</option>
+                                <option value="1">Completed</option>
+                                <option value="1">Cancelled</option>
+                            </select>
+                        </div>
+
+                        <div class="custom-select transparent">
+                            <select>
+                                <option selected>Last 5 Orders</option>
+                                <option value="1">Last 10 Orders</option>
+                                <option value="1">Last 20 Orders</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="user-orders__empty">
+                        <img src="./assets/images/my-orders-empty.png" alt="">
+
+                        <p>You don’t have any orders yet</p>
+
+                        <button>BROWSE CATALOG<img src="./assets/images/red-line.svg" alt=""></button>
+                    </div>
+                </div>
+
+
+                <div class="user-orders">
+                    <div class="user-orders__header">
+                        <p>My Orders</p>
+                    </div>
+
+                    <div class="nav-tabs">
+                        <ul>
+                            <li class="active"><a href="">All</a></li>
+                            <li><a href="">Processing</a></li>
+                            <li><a href="">Completed</a></li>
+                            <li><a href="">Cancelled</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="user-orders__empty">
+                        <img src="./assets/images/my-orders-empty.png" alt="">
+
+                        <p>You don’t have any orders yet</p>
+
+                        <button>BROWSE CATALOG<img src="./assets/images/red-line.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- FOOTER -->
+        <footer class="footer__delivery">
+            <div>
+                <a class="font-caption">Privacy And Cookie Policy</a>
+                <a class="font-caption">Terms and Conditions</a>
+            </div>
+            <span class="font-caption">© 2020 The SM Store. All rights reserved.</span>
+        </footer>
+        <!-- /FOOTER -->
+
+
+    </div> <!-- /wrapper -->
+
+    <!-- IMPORTS -->
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets//js/customselect.js"></script>
+
+    <!-- CUSTOM JS -->
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/carousel.js"></script>
+</body>
+
+</html>

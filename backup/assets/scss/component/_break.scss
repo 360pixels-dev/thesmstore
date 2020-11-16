@@ -1,0 +1,16 @@
+
+.vertical-line {
+    border-left: 1px solid $gray;
+    height: 64px;
+    display:block;
+    width: 1px;
+    margin: auto;
+}
+
+.hr {
+    margin: 40px 0;
+
+    &--gray {
+        border-bottom: 1.5px solid $mid-gray;
+    }
+}

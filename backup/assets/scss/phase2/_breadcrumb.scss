@@ -1,0 +1,124 @@
+.breadcrumb {
+  width: 100%;
+  background-color: $light-periwinkle;
+
+  & > div {
+    max-width: 1460px;
+    width: 100%;
+    height: fit-content;
+    margin: 0 auto;
+    flex-flow: column;
+    padding: 16px 30px;
+    padding-bottom: 0;
+
+    @include respond(tablet) {
+      width: 100%;
+      padding: 30px;
+    }
+
+    @include respond(mobile) {
+      display: none;
+    }
+
+    & > p {
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 18px;
+      // margin: 8px 0px;
+      color: #161720;
+      align-items: center;
+      display: flex;
+      flex-flow: row wrap;
+      flex: 1 0 100%;
+
+      & > a {
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+        color: #161720;
+        text-decoration: none;
+      }
+
+      & > img {
+        height: 16px;
+        margin: auto 12px;
+      }
+
+      & > span {
+        font-weight: bold;
+
+        & > a {
+          font-family: "Open Sans", Helvetica, Arial, sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 12px;
+          line-height: 18px;
+          color: #161720;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  &-mobile {
+    border-bottom: 1px solid rgba(136, 137, 143, 0.342);
+    display: none;
+
+    @include respond(mobile) {
+      display: flex;
+    }
+
+    & > div {
+      display: flex;
+      flex: 1;
+      padding: 22px 0 22px 20px;
+
+      & > a {
+        display: flex;
+        align-items: center;
+      }
+
+      & > p {
+        // length of left icon + padding 20px
+        margin-right: 44px;
+
+        & > img {
+          margin-right: 8px;
+        }
+
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+        color: #161720;
+        align-items: center;
+      }
+    }
+  }
+}
+.breadcrumb.mobile-only {
+  & > div {
+    @include respond(mobile) {
+      display: block;
+      background-color: white;
+      padding: 12px;
+
+      & > p {
+        font-size: 14px;
+        line-height: 22px;
+        color: #403f47;
+        margin: 0;
+      }
+    }
+  }
+}

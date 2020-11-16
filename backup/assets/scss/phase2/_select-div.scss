@@ -1,0 +1,91 @@
+.sel {
+    color: #403f47;
+    min-height: 40px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 4px;
+    border: 1px solid #88898f;
+
+    & > .txt {
+        padding: 10px;
+        display: flex;
+        height: 100%;
+        align-items: center;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #403f47;
+
+        & > img {
+            margin-left: auto;
+        }
+    }
+
+    & > .options {
+        width: 250px;
+        background-color: white;
+        z-index: 10000;
+        position: absolute;
+        box-shadow: 2px 5px 10px rgba(136, 137, 143, 0.25);
+
+        & > div {
+            transition: all 0.2s ease-out;
+            padding: 4px 16px;
+            font-size: 14px;
+            line-height: 22px;
+            color: #161720;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        & > div:hover {
+            background-color: #0067b3;
+            color: white;
+        }
+
+        & > .divider {
+            background: #ebeef8;
+            padding: 4px 16px;
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: 1.6px;
+            text-transform: uppercase;
+            color: #403f47;
+            pointer-events: none;
+            -webkit-user-select: none; /* Safari */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* IE10+/Edge */
+            user-select: none; /* Standard */
+        }
+
+        &.delivery {
+            width: 300px;
+
+            & > div {
+                transition: all 0.2s ease-out;
+                padding: 4px 16px;
+                cursor: pointer;
+
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 22px;
+                color: #161720;
+            }
+
+            & > div:hover {
+                background-color: #0067b3;
+                color: white;
+            }
+
+            & .selected {
+                background-color: #0067b3;
+                color: white;
+            }
+        }
+    }
+
+    & .selected {
+        background-color: #0067b3;
+        color: white;
+    }
+}

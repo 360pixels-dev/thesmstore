@@ -1,0 +1,807 @@
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(22, 23, 32, 0.6);
+    z-index: 999;
+
+    @include respond(mobile) {
+        position: fixed;
+    }
+
+    &.active {
+        display: block;
+        overflow: auto;
+    }
+
+    &__container {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        padding: 24px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__close {
+        position: absolute;
+        background-color: rgba(22, 23, 32, 0.6);
+        top: 24px;
+        right: 24px;
+        height: 30px;
+        width: 30px;
+        padding: 6px;
+        cursor: pointer;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__countdown {
+        width: 373px;
+        height: 100px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            & p {
+                color: $white;
+            }
+        }
+    }
+
+    &--announcement {
+        background-color: #f6787b;
+        opacity: 1;
+        width: 500px;
+        height: 543px;
+
+        & .modal__content {
+            height: 492px;
+            margin-top: 16px;
+
+            & > img:nth-of-type(1) {
+                margin: 0px 0 24px 0;
+            }
+
+            & > img:nth-of-type(2) {
+                margin: 0px 0 5px 0;
+            }
+        }
+
+        & > a {
+            margin-bottom: 16px;
+        }
+    }
+
+    &--with-countdown {
+        background-color: #f6787b;
+        opacity: 1;
+        width: 500px;
+        height: 645px;
+
+        & .modal__content {
+            height: 492px;
+            margin-top: 16px;
+
+            & > img:nth-of-type(1) {
+                margin: 0px 0 24px 0;
+            }
+
+            & > img:nth-of-type(2) {
+                margin: 0px 0 5px 0;
+            }
+        }
+
+        & .modal__countdown {
+            background-color: rgba(190, 58, 52, 0.3);
+        }
+
+        & > a {
+            margin-bottom: 16px;
+        }
+    }
+
+    &--services {
+        display: flex;
+        flex-direction: column;
+        height: min-content;
+
+        & .modal__header {
+            position: relative;
+            width: 598px;
+            height: 96px;
+            display: flex;
+            align-items: center;
+            background-color: $indigo;
+            padding: 20px 37px;
+            border-radius: 4px 4px 0px 0px;
+
+            @include respond(mobile) {
+                width: 336px;
+                height: 88px;
+                padding: 13px 21px;
+            }
+
+            & > h3 {
+                margin-left: 24px;
+                color: $white;
+                letter-spacing: 4px;
+                font-weight: bold;
+            }
+
+            & .modal__close {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+
+                @include respond(mobile) {
+                    top: 16px;
+                    right: 16px;
+                }
+            }
+        }
+
+        & > .modal__content {
+            height: 266px;
+            width: 598px;
+            background-color: $white;
+            padding: 16px 34px;
+            align-items: flex-start;
+            border-radius: 0px 0px 4px 4px;
+
+            @include respond(mobile) {
+                width: 336px;
+                height: 263px;
+                padding: 16px;
+            }
+
+            & > p {
+                color: $dark-gray;
+                margin-bottom: 12px;
+            }
+
+            & > ul {
+                margin-left: 30px;
+                list-style-type: none;
+
+                @include respond(mobile) {
+                    margin-left: 24px;
+                }
+
+                & > li::before {
+                    content: "\2022";
+                    color: $dark-gray;
+                    width: 3px;
+                    font-weight: bold;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+
+    &--terms {
+        display: flex;
+        flex-direction: column;
+        height: min-content;
+
+        & .modal__header {
+            position: relative;
+            width: 598px;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            background-color: $indigo;
+            padding: 20px 37px;
+            border-radius: 4px 4px 0px 0px;
+
+            @include respond(mobile) {
+                width: 336px;
+                height: 88px;
+                padding: 13px 21px;
+            }
+
+            & > h3 {
+                color: $white;
+                letter-spacing: 4px;
+                font-weight: bold;
+            }
+
+            & .modal__close {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+
+                @include respond(mobile) {
+                    top: 16px;
+                    right: 16px;
+                }
+            }
+        }
+
+        & > .modal__content {
+            height: 266px;
+            width: 598px;
+            background-color: $white;
+            padding: 16px 34px;
+            align-items: flex-start;
+            border-radius: 0px 0px 4px 4px;
+
+            @include respond(mobile) {
+                width: 336px;
+                height: 263px;
+                padding: 16px;
+            }
+
+            & > p {
+                color: $dark-gray;
+                margin-bottom: 12px;
+            }
+
+            & > ul {
+                margin-left: 30px;
+                list-style-type: none;
+
+                @include respond(mobile) {
+                    margin-left: 24px;
+                }
+
+                & > li::before {
+                    content: "\2022";
+                    color: $dark-gray;
+                    width: 3px;
+                    font-weight: bold;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+
+    &--item {
+        height: 497px;
+        width: 936px;
+        background-color: $light-periwinkle;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 8px;
+        z-index: 99;
+        box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
+        margin-bottom: 50px;
+
+        @include respond(940px) {
+            width: 336px;
+            height: 731px;
+        }
+
+        @include respond(tablet) {
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        & > .modal-header {
+            background: $coral;
+            border-radius: 8px 8px 0px 0px;
+            height: 65px;
+            width: 100%;
+            padding: 17px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            & > p {
+                color: $white;
+            }
+
+            & > div {
+                position: relative;
+                top: 0;
+                right: 0;
+            }
+        }
+
+        & > .modal-content {
+            display: flex;
+            height: 432px;
+            border-radius: 0px 0px 8px 8px;
+
+            @include respond(940px) {
+                width: 336px;
+                height: 666px;
+                flex-direction: column;
+                background-color: $white;
+            }
+
+            & > .modal--item-image {
+                width: 400px;
+                padding: 28px 0;
+                margin-right: 24px;
+                display: flex;
+                justify-content: center;
+                background-color: $white;
+                position: relative;
+                border-radius: 0px 0px 0px 8px;
+
+                @include respond(940px) {
+                    width: 100%;
+                    margin-right: 0px;
+                    padding: 24px 0;
+                }
+
+                & > img {
+                    height: 360px;
+                    width: 240px;
+
+                    @include respond(940px) {
+                        width: 140px;
+                        height: 210px;
+                    }
+                }
+
+                & > .modal--item-controls {
+                    position: absolute;
+                    width: 352px;
+                    display: flex;
+                    justify-content: space-between;
+                    height: 24px;
+                    align-self: center;
+
+                    @include respond(940px) {
+                        display: none;
+                    }
+                }
+
+                & > .modal--item-indicators {
+                    position: absolute;
+                    bottom: 81px;
+                    width: 88px;
+                    height: 10px;
+                    display: flex;
+                    justify-content: space-between;
+                    z-index: 99;
+
+                    @include respond(940px) {
+                        bottom: 0px;
+                    }
+
+                    & > input {
+                        display: none;
+
+                        &:checked + label {
+                            background-color: $gray;
+                        }
+                    }
+
+                    & > label {
+                        display: block;
+                        height: 10px;
+                        width: 10px;
+                        background-color: transparent;
+                        border: 1px solid $gray;
+                        border-radius: 5px;
+                    }
+                }
+            }
+
+            & > .modal--item-description {
+                padding: 28px 0;
+                width: 488px;
+                height: 368px;
+
+                @include respond(940px) {
+                    padding: 24px 23px;
+                    width: 100%;
+                }
+
+                & > span {
+                    @include respond(940px) {
+                        text-align: center;
+                        display: block;
+                    }
+                }
+
+                & > .font-callout {
+                    color: $dark-gray;
+                    margin-bottom: 24px;
+
+                    @include respond(940px) {
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 30px;
+                        text-align: center;
+                        margin-bottom: 0px;
+                    }
+                }
+
+                & > p.font-callout {
+                    @include respond(940px) {
+                        font-weight: bold;
+                        margin-bottom: 24px;
+                    }
+                }
+
+                & > hr {
+                    border: 1px solid #e0e0e0;
+                    margin-bottom: 24px;
+
+                    @include respond(940px) {
+                        display: none;
+                    }
+                }
+
+                & > .about-product {
+                    margin-bottom: 24px;
+
+                    & > p {
+                        @include respond(940px) {
+                            font-size: 14px;
+                            line-height: 22px;
+                        }
+                    }
+                }
+
+                & > .order-item {
+                    & > p {
+                        @include respond(940px) {
+                            font-size: 14px;
+                            line-height: 22px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &--export_csv {
+        width: 564px;
+        height: 268px;
+        background: #ffffff;
+        box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 8px;
+        z-index: 99;
+
+        @include respond(tablet) {
+            height: 478px;
+            width: 335px;
+        }
+
+        & > .modal-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 32px;
+
+            & > .header-container {
+                display: flex;
+                justify-content: space-between;
+                flex: 1 0 100%;
+                width: 100%;
+                align-items: center;
+                margin-bottom: 24px;
+
+                & > p {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 32px;
+                    line-height: 40px;
+                    letter-spacing: 1.6px;
+                    color: #000000;
+                }
+
+                & > a {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+
+            & > .input-container {
+                justify-content: space-between;
+                display: flex;
+                width: 100%;
+                margin-bottom: 24px;
+
+                & > div {
+                    max-width: 240px;
+                    display: flex;
+                    flex-flow: column;
+
+                    & > p {
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 22px;
+                        color: #161720;
+                        margin-bottom: 6px;
+                    }
+                }
+            }
+
+            & > .button-container {
+                justify-content: start;
+                display: flex;
+                width: 100%;
+            }
+        }
+
+        input[type="date"] {
+            color: #ffffff;
+            width: 240px;
+            min-height: 40px;
+            height: 40px;
+
+            &::before {
+                content: attr(placeholder);
+                font-family: Open Sans;
+                font-style: italic;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 24px;
+                display: flex;
+                align-items: center;
+                color: #88898f;
+            }
+
+            &:focus,
+            &:valid {
+                color: #666666;
+            }
+            &:focus::before,
+            &:valid::before {
+                content: "" !important;
+            }
+        }
+    }
+
+    &--welcome {
+        height: 490px;
+        width: 800px;
+        background-color: $light-periwinkle;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 8px;
+        z-index: 99;
+
+        @include respond(tablet) {
+            height: 478px;
+            width: 335px;
+        }
+
+        & > .modal-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            & > img {
+                margin-bottom: 24px;
+                border-radius: 8px 8px 0 0;
+
+                @include respond(tablet) {
+                    margin-bottom: 16px;
+                }
+
+                &:nth-of-type(1) {
+                    display: block;
+
+                    @include respond(tablet) {
+                        display: none;
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    display: none;
+
+                    @include respond(tablet) {
+                        display: block;
+                    }
+                }
+            }
+
+            & > h2 {
+                margin-bottom: 8px;
+                font-weight: bold;
+                text-align: center;
+
+                @include respond(tablet) {
+                    margin-bottom: 16px;
+                    font-size: 20px;
+                    line-height: 30px;
+                    letter-spacing: 1.6px;
+                }
+
+                & > span {
+                    &:nth-of-type(1) {
+                        display: none;
+
+                        @include respond(tablet) {
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+            & > p {
+                margin-bottom: 56px;
+                text-align: center;
+
+                @include respond(tablet) {
+                    width: 280px;
+                    margin-bottom: 24px;
+                }
+            }
+        }
+    }
+
+    &--cart {
+        height: auto;
+        // width: 800px;
+        background-color: $light-periwinkle;
+        position: fixed;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 8px;
+        z-index: 99;
+
+        @include respond(tablet) {
+            height: 478px;
+            width: 335px;
+        }
+
+        & > .modal-content {
+            display: flex;
+            flex-direction: column;
+            // align-items: center;
+
+            & > img {
+                margin-bottom: 24px;
+                border-radius: 8px 8px 0 0;
+
+                @include respond(tablet) {
+                    margin-bottom: 16px;
+                }
+
+                &:nth-of-type(1) {
+                    display: block;
+
+                    @include respond(tablet) {
+                        display: none;
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    display: none;
+
+                    @include respond(tablet) {
+                        display: block;
+                    }
+                }
+            }
+
+            & > h2 {
+                margin-bottom: 8px;
+                font-weight: bold;
+                text-align: center;
+
+                @include respond(tablet) {
+                    margin-bottom: 16px;
+                    font-size: 20px;
+                    line-height: 30px;
+                    letter-spacing: 1.6px;
+                }
+
+                & > span {
+                    &:nth-of-type(1) {
+                        display: none;
+
+                        @include respond(tablet) {
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+            & > p {
+                margin-bottom: 56px;
+                text-align: center;
+
+                @include respond(tablet) {
+                    width: 280px;
+                    margin-bottom: 24px;
+                }
+            }
+        }
+    }
+
+    &--tos {
+        height: auto;
+        background-color: white;
+        position: fixed;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 99;
+        width: 600px;
+
+        box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
+        border-radius: 4px;
+        overflow: hidden;
+
+        @include respond(mobile) {
+            width: 90%;
+            top: 50%;
+        }
+
+        & > .modal-content {
+            display: flex;
+            flex-direction: column;
+
+            & > .top-content {
+                display: flex;
+                align-items: center;
+                padding: 16px;
+                padding-left: 34px;
+                background-color: #397cee;
+                justify-content: space-between;
+
+                & > h2 {
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 24px;
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: 4px;
+                    text-transform: uppercase;
+                    color: #ffffff;
+                }
+
+                & > a {
+                    display: flex;
+                    align-content: center;
+                    justify-content: center;
+                    padding: 6px;
+                    background-color: rgba(22, 23, 32, 0.6);
+                    & > img {
+                        filter: brightness(0) invert(1);
+                    }
+
+                    &.modal__close {
+                        position: unset;
+                    }
+                }
+            }
+
+            & > .tos {
+                padding: 32px;
+
+                & > p {
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #403f47;
+                    margin-bottom: 18px;
+                }
+            }
+        }
+    }
+}

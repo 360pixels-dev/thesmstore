@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery - SM Store</title>
+
+    <link rel="stylesheet" href="./assets/css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- HEADER -->
+        <header class="header-profile">
+            <nav
+                class="nav__upper nav__upper--default nav__upper--index container-fluid align__content align__content--right mobile-hide tablet-hide">
+                <ul class="nav__upper-list">
+                    <li class="nav__social"><a href="#"><img src="./assets/images/facebook.svg" alt=""></a></li>
+                    <li class="nav__social"><a href="#"><img src="./assets/images/youtube.svg" alt=""></a></li>
+                    <li class="nav__social"><a href="#"><img src="./assets/images/instagram.svg" alt=""></a></li>
+                    <li class="nav__social"><a href="#"><img src="./assets/images/twitter.svg" alt=""></a></li>
+                </ul>
+            </nav>
+
+            <nav class="nav__lower nav_lower--default nav__lower--index nav__delivery container-fluid">
+                <div class="nav__lower-burger">
+                    <img class="burger-menu burger-menu-default" src="./assets/images/burger-menu.svg" alt="">
+                    <img class="burger-menu burger-menu-close" src="./assets/images/close.svg" alt="" hidden>
+                </div>
+
+                <div class="logo-delivery">
+                    <img class="logo-delivery__img" src="./assets/images/logo.svg" alt="SM Store">
+                </div>
+
+                <nav class="link-delivery">
+                    <a class="link-delivery__item" href="#mechanics">Mechanics</a>
+                    <a class="link-delivery__item" href="#">Browse Essentials</a>
+                    <a class="link-delivery__item" href="#faqs">FAQs</a>
+                </nav>
+
+                <nav class="nav-user hide">
+                    <a class="nav-user nav-user__avatar" href="#"><img class="nav-user__avatar__image"
+                            src="./assets/images/profile-avatar.jpg">Hello, Maan!</a>
+                    <a class="nav-user nav-user__basket" href="#"><img class="nav-user__basket__icon"
+                            src="./assets/images/icon-basket.svg">My Basket <span
+                            class="nav-user__basket__count">5</span></a>
+                </nav>
+
+                <nav class="nav-guest hide">
+                    <a class="button-guest button-guest--outline-white font-cta">Login</a>
+                    <a class="button-guest button-guest--pure-white font-cta">Sign up</a>
+                </nav>
+
+                <nav class="nav-user">
+                    <div class="nav-user__hello">
+                        <img class="nav-user__avatar" src="./assets/images/avatar.png" alt="">
+                        <span>Hello, Maan!</span>
+                        <div class="nav-user__menu">
+                            <a href="#">My Profile and Orders</a>
+                            <a href="#">Logout</a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <a href="">
+                            <img src="./assets/images/icons/cart.svg" alt="">
+                            My Basket <span class="order-count">5</span>
+                        </a>
+                    </div>
+                </nav>
+            </nav>
+        </header>
+        <!-- /HEADER -->
+
+        <!-- MOBILE MENU -->
+        <nav class="nav__mobile nav__mobile--delivery">
+            <ul class="nav__mobile-upper">
+                <li><a class="nav__mobile-upper-item" href="#mechanics">Mechanics</a></li>
+                <li><a class="nav__mobile-upper-item" href="#">Browse Essentials</a></li>
+                <li><a class="nav__mobile-upper-item" href="#faqs">FAQS</a></li>
+            </ul>
+
+            <ul class="nav__mobile-lower">
+                <li><a class="nav__mobile-lower-item" href="#">My Orders</a></li>
+                <li><a class="nav__mobile-lower-item" href="#">My Profile</a></li>
+                <li><a class="nav__mobile-lower-item" href="#">Change Password</a></li>
+                <li><a class="nav__mobile-lower-item" href="#">Log out</a></li>
+            </ul>
+
+            <ul class="nav__mobile-social">
+                <li><a href="#"><img src="./assets/images/icons/icon-dark-viber.svg" alt="Viber"></a></li>
+                <li><a href="#"><img src="./assets/images/icons/icon-fb-black.svg" alt="Facebook"></a></li>
+                <li><a href="#"><img src="./assets/images/icons/icon-youtube-black.svg" alt="Youtube"></a></li>
+                <li><a href="#"><img src="./assets/images/icons/icon-ig-black.svg" alt="Instagram"></a></li>
+                <li><a href="#"><img src="./assets/images/icons/icon-twitter-black.svg" alt="Twitter"></a></li>
+            </ul>
+        </nav>
+
+        <section class="breadcrumb">
+            <div>
+                <p>Home <img src="./assets/images/icons/angle-right.svg" alt=""><span>My Orders</span> </p>
+            </div>
+        </section>
+
+        <section class="breadcrumb-mobile">
+            <div>
+                <a href="#"><img src="./assets/images/icons/angle-left.svg" alt=""></a>
+                <p><img src="./assets/images/icons/cart.svg" alt="">My Orders</p>
+            </div>
+        </section>
+
+        <section class="user">
+            <div>
+                <div class="side_nav">
+                    <div class="side_nav-header">
+                        <p>Hello, Maan</p>
+                    </div>
+                    <div class="side_nav-nav">
+                        <ul>
+                            <li class="active"><a href="#"><img src="./assets/images/icons/Cart.svg" alt="">My
+                                    Orders</a></li>
+                            <li><a href="#"><img src="./assets/images/icons/Account.svg" alt="">My profile</a></li>
+                            <li><a href="#"><img src="./assets/images/icons/Password.svg" alt="">Change Password</a>
+                            </li>
+                            <li><a href="#"><img src="./assets/images/icons/Sign-out.svg" alt="">Sign Out</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="user-orders mobile-only">
+                    <div class="user-orders__header">
+                        <div class="custom-select transparent orders-status">
+                            <select>
+                                <option selected>All Orders</option>
+                                <option value="1">Processing</option>
+                                <option value="1">Completed</option>
+                                <option value="1">Cancelled</option>
+                            </select>
+                        </div>
+
+                        <div class="custom-select transparent">
+                            <select>
+                                <option selected>Last 5 Orders</option>
+                                <option value="1">Last 10 Orders</option>
+                                <option value="1">Last 20 Orders</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="user-orders__tbl">
+                        <div class="user-orders__tbl-item_mobile">
+                            <div class="order_number">
+                                <div>
+                                    <p class="font-fineprint">#QPZGUOA</p>
+                                    <p class="font-fineprint">ORDER DATE <span> 05/10/2020 15:41</span> </p>
+                                </div>
+                                <img src="./assets/images/icons/angle-right.svg" alt="">
+                            </div>
+                            <div class="user-orders__items__item__order-branch">
+                                <div class="branch-text">
+                                    <span>The SM Store Megamall</span>
+                                </div>
+                                <div class="status-text">
+                                    Processing
+                                </div>
+                            </div>
+
+                            <div class="order_details">
+                                <div class="product--small">
+                                    <img src="./assets/images/basket-1.png" alt="">
+                                    <div>
+                                        <p class="item-category">INDOOR COMFORTS</p>
+                                        <p class="item-name">Water Jug With Ice</p>
+                                        <p class="item-details"> <span class="label">Color:</span>
+                                            <span class="value">Green</span></p>
+                                        <p class="item-price">2 pcs. <span>₱399.50</span></p>
+                                    </div>
+                                </div>
+
+                                <div class="product--small">
+                                    <img src="./assets/images/basket-1.png" alt="">
+                                    <div>
+                                        <p class="item-category">SAFETY & PROTECTION</p>
+                                        <p class="item-name">Face Shield</p>
+                                        
+                                        <p class="item-price">3 pcs. <span>₱300.00</span></p>
+                                    </div>
+                                </div>
+
+                                <hr />
+
+                                <div class="order-total">
+                                    <p>ORDER TOTAL</p>
+                                    <p class="price">₱699.75</p>
+                                </div>
+
+                                <div class="user-orders__items__item__order-requested-items">
+                                    <p>requested items</p>
+                                    <p>500ml Ethyl Alcohol, 10pcs. Watsons Wet Wipes</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <!-- Order 2 -->
+                        <div class="user-orders__tbl-item_mobile">
+                            <div class="order_number">
+                                <div>
+                                    <p class="font-fineprint">#QPZGUOA</p>
+                                    <p class="font-fineprint">ORDER DATE <span> 05/10/2020 15:41</span> </p>
+                                </div>
+                                <img src="./assets/images/icons/angle-right.svg" alt="">
+                            </div>
+                            <div class="user-orders__items__item__order-branch">
+                                <div class="branch-text">
+                                    <span>The SM Store Cagayan de Oro (Downtown Premier)</span>
+                                </div>
+                                <div class="status-text">
+                                    Processing
+                                </div>
+                            </div>
+
+                            <div class="order_details">
+                                <div class="product--small">
+                                    <img src="./assets/images/basket-1.png" alt="">
+                                    <div>
+                                        <p class="item-category">INDOOR COMFORTS</p>
+                                        <p class="item-name">Water Jug With Ice</p>
+                                        <p class="item-details"> <span class="label">Color:</span>
+                                            <span class="value">Green</span></p>
+                                        <p class="item-price">2 pcs. <span>₱399.50</span></p>
+                                    </div>
+                                </div>
+
+                                <div class="product--small">
+                                    <img src="./assets/images/basket-1.png" alt="">
+                                    <div>
+                                        <p class="item-category">SAFETY & PROTECTION</p>
+                                        <p class="item-name">Face Shield</p>
+                                        
+                                        <p class="item-price">3 pcs. <span>₱300.00</span></p>
+                                    </div>
+                                </div>
+
+                                <hr />
+
+                                <div class="order-total">
+                                    <p>ORDER TOTAL</p>
+                                    <p class="price">₱699.75</p>
+                                </div>
+
+                                <div class="user-orders__items__item__order-requested-items">
+                                    <p>requested items</p>
+                                    <p>500ml Ethyl Alcohol, 10pcs. Watsons Wet Wipes</p>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+
+                        <div class="user-orders__tbl-item_mobile">
+                            <div class="order_number">
+                                <div>
+                                    <p class="font-fineprint">#QPZGUOA</p>
+                                    <p class="font-fineprint">ORDER DATE <span> 05/10/2020 15:41</span> </p>
+                                </div>
+                                <img src="./assets/images/icons/angle-right.svg" alt="">
+                            </div>
+                            <div class="user-orders__items__item__order-branch">
+                                <div class="branch-text">
+                                    <span>The SM Store Megamall</span>
+                                </div>
+                                <div class="status-text cancelled">
+                                    Cancelled
+                                </div>
+                            </div>
+
+                            <div class="order_details">
+                                <div class="product--small">
+                                    <img src="./assets/images/basket-1.png" alt="">
+                                    <div>
+                                        <p class="item-category">INDOOR COMFORTS</p>
+                                        <p class="item-name">Water Jug With Ice</p>
+                                        <p class="item-details"> <span class="label">Color:</span>
+                                            <span class="value">Green</span></p>
+                                        <p class="item-price">2 pcs. <span>₱399.50</span></p>
+                                    </div>
+                                </div>
+
+                                <div class="product--small">
+                                    <img src="./assets/images/basket-1.png" alt="">
+                                    <div>
+                                        <p class="item-category">SAFETY & PROTECTION</p>
+                                        <p class="item-name">Face Shield</p>
+                                        
+                                        <p class="item-price">3 pcs. <span>₱300.00</span></p>
+                                    </div>
+                                </div>
+
+                                <hr />
+
+                                <div class="order-total">
+                                    <p>ORDER TOTAL</p>
+                                    <p class="price">₱699.75</p>
+                                </div>
+
+                                <div class="user-orders__items__item__order-requested-items">
+                                    <p>requested items</p>
+                                    <p>500ml Ethyl Alcohol, 10pcs. Watsons Wet Wipes</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <a href="" class="btn--text-link font-cta">Show all</a>
+                </div>
+
+                <div class="user-orders">
+                    <div class="user-orders__header">
+                        <p>My Orders</p>
+                        <div>
+                            <span class="font-metadata text-bold">Show</span>
+                            <select name="" id="">
+                                <option value="">Recent 5 Orders</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="nav-tabs">
+                        <ul>
+                            <li class="active"><a href="">All</a></li>
+                            <li><a href="">Processing</a></li>
+                            <li><a href="">Completed</a></li>
+                            <li><a href="">Cancelled</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="user-orders__items">
+                        <div class="user-orders__items__item">
+                            <div class="user-orders__items__item__order-info">
+                                <div class="details">
+                                    <div>ORDER NUMBER</div>
+                                    <div>#QPZGUOA</div>
+                                </div>
+                                <div class="details">
+                                    <div>ORDER DATE</div>
+                                    <div>05/10/2020 15:41</div>
+                                </div>
+                                <div class="details">
+                                    <div>ORDER TOTAL</div>
+                                    <div>₱699.75</div>
+                                </div>
+
+                                <a href="" class="btn--text-link font-cta">Manage</a>
+                            </div>
+
+                            <div class="user-orders__items__item__order-branch">
+                                <div class="branch-text">
+                                    Servicing Branch: <span>The SM Store Megamall</span>
+                                </div>
+                                <div class="status-text">
+                                    Processing
+                                </div>
+                            </div>
+
+                            <div class="user-orders__items__item__order-items">
+                                <div class="user-orders__items__item__order-items__item">
+                                    <div class="image-description">
+                                        <img src="./assets/images/water-jug.png" alt="">
+                                        <div class="item-name">
+                                            <p>INDOOR COMFORTS</p>
+                                            <p>Water Jug With Ice</p>
+                                        </div>
+                                    </div>
+                                    <div class="item-price">
+                                        <p>item price</p>
+                                        <p>₱199.75</p>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <p>Quantity</p>
+                                        <p>2pcs.</p>
+                                    </div>
+                                    <div class="item-total-price">
+                                        <p>Total Price</p>
+                                        <p>₱399.50</p>
+                                    </div>
+                                </div>
+                                <div class="user-orders__items__item__order-items__item">
+                                    <div class="image-description">
+                                        <img src="./assets/images/face-shield.png" alt="">
+                                        <div class="item-name">
+                                            <p class="item-brand">Safety & protection</p>
+                                            <p class="item-product">face shield</p>
+                                        </div>
+                                    </div>
+                                    <div class="item-price">
+                                        <p>item price</p>
+                                        <p>₱100.00</p>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <p>Quantity</p>
+                                        <p>3pcs.</p>
+                                    </div>
+                                    <div class="item-total-price">
+                                        <p>Total Price</p>
+                                        <p>₱300.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="user-orders__items__item__order-requested-items">
+                                <p>requested items</p>
+                                <p>500ml Ethyl Alcohol, 10pcs. Watsons Wet Wipes</p>
+                            </div>
+                        </div>
+                        <div class="user-orders__items__item">
+                            <div class="user-orders__items__item__order-info">
+                                <div class="details">
+                                    <div>ORDER NUMBER</div>
+                                    <div>#QPZGUOA</div>
+                                </div>
+                                <div class="details">
+                                    <div>ORDER DATE</div>
+                                    <div>05/10/2020 15:41</div>
+                                </div>
+                                <div class="details">
+                                    <div>ORDER TOTAL</div>
+                                    <div>₱XX,XXX.00</div>
+                                </div>
+
+                                <a href="" class="btn--text-link font-cta">Manage</a>
+                            </div>
+
+                            <div class="user-orders__items__item__order-branch">
+                                <div class="branch-text">
+                                    Servicing Branch: <span>The SM Store Cagayan de Oro (Downtown Premier)</span>
+                                </div>
+                                <div class="status-text">
+                                    Processing
+                                </div>
+                            </div>
+
+                            <div class="user-orders__items__item__order-items">
+                                <div class="user-orders__items__item__order-items__item">
+                                    <div class="image-description">
+                                        <img src="./assets/images/wipes.png" alt="">
+                                        <div class="item-name">
+                                            <p>INDOOR COMFORTS</p>
+                                            <p>unscented Wipes</p>
+                                        </div>
+                                    </div>
+                                    <div class="item-price">
+                                        <p>item price</p>
+                                        <p>₱160.00</p>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <p>Quantity</p>
+                                        <p>4pcs.</p>
+                                    </div>
+                                    <div class="item-total-price">
+                                        <p>Total Price</p>
+                                        <p>₱640.00</p>
+                                    </div>
+                                </div>
+                                <div class="user-orders__items__item__order-items__item">
+                                    <div class="image-description">
+                                        <img src="./assets/images/diapers.png" alt="">
+                                        <div class="item-name">
+                                            <p>INDOOR COMFORTS</p>
+                                            <p>Extra Soft Diapers</p>
+                                        </div>
+                                    </div>
+                                    <div class="item-price">
+                                        <p>item price</p>
+                                        <p>₱564.00</p>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <p>Quantity</p>
+                                        <p>2pcs.</p>
+                                    </div>
+                                    <div class="item-total-price">
+                                        <p>Total Price</p>
+                                        <p>₱1,128.00</p>
+                                    </div>
+                                </div>
+                                <div class="user-orders__items__item__order-items__item">
+                                    <div class="image-description">
+                                        <img src="./assets/images/urinal-trainer.png" alt="">
+                                        <div class="item-name">
+                                            <p>INDOOR COMFORTS</p>
+                                            <p>urinal trainer</p>
+                                        </div>
+                                    </div>
+                                    <div class="item-price">
+                                        <p>item price</p>
+                                        <p>₱499.75</p>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <p>Quantity</p>
+                                        <p>1pc.</p>
+                                    </div>
+                                    <div class="item-total-price">
+                                        <p>Total Price</p>
+                                        <p>₱499.75</p>
+                                    </div>
+                                </div>
+                                <div class="user-orders__items__item__order-items__item">
+                                    <div class="image-description">
+                                        <img src="./assets/images/diaper-rash.png" alt="">
+                                        <div class="item-name">
+                                            <p class="item-brand">indoor comforts</p>
+                                            <p class="item-product">Diaper Rash Lite Cream</p>
+                                        </div>
+                                    </div>
+                                    <div class="item-price">
+                                        <p>item price</p>
+                                        <p>₱179.00</p>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <p>Quantity</p>
+                                        <p>1pc.</p>
+                                    </div>
+                                    <div class="item-total-price">
+                                        <p>Total Price</p>
+                                        <p>₱179.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="user-orders__items__item__order-requested-items">
+                                <p>requested items</p>
+                                <p>500ml Ethyl Alcohol, 10pcs. Watsons Wet Wipes</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="" class="btn--text-link font-cta">Show all</a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- FOOTER -->
+        <footer class="footer__delivery">
+            <div>
+                <a class="font-caption">Privacy And Cookie Policy</a>
+                <a class="font-caption">Terms and Conditions</a>
+            </div>
+            <span class="font-caption">© 2020 The SM Store. All rights reserved.</span>
+        </footer>
+        <!-- /FOOTER -->
+
+
+    </div> <!-- /wrapper -->
+
+    <!-- IMPORTS -->
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets//js/customselect.js"></script>
+
+    <!-- CUSTOM JS -->
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/carousel.js"></script>
+</body>
+
+</html>

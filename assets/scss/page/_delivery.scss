@@ -226,6 +226,23 @@
                 }
             }
         }
+
+        &-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+
+            & > a {
+                margin: 12px;
+            }
+
+            @include respond(tablet) {
+                flex-direction: column;
+                width: inherit;
+                text-align: center;
+                margin: 0 0 24px 0;
+            }
+        }
     }
 
     &__featured {

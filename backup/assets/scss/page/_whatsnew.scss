@@ -1,0 +1,381 @@
+.whats-new {
+
+    &__3daysale {
+        background-color: $pacific;
+        padding: 44px 0;
+
+        @include respond(tablet) {
+            padding: 24px 14px;
+        }
+
+
+        &__container {
+            width: 1314px;
+            margin: auto;
+            align-items: center;
+            display: flex;
+            padding: 41px 41px 45px 80px;
+            background-color: $blush;
+
+            @include respond(1399px) {
+                width: 96%;
+            }
+
+            @include respond(tablet) {
+                width: 100%;
+            }
+
+            @include respond(mobile) {
+                flex-direction: column-reverse;
+                padding: 0;
+            }
+
+         
+
+          
+        }
+
+        &__description {
+            margin-right: 46px;
+
+            @include respond(mobile) {
+                padding: 16px 24px;
+                margin-right: 0;
+            }
+
+            p {
+              margin-bottom: 32px;
+              @include respond(tablet) {
+                font-size: 14px;
+                line-height: 22px;
+                margin-bottom: 10px;
+            }
+
+            }
+
+           &__h1 {
+            @include respond(tablet) {
+                font-size: 24px;
+                line-height: 32px;
+                letter-spacing: 1.6px;
+            }
+           }
+
+           &__btn {
+               display: inline-flex;
+           }
+        }
+
+        &__image {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    &__intro {
+        padding-top: 42px;
+        padding-bottom: 80px;
+        position: relative;
+        min-height: 618px;
+        display: flex;
+
+        &--image {
+            position: relative;
+            z-index: 50;
+            height: 448px;
+
+            & img {
+                height: 100%;
+            }
+
+            @include respond(tablet) {
+                height: 205px;
+                position: absolute;
+            }
+        }
+
+        &--description {
+            height: 446px;
+            width: 684px;
+            background-color: $cream;
+            position: absolute;
+            top: 92px;
+            right: 0;
+            display: flex;
+            justify-content: center;
+
+            @include respond(tablet) {
+                left: 32px;
+                position: relative;
+                top: 0px;
+            }
+
+            &-text {
+                width: 411px;
+                margin: 85px 0 0 120px;
+
+                @include respond(tablet) {
+                    margin: 269px 0 0 30px;
+                    width: 328px;
+                }
+
+                & h1 {
+                    @include respond(mobile) {
+                        font-size: 24px;
+                        line-height: 32px;
+                    }
+                }
+
+                & p {
+                    &:nth-of-type(1) {
+                        color: $gray;
+                        margin-bottom: 12px;
+                    }
+
+                    &:nth-of-type(2) {
+                        color: #2C2E2F;
+
+                        @include respond(mobile) {
+                            font-size: 14px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+
+    &__promos {
+        padding:80px 20px;
+        position: relative;
+        //min-height: 759px;
+        background-color: $blush;
+
+        @include respond(tablet) {
+            padding: 40px 12px;
+         }
+
+         
+
+        &-container {
+            display: flex;
+            flex-direction: column;
+            width: 1224px;
+            margin: auto;
+            
+        }
+
+        &-cards {
+            display: flex;
+            margin-top: 24px;
+
+            @include respond(mobile) {
+                margin-top: 12px;
+            }
+
+            & .card--promo {
+                margin-right: 24px;
+
+                @include respond(mobile) {
+                    margin-right: 8px;
+                }
+            }
+        }
+
+        &-controls {
+            display: flex;
+            display: flex;
+            padding: 32px 0;
+            justify-content: flex-end;
+
+            @include respond(1260px) {
+                justify-content: flex-start;
+            }
+        }
+    }
+
+    & .large-image {
+        position: relative;
+        height: 260px;
+        top: -70px;
+        z-index: 50;
+        width: 1224px;
+        margin: 0 auto;
+
+        @include respond(tablet) {
+            width: 100%;
+            height: min-content;
+            margin-bottom: -70px;
+        }
+        
+        & > img {
+            @include respond(tablet) {
+                width: 100%;
+            }
+        }
+    }
+
+    & .sale-list {
+        height: 468px;
+        background-color: $cream;
+        margin-bottom: 40px;
+        padding: 40px 104px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @include respond(tablet) {
+            padding: 24px 50px;
+            height: min-content;
+            width: 100%;
+            justify-content: flex-start;
+        }
+
+        @include respond(mobile) {
+            padding: 24px 16px;
+        }
+
+        &-item {
+            height: 88px;
+            border-left: 4px solid $chili;
+            padding-left: 24px;
+            display: flex;
+            flex-direction: column;
+
+            @include respond(tablet) {
+                height: min-content;
+                margin-bottom: 24px;
+            }
+
+            & > p {
+                color: $black;
+                width: 100%;
+                margin-top: 8px;
+            }
+        }
+
+        & > p {
+            margin-top: 10px;
+        }
+    }
+
+    & .promo-image {
+        height: 654px;
+        position: relative;
+
+        @include respond(tablet) {
+            width: 100%;
+            height: 450px;
+        }
+
+        @include respond(mobile) {
+            height: 233px;
+        }
+
+        & > img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    & .terms-conditions {
+        min-height: 702px;
+        background-color: $blush;
+        padding: 48px 104px;
+        margin-bottom: 80px;
+
+        @include respond(tablet) {
+            width: 100%;
+            padding: 24px 50px;
+        }
+
+        @include respond(mobile) {
+            padding: 24px 16px;
+            margin-bottom: 24px;
+        }
+
+        & > .hr {
+            @include respond(mobile) {
+                margin: 24px 0;
+            }
+        }
+
+        & > ol {
+            margin-top: 20px;
+            margin-left: 20px;
+
+            & > li {
+                margin-bottom: 16px;
+                color: $black;
+            }
+        }
+    }
+
+    & .store-hours {
+
+        @include respond(tablet) {
+            padding: 24px 16px;
+            width: 100%;
+        }
+
+        & > .store-branches {
+            background-color: #EFF3FD;
+            padding: 32px;
+            min-height: 150px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 80px;
+
+            @include respond(tablet) {
+                margin-top: 40px;
+            }
+            
+            & > h1 {
+                margin-bottom: 32px;
+                text-align: center;
+            }   
+
+            & > div {
+                display: flex;
+                flex-wrap: wrap;
+
+                @include respond(tablet) {
+                    width: 100%;
+                }
+
+                & > span {
+                    flex-basis: 33.33%;
+                    width: 122px;
+
+                    @include respond(mobile) {
+                        flex-basis: 50%;
+                        margin-bottom: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__featured-events {
+        padding: 56px 0 80px 0;
+        display: flex;
+
+        @include respond(tablet) {
+            flex-direction: column;
+            padding: 24px 12px;
+        }
+
+        &__btn {
+            width: 210px;
+            align-self: flex-end;
+        }
+    }
+
+  
+
+}
+
+

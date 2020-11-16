@@ -1,10 +1,12 @@
 window.addEventListener("scroll", () => {
     let upperNavMenu = document.getElementsByClassName("nav__upper")
     let lowerNavMenu = document.getElementsByClassName("nav__lower")
+// let shadowGradient = document.querySelector(".banner__shadow-gradient")
 
     upperNavMenu[0].classList.toggle("sticky", pageYOffset > 88)
-
     lowerNavMenu[0].classList.toggle("sticky2", pageYOffset > 88)
+    // shadowGradient.classList.toggle("sticky3", pageYOffset > 88)
+    
     lowerNavMenu[0].classList.toggle("colorize", pageYOffset > 88)
 })
 

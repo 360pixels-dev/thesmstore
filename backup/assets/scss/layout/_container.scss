@@ -1,0 +1,173 @@
+.wrapper {
+    overflow: hidden;
+}
+
+.container {
+    //max-width: 1284px;
+    max-width: 1224px;
+    //padding: 0 $gutter-desktop;
+    margin: 0 auto;
+
+
+    @include respond(tablet) {
+        max-width: 600px;
+        padding: 0 $gutter-tablet; 
+    }
+
+    @include respond(mobile) {    
+        max-width: 360px;
+        padding: 0 $gutter-mobile;
+    }
+}
+
+.container-fluid {
+    width: 100%; 
+    margin: 0 auto;
+
+    &--gutter {
+        padding: 0 26px;
+    }
+}
+
+
+.container-1238 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1238px;
+    margin: 0 auto;
+    justify-content: space-between;
+
+    @include respond(tablet) {
+        width: max-content;
+    }
+}
+
+.container-1236 {
+    width: 1236px;
+    margin: 0 auto;
+
+    @include respond(1200px) {
+        width: 80%;
+        padding: 0 $gutter-tablet; 
+    }
+
+    @include respond(1200px) {
+        width: 80%;
+        padding: 0 $gutter-tablet; 
+    }
+
+    @include respond(tablet) {
+        width: 600px;
+        
+        padding: 0 $gutter-tablet; 
+    }
+
+    @include respond(mobile) {    
+        width: 360px;
+        padding: 0 $gutter-mobile;
+    }
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px $gutter-desktop;
+
+    @include respond(tablet) {
+        padding: 0px $gutter-tablet;
+    }
+
+    @include respond(mobile) {
+        padding: 0px $gutter-mobile;
+    }
+}
+
+.main-section {
+    padding-top: 88px;
+}
+
+.container-1014 {
+    position: relative;
+    width: 1014px;
+    // padding: 0 $gutter-desktop;
+    margin: 0 auto;
+
+    @include respond(mobile) {
+        width: 100%;
+    }
+}
+
+.container-colored {
+    position: relative;
+    z-index: 9;
+    max-width: 1014px;
+    margin: -233px auto 40px auto;
+    min-height: 500px;
+    background: $white;
+    padding: 58px;
+    
+    @include respond(mobile) {
+        margin: -124px 0 40px 0;
+        width: 100% !important;
+        padding: 20px;
+    }
+
+    &--pink {
+        border: 15px solid $beauty-pink;
+
+        @include respond(tablet) {
+            border: 10px solid $beauty-pink;
+            padding: 14px;
+        }
+    }
+
+    &--freshmint {
+        border: 15px solid $freshmint;
+    }
+
+    &--pacific {
+        border: 15px solid $pacific;
+    }
+
+    &--yolk {
+        border: 15px solid $yolk;
+    }
+
+    &--blue {
+        border: 15px solid $blue;
+    }
+
+    &--lemon {
+        border: 15px solid $lemon;
+    }
+
+    @include respond(1040px) {
+        width: 96%;
+    }
+
+    @include respond(mobile) {
+        width: 336px;
+    }
+}
+
+.container-quiz {
+    position: relative;
+    z-index: 9;
+    max-width: 1014px;
+    margin: auto;
+    min-height: 300px;
+    padding: 58px;
+
+    @include respond(tablet) {
+        width: 100%;
+        padding: 12px;
+    }
+
+}
+
+
+
+
+

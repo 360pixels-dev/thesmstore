@@ -9,6 +9,10 @@
     animation-name: catchup;
     animation-duration: 0.5s;
     transition: 0.3s ease-out !important;
+
+    @include respond(mobile) {
+        animation-duration: 0.3s;
+    }
 }
 
 .sticky2 {
@@ -16,6 +20,24 @@
     animation-name: catchup2;
     animation-duration: 0.5s;
     transition: 0.3s ease-out !important;
+
+    @include respond(mobile) {
+        position: fixed !important;
+        animation-name: catchup2-mobile;
+        animation-duration: 0.5s;
+        transition: 0.3s ease-out !important;
+    }
+}
+
+.sticky3 {
+    position: fixed !important;
+    animation-name: catchup3;
+    animation-duration: 0.5s;
+    transition: 0.3s ease-out !important;
+
+    @include respond(mobile) {
+        animation-duration: 0.3s;
+    }
 }
 
 @keyframes catchup {
@@ -33,6 +55,24 @@
     }
     to {
         top: 88px;
+    }
+}
+
+@keyframes catchup3 {
+    from {
+        top: 0px;
+    }
+    to {
+        top: 112px;
+    }
+}
+
+@keyframes catchup2-mobile {
+    from {
+        top: 0px;
+    }
+    to {
+        top: 56px;
     }
 }
 

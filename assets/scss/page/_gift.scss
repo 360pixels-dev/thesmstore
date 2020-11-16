@@ -23,15 +23,17 @@
         @include respond(mobile) {
             margin-bottom: 32px;
             padding: 24px 12px 0 12px;
+            margin: 15px 0 32px 0;
         }
 
         &--registry {
             &:before {
                 @include headerBG;
-                // background-color: $pacific;
-                background-color: $aqua;
-                opacity: 0.4;
-                background-image: radial-gradient($black 2px, $aqua 2px);
+                background-color: $pacific;
+                background-image: radial-gradient(
+                    rgba(0, 0, 0, 0.4) 2px,
+                    $pacific 2px
+                );
                 background-size: 49px 49px;
             }
 
@@ -55,6 +57,11 @@
             &:before {
                 @include headerBG;
                 background-color: $seafoam;
+                background-image: radial-gradient(
+                    rgba(0, 0, 0, 0.4) 2px,
+                    $seafoam 2px
+                );
+                background-size: 49px 49px;
             }
 
             & > div {
@@ -72,6 +79,11 @@
             &:before {
                 @include headerBG;
                 background-color: $bee;
+                background-image: radial-gradient(
+                    rgba(0, 0, 0, 0.4) 2px,
+                    $bee 2px
+                );
+                background-size: 49px 49px;
             }
 
             & > div {
@@ -455,7 +467,7 @@
             }
 
             @include respond(mobile) {
-                padding: 24px;
+                padding: 24px 24px 78px 24px;
             }
 
             & > ul {
@@ -473,6 +485,10 @@
                     border-left: $coral 4px solid;
                     margin-bottom: 24px;
                     padding-left: 24px;
+
+                    @include respond(mobile) {
+                        margin-bottom: 12px;
+                    }
 
                     & > h4 {
                         white-space: nowrap;
@@ -507,11 +523,20 @@
                 right: auto;
                 left: 50%;
                 transform: translateX(-50%);
+
+                img:nth-of-type(2) {
+                    width: 600px;
+                }
             }
 
             @include respond(mobile) {
                 height: 189.62px;
                 width: 336px;
+
+                img:nth-of-type(2) {
+                    height: 189.62px;
+                    width: 336px;
+                }
             }
         }
     }

@@ -38,6 +38,7 @@
 
             @include respond(mobile) {
                 padding: 24px 12px 0 12px;
+                margin: 15px 0;
             }
         }
 
@@ -306,7 +307,12 @@
 
     &-accordion {
         width: 70%;
-        max-width: 14000px;
+
+        @include respond(mobile) {
+            width: 95%;
+        }
+
+        max-width: 1400px;
         margin: 2rem auto;
         padding: 2rem 0;
 
