@@ -8,7 +8,8 @@ accordionHeaders.forEach(currentHeader => {
         console.log("OPEN", openHeader)
         if (openHeader && openHeader !== currentHeader) {
             openHeader.classList.toggle("active") //removes "active" class
-            openHeader.style.maxHeight = 0;
+            const openBody = openHeader.nextElementSibling;
+            openBody.style.maxHeight = 0;
         }
             
 
