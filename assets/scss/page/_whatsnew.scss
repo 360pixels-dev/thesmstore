@@ -1,4 +1,10 @@
 .whats-new {
+    & > .promo-3ds-bottom-hr {
+        @include respond(mobile) {
+            display: none;
+        }
+    }
+
     &__3daysale {
         background-color: $pacific;
         padding: 44px 0;
@@ -327,7 +333,7 @@
 
     & .store-hours {
         @include respond(tablet) {
-            padding: 24px 16px;
+            padding: 0px 16px 24px 16px;
             width: 100%;
         }
 
@@ -346,6 +352,12 @@
 
             @include respond(tablet) {
                 margin-top: 40px;
+                padding: 16px;
+
+                & > h1 {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
             }
 
             & > h1 {
@@ -371,6 +383,21 @@
                     }
                 }
             }
+        }
+    }
+
+    & > .comments-section {
+        background-image: url("../images/comments-section.png");
+        background-size: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 700px;
+        margin-bottom: 40px;
+
+        @include respond(mobile) {
+            background-image: url("../images/comments-section-m.png");
+            height: 480px;
+            margin-bottom: 20px;
         }
     }
 

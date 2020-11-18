@@ -1,4 +1,10 @@
 .delivery {
+    .slick-current.slick-active {
+        @include respond(414px) {
+            // margin: 0 40px 0 60px !important;
+            width: calc(100vw - 134px) !important;
+        }
+    }
     &__banner {
         margin-top: -227px;
         position: relative;
@@ -1316,12 +1322,5 @@
         &--blue {
             background-color: #2b8dc5;
         }
-    }
-}
-
-.slick-current.slick-active {
-    @include respond(414px) {
-        // margin: 0 40px 0 60px !important;
-        width: calc(100vw - 134px) !important;
     }
 }

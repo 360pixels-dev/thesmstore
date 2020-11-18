@@ -137,6 +137,7 @@
     .controllers {
         button {
             background: transparent;
+            margin-right: 32px;
         }
     }
 
@@ -160,7 +161,7 @@
         background: $white;
         border-radius: 4px;
         padding: 0;
-        width: 304px;
+        width: 304px !important;
         height: 352px;
         margin: 0 4px;
 
@@ -191,22 +192,27 @@
             }
         }
     }
-}
 
-.slick-current.slick-active {
-    @include respond(820px) {
-        // margin: 0 40px 0 60px !important;
-        width: auto !important;
+    & .slick-current.slick-active {
+        @include respond(820px) {
+            // margin: 0 40px 0 60px !important;
+            width: auto !important;
+        }
+    }
+
+    & .slick-list {
+        height: fit-content;
+        width: fit-content;
     }
 }
 
-.slick-slide div div {
-    width: auto !important;
-}
+// .slick-slide div div {
+//     width: auto !important;
+// }
 
-.slick-slider {
-    background: #fff9f9;
-}
+// .slick-slider {
+//     background: #fff9f9;
+// }
 
 .instore-services {
     &.container {
@@ -302,8 +308,8 @@
 
     &__image {
         position: relative;
-        margin-left: 20px;
-        width: 1238px;
+        margin-left: 28px;
+        width: 1220px;
         height: 250px;
         background-image: url("../images/services-shop-online-banner.png");
         background-size: contain;

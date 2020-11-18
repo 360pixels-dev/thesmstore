@@ -142,6 +142,15 @@
             margin: 0px auto 40px auto;
             padding: 21px 21px 41px 21px;
         }
+
+        @include respond(mobile) {
+            & > h1 {
+                font-size: 24px;
+                line-height: 32px;
+                letter-spacing: 1.6px;
+                margin: 0 0 16px 0;
+            }
+        }
     }
 
     @include respond(1040px) {

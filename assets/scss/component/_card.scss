@@ -9,7 +9,7 @@
 
     &-whatsnew {
         text-decoration: none;
-        
+
         @include respond(1160px) {
             display: inline-block;
             margin-bottom: 16px;
@@ -29,7 +29,7 @@
             height: 62px;
             background-color: $white;
             padding: 16px 0 0 16px;
-            
+
             @include respond(1160px) {
                 height: 40px;
                 width: 144px;
@@ -68,7 +68,7 @@
             height: 302px;
             background-color: $white;
             padding: 16px 16px 0 16px;
-            
+
             & ul li {
                 margin-bottom: 16px;
 
@@ -169,7 +169,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-                        
+
             & ul li {
                 margin-bottom: 16px;
 
@@ -187,7 +187,7 @@
 
     &-event {
         height: 345px;
-        
+
         & .card__image {
             position: relative;
         }
@@ -214,7 +214,7 @@
                         align-items: flex-start;
                         width: 90%;
                         color: $dark-gray;
-    
+
                         & > img {
                             margin-top: 5px;
                             margin-right: 12px;
@@ -235,10 +235,10 @@
     cursor: pointer;
 
     &:hover {
-        background: #F8F8F8;
+        background: #f8f8f8;
         mix-blend-mode: multiply;
     }
-    
+
     & p {
         color: $dark-gray;
         word-wrap: break-word;
@@ -264,11 +264,11 @@
     }
 
     @include respond(tablet) {
-        width: 100%;   
+        width: 100%;
     }
 
     @include respond(mobile) {
-        width: 333px;   
+        width: 333px;
     }
 
     &.expand {
@@ -323,7 +323,7 @@
     margin-left: 24px;
     background-color: #ccc;
     height: 496px;
-    width: 288px;
+    width: 288px !important;
 
     @include respond(mobile) {
         height: 360px;
@@ -352,13 +352,12 @@
         left: 50%;
         transform: translateX(-50%);
         background-color: rgba(255, 255, 255, 0.88);
-        
 
         @include respond(mobile) {
             width: 160px;
             height: 220px;
             top: 50%;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%, -50%);
         }
 
         &-month {
@@ -376,7 +375,6 @@
             letter-spacing: 4px;
             width: 50%;
         }
-
     }
 }
 
@@ -387,11 +385,11 @@
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 48px;
-    word-wrap: break-word;    
+    word-wrap: break-word;
 
     @include respond(mobile) {
-        width: 160px; 
-        word-wrap: break-word;     
+        width: 160px;
+        word-wrap: break-word;
     }
 
     & img {
@@ -399,9 +397,8 @@
         width: 288px;*/
 
         @include respond(mobile) {
-            width: 160px;          
-            margin-bottom: 30px;  
-            
+            width: 160px;
+            margin-bottom: 30px;
         }
     }
 
@@ -419,14 +416,13 @@
     @include respond(tablet) {
         width: 304px;
         background-color: $white;
-
     }
 
     &-image {
         margin-bottom: 16px;
 
         @include respond(tablet) {
-           width: 304px;
+            width: 304px;
         }
     }
 
@@ -435,14 +431,14 @@
 
         @include respond(tablet) {
             padding: 0 16px 8px 16px;
-         }
+        }
     }
 
     &-details {
         margin-bottom: 24px;
         @include respond(tablet) {
             padding: 0 16px 0 16px;
-         }
+        }
     }
 
     & a {
@@ -451,7 +447,7 @@
         @include respond(tablet) {
             padding: 0 16px 24px 16px;
             display: block;
-         }
+        }
     }
 }
 
@@ -486,7 +482,7 @@
         height: 275px;
         max-width: 607px;
         display: inline-block;
-        
+
         &:nth-of-type(1) {
             margin-right: 24px;
             @include respond(tablet) {
@@ -507,17 +503,16 @@
             right: 17px;
             top: 70px;
             color: $white;
-            
-    
+
             @include respond(mobile) {
                 width: 190px;
                 margin-right: 13px;
                 top: 17px;
             }
-    
+
             & > p {
                 color: $white;
-    
+
                 &:nth-of-type(1) {
                     font-family: "Open Sans", Helvetica, Arial, sans-serif;
                     font-weight: 600;
@@ -525,7 +520,7 @@
                     line-height: 20px;
                     letter-spacing: 1.6px;
                     text-transform: uppercase;
-    
+
                     @include respond(mobile) {
                         font-size: 12px;
                         line-height: 18px;
@@ -533,7 +528,7 @@
                         width: 150px;
                     }
                 }
-    
+
                 &:nth-of-type(2) {
                     font-family: "Open Sans", Helvetica, Arial, sans-serif;
                     font-weight: normal;
@@ -541,13 +536,13 @@
                     line-height: 18px;
                     text-transform: capitalize;
                     margin-bottom: 8px;
-    
+
                     @include respond(mobile) {
                         font-size: 10px;
                     }
                 }
             }
-    
+
             & > h1 {
                 font-family: Josefin Sans;
                 font-weight: bold;
@@ -557,20 +552,20 @@
                 text-transform: uppercase;
                 white-space: nowrap;
                 width: min-content;
-    
+
                 @include respond(mobile) {
                     font-size: 20px;
                     line-height: 28px;
                 }
             }
-    
+
             & > a {
                 display: block;
                 width: 182px;
             }
         }
     }
-    
+
     & > img {
         object-fit: cover;
         object-position: 28%;
@@ -666,9 +661,7 @@
             width: 182px;
         }
     }
-
 }
-
 
 .card-mobile--events {
     width: 312px;
@@ -686,7 +679,7 @@
 
         & ul {
             margin-top: 8px;
-            
+
             & li {
                 color: $dark-gray;
                 // margin-bottom: 9px;
@@ -694,14 +687,12 @@
                 & img {
                     vertical-align: middle;
                 }
-
             }
         }
     }
 }
 
-
-.video-card { 
+.video-card {
     height: min-content;
 
     &__video {

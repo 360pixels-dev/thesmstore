@@ -1,8 +1,7 @@
-
 .vertical-line {
     border-left: 1px solid $gray;
     height: 64px;
-    display:block;
+    display: block;
     width: 1px;
     margin: auto;
 }
@@ -12,5 +11,13 @@
 
     &--gray {
         border-bottom: 1.5px solid $mid-gray;
+    }
+
+    &--gray-m-hide {
+        border-bottom: 1.5px solid $mid-gray;
+
+        @include respond(mobile) {
+            visibility: hidden;
+        }
     }
 }
