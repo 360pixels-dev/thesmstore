@@ -8910,17 +8910,52 @@ header {
   margin: -133px auto 40px auto;
   padding: 58px;
   min-height: fit-content;
+  height: fit-content;
 }
 @media only screen and (max-width: 1024px) {
   .container-colored--dark-orange {
     margin: 0px auto 40px auto;
     padding: 21px 21px 41px 21px;
   }
+  .container-colored--dark-orange:last-child {
+    margin: -120px auto 40px auto;
+  }
 }
 @media only screen and (max-width: tablet) {
   .container-colored--dark-orange {
     margin: 0px auto 40px auto;
     padding: 21px 21px 41px 21px;
+  }
+  .container-colored--dark-orange:last-child {
+    margin: -120px auto 40px auto;
+  }
+}
+@media only screen and (max-width: 820px) {
+  .container-colored--dark-orange {
+    padding: 21px;
+  }
+  .container-colored--dark-orange > h1 {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 1.6px;
+    margin: 0 0 16px 0;
+  }
+  .container-colored--dark-orange > p:last-child {
+    text-align: justify;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .container-colored--dark-orange {
+    padding: 21px;
+  }
+  .container-colored--dark-orange > h1 {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 1.6px;
+    margin: 0 0 16px 0;
+  }
+  .container-colored--dark-orange > p:last-child {
+    text-align: justify;
   }
 }
 @media only screen and (max-width: 1040px) {

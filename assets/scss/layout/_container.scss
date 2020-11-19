@@ -158,10 +158,30 @@
         margin: -133px auto 40px auto;
         padding: 58px;
         min-height: fit-content;
+        height: fit-content;
 
         @include respond(tablet) {
             margin: 0px auto 40px auto;
             padding: 21px 21px 41px 21px;
+
+            &:last-child {
+                margin: -120px auto 40px auto;
+            }
+        }
+
+        @include respond(mobile) {
+            padding: 21px;
+
+            & > h1 {
+                font-size: 24px;
+                line-height: 32px;
+                letter-spacing: 1.6px;
+                margin: 0 0 16px 0;
+            }
+
+            & > p:last-child {
+                text-align: justify;
+            }
         }
     }
 
