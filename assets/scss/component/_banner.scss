@@ -369,6 +369,36 @@
         & h1 {
             font-size: 48px;
             margin-top: 100px;
+            margin-right: 270px;
+            padding-bottom: 12px;
+            text-align: center;
+            color: $white;
+
+            @include respond(tablet) {
+                font-size: 32px;
+                line-height: 40px;
+                padding-bottom: 5px;
+                justify-content: start;
+            }
+        }
+    }
+
+    &--terms-and-conditions {
+        height: 350px;
+        background: url("../../assets/images/banner-terms-and-conditions.png")
+            no-repeat;
+        @include bgcover;
+
+        @include respond(tablet) {
+            background: url("../../assets/images/banner-terms-and-conditions-m.png")
+                no-repeat;
+            @include bgcover;
+        }
+
+        & h1 {
+            font-size: 48px;
+            margin-top: 100px;
+            margin-right: 270px;
             padding-bottom: 12px;
             text-align: center;
             color: $white;

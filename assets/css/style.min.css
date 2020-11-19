@@ -3089,6 +3089,7 @@ ul {
 .banner-inner--privacy-policy h1 {
   font-size: 48px;
   margin-top: 100px;
+  margin-right: 270px;
   padding-bottom: 12px;
   text-align: center;
   color: #ffffff;
@@ -3103,6 +3104,53 @@ ul {
 }
 @media only screen and (max-width: tablet) {
   .banner-inner--privacy-policy h1 {
+    font-size: 32px;
+    line-height: 40px;
+    padding-bottom: 5px;
+    justify-content: start;
+  }
+}
+.banner-inner--terms-and-conditions {
+  height: 350px;
+  background: url("../../assets/images/banner-terms-and-conditions.png") no-repeat;
+  background-size: cover;
+  background-position: center left;
+  flex-direction: column;
+}
+@media only screen and (max-width: 1024px) {
+  .banner-inner--terms-and-conditions {
+    background: url("../../assets/images/banner-terms-and-conditions-m.png") no-repeat;
+    background-size: cover;
+    background-position: center left;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: tablet) {
+  .banner-inner--terms-and-conditions {
+    background: url("../../assets/images/banner-terms-and-conditions-m.png") no-repeat;
+    background-size: cover;
+    background-position: center left;
+    flex-direction: column;
+  }
+}
+.banner-inner--terms-and-conditions h1 {
+  font-size: 48px;
+  margin-top: 100px;
+  margin-right: 270px;
+  padding-bottom: 12px;
+  text-align: center;
+  color: #ffffff;
+}
+@media only screen and (max-width: 1024px) {
+  .banner-inner--terms-and-conditions h1 {
+    font-size: 32px;
+    line-height: 40px;
+    padding-bottom: 5px;
+    justify-content: start;
+  }
+}
+@media only screen and (max-width: tablet) {
+  .banner-inner--terms-and-conditions h1 {
     font-size: 32px;
     line-height: 40px;
     padding-bottom: 5px;
@@ -13420,7 +13468,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   position: absolute;
   z-index: 50;
   height: 100%;
-  width: 100%;
+  width: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -13428,13 +13476,13 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 @media only screen and (max-width: 1024px) {
   .featured-video__video-file {
     height: 90%;
-    width: 90%;
+    width: auto;
   }
 }
 @media only screen and (max-width: 1000px) {
   .featured-video__video-file {
     height: 100%;
-    width: 100%;
+    width: auto;
   }
 }
 .featured-video__video-btn {
@@ -21235,8 +21283,11 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   color: #000;
 }
 .privacy-policy > div > h4 {
-  color: #403f47;
+  color: #161720;
   margin-bottom: 8px;
+}
+.privacy-policy > div > strong {
+  color: #161720;
 }
 .privacy-policy > div > ul {
   list-style-type: disc;
@@ -35085,6 +35136,66 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 .ctd-accordion__item-body-content > ul em {
   color: #88898f;
+}
+
+.terms-and-conditions {
+  width: 100%;
+}
+.terms-and-conditions > div {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 192px;
+}
+@media only screen and (max-width: 1024px) {
+  .terms-and-conditions > div {
+    padding: 40px 32px;
+  }
+}
+@media only screen and (max-width: tablet) {
+  .terms-and-conditions > div {
+    padding: 40px 32px;
+  }
+}
+@media only screen and (max-width: 820px) {
+  .terms-and-conditions > div {
+    padding: 40px 12px;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .terms-and-conditions > div {
+    padding: 40px 12px;
+  }
+}
+.terms-and-conditions > div > p {
+  margin-bottom: 24px;
+  color: #161720;
+}
+.terms-and-conditions > div > p:nth-of-type(1) {
+  color: #000;
+}
+.terms-and-conditions > div > h4 {
+  color: #161720;
+  margin-bottom: 8px;
+}
+.terms-and-conditions > div > strong {
+  color: #161720;
+}
+.terms-and-conditions > div > ul {
+  list-style-type: disc;
+  margin-left: 50px;
+  margin-bottom: 24px;
+}
+.terms-and-conditions > div > ul > li {
+  color: #161720;
+}
+.terms-and-conditions > div > ol {
+  margin-left: 50px;
+  margin-bottom: 24px;
+}
+.terms-and-conditions > div > ol > li {
+  color: #403f47;
 }
 
 /*# sourceMappingURL=style.min.css.map */

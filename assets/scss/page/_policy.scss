@@ -26,8 +26,12 @@
         }
 
         & > h4 {
-            color: $dark-gray;
+            color: $black;
             margin-bottom: 8px;
+        }
+
+        & > strong {
+            color: $black;
         }
 
         & > ul {
@@ -39,14 +43,12 @@
                 color: $dark-gray;
             }
         }
-
     }
 
     &__inquiry {
         display: flex;
         width: 100%;
         justify-content: space-between;
-
 
         & > img {
             display: none;
