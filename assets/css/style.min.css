@@ -21612,7 +21612,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 .delivery__steps > div {
   width: 1400px;
-  height: 565px;
+  height: fit-content;
   padding: 85px 92px 93px 92px;
   margin: 0 auto;
   display: flex;
@@ -21632,7 +21632,8 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
+  margin: 64px auto;
+  margin-top: 0;
   justify-content: space-between;
 }
 @media only screen and (max-width: 1024px) {
