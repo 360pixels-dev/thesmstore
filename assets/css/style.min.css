@@ -5793,12 +5793,14 @@ ul {
   .social-share__count {
     flex-basis: 100%;
     text-align: center;
+    margin: 16px;
   }
 }
 @media only screen and (max-width: mobile) {
   .social-share__count {
     flex-basis: 100%;
     text-align: center;
+    margin: 16px;
   }
 }
 .social-share__facebook {
