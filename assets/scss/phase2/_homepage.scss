@@ -1,3 +1,13 @@
+.index {
+    & > .banner__shadow-gradient {
+        top: 163px;
+
+        @include respond(tablet) {
+            top: 112px;
+        }
+    }
+}
+
 .gift-section {
     background: #fff9f9;
     h2,
@@ -10,8 +20,12 @@
         display: none;
     }
 
-    .container {
+    & > .container {
         padding-top: 4%;
+
+        @include respond(tablet) {
+            max-width: 1024px;
+        }
 
         & .center {
             text-align: center;
@@ -32,6 +46,7 @@
 
     &__cards {
         display: flex;
+        justify-content: center;
         padding-bottom: 5%;
     }
 
@@ -41,6 +56,15 @@
         padding: 0;
         width: 392px;
         margin: 0 12px;
+
+        @include respond(tablet) {
+            width: 302px;
+
+            & > img {
+                width: inherit;
+                height: auto;
+            }
+        }
 
         &-description {
             padding: 18px 24px 32px 18px;
@@ -331,6 +355,10 @@
 
     @include respond(tablet) {
         display: flex;
+    }
+
+    & .container {
+        max-width: 360px;
     }
 
     &__controllers {

@@ -32377,6 +32377,20 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   color: white;
 }
 
+.index > .banner__shadow-gradient {
+  top: 163px;
+}
+@media only screen and (max-width: 1024px) {
+  .index > .banner__shadow-gradient {
+    top: 112px;
+  }
+}
+@media only screen and (max-width: tablet) {
+  .index > .banner__shadow-gradient {
+    top: 112px;
+  }
+}
+
 .gift-section {
   background: #fff9f9;
 }
@@ -32395,10 +32409,20 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
     display: none;
   }
 }
-.gift-section .container {
+.gift-section > .container {
   padding-top: 4%;
 }
-.gift-section .container .center {
+@media only screen and (max-width: 1024px) {
+  .gift-section > .container {
+    max-width: 1024px;
+  }
+}
+@media only screen and (max-width: tablet) {
+  .gift-section > .container {
+    max-width: 1024px;
+  }
+}
+.gift-section > .container .center {
   text-align: center;
   padding: auto;
   margin: auto;
@@ -32413,6 +32437,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 .gift-section__cards {
   display: flex;
+  justify-content: center;
   padding-bottom: 5%;
 }
 .gift-section__card {
@@ -32421,6 +32446,24 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   padding: 0;
   width: 392px;
   margin: 0 12px;
+}
+@media only screen and (max-width: 1024px) {
+  .gift-section__card {
+    width: 302px;
+  }
+  .gift-section__card > img {
+    width: inherit;
+    height: auto;
+  }
+}
+@media only screen and (max-width: tablet) {
+  .gift-section__card {
+    width: 302px;
+  }
+  .gift-section__card > img {
+    width: inherit;
+    height: auto;
+  }
 }
 .gift-section__card-description {
   padding: 18px 24px 32px 18px;
@@ -32769,6 +32812,9 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   .mobile-sm-cares {
     display: flex;
   }
+}
+.mobile-sm-cares .container {
+  max-width: 360px;
 }
 .mobile-sm-cares__controllers {
   float: right;
