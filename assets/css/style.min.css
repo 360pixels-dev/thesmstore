@@ -1196,6 +1196,28 @@ ul {
   list-style-type: none;
 }
 
+#mobile-menu-overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: transparent;
+  z-index: 25;
+}
+
+.mobile-search-overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: transparent;
+  z-index: 25;
+}
+
 .colorize {
   background: #397cee !important;
   transition: 0.6s ease-out;
@@ -1427,22 +1449,9 @@ ul {
   background: #fff;
   position: absolute;
   top: 100%;
+  left: 0;
   width: 308px;
-}
-@media only screen and (max-width: 820px) {
-  .nav__upper #mobile-menu {
-    left: 0 !important;
-  }
-}
-@media only screen and (max-width: mobile) {
-  .nav__upper #mobile-menu {
-    left: 0 !important;
-  }
-}
-@media only screen and (min-width: 841px) and (max-width: 1024px) {
-  .nav__upper #mobile-menu {
-    left: 36% !important;
-  }
+  z-index: 30;
 }
 .nav__upper #mobile-menu .arrow-left {
   position: absolute;
@@ -1473,53 +1482,43 @@ ul {
 }
 .nav__upper #mobile-menu-list {
   display: block;
+  z-index: 9999;
 }
 .nav__upper #mobile-menu-categories-list {
   display: none;
+  z-index: 9999;
 }
 .nav__upper #mobile-menu-categories-fashion {
   display: none;
+  z-index: 9999;
 }
 .nav__upper #mobile-menu-categories-bnk {
   display: none;
+  z-index: 9999;
 }
 .nav__upper #mobile-menu-categories-home {
   display: none;
+  z-index: 9999;
 }
 .nav__upper #mobile-menu-categories-beauty {
   display: none;
+  z-index: 9999;
 }
 .nav__upper #mobile-menu-categories-others {
   display: none;
+  z-index: 9999;
 }
 .nav__upper #mobile-menu-services-list {
   display: none;
+  z-index: 9999;
 }
 .nav__upper #mobile-menu-whatsnew-list {
   display: none;
+  z-index: 9999;
 }
 .nav__upper #mobile-menu-whatsnew-promos {
   display: none;
-}
-.nav__upper #mobile-menu:after {
-  content: " ";
-  position: absolute;
-  right: 100px;
-  top: -15px;
-  border-top: none;
-  border-right: 8px solid transparent;
-  border-left: 8px solid transparent;
-  border-bottom: 15px solid #fff;
-}
-@media only screen and (max-width: 320px) {
-  .nav__upper #mobile-menu:after {
-    right: 140px !important;
-  }
-}
-@media only screen and (min-width: 841px) and (max-width: 1024px) {
-  .nav__upper #mobile-menu:after {
-    right: 48% !important;
-  }
+  z-index: 9999;
 }
 @media only screen and (max-width: 1024px) {
   .nav__upper {
@@ -1527,12 +1526,7 @@ ul {
     padding: 15px;
   }
   .nav__upper .mobile-menu-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    padding: auto;
-    position: relative;
+    display: block;
   }
   .nav__upper .mobile-menu-button a {
     color: #ffffff;
@@ -1549,12 +1543,7 @@ ul {
     padding: 15px;
   }
   .nav__upper .mobile-menu-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    padding: auto;
-    position: relative;
+    display: block;
   }
   .nav__upper .mobile-menu-button a {
     color: #ffffff;
@@ -1563,6 +1552,52 @@ ul {
   .nav__upper .mobile-menu-button a:visited {
     color: #ffffff;
     text-decoration: none;
+  }
+}
+.nav__upper .mobile-logo {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: auto;
+  position: relative;
+  flex: 0 0 20%;
+}
+@media only screen and (max-width: 320px) {
+  .nav__upper .mobile-logo img {
+    width: 110px !important;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .nav__upper .mobile-logo {
+    flex: 0;
+    display: flex;
+  }
+}
+@media only screen and (max-width: tablet) {
+  .nav__upper .mobile-logo {
+    flex: 0;
+    display: flex;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .nav__upper .mobile-logo img {
+    padding: auto;
+    margin: auto;
+    width: auto;
+    height: 26px;
+    position: relative;
+    top: 3px;
+  }
+}
+@media only screen and (max-width: tablet) {
+  .nav__upper .mobile-logo img {
+    padding: auto;
+    margin: auto;
+    width: auto;
+    height: 26px;
+    position: relative;
+    top: 3px;
   }
 }
 .nav__upper .logo {
@@ -1576,11 +1611,13 @@ ul {
 @media only screen and (max-width: 1024px) {
   .nav__upper .logo {
     flex: 0;
+    display: none;
   }
 }
 @media only screen and (max-width: tablet) {
   .nav__upper .logo {
     flex: 0;
+    display: none;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -1728,6 +1765,33 @@ ul {
     font-weight: normal;
   }
 }
+.nav__upper .mobile-search-button {
+  display: none;
+}
+.nav__upper .mobile-search-button img {
+  width: 38px;
+  height: 23px;
+}
+@media only screen and (max-width: 1024px) {
+  .nav__upper .mobile-search-button {
+    display: flex;
+  }
+}
+@media only screen and (max-width: tablet) {
+  .nav__upper .mobile-search-button {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .nav__upper .search-container {
+    display: none;
+  }
+}
+@media only screen and (max-width: tablet) {
+  .nav__upper .search-container {
+    display: none;
+  }
+}
 .nav__upper .search-container .search-main {
   width: 100%;
   position: relative;
@@ -1768,18 +1832,22 @@ ul {
 }
 @media only screen and (max-width: 1024px) {
   .nav__upper .search-container .search-main .search-term {
+    position: absolute;
     padding-left: 6px;
     height: 32px;
-    width: 84px;
+    width: 270px;
     font-size: 14px;
+    right: 24px;
   }
 }
 @media only screen and (max-width: tablet) {
   .nav__upper .search-container .search-main .search-term {
+    position: absolute;
     padding-left: 6px;
     height: 32px;
-    width: 84px;
+    width: 270px;
     font-size: 14px;
+    right: 24px;
   }
 }
 .nav__upper .search-container .search-main .search-term:focus {
@@ -1806,9 +1874,6 @@ ul {
     font-size: 14px;
     padding-right: 5px;
   }
-  .nav__upper .search-container .search-main .search-button img {
-    height: 50%;
-  }
 }
 @media only screen and (max-width: tablet) {
   .nav__upper .search-container .search-main .search-button {
@@ -1816,9 +1881,6 @@ ul {
     width: 24px;
     font-size: 14px;
     padding-right: 5px;
-  }
-  .nav__upper .search-container .search-main .search-button img {
-    height: 50%;
   }
 }
 .nav__upper--default {
@@ -1912,12 +1974,14 @@ ul {
   .nav__lower {
     top: 0;
     padding: 44px 20px 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
   }
 }
 @media only screen and (max-width: tablet) {
   .nav__lower {
     top: 0;
     padding: 44px 20px 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -1936,16 +2000,6 @@ ul {
 }
 .nav__lower .store-selector {
   font-family: "Open Sans";
-}
-@media only screen and (max-width: 1024px) {
-  .nav__lower .store-selector {
-    display: none;
-  }
-}
-@media only screen and (max-width: tablet) {
-  .nav__lower .store-selector {
-    display: none;
-  }
 }
 .nav__lower .store-selector span {
   margin-right: 35px;
@@ -1971,12 +2025,12 @@ ul {
 }
 @media only screen and (max-width: 1024px) {
   .nav__lower .mobile-store-selector {
-    display: flex;
+    display: none;
   }
 }
 @media only screen and (max-width: tablet) {
   .nav__lower .mobile-store-selector {
-    display: flex;
+    display: none;
   }
 }
 .nav__lower .mobile-store-selector .white {
@@ -32382,12 +32436,12 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 @media only screen and (max-width: 1024px) {
   .index > .banner__shadow-gradient {
-    top: 112px;
+    display: none;
   }
 }
 @media only screen and (max-width: tablet) {
   .index > .banner__shadow-gradient {
-    top: 112px;
+    display: none;
   }
 }
 
@@ -32932,16 +32986,6 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 
 .fashion-nav {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
-}
-@media only screen and (max-width: 1024px) {
-  .fashion-nav {
-    background: #397cee !important;
-  }
-}
-@media only screen and (max-width: tablet) {
-  .fashion-nav {
-    background: #397cee !important;
-  }
 }
 
 .fashion-header-banner,

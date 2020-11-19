@@ -1,21 +1,59 @@
-function showHideMenu(ele) {
-    let menu = document.getElementById(ele);
+function toggleSearch() {
+    let searchContainer = document.getElementsByClassName('search-container')
+    let searchButton = document.getElementsByClassName('mobile-search-button')
+    let searchOverlay = document.getElementsByClassName('mobile-search-overlay')
+
+    searchButton[0].style.display = 'none'
+    searchContainer[0].style.display = 'flex'
+    searchOverlay[0].style.display = 'block'
+}
+
+function closeMobileSearch() {
+    let searchContainer = document.getElementsByClassName('search-container')
+    let searchButton = document.getElementsByClassName('mobile-search-button')
+    let searchOverlay = document.getElementsByClassName('mobile-search-overlay')
+
+    searchOverlay[0].style.display = 'none'
+    searchButton[0].style.display = 'flex'
+    searchContainer[0].style.display = 'none'
+}
+
+function closeMobileMenu() {
+    let menuDiv = document.getElementById('mobile-menu');
+    let menuOverlay = document.getElementById('mobile-menu-overlay')
     let menuList = document.getElementById('mobile-menu-list')
     let menus = document.getElementsByClassName('mobile-menu-item')
-    let menuArrow = document.getElementById("mobile-menu-arrow")
+
+    menuDiv.style.display = 'none'
+    menuOverlay.style.display = 'none'
+    menuList.style.display = 'block'
+
+    for (let i = 0; i < menus.length; i++) {
+        menus[i].style.display = 'none'
+    }
+}
+
+function showHideMenu(ele) {
+    let menu = document.getElementById(ele);
+    let menuOverlay = document.getElementById('mobile-menu-overlay')
+    let menuList = document.getElementById('mobile-menu-list')
+    let menus = document.getElementsByClassName('mobile-menu-item')
+    // let menuArrow = document.getElementById("mobile-menu-arrow")
 
     if (menu !== null) {
         if (menu.style.display === "block") {
-            menuArrow.className = "mobile-menu-arrow"
+            // menuArrow.className = "mobile-menu-arrow"
             menu.style.display = 'none'
-            menuList.style = 'block'
+            menuOverlay.style.display = 'none'
+            menuList.style.display = 'block'
             for (let i = 0; i < menus.length; i++) {
                 menus[i].style.display = 'none'
             }
         }
         else {
             menu.style.display = 'block'
-            menuArrow.className = "mobile-menu-arrow active"
+            menuOverlay.style.display = 'block'
+            // menuArrow.className = "mobile-menu-arrow active"
         }
         return false;
     }

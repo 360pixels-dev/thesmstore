@@ -17,12 +17,10 @@ function openStoreSelector() {
     let mobileStoreSelectorArrow = document.getElementById("mobile-store-selector-arrow")
     let lowerNav = document.getElementsByClassName("fashion-nav")
 
-    console.log(lowerNav)
-
     if (drawer.style.display === 'block' || overlay.style.display === 'block') {
 
         if (lowerNav.length !== 0) {
-            lowerNav[0].style.background = "transparent"
+            lowerNav[0].style.background = "linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%)"
         }
         drawer.style.display = "none";
         drawer.className = "make-store-selector-drawer w3-sidebar w3-bar-block w3-animate-top"
@@ -45,10 +43,13 @@ function openStoreSelector() {
 }
 
 function closeStoreSelector() {
-    
-    if (document.getElementsByClassName("fashion-nav").length === 0) {
-        document.getElementsByClassName("fashion-nav")[0].style.background = "transparent"
-    }
+    let storeSelectorArrow = document.getElementById("store-selector-arrow")
+    let mobileStoreSelectorArrow = document.getElementById("mobile-store-selector-arrow")
+    let lowerNav = document.getElementsByClassName("fashion-nav")
+
+    lowerNav[0].style.background = "linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%)"
     document.getElementById("store-selector-drawer").style.display = "none";
     document.getElementById("store-selector-overlay").style.display = "none";
+    storeSelectorArrow.className = "store-selector-arrow"
+    mobileStoreSelectorArrow.className = "mobile-store-selector-arrow"
 }

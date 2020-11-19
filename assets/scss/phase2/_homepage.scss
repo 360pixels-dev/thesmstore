@@ -3,7 +3,7 @@
         top: 163px;
 
         @include respond(tablet) {
-            top: 112px;
+            display: none;
         }
     }
 }
