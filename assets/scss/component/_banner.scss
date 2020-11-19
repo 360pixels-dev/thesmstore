@@ -1088,12 +1088,12 @@
 
     &--ctd {
         margin-top: 88px;
-        background-image: url("../../assets/images/banner-delivery.jpg");
+        background-image: url("../../assets/images/banner-delivery.png");
         background-size: cover;
         background-position: center right;
 
         @include respond(mobile) {
-            background-image: url("../../assets/images/banner-delivery-m.jpg");
+            background-image: url("../../assets/images/banner-delivery-m.png");
             @include banner-small-m--bc;
         }
 
