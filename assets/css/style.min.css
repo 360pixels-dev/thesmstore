@@ -8919,6 +8919,9 @@ header {
     margin: 0px auto 40px auto;
     padding: 21px 21px 41px 21px;
   }
+  .container-colored--dark-orange:first-child {
+    padding-bottom: 51px;
+  }
   .container-colored--dark-orange:last-child {
     margin: -120px auto 40px auto;
   }
@@ -8927,6 +8930,9 @@ header {
   .container-colored--dark-orange {
     margin: 0px auto 40px auto;
     padding: 21px 21px 41px 21px;
+  }
+  .container-colored--dark-orange:first-child {
+    padding-bottom: 51px;
   }
   .container-colored--dark-orange:last-child {
     margin: -120px auto 40px auto;

@@ -164,6 +164,10 @@
             margin: 0px auto 40px auto;
             padding: 21px 21px 41px 21px;
 
+            &:first-child {
+                padding-bottom: 51px;
+            }
+
             &:last-child {
                 margin: -120px auto 40px auto;
             }
