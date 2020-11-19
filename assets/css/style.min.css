@@ -33569,12 +33569,12 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   border-radius: 4px;
   padding: 0;
   width: 304px !important;
-  height: 352px;
+  height: fit-content;
   margin: 0 4px;
 }
 .mobile-carousel-gift-section__card img {
   width: 304px;
-  height: 192px;
+  height: auto;
 }
 .mobile-carousel-gift-section__card a {
   margin-bottom: 4%;
