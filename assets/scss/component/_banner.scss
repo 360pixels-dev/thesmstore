@@ -632,6 +632,63 @@
         }
     }
 
+    &--promo-easypay {
+        // background: url("../../assets/images/banner-easypay-promo.png")
+        //     no-repeat;
+        // @include bgcover;
+        background-color: $promo-yellow;
+        display: flex;
+        justify-content: center;
+
+        & > img {
+            width: 1217px;
+            height: auto;
+        }
+
+        @include respond(mobile) {
+            background: url("../../assets/images/banner-easypay-promo-m.png")
+                no-repeat;
+            background-size: contain;
+            background-position: center bottom;
+            // background-position: 50% 70px;
+            background-color: $promo-yellow;
+            // background-size: contain;
+            // @include bgcover;
+
+            & > img {
+                display: none;
+            }
+
+            & > .banner-section__breadcrumbs {
+                // position: absolute;
+                top: 260px !important;
+                left: 0px !important;
+                padding-left: 8px !important;
+                background: linear-gradient(
+                    180deg,
+                    rgba(22, 23, 32, 0) 0%,
+                    rgba(22, 23, 32, 0.43) 100%
+                );
+                white-space: nowrap;
+                width: 100%;
+
+                & > a {
+                    @include respond(mobile) {
+                        color: $white;
+                        &:not(:last-child) {
+                            background: url(../../assets/images/arrow-right.svg)
+                                no-repeat right center;
+                        }
+                        &:last-child {
+                            margin-right: 0;
+                            padding-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     &--press-release {
         background: url("../../assets/images/banner-press-release-blog.png")
             no-repeat;
