@@ -1,4 +1,16 @@
 .ctd {
+    & > .featured-video__text {
+        & > h1 {
+            line-height: 74px;
+            margin-top: 0;
+            margin-bottom: 30px;
+
+            @include respond(mobile) {
+                margin-top: 240px;
+                line-height: 32px;
+            }
+        }
+    }
     &__header {
         position: relative;
         width: 100%;
@@ -38,7 +50,7 @@
 
             @include respond(mobile) {
                 padding: 24px 12px 0 12px;
-                margin: 15px 0;
+                margin: 40px 0 15px 0;
             }
         }
 

@@ -1,21 +1,27 @@
 function toggleSearch() {
-    let searchContainer = document.getElementsByClassName('search-container')
+    let upperNav = document.getElementsByClassName('nav__upper')
+    let searchContainer = document.getElementsByClassName('mobile-search-open')
     let searchButton = document.getElementsByClassName('mobile-search-button')
     let searchOverlay = document.getElementsByClassName('mobile-search-overlay')
 
     searchButton[0].style.display = 'none'
-    searchContainer[0].style.display = 'flex'
+    upperNav[0].style.display = 'none'
+    searchContainer[0].style.display = 'block'
     searchOverlay[0].style.display = 'block'
 }
 
 function closeMobileSearch() {
-    let searchContainer = document.getElementsByClassName('search-container')
+    let upperNav = document.getElementsByClassName('nav__upper')
+
+    let searchContainer = document.getElementsByClassName('mobile-search-open')
     let searchButton = document.getElementsByClassName('mobile-search-button')
     let searchOverlay = document.getElementsByClassName('mobile-search-overlay')
 
-    searchOverlay[0].style.display = 'none'
-    searchButton[0].style.display = 'flex'
+    
+    searchButton[0].style.display = 'block'
+    upperNav[0].style.display = 'flex'
     searchContainer[0].style.display = 'none'
+    searchOverlay[0].style.display = 'none'
 }
 
 function closeMobileMenu() {

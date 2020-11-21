@@ -105,7 +105,12 @@
     }
 
     .container {
-        padding: 5%;
+        padding: 2%;
+        max-width: 1280px;
+
+        @include respond(tablet) {
+            max-width: 1024px;
+        }
 
         & .center {
             text-align: center;
@@ -121,20 +126,30 @@
     &__cards {
         display: flex;
         justify-content: center;
+        width: inherit;
     }
 
     &__card {
+        // display: flex;
+        // flex-direction: column;
+        // flex-basis: 50%;
         background: $white;
         border-radius: 4px;
         padding: 0;
-        width: 656px;
+        width: auto;
         margin: 0 12px;
 
         &-image1,
         &-image2 {
             cursor: pointer;
-            width: 656px;
-            height: 348px;
+            width: 600px;
+            height: 300px;
+            background-position: center;
+
+            @include respond(tablet) {
+                width: 480px;
+                height: 240px;
+            }
 
             h2 {
                 position: relative;
@@ -161,7 +176,7 @@
         }
     }
 
-    @include respond(tablet) {
+    @include respond(mobile) {
         .container {
             padding: 15% 3%;
         }

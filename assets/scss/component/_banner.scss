@@ -18,6 +18,10 @@
         position: absolute;
         top: 84px;
 
+        @include respond(tablet) {
+            top: 56px;
+        }
+
         @include respond(mobile) {
             left: 0;
             //width: 260px;
@@ -201,6 +205,7 @@
         height: 350px;
 
         @include respond(tablet) {
+            margin-top: 56px !important;
             justify-content: flex-start;
             align-items: flex-end;
             padding-bottom: 40px;
@@ -356,58 +361,86 @@
     }
 
     &--privacy-policy {
-        height: 350px;
+        margin-top: 88px !important;
+        height: 360px;
         background: url("../../assets/images/banner-privacy.png") no-repeat;
-        @include bgcover;
+        background-position: center right;
+        background-size: cover;
+        flex-direction: column;
+        // @include bgcover;
+
+        & .cookie-hide {
+            @include respond(tablet) {
+                display: none !important;
+            }
+        }
 
         @include respond(tablet) {
-            background: url("../../assets/images/banner-privacy-m.jpg")
-                no-repeat;
-            @include bgcover;
+            margin-top: 56px !important;
+        }
+
+        @include respond(mobile) {
+            height: 200px;
         }
 
         & h1 {
             font-size: 48px;
-            margin-top: 100px;
-            margin-right: 270px;
+            margin-top: 140px;
+            margin-right: 200px;
             padding-bottom: 12px;
             text-align: center;
             color: $white;
 
             @include respond(tablet) {
+                margin-top: 80px;
                 font-size: 32px;
                 line-height: 40px;
                 padding-bottom: 5px;
+                margin-left: 28px;
                 justify-content: start;
+                text-align: left;
             }
         }
     }
 
     &--terms-and-conditions {
-        height: 350px;
+        margin-top: 88px !important;
+        height: 360px;
         background: url("../../assets/images/banner-terms-and-conditions.png")
             no-repeat;
-        @include bgcover;
+        background-position: center right;
+        background-size: cover;
+        flex-direction: column;
 
         @include respond(tablet) {
-            background: url("../../assets/images/banner-terms-and-conditions-m.png")
-                no-repeat;
-            @include bgcover;
+            margin-top: 56px !important;
+        }
+
+        @include respond(mobile) {
+            height: 200px;
+            background-position: center;
         }
 
         & h1 {
             font-size: 48px;
-            margin-top: 100px;
-            margin-right: 270px;
+            margin-top: 140px;
+            margin-right: 200px;
             padding-bottom: 12px;
             text-align: center;
             color: $white;
 
             @include respond(tablet) {
+                margin-top: 80px;
                 font-size: 32px;
                 line-height: 40px;
                 padding-bottom: 5px;
                 justify-content: start;
+                margin-left: 28px;
+                text-align: left;
+            }
+
+            @include respond(mobile) {
+                margin-right: 0;
             }
         }
     }
@@ -611,6 +644,7 @@
         // @include bgcover;
 
         @include respond(tablet) {
+            margin-top: 56px !important;
             padding: 150px;
         }
 
@@ -1178,13 +1212,19 @@
         background-image: url("../../assets/images/banner-delivery.png");
         background-size: cover;
         background-position: center right;
+        background-repeat: no-repeat;
+
+        @include respond(tablet) {
+            margin-top: 56px;
+        }
 
         @include respond(mobile) {
-            background-image: url("../../assets/images/banner-delivery-m.png");
-            @include banner-small-m--bc;
+            height: 200px;
         }
 
         & > .banner-section__breadcrumbs {
+            top: 255px !important;
+
             & > a {
                 color: $white;
                 @include respond(mobile) {

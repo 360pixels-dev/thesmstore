@@ -1,23 +1,181 @@
+#mobile-menu {
+    display: none;
+    background: #fff;
+    position: absolute;
+    top: 56px;
+    left: 0;
+    width: 308px;
+    z-index: 999;
+
+    & .arrow-left {
+        position: absolute;
+        top: 8%;
+        left: 5%;
+    }
+
+    & .arrow-right {
+        float: right;
+        padding: 5px 10px 0 0;
+    }
+
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: #000;
+        text-decoration: none;
+    }
+
+    a:hover {
+        font-weight: 700;
+        color: #000;
+        text-decoration: none;
+    }
+
+    li {
+        padding: 18px 0 18px 25px;
+        border-bottom: 1px solid #ececec;
+        margin: 0 9px;
+    }
+
+    &-list {
+        display: block;
+        z-index: 9999;
+    }
+
+    &-categories-list {
+        display: none;
+        z-index: 9999;
+    }
+
+    &-categories-fashion {
+        display: none;
+        z-index: 9999;
+    }
+
+    &-categories-bnk {
+        display: none;
+        z-index: 9999;
+    }
+
+    &-categories-home {
+        display: none;
+        z-index: 9999;
+    }
+
+    &-categories-beauty {
+        display: none;
+        z-index: 9999;
+    }
+
+    &-categories-others {
+        display: none;
+        z-index: 9999;
+    }
+
+    &-services-list {
+        display: none;
+        z-index: 9999;
+    }
+
+    &-whatsnew-list {
+        display: none;
+        z-index: 9999;
+    }
+
+    &-whatsnew-promos {
+        display: none;
+        z-index: 9999;
+    }
+}
+
+.mobile-search-open {
+    display: none;
+    background: $blue;
+    position: absolute;
+    width: 100%;
+    height: 56px;
+    z-index: 9999;
+
+    &__menu-button {
+        float: left;
+        width: 50px;
+        height: inherit;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__main-search-container {
+        padding: auto;
+    }
+
+    &__search-button {
+        float: right;
+        margin-right: 1em;
+        margin-top: 0.6em;
+        width: 50px;
+        height: auto;
+        // padding: auto;
+
+        border: none;
+        background: $white;
+        text-align: center;
+        color: #fff;
+        font-size: 14px;
+        cursor: pointer;
+
+        height: 40px;
+        width: 24px;
+        padding-right: 5px;
+
+        img {
+            padding-right: 20px;
+            padding-bottom: 5px;
+        }
+    }
+
+    &__search-input {
+        width: 100%;
+        margin-top: 0.5em;
+        text-align: left;
+
+        border: none;
+        background: $white;
+        color: $black;
+        font-size: 16px;
+        font-weight: 600;
+        height: 40px;
+    }
+
+    &__search-container {
+        overflow: hidden;
+    }
+}
+
 #mobile-menu-overlay {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: transparent;
+    background: rgba(0, 0, 0, 0.4);
     z-index: 25;
 }
 
 .mobile-search-overlay {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: transparent;
-    z-index: 25;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 998;
 }
 
 .colorize {
@@ -26,11 +184,36 @@
     transition: 0.6s ease-out;
 }
 
+.sticky-mobile-menu {
+    position: fixed !important;
+    animation-name: catchup-mobile;
+    animation-duration: 0.5s;
+    transition: 0.3s ease-out !important;
+    width: 100%;
+
+    @include respond(mobile) {
+        animation-duration: 0.3s;
+    }
+}
+
+.sticky-store-selector {
+    position: fixed !important;
+    animation-name: catchup-store-selector;
+    animation-duration: 0.5s;
+    transition: 0.3s ease-out !important;
+    width: 100%;
+
+    @include respond(mobile) {
+        animation-duration: 0.5s;
+    }
+}
+
 .sticky {
     position: fixed !important;
     animation-name: catchup;
     animation-duration: 0.5s;
     transition: 0.3s ease-out !important;
+    width: 100%;
 
     @include respond(mobile) {
         animation-duration: 0.3s;
@@ -53,12 +236,15 @@
 
 .sticky3 {
     position: fixed !important;
-    animation-name: catchup3;
+    animation-name: catchup2-mobile;
     animation-duration: 0.5s;
     transition: 0.3s ease-out !important;
 
     @include respond(mobile) {
-        animation-duration: 0.3s;
+        position: fixed !important;
+        animation-name: catchup2-mobile;
+        animation-duration: 0.5s;
+        transition: 0.3s ease-out !important;
     }
 }
 
@@ -71,27 +257,40 @@
     }
 }
 
-@keyframes catchup2 {
+@keyframes catchup-mobile {
     from {
-        top: 0px;
+        top: -88px;
     }
     to {
-        top: 88px;
+        top: 56px;
     }
 }
 
-@keyframes catchup3 {
+@keyframes catchup-store-selector {
     from {
-        top: 0px;
+        top: -88px;
     }
     to {
-        top: 112px;
+        top: 110px;
+    }
+}
+
+@keyframes catchup2 {
+    from {
+        top: -88px;
+    }
+    to {
+        top: 88px;
+
+        @include respond(tablet) {
+            top: 56px;
+        }
     }
 }
 
 @keyframes catchup2-mobile {
     from {
-        top: 0px;
+        top: -88px;
     }
     to {
         top: 56px;
@@ -100,6 +299,7 @@
 
 .nav {
     &__upper {
+        // display: none;
         display: flex;
         height: 88px;
         padding: 0 24px;
@@ -591,6 +791,10 @@
                 height: 23px;
             }
 
+            @include respond(desktop) {
+                display: none;
+            }
+
             @include respond(tablet) {
                 display: flex;
             }
@@ -637,7 +841,7 @@
                         position: absolute;
                         padding-left: 6px;
                         height: 32px;
-                        width: 270px;
+                        width: 925px;
                         font-size: 14px;
                         right: 24px;
                     }
@@ -660,6 +864,115 @@
                     img {
                         padding-right: 20px;
                         padding-bottom: 5px;
+                    }
+
+                    @include respond(tablet) {
+                        height: 32px;
+                        width: 24px;
+                        font-size: 14px;
+                        padding-right: 5px;
+                    }
+                }
+            }
+        }
+
+        & .mobile-search-container {
+            display: none;
+
+            & .mobile-search-main {
+                position: relative;
+                margin-right: 12px;
+
+                @include respond(tablet) {
+                    display: flex;
+                }
+
+                @media only screen and (min-width: 1025px) and (max-width: 1300px) {
+                    width: 300px;
+                    margin-right: 6px;
+                }
+
+                @include respond(mobile) {
+                    width: auto;
+                    margin-right: 0;
+                }
+
+                & .mobile-search-term {
+                    width: inherit;
+                    padding-left: 6px;
+                    font-family: "Open Sans";
+                    border: none;
+                    background: $white;
+                    border-right: none;
+                    outline: none;
+                    color: #9a9a9a;
+                    font-weight: 400;
+                    line-height: 24px;
+                    // position: absolute;
+                    padding-left: 6px;
+                    height: 32px;
+                    // width: 925px;
+                    font-size: 14px;
+                    right: 24px;
+
+                    &[type="search"] {
+                        float: right;
+                    }
+
+                    &[type="text"] {
+                        width: 100%;
+                    }
+
+                    // @include respond(768px) {
+                    //     width: 680px;
+                    // }
+
+                    // @include respond(540px) {
+                    //     width: 455px;
+                    // }
+
+                    // @include respond(414px) {
+                    //     width: 330px;
+                    // }
+
+                    // @include respond(411px) {
+                    //     width: 325px;
+                    // }
+
+                    // @include respond(375px) {
+                    //     width: 290px;
+                    // }
+
+                    // @include respond(360px) {
+                    //     width: 270px;
+                    // }
+
+                    // @include respond(320px) {
+                    //     width: 235px;
+                    // }
+                }
+
+                & .mobile-search-term:focus {
+                    color: $black;
+                }
+
+                & .mobile-inner-search-button {
+                    width: 40px;
+                    height: 52px;
+                    border: none;
+                    background: $white;
+                    text-align: center;
+                    color: #fff;
+                    cursor: pointer;
+                    font-size: 20px;
+
+                    img {
+                        padding-right: 20px;
+                        padding-bottom: 5px;
+
+                        @include respond(tablet) {
+                            display: flex;
+                        }
                     }
 
                     @include respond(tablet) {
@@ -777,7 +1090,7 @@
             padding: 44px 20px 0;
             background: linear-gradient(
                 180deg,
-                rgba(0, 0, 0, 0.2) 0%,
+                rgba(0, 0, 0, 0.8) 0%,
                 rgba(0, 0, 0, 0) 100%
             );
         }

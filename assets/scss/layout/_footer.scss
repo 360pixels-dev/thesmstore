@@ -70,13 +70,17 @@
 
     &__messenger-mobile {
         display: none;
-        left: 75%;
+        left: 90%;
         position: relative;
         border-radius: 50%;
         z-index: 100;
 
         @include respond(tablet) {
             display: block;
+        }
+
+        @include respond(mobile) {
+            left: 75%;
         }
 
         & button {

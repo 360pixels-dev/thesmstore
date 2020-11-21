@@ -205,7 +205,7 @@ $(document).ready(function() {
     var videoArr = [
         {
             header: 'Featured Video',
-            title1: 'Alex Gonzaga<br>For <span style="color: #0067b3;">#SMCall<br>ToDeliver</span',
+            title1: 'Alex Gonzaga <br>For <span style="color: #0067b3">#SMCall<br><span style="visibility: hidden;">For </span>ToDeliver</span>',
             title2: '',
             content: 'Stay home, give us a call, and have your items delivered in as easy as 1-2-3!',
             videoUrl: 'https://file-examples.com/wp-content/uploads/2017/04/file_example_MP4_480_1_5MG.mp4',
@@ -219,7 +219,7 @@ $(document).ready(function() {
         },
     ];
 
-    // populateVideoDetails();
+    populateVideoDetails();
     // populateVideoSlider();
     // populateTemporaryVideoSlider()
     
@@ -236,7 +236,7 @@ $(document).ready(function() {
         }
         videoArr[0].isActive = true;
         
-        // populateVideoDetails(); // CHANGE EVENT DETAILS
+        populateVideoDetails(); // CHANGE EVENT DETAILS
         // populateVideoSlider(); // REARRANGE EVENT SLIDER
         // populateTemporaryVideoSlider(); // TEMPORARY VIDEO SLIDER
 
@@ -247,9 +247,9 @@ $(document).ready(function() {
         $('.featured-video__text').html(`
             <span class="font-eyebrow">${videoArr[0].header}</span>
             <h1 class="font-hero">
-                <span style="font-size: 48px; line-height: 58px;">${videoArr[0].title1}</span> 
-                <span style="font-size: 48px; line-height: 58px;">${videoArr[0].title2}</span>
-                ${videoArr[0].title3 ? `<span style="font-size: 48px; line-height: 58px;">${videoArr[0].title3}</span>` : ``}
+                <span>${videoArr[0].title1}</span> 
+                <span>${videoArr[0].title2}</span>
+                ${videoArr[0].title3 ? `<span>${videoArr[0].title3}</span>` : ``}
             </h1>
             <p>${videoArr[0].content}</p>
         `);

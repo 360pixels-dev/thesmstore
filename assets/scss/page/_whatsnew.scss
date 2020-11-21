@@ -262,22 +262,29 @@
     }
 
     & .promo-image {
-        height: 654px;
+        height: fit-content;
+        width: auto;
         position: relative;
+        background: url("../images/globe-sale.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
 
-        @include respond(tablet) {
-            width: 100%;
-            height: 450px;
-        }
-
-        @include respond(mobile) {
-            height: 233px;
-        }
+        // @include respond(mobile) {
+        //     height: max-content;
+        //     width: auto;
+        //     // background: url("../images/globe-sale-m.png");
+        //     background-size: cover;
+        //     background-position: center;
+        //     background-repeat: no-repeat;
+        // }
 
         & > img {
-            position: absolute;
+            // position: absolute;
+            visibility: hidden;
+            max-width: 1280px;
             width: 100%;
-            height: 100%;
+            // height: 100%;
         }
     }
 

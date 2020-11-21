@@ -171,6 +171,10 @@
             @include respond(mobile) {
                 width: 77%;
             }
+
+            @include respond(320px) {
+                width: 83%;
+            }
         }
 
         &__content {
@@ -199,9 +203,9 @@
 
             @include respond(1280px) {
                 position: absolute;
-                width: 500px;
-                height: 300px;
-                left: 40%;
+                width: auto;
+                height: 75%;
+                left: 33%;
                 transform: translateX(-50%);
             }
 
