@@ -1,49 +1,107 @@
-.findevents__menu {
-    display: flex;
-    margin: 40px 90px 20px 0;
-
-    &-items {
+.findevents {
+    &__menu {
         display: flex;
-        flex-grow: 3;
-        justify-content: center;
-        align-items: center;
+        margin: 40px 90px 20px 0;
 
-        & > ul {
-            list-style-type: none;
+        @include respond(mobile) {
+            display: none;
+        }
+
+        &-items {
+            display: flex;
+            flex-grow: 3;
+            justify-content: center;
+            align-items: center;
+
+            & > ul {
+                list-style-type: none;
+            }
+        }
+
+        &-item {
+            display: flex;
+            display: inline-block;
+            margin: 0 20px;
+
+            & > a {
+                text-decoration: none;
+                color: $gray;
+            }
+        }
+
+        .active {
+            font-weight: bold;
+            & > a {
+                color: $black;
+            }
+        }
+
+        &__event-location {
+            display: flex;
+            flex-grow: 1;
+            justify-content: center;
+            align-items: center;
+
+            & > span {
+                letter-spacing: 3px;
+            }
+
+            & > b,
+            strong {
+                letter-spacing: 4px;
+            }
         }
     }
 
-    &-item {
-        display: flex;
-        display: inline-block;
-        margin: 0 20px;
+    &__mobile-menu {
+        display: none;
 
-        & > a {
-            text-decoration: none;
-            color: $gray;
-        }
-    }
-
-    .active {
-        font-weight: bold;
-        & > a {
-            color: $black;
-        }
-    }
-
-    &__event-location {
-        display: flex;
-        flex-grow: 1;
-        justify-content: center;
-        align-items: center;
-
-        & > span {
-            letter-spacing: 3px;
+        @include respond(mobile) {
+            display: block;
         }
 
-        & > b,
-        strong {
-            letter-spacing: 4px;
+        &__event-location {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #e0e0e0;
+            height: 56px;
+
+            & > p {
+                & > .gray {
+                    color: $gray;
+                }
+            }
+        }
+
+        &-items {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            height: 56px;
+
+            & > ul {
+                list-style-type: none;
+                white-space: nowrap;
+            }
+        }
+
+        &-item {
+            display: flex;
+            display: inline-block;
+            margin: 0 20px;
+
+            & > a {
+                text-decoration: none;
+                color: $gray;
+            }
+        }
+
+        .active {
+            font-weight: bold;
+            & > a {
+                color: $black;
+            }
         }
     }
 }
@@ -51,5 +109,308 @@
 .card--event-details.bold {
     p {
         font-weight: bold;
+    }
+}
+
+.upcoming {
+    &-intro {
+        display: flex;
+        justify-content: center;
+        padding: 40px;
+
+        & > p {
+            width: 656px;
+            text-align: center;
+        }
+    }
+
+    &__promos {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        position: relative;
+        min-height: 759px;
+        background-color: $blush;
+
+        &-header {
+            margin: 24px 0;
+        }
+
+        &-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-cards {
+            display: flex;
+
+            & .card--promo {
+                margin-right: 24px;
+
+                @include respond(mobile) {
+                    margin-right: 8px;
+                    height: 368px;
+
+                    & > img {
+                        width: 304px;
+                        height: 192px;
+                        margin-bottom: 0;
+                    }
+
+                    & > span,
+                    & > h4,
+                    & > p,
+                    & > a {
+                        margin-left: 16px;
+                    }
+
+                    & > h4 {
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                }
+
+                & > span {
+                    color: $gray;
+                }
+            }
+        }
+
+        &-controls {
+            margin-left: auto;
+        }
+    }
+
+    &__videos {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 80px 0;
+
+        @include respond(mobile) {
+            margin: 0 12px;
+            max-width: 100%;
+        }
+
+        &-header {
+            display: flex;
+            justify-content: space-between;
+
+            @include respond(mobile) {
+                flex-direction: column;
+                justify-content: flex-start;
+            }
+
+            & > h2 {
+                @include respond(mobile) {
+                    font-size: 24px;
+                    line-height: 32px;
+                    align-items: center;
+                    letter-spacing: 1.6px;
+                }
+            }
+
+            & > a {
+                @include respond(mobile) {
+                    display: none;
+                }
+            }
+
+            & > button {
+                display: none;
+                width: 106px;
+                padding: 18px 0;
+                background-color: transparent;
+
+                @include respond(mobile) {
+                    display: block;
+                }
+            }
+        }
+
+        &-content {
+            display: flex;
+            padding: 32px 0;
+
+            & > .video-card {
+                margin-right: 24px;
+
+                @include respond(mobile) {
+                    margin-right: 17px;
+                }
+            }
+        }
+    }
+
+    &-slider {
+        position: relative;
+        min-height: 656px;
+        background-color: $light-gray;
+        padding: 80px 0;
+        display: flex;
+        flex-direction: column;
+
+        @include respond(tablet) {
+            width: 100% !important;
+            max-width: 100%;
+            margin: 0;
+            padding: 40px 0;
+        }
+
+        @include respond(mobile) {
+            min-height: 400px;
+            padding: 24px 0 !important;
+        }
+
+        &__content {
+            height: 432px;
+            display: flex;
+            flex-wrap: nowrap;
+            position: relative;
+            margin: 0 auto;
+            width: 1224px;
+
+            @include respond(tablet) {
+                padding-left: 12px;
+            }
+        }
+
+        &__details {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin-left: 0px;
+            justify-content: center;
+            align-items: flex-end;
+
+            @include respond(1299px) {
+                width: 260px;
+            }
+
+            @include respond(mobile) {
+                justify-content: flex-start;
+                height: 470px;
+                position: relative;
+                align-items: flex-start;
+                width: 100%;
+
+                & > .desktop-controls {
+                    display: none !important;
+                }
+
+                & > .mobile-controls {
+                    display: block !important;
+                }
+            }
+
+            & > .mobile-controls {
+                display: none;
+            }
+
+            & > h2 {
+                font-family: $font-heading1;
+                font-weight: bold;
+                font-size: 32px;
+                line-height: 40px;
+                letter-spacing: 1.6px;
+                text-transform: uppercase;
+                color: $black;
+                margin-bottom: 8px;
+                text-align: right;
+
+                @include respond(mobile) {
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 32px;
+                    letter-spacing: 1.6px;
+                    text-transform: uppercase;
+                    text-align: left;
+                }
+            }
+
+            &-year {
+                font-family: "Open Sans", Helvetica, Arial, sans-serif;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 22px;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                text-align: right;
+                margin-right: 50px;
+                color: $dark-gray;
+                margin-bottom: 48px;
+
+                @include respond(mobile) {
+                    text-align: left;
+                }
+            }
+
+            &-controls {
+                text-align: right;
+
+                @include respond(mobile) {
+                    position: absolute;
+                    bottom: 0;
+                    top: auto;
+                    margin-top: 50px;
+                }
+            }
+
+            & > a {
+                margin-top: 35px;
+                width: 210px;
+
+                @include respond(mobile) {
+                    position: absolute;
+                    bottom: 24px;
+                    margin-top: 0;
+                }
+            }
+        }
+
+        &__slider {
+            position: absolute;
+            margin-left: 300px;
+            display: flex;
+            height: 400px;
+
+            @include respond(1299px) {
+                margin-left: 250px;
+            }
+
+            @include respond(mobile) {
+                margin-top: 70px;
+                margin-left: 0px;
+                height: 400px;
+            }
+
+            &-event {
+                margin-right: 24px;
+                position: relative;
+            }
+        }
+    }
+
+    &__articles {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 80px 0;
+
+        &-header {
+            display: flex;
+        }
+
+        &-content {
+            display: flex;
+            padding: 32px 0;
+
+            & > .video-card {
+                margin-right: 24px;
+
+                @include respond(mobile) {
+                    margin-right: 17px;
+                }
+            }
+        }
     }
 }

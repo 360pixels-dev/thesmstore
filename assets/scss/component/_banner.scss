@@ -231,12 +231,42 @@
     }
 
     &--whatsnew-findevents {
+        margin-top: 88px !important;
         background: url("../../assets/images/banner-whatsnew-findevents.png")
             no-repeat;
         background-size: cover;
         background-position: center right;
 
         height: 350px;
+
+        & .search__input.mobile {
+            display: none;
+        }
+
+        @include respond(tablet) {
+            margin-top: 56px !important;
+        }
+
+        @include respond(mobile) {
+            background-position: center left;
+
+            & .search {
+                width: 100%;
+            }
+
+            & .search__btn {
+                display: none;
+            }
+
+            & .search__input.desktop {
+                display: none;
+            }
+
+            & .search__input.mobile {
+                display: block;
+                text-align: center;
+            }
+        }
 
         & .banner-container {
             margin-bottom: 40px;
@@ -246,6 +276,22 @@
             align-items: center;
             flex-direction: column;
             justify-content: flex-end;
+
+            & > span {
+                @include respond(mobile) {
+                    font-size: 12px;
+                    line-height: 18px;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                }
+            }
+
+            & > h1 {
+                @include respond(mobile) {
+                    width: 50%;
+                    text-align: center;
+                }
+            }
 
             & .container-1224 {
                 margin: 0;

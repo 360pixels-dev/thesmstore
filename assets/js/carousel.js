@@ -201,8 +201,8 @@ $(document).ready(function() {
     }
 
     
-    // CAROUSEL - VIDEOS
-    var videoArr = [
+    // FASHION CAROUSEL - VIDEOS
+    var fashionVideos = [
         {
             header: 'Featured Video',
             title1: 'Alex Gonzaga <br>For <span style="color: #0067b3">#SMCall<br><span style="visibility: hidden;">For </span>ToDeliver</span>',
@@ -211,7 +211,7 @@ $(document).ready(function() {
             videoUrl: 'https://file-examples.com/wp-content/uploads/2017/04/file_example_MP4_480_1_5MG.mp4',
         },
         {
-            header: 'Women Video',
+            header: 'Another Fashion Video',
             title1: 'Test1',
             title2: 'Test1',
             content: 'From the latest KBeauty trends and products to the hottest styles in fashion—discover real beauty today.',
@@ -219,7 +219,7 @@ $(document).ready(function() {
         },
     ];
 
-    populateVideoDetails();
+    populateFashionVideoDetails();
     // populateVideoSlider();
     // populateTemporaryVideoSlider()
     
@@ -227,37 +227,111 @@ $(document).ready(function() {
         var dir = $(this).attr('class').split('--')[1];
         
         // REARRANGE EVENT ARRAY
-        videoArr[0].isActive = false;
+        fashionVideos[0].isActive = false;
         if(dir == 'right') { //to the right
-            videoArr.push(videoArr.shift());
+            fashionVideos.push(fashionVideos.shift());
         }
         else { //to the left
-            videoArr.unshift(videoArr.pop());
+            fashionVideos.unshift(fashionVideos.pop());
         }
-        videoArr[0].isActive = true;
+        fashionVideos[0].isActive = true;
         
-        populateVideoDetails(); // CHANGE EVENT DETAILS
+        populateFashionVideoDetails(); // CHANGE EVENT DETAILS
         // populateVideoSlider(); // REARRANGE EVENT SLIDER
         // populateTemporaryVideoSlider(); // TEMPORARY VIDEO SLIDER
 
     });
     
-    function populateVideoDetails() {
+    function populateFashionVideoDetails() {
         
         $('.featured-video__text').html(`
-            <span class="font-eyebrow">${videoArr[0].header}</span>
+            <span class="font-eyebrow">${fashionVideos[0].header}</span>
             <h1 class="font-hero">
-                <span>${videoArr[0].title1}</span> 
-                <span>${videoArr[0].title2}</span>
-                ${videoArr[0].title3 ? `<span>${videoArr[0].title3}</span>` : ``}
+                <span>${fashionVideos[0].title1}</span> 
+                <span>${fashionVideos[0].title2}</span>
+                ${fashionVideos[0].title3 ? `<span>${fashionVideos[0].title3}</span>` : ``}
             </h1>
-            <p>${videoArr[0].content}</p>
+            <p>${fashionVideos[0].content}</p>
         `);
     }
     function populateVideoSlider() {
         
         $('.featured-video__video').html(`
-            <video class="featured-video__video-file" playsinline="" autoplay="" muted="" loop="" src="${videoArr[0].videoUrl}" class="ng-star-inserted"></video>
+            <video class="featured-video__video-file" playsinline="" autoplay="" muted="" loop="" src="${fashionVideos[0].videoUrl}" class="ng-star-inserted"></video>
+        `);
+    }
+    function populateTemporaryVideoSlider() {
+        
+        $('.featured-video__video').html(`
+            <img src="./assets/images/featured-video-ctd.png" alt="">
+        `);
+    }
+
+
+    // INDEX CAROUSEL - VIDEOS
+    var indexVideos = [
+        {
+            header: 'Featured Video',
+            title1: 'Alex Gonzaga <br> for <span style="color: #FFCD4E;">SM Call<br> to Deliver</span>',
+            title2: '',
+            content: 'Let Alex Gonzaga show you hot to complete your shopping list fom home via #SMCallToDeliver!',
+            videoUrl: 'https://file-examples.com/wp-content/uploads/2017/04/file_example_MP4_480_1_5MG.mp4',
+        },
+        {
+            header: 'Another Index Video 2',
+            title1: 'Test1',
+            title2: 'Test1',
+            content: 'From the latest KBeauty trends and products to the hottest styles in fashion—discover real beauty today.',
+            videoUrl: 'https://file-examples.com/wp-content/uploads/2017/04/file_example_MP4_480_1_5MG.mp4'
+        },
+        {
+            header: 'Another Index Video 3',
+            title1: 'Test1',
+            title2: 'Test1',
+            content: 'From the latest KBeauty trends and products to the hottest styles in fashion—discover real beauty today.',
+            videoUrl: 'https://file-examples.com/wp-content/uploads/2017/04/file_example_MP4_480_1_5MG.mp4'
+        },
+    ];
+
+    populateIndexVideoDetails();
+    // populateVideoSlider();
+    // populateTemporaryVideoSlider()
+    
+    $('.featured-video__controls--index .controls__arrow').click(function() {
+        var dir = $(this).attr('class').split('--')[1];
+        
+        // REARRANGE EVENT ARRAY
+        indexVideos[0].isActive = false;
+        if(dir == 'right') { //to the right
+            indexVideos.push(indexVideos.shift());
+        }
+        else { //to the left
+            indexVideos.unshift(indexVideos.pop());
+        }
+        indexVideos[0].isActive = true;
+        
+        populateIndexVideoDetails(); // CHANGE EVENT DETAILS
+        // populateVideoSlider(); // REARRANGE EVENT SLIDER
+        // populateTemporaryVideoSlider(); // TEMPORARY VIDEO SLIDER
+
+    });
+    
+    function populateIndexVideoDetails() {
+        
+        $('.featured-video__text--index').html(`
+            <span class="font-eyebrow">${indexVideos[0].header}</span>
+            <h1 class="font-hero">
+                <span>${indexVideos[0].title1}</span> 
+                <span>${indexVideos[0].title2}</span>
+                ${indexVideos[0].title3 ? `<span>${indexVideos[0].title3}</span>` : ``}
+            </h1>
+            <p>${indexVideos[0].content}</p>
+        `);
+    }
+    function populateVideoSlider() {
+        
+        $('.featured-video__video').html(`
+            <video class="featured-video__video-file" playsinline="" autoplay="" muted="" loop="" src="${indexVideos[0].videoUrl}" class="ng-star-inserted"></video>
         `);
     }
     function populateTemporaryVideoSlider() {
@@ -267,6 +341,62 @@ $(document).ready(function() {
         `);
     }
     
+
+    // Events By Date
+    const datedEventArr = [
+        {
+            imgUrl: './assets/images/cards/card-event.png',
+            month: 'Jan',
+            day: '13-14',
+            event: 'Billie Eilish Tour'
+        },
+        {
+            imgUrl: './assets/images/cards/card-event2.png',
+            month: 'Jan',
+            day: '20',
+            event: 'Kids At Play'
+        },
+        {
+            imgUrl: './assets/images/cards/card-event3.png',
+            month: 'Jan',
+            day: '23-25',
+            event: 'Peppa Pig\'s Adventure'
+        },
+        {
+            imgUrl: './assets/images/cards/card-event4.png',
+            month: 'Jan',
+            day: '13-14',
+            event: 'Big Drag Energy: #Aquaria'
+        },
+    ]
+
+    // Upcoming Events
+    const upcomingEventArr = [
+        {
+            imgUrl: './assets/images/cards/card-event.png',
+            month: 'Feb',
+            day: '13-14',
+            event: 'Billie Eilish Tour'
+        },
+        {
+            imgUrl: './assets/images/cards/card-event5.png',
+            month: 'Feb',
+            day: '20',
+            event: 'Women\'s Sale'
+        },
+        {
+            imgUrl: './assets/images/cards/card-event6.png',
+            month: 'Feb',
+            day: '29',
+            event: 'Makin\' It With Patrick Starrr'
+        },
+        {
+            imgUrl: './assets/images/cards/card-event7.png',
+            month: 'Feb',
+            day: '30',
+            event: 'Bags Sale'
+        },
+    ]
 
 
     // Landing Pages
@@ -461,6 +591,7 @@ $(document).ready(function() {
     ];
 
     var category = $('.omnibus-slider__details-controls').attr('data-category');
+    var category2 = $('.upcoming-slider__details-controls').attr('data-category');
     
         
     if(category == 'mens') {
@@ -483,6 +614,12 @@ $(document).ready(function() {
     }
     else if (category == 'others') {
         landingGenerateCarousel(othersEventArr);
+    }
+    else if (category == 'dated') {
+        landingGenerateCarousel(datedEventArr);
+    }
+    else if (category == 'upcoming') {
+        landingGenerateCarousel(upcomingEventArr);
     }
 
     $('.omnibus-slider__details-controls .controls__arrow').click(function() {
@@ -512,8 +649,79 @@ $(document).ready(function() {
         else if (array == 'othersEventArr') {
             arr = othersEventArr;
         }
+        else if (array == 'datedEventArr') {
+            arr = datedEventArr;
+        }
+        else if (array == 'upcomingEventArr') {
+            arr = upcomingEventArr;
+        }
         
         landingRearrangeCarousel(arr,dir);
+    });
+
+    if(category2 == 'mens') {
+        landingGenerateCarousel2(mensEventArr);
+    }
+    else if (category2 == 'womens') {
+        landingGenerateCarousel2(womensEventArr);
+    }
+    else if (category2 == 'kids') {
+        landingGenerateCarousel2(kidsEventArr);
+    }
+    else if (category2 == 'youth') {
+        landingGenerateCarousel2(youthEventArr);
+    }
+    else if (category2 == 'home') {
+        landingGenerateCarousel2(homeEventArr);
+    }
+    else if (category2 == 'beauty') {
+        landingGenerateCarousel2(beautyEventArr);
+    }
+    else if (category2 == 'others') {
+        landingGenerateCarousel2(othersEventArr);
+    }
+    else if (category2 == 'dated') {
+        landingGenerateCarousel2(datedEventArr);
+    }
+    else if (category2 == 'upcoming') {
+        landingGenerateCarousel2(upcomingEventArr);
+    }
+
+    $('.upcoming-slider__details-controls .controls__arrow').click(function() {
+        
+        var dir = $(this).attr('class').split('--')[1];
+        var array = $(this).parent().attr('data-category') + 'EventArr';
+        var arr = new Array;
+        
+        if(array == 'mensEventArr') {
+            arr = mensEventArr;
+        }
+        else if (array == 'womensEventArr') {
+            arr = womensEventArr;
+        }
+        else if (array == 'kidsEventArr') {
+            arr = kidsEventArr;
+        }
+        else if (array == 'youthEventArr') {
+            arr = youthEventArr;
+        }
+        else if (array == 'homeEventArr') {
+            arr = homeEventArr;
+        }
+        else if (array == 'beautyEventArr') {
+            arr = beautyEventArr;
+        }
+        else if (array == 'othersEventArr') {
+            arr = othersEventArr;
+        }
+        else if (array == 'datedEventArr') {
+            arr = datedEventArr;
+        }
+        else if (array == 'upcomingEventArr') {
+            arr = upcomingEventArr;
+        }
+        
+        landingRearrangeCarousel2(arr,dir);
     });
 
     function landingGenerateCarousel(arr) {
@@ -542,6 +750,34 @@ $(document).ready(function() {
         arr[0].isActive = true;
 
         landingGenerateCarousel(arr);
+    }
+
+    function landingGenerateCarousel2(arr) {
+        $('.upcoming-slider__slider').html('');
+        for(var i = 0; i < arr.length; i++) {
+            $('.upcoming-slider__slider').append(`<div class="card--event">
+                <img class="card--event-poster" src="${arr[i].imgUrl}" alt="">
+                <div class="card--event-details">
+                    <p class="font-eyebrow card--event-details-month">${arr[i].month}</p>
+                    <h1 class="font-h1 card--event-details-day">${arr[i].day}</h1>
+                    <p class="font-eyebrow card--event-details-title">${arr[i].event}</p>
+                </div>
+            </div>`); 
+        }
+    }
+
+    function landingRearrangeCarousel2(arr, dir) {
+        
+        arr[0].isActive = false;
+        if(dir == 'right') { //to the right
+            arr.push(arr.shift());
+        }
+        else { //to the left
+            arr.unshift(arr.pop());
+        }
+        arr[0].isActive = true;
+
+        landingGenerateCarousel2(arr);
     }
 
 
@@ -642,3 +878,70 @@ $(document).ready(function() {
       }
     
 });
+
+
+
+// WHATS NEW CAROUSEL - PROMOS
+var whatsNewPromos = [
+    {
+        title: 'SMAC Sale',
+        content: 'Score up to 50% off on selected items, and enjoy discounts.',
+        imageUrl: './assets/images/whatsnew-promo1.png',
+    },
+    {
+        title: '0% Interest, Easy Payment Plan',
+        content: 'Kick-off the new decade with an awesome start!',
+        imageUrl: './assets/images/whatsnew-promo2.png',
+    },
+    {
+        title: 'SMAC Sale 2',
+        content: 'Score up to 50% off on selected items, and enjoy discounts.',
+        imageUrl: './assets/images/whatsnew-promo1.png',
+    },
+    {
+        title: '0% Interest, Easy Payment Plan 2',
+        content: 'Kick-off the new decade with an awesome start!',
+        imageUrl: './assets/images/whatsnew-promo2.png',
+    },
+];
+
+populateWhatsNewPromosDetails();
+// populateVideoSlider();
+// populateTemporaryVideoSlider()
+
+$('.whats-new__promos-controls .controls__arrow').click(function() {
+    var dir = $(this).attr('class').split('--')[1];
+    
+    // REARRANGE EVENT ARRAY
+    whatsNewPromos[0].isActive = false;
+    if(dir == 'right') { //to the right
+        whatsNewPromos.push(whatsNewPromos.shift());
+    }
+    else { //to the left
+        whatsNewPromos.unshift(whatsNewPromos.pop());
+    }
+    whatsNewPromos[0].isActive = true;
+    
+    populateWhatsNewPromosDetails(); // CHANGE EVENT DETAILS
+    // populateVideoSlider(); // REARRANGE EVENT SLIDER
+    // populateTemporaryVideoSlider(); // TEMPORARY VIDEO SLIDER
+
+});
+
+function populateWhatsNewPromosDetails() {
+    
+    $('.whats-new__promos-cards').html(`
+        <div class="card--promo">
+            <img class="card--promo-image" src="${whatsNewPromos[0].imageUrl}" alt="">
+            <h4 class="card--promo-title font-h4">${whatsNewPromos[0].title}</h4>
+            <p class="card--promo-details">${whatsNewPromos[0].content}.</p>
+            <a href="" class="btn--text-link font-cta">View</a>
+        </div>
+        <div class="card--promo">
+            <img class="card--promo-image" src="${whatsNewPromos[1].imageUrl}" alt="">
+            <h4 class="card--promo-title font-h4">${whatsNewPromos[1].title}</h4>
+            <p class="card--promo-details">${whatsNewPromos[1].content}.</p>
+            <a href="" class="btn--text-link font-cta">View</a>
+        </div>
+    `);
+}

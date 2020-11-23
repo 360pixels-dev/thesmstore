@@ -29,7 +29,6 @@
         &-cards {
             display: flex;
 
-
             & .card--promo {
                 margin-right: 24px;
 
@@ -43,7 +42,10 @@
                         margin-bottom: 0;
                     }
 
-                    & > span, & > h4, & > p, & > a {
+                    & > span,
+                    & > h4,
+                    & > p,
+                    & > a {
                         margin-left: 16px;
                     }
 
@@ -108,7 +110,6 @@
                 @include respond(mobile) {
                     display: block;
                 }
-                
             }
         }
 
@@ -125,7 +126,6 @@
             }
         }
     }
-
 
     &-slider {
         position: relative;
@@ -159,7 +159,7 @@
                 padding-left: 12px;
             }
         }
-        
+
         &__details {
             display: flex;
             flex-direction: column;
@@ -227,6 +227,15 @@
                 }
             }
 
+            &-controls-2 {
+                text-align: right;
+
+                @include respond(mobile) {
+                    position: absolute;
+                    bottom: 104px;
+                }
+            }
+
             & > a {
                 margin-top: 35px;
                 width: 210px;
@@ -237,7 +246,6 @@
                     margin-top: 0;
                 }
             }
-
         }
 
         &__slider {
@@ -262,9 +270,28 @@
             }
         }
 
+        &__slider-2 {
+            position: absolute;
+            margin-left: 300px;
+            display: flex;
+            height: 400px;
+
+            @include respond(1299px) {
+                margin-left: 250px;
+            }
+
+            @include respond(mobile) {
+                margin-top: 48px;
+                margin-left: 0px;
+                height: 304px;
+            }
+
+            &-event {
+                margin-right: 24px;
+                position: relative;
+            }
+        }
     }
-
-
 
     &__articles {
         position: relative;
@@ -289,6 +316,4 @@
             }
         }
     }
-    
 }
-

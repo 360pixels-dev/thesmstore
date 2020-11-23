@@ -153,6 +153,10 @@
         position: relative;
         min-height: 584px;
         background-color: $lightyellow;
+
+        &-index {
+            background-color: #ffd95a;
+        }
         
         
         @include respond(tablet) {
@@ -178,6 +182,10 @@
 
             @include respond(mobile) {
                 width: 77%;
+            }
+
+            &-index {
+
             }
         }
 

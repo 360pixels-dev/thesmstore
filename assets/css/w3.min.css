@@ -960,7 +960,7 @@ a {
     }
 }
 .w3-animate-top {
-    position: relative;
+    position: fixed;
     animation: animatetop 0.4s;
 }
 @keyframes animatetop {

@@ -37,10 +37,12 @@
 
         &__description {
             margin-right: 46px;
+            width: 400px;
 
             @include respond(mobile) {
                 padding: 16px 24px;
                 margin-right: 0;
+                width: auto;
             }
 
             p {

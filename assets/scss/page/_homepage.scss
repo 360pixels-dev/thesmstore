@@ -149,10 +149,8 @@
         min-height: 584px;
         background-color: $lightyellow;
 
-        @include respond(tablet) {
-        }
-
-        @include respond(mobile) {
+        &--index {
+            background-color: #ffd95a;
         }
 
         &__bg {
