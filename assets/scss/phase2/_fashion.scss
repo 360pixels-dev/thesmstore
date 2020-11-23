@@ -139,7 +139,7 @@
 }
 
 .about-fashion {
-    background: #fff9f9;
+    // background: #faf3f0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -150,6 +150,7 @@
         width: 100%;
         justify-content: space-evenly;
         padding: 10% 0;
+        flex-direction: column;
 
         img {
             width: 160px;
@@ -165,10 +166,15 @@
         }
 
         &__content {
+            background: #faf3f0;
             text-align: center;
             flex-grow: 2;
             justify-content: center;
             align-items: flex-start;
+
+            span {
+                color: #656565;
+            }
 
             h1 {
                 color: $blush-pink;

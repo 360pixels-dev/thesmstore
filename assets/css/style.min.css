@@ -33753,7 +33753,6 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 
 .about-fashion {
-  background: #fff9f9;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33764,6 +33763,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   width: 100%;
   justify-content: space-evenly;
   padding: 10% 0;
+  flex-direction: column;
 }
 .about-fashion__mobile-container img {
   width: 160px;
@@ -33777,10 +33777,14 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   text-align: left;
 }
 .about-fashion__mobile-container__content {
+  background: #faf3f0;
   text-align: center;
   flex-grow: 2;
   justify-content: center;
   align-items: flex-start;
+}
+.about-fashion__mobile-container__content span {
+  color: #656565;
 }
 .about-fashion__mobile-container__content h1 {
   color: #ea8c8c;
