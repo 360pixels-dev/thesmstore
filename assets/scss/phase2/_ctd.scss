@@ -23,9 +23,8 @@
             width: 100%;
             height: 290px;
             content: "";
-            background-color: $lemon;
-            opacity: 0.4;
-            background-image: radial-gradient($black 2px, $lemon 2px);
+            background-color: #aed6e3;
+            background-image: radial-gradient($gray 2px, #aed6e3 2px);
             background-size: 49px 49px;
 
             @include respond(tablet) {

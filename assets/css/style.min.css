@@ -2276,14 +2276,14 @@ ul {
   .nav__lower {
     top: 0;
     padding: 44px 20px 0;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%);
   }
 }
 @media only screen and (max-width: tablet) {
   .nav__lower {
     top: 0;
     padding: 44px 20px 0;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%);
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -9726,9 +9726,8 @@ header {
   }
 }
 .footer__messenger {
-  position: sticky;
-  -webkit-position: sticky;
-  right: 4%;
+  position: absolute;
+  left: 90%;
   top: -24px;
   bottom: 0px;
   z-index: 99;
@@ -33695,7 +33694,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 
 .fashion-nav {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 .fashion-header-banner,
@@ -35966,9 +35965,8 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   width: 100%;
   height: 290px;
   content: "";
-  background-color: #fce513;
-  opacity: 0.4;
-  background-image: radial-gradient(#161720 2px, #fce513 2px);
+  background-color: #aed6e3;
+  background-image: radial-gradient(#88898f 2px, #aed6e3 2px);
   background-size: 49px 49px;
 }
 @media only screen and (max-width: 1024px) {

@@ -30,7 +30,7 @@ function openStoreSelector() {
     if (drawer.style.display === 'block' || overlay.style.display === 'block') {
 
         if (lowerNav.length !== 0) {
-            lowerNav[0].style.background = "linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%)"
+            lowerNav[0].style.background = "linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%)"
         }
         drawer.style.display = "none";
         drawer.className = "make-store-selector-drawer  w3-bar-block w3-animate-top"
@@ -57,7 +57,7 @@ function closeStoreSelector() {
     let mobileStoreSelectorArrow = document.getElementById("mobile-store-selector-arrow")
     let lowerNav = document.getElementsByClassName("fashion-nav")
 
-    lowerNav[0].style.background = "linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%)"
+    lowerNav[0].style.background = "linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%)"
     document.getElementById("store-selector-drawer").style.display = "none";
     document.getElementById("store-selector-overlay").style.display = "none";
     storeSelectorArrow.className = "store-selector-arrow"
