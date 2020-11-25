@@ -132,8 +132,9 @@
                 }
 
                 @include respond(mobile) {
-                    height: 75px;
-                    width: 178px;
+                    margin-bottom: 0;
+                    height: 150px;
+                    width: 278px;
                 }
             }
         }

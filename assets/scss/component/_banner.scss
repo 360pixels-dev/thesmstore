@@ -1199,7 +1199,7 @@
 
         @include respond(mobile) {
             background-image: url("../../assets/images/banner-services-forex-m.jpg");
-            @include banner-small-m--bc;
+            // @include banner-small-m--bc;
             height: 200px;
             margin-bottom: 40px;
         }
@@ -1237,7 +1237,7 @@
 
         @include respond(mobile) {
             background-image: url("../../assets/images/banner-billpay-m.png");
-            @include banner-small-m--bc;
+            // @include banner-small-m--bc;
             height: 200px;
             margin-bottom: 40px;
         }
@@ -1314,7 +1314,8 @@
 
         @include respond(mobile) {
             background-image: url("../../assets/images/banner-gift-registry-m.jpg");
-            @include banner-small-m--bc;
+            // @include banner-small-m--bc;
+            // background-size: cover;
             height: 200px;
             margin-bottom: 40px;
         }
@@ -1354,7 +1355,7 @@
 
         @include respond(mobile) {
             background-image: url("../../assets/images/banner-gift-card-m.jpg");
-            @include banner-small-m--bc;
+            // @include banner-small-m--bc;
             height: 200px;
             margin-bottom: 40px;
         }
@@ -1394,7 +1395,7 @@
 
         @include respond(mobile) {
             background-image: url("../../assets/images/banner-gift-wrapping-m.jpg");
-            @include banner-small-m--bc;
+            // @include banner-small-m--bc;
             height: 200px;
             margin-bottom: 40px;
         }
