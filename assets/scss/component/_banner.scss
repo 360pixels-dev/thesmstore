@@ -410,7 +410,7 @@
         margin-top: 88px !important;
         height: 360px;
         background: url("../../assets/images/banner-privacy.png") no-repeat;
-        background-position: center right;
+        background-position: top right;
         background-size: cover;
         flex-direction: column;
         // @include bgcover;
@@ -427,6 +427,23 @@
 
         @include respond(mobile) {
             height: 200px;
+        }
+
+        & > .banner-section__breadcrumbs {
+            color: $black;
+
+            top: 210px;
+            left: 12px;
+
+            & > a {
+                @include respond(mobile) {
+                    color: $black;
+                    &:not(:last-child) {
+                        background: url(../../assets/images/arrow-right-black.svg)
+                            no-repeat right center;
+                    }
+                }
+            }
         }
 
         & h1 {
@@ -454,7 +471,7 @@
         height: 360px;
         background: url("../../assets/images/banner-terms-and-conditions.png")
             no-repeat;
-        background-position: center right;
+        background-position: top right;
         background-size: cover;
         flex-direction: column;
 
@@ -463,8 +480,28 @@
         }
 
         @include respond(mobile) {
+            background: url("../../assets/images/banner-terms-and-conditions-m.png")
+                no-repeat;
+            background-position: top right;
+            background-size: cover;
             height: 200px;
-            background-position: center;
+        }
+
+        & > .banner-section__breadcrumbs {
+            color: $black;
+
+            top: 210px;
+            left: 12px;
+
+            & > a {
+                @include respond(mobile) {
+                    color: $black;
+                    &:not(:last-child) {
+                        background: url(../../assets/images/arrow-right-black.svg)
+                            no-repeat right center;
+                    }
+                }
+            }
         }
 
         & h1 {

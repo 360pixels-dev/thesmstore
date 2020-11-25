@@ -72,15 +72,19 @@
 
     &__messenger-mobile {
         display: none;
+        position: absolute;
+
         left: 90%;
         bottom: 0;
-        position: sticky;
-        -webkit-position: sticky;
+        // position: sticky;
+        // -webkit-position: sticky;
         border-radius: 50%;
         z-index: 100;
 
         @include respond(tablet) {
             display: block;
+            position: relative;
+            left: 90%;
         }
 
         @include respond(mobile) {
