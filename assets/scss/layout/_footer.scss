@@ -305,6 +305,7 @@
         padding: 48px 72px 50px 72px;
         color: $white;
         display: none;
+        width: inherit;
 
         @include respond(1199px) {
             padding: 24px 0 28px 0;
@@ -320,11 +321,14 @@
             cursor: pointer;
             width: 100%;
             transition: 0.4s;
+            border-bottom: 1px solid #0067b3;
+            padding-bottom: 5px;
         }
 
         & .accordion:after {
             content: url("../images/angle-down.svg");
             margin-left: 5px;
+            float: right;
         }
 
         & .active:after {
@@ -338,6 +342,13 @@
         }
 
         & .row {
+            @include respond(360px) {
+                max-width: 360px;
+            }
+
+            @include respond(320px) {
+                max-width: 320px;
+            }
             & div {
                 &:nth-child(1) {
                     flex: 1;
@@ -400,6 +411,7 @@
 
                     @include respond(tablet) {
                         flex: 0 0 33.33% !important;
+                        padding-right: 0;
                     }
 
                     @include respond(mobile) {
