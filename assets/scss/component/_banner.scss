@@ -931,7 +931,7 @@
             position: absolute;
             padding: 9px 0;
             // top: 210px;
-            top: 310px;
+            top: 255px;
             height: 40px;
         }
 
@@ -1193,9 +1193,15 @@
         background-size: cover;
         background-position: center right;
 
+        @include respond(tablet) {
+            margin-top: 56px;
+        }
+
         @include respond(mobile) {
             background-image: url("../../assets/images/banner-services-forex-m.jpg");
             @include banner-small-m--bc;
+            height: 200px;
+            margin-bottom: 40px;
         }
 
         & > .banner-section__breadcrumbs {
@@ -1225,10 +1231,15 @@
         background-size: cover;
         background-position: center right;
 
+        @include respond(tablet) {
+            margin-top: 56px !important;
+        }
+
         @include respond(mobile) {
-            background-image: url("../../assets/images/banner-billpay-m.jpg");
-            background-size: cover;
+            background-image: url("../../assets/images/banner-billpay-m.png");
             @include banner-small-m--bc;
+            height: 200px;
+            margin-bottom: 40px;
         }
 
         & > .banner-section__breadcrumbs {
@@ -1297,9 +1308,15 @@
         background-size: cover;
         background-position: center right;
 
+        @include respond(tablet) {
+            margin-top: 56px;
+        }
+
         @include respond(mobile) {
             background-image: url("../../assets/images/banner-gift-registry-m.jpg");
             @include banner-small-m--bc;
+            height: 200px;
+            margin-bottom: 40px;
         }
 
         & > .banner-section__breadcrumbs {
@@ -1320,6 +1337,7 @@
             @include respond(mobile) {
                 top: 90px !important;
                 width: 187px;
+                text-align: left;
             }
         }
     }
@@ -1330,9 +1348,15 @@
         background-size: cover;
         background-position: center right;
 
+        @include respond(tablet) {
+            margin-top: 56px;
+        }
+
         @include respond(mobile) {
             background-image: url("../../assets/images/banner-gift-card-m.jpg");
             @include banner-small-m--bc;
+            height: 200px;
+            margin-bottom: 40px;
         }
 
         & > .banner-section__breadcrumbs {
@@ -1353,6 +1377,7 @@
             @include respond(mobile) {
                 top: 90px !important;
                 width: 187px;
+                text-align: left;
             }
         }
     }
@@ -1363,9 +1388,15 @@
         background-size: cover;
         background-position: center right;
 
+        @include respond(tablet) {
+            margin-top: 56px;
+        }
+
         @include respond(mobile) {
             background-image: url("../../assets/images/banner-gift-wrapping-m.jpg");
             @include banner-small-m--bc;
+            height: 200px;
+            margin-bottom: 40px;
         }
 
         & > .banner-section__breadcrumbs {
@@ -1386,6 +1417,7 @@
             @include respond(mobile) {
                 top: 90px !important;
                 width: 187px;
+                text-align: left;
             }
         }
     }

@@ -29,12 +29,12 @@
         &--registry {
             &:before {
                 @include headerBG;
-                background-color: $pacific;
+                background-color: #afd6e5;
                 background-image: radial-gradient(
                     rgba(0, 0, 0, 0.4) 2px,
-                    $pacific 2px
+                    #afd6e5 2px
                 );
-                background-size: 49px 49px;
+                background-size: 46px 46px;
             }
 
             & > div {
@@ -65,7 +65,7 @@
             }
 
             & > div {
-                background-color: $cream;
+                background-color: #faf3f0;
 
                 & > .gift-header__text {
                     & > h3 {
@@ -334,6 +334,7 @@
             min-height: 537px;
             display: flex;
             margin: 0 auto;
+            max-height: fit-content;
 
             @include respond(1260px) {
                 flex-direction: column;
@@ -347,8 +348,10 @@
             margin-left: 87px;
             height: 497px;
             width: 624px;
+            background: url("../images/gift-registry-img.jpg");
 
             @include respond(714px) {
+                background: url("../images/gift-registry-img-m.png");
                 margin-left: 13px;
                 width: 348px;
                 height: 400px;
@@ -506,37 +509,52 @@
 
         &__file {
             position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
             top: 48px;
             right: 87px;
             height: 456px;
             width: 808px;
 
-            @include respond(1360px) {
-                height: 300px;
-                width: 500px;
-                right: 32px;
+            img:nth-of-type(2) {
+                width: 100%;
+            }
+
+            @include respond(1399px) {
+                right: 16px;
+            }
+
+            @include respond(1280px) {
+                top: 72px;
+                height: auto;
+                width: 750px;
+                right: 48px;
+            }
+
+            @include respond(1152px) {
+                width: 600px;
             }
 
             @include respond(tablet) {
-                position: relative;
-                top: -46px;
-                right: auto;
-                left: 50%;
-                transform: translateX(-50%);
-
-                img:nth-of-type(2) {
-                    width: 600px;
-                }
+                top: 80px;
+                width: 550px;
             }
 
             @include respond(mobile) {
-                height: 189.62px;
-                width: 336px;
-
-                img:nth-of-type(2) {
-                    height: 189.62px;
-                    width: 336px;
-                }
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                top: -46px;
+                // margin: auto;
+                width: 95%;
+                right: auto;
+                left: 50%;
+                transform: translate(-50%, 0);
+                // width: 100%;
             }
         }
     }
@@ -584,6 +602,11 @@
             flex-wrap: wrap;
             justify-content: space-between;
 
+            @include respond(1152px) {
+                width: 1020px;
+                margin: auto;
+            }
+
             & > div {
                 display: flex;
                 align-items: center;
@@ -591,10 +614,6 @@
                 margin-top: 24px;
                 width: 288px;
                 height: 88px;
-
-                @include respond(tablet) {
-                    margin-top: 16px;
-                }
 
                 & > img {
                     width: 288px;
@@ -607,6 +626,18 @@
                     width: 180px;
                     color: $white;
                 }
+
+                @include respond(1152px) {
+                    width: 240px;
+
+                    & > img {
+                        width: 240px;
+                    }
+                }
+
+                @include respond(tablet) {
+                    margin-top: 16px;
+                }
             }
         }
 
@@ -615,7 +646,7 @@
             align-self: flex-end;
             margin-top: 24px;
 
-            @include respond(tablet) {
+            @include respond(mobile) {
                 display: block;
             }
         }

@@ -307,6 +307,7 @@
         }
 
         & > .hr {
+            border: 1px solid #88898f;
             @include respond(mobile) {
                 margin: 24px 0;
             }

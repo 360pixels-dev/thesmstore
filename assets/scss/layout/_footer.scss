@@ -43,9 +43,11 @@
     }
 
     &__messenger {
-        position: absolute;
+        position: sticky;
+        -webkit-position: sticky;
         right: 4%;
         top: -24px;
+        bottom: 0px;
         // box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.15);
         z-index: 99;
 
@@ -71,7 +73,9 @@
     &__messenger-mobile {
         display: none;
         left: 90%;
-        position: relative;
+        bottom: 0;
+        position: sticky;
+        -webkit-position: sticky;
         border-radius: 50%;
         z-index: 100;
 
@@ -224,7 +228,7 @@
                 height: 48px;
                 display: flex;
                 width: 90%;
-                margin-bottom: 48px;
+                margin-bottom: 8px;
 
                 & .white {
                     &:after {
@@ -243,6 +247,13 @@
                     border: none;
                     background-color: $white;
                     flex: 0 0 65%;
+                    color: $black;
+                    font-weight: 600;
+
+                    &::placeholder {
+                        color: $gray;
+                        font-weight: 400;
+                    }
                 }
 
                 & button {
@@ -252,7 +263,20 @@
 
                     @include respond(mobile) {
                     }
+
+                    &:hover {
+                        color: $white;
+                        background-color: #bf5353;
+                    }
                 }
+            }
+
+            & > .error-message {
+                visibility: hidden;
+                font-size: 12px;
+                line-height: 18px;
+                font-style: italic;
+                font-weight: 400;
             }
 
             & .footer__social-media {
