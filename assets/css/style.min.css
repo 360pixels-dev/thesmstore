@@ -22519,7 +22519,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 64px auto;
+  margin: 64px auto 0 auto;
   margin-top: 0;
   justify-content: space-between;
 }
@@ -22527,14 +22527,14 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   .delivery__steps-header {
     width: 100%;
     height: auto;
-    padding: 20px 12px;
+    padding: 20px 12px 0 12px;
   }
 }
 @media only screen and (max-width: tablet) {
   .delivery__steps-header {
     width: 100%;
     height: auto;
-    padding: 20px 12px;
+    padding: 20px 12px 0 12px;
   }
 }
 .delivery__steps-header > h2 {
@@ -22599,6 +22599,23 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 .delivery__steps-content > div > .step-header > img {
   margin-right: 18px;
+}
+.delivery__steps-content > div > .step-header > span {
+  color: #003dba;
+}
+@media only screen and (max-width: 1024px) {
+  .delivery__steps-content > div > .step-header > span {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 4px;
+  }
+}
+@media only screen and (max-width: tablet) {
+  .delivery__steps-content > div > .step-header > span {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 4px;
+  }
 }
 .delivery__steps-buttons {
   display: flex;
@@ -33628,6 +33645,11 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 .mobile-sm-cares .container {
   max-width: 360px;
 }
+@media only screen and (max-width: 320px) {
+  .mobile-sm-cares .container {
+    max-width: 320px;
+  }
+}
 .mobile-sm-cares__controllers {
   float: right;
 }
@@ -33652,6 +33674,12 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   width: 336px;
   height: 268px;
 }
+@media only screen and (max-width: 320px) {
+  .mobile-sm-cares__card img {
+    width: 296px;
+    height: 228px;
+  }
+}
 .mobile-sm-cares__card h3 {
   display: flex;
   justify-content: center;
@@ -33661,6 +33689,13 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   position: absolute;
   z-index: 10;
   color: #ffffff;
+}
+@media only screen and (max-width: 320px) {
+  .mobile-sm-cares__card h3 {
+    width: 296px;
+    height: 228px;
+    font-size: 20px;
+  }
 }
 .mobile-sm-cares .container .controllers {
   float: right;
@@ -34942,7 +34977,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 
 .campaign-video {
-  background: #fff9f9;
+  background: #faf3f0;
 }
 .campaign-video__container {
   width: 100%;
@@ -34958,6 +34993,9 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 .campaign-video__video {
   height: 551px;
+  background: url("../images/holiday-campaign-vid.png") no-repeat;
+  background-size: contain;
+  background-position: center;
   margin: 5% 7% 1% 7%;
   display: flex;
   flex-direction: column;
@@ -34967,6 +35005,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 .campaign-video__video .holiday-campaign-video {
   position: absolute;
   height: 531px;
+  visibility: hidden;
 }
 @media only screen and (max-width: 1024px) {
   .campaign-video__container {
@@ -34981,9 +35020,8 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
     margin: 0 28px 41px 28px;
   }
   .campaign-video__video {
-    height: 215px;
+    height: 400px;
     width: auto;
-    margin: 0 12px 10px 12px;
   }
   .campaign-video__video .holiday-campaign-video {
     height: 215px;
@@ -35007,9 +35045,8 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
     margin: 0 28px 41px 28px;
   }
   .campaign-video__video {
-    height: 215px;
+    height: 400px;
     width: auto;
-    margin: 0 12px 10px 12px;
   }
   .campaign-video__video .holiday-campaign-video {
     height: 215px;
@@ -35018,6 +35055,20 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   .campaign-video__video .play-button {
     height: 71px;
     width: 71px;
+  }
+}
+@media only screen and (max-width: 820px) {
+  .campaign-video__video {
+    height: 215px;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .campaign-video__video {
+    height: 215px;
+    margin: 0;
+    margin-bottom: 16px;
   }
 }
 
@@ -36471,8 +36522,31 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   list-style-type: disc;
   margin-left: 40px;
 }
-.ctd-accordion__item-body-content > ul em {
+.ctd-accordion__item-body-content em {
   color: #88898f;
+}
+@media only screen and (max-width: 820px) {
+  .ctd-accordion__item-body-content .desktop-emphasis {
+    display: none;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .ctd-accordion__item-body-content .desktop-emphasis {
+    display: none;
+  }
+}
+.ctd-accordion__item-body-content .mobile-emphasis {
+  display: none;
+}
+@media only screen and (max-width: 820px) {
+  .ctd-accordion__item-body-content .mobile-emphasis {
+    display: block;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .ctd-accordion__item-body-content .mobile-emphasis {
+    display: block;
+  }
 }
 
 .terms-and-conditions {

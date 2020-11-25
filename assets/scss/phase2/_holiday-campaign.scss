@@ -29,7 +29,7 @@
 }
 
 .campaign-video {
-    background: #fff9f9;
+    background: #faf3f0;
 
     &__container {
         width: 100%;
@@ -47,14 +47,19 @@
 
     &__video {
         height: 551px;
+        background: url("../images/holiday-campaign-vid.png") no-repeat;
+        background-size: contain;
+        background-position: center;
         // background: $christmas-red;
         // background: url("../images/holiday-campaign-vid.png");
         // background-size: contain;
         // background-repeat: no-repeat;
         // background-position: center;
+
         .holiday-campaign-video {
             position: absolute;
             height: 531px;
+            visibility: hidden;
         }
 
         margin: 5% 7% 1% 7%;
@@ -81,9 +86,9 @@
         }
 
         &__video {
-            height: 215px;
+            height: 400px;
             width: auto;
-            margin: 0 12px 10px 12px;
+            // margin: 0 12px 10px 12px;
 
             .holiday-campaign-video {
                 height: 215px;
@@ -94,6 +99,14 @@
                 height: 71px;
                 width: 71px;
             }
+        }
+    }
+
+    @include respond(mobile) {
+        &__video {
+            height: 215px;
+            margin: 0;
+            margin-bottom: 16px;
         }
     }
 }

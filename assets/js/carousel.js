@@ -340,6 +340,72 @@ $(document).ready(function() {
             <img src="./assets/images/featured-video-ctd.png" alt="">
         `);
     }
+
+    // CALLTODELIVER CAROUSEL - VIDEOS
+    var ctdVideos = [
+        {
+            header: 'Featured Video',
+            title1: 'Alex Gonzaga <br>For <span style="color: #0067b3">#SMCall<br><span style="visibility: hidden;">For </span>ToDeliver</span>',
+            title2: '',
+            content: 'Stay home, give us a call, and have your items delivered in as easy as 1-2-3!',
+            videoUrl: 'https://file-examples.com/wp-content/uploads/2017/04/file_example_MP4_480_1_5MG.mp4',
+        },
+        {
+            header: 'Another Call To Deliver Video',
+            title1: 'Test1',
+            title2: 'Test1',
+            content: 'From the latest KBeauty trends and products to the hottest styles in fashion—discover real beauty today.',
+            videoUrl: 'https://file-examples.com/wp-content/uploads/2017/04/file_example_MP4_480_1_5MG.mp4'
+        },
+    ];
+
+    populateCtdVideoDetails();
+    // populateVideoSlider();
+    // populateTemporaryVideoSlider()
+    
+    $('.featured-video__controls--ctd .controls__arrow').click(function() {
+        var dir = $(this).attr('class').split('--')[1];
+        
+        // REARRANGE EVENT ARRAY
+        ctdVideos[0].isActive = false;
+        if(dir == 'right') { //to the right
+            ctdVideos.push(ctdVideos.shift());
+        }
+        else { //to the left
+            ctdVideos.unshift(ctdVideos.pop());
+        }
+        ctdVideos[0].isActive = true;
+        
+        populateCtdVideoDetails(); // CHANGE EVENT DETAILS
+        // populateVideoSlider(); // REARRANGE EVENT SLIDER
+        // populateTemporaryVideoSlider(); // TEMPORARY VIDEO SLIDER
+
+    });
+    
+    function populateCtdVideoDetails() {
+        
+        $('.featured-video__text--ctd').html(`
+            <span class="font-eyebrow" style="color: #161720;">${ctdVideos[0].header}</span>
+            <h1 class="font-hero">
+                <span>${ctdVideos[0].title1}</span> 
+                <span>${ctdVideos[0].title2}</span>
+                ${ctdVideos[0].title3 ? `<span>${ctdVideos[0].title3}</span>` : ``}
+            </h1>
+            <p style="color: #161720;">${ctdVideos[0].content}</p>
+        `);
+    }
+    function populateVideoSlider() {
+        
+        $('.featured-video__video--ctd').html(`
+            <video class="featured-video__video-file" playsinline="" autoplay="" muted="" loop="" src="${ctdVideos[0].videoUrl}" class="ng-star-inserted"></video>
+        `);
+    }
+    function populateTemporaryVideoSlider() {
+        
+        $('.featured-video__video--ctd').html(`
+            <img src="./assets/images/featured-video-ctd.png" alt="">
+        `);
+    }
     
 
     // Events By Date

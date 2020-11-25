@@ -374,6 +374,10 @@
 
     & .container {
         max-width: 360px;
+
+        @include respond(320px) {
+            max-width: 320px;
+        }
     }
 
     &__controllers {
@@ -404,6 +408,11 @@
         img {
             width: 336px;
             height: 268px;
+
+            @include respond(320px) {
+                width: 296px;
+                height: 228px;
+            }
         }
 
         h3 {
@@ -415,6 +424,12 @@
             position: absolute;
             z-index: 10;
             color: $white;
+
+            @include respond(320px) {
+                width: 296px;
+                height: 228px;
+                font-size: 20px;
+            }
         }
     }
 

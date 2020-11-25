@@ -385,9 +385,23 @@
                     & > ul {
                         list-style-type: disc;
                         margin-left: 40px;
+                    }
 
-                        & em {
-                            color: $gray;
+                    & em {
+                        color: $gray;
+                    }
+
+                    & .desktop-emphasis {
+                        @include respond(mobile) {
+                            display: none;
+                        }
+                    }
+
+                    & .mobile-emphasis {
+                        display: none;
+
+                        @include respond(mobile) {
+                            display: block;
                         }
                     }
                 }

@@ -175,14 +175,14 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin: 64px auto;
+            margin: 64px auto 0 auto;
             margin-top: 0;
             justify-content: space-between;
 
             @include respond(tablet) {
                 width: 100%;
                 height: auto;
-                padding: 20px 12px;
+                padding: 20px 12px 0 12px;
             }
 
             & > h2 {
@@ -229,6 +229,16 @@
 
                     & > img {
                         margin-right: 18px;
+                    }
+
+                    & > span {
+                        color: #003dba;
+
+                        @include respond(tablet) {
+                            font-size: 16px;
+                            line-height: 24px;
+                            letter-spacing: 4px;
+                        }
                     }
                 }
             }
