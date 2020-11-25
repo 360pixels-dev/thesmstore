@@ -34050,6 +34050,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   transition: 0.3s ease-in;
 }
 .fashion-categories__card-description h2 {
+  font-size: 22px;
   margin: 8% 0 30% 0;
   text-align: center;
   color: #403f47;
