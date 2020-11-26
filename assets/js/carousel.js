@@ -1011,3 +1011,84 @@ function populateWhatsNewPromosDetails() {
         </div>
     `);
 }
+
+// BOX SIZES CAROUSEL
+const boxSizesArr = [
+    {
+        imgUrl: './assets/images/box-size-s.jpg',
+        size: 'Small',
+        price: '₱29.00',
+        dimensions: 'Dimensions: 5” (H) x 11”(W) x 6”(D)'
+    },
+    {
+        imgUrl: './assets/images/box-size-m.jpg',
+        size: 'Medium',
+        price: '₱29.00',
+        dimensions: 'Dimensions: 11.5” (H) x 15.5”(W) x 10”(D)'
+    },
+    {
+        imgUrl: './assets/images/box-size-m.jpg',
+        size: 'Large',
+        price: '₱29.00',
+        dimensions: 'Dimensions: 23” (H) x 15”(W) x 9”(D)'
+    },
+    {
+        imgUrl: './assets/images/box-size-m.jpg',
+        size: 'Extra Large',
+        price: '₱29.00',
+        dimensions: 'Dimensions: 32” (H) x 15”(W) x 9”(D)'
+    },
+];
+
+populateBoxSizesDetails();
+// populateVideoSlider();
+// populateTemporaryVideoSlider()
+
+$('.box-sizes__controls .controls__arrow').click(function() {
+    var dir = $(this).attr('class').split('--')[1];
+    
+    // REARRANGE EVENT ARRAY
+    boxSizesArr[0].isActive = false;
+    if(dir == 'right') { //to the right
+        boxSizesArr.push(boxSizesArr.shift());
+    }
+    else { //to the left
+        boxSizesArr.unshift(boxSizesArr.pop());
+    }
+    boxSizesArr[0].isActive = true;
+    
+    populateBoxSizesDetails(); // CHANGE EVENT DETAILS
+    // populateVideoSlider(); // REARRANGE EVENT SLIDER
+    // populateTemporaryVideoSlider(); // TEMPORARY VIDEO SLIDER
+
+});
+
+function populateBoxSizesDetails() {
+    
+    $('.box-sizes__slider-slides').html(`
+        <div class="box-sizes__slider-slide">
+            <img src="${boxSizesArr[0].imgUrl}" alt="">
+            <div>
+                <h4 class="font-h4-caps">${boxSizesArr[0].size}</h4>
+                <h4 class="font-h4 text-bold">${boxSizesArr[0].price}</h4>
+            </div>
+            <span class="font-caption">${boxSizesArr[0].dimensions}</span>
+        </div>
+        <div class="box-sizes__slider-slide">
+            <img src="${boxSizesArr[1].imgUrl}" alt="">
+            <div>
+                <h4 class="font-h4-caps">${boxSizesArr[1].size}</h4>
+                <h4 class="font-h4 text-bold">${boxSizesArr[1].price}</h4>
+            </div>
+            <span class="font-caption">${boxSizesArr[1].dimensions}</span>
+        </div>
+        <div class="box-sizes__slider-slide">
+            <img src="${boxSizesArr[2].imgUrl}" alt="">
+            <div>
+                <h4 class="font-h4-caps">${boxSizesArr[2].size}</h4>
+                <h4 class="font-h4 text-bold">${boxSizesArr[2].price}</h4>
+            </div>
+            <span class="font-caption">${boxSizesArr[2].dimensions}</span>
+        </div>
+    `);
+}
