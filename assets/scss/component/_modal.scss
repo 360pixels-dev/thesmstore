@@ -64,6 +64,10 @@
 
             & p {
                 color: $white;
+
+                &:last-child {
+                    font-size: 12px;
+                }
             }
         }
     }

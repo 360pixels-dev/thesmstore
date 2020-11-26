@@ -6834,6 +6834,9 @@ ul {
 .modal__countdown-item p {
   color: #ffffff;
 }
+.modal__countdown-item p:last-child {
+  font-size: 12px;
+}
 .modal--announcement {
   background-color: #f6787b;
   opacity: 1;
