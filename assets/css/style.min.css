@@ -8051,7 +8051,7 @@ ul {
 
 .cookie__container {
   position: fixed;
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   bottom: 53px;

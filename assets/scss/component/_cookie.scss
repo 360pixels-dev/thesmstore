@@ -1,8 +1,8 @@
 .cookie {
     &__container {
         position: fixed;
-        // display: flex;
-        display: none;
+        display: flex;
+        // display: none;
         flex-direction: column;
         justify-content: space-between;
         bottom: 53px;
