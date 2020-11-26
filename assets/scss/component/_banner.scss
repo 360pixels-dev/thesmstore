@@ -215,12 +215,15 @@
         }
 
         & h1 {
-            margin-top: 30px;
+            margin-top: 120px;
             padding-bottom: 12px;
             border-bottom: 8px solid $lemon;
             color: $white;
 
             @include respond(tablet) {
+                top: 0;
+                position: absolute;
+                margin-top: 110px;
                 font-size: 32px;
                 line-height: 40px;
                 padding-bottom: 5px;
