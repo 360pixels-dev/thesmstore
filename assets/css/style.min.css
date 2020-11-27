@@ -6401,10 +6401,10 @@ ul {
   margin: 40px 0;
 }
 .hr--gray {
-  border-bottom: 1.5px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
 }
 .hr--gray-m-hide {
-  border-bottom: 1.5px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
 }
 @media only screen and (max-width: 820px) {
   .hr--gray-m-hide {
@@ -16000,16 +16000,18 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   }
 }
 .whats-new .terms-conditions > .hr {
-  border: 1px solid #88898f;
+  border-bottom: 1px solid #88898f;
 }
 @media only screen and (max-width: 820px) {
   .whats-new .terms-conditions > .hr {
     margin: 24px 0;
+    visibility: hidden;
   }
 }
 @media only screen and (max-width: mobile) {
   .whats-new .terms-conditions > .hr {
     margin: 24px 0;
+    visibility: hidden;
   }
 }
 .whats-new .terms-conditions > ol {

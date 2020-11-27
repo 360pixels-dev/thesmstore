@@ -10,11 +10,11 @@
     margin: 40px 0;
 
     &--gray {
-        border-bottom: 1.5px solid $mid-gray;
+        border-bottom: 1px solid $mid-gray;
     }
 
     &--gray-m-hide {
-        border-bottom: 1.5px solid $mid-gray;
+        border-bottom: 1px solid $mid-gray;
 
         @include respond(mobile) {
             visibility: hidden;

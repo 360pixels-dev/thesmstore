@@ -307,9 +307,11 @@
         }
 
         & > .hr {
-            border: 1px solid #88898f;
+            border-bottom: 1px solid #88898f;
+
             @include respond(mobile) {
                 margin: 24px 0;
+                visibility: hidden;
             }
         }
 
