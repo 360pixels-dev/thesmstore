@@ -385,7 +385,7 @@
 
                 & > span {
                     text-align: center;
-                    flex-basis: 33.33%;
+                    flex-basis: 0 0 33.33%;
                     width: 120px;
 
                     &:nth-of-type(2) {
@@ -393,8 +393,19 @@
                     }
 
                     @include respond(tablet) {
+                        text-align: center;
+
+                        // flex-basis: 0 0 33% !important;
+                        // width: auto;
+
+                        &:nth-of-type(2) {
+                            margin: 0;
+                        }
+                    }
+
+                    @include respond(mobile) {
+                        flex-basis: 0 0 50%;
                         text-align: left;
-                        flex-basis: 50%;
                         margin-bottom: 16px;
                     }
                 }
