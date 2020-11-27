@@ -446,6 +446,7 @@ p {
   text-transform: uppercase;
 }
 .font-h5--uppercase {
+  font-family: "Open Sans", "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-size: 12px;
   line-height: 16px;
