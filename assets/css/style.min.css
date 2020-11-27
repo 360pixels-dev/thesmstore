@@ -33386,6 +33386,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   font-size: 32px;
   line-height: 40px;
   letter-spacing: 4px;
+  padding-top: 60px;
 }
 .order-gift-section h5,
 .order-gift-section p {
@@ -33398,6 +33399,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 .order-gift-section .container {
   padding: 2%;
+  padding-top: 0;
   max-width: 1280px;
   padding-bottom: 60px;
 }
