@@ -1533,6 +1533,9 @@ ul {
   position: relative;
   float: left;
 }
+.nav__upper .menu ul li:first-child {
+  visibility: hidden;
+}
 .nav__upper .menu .main-navigation ul {
   display: none;
 }
@@ -1960,6 +1963,7 @@ ul {
 }
 .nav__upper .mobile-search-button {
   display: none;
+  visibility: hidden;
 }
 .nav__upper .mobile-search-button img {
   width: 38px;
@@ -1984,6 +1988,9 @@ ul {
   .nav__upper .mobile-search-button {
     display: flex;
   }
+}
+.nav__upper .search-container {
+  visibility: hidden;
 }
 @media only screen and (max-width: 1024px) {
   .nav__upper .search-container {
@@ -16101,6 +16108,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 .whats-new .store-hours > .store-branches > div {
   display: flex;
+  flex-wrap: wrap;
 }
 @media only screen and (max-width: 1024px) {
   .whats-new .store-hours > .store-branches > div {
@@ -16133,32 +16141,50 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   flex-basis: 0 0 33.33%;
   width: 120px;
 }
-.whats-new .store-hours > .store-branches > div > span:nth-of-type(2) {
-  margin: 0 48px;
+.whats-new .store-hours > .store-branches > div > span:first-child {
+  margin: 0 !important;
+}
+@media only screen and (max-width: 820px) {
+  .whats-new .store-hours > .store-branches > div > span:first-child {
+    margin: 0 0 16px 0 !important;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .whats-new .store-hours > .store-branches > div > span:first-child {
+    margin: 0 0 16px 0 !important;
+  }
+}
+.whats-new .store-hours > .store-branches > div > span:not(:first-child) {
+  margin-left: 48px;
+  flex-basis: 0 0 100%;
 }
 @media only screen and (max-width: 1024px) {
-  .whats-new .store-hours > .store-branches > div > span:nth-of-type(2) {
+  .whats-new .store-hours > .store-branches > div > span {
+    width: 50%;
+  }
+  .whats-new .store-hours > .store-branches > div > span:not(:first-child) {
     margin: 0;
   }
 }
 @media only screen and (max-width: tablet) {
-  .whats-new .store-hours > .store-branches > div > span:nth-of-type(2) {
+  .whats-new .store-hours > .store-branches > div > span {
+    width: 50%;
+  }
+  .whats-new .store-hours > .store-branches > div > span:not(:first-child) {
     margin: 0;
   }
 }
 @media only screen and (max-width: 820px) {
   .whats-new .store-hours > .store-branches > div > span {
-    flex-basis: 0 0 50%;
     text-align: left;
-    margin-bottom: 16px;
+    margin-bottom: 16px !important;
     justify-content: space-evenly;
   }
 }
 @media only screen and (max-width: mobile) {
   .whats-new .store-hours > .store-branches > div > span {
-    flex-basis: 0 0 50%;
     text-align: left;
-    margin-bottom: 16px;
+    margin-bottom: 16px !important;
     justify-content: space-evenly;
   }
 }

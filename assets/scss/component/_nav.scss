@@ -326,6 +326,10 @@
                 display: block;
                 position: relative;
                 float: left;
+
+                &:first-child {
+                    visibility: hidden;
+                }
             }
 
             /* This hides the dropdowns */
@@ -796,6 +800,7 @@
 
         & .mobile-search-button {
             display: none;
+            visibility: hidden;
 
             img {
                 width: 38px;
@@ -812,6 +817,8 @@
         }
 
         & .search-container {
+            visibility: hidden;
+
             @include respond(tablet) {
                 display: none;
             }

@@ -39,7 +39,7 @@
 
                     <div class="menu">
                         <ul class="main-navigation">
-                            <li class="nav__upper-menu-item" style="visibility: hidden;"><a href="#">Categories</a>
+                            <li class="nav__upper-menu-item"><a href="#">Categories</a>
                                 <ul class="categories animated fadeIn">
                                     <li><a href="#">Fashion <img class="arrow-right" src="./assets/images/black-arrow-right.svg" alt=""></a>
                                         <ul>
@@ -135,7 +135,7 @@
                         <img src="./assets/images/logo.svg" alt="SM Store">
                     </div>
                     
-                    <div class="search-container" style="visibility: hidden;">
+                    <div class="search-container">
                         <div class="search-main">
                             <input class="search-term" type="search" placeholder="Search">
                             <button class="search-button">
@@ -144,7 +144,7 @@
                         </div>
                     </div>
 
-                    <div class="mobile-search-container" style="visibility: hidden;">
+                    <div class="mobile-search-container">
                         <div class="mobile-search-main">
                             <input class="mobile-search-term" type="search" placeholder="Search">
                             <button class="mobile-inner-search-button">
@@ -153,7 +153,7 @@
                         </div>
                     </div>
 
-                    <div class="mobile-search-button" onclick="toggleSearch()" style="visibility: hidden;">
+                    <div class="mobile-search-button" onclick="toggleSearch()">
                         <img src="./assets/images/search.svg" alt="">
                     </div>
 
@@ -568,10 +568,10 @@
 
                     <div class="store-branches">
                         <h1 class="font-hero-m">Participating the SM Store branches</h1>
-                        <div>
-                            <span class="font-caption">Megamall</span>
+                        <div id="store-branches-list">
+                            <!-- <span class="font-caption">Megamall</span>
                             <span class="font-caption">Delgado</span>
-                            <span class="font-caption">Grand Central</span>
+                            <span class="font-caption">Grand Central</span> -->
                         </div>
                     </div>
                 </div>
@@ -759,7 +759,9 @@
     <script src="assets/js/jquery.js"></script>
 
     <!-- CUSTOM JS -->
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery.breakpoint-min.js"></script>
+    <script src="assets/js/storebranches.js"></script>
+    <!-- <script src="assets/js/main.js"></script> -->
     <script src="assets/js/carousel.js"></script>
     <script src="assets/js/footeraccordion.js"></script>
     <script src="assets/js/mobiledropdown.js"></script>
