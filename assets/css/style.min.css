@@ -9790,7 +9790,7 @@ header {
 .container-colored--smart-yellow {
   border: 15px solid #f1e76c;
   margin: -133px auto 40px auto;
-  padding: 100px;
+  padding: 52px 100px 0 100px;
   min-height: fit-content;
   height: fit-content;
 }
@@ -9821,6 +9821,10 @@ header {
 }
 .container-colored--smart-yellow > ol > li:not(:last-child) {
   margin-bottom: 16px;
+}
+.container-colored--smart-yellow:last-child {
+  margin: -120px auto 0 auto;
+  padding: 45px 100px !important;
 }
 @media only screen and (max-width: 1024px) {
   .container-colored--smart-yellow {

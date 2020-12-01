@@ -192,7 +192,7 @@
     &--smart-yellow {
         border: 15px solid $smart-yellow;
         margin: -133px auto 40px auto;
-        padding: 100px;
+        padding: 52px 100px 0 100px;
         min-height: fit-content;
         height: fit-content;
 
@@ -218,6 +218,11 @@
             & > li:not(:last-child) {
                 margin-bottom: 16px;
             }
+        }
+
+        &:last-child {
+            margin: -120px auto 0 auto;
+            padding: 45px 100px !important;
         }
 
         @include respond(tablet) {
