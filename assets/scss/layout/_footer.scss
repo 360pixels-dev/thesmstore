@@ -1,6 +1,7 @@
 .footer {
     position: relative;
-    min-height: 468px;
+    // min-height: 468px;
+    min-height: fit-content; // FOR PHASE 1
     background: $dark-blue;
     display: flex;
     flex-direction: column;
@@ -9,6 +10,84 @@
     p {
         color: $white;
     }
+
+    // FOR PHASE 1
+    &__links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 56px;
+        padding: 0 84px;
+
+        @include respond(mobile) {
+            flex-direction: column;
+            height: max-content;
+            padding: 0 16px;
+        }
+
+        &--texts {
+            @include respond(mobile) {
+                margin: 32px auto;
+            }
+
+            & > ul li {
+                list-style: none;
+                display: inline;
+
+                &:not(:first-child) {
+                    margin-left: 16px;
+                }
+
+                & > a,
+                a:hover,
+                a:visited {
+                    color: $white;
+                    text-decoration: none;
+                    font-weight: 400;
+                }
+
+                @include respond(mobile) {
+                    display: block;
+                    text-align: center;
+
+                    &:not(:first-child) {
+                        margin-left: 0;
+                    }
+
+                    &:not(:last-child) {
+                        margin-bottom: 16px;
+                    }
+                }
+            }
+        }
+
+        & > .hr--blue-m {
+            display: none;
+            width: 100%;
+
+            @include respond(mobile) {
+                display: block;
+            }
+        }
+
+        &--socials {
+            @include respond(mobile) {
+                margin: 32px auto;
+            }
+
+            & > ul li {
+                display: inline;
+                &:not(:first-child) {
+                    margin-left: 8px;
+
+                    @include respond(mobile) {
+                        margin-left: 16px;
+                    }
+                }
+            }
+        }
+    }
+    // /FOR PHASE 1
 
     &__forex {
         position: relative;
@@ -508,11 +587,16 @@
     &__copyright {
         bottom: 0;
         display: flex;
-        height: 120px;
+        // height: 120px;
         width: 100%;
         justify-content: center;
         align-items: center;
         background-color: $blue;
+
+        // FOR PHASE 1
+        height: fit-content;
+        padding: 24px 0;
+        // /FOR PHASE 1
 
         & img {
             width: 228px;
@@ -528,8 +612,10 @@
         &--column {
             flex-direction: column;
 
-            & p {
+            & > p {
                 margin: 10px;
+                color: white;
+                text-align: center !important;
             }
         }
     }

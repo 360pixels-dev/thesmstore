@@ -315,6 +315,12 @@
         z-index: 999;
 
         & .menu {
+            & > .main-navigation {
+                & > li:first-of-type {
+                    visibility: hidden;
+                }
+            }
+
             ul {
                 display: flex;
                 justify-content: center;
@@ -326,10 +332,6 @@
                 display: block;
                 position: relative;
                 float: left;
-
-                &:first-child {
-                    visibility: hidden;
-                }
             }
 
             /* This hides the dropdowns */

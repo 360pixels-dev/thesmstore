@@ -207,15 +207,17 @@
                 transform: translateX(-50%);
             }
 
-            @include respond(1000px) {
-                left: 30%;
-                width: 335px;
-                height: 215px;
-            }
+            // @include respond(1000px) {
+            //     left: 30%;
+            //     width: 335px;
+            //     height: 215px;
+            // }
 
             @include respond(tablet) {
                 top: 30%;
                 left: 50%;
+                width: 335px;
+                height: 215px;
                 transform: translate(-50%, -50%);
             }
 
@@ -232,15 +234,15 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
 
-                @include respond(1024px) {
-                    height: 90%;
-                    width: auto;
-                }
-
-                @include respond(1000px) {
+                @include respond(tablet) {
                     height: 100%;
                     width: auto;
                 }
+
+                // @include respond(1000px) {
+                //     height: 100%;
+                //     width: auto;
+                // }
             }
 
             &-btn {
