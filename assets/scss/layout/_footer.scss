@@ -77,6 +77,12 @@
 
             & > ul li {
                 display: inline;
+
+                & > a img {
+                    height: 32px;
+                    width: auto;
+                }
+
                 &:not(:first-child) {
                     margin-left: 8px;
 
@@ -90,6 +96,7 @@
     // /FOR PHASE 1
 
     &__forex {
+        display: none;
         position: relative;
         background: rgba(0, 103, 179, 0.3);
         height: 32px;
@@ -122,6 +129,7 @@
     }
 
     &__messenger {
+        display: none;
         position: absolute;
         // -webkit-position: sticky;
         left: 90%;
@@ -161,7 +169,7 @@
         z-index: 100;
 
         @include respond(tablet) {
-            display: block;
+            // display: block;
             position: relative;
             left: 90%;
         }
@@ -182,6 +190,7 @@
     }
 
     &__content {
+        display: none;
         padding: 48px 72px 50px 72px;
         color: $white;
 
@@ -388,11 +397,11 @@
 
         @include respond(1199px) {
             padding: 24px 0 28px 0;
-            display: flex;
+            // display: flex;
         }
 
         @include respond(tablet) {
-            display: flex;
+            // display: flex;
             padding: 24px 0 28px 0;
         }
 

@@ -43,6 +43,11 @@
     &-list {
         display: block;
         z-index: 9999;
+
+        // FOR PHASE 1
+        & > li:first-of-type {
+            display: none;
+        }
     }
 
     &-categories-list {
@@ -1093,7 +1098,8 @@
 
     &__lower {
         position: absolute;
-        display: flex;
+        // display: flex;
+        display: none;
         height: 76px;
         // background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
         background: $indigo;
