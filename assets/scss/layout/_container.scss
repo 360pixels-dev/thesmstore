@@ -189,6 +189,67 @@
         }
     }
 
+    &--smart-yellow {
+        border: 15px solid $smart-yellow;
+        margin: -133px auto 40px auto;
+        padding: 100px;
+        min-height: fit-content;
+        height: fit-content;
+
+        & > .smart-headline {
+            width: 100%;
+            margin-bottom: 32px;
+        }
+
+        & > ol {
+            font-family: $font-base;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            margin: 0 0 45px 20px !important;
+
+            @include respond(mobile) {
+                font-size: 14px;
+                line-height: 22px;
+
+                margin: 0 0 0 20px !important;
+            }
+
+            & > li:not(:last-child) {
+                margin-bottom: 16px;
+            }
+        }
+
+        @include respond(tablet) {
+            margin: 0px auto 40px auto;
+            padding: 21px 21px 41px 21px;
+
+            &:first-child {
+                padding-bottom: 51px;
+            }
+
+            &:last-child {
+                margin: -120px auto 0 auto;
+                padding: 12px !important;
+            }
+        }
+
+        @include respond(mobile) {
+            border: 10px solid $smart-yellow;
+
+            & > h1 {
+                font-size: 24px;
+                line-height: 32px;
+                letter-spacing: 1.6px;
+                margin: 0 0 16px 0;
+            }
+
+            & > p:last-child {
+                text-align: justify;
+            }
+        }
+    }
+
     @include respond(1040px) {
         width: 96%;
     }

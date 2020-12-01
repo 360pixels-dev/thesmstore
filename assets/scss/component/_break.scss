@@ -4,6 +4,10 @@
     display: block;
     width: 1px;
     margin: auto;
+
+    @include respond(mobile) {
+        height: 32px;
+    }
 }
 
 .hr {
