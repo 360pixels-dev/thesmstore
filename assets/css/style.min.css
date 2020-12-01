@@ -16276,23 +16276,18 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   flex-basis: 0 0 100%;
 }
 @media only screen and (max-width: 1024px) {
-  .whats-new .store-hours > .store-branches > div > span {
-    width: 50%;
-  }
   .whats-new .store-hours > .store-branches > div > span:not(:first-child) {
     margin: 0;
   }
 }
 @media only screen and (max-width: tablet) {
-  .whats-new .store-hours > .store-branches > div > span {
-    width: 50%;
-  }
   .whats-new .store-hours > .store-branches > div > span:not(:first-child) {
     margin: 0;
   }
 }
 @media only screen and (max-width: 820px) {
   .whats-new .store-hours > .store-branches > div > span {
+    width: 50%;
     text-align: left;
     margin-bottom: 16px !important;
     justify-content: space-evenly;
@@ -16300,6 +16295,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 @media only screen and (max-width: mobile) {
   .whats-new .store-hours > .store-branches > div > span {
+    width: 50%;
     text-align: left;
     margin-bottom: 16px !important;
     justify-content: space-evenly;
