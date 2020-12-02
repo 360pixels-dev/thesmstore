@@ -1215,6 +1215,12 @@ ul {
   float: right;
   padding: 5px 10px 0 0;
 }
+#mobile-menu .add-arrow::after {
+  content: " - Remember this";
+  background-color: yellow;
+  color: red;
+  font-weight: bold;
+}
 #mobile-menu a {
   color: #000;
   text-decoration: none;
@@ -1573,6 +1579,18 @@ ul {
   padding: 18px 0 18px 25px;
   border-bottom: 1px solid #ececec;
   margin: 0 9px;
+}
+.nav__upper .menu .categories .add-arrow:after,
+.nav__upper .menu .services .add-arrow:after,
+.nav__upper .menu .whatsnew .add-arrow:after {
+  content: url("../images/gray-arrow-right.svg");
+  float: right;
+}
+.nav__upper .menu .categories .add-arrow:hover:after,
+.nav__upper .menu .services .add-arrow:hover:after,
+.nav__upper .menu .whatsnew .add-arrow:hover:after {
+  content: url("../images/black-arrow-right.svg");
+  float: right;
 }
 .nav__upper .menu .categories li:hover ul,
 .nav__upper .menu .services li:hover ul,
