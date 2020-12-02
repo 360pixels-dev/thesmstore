@@ -799,9 +799,10 @@
             background: url("../../assets/images/banner-easypay-promo-m.png")
                 no-repeat;
             background-size: contain;
-            background-position: center bottom;
+            background-position: center;
             // background-position: 50% 70px;
             background-color: $promo-yellow;
+            height: 220px;
             // background-size: contain;
             // @include bgcover;
 
@@ -811,7 +812,7 @@
 
             & > .banner-section__breadcrumbs {
                 // position: absolute;
-                top: 260px !important;
+                top: 180px !important;
                 left: 0px !important;
                 padding-left: 8px !important;
                 background: linear-gradient(
@@ -861,7 +862,8 @@
         @include respond(mobile) {
             background: url("../../assets/images/banner-smart-m.png") no-repeat;
             background-size: cover;
-            background-position: top center;
+            background-position: bottom center;
+            height: 220px;
             // background-position: 50% 70px;
             // background-color: $promo-yellow;
             // background-size: contain;
@@ -873,7 +875,7 @@
 
             & > .banner-section__breadcrumbs {
                 // position: absolute;
-                top: 260px !important;
+                top: 180px !important;
                 left: 0px !important;
                 padding-left: 8px !important;
                 background: linear-gradient(
