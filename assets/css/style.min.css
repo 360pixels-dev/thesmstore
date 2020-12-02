@@ -35985,6 +35985,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 
 .more-from-sm {
   background: #fff9f9;
+  display: none;
 }
 .more-from-sm span {
   margin-top: 40px;
