@@ -1762,11 +1762,6 @@ ul {
   position: relative;
   flex: 0 0 20%;
 }
-@media only screen and (max-width: 320px) {
-  .nav__upper .mobile-logo img {
-    width: 110px !important;
-  }
-}
 @media only screen and (max-width: 1024px) {
   .nav__upper .mobile-logo {
     flex: 0;
@@ -1782,31 +1777,24 @@ ul {
 @media only screen and (max-width: 1024px) {
   .nav__upper .mobile-logo img {
     padding: auto;
-    margin: auto;
+    margin: auto auto auto 20%;
     width: auto;
-    height: 26px;
+    height: 30px;
     position: relative;
-    top: 3px;
   }
 }
 @media only screen and (max-width: tablet) {
   .nav__upper .mobile-logo img {
     padding: auto;
-    margin: auto;
+    margin: auto auto auto 20%;
     width: auto;
-    height: 26px;
+    height: 30px;
     position: relative;
-    top: 3px;
   }
 }
 .nav__upper .logo {
   flex: 0 0 20%;
 }
-@media only screen and (max-width: 320px) {
-  .nav__upper .logo img {
-    width: 110px !important;
-  }
-}
 @media only screen and (max-width: 1024px) {
   .nav__upper .logo {
     flex: 0;
@@ -1817,6 +1805,11 @@ ul {
   .nav__upper .logo {
     flex: 0;
     display: none;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .nav__upper .logo img {
+    width: 110px !important;
   }
 }
 @media only screen and (max-width: 1024px) {

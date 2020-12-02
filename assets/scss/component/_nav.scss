@@ -619,12 +619,6 @@
 
             flex: 0 0 20%;
 
-            @include respond(320px) {
-                img {
-                    width: 110px !important;
-                }
-            }
-
             @include respond(tablet) {
                 flex: 0;
                 display: flex;
@@ -633,11 +627,11 @@
             img {
                 @include respond(tablet) {
                     padding: auto;
-                    margin: auto;
+                    margin: auto auto auto 20%;
                     width: auto;
-                    height: 26px;
+                    height: 30px;
                     position: relative;
-                    top: 3px;
+                    // top: 3px;
                 }
             }
         }
@@ -645,15 +639,15 @@
         & .logo {
             flex: 0 0 20%;
 
+            @include respond(tablet) {
+                flex: 0;
+                display: none;
+            }
+
             @include respond(320px) {
                 img {
                     width: 110px !important;
                 }
-            }
-
-            @include respond(tablet) {
-                flex: 0;
-                display: none;
             }
 
             img {
