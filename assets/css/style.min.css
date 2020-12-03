@@ -1849,6 +1849,10 @@ ul {
 }
 .nav__upper .menu {
   width: 60%;
+  position: absolute;
+  left: 50%;
+  right: auto;
+  transform: translate(-50%, 0);
 }
 @media only screen and (max-width: 1024px) {
   .nav__upper .menu {
@@ -8247,35 +8251,53 @@ ul {
 }
 @media only screen and (max-width: 820px) {
   .cookie__container {
-    width: 100%;
+    width: fit-content;
+    height: fit-content;
     padding: 16px 12px;
     margin: 0;
     bottom: 0;
+    left: 0;
   }
 }
 @media only screen and (max-width: mobile) {
   .cookie__container {
-    width: 100%;
+    width: fit-content;
+    height: fit-content;
     padding: 16px 12px;
     margin: 0;
     bottom: 0;
+    left: 0;
   }
 }
 .cookie__text {
   color: #ffffff;
 }
+@media only screen and (max-width: 320px) {
+  .cookie__text {
+    width: fit-content;
+    height: fit-content;
+  }
+}
 .cookie__btn {
   display: flex;
   justify-content: flex-end;
+  flex-wrap: wrap;
 }
 @media only screen and (max-width: 820px) {
   .cookie__btn {
+    margin-top: 12px;
     justify-content: flex-start;
   }
 }
 @media only screen and (max-width: mobile) {
   .cookie__btn {
+    margin-top: 12px;
     justify-content: flex-start;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .cookie__btn {
+    justify-content: center;
   }
 }
 .cookie__btn > .btn--primary {
@@ -8291,6 +8313,12 @@ ul {
   .cookie__btn > .btn--primary {
     margin-right: 16px;
     margin-left: 0;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .cookie__btn > .btn--primary {
+    height: auto;
+    padding: 12px;
   }
 }
 .cookie__btn > .btn--primary:nth-child(2) {
@@ -35543,7 +35571,8 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   color: #ffffff;
   position: relative;
   top: 45%;
-  left: 15%;
+  left: 192px;
+  width: fit-content;
 }
 @media only screen and (max-width: 1024px) {
   .holiday-campaign-header-banner {
@@ -35552,11 +35581,12 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
     background-size: contain auto;
   }
   .holiday-campaign-header-banner > h1 {
-    top: 35%;
-    left: 10%;
+    bottom: 26px;
+    left: 28px;
     font-size: 24px;
-    letter-spacing: 4px;
-    line-height: 40px;
+    letter-spacing: 1.6px;
+    line-height: 32px;
+    margin-right: 0 !important;
   }
 }
 @media only screen and (max-width: tablet) {
@@ -35566,11 +35596,12 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
     background-size: contain auto;
   }
   .holiday-campaign-header-banner > h1 {
-    top: 35%;
-    left: 10%;
+    bottom: 26px;
+    left: 28px;
     font-size: 24px;
-    letter-spacing: 4px;
-    line-height: 40px;
+    letter-spacing: 1.6px;
+    line-height: 32px;
+    margin-right: 0 !important;
   }
 }
 
@@ -35579,7 +35610,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 .campaign-video__container {
   width: 100%;
-  padding: 5% 0;
+  padding: 40px 0;
   text-align: center;
   color: #161720;
 }
@@ -35594,7 +35625,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   background: url("../images/holiday-campaign-vid.png") no-repeat;
   background-size: contain;
   background-position: center;
-  margin: 5% 7% 1% 7%;
+  margin: 50px 88px 24px 88px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35603,7 +35634,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 .campaign-video__video .holiday-campaign-video {
   position: absolute;
   height: 531px;
-  visibility: hidden;
+  display: none;
 }
 @media only screen and (max-width: 1024px) {
   .campaign-video__container {
@@ -35657,14 +35688,14 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 @media only screen and (max-width: 820px) {
   .campaign-video__video {
-    height: 215px;
+    height: 208px;
     margin: 0;
     margin-bottom: 16px;
   }
 }
 @media only screen and (max-width: mobile) {
   .campaign-video__video {
-    height: 215px;
+    height: 208px;
     margin: 0;
     margin-bottom: 16px;
   }
@@ -35673,27 +35704,58 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 .holiday-campaign-main-content {
   background: #ffffff;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 820px) {
   .holiday-campaign-main-content {
     display: none;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .holiday-campaign-main-content {
+    display: none;
+  }
+}
+.holiday-campaign-main-content > .container {
+  position: relative;
+  max-width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 120px;
+}
+@media only screen and (max-width: 1024px) {
+  .holiday-campaign-main-content > .container img {
+    height: 331px;
+    width: 416px;
   }
 }
 @media only screen and (max-width: tablet) {
-  .holiday-campaign-main-content {
-    display: none;
+  .holiday-campaign-main-content > .container img {
+    height: 331px;
+    width: 416px;
   }
 }
-.holiday-campaign-main-content.container {
-  position: relative;
-  width: 1280px;
-  display: flex;
-  justify-content: space-between;
+.holiday-campaign-main-content > .container:last-child {
+  padding-bottom: 50px;
+}
+.holiday-campaign-main-content > .container:last-child > .holiday-campaign-main-content__yellow {
+  margin-top: 55px;
 }
 .holiday-campaign-main-content__image {
-  margin-left: 6%;
+  margin: 56px 0 0 88px;
   height: 497px;
   width: 624px;
   z-index: 4;
+}
+@media only screen and (max-width: 1024px) {
+  .holiday-campaign-main-content__image {
+    height: 331px;
+    width: 416px;
+  }
+}
+@media only screen and (max-width: tablet) {
+  .holiday-campaign-main-content__image {
+    height: 331px;
+    width: 416px;
+  }
 }
 .holiday-campaign-main-content__container-right {
   width: 100%;
@@ -35707,6 +35769,18 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   width: 624px;
   z-index: 4;
 }
+@media only screen and (max-width: 1024px) {
+  .holiday-campaign-main-content__container-right img {
+    height: 331px;
+    width: 416px;
+  }
+}
+@media only screen and (max-width: tablet) {
+  .holiday-campaign-main-content__container-right img {
+    height: 331px;
+    width: 416px;
+  }
+}
 .holiday-campaign-main-content__yellow {
   display: flex;
   align-items: flex-end;
@@ -35717,21 +35791,50 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   height: 497px;
   width: 624px;
 }
+@media only screen and (max-width: 1024px) {
+  .holiday-campaign-main-content__yellow {
+    height: 331px;
+    width: 416px;
+  }
+}
+@media only screen and (max-width: tablet) {
+  .holiday-campaign-main-content__yellow {
+    height: 331px;
+    width: 416px;
+  }
+}
 .holiday-campaign-main-content__yellow-right {
+  margin: 55px 16px 0 0;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
   position: absolute;
-  margin: 45px 0 0 600px;
+  right: 0;
+  left: auto;
   background: #ffeecd;
   height: 497px;
   width: 624px;
 }
+@media only screen and (max-width: 1024px) {
+  .holiday-campaign-main-content__yellow-right {
+    height: 331px;
+    width: 416px;
+  }
+}
+@media only screen and (max-width: tablet) {
+  .holiday-campaign-main-content__yellow-right {
+    height: 331px;
+    width: 416px;
+  }
+}
 .holiday-campaign-main-content__description {
   padding: 1% 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .holiday-campaign-main-content__description .red {
-  color: #af111c;
+  color: #c84025;
 }
 .holiday-campaign-main-content__description .invisible {
   visibility: hidden;
@@ -35741,16 +35844,20 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 .holiday-campaign-main-content__description h5 {
   font-size: 18px;
-  color: #161720;
+  color: #88898f;
+  font-weight: 600;
 }
 .holiday-campaign-main-content__description p {
   color: #403f47;
 }
 .holiday-campaign-main-content__description-left {
   margin-left: 6%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .holiday-campaign-main-content__description-left .red {
-  color: #af111c;
+  color: #c84025;
 }
 .holiday-campaign-main-content__description-left .invisible {
   visibility: hidden;
@@ -35761,7 +35868,8 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 .holiday-campaign-main-content__description-left h5 {
   font-size: 18px;
-  color: #161720;
+  color: #88898f;
+  font-weight: 600;
 }
 .holiday-campaign-main-content__description-left p {
   color: #403f47;
@@ -35769,81 +35877,106 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 
 .mobile-holiday-campaign-main-content {
   display: none;
+  background-color: #ffffff;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 820px) {
   .mobile-holiday-campaign-main-content {
     display: block;
   }
 }
-@media only screen and (max-width: tablet) {
+@media only screen and (max-width: mobile) {
   .mobile-holiday-campaign-main-content {
     display: block;
   }
 }
 .mobile-holiday-campaign-main-content__section {
   display: flex;
+  padding: 0;
+}
+.mobile-holiday-campaign-main-content__section:first-child {
+  padding-top: 24px;
 }
 .mobile-holiday-campaign-main-content__image1 {
-  position: absolute;
   background: url("../images/holiday-campaign-content1.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 348px;
-  height: 400px;
-  right: 0;
+  width: 100%;
+  margin-right: 48px;
+  max-width: 348px;
+  height: 230px;
+  left: 0;
   left: auto;
+  z-index: 1;
 }
 .mobile-holiday-campaign-main-content__image2 {
-  position: absolute;
   background: url("../images/holiday-campaign-content2.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 348px;
-  height: 400px;
-  left: 0;
-  right: auto;
+  width: 100%;
+  margin-left: 48px;
+  max-width: 348px;
+  height: 230px;
+  right: 0;
+  left: auto;
+  z-index: 1;
 }
 .mobile-holiday-campaign-main-content__image3 {
-  position: absolute;
   background: url("../images/holiday-campaign-content3.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 348px;
-  height: 400px;
-  right: 0;
+  width: 100%;
+  margin-right: 48px;
+  max-width: 348px;
+  height: 230px;
+  left: 0;
   left: auto;
+  z-index: 1;
 }
 .mobile-holiday-campaign-main-content__yellow {
   background: #ffeecd;
-  width: 348px;
-  height: 400px;
+  width: 100%;
+  height: 100%;
+  max-width: 312px;
+  max-height: 230px;
   margin-top: 10%;
-}
-.mobile-holiday-campaign-main-content__yellow-right {
-  background: #ffeecd;
-  width: 348px;
-  height: 400px;
-  margin-top: 10%;
+  margin-left: 48px;
   position: absolute;
   right: 0;
   left: auto;
 }
+.mobile-holiday-campaign-main-content__yellow-right {
+  background: #ffeecd;
+  width: 100%;
+  height: 100%;
+  max-width: 312px;
+  max-height: 230px;
+  margin-top: 10%;
+  margin-right: 48px;
+  position: absolute;
+  left: 0;
+  right: auto;
+}
 .mobile-holiday-campaign-main-content__invisible {
-  height: 400px;
+  height: 230px;
   margin-bottom: 10%;
 }
 .mobile-holiday-campaign-main-content__description {
-  padding: 12px;
-  margin-bottom: 62px;
+  padding: 12px 30px;
+  padding-bottom: 48px;
+}
+.mobile-holiday-campaign-main-content__description:first-child {
+  padding-bottom: 48px;
 }
 .mobile-holiday-campaign-main-content__description h5 {
-  color: #161720;
+  color: #88898f;
+  margin-top: 24px;
+  padding-top: 24px;
 }
 .mobile-holiday-campaign-main-content__description .red {
-  color: #af111c;
+  color: #c84025;
 }
 
 .holiday-campaign-promo-banner {

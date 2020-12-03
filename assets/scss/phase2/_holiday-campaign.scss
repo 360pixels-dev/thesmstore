@@ -10,7 +10,8 @@
         color: $white;
         position: relative;
         top: 45%;
-        left: 15%;
+        left: 192px;
+        width: fit-content;
     }
 
     @include respond(tablet) {
@@ -19,11 +20,15 @@
         background-size: contain auto;
 
         & > h1 {
-            top: 35%;
-            left: 10%;
+            // position: absolute;
+            // width: 20px;
+
+            bottom: 26px;
+            left: 28px;
             font-size: 24px;
-            letter-spacing: 4px;
-            line-height: 40px;
+            letter-spacing: 1.6px;
+            line-height: 32px;
+            margin-right: 0 !important;
         }
     }
 }
@@ -33,7 +38,7 @@
 
     &__container {
         width: 100%;
-        padding: 5% 0;
+        padding: 40px 0;
         text-align: center;
         color: $black;
     }
@@ -59,10 +64,10 @@
         .holiday-campaign-video {
             position: absolute;
             height: 531px;
-            visibility: hidden;
+            display: none;
         }
 
-        margin: 5% 7% 1% 7%;
+        margin: 50px 88px 24px 88px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -104,7 +109,8 @@
 
     @include respond(mobile) {
         &__video {
-            height: 215px;
+            // height: 215px;
+            height: 208px;
             margin: 0;
             margin-bottom: 16px;
         }
@@ -114,23 +120,43 @@
 .holiday-campaign-main-content {
     background: $white;
 
-    @include respond(tablet) {
+    @include respond(mobile) {
         display: none;
     }
 
-    &.container {
+    & > .container {
         position: relative;
-        width: 1280px;
+        max-width: 1280px;
         display: flex;
         justify-content: space-between;
-        // padding: 5% 0;
+        padding-bottom: 120px;
+
+        img {
+            @include respond(tablet) {
+                height: 331px;
+                width: 416px;
+            }
+        }
+
+        &:last-child {
+            & > .holiday-campaign-main-content__yellow {
+                margin-top: 55px;
+            }
+
+            padding-bottom: 50px;
+        }
     }
 
     &__image {
-        margin-left: 6%;
+        margin: 56px 0 0 88px;
         height: 497px;
         width: 624px;
         z-index: 4;
+
+        @include respond(tablet) {
+            height: 331px;
+            width: 416px;
+        }
     }
 
     &__container-right {
@@ -144,6 +170,11 @@
             height: 497px;
             width: 624px;
             z-index: 4;
+
+            @include respond(tablet) {
+                height: 331px;
+                width: 416px;
+            }
         }
     }
 
@@ -156,24 +187,41 @@
         background: $faint-yellow;
         height: 497px;
         width: 624px;
+
+        @include respond(tablet) {
+            height: 331px;
+            width: 416px;
+        }
     }
 
     &__yellow-right {
+        margin: 55px 16px 0 0;
         display: flex;
         align-items: flex-end;
         justify-content: flex-end;
         position: absolute;
-        margin: 45px 0 0 600px;
+        right: 0;
+        left: auto;
+        // margin: 45px 0 0 600px;
         background: $faint-yellow;
         height: 497px;
         width: 624px;
+
+        @include respond(tablet) {
+            height: 331px;
+            width: 416px;
+        }
     }
 
     &__description {
         padding: 1% 3%;
 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
         .red {
-            color: $blood-red;
+            color: $san-francisco;
         }
 
         .invisible {
@@ -186,7 +234,8 @@
 
         h5 {
             font-size: 18px;
-            color: $black;
+            color: $gray;
+            font-weight: 600;
         }
 
         p {
@@ -195,9 +244,12 @@
 
         &-left {
             margin-left: 6%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
 
             .red {
-                color: $blood-red;
+                color: $san-francisco;
             }
 
             .invisible {
@@ -211,7 +263,8 @@
 
             h5 {
                 font-size: 18px;
-                color: $black;
+                color: $gray;
+                font-weight: 600;
             }
 
             p {
@@ -223,89 +276,119 @@
 
 .mobile-holiday-campaign-main-content {
     display: none;
+    background-color: #ffffff;
 
-    @include respond(tablet) {
+    @include respond(mobile) {
         display: block;
     }
 
     &__section {
         display: flex;
+        padding: 0;
+
+        &:first-child {
+            padding-top: 24px;
+        }
     }
     &__image1 {
-        position: absolute;
+        // position: absolute;
         background: url("../images/holiday-campaign-content1.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
 
-        width: 348px;
-        height: 400px;
+        width: 100%;
+        margin-right: 48px;
+        max-width: 348px;
+        height: 230px;
 
-        right: 0;
+        left: 0;
         left: auto;
+        z-index: 1;
     }
 
     &__image2 {
-        position: absolute;
+        // position: absolute;
         background: url("../images/holiday-campaign-content2.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
 
-        width: 348px;
-        height: 400px;
+        width: 100%;
+        margin-left: 48px;
+        max-width: 348px;
+        height: 230px;
 
-        left: 0;
-        right: auto;
+        right: 0;
+        left: auto;
+        z-index: 1;
     }
 
     &__image3 {
-        position: absolute;
+        // position: absolute;
         background: url("../images/holiday-campaign-content3.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
 
-        width: 348px;
-        height: 400px;
+        width: 100%;
+        margin-right: 48px;
+        max-width: 348px;
+        height: 230px;
 
-        right: 0;
+        left: 0;
         left: auto;
+        z-index: 1;
     }
 
     &__yellow {
         background: $faint-yellow;
-        width: 348px;
-        height: 400px;
+        width: 100%;
+        height: 100%;
+        max-width: 312px;
+        max-height: 230px;
         margin-top: 10%;
-    }
-
-    &__yellow-right {
-        background: $faint-yellow;
-        width: 348px;
-        height: 400px;
-        margin-top: 10%;
-
+        margin-left: 48px;
         position: absolute;
         right: 0;
         left: auto;
     }
 
+    &__yellow-right {
+        background: $faint-yellow;
+        width: 100%;
+        height: 100%;
+        max-width: 312px;
+        max-height: 230px;
+        margin-top: 10%;
+        margin-right: 48px;
+
+        position: absolute;
+        left: 0;
+        right: auto;
+    }
+
     &__invisible {
-        height: 400px;
+        height: 230px;
         margin-bottom: 10%;
     }
 
     &__description {
-        padding: 12px;
-        margin-bottom: 62px;
+        padding: 12px 30px;
+        padding-bottom: 48px;
+
+        &:first-child {
+            padding-bottom: 48px;
+        }
 
         h5 {
-            color: $black;
+            color: $gray;
+            margin-top: 24px;
+            padding-top: 24px;
         }
 
         .red {
-            color: $blood-red;
+            color: $san-francisco;
         }
     }
 }

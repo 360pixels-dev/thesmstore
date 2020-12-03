@@ -678,6 +678,10 @@
 
         & .menu {
             width: 60%;
+            position: absolute;
+            left: 50%;
+            right: auto;
+            transform: translate(-50%, 0);
 
             @include respond(tablet) {
                 display: none;
