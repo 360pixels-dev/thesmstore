@@ -30,6 +30,10 @@
             left: 50%;
             right: auto;
             transform: translate(-50%, 0);
+
+            @include respond(mobile) {
+                display: none;
+            }
         }
 
         @include respond(tablet) {

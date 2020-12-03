@@ -33754,6 +33754,16 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   right: auto;
   transform: translate(-50%, 0);
 }
+@media only screen and (max-width: 820px) {
+  .gift-section > .container > button {
+    display: none;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .gift-section > .container > button {
+    display: none;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .gift-section > .container {
     max-width: 1024px;
@@ -35217,8 +35227,8 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   }
 }
 .mobile-carousel-gift-section .container {
-  padding-top: 15%;
-  padding-bottom: 15%;
+  padding-top: 35px;
+  padding-bottom: 40px;
   margin: 0;
   background: #fff9f9;
 }
