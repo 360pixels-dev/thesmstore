@@ -1,19 +1,17 @@
 .about {
-
     &-main {
         min-height: 928px;
         width: 1400px;
         margin: 0 auto;
         position: relative;
 
-        @include respond(1290px) {
+        @include respond(1279px) {
             width: 100%;
         }
 
         @include respond(360px) {
             margin: 0;
         }
-
 
         & > div {
             position: relative;
@@ -23,7 +21,7 @@
             display: flex;
             justify-content: space-between;
 
-            @include respond(1290px) {
+            @include respond(1279px) {
                 flex-direction: column;
                 width: min-content;
                 margin: 56px auto;
@@ -36,7 +34,7 @@
                 padding: 0 12px;
             }
         }
-            
+
         &-bg {
             background-color: $lemon;
             height: 741px;
@@ -58,7 +56,7 @@
             position: relative;
             margin-left: 87px;
             width: 624px;
-            
+
             @include respond(mobile) {
                 margin-left: 20px;
                 height: 378px;
@@ -71,7 +69,7 @@
             z-index: 60;
             margin-top: 88px;
 
-            @include respond(1290px) {
+            @include respond(1279px) {
                 width: min-content;
             }
 
@@ -85,7 +83,7 @@
                 color: $pink;
                 white-space: nowrap;
 
-                @include respond(1290px) {
+                @include respond(1279px) {
                     margin-left: 0px;
                 }
 
@@ -96,9 +94,12 @@
                     letter-spacing: 1.6px;
                 }
             }
+
+            & > p {
+                margin-right: 16px;
+            }
         }
     }
-
 
     &-carousel {
         width: 100%;
@@ -232,10 +233,10 @@
             }
         }
     }
-        
+
     &-carousel-lg {
         width: 100%;
-        background-color: #EFF3FD;
+        background-color: #eff3fd;
 
         & > div {
             position: relative;
@@ -263,19 +264,19 @@
 
             & > h2 {
                 color: $dark-gray;
-                
+
                 @include respond(mobile) {
-                    width: 200px
+                    width: 200px;
                 }
             }
         }
 
         &__img {
             margin-bottom: 24px;
-            border: 24px solid #397CEE;
+            border: 24px solid #397cee;
             box-sizing: border-box;
             width: 100%;
-            background-image: url('../../assets/images/press-release.png');
+            background-image: url("../../assets/images/press-release.png");
             background-repeat: no-repeat;
             background-size: cover;
             height: 584px;
@@ -286,8 +287,8 @@
 
             @include respond(tablet) {
                 height: 442px;
-                border: 16px solid #397CEE;
-                background-image: url('../../assets/images/press-release-m.jpg');
+                border: 16px solid #397cee;
+                background-image: url("../../assets/images/press-release-m.jpg");
                 align-items: center;
                 padding: 0;
             }
@@ -332,12 +333,12 @@
             margin: 0 auto;
             display: flex;
             flex-direction: column;
-                
+
             @include respond(tablet) {
                 max-width: 100%;
                 padding: 37px 24px;
             }
-                
+
             @include respond(mobile) {
                 padding: 37px 17px;
             }
@@ -348,7 +349,7 @@
             justify-content: space-between;
             margin-bottom: 32px;
             align-items: center;
-                
+
             @include respond(tablet) {
                 justify-content: center;
                 margin-bottom: 24px;
@@ -377,18 +378,18 @@
                 flex-direction: column;
                 flex-basis: 33.33%;
                 align-items: center;
-                
+
                 @include respond(tablet) {
                     padding: 32px 0;
                 }
 
                 &:not(:nth-of-type(3)) {
-                    border-right: 1px solid #E0E0E0;   
+                    border-right: 1px solid #e0e0e0;
 
                     @include respond(tablet) {
                         border-right: none;
-                        border-bottom: 1px solid #E0E0E0;  
-                    } 
+                        border-bottom: 1px solid #e0e0e0;
+                    }
                 }
 
                 & > h4 {

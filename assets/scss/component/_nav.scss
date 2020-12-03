@@ -329,7 +329,7 @@
         & .menu {
             & > .main-navigation {
                 & > li:first-of-type {
-                    visibility: hidden;
+                    display: none;
                 }
             }
 
@@ -630,9 +630,6 @@
             display: none;
             justify-content: center;
             align-items: center;
-            margin: auto;
-            padding: auto;
-            position: relative;
 
             flex: 0 0 20%;
 
@@ -643,11 +640,11 @@
 
             img {
                 @include respond(tablet) {
-                    padding: auto;
-                    margin: auto auto auto 20%;
-                    width: auto;
                     height: 30px;
-                    position: relative;
+                    position: absolute;
+                    left: 50%;
+                    right: auto;
+                    transform: translate(-50%, 0);
                     // top: 3px;
                 }
             }
@@ -818,7 +815,6 @@
 
         & .mobile-search-button {
             display: none;
-            visibility: hidden;
 
             img {
                 width: 38px;
@@ -830,12 +826,13 @@
             }
 
             @include respond(tablet) {
-                display: flex;
+                // display: flex;
+                display: none;
             }
         }
 
         & .search-container {
-            visibility: hidden;
+            display: none;
 
             @include respond(tablet) {
                 display: none;

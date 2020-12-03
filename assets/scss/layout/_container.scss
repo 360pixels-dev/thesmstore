@@ -196,6 +196,10 @@
         min-height: fit-content;
         height: fit-content;
 
+        &:last-child {
+            margin-bottom: 80px;
+        }
+
         @include respond(tablet) {
             margin: 0px auto 40px auto;
             padding: 21px 21px 41px 21px;
@@ -258,7 +262,7 @@
         }
 
         &:last-child {
-            margin: -120px auto 0 auto;
+            margin: -120px auto 80px auto;
             padding: 45px 100px !important;
         }
 

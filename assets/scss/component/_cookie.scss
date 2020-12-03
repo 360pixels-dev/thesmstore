@@ -5,17 +5,19 @@
         // display: none;
         flex-direction: column;
         justify-content: space-between;
-        bottom: 53px;
+        bottom: 0;
         right: 0;
         height: 240px;
         width: 460px;
         background-color: rgba(0, 0, 0, 0.8);
         padding: 20px 24px;
+        margin: 12px;
         z-index: 999;
 
         @include respond(mobile) {
             width: 100%;
             padding: 16px 12px;
+            margin: 0;
 
             bottom: 0;
         }
@@ -44,6 +46,14 @@
             &:nth-child(2) {
                 background-color: $white;
                 color: $black;
+            }
+
+            &:first-child:after {
+                color: $white;
+            }
+
+            &:first-child:hover:after {
+                color: $coral;
             }
         }
     }

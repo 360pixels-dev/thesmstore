@@ -118,18 +118,19 @@
         display: none;
     }
 
-    &__container {
-        width: 100%;
+    &.container {
+        position: relative;
+        width: 1280px;
         display: flex;
-        justify-content: space-around;
-        padding: 5% 0;
+        justify-content: space-between;
+        // padding: 5% 0;
+    }
 
-        img {
-            margin-left: 6%;
-            height: 497px;
-            width: 624px;
-            z-index: 4;
-        }
+    &__image {
+        margin-left: 6%;
+        height: 497px;
+        width: 624px;
+        z-index: 4;
     }
 
     &__container-right {
