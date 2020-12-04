@@ -424,6 +424,11 @@
                         </p>
                     </div>
 
+                    <div class="delivery__steps-buttons">
+                        <a href="#" class="btn--primary-black-border font-cta">Call Now</a>
+                        <a href="#" class="btn--primary-black-border font-cta">Order on Viber</a>
+                    </div>
+
                     <div class="delivery__steps-content">
                         <div>
                             <div class="step-header">
@@ -448,10 +453,7 @@
                         </div>
                     </div>
 
-                    <div class="delivery__steps-buttons">
-                        <a href="#" class="btn--primary-black-border font-cta">Call Now</a>
-                        <a href="#" class="btn--primary-black-border font-cta">Order on Viber</a>
-                    </div>
+                    
                 </div>
             </div>
             </section>
@@ -465,23 +467,24 @@
                         <div class="row-1">
                             <div>
                                 <label class="font-caption-bold" for="full-name">Full Name <span style="color: #f86a6a;">*</span></label><br>
-                                <input type="text" id="full-name" name="full-name">
+                                <input type="text" id="full-name" name="full-name" placeholder="Input full name">
                                 
                             </div>
                             <div>
                                 <label class="font-caption-bold" for="mobile-number">Mobile Number <span style="color: #f86a6a;">*</span></label><br>
-                                <input type="text" id="mobile-number" name="mobile-number">
+                                <input type="text" id="mobile-number" name="mobile-number" placeholder="+63 -">
                             </div>
                         </div>
                         
                         <div class="row-2">
                             <div>
                                 <label class="font-caption-bold" for="email">Email Address <span style="color: #f86a6a;">*</span></label><br>
-                                <input type="email" id="email" name="email">
+                                <input type="email" id="email" name="email" placeholder="you@mail.com">
                             </div>
                             <div>
                                 <label class="font-caption-bold" for="preferred-branch">Preferred Branch <span style="color: #f86a6a;">*</span></label><br>
-                                <select name="preferred-branch" id="preferred-branch">
+                                <select onload="change()" onchange="change()" id="branch" name="preferred-branch" id="preferred-branch">
+                                    <option value="none" disabled selected hidden>Select branch</option>
                                     <option value="sm-makati">The SM Store Makati</option>
                                     <option value="sm-cubao">The SM Store Cubao</option>
                                     <option value="sm-grand-central">The SM Store Grand Central</option>
@@ -490,29 +493,25 @@
                         </div>
                         
                         <label class="font-caption-bold" for="inquiry">Inquiry / Items To Order <span style="color: #f86a6a;">*</span></label>
-                        <textarea name="inquiry" id="inquiry" cols="30" rows="4"></textarea>
+                        <textarea name="inquiry" id="inquiry" cols="30" rows="4" placeholder="Maximum 500 characters"></textarea>
                         
                         <p class="font-caption-bold">Preferred Mode Of Contact <span style="color: #f86a6a;">*</span></p>
-                        <div class="radio-btns">
-                            <div class="radio-option">
-                                <label for="call">
-                                    <input type="radio" name="call">Call
-                                    <span class="custom-radio"></span>
+                            <div class="radio-btns">
+                                <label class="radio" for="moc">Call
+                                    <input type="radio" name="moc">
+                                    <span class="circle"></span>
+                                    
+                                </label>
+                                <label class="radio" for="moc">Phone
+                                    <input type="radio" name="moc">
+                                    <span class="circle"></span>
+                                    
+                                </label>
+                                <label class="radio" for="moc">Viber
+                                    <input type="radio" name="moc">
+                                    <span class="circle"></span>
                                 </label>
                             </div>
-                            <div class="radio-option">
-                                <label for="phone">
-                                    <input type="radio" name="phone">Phone
-                                    <span class="custom-radio"></span>
-                                </label>
-                            </div>
-                            <div class="radio-option">
-                                <label for="viber">
-                                    <input type="radio" name="viber">Viber
-                                    <span class="custom-radio"></span>
-                                </label>
-                            </div>
-                        </div>
                         <p class="font-caption-italic">The SM Store requests for your personal data to address your inquiry and complete your purchase. You may also receive corporate communications about our services.</p>
                         <button type="submit" class="btn--primary-black-border font-cta">Submit</button>
                     </form>
@@ -862,4 +861,37 @@
     <script src="assets/js/footeraccordion.js"></script>
     <script src="assets/js/mobiledropdown.js"></script>
     <script src="assets/js/storeselector.js"></script>
+
+    <script>
+        
+        function change() {
+            const branch = document.getElementById('branch')
+            const options = document.getElementsByTagName('option')
+
+            if (branch.value === 'none') {
+                branch.style.fontStyle = "italic"
+                branch.style.fontSize = 16
+                branch.style.lineHeight = 24
+                branch.style.fontWeight = 400
+                branch.style.color = "#88898f"
+
+                for (let i = 0; i < options.length; i++) {
+                    options[i].style.fontStyle = "normal"
+                    options[i].style.fontSize = 16
+                    options[i].style.lineHeight = 24
+                    options[i].style.fontWeight = 600
+                    options[i].style.color = "#403f47"
+                }
+            } else {
+                branch.style.fontStyle = "normal"
+                branch.style.fontSize = 16
+                branch.style.lineHeight = 24
+                branch.style.fontWeight = 600
+                branch.style.color = "#403f47"
+            }
+        }
+
+        change()
+        
+    </script>
 </html>

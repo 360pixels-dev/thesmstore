@@ -24,11 +24,15 @@
             height: 290px;
             content: "";
             background-color: #aed6e3;
-            background-image: url("../images/dots.svg");
+            background-image: url("../images/dots-l.svg");
             background-size: cover;
             background-position: center top;
             // background-image: radial-gradient($gray 2px, #aed6e3 2px);
             // background-size: 49px 49px;
+
+            @include respond(1440px) {
+                background-image: url("../images/dots.svg");
+            }
 
             @include respond(mobile) {
                 background-image: url("../images/dots-m.svg");
@@ -53,7 +57,7 @@
 
             @include respond(mobile) {
                 padding: 24px 12px 0 12px;
-                margin: 40px 0 15px 0;
+                margin: 40px 0 0 0;
             }
         }
 
@@ -323,9 +327,24 @@
     &__order-form {
         margin-bottom: 80px;
 
+        @include respond(mobile) {
+            margin-bottom: 46px;
+        }
+
         & > .container {
             max-width: 1400px;
             width: 70%;
+
+            @include respond(mobile) {
+                width: 100%;
+
+                & > h2 {
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 30px;
+                    margin-top: 28px;
+                }
+            }
 
             & > p {
                 &:first-child {
@@ -334,6 +353,10 @@
 
                 &:last-child {
                     width: 50%;
+
+                    @include respond(mobile) {
+                        width: 100%;
+                    }
                 }
             }
 
@@ -355,16 +378,34 @@
                     line-height: 24px;
                 }
 
+                @include respond(mobile) {
+                    &input:first-child {
+                        margin-bottom: 24px;
+                    }
+                }
+
                 textarea {
                     margin-bottom: 24px;
                     padding: 11px;
                     height: 100%;
                     width: 100%;
+
+                    &::placeholder {
+                        font-style: italic;
+                        font-size: 16px;
+                        line-height: 24px;
+                        font-weight: 400;
+                        color: $gray;
+                    }
                 }
 
                 p {
                     text-transform: none;
                     width: 50%;
+
+                    @include respond(mobile) {
+                        width: 100%;
+                    }
                 }
 
                 button {
@@ -376,10 +417,18 @@
                     flex-wrap: wrap;
                     justify-content: space-between;
                     margin-bottom: 24px;
+
+                    @include respond(mobile) {
+                        margin-bottom: 0;
+                    }
                     // justify-content: space-between;
 
                     & > div {
                         width: calc(50% - 20px);
+
+                        @include respond(mobile) {
+                            width: 100%;
+                        }
 
                         & > input {
                             width: 100%;
@@ -387,6 +436,18 @@
 
                             border: 1px solid #88898f;
                             box-sizing: border-box;
+
+                            @include respond(mobile) {
+                                margin-bottom: 24px;
+                            }
+
+                            &::placeholder {
+                                font-style: italic;
+                                font-size: 16px;
+                                line-height: 24px;
+                                font-weight: 400;
+                                color: $gray;
+                            }
                         }
                     }
                 }
@@ -396,10 +457,18 @@
                     flex-wrap: wrap;
                     justify-content: space-between;
                     margin-bottom: 24px;
+
+                    @include respond(mobile) {
+                        margin-bottom: 0;
+                    }
                     // justify-content: space-between;
 
                     & > div {
                         width: calc(50% - 20px);
+
+                        @include respond(mobile) {
+                            width: 100%;
+                        }
 
                         & > input,
                         select {
@@ -408,10 +477,25 @@
 
                             border: 1px solid #88898f;
                             box-sizing: border-box;
+
+                            @include respond(mobile) {
+                                margin-bottom: 24px;
+                            }
+
+                            &::placeholder {
+                                font-style: italic;
+                                font-size: 16px;
+                                line-height: 24px;
+                                font-weight: 400;
+                                color: $gray;
+                            }
                         }
 
                         & > select {
                             padding-left: 16px;
+                            &:after {
+                                padding-right: 16px;
+                            }
                         }
                     }
                 }
@@ -419,31 +503,9 @@
                 & > .radio-btns {
                     margin: 18px 0 35px 0;
 
-                    & > .radio-option {
-                        display: inline-block;
-
-                        & > label {
-                            font-size: 14px;
-                            line-height: 22px;
-                            display: flex;
-                            align-items: center;
-
-                            & > input[type="radio"] {
-                                margin: 0;
-                                border: 1px solid #88898f;
-                                height: 21px;
-                                width: 21px;
-                                margin-right: 18px;
-                            }
-                        }
-
-                        &:not(:last-child) {
-                            margin-right: 58px;
-                        }
-                    }
-
-                    & > .radio-option + .radio-option {
-                        margin-left: 20px;
+                    @include respond(mobile) {
+                        display: flex;
+                        justify-content: center;
                     }
                 }
             }
