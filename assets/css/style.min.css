@@ -19631,9 +19631,14 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   height: 290px;
   content: "";
   background-color: #afd6e5;
-  background-image: url("../images/dots.svg");
+  background-image: url("../images/dots-l.svg");
   background-size: cover;
   background-position: center top;
+}
+@media only screen and (max-width: 1440px) {
+  .gift-header--registry:before {
+    background-image: url("../images/dots.svg");
+  }
 }
 @media only screen and (max-width: 820px) {
   .gift-header--registry:before {
@@ -19665,9 +19670,14 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   height: 290px;
   content: "";
   background-color: #baeedc;
-  background-image: url("../images/dots.svg");
+  background-image: url("../images/dots-l.svg");
   background-size: cover;
   background-position: center top;
+}
+@media only screen and (max-width: 1440px) {
+  .gift-header--card:before {
+    background-image: url("../images/dots.svg");
+  }
 }
 @media only screen and (max-width: 820px) {
   .gift-header--card:before {
@@ -19696,9 +19706,14 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   height: 290px;
   content: "";
   background-color: #ffcd4e;
-  background-image: url("../images/dots.svg");
+  background-image: url("../images/dots-l.svg");
   background-size: cover;
   background-position: center top;
+}
+@media only screen and (max-width: 1440px) {
+  .gift-header--wrapping:before {
+    background-image: url("../images/dots.svg");
+  }
 }
 @media only screen and (max-width: 820px) {
   .gift-header--wrapping:before {
@@ -24616,9 +24631,14 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   height: 290px;
   content: "";
   background-color: #e7eaf4;
-  background-image: url("../images/dots.svg");
+  background-image: url("../images/dots-l.svg");
   background-size: cover;
   background-position: center top;
+}
+@media only screen and (max-width: 1440px) {
+  .billpay__header:before {
+    background-image: url("../images/dots.svg");
+  }
 }
 @media only screen and (max-width: 820px) {
   .billpay__header:before {
