@@ -12,11 +12,15 @@
             height: 290px;
             content: "";
             background-color: $silver;
-            background-image: url("../images/dots.svg");
+            background-image: url("../images/dots-l.svg");
             background-size: cover;
             background-position: center top;
             // background-image: radial-gradient($gray 2px, #aed6e3 2px);
             // background-size: 49px 49px;
+
+            @include respond(1440px) {
+                background-image: url("../images/dots.svg");
+            }
 
             @include respond(mobile) {
                 background-image: url("../images/dots-m.svg");
