@@ -30,11 +30,16 @@
             &:before {
                 @include headerBG;
                 background-color: #afd6e5;
-                background-image: radial-gradient(
-                    rgba(0, 0, 0, 0.4) 2px,
-                    #afd6e5 2px
-                );
-                background-size: 46px 46px;
+                background-image: url("../images/dots.svg");
+                background-size: cover;
+                background-position: center top;
+                // background-image: radial-gradient($gray 2px, #aed6e3 2px);
+                // background-size: 49px 49px;
+
+                @include respond(mobile) {
+                    background-image: url("../images/dots-m.svg");
+                    height: 271px;
+                }
             }
 
             & > div {
@@ -57,11 +62,16 @@
             &:before {
                 @include headerBG;
                 background-color: $seafoam;
-                background-image: radial-gradient(
-                    rgba(0, 0, 0, 0.4) 2px,
-                    $seafoam 2px
-                );
-                background-size: 49px 49px;
+                background-image: url("../images/dots.svg");
+                background-size: cover;
+                background-position: center top;
+                // background-image: radial-gradient($gray 2px, #aed6e3 2px);
+                // background-size: 49px 49px;
+
+                @include respond(mobile) {
+                    background-image: url("../images/dots-m.svg");
+                    height: 271px;
+                }
             }
 
             & > div {
@@ -79,11 +89,16 @@
             &:before {
                 @include headerBG;
                 background-color: $bee;
-                background-image: radial-gradient(
-                    rgba(0, 0, 0, 0.4) 2px,
-                    $bee 2px
-                );
-                background-size: 49px 49px;
+                background-image: url("../images/dots.svg");
+                background-size: cover;
+                background-position: center top;
+                // background-image: radial-gradient($gray 2px, #aed6e3 2px);
+                // background-size: 49px 49px;
+
+                @include respond(mobile) {
+                    background-image: url("../images/dots-m.svg");
+                    height: 271px;
+                }
             }
 
             & > div {

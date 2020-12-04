@@ -24,10 +24,14 @@
             height: 290px;
             content: "";
             background-color: #aed6e3;
-            background-image: radial-gradient($gray 2px, #aed6e3 2px);
-            background-size: 49px 49px;
+            background-image: url("../images/dots.svg");
+            background-size: cover;
+            background-position: center top;
+            // background-image: radial-gradient($gray 2px, #aed6e3 2px);
+            // background-size: 49px 49px;
 
-            @include respond(tablet) {
+            @include respond(mobile) {
+                background-image: url("../images/dots-m.svg");
                 height: 271px;
             }
         }
@@ -312,6 +316,136 @@
             & > a {
                 margin: 0 auto;
                 width: 205px;
+            }
+        }
+    }
+
+    &__order-form {
+        margin-bottom: 80px;
+
+        & > .container {
+            max-width: 1400px;
+            width: 70%;
+
+            & > p {
+                &:first-child {
+                    color: $dark-gray;
+                }
+
+                &:last-child {
+                    width: 50%;
+                }
+            }
+
+            label {
+                text-transform: none;
+            }
+
+            & > form {
+                margin-top: 26px;
+
+                input,
+                select,
+                textarea {
+                    margin-top: 6px;
+                    height: 40px;
+                    color: $dark-gray;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+
+                textarea {
+                    margin-bottom: 24px;
+                    padding: 11px;
+                    height: 100%;
+                    width: 100%;
+                }
+
+                p {
+                    text-transform: none;
+                    width: 50%;
+                }
+
+                button {
+                    margin-top: 24px;
+                }
+
+                & > .row-1 {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    margin-bottom: 24px;
+                    // justify-content: space-between;
+
+                    & > div {
+                        width: calc(50% - 20px);
+
+                        & > input {
+                            width: 100%;
+                            background: #ffffff;
+
+                            border: 1px solid #88898f;
+                            box-sizing: border-box;
+                        }
+                    }
+                }
+
+                & > .row-2 {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    margin-bottom: 24px;
+                    // justify-content: space-between;
+
+                    & > div {
+                        width: calc(50% - 20px);
+
+                        & > input,
+                        select {
+                            width: 100%;
+                            background: #ffffff;
+
+                            border: 1px solid #88898f;
+                            box-sizing: border-box;
+                        }
+
+                        & > select {
+                            padding-left: 16px;
+                        }
+                    }
+                }
+
+                & > .radio-btns {
+                    margin: 18px 0 35px 0;
+
+                    & > .radio-option {
+                        display: inline-block;
+
+                        & > label {
+                            font-size: 14px;
+                            line-height: 22px;
+                            display: flex;
+                            align-items: center;
+
+                            & > input[type="radio"] {
+                                margin: 0;
+                                border: 1px solid #88898f;
+                                height: 21px;
+                                width: 21px;
+                                margin-right: 18px;
+                            }
+                        }
+
+                        &:not(:last-child) {
+                            margin-right: 58px;
+                        }
+                    }
+
+                    & > .radio-option + .radio-option {
+                        margin-left: 20px;
+                    }
+                }
             }
         }
     }

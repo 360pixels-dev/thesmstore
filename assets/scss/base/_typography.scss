@@ -326,7 +326,7 @@ p {
     }
 
     &-caption-bold {
-        font-family: $font-base;
+        font-family: $font-base, "Open Sans", Helvetica, Arial, sans-serif;
         font-size: 14px;
         line-height: 22px;
         font-weight: bold;

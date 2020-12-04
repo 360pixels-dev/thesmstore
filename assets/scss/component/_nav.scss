@@ -355,10 +355,11 @@
             ul li a {
                 display: block;
                 padding: 1em 2em;
-                padding-left: 0;
+                padding-right: 0;
                 text-decoration: none;
                 white-space: nowrap;
                 color: #fff;
+                text-align: center;
             }
 
             /* Display the dropdown */
