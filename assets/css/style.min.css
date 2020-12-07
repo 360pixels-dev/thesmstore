@@ -3046,13 +3046,11 @@ ul {
 }
 @media only screen and (max-width: 820px) {
   .banner {
-    margin-top: 56px !important;
     height: 500px;
   }
 }
 @media only screen and (max-width: mobile) {
   .banner {
-    margin-top: 56px !important;
     height: 500px;
   }
 }
@@ -3165,7 +3163,8 @@ ul {
 @media only screen and (max-width: 360px) {
   .banner__featured {
     position: absolute;
-    height: 100%;
+    top: 56px;
+    height: 444px;
   }
 }
 .banner__featured:nth-of-type(1) {
@@ -3174,7 +3173,7 @@ ul {
 @media only screen and (max-width: 360px) {
   .banner__featured:nth-of-type(1) {
     background-image: url("../images/new-banner1-m.png");
-    height: 500px;
+    height: 444px;
     width: 260px;
   }
 }

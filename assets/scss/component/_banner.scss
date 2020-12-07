@@ -5,7 +5,7 @@
     height: 93vh;
 
     @include respond(mobile) {
-        margin-top: 56px !important;
+        // margin-top: 56px !important;
         height: 500px;
     }
 
@@ -103,8 +103,8 @@
             // right: -28px;
             //height: 378px;
             position: absolute;
-            // top: 56px;
-            height: 100%;
+            top: 56px;
+            height: 444px;
         }
     }
 
@@ -113,7 +113,7 @@
 
         @include respond(360px) {
             background-image: url("../images/new-banner1-m.png");
-            height: 500px;
+            height: 444px;
             width: 260px;
         }
     }
