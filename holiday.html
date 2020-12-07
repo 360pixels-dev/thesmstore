@@ -398,7 +398,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </div>
 
-                <div class="campaign-video__video">
+                <div class="campaign-video__video" onclick="showCampaignVideoModal()">
                     <img class="holiday-campaign-video" src="./assets/images/holiday-campaign-vid.png" alt="">
                     <img class="play-button" src="./assets/images/play-video.svg" alt="" style="opacity: 0.6;">
                 </div>
@@ -407,6 +407,18 @@
             </div>
         </section>
         <!-- /CAMPAIGN VIDEO -->
+
+        <!-- CAMPAIGN VIDEO MODAL -->
+        <div id="campaign-video-modal" class="campaign-video__modal">
+            <div>
+                <img class="holiday-campaign-video" src="./assets/images/holiday-campaign-vid.png" alt="">
+            </div>
+        </div>
+
+        <div id="campaign-video-overlay" class="campaign-video__overlay w3-overlay" onclick="closeCampaignVideoModal()">
+            <button class="modal-close" onclick="closeCampaignVideoModal()"><img src="./assets/images/icons/close.svg" alt=""></button>
+        </div>
+        <!-- /CAMPAIGN VIDEO MODAL -->
 
         <!-- MAIN CONTENT -->
         <section class="holiday-campaign-main-content container-fluid">

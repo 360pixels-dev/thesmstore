@@ -512,4 +512,22 @@ $(document).ready(function () {
         </div>`
         );
     }
+
+    
 });
+
+function showCampaignVideoModal() {
+    const modal = document.getElementById('campaign-video-modal')
+    const overlay = document.getElementById('campaign-video-overlay')
+
+    modal.style.display = 'block'
+    overlay.style.display = 'block'
+}
+
+function closeCampaignVideoModal() {
+    const modal = document.getElementById('campaign-video-modal')
+    const overlay = document.getElementById('campaign-video-overlay')
+
+    modal.style.display = 'none'
+    overlay.style.display = 'none'
+}
