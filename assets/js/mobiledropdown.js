@@ -94,17 +94,17 @@ function showHideSubMenu(ele) {
             for (let i = 0; i < menus.length; i++) {
                 menus[i].style.display = 'none'
             }
-            menuList.style.display = 'none'
+            // menuList.style.display = 'none'
             categoriesList.style.display = 'block'
             break;
     
         case 'mobile-menu-services-list':
-            menuList.style.display = 'none'
+            // menuList.style.display = 'none'
             servicesList.style.display = 'block'
             break;
     
         case 'mobile-menu-whatsnew-list':
-            menuList.style.display = 'none'
+            // menuList.style.display = 'none'
             whatsnewPromos.style.display = 'none'
             whatsnewList.style.display = 'block'
             break;
@@ -113,7 +113,7 @@ function showHideSubMenu(ele) {
             for (let i = 0; i < menus.length; i++) {
                 menus[i].style.display = 'none'
             }
-            menuList.style.display = 'none'
+            // menuList.style.display = 'none'
             categoriesFashion.style.display = 'block'
             break;
     
@@ -121,7 +121,7 @@ function showHideSubMenu(ele) {
             for (let i = 0; i < menus.length; i++) {
                 menus[i].style.display = 'none'
             }
-            menuList.style.display = 'none'
+            // menuList.style.display = 'none'
             categoriesHome.style.display = 'block'
             break;
     
@@ -129,7 +129,7 @@ function showHideSubMenu(ele) {
             for (let i = 0; i < menus.length; i++) {
                 menus[i].style.display = 'none'
             }
-            menuList.style.display = 'none'
+            // menuList.style.display = 'none'
             categoriesBnk.style.display = 'block'
             break;
     
@@ -137,7 +137,7 @@ function showHideSubMenu(ele) {
             for (let i = 0; i < menus.length; i++) {
                 menus[i].style.display = 'none'
             }
-            menuList.style.display = 'none'
+            // menuList.style.display = 'none'
             categoriesBeauty.style.display = 'block'
             break;
     
@@ -145,13 +145,13 @@ function showHideSubMenu(ele) {
             for (let i = 0; i < menus.length; i++) {
                 menus[i].style.display = 'none'
             }
-            menuList.style.display = 'none'
+            // menuList.style.display = 'none'
             categoriesOthers.style.display = 'block'
             break;
     
         case 'mobile-menu-whatsnew-promos':
-            menuList.style.display = 'none'
-            whatsnewList.style.display = 'none'
+            // menuList.style.display = 'none'
+            // whatsnewList.style.display = 'none'
             whatsnewPromos.style.display = 'block'
             break;
     
