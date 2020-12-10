@@ -1649,6 +1649,7 @@ ul {
   padding: 18px 0 18px 25px;
   border-bottom: 1px solid #ececec;
   margin: 0 9px;
+  text-align: left;
 }
 .nav__upper .menu .categories .add-arrow:after,
 .nav__upper .menu .services .add-arrow:after,
