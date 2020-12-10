@@ -197,7 +197,7 @@
         &__video {
             position: relative;
             height: 456px;
-            flex: 0 0 65%;
+            flex: 0 0 60%;
 
             @include respond(1280px) {
                 position: absolute;
@@ -228,11 +228,16 @@
             &-file {
                 position: absolute;
                 z-index: 50;
-                height: 100%;
-                width: auto;
+                height: 456px;
+                width: 808px;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
+
+                @include respond(1280px) {
+                    height: 456px;
+                    width: 740px;
+                }
 
                 @include respond(tablet) {
                     height: 100%;

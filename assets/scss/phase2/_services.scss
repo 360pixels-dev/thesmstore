@@ -1,16 +1,23 @@
 .services-header-banner {
     height: 355px;
     margin-top: 88px;
-    background-image: url("../images/services-header-banner.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    width: 100%;
+    // background-image: url("../images/services-header-banner.png");
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: center;
 
     & > h1 {
         color: $white;
         position: relative;
         top: 60%;
         left: 15%;
+    }
+
+    & > img {
+        width: auto;
+        height: 100%;
+        position: absolute;
     }
 
     @include respond(tablet) {
