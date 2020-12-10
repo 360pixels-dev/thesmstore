@@ -411,7 +411,7 @@
         // @include bgcover;
 
         & .cookie-hide {
-            @include respond(tablet) {
+            @include respond(mobile) {
                 display: none !important;
             }
         }

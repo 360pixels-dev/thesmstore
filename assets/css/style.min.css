@@ -3612,12 +3612,12 @@ ul {
   background-size: cover;
   flex-direction: column;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 820px) {
   .banner-inner--privacy-policy .cookie-hide {
     display: none !important;
   }
 }
-@media only screen and (max-width: tablet) {
+@media only screen and (max-width: mobile) {
   .banner-inner--privacy-policy .cookie-hide {
     display: none !important;
   }
@@ -35307,6 +35307,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 .services-header-banner > img {
   width: auto;
+  object-fit: fill;
   height: 100%;
   position: absolute;
 }
