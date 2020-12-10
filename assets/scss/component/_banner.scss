@@ -421,6 +421,11 @@
         }
 
         @include respond(mobile) {
+            background: url("../../assets/images/banner-privacy-m.png")
+                no-repeat;
+            background-size: cover;
+            background-position: top right;
+
             height: 200px;
         }
 
