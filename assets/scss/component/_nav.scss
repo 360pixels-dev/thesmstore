@@ -373,7 +373,7 @@
             .whatsnew {
                 margin-top: 16px;
                 width: 308px;
-                // left: 40%;
+                left: 2em;
                 // right: auto;
                 // transform: translate(-40%, 0);
                 background: #fff;
@@ -394,11 +394,15 @@
                 & .add-arrow:after {
                     content: url("../images/gray-arrow-right.svg");
                     float: right;
+                    padding: auto;
+                    margin: auto;
                 }
 
                 & .add-arrow:hover:after {
                     content: url("../images/black-arrow-right.svg");
                     float: right;
+                    padding: auto;
+                    margin: auto;
                 }
 
                 li:hover ul {

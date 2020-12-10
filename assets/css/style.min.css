@@ -1634,6 +1634,7 @@ ul {
 .nav__upper .menu .whatsnew {
   margin-top: 16px;
   width: 308px;
+  left: 2em;
   background: #fff;
 }
 .nav__upper .menu .categories ul,
@@ -1656,12 +1657,16 @@ ul {
 .nav__upper .menu .whatsnew .add-arrow:after {
   content: url("../images/gray-arrow-right.svg");
   float: right;
+  padding: auto;
+  margin: auto;
 }
 .nav__upper .menu .categories .add-arrow:hover:after,
 .nav__upper .menu .services .add-arrow:hover:after,
 .nav__upper .menu .whatsnew .add-arrow:hover:after {
   content: url("../images/black-arrow-right.svg");
   float: right;
+  padding: auto;
+  margin: auto;
 }
 .nav__upper .menu .categories li:hover ul,
 .nav__upper .menu .services li:hover ul,
