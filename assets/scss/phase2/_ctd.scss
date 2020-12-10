@@ -530,6 +530,16 @@
         width: 372px;
         height: 50px;
 
+        @include respond(mobile) {
+            top: 56px;
+            margin-top: 40px;
+            width: 327px;
+        }
+
+        @include respond(320px) {
+            width: 297px;
+        }
+
         // display: flex;
         justify-content: center;
         align-items: center;

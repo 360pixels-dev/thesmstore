@@ -37716,6 +37716,25 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   animation-duration: 0.3s;
   animation-timing-function: ease-in-out;
 }
+@media only screen and (max-width: 820px) {
+  .ctd__toast {
+    top: 56px;
+    margin-top: 40px;
+    width: 327px;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .ctd__toast {
+    top: 56px;
+    margin-top: 40px;
+    width: 327px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .ctd__toast {
+    width: 297px;
+  }
+}
 .ctd__toast > p {
   color: #ffffff;
   text-align: center;
