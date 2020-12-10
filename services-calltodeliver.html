@@ -462,7 +462,8 @@
             </div>
             </section>
 
-            <section class="ctd__order-form">
+            <!-- ORDER FORM -->
+            <section class="ctd__order-form" onclick="toastIn()">
                 <div class="container">
                     <h2 class="font-h2">Ready to Order?</h2>
                     <p>You can also fill out this form and we'll connect you to your preferred The SM Store branch.</p>
@@ -517,10 +518,17 @@
                                 </label>
                             </div>
                         <p class="font-caption-italic">The SM Store requests for your personal data to address your inquiry and complete your purchase. You may also receive corporate communications about our services.</p>
-                        <button type="submit" class="btn--primary-black-border font-cta">Submit</button>
+                        <button id="submitBtn" class="btn--primary-black-border font-cta" onclick="toastIn()">Submit</button>
                     </form>
                 </div>
             </section>
+            <!-- /ORDER FORM -->
+
+            <!-- TOAST -->
+            <div class="ctd__toast">
+                <p class="font-fineprint"><img src="./assets/images/icons/white-circle-check.svg" /> Your message has been sent!</p>
+            </div>
+            <!-- /TOAST -->
 
             <!-- VIDEO -->
             <section class="featured-video">
@@ -867,6 +875,10 @@
     <script src="assets/js/storeselector.js"></script>
 
     <script>
+
+        $(document).ready(function() {
+
+        })
         
         function change() {
             const branch = document.getElementById('branch')
@@ -896,6 +908,20 @@
         }
 
         change()
+
+        function toastIn() {
+            const toast = document.getElementsByClassName('ctd__toast')
+            const button = document.getElementById('submitBtn')
+
+
+            toast[0].style.display = 'flex'
+
+            button.innerHTML = 'Sent'
+            button.style.background = '#0067B3'
+            button.style.color = '#fff'
+            
+            console.log(button)
+        }
         
     </script>
 </html>

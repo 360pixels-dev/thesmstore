@@ -37696,6 +37696,57 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
     justify-content: center;
   }
 }
+.ctd__toast {
+  position: fixed;
+  margin-top: 20px;
+  left: 50%;
+  right: auto;
+  transform: translate(-50%, 0);
+  top: 88px;
+  z-index: 1000;
+  background: #55c9a5;
+  opacity: 0.95;
+  border-radius: 4px;
+  width: 372px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  animation-name: toastIn;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in-out;
+}
+.ctd__toast > p {
+  color: #ffffff;
+  text-align: center;
+}
+.ctd__toast > p > img {
+  margin-right: 10px;
+}
+.ctd__toast.shown {
+  animation-name: toastIn;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in-out;
+}
+@keyframes toastIn {
+  from {
+    opacity: 0;
+    left: 50%;
+    right: auto;
+    transform: translate(-50%, 0);
+    top: 0px;
+    transition: 0.3s ease-in-out 0s;
+  }
+  to {
+    display: flex !important;
+    opacity: 0.95;
+    left: 50%;
+    right: auto;
+    transform: translate(-50%, 0);
+    top: 88px;
+    transition: 0.3s ease-in-out 0s;
+  }
+}
 .ctd-accordion {
   width: 70%;
   max-width: 1400px;

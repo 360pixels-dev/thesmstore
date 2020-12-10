@@ -410,6 +410,7 @@
 
                 button {
                     margin-top: 24px;
+                    // top: 40px;
                 }
 
                 & > .row-1 {
@@ -509,6 +510,70 @@
                     }
                 }
             }
+        }
+    }
+
+    &__toast {
+        position: fixed;
+
+        margin-top: 20px;
+        left: 50%;
+        right: auto;
+        transform: translate(-50%, 0);
+        top: 88px;
+        z-index: 1000;
+
+        background: $freshmint;
+        opacity: 0.95;
+        border-radius: 4px;
+
+        width: 372px;
+        height: 50px;
+
+        // display: flex;
+        justify-content: center;
+        align-items: center;
+
+        display: none;
+
+        animation-name: toastIn;
+        animation-duration: 0.3s;
+        animation-timing-function: ease-in-out;
+
+        & > p {
+            color: $white;
+            text-align: center;
+
+            & > img {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    &__toast.shown {
+        animation-name: toastIn;
+        animation-duration: 0.3s;
+        animation-timing-function: ease-in-out;
+    }
+
+    @keyframes toastIn {
+        from {
+            opacity: 0;
+            left: 50%;
+            right: auto;
+            transform: translate(-50%, 0);
+            top: 0px;
+            transition: 0.3s ease-in-out 0s;
+        }
+
+        to {
+            display: flex !important;
+            opacity: 0.95;
+            left: 50%;
+            right: auto;
+            transform: translate(-50%, 0);
+            top: 88px;
+            transition: 0.3s ease-in-out 0s;
         }
     }
 
