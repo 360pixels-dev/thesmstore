@@ -14617,7 +14617,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 .featured-video__content {
   position: relative;
-  display: flex;
+  display: none;
   z-index: 50;
   padding-top: 48px;
   padding-bottom: 48px;
@@ -14640,6 +14640,9 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
     padding-top: 24px;
     padding-bottom: 24px;
   }
+}
+.featured-video__content.active {
+  display: flex;
 }
 .featured-video__video {
   position: relative;

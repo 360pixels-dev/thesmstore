@@ -177,7 +177,8 @@
 
         &__content {
             position: relative;
-            display: flex;
+            // display: flex;
+            display: none;
             z-index: 50;
             padding-top: 48px;
             padding-bottom: 48px;
@@ -191,6 +192,10 @@
             @include respond(tablet) {
                 padding-top: 24px;
                 padding-bottom: 24px;
+            }
+
+            &.active {
+                display: flex;
             }
         }
 

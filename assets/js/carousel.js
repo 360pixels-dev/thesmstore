@@ -244,7 +244,7 @@ $(document).ready(function() {
     
     function populateFashionVideoDetails() {
         
-        $('.featured-video__text').html(`
+        $('.featured-video__text--fashion').html(`
             <span class="font-eyebrow">${fashionVideos[0].header}</span>
             <h1 class="font-hero">
                 <span>${fashionVideos[0].title1}</span> 
@@ -293,24 +293,45 @@ $(document).ready(function() {
         },
     ];
 
-    populateIndexVideoDetails();
+    // populateIndexVideoDetails();
     // populateVideoSlider();
     // populateTemporaryVideoSlider()
     
     $('.featured-video__controls--index .controls__arrow').click(function() {
         var dir = $(this).attr('class').split('--')[1];
-        
-        // REARRANGE EVENT ARRAY
-        indexVideos[0].isActive = false;
+        var indexVids = $('.featured-video__content')
+        var activeVid = $('.featured-video__content.active').attr('id')
+
         if(dir == 'right') { //to the right
-            indexVideos.push(indexVideos.shift());
+            $('.featured-video__content').each(function() {
+                $(this).removeClass('active');
+            });
+            $('.featured-video__content').eq(Number(activeVid) + 1).addClass('active');
+
+            // if counter exceeds the number of videos, returns to first index
+            if ((Number(activeVid) + 1) > indexVids.length - 1) {
+                $('.featured-video__content').eq(0).addClass('active');
+            }
         }
         else { //to the left
-            indexVideos.unshift(indexVideos.pop());
+            $('.featured-video__content').each(function() {
+                $(this).removeClass('active');
+            });
+            $('.featured-video__content').eq(Number(activeVid) - 1).addClass('active');
         }
-        indexVideos[0].isActive = true;
         
-        populateIndexVideoDetails(); // CHANGE EVENT DETAILS
+        // // REARRANGE EVENT ARRAY
+        // indexVideos[0].isActive = false;
+
+        // if(dir == 'right') { //to the right
+        //     indexVideos.push(indexVideos.shift());
+        // }
+        // else { //to the left
+        //     indexVideos.unshift(indexVideos.pop());
+        // }
+        // indexVideos[0].isActive = true;
+
+        // populateIndexVideoDetails(); // CHANGE EVENT DETAILS
         // populateVideoSlider(); // REARRANGE EVENT SLIDER
         // populateTemporaryVideoSlider(); // TEMPORARY VIDEO SLIDER
 
