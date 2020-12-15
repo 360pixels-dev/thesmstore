@@ -2938,12 +2938,20 @@ body.mmactive {
 .sm_menu_outer .mobile_menu img {
   float: right;
   padding: 7px;
-  transition: 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out 0s;
+  -moz-transition: all 0.1s ease-in-out 0s;
+  -o-transition: all 0.1s ease-in-out 0s;
+  transition: all 0.1s ease-in-out 0s;
 }
 
 .sm_menu_outer .mobile_menu li.active img {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
   transform: rotate(90deg);
-  transition: 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out 0s;
+  -moz-transition: all 0.1s ease-in-out 0s;
+  -o-transition: all 0.1s ease-in-out 0s;
+  transition: all 0.1s ease-in-out 0s;
 }
 
 /*Sub Menu anim */
