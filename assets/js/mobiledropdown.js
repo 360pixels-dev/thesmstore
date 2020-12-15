@@ -39,6 +39,15 @@ function closeMobileMenu() {
     }
 }
 
+
+
+function toggleSubMenu() {
+    window.addEventListener('click', function(e) {
+        console.log(e.target.name)
+    })
+}
+
+
 function toggleMobileMenu() {
     let menuDiv = document.getElementById('mobile-menu')
     let mainMenu = document.getElementById('mobile-menu-list')
