@@ -1312,6 +1312,9 @@ ul {
   display: block;
   z-index: 9999;
 }
+#mobile-menu-list > li:first-of-type {
+  display: none;
+}
 #mobile-menu-categories-list {
   display: none;
   z-index: 9999;
