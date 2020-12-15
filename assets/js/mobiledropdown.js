@@ -40,15 +40,25 @@ function closeMobileMenu() {
 }
 
 function toggleMobileMenu() {
-    let menu = document.getElementById('mobile-menu')
+    let menuDiv = document.getElementById('mobile-menu')
+    let mainMenu = document.getElementById('mobile-menu-list')
     let menuOverlay = document.getElementById('mobile-menu-overlay')
+    let subMenus = document.getElementsByClassName('mobile-menu-item')
+    
 
-    if (menu !== null) {
-        if (menu.style.display === "block") {
-            menu.style.display = 'none'
+
+    if (menuDiv !== null) {
+        if (menuDiv.style.display === "block") {
+            menuDiv.style.display = 'none'
             menuOverlay.style.display = 'none'
+
+            for (let i = 0; i < subMenus.length; i++) {
+                subMenus[i].style.display = 'none'
+            }
+
+            mainMenu.style.display = 'block'
         } else {
-            menu.style.display = 'block'
+            menuDiv.style.display = 'block'
             menuOverlay.style.display = 'block'
         }
     }
