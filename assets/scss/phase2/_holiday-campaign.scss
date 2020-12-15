@@ -485,6 +485,10 @@
         @include respond(tablet) {
             display: none;
         }
+
+        &.hidden {
+            visibility: hidden;
+        }
     }
 
     &__mobile-thumbnail {

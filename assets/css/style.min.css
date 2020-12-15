@@ -36509,6 +36509,9 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
     display: none;
   }
 }
+.holiday-campaign-promo-banner__thumbnail.hidden {
+  visibility: hidden;
+}
 .holiday-campaign-promo-banner__mobile-thumbnail {
   display: none;
 }
