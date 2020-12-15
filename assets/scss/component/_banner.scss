@@ -1292,16 +1292,42 @@
 
     &--forex {
         margin-top: 88px;
-        background-image: url("../../assets/images/banner-services-forex.jpg");
-        background-size: cover;
-        background-position: center right;
+        padding: 0;
+
+        & > .desktop-banner {
+            width: inherit;
+            object-fit: cover;
+            height: 355px;
+            position: absolute;
+            overflow: hidden;
+
+            @include respond(mobile) {
+                display: none;
+            }
+        }
+
+        & > .mobile-banner {
+            display: none;
+            width: inherit;
+            object-fit: cover;
+            height: 200px;
+            position: absolute;
+
+            @include respond(mobile) {
+                display: block;
+            }
+        }
+
+        // background-image: url("../../assets/images/banner-services-forex.jpg");
+        // background-size: cover;
+        // background-position: center right;
 
         @include respond(tablet) {
             margin-top: 56px;
         }
 
         @include respond(mobile) {
-            background-image: url("../../assets/images/banner-services-forex-m.jpg");
+            // background-image: url("../../assets/images/banner-services-forex-m.jpg");
             // @include banner-small-m--bc;
             height: 200px;
             margin-bottom: 40px;
@@ -1309,6 +1335,7 @@
 
         & > .banner-section__breadcrumbs {
             position: absolute;
+            margin-left: 12px;
             & > a {
                 @include respond(mobile) {
                     @include breadcrumbs--black;
@@ -1330,22 +1357,50 @@
 
     &--billpay {
         margin-top: 88px !important;
-        background-image: url("../../assets/images/banner-billpay.jpg");
-        background-size: cover;
-        background-position: center right;
+        padding: 0;
+
+        & > .desktop-banner {
+            width: inherit;
+            object-fit: cover;
+            height: 355px;
+            position: absolute;
+            overflow: hidden;
+
+            @include respond(mobile) {
+                display: none;
+            }
+        }
+
+        & > .mobile-banner {
+            display: none;
+            width: inherit;
+            object-fit: cover;
+            height: 200px;
+            position: absolute;
+
+            @include respond(mobile) {
+                display: block;
+            }
+        }
+
+        // background-image: url("../../assets/images/banner-billpay.jpg");
+        // background-size: cover;
+        // background-position: center right;
 
         @include respond(tablet) {
             margin-top: 56px !important;
         }
 
         @include respond(mobile) {
-            background-image: url("../../assets/images/banner-billpay-m.png");
+            // background-image: url("../../assets/images/banner-billpay-m.png");
             // @include banner-small-m--bc;
             height: 200px;
             margin-bottom: 40px;
         }
 
         & > .banner-section__breadcrumbs {
+            margin-left: 12px;
+
             & > a {
                 color: $white;
                 @include respond(mobile) {
@@ -1372,31 +1427,11 @@
         padding: 0;
 
         & > .desktop-banner {
-            width: 1400px;
+            width: inherit;
             object-fit: cover;
             height: 355px;
             position: absolute;
             overflow: hidden;
-
-            @include respond(2560px) {
-                width: 2560px;
-            }
-
-            @include respond(1920px) {
-                width: 1920px;
-            }
-
-            @include respond(1400px) {
-                width: 1400px;
-            }
-
-            @include respond(1280px) {
-                width: 1280px;
-            }
-
-            @include respond(1024px) {
-                width: 1024px;
-            }
 
             @include respond(mobile) {
                 display: none;
@@ -1405,7 +1440,7 @@
 
         & > .mobile-banner {
             display: none;
-            width: 100%;
+            width: inherit;
             object-fit: cover;
             height: 200px;
             position: absolute;

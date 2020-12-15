@@ -16,29 +16,28 @@
     }
 
     & > .desktop-banner {
-        width: 1400px;
+        width: inherit;
         object-fit: cover;
         height: 355px;
         position: absolute;
 
-        @include respond(2560px) {
-            width: 2560px;
-        }
+        // @include respond(2560px) {
+        //     width: 2560px;
+        // }
 
-        @include respond(1920px) {
-            width: 1920px;
-        }
+        // @include respond(1920px) {
+        //     width: 1920px;
+        // }
 
-        @include respond(1400px) {
-            width: 1400px;
-        }
+        // @include respond(1400px) {
+        //     width: 1400px;
+        // }
 
-        @include respond(1280px) {
-            width: 1280px;
-        }
+        // @include respond(1280px) {
+        //     width: 1280px;
+        // }
 
         @include respond(1024px) {
-            width: 1024px;
             height: 200px;
         }
 
@@ -49,7 +48,7 @@
 
     & > .mobile-banner {
         display: none;
-        width: 100%;
+        width: inherit;
         object-fit: cover;
         height: 200px;
         position: absolute;

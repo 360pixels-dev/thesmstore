@@ -4967,9 +4967,41 @@ ul {
 }
 .banner-section--forex {
   margin-top: 88px;
-  background-image: url("../../assets/images/banner-services-forex.jpg");
-  background-size: cover;
-  background-position: center right;
+  padding: 0;
+}
+.banner-section--forex > .desktop-banner {
+  width: inherit;
+  object-fit: cover;
+  height: 355px;
+  position: absolute;
+  overflow: hidden;
+}
+@media only screen and (max-width: 820px) {
+  .banner-section--forex > .desktop-banner {
+    display: none;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .banner-section--forex > .desktop-banner {
+    display: none;
+  }
+}
+.banner-section--forex > .mobile-banner {
+  display: none;
+  width: inherit;
+  object-fit: cover;
+  height: 200px;
+  position: absolute;
+}
+@media only screen and (max-width: 820px) {
+  .banner-section--forex > .mobile-banner {
+    display: block;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .banner-section--forex > .mobile-banner {
+    display: block;
+  }
 }
 @media only screen and (max-width: 1024px) {
   .banner-section--forex {
@@ -4983,20 +5015,19 @@ ul {
 }
 @media only screen and (max-width: 820px) {
   .banner-section--forex {
-    background-image: url("../../assets/images/banner-services-forex-m.jpg");
     height: 200px;
     margin-bottom: 40px;
   }
 }
 @media only screen and (max-width: mobile) {
   .banner-section--forex {
-    background-image: url("../../assets/images/banner-services-forex-m.jpg");
     height: 200px;
     margin-bottom: 40px;
   }
 }
 .banner-section--forex > .banner-section__breadcrumbs {
   position: absolute;
+  margin-left: 12px;
 }
 @media only screen and (max-width: 820px) {
   .banner-section--forex > .banner-section__breadcrumbs > a {
@@ -5034,9 +5065,41 @@ ul {
 }
 .banner-section--billpay {
   margin-top: 88px !important;
-  background-image: url("../../assets/images/banner-billpay.jpg");
-  background-size: cover;
-  background-position: center right;
+  padding: 0;
+}
+.banner-section--billpay > .desktop-banner {
+  width: inherit;
+  object-fit: cover;
+  height: 355px;
+  position: absolute;
+  overflow: hidden;
+}
+@media only screen and (max-width: 820px) {
+  .banner-section--billpay > .desktop-banner {
+    display: none;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .banner-section--billpay > .desktop-banner {
+    display: none;
+  }
+}
+.banner-section--billpay > .mobile-banner {
+  display: none;
+  width: inherit;
+  object-fit: cover;
+  height: 200px;
+  position: absolute;
+}
+@media only screen and (max-width: 820px) {
+  .banner-section--billpay > .mobile-banner {
+    display: block;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .banner-section--billpay > .mobile-banner {
+    display: block;
+  }
 }
 @media only screen and (max-width: 1024px) {
   .banner-section--billpay {
@@ -5050,17 +5113,18 @@ ul {
 }
 @media only screen and (max-width: 820px) {
   .banner-section--billpay {
-    background-image: url("../../assets/images/banner-billpay-m.png");
     height: 200px;
     margin-bottom: 40px;
   }
 }
 @media only screen and (max-width: mobile) {
   .banner-section--billpay {
-    background-image: url("../../assets/images/banner-billpay-m.png");
     height: 200px;
     margin-bottom: 40px;
   }
+}
+.banner-section--billpay > .banner-section__breadcrumbs {
+  margin-left: 12px;
 }
 .banner-section--billpay > .banner-section__breadcrumbs > a {
   color: #ffffff;
@@ -5106,36 +5170,11 @@ ul {
   padding: 0;
 }
 .banner-section--ctd > .desktop-banner {
-  width: 1400px;
+  width: inherit;
   object-fit: cover;
   height: 355px;
   position: absolute;
   overflow: hidden;
-}
-@media only screen and (max-width: 2560px) {
-  .banner-section--ctd > .desktop-banner {
-    width: 2560px;
-  }
-}
-@media only screen and (max-width: 1920px) {
-  .banner-section--ctd > .desktop-banner {
-    width: 1920px;
-  }
-}
-@media only screen and (max-width: 1400px) {
-  .banner-section--ctd > .desktop-banner {
-    width: 1400px;
-  }
-}
-@media only screen and (max-width: 1280px) {
-  .banner-section--ctd > .desktop-banner {
-    width: 1280px;
-  }
-}
-@media only screen and (max-width: 1024px) {
-  .banner-section--ctd > .desktop-banner {
-    width: 1024px;
-  }
 }
 @media only screen and (max-width: 820px) {
   .banner-section--ctd > .desktop-banner {
@@ -5149,7 +5188,7 @@ ul {
 }
 .banner-section--ctd > .mobile-banner {
   display: none;
-  width: 100%;
+  width: inherit;
   object-fit: cover;
   height: 200px;
   position: absolute;
@@ -35374,34 +35413,13 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   left: 15%;
 }
 .services-header-banner > .desktop-banner {
-  width: 1400px;
+  width: inherit;
   object-fit: cover;
   height: 355px;
   position: absolute;
 }
-@media only screen and (max-width: 2560px) {
-  .services-header-banner > .desktop-banner {
-    width: 2560px;
-  }
-}
-@media only screen and (max-width: 1920px) {
-  .services-header-banner > .desktop-banner {
-    width: 1920px;
-  }
-}
-@media only screen and (max-width: 1400px) {
-  .services-header-banner > .desktop-banner {
-    width: 1400px;
-  }
-}
-@media only screen and (max-width: 1280px) {
-  .services-header-banner > .desktop-banner {
-    width: 1280px;
-  }
-}
 @media only screen and (max-width: 1024px) {
   .services-header-banner > .desktop-banner {
-    width: 1024px;
     height: 200px;
   }
 }
@@ -35417,7 +35435,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 .services-header-banner > .mobile-banner {
   display: none;
-  width: 100%;
+  width: inherit;
   object-fit: cover;
   height: 200px;
   position: absolute;
