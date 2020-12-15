@@ -36515,6 +36515,9 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 .holiday-campaign-promo-banner__mobile-thumbnail {
   display: none;
 }
+.holiday-campaign-promo-banner__mobile-thumbnail.hidden {
+  visibility: hidden;
+}
 @media only screen and (max-width: 1024px) {
   .holiday-campaign-promo-banner__mobile-thumbnail {
     display: flex;

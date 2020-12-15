@@ -494,6 +494,10 @@
     &__mobile-thumbnail {
         display: none;
 
+        &.hidden {
+            visibility: hidden;
+        }
+
         @include respond(tablet) {
             display: flex;
             align-items: center;
