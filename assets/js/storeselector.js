@@ -1,6 +1,7 @@
 window.addEventListener("scroll", () => {
     let mobileSearch = document.getElementsByClassName("mobile-search-open")
     let mobileMenuDiv = document.getElementById('mobile-menu')
+    let mobileHam = document.getElementById('sm_menu_ham')
     let storeSelectorDrawer = document.getElementById('store-selector-drawer')
     let upperNavMenu = document.getElementsByClassName("nav__upper")
     let lowerNavMenu = document.getElementsByClassName("nav__lower")
@@ -8,6 +9,7 @@ window.addEventListener("scroll", () => {
 
     storeSelectorDrawer.classList.toggle("sticky-store-selector", pageYOffset > 88)
     mobileMenuDiv.classList.toggle("sticky-mobile-menu", pageYOffset > 88)
+    mobileHam.classList.toggle("sticky", pageYOffset > 88)
     mobileSearch[0].classList.toggle("sticky", pageYOffset > 88)
     upperNavMenu[0].classList.toggle("sticky", pageYOffset > 88)
     lowerNavMenu[0].classList.toggle("sticky2", pageYOffset > 88)
