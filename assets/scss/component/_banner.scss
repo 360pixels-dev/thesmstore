@@ -841,26 +841,52 @@
 
     &--promo-smart {
         margin-top: 56px !important;
-        background: url("../../assets/images/banner-smart.png") no-repeat;
-        background-position: center;
-        background-size: cover;
+        padding: 0;
+
+        & > .desktop-banner {
+            width: inherit;
+            object-fit: cover;
+            height: 550px;
+            position: absolute;
+            overflow: hidden;
+
+            @include respond(mobile) {
+                display: none;
+            }
+        }
+
+        & > .mobile-banner {
+            display: none;
+            width: inherit;
+            object-fit: cover;
+            height: 220px;
+            position: absolute;
+
+            @include respond(mobile) {
+                display: block;
+            }
+        }
+
+        // background: url("../../assets/images/banner-smart.png") no-repeat;
+        // background-position: center;
+        // background-size: cover;
         // @include bgcover;
         // background-color: $promo-yellow;
         display: flex;
         justify-content: center;
 
-        & > img {
-            width: 1217px;
-            height: auto;
-        }
+        // & > img {
+        //     width: 1217px;
+        //     height: auto;
+        // }
 
         @include respond(tablet) {
             margin-top: 31px !important;
         }
 
         @include respond(mobile) {
-            background: url("../../assets/images/banner-smart-m.png") no-repeat;
-            background-size: cover;
+            // background: url("../../assets/images/banner-smart-m.png") no-repeat;
+            // background-size: cover;
             background-position: bottom center;
             height: 220px;
             // background-position: 50% 70px;

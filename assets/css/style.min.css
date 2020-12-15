@@ -4250,15 +4250,43 @@ ul {
 }
 .big-header--promo-smart {
   margin-top: 56px !important;
-  background: url("../../assets/images/banner-smart.png") no-repeat;
-  background-position: center;
-  background-size: cover;
+  padding: 0;
   display: flex;
   justify-content: center;
 }
-.big-header--promo-smart > img {
-  width: 1217px;
-  height: auto;
+.big-header--promo-smart > .desktop-banner {
+  width: inherit;
+  object-fit: cover;
+  height: 550px;
+  position: absolute;
+  overflow: hidden;
+}
+@media only screen and (max-width: 820px) {
+  .big-header--promo-smart > .desktop-banner {
+    display: none;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .big-header--promo-smart > .desktop-banner {
+    display: none;
+  }
+}
+.big-header--promo-smart > .mobile-banner {
+  display: none;
+  width: inherit;
+  object-fit: cover;
+  height: 220px;
+  position: absolute;
+}
+@media only screen and (max-width: 820px) {
+  .big-header--promo-smart > .mobile-banner {
+    display: block;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .big-header--promo-smart > .mobile-banner {
+    display: block;
+  }
 }
 @media only screen and (max-width: 1024px) {
   .big-header--promo-smart {
@@ -4272,8 +4300,6 @@ ul {
 }
 @media only screen and (max-width: 820px) {
   .big-header--promo-smart {
-    background: url("../../assets/images/banner-smart-m.png") no-repeat;
-    background-size: cover;
     background-position: bottom center;
     height: 220px;
   }
@@ -4315,8 +4341,6 @@ ul {
 }
 @media only screen and (max-width: mobile) {
   .big-header--promo-smart {
-    background: url("../../assets/images/banner-smart-m.png") no-repeat;
-    background-size: cover;
     background-position: bottom center;
     height: 220px;
   }
