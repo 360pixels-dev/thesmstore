@@ -2930,7 +2930,7 @@ body.mmactive {
 .sm_menu_outer .mobile_menu a {
   color: #161720;
   display: block;
-  letter-spacing: 1px;
+  letter-spacing: normal;
   padding: 15px;
   text-decoration: none;
 }

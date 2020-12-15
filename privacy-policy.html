@@ -735,11 +735,28 @@
     <script src="assets/js/slimscroll.min.js"></script>
     <script src="assets/js/branch-list.js"></script>
 
+    <!-- NEW MOBILE NAV INIT -->
+    <script>
+        $(document).ready(function() {
+            $(".mobile_menu").simpleMobileMenu({
+                onMenuLoad: function(menu) {
+                    console.log(menu)
+                    console.log("menu loaded")
+                },
+                onMenuToggle: function(menu, opened) {
+                    console.log(opened)
+                }
+            });
+        })
+    </script>
+    <script src="assets/js/plugin-mobilemenu.js"></script>
+
+
     <!-- CUSTOM JS -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/carousel.js"></script>
     <script src="assets/js/footeraccordion.js"></script>
-    <script src="assets/js/mobiledropdown.js"></script>
+    <!-- <script src="assets/js/mobiledropdown.js"></script> -->
     <script src="assets/js/storeselector.js"></script>
 </body>
 

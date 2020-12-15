@@ -32,18 +32,18 @@
                         </div>
                     </div>
                 </nav>
-
+    
                 <nav class="nav__upper nav__upper--default nav__upper--index container-fluid">
-
+    
                     <div class="logo">
                         <img src="./assets/images/logo.svg" alt="SM Store">
                     </div>
-
+    
                     <div class="menu">
                         <ul class="main-navigation">
                             <li class="nav__upper-menu-item"><a href="#">Categories</a>
                                 <ul class="categories animated fadeIn">
-                                    <li><a href="#">Fashion <img class="arrow-right" src="./assets/images/black-arrow-right.svg" alt=""></a>
+                                    <li><a href="#" class="add-arrow">Fashion </a>
                                         <ul>
                                             <li><a href="">Women's Apparel</a></li>
                                             <li><a href="">Women's Accessories</a></li>
@@ -55,7 +55,7 @@
                                             <li><a href="">Men's Bags</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">Babies & Kids <img class="arrow-right" src="./assets/images/black-arrow-right.svg" alt=""></a>
+                                    <li><a href="#" class="add-arrow">Babies & Kids </a>
                                         <ul>
                                             <li><a href="">Girl's Apparel</a></li>
                                             <li><a href="">Boy's Apparel</a></li>
@@ -65,7 +65,7 @@
                                             <li><a href="">Infant's Wear</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">Home <img class="arrow-right" src="./assets/images/black-arrow-right.svg" alt=""></a>
+                                    <li><a href="#" class="add-arrow">Home </a>
                                         <ul>
                                             <li><a href="">Bed & Bath</a></li>
                                             <li><a href="">Kitchen & Dining</a></li>
@@ -75,7 +75,7 @@
                                             <li><a href="">Hardware</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">Beauty <img class="arrow-right" src="./assets/images/black-arrow-right.svg" alt=""></a>
+                                    <li><a href="#" class="add-arrow">Beauty </a>
                                         <ul>
                                             <li><a href="">Skin Care</a></li>
                                             <li><a href="">Make-up</a></li>
@@ -84,7 +84,7 @@
                                             <li><a href="">Health & Wellness</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">Others <img class="arrow-right" src="./assets/images/black-arrow-right.svg" alt=""></a>
+                                    <li><a href="#" class="add-arrow">Others </a>
                                         <ul>
                                             <li><a href="">Office & School Supplies</a></li>
                                             <li><a href="">Luggage</a></li>
@@ -113,7 +113,7 @@
                             <li class="nav__upper-menu-item"><a href="#">Careers</a></li>
                             <li class="nav__upper-menu-item"><a href="#">What's New</a>
                                 <ul class="whatsnew animated fadeIn">
-                                    <li><a href="#">Promos <img class="arrow-right" src="./assets/images/black-arrow-right.svg" alt=""></a>
+                                    <li><a href="#" class="add-arrow">Promos </a>
                                         <ul>
                                             <li><a href="#">3-Day Sale</a></li>
                                             <li><a href="#">0% Interest, Easy Payment Plan</a></li>
@@ -125,14 +125,14 @@
                             </li>
                         </ul>
                     </div>
-
-                    <div id="mobile-menu-button" class="mobile-menu-button" onclick="showHideMenu('mobile-menu')">
+    
+                    <!-- <div id="mobile-menu-button" class="mobile-menu-button">
                         <ul>
                             <li><a href="#" class="font-headline" ><img src="./assets/images/icons/hamburger.svg" alt=""></a></li>
                         </ul>
-                    </div>
-
-
+                    </div> -->
+    
+    
                     <div class="mobile-logo">
                         <img src="./assets/images/logo.svg" alt="SM Store">
                     </div>
@@ -145,7 +145,7 @@
                             </button>
                         </div>
                     </div>
-
+    
                     <div class="mobile-search-container">
                         <div class="mobile-search-main">
                             <input class="mobile-search-term" type="search" placeholder="Search">
@@ -154,16 +154,16 @@
                             </button>
                         </div>
                     </div>
-
+    
                     <div class="mobile-search-button" onclick="toggleSearch()">
-                        <img src="./assets/images/search.svg" alt="">
+                        <img src="./assets/images/search.svg" style="fill: red" alt="">
                     </div>
-
+    
                 </nav>
-
+    
                 
-
-                <nav class="nav__lower nav_lower--default nav__lower--index container-fluid fashion-nav">
+    
+                <nav class="nav__lower nav_lower--default nav__lower--index container-fluid nav-blue">
                     <div class="store-selector">
                         <p class="white">
                             <span class="white font-h5--uppercase font-h5--two-space">My Store <span class="thin-orange">(Closes at 9PM)</span></span>
@@ -171,7 +171,7 @@
                             <div onclick="openStoreSelector()" style="cursor: pointer;"><span class="white font-headline">The SM Store Cubao</span><img id="store-selector-arrow" src="./assets/images/angle-down.svg" alt=""></div>
                         </p>
                     </div>
-
+    
                     <div class="menu">
                         <ul class="nav__lower-menu">
                             <li class="nav__lower-menu-item">
@@ -182,7 +182,7 @@
                             </li>
                         </ul>
                     </div>
-
+    
                     <div class="mobile-store-selector" onclick="openStoreSelector()">
                         <p>
                             <span class="white normal-text">Please select a store</span>
@@ -190,76 +190,123 @@
                         </p>
                     </div>
                 </nav>
-
+    
                 <div id="mobile-menu">
-                    <ul id="mobile-menu-list">
-                        <li><div onclick="showHideSubMenu('mobile-menu-categories-list');"><a href="#">Categories</a><img class="arrow-right" src="./assets/images/black-arrow-right.svg" alt=""></div></li>
-                        <li><div onclick="showHideSubMenu('mobile-menu-services-list');"><a href="#">Services</a><img class="arrow-right" src="./assets/images/black-arrow-right.svg" alt=""></div></li>
+                    <ul id="mobile-menu-list" class="mobile_menu">
+                        <li>
+                            <a href="#">Services <img class="arrow-right" src="./assets/images/black-arrow-right.svg" alt=""></a>
+                            <ul class="submenu">
+                                <li><a href="#">Bills Payment</a></li>
+                                <li><a href="#">Foreign Exchange</a></li>
+                                <li><a href="#">Gift Cards</a></li>
+                                <li><a href="#">Gift Wrapping</a></li>
+                                <li><a href="#">Gift Registry</a></li>
+                                <li><a href="#">Prepaid Reloading Services</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Call To Deliver</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li>
+                            <a href="#">What's New <img class="arrow-right" src="./assets/images/black-arrow-right.svg" alt=""></a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="#">Promos</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">3-Day Sale</a></li>
+                                        <li><a href="#">0% Interest, Easy Payment Plan</a></li>
+                                        <li><a href="#">Mastercard: Shop, Tap, and Win Promo</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Campaigns</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+    
+                <!-- <div id="mobile-menu">
+                    <ul id="mobile-menu-list" class="mobile_menu">
+                        <li><a href="#">Categories <img class="arrow-right" src="./assets/images/black-arrow-right.svg" alt=""></a>
+                            <ul id="mobile-menu-categories-list" class="submenu">
+                                <li style="padding-left: 12px;"><div onclick="toggleCategoriesSubMenu()"><img src="./assets/images/icons/menu-dropdown-back-icon.svg" alt="" > <span class="font-eyebrow-medium" style="color: #403f47; margin-left: 12px;">Back</span></div></li>
+                                <li>
+                                    <div onclick="toggleFashionSubMenu();"><a href="#">Fashion</a><img class="arrow-right" src="./assets/images/black-arrow-right.svg" alt=""></div>
+                                    <ul id="mobile-menu-categories-fashion" class="mobile-menu-item submenu">
+                                        <li style="padding-left: 12px;"><div onclick="toggleFashionSubMenu()"><img src="./assets/images/icons/menu-dropdown-back-icon.svg" alt="" > <span class="font-eyebrow-medium" style="color: #403f47; margin-left: 12px;">Back</span></div></li>
+                                        <li><a href="">Women's Apparel</a></li>
+                                        <li><a href="">Women's Accessories</a></li>
+                                        <li><a href="">Women's Shoes</a></li>
+                                        <li><a href="">Women's Bags</a></li>
+                                        <li><a href="">Men's Apparel</a></li>
+                                        <li><a href="">Men's Accessories</a></li>
+                                        <li><a href="">Men's Shoes</a></li>
+                                        <li><a href="">Men's Bags</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div onclick="toggleBnkSubMenu();"><a href="#">Babies & Kids</a><img class="arrow-right" src="./assets/images/black-arrow-right.svg" alt=""></div>
+                                    <ul id="mobile-menu-categories-bnk" class="mobile-menu-item submenu">
+                                        <li style="padding-left: 12px;"><div onclick="toggleBnkSubMenu();"><img src="./assets/images/icons/menu-dropdown-back-icon.svg" alt="" > <span class="font-eyebrow-medium" style="color: #403f47; margin-left: 12px;">Back</span></div></li>
+                                        <li><a href="">Girl's Apparel</a></li>
+                                        <li><a href="">Boy's Apparel</a></li>
+                                        <li><a href="">Kid's Accessories</a></li>
+                                        <li><a href="">Kid's Shoes</a></li>
+                                        <li><a href="">Kid's Bags</a></li>
+                                        <li><a href="">Infant's Wear</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div onclick="toggleHomeSubMenu();"><a href="#">Home</a><img class="arrow-right" src="./assets/images/black-arrow-right.svg" alt=""></div>
+                                    <ul id="mobile-menu-categories-home" class="mobile-menu-item submenu">
+                                        <li style="padding-left: 12px;"><div onclick="toggleHomeSubMenu();"><img src="./assets/images/icons/menu-dropdown-back-icon.svg" alt="" > <span class="font-eyebrow-medium" style="color: #403f47; margin-left: 12px;">Back</span></div></li>
+                                        <li><a href="">Bed & Bath</a></li>
+                                        <li><a href="">Kitchen & Dining</a></li>
+                                        <li><a href="">Living Room</a></li>
+                                        <li><a href="">Organizer</a></li>
+                                        <li><a href="">Furniture</a></li>
+                                        <li><a href="">Hardware</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div onclick="toggleBeautySubMenu();"><a href="#">Beauty</a><img class="arrow-right" src="./assets/images/black-arrow-right.svg" alt=""></div>
+                                    <ul id="mobile-menu-categories-beauty" class="mobile-menu-item submenu">
+                                        <li style="padding-left: 12px;"><div onclick="toggleBeautySubMenu();"><img src="./assets/images/icons/menu-dropdown-back-icon.svg" alt="" > <span class="font-eyebrow-medium" style="color: #403f47; margin-left: 12px;">Back</span></div></li>
+                                        <li><a href="">Skin Care</a></li>
+                                        <li><a href="">Make-up</a></li>
+                                        <li><a href="">Hair Care</a></li>
+                                        <li><a href="">Personal Care</a></li>
+                                        <li><a href="">Health & Wellness</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div onclick="toggleOthersSubMenu();"><a href="#">Others</a><img class="arrow-right" src="./assets/images/black-arrow-right.svg" alt=""></div>
+                                    <ul id="mobile-menu-categories-others" class="mobile-menu-item submenu">
+                                        <li style="padding-left: 12px;"><div onclick="toggleOthersSubMenu();"><img src="./assets/images/icons/menu-dropdown-back-icon.svg" alt="" > <span class="font-eyebrow-medium" style="color: #403f47; margin-left: 12px;">Back</span></div></li>
+                                        <li><a href="">Office & School Supplies</a></li>
+                                        <li><a href="">Luggage</a></li>
+                                        <li><a href="">Pet Express</a></li>
+                                        <li><a href="">Kultura</a></li>
+                                        <li><a href="">Baby Company</a></li>
+                                        <li><a href="">Toy Kingdom</a></li>
+                                        <li><a href="">Snacks</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div onclick="toggleServicesSubMenu()"><a href="#">Services</a><img class="arrow-right" src="./assets/images/black-arrow-right.svg" alt=""></div>
+                        </li>
                         <li><a href="#">Gifts</a></li>
                         <li><a href="#">Call to Deliver</a></li>
                         <li><a href="#">Careers</a></li>
-                        <li><div onclick="showHideSubMenu('mobile-menu-whatsnew-list');"><a href="#">What's New</a><img class="arrow-right" src="./assets/images/black-arrow-right.svg" alt=""></div></li>
+                        <li><div onclick="toggleWhatsNewSubMenu()"><a href="#">What's New</a><img class="arrow-right" src="./assets/images/black-arrow-right.svg" alt=""></div>
+                        </li>
                     </ul>
-
-                    <ul id="mobile-menu-categories-list" class="mobile-menu-item">
-                        <li style="padding-left: 12px;"><div onclick="showHideSubMenu('mobile-menu-list');"><img src="./assets/images/icons/menu-dropdown-back-icon.svg" alt="" > <span class="font-eyebrow-medium" style="color: #403f47; margin-left: 12px;">Back</span></div></li>
-                        <li><div onclick="showHideSubMenu('mobile-menu-categories-fashion');"><a href="#">Fashion</a><img class="arrow-right" src="./assets/images/black-arrow-right.svg" alt=""></div></li>
-                        <li><div onclick="showHideSubMenu('mobile-menu-categories-bnk');"><a href="#">Babies & Kids</a><img class="arrow-right" src="./assets/images/black-arrow-right.svg" alt=""></div></li>
-                        <li><div onclick="showHideSubMenu('mobile-menu-categories-home');"><a href="#">Home</a><img class="arrow-right" src="./assets/images/black-arrow-right.svg" alt=""></div></li>
-                        <li><div onclick="showHideSubMenu('mobile-menu-categories-beauty');"><a href="#">Beauty</a><img class="arrow-right" src="./assets/images/black-arrow-right.svg" alt=""></div></li>
-                        <li><div onclick="showHideSubMenu('mobile-menu-categories-others');"><a href="#">Others</a><img class="arrow-right" src="./assets/images/black-arrow-right.svg" alt=""></div></li>
-                    </ul>
-                    <ul id="mobile-menu-categories-fashion" class="mobile-menu-item">
-                        <li style="padding-left: 12px;"><div onclick="showHideSubMenu('mobile-menu-categories-list');"><img src="./assets/images/icons/menu-dropdown-back-icon.svg" alt="" > <span class="font-eyebrow-medium" style="color: #403f47; margin-left: 12px;">Back</span></div></li>
-                        <li><a href="">Women's Apparel</a></li>
-                        <li><a href="">Women's Accessories</a></li>
-                        <li><a href="">Women's Shoes</a></li>
-                        <li><a href="">Women's Bags</a></li>
-                        <li><a href="">Men's Apparel</a></li>
-                        <li><a href="">Men's Accessories</a></li>
-                        <li><a href="">Men's Shoes</a></li>
-                        <li><a href="">Men's Bags</a></li>
-                    </ul>
-                    <ul id="mobile-menu-categories-bnk" class="mobile-menu-item">
-                        <li style="padding-left: 12px;"><div onclick="showHideSubMenu('mobile-menu-categories-list');"><img src="./assets/images/icons/menu-dropdown-back-icon.svg" alt="" > <span class="font-eyebrow-medium" style="color: #403f47; margin-left: 12px;">Back</span></div></li>
-                        <li><a href="">Girl's Apparel</a></li>
-                        <li><a href="">Boy's Apparel</a></li>
-                        <li><a href="">Kid's Accessories</a></li>
-                        <li><a href="">Kid's Shoes</a></li>
-                        <li><a href="">Kid's Bags</a></li>
-                        <li><a href="">Infant's Wear</a></li>
-                    </ul>
-                    <ul id="mobile-menu-categories-home" class="mobile-menu-item">
-                        <li style="padding-left: 12px;"><div onclick="showHideSubMenu('mobile-menu-categories-list');"><img src="./assets/images/icons/menu-dropdown-back-icon.svg" alt="" > <span class="font-eyebrow-medium" style="color: #403f47; margin-left: 12px;">Back</span></div></li>
-                        <li><a href="">Bed & Bath</a></li>
-                        <li><a href="">Kitchen & Dining</a></li>
-                        <li><a href="">Living Room</a></li>
-                        <li><a href="">Organizer</a></li>
-                        <li><a href="">Furniture</a></li>
-                        <li><a href="">Hardware</a></li>
-                    </ul>
-                    <ul id="mobile-menu-categories-beauty" class="mobile-menu-item">
-                        <li style="padding-left: 12px;"><div onclick="showHideSubMenu('mobile-menu-categories-list');"><img src="./assets/images/icons/menu-dropdown-back-icon.svg" alt="" > <span class="font-eyebrow-medium" style="color: #403f47; margin-left: 12px;">Back</span></div></li>
-                        <li><a href="">Skin Care</a></li>
-                        <li><a href="">Make-up</a></li>
-                        <li><a href="">Hair Care</a></li>
-                        <li><a href="">Personal Care</a></li>
-                        <li><a href="">Health & Wellness</a></li>
-                    </ul>
-
-                    <ul id="mobile-menu-categories-others" class="mobile-menu-item">
-                        <li style="padding-left: 12px;"><div onclick="showHideSubMenu('mobile-menu-categories-list');"><img src="./assets/images/icons/menu-dropdown-back-icon.svg" alt="" > <span class="font-eyebrow-medium" style="color: #403f47; margin-left: 12px;">Back</span></div></li>
-                        <li><a href="">Office & School Supplies</a></li>
-                        <li><a href="">Luggage</a></li>
-                        <li><a href="">Pet Express</a></li>
-                        <li><a href="">Kultura</a></li>
-                        <li><a href="">Baby Company</a></li>
-                        <li><a href="">Toy Kingdom</a></li>
-                        <li><a href="">Snacks</a></li>
-                    </ul>
-
-                    <ul id="mobile-menu-services-list" class="mobile-menu-item">
-                        <li style="padding-left: 12px;"><div onclick="showHideSubMenu('mobile-menu-list');"><img src="./assets/images/icons/menu-dropdown-back-icon.svg" alt="" > <span class="font-eyebrow-medium" style="color: #403f47; margin-left: 12px;">Back</span></div></li>
+                    
+    
+                    <ul id="mobile-menu-services-list" class="mobile-menu-item submenu">
+                        <li style="padding-left: 12px;">
+                            <div onclick="toggleServicesSubMenu()"><img src="./assets/images/icons/menu-dropdown-back-icon.svg" alt="" > <span class="font-eyebrow-medium" style="color: #403f47; margin-left: 12px;">Back</span></div>
+                        </li>
                         <li><a href="#">Bills Payment</a></li>
                         <li><a href="#">Foreign Exchange</a></li>
                         <li><a href="#">Gift Registry</a></li>
@@ -267,20 +314,24 @@
                         <li><a href="#">Gift Wrapping</a></li>
                         <li><a href="#">Prepaid Reloading Services</a></li>
                     </ul>
-
-                    <ul id="mobile-menu-whatsnew-list" class="mobile-menu-item">
-                        <li style="padding-left: 12px;"><div onclick="showHideSubMenu('mobile-menu-list');"><img src="./assets/images/icons/menu-dropdown-back-icon.svg" alt="" > <span class="font-eyebrow-medium" style="color: #403f47; margin-left: 12px;">Back</span></div></li>
-                        <li><div onclick="showHideSubMenu('mobile-menu-whatsnew-promos');"><a href="#">Promos</a><img class="arrow-right" src="./assets/images/black-arrow-right.svg" alt=""></div></li>
+    
+    
+                    <ul id="mobile-menu-whatsnew-list" class="mobile-menu-item submenu">
+                        <li style="padding-left: 12px;"><div onclick="toggleWhatsNewSubMenu();"><img src="./assets/images/icons/menu-dropdown-back-icon.svg" alt="" > <span class="font-eyebrow-medium" style="color: #403f47; margin-left: 12px;">Back</span></div></li>
+                        <li><div onclick="togglePromosSubMenu();"><a href="#">Promos</a><img class="arrow-right" src="./assets/images/black-arrow-right.svg" alt=""></div>
+                        </li>
                         <li><a href="#">Campaigns</a></li>
                     </ul>
-
-                    <ul id="mobile-menu-whatsnew-promos" class="mobile-menu-item">
-                        <li style="padding-left: 12px;"><div onclick="showHideSubMenu('mobile-menu-whatsnew-list');"><img src="./assets/images/icons/menu-dropdown-back-icon.svg" alt="" > <span class="font-eyebrow-medium" style="color: #403f47; margin-left: 12px;">Back</span></div></li>
+    
+    
+                    <ul id="mobile-menu-whatsnew-promos" class="mobile-menu-item submenu">
+                        <li style="padding-left: 12px;"><div onclick="togglePromosSubMenu();"><img src="./assets/images/icons/menu-dropdown-back-icon.svg" alt="" > <span class="font-eyebrow-medium" style="color: #403f47; margin-left: 12px;">Back</span></div></li>
                         <li><a href=""></a>3-Day Sale</a></li>
                         <li><a href="">0% Interest, Easy Payment Plan</a></li>
                         <li><a href="">Mastercard: Shop, Tap, and Win Promo</a></li>
                     </ul>
-            </div>
+                </div> -->
+                    
             </header>
             <!-- /HEADER -->
 
@@ -672,13 +723,29 @@
     <!-- IMPORTS -->
     <script src="assets/js/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous"></script>
 
+    <!-- NEW MOBILE NAV INIT -->
+    <script>
+        $(document).ready(function() {
+            $(".mobile_menu").simpleMobileMenu({
+                onMenuLoad: function(menu) {
+                    console.log(menu)
+                    console.log("menu loaded")
+                },
+                onMenuToggle: function(menu, opened) {
+                    console.log(opened)
+                }
+            });
+        })
+    </script>
+    <script src="assets/js/plugin-mobilemenu.js"></script>
+    
     <!-- CUSTOM JS -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/carousel.js"></script>
     <!-- <script src="assets/js/horizontal-carousel.js"></script> -->
     <script src="assets/js/footeraccordion.js"></script>
-    <script src="assets/js/mobiledropdown.js"></script>
+    <!-- <script src="assets/js/mobiledropdown.js"></script> -->
     <script src="assets/js/storeselector.js"></script>
 </html>
