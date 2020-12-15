@@ -362,6 +362,88 @@ $(document).ready(function() {
         `);
     }
 
+    // ABOUT US CAROUSEL - VIDEOS
+    $('.about-carousel__controls .controls__arrow').click(function() {
+        var dir = $(this).attr('class').split('--')[1];
+        var indexVids = $('.about-carousel__content')
+        var activeVid = $('.about-carousel__content.active').attr('id')
+
+        if(dir == 'right') { //to the right
+            $('.about-carousel__content').each(function() {
+                $(this).removeClass('active');
+            });
+            $('.about-carousel__content').eq(Number(activeVid) + 1).addClass('active');
+
+            // if counter exceeds the number of videos, returns to first index
+            if ((Number(activeVid) + 1) > indexVids.length - 1) {
+                $('.about-carousel__content').eq(0).addClass('active');
+            }
+        }
+        else { //to the left
+            $('.about-carousel__content').each(function() {
+                $(this).removeClass('active');
+            });
+            $('.about-carousel__content').eq(Number(activeVid) - 1).addClass('active');
+        }
+        
+        // // REARRANGE EVENT ARRAY
+        // indexVideos[0].isActive = false;
+
+        // if(dir == 'right') { //to the right
+        //     indexVideos.push(indexVideos.shift());
+        // }
+        // else { //to the left
+        //     indexVideos.unshift(indexVideos.pop());
+        // }
+        // indexVideos[0].isActive = true;
+
+        // populateIndexVideoDetails(); // CHANGE EVENT DETAILS
+        // populateVideoSlider(); // REARRANGE EVENT SLIDER
+        // populateTemporaryVideoSlider(); // TEMPORARY VIDEO SLIDER
+
+    });
+
+    // ABOUT US CAROUSEL LG - IMAGES
+    $('.about-carousel-lg__controls .controls__arrow').click(function() {
+        var dir = $(this).attr('class').split('--')[1];
+        var indexVids = $('.about-carousel-lg__content')
+        var activeVid = $('.about-carousel-lg__content.active').attr('id')
+
+        if(dir == 'right') { //to the right
+            $('.about-carousel-lg__content').each(function() {
+                $(this).removeClass('active');
+            });
+            $('.about-carousel-lg__content').eq(Number(activeVid) + 1).addClass('active');
+
+            // if counter exceeds the number of videos, returns to first index
+            if ((Number(activeVid) + 1) > indexVids.length - 1) {
+                $('.about-carousel-lg__content').eq(0).addClass('active');
+            }
+        }
+        else { //to the left
+            $('.about-carousel-lg__content').each(function() {
+                $(this).removeClass('active');
+            });
+            $('.about-carousel-lg__content').eq(Number(activeVid) - 1).addClass('active');
+        }
+        
+        // // REARRANGE EVENT ARRAY
+        // indexVideos[0].isActive = false;
+
+        // if(dir == 'right') { //to the right
+        //     indexVideos.push(indexVideos.shift());
+        // }
+        // else { //to the left
+        //     indexVideos.unshift(indexVideos.pop());
+        // }
+        // indexVideos[0].isActive = true;
+
+        // populateIndexVideoDetails(); // CHANGE EVENT DETAILS
+        // populateVideoSlider(); // REARRANGE EVENT SLIDER
+        // populateTemporaryVideoSlider(); // TEMPORARY VIDEO SLIDER
+
+    });
+
     // CALLTODELIVER CAROUSEL - VIDEOS
     var ctdVideos = [
         {
@@ -380,7 +462,7 @@ $(document).ready(function() {
         },
     ];
 
-    populateCtdVideoDetails();
+    // populateCtdVideoDetails();
     // populateVideoSlider();
     // populateTemporaryVideoSlider()
     
@@ -398,6 +480,46 @@ $(document).ready(function() {
         ctdVideos[0].isActive = true;
         
         populateCtdVideoDetails(); // CHANGE EVENT DETAILS
+        // populateVideoSlider(); // REARRANGE EVENT SLIDER
+        // populateTemporaryVideoSlider(); // TEMPORARY VIDEO SLIDER
+
+    });
+
+    $('.featured-video__controls--ctd .controls__arrow').click(function() {
+        var dir = $(this).attr('class').split('--')[1];
+        var indexVids = $('.featured-video__content')
+        var activeVid = $('.featured-video__content.active').attr('id')
+
+        if(dir == 'right') { //to the right
+            $('.featured-video__content').each(function() {
+                $(this).removeClass('active');
+            });
+            $('.featured-video__content').eq(Number(activeVid) + 1).addClass('active');
+
+            // if counter exceeds the number of videos, returns to first index
+            if ((Number(activeVid) + 1) > indexVids.length - 1) {
+                $('.featured-video__content').eq(0).addClass('active');
+            }
+        }
+        else { //to the left
+            $('.featured-video__content').each(function() {
+                $(this).removeClass('active');
+            });
+            $('.featured-video__content').eq(Number(activeVid) - 1).addClass('active');
+        }
+        
+        // // REARRANGE EVENT ARRAY
+        // indexVideos[0].isActive = false;
+
+        // if(dir == 'right') { //to the right
+        //     indexVideos.push(indexVideos.shift());
+        // }
+        // else { //to the left
+        //     indexVideos.unshift(indexVideos.pop());
+        // }
+        // indexVideos[0].isActive = true;
+
+        // populateIndexVideoDetails(); // CHANGE EVENT DETAILS
         // populateVideoSlider(); // REARRANGE EVENT SLIDER
         // populateTemporaryVideoSlider(); // TEMPORARY VIDEO SLIDER
 

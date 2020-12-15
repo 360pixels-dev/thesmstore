@@ -52,6 +52,11 @@
             margin-left: 12px;
         }
 
+        @include respond(320px) {
+            width: 148px !important;
+            margin-left: 8px;
+        }
+
         & h5,
         & a,
         & img {
@@ -63,7 +68,7 @@
             margin-bottom: 52px;
 
             @include respond(610px) {
-                margin-top: 60px;
+                margin-top: 20px;
                 margin-bottom: 30px;
             }
         }

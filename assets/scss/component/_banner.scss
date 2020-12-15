@@ -3,6 +3,7 @@
     position: relative;
     // height: 792px;
     height: 93vh;
+    overflow: hidden;
 
     @include respond(mobile) {
         // margin-top: 56px !important;
@@ -17,7 +18,7 @@
         width: 100%;
         height: 286px;
         position: absolute;
-        top: 84px;
+        top: 64px;
 
         @include respond(tablet) {
             top: 56px;
@@ -41,7 +42,7 @@
         position: absolute;
         width: 100%;
         height: 88px;
-        top: 84px;
+        top: 88px;
         z-index: 5;
 
         @include respond(tablet) {
@@ -94,6 +95,7 @@
         position: absolute;
         right: 0;
         bottom: 0;
+        top: 24px;
 
         &.height75 {
             height: 75%;
@@ -661,18 +663,18 @@
     }
 
     &--services {
-        background: url("../../assets/images/banner-services.jpg") no-repeat;
-        @include bgcover;
+        // background: url("../../assets/images/banner-services.jpg") no-repeat;
+        // @include bgcover;
 
-        @include respond(tablet) {
-            background: url("../../assets/images/banner-services.jpg") no-repeat;
-            @include bgcover;
-        }
+        // @include respond(tablet) {
+        //     background: url("../../assets/images/banner-services.jpg") no-repeat;
+        //     @include bgcover;
+        // }
 
         @include respond(mobile) {
-            background: url("../../assets/images/banner-services-m.jpg")
-                no-repeat;
-            @include bgcover;
+            // background: url("../../assets/images/banner-services-m.jpg")
+            //     no-repeat;
+            // @include bgcover;
             flex-direction: column;
 
             & > div {
@@ -1367,10 +1369,55 @@
 
     &--ctd {
         margin-top: 88px;
-        background-image: url("../../assets/images/banner-delivery.png");
-        background-size: cover;
-        background-position: center right;
-        background-repeat: no-repeat;
+        padding: 0;
+
+        & > .desktop-banner {
+            width: 1400px;
+            object-fit: cover;
+            height: 355px;
+            position: absolute;
+            overflow: hidden;
+
+            @include respond(2560px) {
+                width: 2560px;
+            }
+
+            @include respond(1920px) {
+                width: 1920px;
+            }
+
+            @include respond(1400px) {
+                width: 1400px;
+            }
+
+            @include respond(1280px) {
+                width: 1280px;
+            }
+
+            @include respond(1024px) {
+                width: 1024px;
+            }
+
+            @include respond(mobile) {
+                display: none;
+            }
+        }
+
+        & > .mobile-banner {
+            display: none;
+            width: 100%;
+            object-fit: cover;
+            height: 200px;
+            position: absolute;
+
+            @include respond(mobile) {
+                display: block;
+            }
+        }
+        // background-image: url("../../assets/images/banner-delivery.png");
+        // background-size: cover;
+        // background-position: center right;
+        // background-repeat: no-repeat;
 
         @include respond(tablet) {
             margin-top: 56px;
@@ -1382,6 +1429,7 @@
 
         & > .banner-section__breadcrumbs {
             top: 255px !important;
+            margin-left: 12px;
 
             & > a {
                 color: $white;

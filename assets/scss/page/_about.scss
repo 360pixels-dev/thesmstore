@@ -52,10 +52,11 @@
         }
 
         &-img {
-            z-index: 50;
+            z-index: 2;
             position: relative;
             margin-left: 87px;
             width: 624px;
+            height: 741px;
 
             @include respond(mobile) {
                 margin-left: 20px;
@@ -110,11 +111,16 @@
             max-width: 1400px;
             min-height: 628px;
             margin: 0 auto;
-            display: flex;
+            // display: flex;
+            display: none;
 
             @include respond(1250px) {
                 // margin: 0 auto 0 auto;
                 padding-bottom: 60px;
+            }
+
+            &.active {
+                display: flex;
             }
         }
 
@@ -244,8 +250,13 @@
             min-height: min-content;
             margin: 0 auto;
             padding: 64px 88px 68px 88px;
-            display: flex;
+            // display: flex;
+            display: none;
             flex-direction: column;
+
+            &.active {
+                display: flex;
+            }
 
             @include respond(tablet) {
                 padding: 36px 24px;
