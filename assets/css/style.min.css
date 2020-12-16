@@ -4039,14 +4039,10 @@ body.mmactive {
 .big-header {
   position: relative;
   height: 550px;
-  margin-top: 64px !important;
-  background-position: bottom center;
+  margin-top: 88px !important;
+  background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #f6787b;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
 }
 @media only screen and (max-width: 1024px) {
   .big-header.desktop {
@@ -4119,12 +4115,12 @@ body.mmactive {
 }
 @media only screen and (max-width: 1024px) {
   .big-header {
-    margin-top: 31px !important;
+    margin-top: 56px !important;
   }
 }
 @media only screen and (max-width: tablet) {
   .big-header {
-    margin-top: 31px !important;
+    margin-top: 56px !important;
   }
 }
 @media only screen and (max-width: 820px) {
@@ -7042,6 +7038,19 @@ body.mmactive {
   width: 100%;
   border-collapse: collapse;
 }
+.tbl tr:nth-child(odd) {
+  background-color: #f9fbff;
+}
+.tbl th {
+  padding: 16px 24px;
+  background-color: #eff3fd;
+  border: 1px solid #e0e0e0;
+}
+.tbl td {
+  padding: 16px 0;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+}
 .tbl--3ds tr > td {
   flex-basis: 33.33%;
 }
@@ -7055,13 +7064,13 @@ body.mmactive {
     display: none;
   }
 }
-.tbl__3ds-m {
+.tbl__m {
   display: none;
   width: 100% !important;
   margin-bottom: 8px;
 }
 @media only screen and (max-width: 820px) {
-  .tbl__3ds-m {
+  .tbl__m {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -7069,20 +7078,20 @@ body.mmactive {
   }
 }
 @media only screen and (max-width: mobile) {
-  .tbl__3ds-m {
+  .tbl__m {
     display: flex;
     flex-direction: column;
     position: relative;
     width: 100%;
   }
 }
-.tbl__3ds-m-title {
+.tbl__m-title {
   background-color: #e7eaf4;
   padding: 16px 24px;
   color: #161720;
   border: 1px solid #e0e0e0;
 }
-.tbl__3ds-m-date {
+.tbl__m-date {
   background-color: #ffffff;
   padding: 16px 24px;
   color: #161720;
@@ -7090,19 +7099,19 @@ body.mmactive {
   border: 1px solid #e0e0e0;
 }
 @media only screen and (max-width: 820px) {
-  .tbl__3ds-m-date {
+  .tbl__m-date {
     font-size: 14px;
   }
 }
 @media only screen and (max-width: mobile) {
-  .tbl__3ds-m-date {
+  .tbl__m-date {
     font-size: 14px;
   }
 }
-.tbl__3ds-m-content {
+.tbl__m-content {
   display: flex;
 }
-.tbl__3ds-m-content > div {
+.tbl__m-content > div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7111,27 +7120,27 @@ body.mmactive {
   padding: 16px 8px;
   flex-basis: 50%;
 }
-.tbl__3ds-m-content > div > span {
+.tbl__m-content > div > span {
   color: #161720;
   text-align: center;
 }
 @media only screen and (max-width: 820px) {
-  .tbl__3ds-m-content > div > span {
+  .tbl__m-content > div > span {
     font-size: 14px;
   }
 }
 @media only screen and (max-width: mobile) {
-  .tbl__3ds-m-content > div > span {
+  .tbl__m-content > div > span {
     font-size: 14px;
   }
 }
-.tbl__3ds-m-content > div > span:nth-of-type(1) {
+.tbl__m-content > div > span:nth-of-type(1) {
   border-right: none;
 }
-.tbl__3ds-m-content > div > span:nth-of-type(2) {
+.tbl__m-content > div > span:nth-of-type(2) {
   align-self: center;
 }
-.tbl__3ds-m-content > span {
+.tbl__m-content > span {
   flex-basis: 50%;
   padding: 16px 8px;
   color: #161720;
@@ -7140,20 +7149,20 @@ body.mmactive {
   border-top: none;
 }
 @media only screen and (max-width: 820px) {
-  .tbl__3ds-m-content > span {
+  .tbl__m-content > span {
     font-size: 14px;
   }
 }
 @media only screen and (max-width: mobile) {
-  .tbl__3ds-m-content > span {
+  .tbl__m-content > span {
     font-size: 14px;
   }
 }
-.tbl__3ds-m-content > span:nth-of-type(1) {
+.tbl__m-content > span:nth-of-type(1) {
   background-color: #f9fbff;
   border-right: none;
 }
-.tbl__3ds-m-content > span:nth-of-type(2) {
+.tbl__m-content > span:nth-of-type(2) {
   vertical-align: middle;
 }
 .tbl--5ds tr > td {
@@ -7168,19 +7177,6 @@ body.mmactive {
   .tbl--5ds {
     display: none;
   }
-}
-.tbl tr:nth-child(odd) {
-  background-color: #f9fbff;
-}
-.tbl th {
-  padding: 16px 24px;
-  background-color: #eff3fd;
-  border: 1px solid #e0e0e0;
-}
-.tbl td {
-  padding: 16px 0;
-  border: 1px solid #e0e0e0;
-  text-align: center;
 }
 .tbl-forex {
   border-collapse: collapse;

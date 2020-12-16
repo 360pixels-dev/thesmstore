@@ -692,9 +692,9 @@
 .big-header {
     position: relative;
     height: 550px;
-    margin-top: 64px !important;
+    margin-top: 88px !important;
 
-    background-position: bottom center;
+    background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -708,6 +708,7 @@
 
     &.mobile {
         display: none;
+
         @include respond(tablet) {
             display: block;
         }
@@ -747,30 +748,13 @@
         height: 220px;
     }
 
-    // margin-top: 88px !important;
-    background-color: #f6787b;
-    // background: url("../../assets/images/banner-3ds.png") no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    // padding: 50px;
-    // @include bgcover;
-
     @include respond(tablet) {
-        margin-top: 31px !important;
+        margin-top: 56px !important;
         // padding: 150px;
     }
 
     @include respond(mobile) {
-        // padding: 30px;
         height: 220px;
-
-        // & > img {
-        //     height: 138px;
-        //     width: 233px;
-        // }
-        // background: url("../../assets/images/banner-3ds-m.png") no-repeat;
-        // @include bgcover;
 
         & > .banner-section__breadcrumbs {
             position: absolute;

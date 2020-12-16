@@ -2,6 +2,28 @@
     width: 100%;
     border-collapse: collapse;
 
+    // @include respond(mobile) {
+    //     display: none;
+    // }
+
+    & tr {
+        &:nth-child(odd) {
+            background-color: #f9fbff;
+        }
+    }
+
+    & th {
+        padding: 16px 24px;
+        background-color: #eff3fd;
+        border: 1px solid $mid-gray;
+    }
+
+    & td {
+        padding: 16px 0;
+        border: 1px solid $mid-gray;
+        text-align: center;
+    }
+
     &--3ds {
         & tr {
             & > td {
@@ -14,7 +36,7 @@
         }
     }
 
-    &__3ds-m {
+    &__m {
         display: none;
         width: 100% !important;
         margin-bottom: 8px;
@@ -100,6 +122,92 @@
         }
     }
 
+    // &__3ds-m {
+    //     display: none;
+    //     width: 100% !important;
+    //     margin-bottom: 8px;
+
+    //     @include respond(mobile) {
+    //         display: flex;
+    //         flex-direction: column;
+    //         position: relative;
+    //         width: 100%;
+    //     }
+
+    //     &-title {
+    //         background-color: $silver;
+    //         padding: 16px 24px;
+    //         color: $black;
+    //         border: 1px solid $mid-gray;
+    //     }
+
+    //     &-date {
+    //         background-color: $white;
+    //         padding: 16px 24px;
+    //         color: $black;
+    //         text-align: center;
+    //         border: 1px solid $mid-gray;
+
+    //         @include respond(mobile) {
+    //             font-size: 14px;
+    //         }
+    //     }
+
+    //     &-content {
+    //         display: flex;
+
+    //         & > div {
+    //             display: flex;
+    //             justify-content: center;
+    //             align-items: center;
+
+    //             border: 1px solid $mid-gray;
+    //             border-top: none;
+    //             padding: 16px 8px;
+    //             flex-basis: 50%;
+
+    //             & > span {
+    //                 color: $black;
+    //                 text-align: center;
+
+    //                 @include respond(mobile) {
+    //                     font-size: 14px;
+    //                 }
+
+    //                 &:nth-of-type(1) {
+    //                     border-right: none;
+    //                 }
+
+    //                 &:nth-of-type(2) {
+    //                     align-self: center;
+    //                 }
+    //             }
+    //         }
+
+    //         & > span {
+    //             flex-basis: 50%;
+    //             padding: 16px 8px;
+    //             color: $black;
+    //             text-align: center;
+    //             border: 1px solid $mid-gray;
+    //             border-top: none;
+
+    //             @include respond(mobile) {
+    //                 font-size: 14px;
+    //             }
+
+    //             &:nth-of-type(1) {
+    //                 background-color: #f9fbff;
+    //                 border-right: none;
+    //             }
+
+    //             &:nth-of-type(2) {
+    //                 vertical-align: middle;
+    //             }
+    //         }
+    //     }
+    // }
+
     &--5ds {
         & tr {
             & > td {
@@ -110,24 +218,6 @@
         @include respond(mobile) {
             display: none;
         }
-    }
-
-    & tr {
-        &:nth-child(odd) {
-            background-color: #f9fbff;
-        }
-    }
-
-    & th {
-        padding: 16px 24px;
-        background-color: #eff3fd;
-        border: 1px solid $mid-gray;
-    }
-
-    & td {
-        padding: 16px 0;
-        border: 1px solid $mid-gray;
-        text-align: center;
     }
 
     &-forex {
