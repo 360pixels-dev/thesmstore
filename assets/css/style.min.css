@@ -4042,6 +4042,7 @@ body.mmactive {
   margin-top: 64px !important;
   background-position: bottom center;
   background-size: cover;
+  background-repeat: no-repeat;
   background-color: #f6787b;
   display: flex;
   justify-content: center;
