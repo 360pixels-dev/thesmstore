@@ -105,6 +105,11 @@
     background: $white;
     padding: 58px;
 
+    & > ol ol[type="a"],
+    ol[type="i"] {
+        margin-left: 50px;
+    }
+
     @include respond(mobile) {
         margin: -124px 0 40px 0;
         width: 100% !important;
