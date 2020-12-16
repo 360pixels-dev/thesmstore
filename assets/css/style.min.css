@@ -9914,7 +9914,7 @@ header {
   position: relative;
   z-index: 9;
   max-width: 1014px;
-  margin: -233px auto 40px auto;
+  margin: -133px auto 40px auto;
   min-height: 500px;
   background: #ffffff;
   padding: 58px;
@@ -10117,7 +10117,7 @@ header {
 .container-colored--smart-yellow {
   border: 15px solid #f1e76c;
   margin: -133px auto 40px auto;
-  padding: 52px 100px 0 100px;
+  padding: 52px 100px 52px 100px;
   min-height: fit-content;
   height: fit-content;
 }
