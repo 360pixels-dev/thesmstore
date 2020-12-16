@@ -24,8 +24,8 @@ button {
         color: $black;
 
         &:hover {
-            background-color: transparent;
-            color: #888888;
+            background-color: #f9fbff;
+            color: $black;
             transition: 0.5s;
 
             &::after {

@@ -918,8 +918,8 @@ button {
   color: #161720;
 }
 .btn--primary-black-border:hover {
-  background-color: transparent;
-  color: #888888;
+  background-color: #f9fbff;
+  color: #161720;
   transition: 0.5s;
 }
 .btn--primary-black-border:hover::after {
