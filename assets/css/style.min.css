@@ -23505,19 +23505,6 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 .delivery__steps-buttons > a {
   margin: 12px;
 }
-.delivery__steps-buttons > a:first-child {
-  display: none;
-}
-@media only screen and (max-width: 820px) {
-  .delivery__steps-buttons > a:first-child {
-    display: block;
-  }
-}
-@media only screen and (max-width: mobile) {
-  .delivery__steps-buttons > a:first-child {
-    display: block;
-  }
-}
 @media only screen and (max-width: 1024px) {
   .delivery__steps-buttons {
     flex-direction: column;
