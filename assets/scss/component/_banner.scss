@@ -691,14 +691,13 @@
 
 .big-header {
     position: relative;
-    // display: flex;
     height: 550px;
-    // align-items: flex-start;
     margin-top: 64px !important;
 
     background-position: bottom center;
     background-size: cover;
     background-repeat: no-repeat;
+
     // padding: 88px 24px 20px 24px;
 
     &.desktop {
@@ -713,6 +712,12 @@
             display: block;
         }
     }
+
+    // hide breadcrumbs for now
+    & > .banner-section__breadcrumbs {
+        display: none;
+    }
+    // /hide breadcrumbs for now
 
     & > .desktop-banner {
         width: 100%;

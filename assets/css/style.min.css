@@ -4071,6 +4071,9 @@ body.mmactive {
     display: block;
   }
 }
+.big-header > .banner-section__breadcrumbs {
+  display: none;
+}
 .big-header > .desktop-banner {
   width: 100%;
   object-fit: cover;
