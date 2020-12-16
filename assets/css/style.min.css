@@ -10420,6 +10420,9 @@ header {
 .footer__links--socials > ul li {
   display: inline;
 }
+.footer__links--socials > ul li > a {
+  text-decoration: none;
+}
 .footer__links--socials > ul li > a img {
   height: 32px;
   width: auto;
