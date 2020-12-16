@@ -327,11 +327,11 @@
         z-index: 999;
 
         & .menu {
-            & > .main-navigation {
-                & > li:first-of-type {
-                    display: none;
-                }
-            }
+            // & > .main-navigation {
+            //     & > li:first-of-type {
+            //         display: none;
+            //     }
+            // }
 
             ul {
                 display: flex;
