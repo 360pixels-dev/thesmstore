@@ -36037,8 +36037,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 .campaign-video__video .holiday-campaign-video {
   position: absolute;
   height: 531px;
-  width: 80%;
-  pointer-events: none;
+  width: 1000px;
 }
 .campaign-video__modal {
   display: none;
