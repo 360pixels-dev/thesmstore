@@ -3085,7 +3085,7 @@ body.mmactive {
   transition: all 0.19s ease;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   #sm_menu_ham,
 .sm_menu_outer {
     display: none;
@@ -4038,19 +4038,147 @@ body.mmactive {
 
 .big-header {
   position: relative;
-  display: flex;
   height: 550px;
+  margin-top: 64px !important;
+  background-position: bottom center;
+  background-size: cover;
+  background-color: #f6787b;
+  display: flex;
+  justify-content: center;
   align-items: flex-start;
-  padding: 88px 24px 20px 24px;
+}
+@media only screen and (max-width: 1024px) {
+  .big-header.desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: tablet) {
+  .big-header.desktop {
+    display: none;
+  }
+}
+.big-header.mobile {
+  display: none;
+}
+@media only screen and (max-width: 1024px) {
+  .big-header.mobile {
+    display: block;
+  }
+}
+@media only screen and (max-width: tablet) {
+  .big-header.mobile {
+    display: block;
+  }
+}
+.big-header > .desktop-banner {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  overflow: hidden;
+}
+@media only screen and (max-width: 820px) {
+  .big-header > .desktop-banner {
+    display: none;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .big-header > .desktop-banner {
+    display: none;
+  }
+}
+.big-header > .mobile-banner {
+  display: none;
+  width: inherit;
+  object-fit: cover;
+  height: 220px;
+  position: absolute;
+}
+@media only screen and (max-width: 820px) {
+  .big-header > .mobile-banner {
+    display: block;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .big-header > .mobile-banner {
+    display: block;
+  }
 }
 @media only screen and (max-width: 820px) {
   .big-header {
-    height: 300px;
+    height: 220px;
   }
 }
 @media only screen and (max-width: mobile) {
   .big-header {
-    height: 300px;
+    height: 220px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .big-header {
+    margin-top: 31px !important;
+  }
+}
+@media only screen and (max-width: tablet) {
+  .big-header {
+    margin-top: 31px !important;
+  }
+}
+@media only screen and (max-width: 820px) {
+  .big-header {
+    height: 220px;
+  }
+  .big-header > .banner-section__breadcrumbs {
+    position: absolute;
+    top: 180px !important;
+    left: 0px !important;
+    padding-left: 10px !important;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(22, 23, 32, 0) 0%, rgba(22, 23, 32, 0.43) 100%);
+  }
+}
+@media only screen and (max-width: 820px) and (max-width: 820px) {
+  .big-header > .banner-section__breadcrumbs > a {
+    color: #ffffff;
+  }
+  .big-header > .banner-section__breadcrumbs > a:not(:last-child) {
+    background: url(../../assets/images/arrow-right.svg) no-repeat right center;
+  }
+}
+@media only screen and (max-width: 820px) and (max-width: mobile) {
+  .big-header > .banner-section__breadcrumbs > a {
+    color: #ffffff;
+  }
+  .big-header > .banner-section__breadcrumbs > a:not(:last-child) {
+    background: url(../../assets/images/arrow-right.svg) no-repeat right center;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .big-header {
+    height: 220px;
+  }
+  .big-header > .banner-section__breadcrumbs {
+    position: absolute;
+    top: 180px !important;
+    left: 0px !important;
+    padding-left: 10px !important;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(22, 23, 32, 0) 0%, rgba(22, 23, 32, 0.43) 100%);
+  }
+}
+@media only screen and (max-width: mobile) and (max-width: 820px) {
+  .big-header > .banner-section__breadcrumbs > a {
+    color: #ffffff;
+  }
+  .big-header > .banner-section__breadcrumbs > a:not(:last-child) {
+    background: url(../../assets/images/arrow-right.svg) no-repeat right center;
+  }
+}
+@media only screen and (max-width: mobile) and (max-width: mobile) {
+  .big-header > .banner-section__breadcrumbs > a {
+    color: #ffffff;
+  }
+  .big-header > .banner-section__breadcrumbs > a:not(:last-child) {
+    background: url(../../assets/images/arrow-right.svg) no-repeat right center;
   }
 }
 .big-header--beauty-trends {
