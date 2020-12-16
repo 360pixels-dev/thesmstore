@@ -1514,9 +1514,6 @@ ul {
   /* Displays second level dropdowns to the right of the first level dropdown */
   /* Simple clearfix */
 }
-.nav__upper .menu > .main-navigation > li:first-of-type {
-  display: none;
-}
 .nav__upper .menu ul {
   display: flex;
   justify-content: center;
@@ -36031,9 +36028,6 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 .campaign-video__video {
   cursor: pointer;
   height: 551px;
-  background: url("../images/holiday-campaign-vid.png") no-repeat;
-  background-size: contain;
-  background-position: center;
   margin: 50px 88px 24px 88px;
   display: flex;
   flex-direction: column;
@@ -36043,7 +36037,8 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 .campaign-video__video .holiday-campaign-video {
   position: absolute;
   height: 531px;
-  display: none;
+  width: 80%;
+  pointer-events: none;
 }
 .campaign-video__modal {
   display: none;

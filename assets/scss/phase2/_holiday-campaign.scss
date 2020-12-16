@@ -53,9 +53,9 @@
     &__video {
         cursor: pointer;
         height: 551px;
-        background: url("../images/holiday-campaign-vid.png") no-repeat;
-        background-size: contain;
-        background-position: center;
+        // background: url("../images/holiday-campaign-vid.png") no-repeat;
+        // background-size: contain;
+        // background-position: center;
         // background: $christmas-red;
         // background: url("../images/holiday-campaign-vid.png");
         // background-size: contain;
@@ -65,7 +65,9 @@
         .holiday-campaign-video {
             position: absolute;
             height: 531px;
-            display: none;
+            // display: none;
+            width: 80%;
+            pointer-events: none;
         }
 
         margin: 50px 88px 24px 88px;
