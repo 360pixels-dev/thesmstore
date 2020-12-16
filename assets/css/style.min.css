@@ -37281,12 +37281,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 .ctd__header {
   position: relative;
   width: 100%;
-}
-.ctd__header:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
+  margin-bottom: 60px;
   width: 100%;
   height: 290px;
   content: "";
@@ -37296,20 +37291,32 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   background-position: center top;
 }
 @media only screen and (max-width: 1440px) {
-  .ctd__header:before {
+  .ctd__header {
     background-image: url("../images/dots.svg");
   }
 }
 @media only screen and (max-width: 820px) {
-  .ctd__header:before {
+  .ctd__header {
     background-image: url("../images/dots-m.svg");
     height: 271px;
+    margin-bottom: 120px;
   }
 }
 @media only screen and (max-width: mobile) {
-  .ctd__header:before {
+  .ctd__header {
     background-image: url("../images/dots-m.svg");
     height: 271px;
+    margin-bottom: 120px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .ctd__header {
+    margin-bottom: 223px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .ctd__header {
+    margin-bottom: 247px;
   }
 }
 .ctd__header > div {

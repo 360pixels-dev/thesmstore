@@ -15,30 +15,64 @@
         position: relative;
         width: 100%;
 
-        &:before {
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -1;
-            width: 100%;
-            height: 290px;
-            content: "";
-            background-color: #aed6e3;
-            background-image: url("../images/dots-l.svg");
-            background-size: cover;
-            background-position: center top;
-            // background-image: radial-gradient($gray 2px, #aed6e3 2px);
-            // background-size: 49px 49px;
+        margin-bottom: 60px;
 
-            @include respond(1440px) {
-                background-image: url("../images/dots.svg");
-            }
+        // position: absolute;
+        // top: 0;
+        // left: 0;
+        // z-index: -1;
+        width: 100%;
+        height: 290px;
+        content: "";
+        background-color: #aed6e3;
+        background-image: url("../images/dots-l.svg");
+        background-size: cover;
+        background-position: center top;
+        // background-image: radial-gradient($gray 2px, #aed6e3 2px);
+        // background-size: 49px 49px;
 
-            @include respond(mobile) {
-                background-image: url("../images/dots-m.svg");
-                height: 271px;
-            }
+        @include respond(1440px) {
+            background-image: url("../images/dots.svg");
         }
+
+        @include respond(mobile) {
+            background-image: url("../images/dots-m.svg");
+            height: 271px;
+            margin-bottom: 120px;
+        }
+
+        @include respond(360px) {
+            margin-bottom: 223px;
+        }
+
+        @include respond(360px) {
+            margin-bottom: 247px;
+        }
+
+        // &:before {
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     z-index: -1;
+        //     width: 100%;
+        //     height: 290px;
+        //     content: "";
+        //     background-color: #aed6e3;
+        //     background-image: url("../images/dots-l.svg");
+        //     background-size: cover;
+        //     background-position: center top;
+        //     // background-image: radial-gradient($gray 2px, #aed6e3 2px);
+        //     // background-size: 49px 49px;
+
+        //     @include respond(1440px) {
+        //         background-image: url("../images/dots.svg");
+        //     }
+
+        //     @include respond(mobile) {
+        //         background-image: url("../images/dots-m.svg");
+        //         height: 271px;
+        //     }
+        // }
 
         & > div {
             min-height: 348px;
