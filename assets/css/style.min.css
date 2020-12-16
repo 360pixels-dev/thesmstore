@@ -919,7 +919,7 @@ button {
 }
 .btn--primary-black-border:hover {
   background-color: transparent;
-  color: #ffffff;
+  color: #888888;
   transition: 0.5s;
 }
 .btn--primary-black-border:hover::after {
