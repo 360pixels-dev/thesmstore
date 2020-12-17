@@ -692,7 +692,6 @@
 .big-header {
     position: relative;
     height: 550px;
-    margin-top: 88px !important;
 
     background-position: top center;
     background-size: cover;
@@ -701,6 +700,8 @@
     // padding: 88px 24px 20px 24px;
 
     &.desktop {
+        margin-top: 88px !important;
+
         @include respond(tablet) {
             display: none;
         }
@@ -708,6 +709,7 @@
 
     &.mobile {
         display: none;
+        margin-top: 56px !important;
 
         @include respond(tablet) {
             display: block;
@@ -742,15 +744,6 @@
         @include respond(mobile) {
             display: block;
         }
-    }
-
-    @include respond(mobile) {
-        height: 220px;
-    }
-
-    @include respond(tablet) {
-        margin-top: 56px !important;
-        // padding: 150px;
     }
 
     @include respond(mobile) {
