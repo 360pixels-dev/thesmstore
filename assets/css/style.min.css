@@ -2913,6 +2913,7 @@ body.mmactive {
   width: 308px;
   opacity: 0;
   background-color: #ffffff;
+  box-shadow: 0px 5px 15px rgba(131, 134, 144, 0.55);
   -webkit-transition: opacity 0.2s;
   -moz-transition: opacity 0.2s;
   transition: opacity 0.2s;
