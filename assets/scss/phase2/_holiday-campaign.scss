@@ -4,7 +4,7 @@
     background-image: url("../images/holiday-campaign-header-banner.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right center;
 
     & > h1 {
         color: $white;
@@ -17,7 +17,6 @@
     @include respond(tablet) {
         margin-top: 56px;
         height: 167px;
-        background-size: contain auto;
 
         & > h1 {
             // position: absolute;
@@ -168,6 +167,10 @@
             .holiday-campaign-video {
                 height: 215px;
                 width: 336px;
+
+                @include respond(320px) {
+                    width: 296px;
+                }
             }
 
             .play-button {
@@ -446,6 +449,10 @@
     &__description {
         padding: 12px 30px;
         padding-bottom: 48px;
+
+        @include respond(320px) {
+            padding: 12px 15px;
+        }
 
         &:first-child {
             padding-bottom: 48px;

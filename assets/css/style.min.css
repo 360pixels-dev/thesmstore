@@ -1706,7 +1706,9 @@ ul {
     position: absolute;
     left: 50%;
     right: auto;
-    transform: translate(-50%, 0);
+    top: 50%;
+    bottom: auto;
+    transform: translate(-50%, -50%);
   }
 }
 @media only screen and (max-width: tablet) {
@@ -1715,7 +1717,9 @@ ul {
     position: absolute;
     left: 50%;
     right: auto;
-    transform: translate(-50%, 0);
+    top: 50%;
+    bottom: auto;
+    transform: translate(-50%, -50%);
   }
 }
 .nav__upper .logo {
@@ -36107,7 +36111,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   background-image: url("../images/holiday-campaign-header-banner.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right center;
 }
 .holiday-campaign-header-banner > h1 {
   color: #ffffff;
@@ -36120,7 +36124,6 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   .holiday-campaign-header-banner {
     margin-top: 56px;
     height: 167px;
-    background-size: contain auto;
   }
   .holiday-campaign-header-banner > h1 {
     bottom: 26px;
@@ -36135,7 +36138,6 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   .holiday-campaign-header-banner {
     margin-top: 56px;
     height: 167px;
-    background-size: contain auto;
   }
   .holiday-campaign-header-banner > h1 {
     bottom: 26px;
@@ -36274,6 +36276,13 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
     height: 215px;
     width: 336px;
   }
+}
+@media only screen and (max-width: 1024px) and (max-width: 320px) {
+  .campaign-video__video .holiday-campaign-video {
+    width: 296px;
+  }
+}
+@media only screen and (max-width: 1024px) {
   .campaign-video__video .play-button {
     height: 71px;
     width: 71px;
@@ -36299,6 +36308,13 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
     height: 215px;
     width: 336px;
   }
+}
+@media only screen and (max-width: tablet) and (max-width: 320px) {
+  .campaign-video__video .holiday-campaign-video {
+    width: 296px;
+  }
+}
+@media only screen and (max-width: tablet) {
   .campaign-video__video .play-button {
     height: 71px;
     width: 71px;
@@ -36584,6 +36600,11 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 .mobile-holiday-campaign-main-content__description {
   padding: 12px 30px;
   padding-bottom: 48px;
+}
+@media only screen and (max-width: 320px) {
+  .mobile-holiday-campaign-main-content__description {
+    padding: 12px 15px;
+  }
 }
 .mobile-holiday-campaign-main-content__description:first-child {
   padding-bottom: 48px;
