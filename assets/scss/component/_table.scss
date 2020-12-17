@@ -22,6 +22,51 @@
         padding: 16px 0;
         border: 1px solid $mid-gray;
         text-align: center;
+
+        @include respond(mobile) {
+            border-bottom: none;
+
+            &:last-child {
+                border-bottom: 1px solid $mid-gray;
+            }
+        }
+    }
+
+    @include respond(mobile) {
+        & > thead,
+        tbody tr:first-child {
+            display: none;
+        }
+
+        & > tr,
+        td {
+            display: block;
+        }
+
+        & > tbody tr:not(:last-child) {
+            border-bottom: 2px solid $mid-gray;
+        }
+
+        & > tbody td {
+            padding-left: 50%;
+            position: relative;
+
+            &:before {
+                position: absolute;
+                padding: 16px auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                left: 0;
+                top: 50%;
+                bottom: 0;
+                width: 50%;
+                height: 100%;
+                content: attr(data-col-title);
+                transform: translate(0, -50%);
+                border-right: 1px solid $mid-gray;
+            }
+        }
     }
 
     &--3ds {
