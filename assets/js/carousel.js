@@ -466,24 +466,24 @@ $(document).ready(function() {
     // populateVideoSlider();
     // populateTemporaryVideoSlider()
     
-    $('.featured-video__controls--ctd .controls__arrow').click(function() {
-        var dir = $(this).attr('class').split('--')[1];
+    // $('.featured-video__controls--ctd .controls__arrow').click(function() {
+    //     var dir = $(this).attr('class').split('--')[1];
         
-        // REARRANGE EVENT ARRAY
-        ctdVideos[0].isActive = false;
-        if(dir == 'right') { //to the right
-            ctdVideos.push(ctdVideos.shift());
-        }
-        else { //to the left
-            ctdVideos.unshift(ctdVideos.pop());
-        }
-        ctdVideos[0].isActive = true;
+    //     // REARRANGE EVENT ARRAY
+    //     ctdVideos[0].isActive = false;
+    //     if(dir == 'right') { //to the right
+    //         ctdVideos.push(ctdVideos.shift());
+    //     }
+    //     else { //to the left
+    //         ctdVideos.unshift(ctdVideos.pop());
+    //     }
+    //     ctdVideos[0].isActive = true;
         
-        populateCtdVideoDetails(); // CHANGE EVENT DETAILS
-        // populateVideoSlider(); // REARRANGE EVENT SLIDER
-        // populateTemporaryVideoSlider(); // TEMPORARY VIDEO SLIDER
+    //     // populateCtdVideoDetails(); // CHANGE EVENT DETAILS
+    //     // populateVideoSlider(); // REARRANGE EVENT SLIDER
+    //     // populateTemporaryVideoSlider(); // TEMPORARY VIDEO SLIDER
 
-    });
+    // });
 
     $('.featured-video__controls--ctd .controls__arrow').click(function() {
         var dir = $(this).attr('class').split('--')[1];
