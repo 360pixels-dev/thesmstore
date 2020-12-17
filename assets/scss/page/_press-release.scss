@@ -1,5 +1,4 @@
 .press-release {
-
     & .container-colored {
         & > h1 {
             letter-spacing: 4px;
@@ -29,23 +28,23 @@
         margin-bottom: 28px;
     }
 
-    & .large-image {
-        position: relative;
-        max-height: 500px;
-        top: -70px;
-        z-index: 50;
-        max-width: 1224px;
-        margin: 0 auto;
-        text-align: center;
+    // & .large-image {
+    //     position: relative;
+    //     max-height: 500px;
+    //     top: -70px;
+    //     z-index: 50;
+    //     max-width: 1224px;
+    //     margin: 0 auto;
+    //     text-align: center;
 
-        // @include respond(tablet) {
+    //     // @include respond(tablet) {
 
-        // }
+    //     // }
 
-        & > img {
-            width: 100%;
-        }
-    }
+    //     & > img {
+    //         width: 100%;
+    //     }
+    // }
 
     & .container {
         & > .hr {
@@ -63,7 +62,7 @@
     align-items: center;
     flex-direction: column;
     padding: 32px 0;
-    background-image: radial-gradient(rgba(0,0,0,0.2) 2px, #F0F3FC 2px);
+    background-image: radial-gradient(rgba(0, 0, 0, 0.2) 2px, #f0f3fc 2px);
     background-size: 57px 57px;
     background-position: top center;
 
