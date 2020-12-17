@@ -7045,6 +7045,16 @@ body.mmactive {
 .tbl tr:nth-child(odd) {
   background-color: #f9fbff;
 }
+@media only screen and (max-width: 820px) {
+  .tbl tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .tbl tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+}
 .tbl th {
   padding: 16px 24px;
   background-color: #eff3fd;
@@ -7102,6 +7112,9 @@ body.mmactive {
     transform: translate(0, -50%);
     border-right: 1px solid #e0e0e0;
   }
+  .tbl > tbody tr td:nth-of-type(odd) {
+    background-color: #f9fbff;
+  }
 }
 @media only screen and (max-width: mobile) {
   .tbl > thead,
@@ -7133,6 +7146,9 @@ body.mmactive {
     content: attr(data-col-title);
     transform: translate(0, -50%);
     border-right: 1px solid #e0e0e0;
+  }
+  .tbl > tbody tr td:nth-of-type(odd) {
+    background-color: #f9fbff;
   }
 }
 .tbl--3ds tr > td {
