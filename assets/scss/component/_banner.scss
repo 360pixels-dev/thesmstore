@@ -1103,10 +1103,54 @@
 
 // BANNER
 .banner-section {
-    width: 100%;
+    // margin-top: 88px;
+    // width: 100%;
+    height: 355px;
+    padding: 0 26px;
+
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 0 26px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    & > h1 {
+        color: $white;
+        position: relative;
+        top: 45%;
+        left: 192px;
+        width: fit-content;
+    }
+
+    &.desktop {
+        margin-top: 88px;
+        height: 355px;
+
+        @include respond(mobile) {
+            display: none;
+        }
+    }
+
+    &.mobile {
+        height: 167px;
+        margin-top: 56px;
+        display: none;
+
+        & > h1 {
+            // position: absolute;
+            // width: 20px;
+
+            bottom: 26px;
+            left: 28px;
+            font-size: 24px;
+            letter-spacing: 1.6px;
+            line-height: 32px;
+            margin-right: 0 !important;
+        }
+
+        @include respond(mobile) {
+            display: block;
+        }
+    }
 
     @include respond(mobile) {
         padding: 0 8px;
