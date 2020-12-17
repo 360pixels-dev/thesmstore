@@ -28,23 +28,23 @@
         margin-bottom: 28px;
     }
 
-    // & .large-image {
-    //     position: relative;
-    //     max-height: 500px;
-    //     top: -70px;
-    //     z-index: 50;
-    //     max-width: 1224px;
-    //     margin: 0 auto;
-    //     text-align: center;
+    & .large-image {
+        position: relative;
+        max-height: 500px;
+        top: -70px;
+        z-index: 50;
+        max-width: 1224px;
+        margin: 0 auto;
+        text-align: center;
 
-    //     // @include respond(tablet) {
+        // @include respond(tablet) {
 
-    //     // }
+        // }
 
-    //     & > img {
-    //         width: 100%;
-    //     }
-    // }
+        & > img {
+            width: 100%;
+        }
+    }
 
     & .container {
         & > .hr {

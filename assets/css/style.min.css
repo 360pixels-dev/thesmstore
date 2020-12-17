@@ -17010,20 +17010,6 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
     margin: 10px auto;
   }
 }
-.whats-new .promo-image {
-  height: fit-content;
-  width: auto;
-  position: relative;
-  background: url("../images/globe-sale.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.whats-new .promo-image > img {
-  visibility: hidden;
-  max-width: 1280px;
-  width: 100%;
-}
 .whats-new .terms-conditions {
   min-height: 702px;
   background-color: #faf3f0;
@@ -20096,6 +20082,18 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 .press-release .blog-paragraph {
   margin-bottom: 28px;
+}
+.press-release .large-image {
+  position: relative;
+  max-height: 500px;
+  top: -70px;
+  z-index: 50;
+  max-width: 1224px;
+  margin: 0 auto;
+  text-align: center;
+}
+.press-release .large-image > img {
+  width: 100%;
 }
 @media only screen and (max-width: 820px) {
   .press-release .container > .hr {
