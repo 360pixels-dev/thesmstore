@@ -69,6 +69,7 @@
                 content: attr(data-col-title);
                 transform: translate(0, -50%);
                 border-right: 1px solid $mid-gray;
+                font-weight: bold;
             }
         }
 
@@ -175,91 +176,91 @@
         }
     }
 
-    // &__3ds-m {
-    //     display: none;
-    //     width: 100% !important;
-    //     margin-bottom: 8px;
+    &__3ds-m {
+        display: none;
+        width: 100% !important;
+        margin-bottom: 8px;
 
-    //     @include respond(mobile) {
-    //         display: flex;
-    //         flex-direction: column;
-    //         position: relative;
-    //         width: 100%;
-    //     }
+        @include respond(mobile) {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            width: 100%;
+        }
 
-    //     &-title {
-    //         background-color: $silver;
-    //         padding: 16px 24px;
-    //         color: $black;
-    //         border: 1px solid $mid-gray;
-    //     }
+        &-title {
+            background-color: $silver;
+            padding: 16px 24px;
+            color: $black;
+            border: 1px solid $mid-gray;
+        }
 
-    //     &-date {
-    //         background-color: $white;
-    //         padding: 16px 24px;
-    //         color: $black;
-    //         text-align: center;
-    //         border: 1px solid $mid-gray;
+        &-date {
+            background-color: $white;
+            padding: 16px 24px;
+            color: $black;
+            text-align: center;
+            border: 1px solid $mid-gray;
 
-    //         @include respond(mobile) {
-    //             font-size: 14px;
-    //         }
-    //     }
+            @include respond(mobile) {
+                font-size: 14px;
+            }
+        }
 
-    //     &-content {
-    //         display: flex;
+        &-content {
+            display: flex;
 
-    //         & > div {
-    //             display: flex;
-    //             justify-content: center;
-    //             align-items: center;
+            & > div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
-    //             border: 1px solid $mid-gray;
-    //             border-top: none;
-    //             padding: 16px 8px;
-    //             flex-basis: 50%;
+                border: 1px solid $mid-gray;
+                border-top: none;
+                padding: 16px 8px;
+                flex-basis: 50%;
 
-    //             & > span {
-    //                 color: $black;
-    //                 text-align: center;
+                & > span {
+                    color: $black;
+                    text-align: center;
 
-    //                 @include respond(mobile) {
-    //                     font-size: 14px;
-    //                 }
+                    @include respond(mobile) {
+                        font-size: 14px;
+                    }
 
-    //                 &:nth-of-type(1) {
-    //                     border-right: none;
-    //                 }
+                    &:nth-of-type(1) {
+                        border-right: none;
+                    }
 
-    //                 &:nth-of-type(2) {
-    //                     align-self: center;
-    //                 }
-    //             }
-    //         }
+                    &:nth-of-type(2) {
+                        align-self: center;
+                    }
+                }
+            }
 
-    //         & > span {
-    //             flex-basis: 50%;
-    //             padding: 16px 8px;
-    //             color: $black;
-    //             text-align: center;
-    //             border: 1px solid $mid-gray;
-    //             border-top: none;
+            & > span {
+                flex-basis: 50%;
+                padding: 16px 8px;
+                color: $black;
+                text-align: center;
+                border: 1px solid $mid-gray;
+                border-top: none;
 
-    //             @include respond(mobile) {
-    //                 font-size: 14px;
-    //             }
+                @include respond(mobile) {
+                    font-size: 14px;
+                }
 
-    //             &:nth-of-type(1) {
-    //                 background-color: #f9fbff;
-    //                 border-right: none;
-    //             }
+                &:nth-of-type(1) {
+                    background-color: #f9fbff;
+                    border-right: none;
+                }
 
-    //             &:nth-of-type(2) {
-    //                 vertical-align: middle;
-    //             }
-    //         }
-    //     }
-    // }
+                &:nth-of-type(2) {
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
 
     &--5ds {
         & tr {
