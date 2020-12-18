@@ -195,13 +195,13 @@
     & .large-image {
         position: relative;
         height: 260px;
-        top: -70px;
+        top: -35px;
         z-index: 50;
         width: 1224px;
         left: 50%;
         right: auto;
         transform: translate(-50%, 0);
-        // margin: 0 auto;
+        margin: 0;
 
         @include respond(tablet) {
             width: 100%;

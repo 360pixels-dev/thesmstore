@@ -7126,6 +7126,10 @@ body.mmactive {
   .tbl > tbody td {
     padding-left: 50%;
     position: relative;
+    font-family: "Open Sans", "Open Sans", Helvetica, Arial, sans-serif !important;
+  }
+  .tbl > tbody td > span {
+    font-family: "Open Sans", "Open Sans", Helvetica, Arial, sans-serif !important;
   }
   .tbl > tbody td:before {
     position: absolute;
@@ -7142,6 +7146,7 @@ body.mmactive {
     transform: translate(0, -50%);
     border-right: 1px solid #e0e0e0;
     font-weight: bold;
+    font-family: "Open Sans", "Open Sans", Helvetica, Arial, sans-serif !important;
   }
   .tbl > tbody tr td:nth-of-type(odd) {
     background-color: #f9fbff;
@@ -7162,6 +7167,10 @@ body.mmactive {
   .tbl > tbody td {
     padding-left: 50%;
     position: relative;
+    font-family: "Open Sans", "Open Sans", Helvetica, Arial, sans-serif !important;
+  }
+  .tbl > tbody td > span {
+    font-family: "Open Sans", "Open Sans", Helvetica, Arial, sans-serif !important;
   }
   .tbl > tbody td:before {
     position: absolute;
@@ -7178,6 +7187,7 @@ body.mmactive {
     transform: translate(0, -50%);
     border-right: 1px solid #e0e0e0;
     font-weight: bold;
+    font-family: "Open Sans", "Open Sans", Helvetica, Arial, sans-serif !important;
   }
   .tbl > tbody tr td:nth-of-type(odd) {
     background-color: #f9fbff;
@@ -10346,6 +10356,7 @@ header {
   min-height: 500px;
   background: #ffffff;
   padding: 58px;
+  font-family: "Open Sans";
 }
 .container-colored > ol ol[type=a],
 .container-colored ol[type=i] {
@@ -10560,6 +10571,9 @@ header {
 .container-colored--smart-yellow > .smart-headline {
   width: 100%;
   margin-bottom: 32px;
+}
+.container-colored--smart-yellow > span {
+  font-family: "Open Sans";
 }
 .container-colored--smart-yellow > ol {
   font-family: "Open Sans";
@@ -16972,12 +16986,13 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 .whats-new .large-image {
   position: relative;
   height: 260px;
-  top: -70px;
+  top: -35px;
   z-index: 50;
   width: 1224px;
   left: 50%;
   right: auto;
   transform: translate(-50%, 0);
+  margin: 0;
 }
 @media only screen and (max-width: 1024px) {
   .whats-new .large-image {

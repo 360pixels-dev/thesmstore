@@ -104,6 +104,7 @@
     min-height: 500px;
     background: $white;
     padding: 58px;
+    font-family: $font-base;
 
     & > ol ol[type="a"],
     ol[type="i"] {
@@ -250,6 +251,10 @@
         & > .smart-headline {
             width: 100%;
             margin-bottom: 32px;
+        }
+
+        & > span {
+            font-family: $font-base;
         }
 
         & > ol {

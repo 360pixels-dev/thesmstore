@@ -51,6 +51,13 @@
             padding-left: 50%;
             position: relative;
 
+            font-family: $font-base, "Open Sans", Helvetica, Arial, sans-serif !important;
+
+            & > span {
+                font-family: $font-base, "Open Sans", Helvetica, Arial,
+                    sans-serif !important;
+            }
+
             &:before {
                 position: absolute;
                 padding: 16px auto;
@@ -66,6 +73,9 @@
                 transform: translate(0, -50%);
                 border-right: 1px solid $mid-gray;
                 font-weight: bold;
+
+                font-family: $font-base, "Open Sans", Helvetica, Arial,
+                    sans-serif !important;
             }
         }
 
