@@ -101,6 +101,20 @@
             height: 75%;
         }
 
+        &.desktop {
+            @include respond(mobile) {
+                display: none;
+            }
+        }
+
+        &.mobile {
+            display: none;
+
+            @include respond(mobile) {
+                display: block;
+            }
+        }
+
         @include respond(360px) {
             // right: -28px;
             //height: 378px;

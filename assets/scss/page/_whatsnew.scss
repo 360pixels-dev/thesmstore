@@ -195,7 +195,7 @@
     & .large-image {
         position: relative;
         height: 260px;
-        top: -35px;
+        top: -70px;
         z-index: 50;
         width: 1224px;
         left: 50%;
@@ -212,6 +212,25 @@
         & > img {
             width: inherit;
             object-fit: cover;
+        }
+    }
+
+    & .promo-image {
+        position: relative;
+        left: 50%;
+        right: auto;
+        transform: translate(-50%, 0);
+        margin: 0;
+
+        & > img {
+            position: relative;
+            width: 100%;
+            height: 100%;
+
+            left: 50%;
+            right: auto;
+            transform: translate(-50%, 0);
+            margin: 0;
         }
     }
 
@@ -264,33 +283,6 @@
             }
         }
     }
-
-    // & .promo-image {
-    //     height: fit-content;
-    //     width: auto;
-    //     position: relative;
-    //     background: url("../images/globe-sale.png");
-    //     background-position: center;
-    //     background-size: contain;
-    //     background-repeat: no-repeat;
-
-    //     // @include respond(mobile) {
-    //     //     height: max-content;
-    //     //     width: auto;
-    //     //     // background: url("../images/globe-sale-m.png");
-    //     //     background-size: cover;
-    //     //     background-position: center;
-    //     //     background-repeat: no-repeat;
-    //     // }
-
-    //     & > img {
-    //         // position: absolute;
-    //         visibility: hidden;
-    //         max-width: 1280px;
-    //         width: 100%;
-    //         // height: 100%;
-    //     }
-    // }
 
     & .terms-conditions {
         min-height: 702px;
