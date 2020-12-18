@@ -2,10 +2,6 @@
     width: 100%;
     border-collapse: collapse;
 
-    // @include respond(mobile) {
-    //     display: none;
-    // }
-
     & tr {
         &:nth-child(odd) {
             background-color: #f9fbff;
@@ -75,6 +71,64 @@
 
         & > tbody tr td:nth-of-type(odd) {
             background-color: #f9fbff;
+        }
+    }
+
+    &__no-head {
+        width: 100%;
+        border-collapse: collapse;
+
+        & tr {
+            &:nth-child(odd) {
+                background-color: #f9fbff;
+
+                @include respond(mobile) {
+                    background-color: $white;
+
+                    &:last-child {
+                        border-bottom: 1px solid $mid-gray !important;
+                    }
+                }
+            }
+        }
+
+        & th {
+            padding: 16px 24px;
+            background-color: #eff3fd;
+            border: 1px solid $mid-gray;
+        }
+
+        & td {
+            padding: 16px 0;
+            border: 1px solid $mid-gray;
+            text-align: center;
+
+            @include respond(mobile) {
+                border-bottom: none !important;
+            }
+        }
+
+        @include respond(mobile) {
+            & > tr,
+            td {
+                display: block;
+            }
+
+            & > tbody tr:nth-of-type(odd) {
+                & > td:nth-of-type(odd) {
+                    background-color: #f9fbff;
+                }
+            }
+
+            & > tbody tr:nth-of-type(even) {
+                & > td:nth-of-type(even) {
+                    background-color: #f9fbff;
+                }
+            }
+
+            // & > tbody tr td:nth-of-type(odd) {
+            //     background-color: #f9fbff;
+            // }
         }
     }
 

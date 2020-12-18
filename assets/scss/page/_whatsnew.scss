@@ -198,7 +198,10 @@
         top: -70px;
         z-index: 50;
         width: 1224px;
-        margin: 0 auto;
+        left: 50%;
+        right: auto;
+        transform: translate(-50%, 0);
+        // margin: 0 auto;
 
         @include respond(tablet) {
             width: 100%;
@@ -207,9 +210,8 @@
         }
 
         & > img {
-            @include respond(tablet) {
-                width: 100%;
-            }
+            width: inherit;
+            object-fit: cover;
         }
     }
 

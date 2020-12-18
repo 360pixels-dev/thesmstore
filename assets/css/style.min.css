@@ -7183,6 +7183,73 @@ body.mmactive {
     background-color: #f9fbff;
   }
 }
+.tbl__no-head {
+  width: 100%;
+  border-collapse: collapse;
+}
+.tbl__no-head tr:nth-child(odd) {
+  background-color: #f9fbff;
+}
+@media only screen and (max-width: 820px) {
+  .tbl__no-head tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+  .tbl__no-head tr:nth-child(odd):last-child {
+    border-bottom: 1px solid #e0e0e0 !important;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .tbl__no-head tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+  .tbl__no-head tr:nth-child(odd):last-child {
+    border-bottom: 1px solid #e0e0e0 !important;
+  }
+}
+.tbl__no-head th {
+  padding: 16px 24px;
+  background-color: #eff3fd;
+  border: 1px solid #e0e0e0;
+}
+.tbl__no-head td {
+  padding: 16px 0;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+}
+@media only screen and (max-width: 820px) {
+  .tbl__no-head td {
+    border-bottom: none !important;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .tbl__no-head td {
+    border-bottom: none !important;
+  }
+}
+@media only screen and (max-width: 820px) {
+  .tbl__no-head > tr,
+.tbl__no-head td {
+    display: block;
+  }
+  .tbl__no-head > tbody tr:nth-of-type(odd) > td:nth-of-type(odd) {
+    background-color: #f9fbff;
+  }
+  .tbl__no-head > tbody tr:nth-of-type(even) > td:nth-of-type(even) {
+    background-color: #f9fbff;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .tbl__no-head > tr,
+.tbl__no-head td {
+    display: block;
+  }
+  .tbl__no-head > tbody tr:nth-of-type(odd) > td:nth-of-type(odd) {
+    background-color: #f9fbff;
+  }
+  .tbl__no-head > tbody tr:nth-of-type(even) > td:nth-of-type(even) {
+    background-color: #f9fbff;
+  }
+}
 .tbl--3ds tr > td {
   flex-basis: 33.33%;
 }
@@ -16908,7 +16975,9 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   top: -70px;
   z-index: 50;
   width: 1224px;
-  margin: 0 auto;
+  left: 50%;
+  right: auto;
+  transform: translate(-50%, 0);
 }
 @media only screen and (max-width: 1024px) {
   .whats-new .large-image {
@@ -16924,15 +16993,9 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
     margin-bottom: -70px;
   }
 }
-@media only screen and (max-width: 1024px) {
-  .whats-new .large-image > img {
-    width: 100%;
-  }
-}
-@media only screen and (max-width: tablet) {
-  .whats-new .large-image > img {
-    width: 100%;
-  }
+.whats-new .large-image > img {
+  width: inherit;
+  object-fit: cover;
 }
 .whats-new .sale-list {
   height: 468px;
