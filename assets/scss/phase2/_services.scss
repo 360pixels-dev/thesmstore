@@ -66,6 +66,7 @@
         & > h1 {
             top: 48%;
             left: 10%;
+            width: 90%;
         }
 
         & > img {
@@ -73,13 +74,6 @@
             object-fit: cover;
             height: 167px;
             position: absolute;
-        }
-    }
-
-    @include respond(mobile) {
-        & > h1 {
-            top: 58%;
-            left: 8%;
         }
     }
 }

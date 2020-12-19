@@ -91,7 +91,7 @@
 
             @include respond(mobile) {
                 padding: 24px 12px 0 12px;
-                margin: 40px 0 0 0;
+                margin: 34px 0 0 0;
             }
         }
 
@@ -398,7 +398,7 @@
                 text-transform: none;
             }
 
-            & > form {
+            & > .form {
                 margin-top: 26px;
 
                 input,
