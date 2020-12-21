@@ -36199,9 +36199,18 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 .mobile-carousel-gift-section__card a {
   margin-bottom: 4%;
+  display: none;
+}
+@media only screen and (max-width: 320px) {
+  .mobile-carousel-gift-section__card {
+    width: 284px !important;
+  }
+  .mobile-carousel-gift-section__card > img {
+    width: 284px !important;
+  }
 }
 .mobile-carousel-gift-section__card-description {
-  padding: 18px 0 32px 18px !important;
+  padding: 12px 0 0 12px;
   width: 304px;
 }
 .mobile-carousel-gift-section__card-description p {

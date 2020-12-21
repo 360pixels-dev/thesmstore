@@ -240,10 +240,21 @@
 
         a {
             margin-bottom: 4%;
+
+            display: none;
+        }
+
+        @include respond(320px) {
+            width: 284px !important;
+
+            & > img {
+                width: 284px !important;
+            }
         }
 
         &-description {
-            padding: 18px 0 32px 18px !important;
+            // padding: 18px 0 32px 18px !important;
+            padding: 12px 0 0 12px;
             width: 304px;
             p {
                 padding-top: 2%;
