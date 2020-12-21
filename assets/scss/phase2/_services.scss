@@ -254,12 +254,21 @@
 
         &-description {
             // padding: 18px 0 32px 18px !important;
-            padding: 12px 0 0 12px;
+            padding: 12px 12px 0 12px;
             width: 304px;
+
+            @include respond(320px) {
+                width: inherit;
+            }
+
             p {
                 padding-top: 2%;
                 padding-bottom: 5%;
                 width: 280px;
+
+                @include respond(320px) {
+                    width: 100%;
+                }
             }
 
             & .red {

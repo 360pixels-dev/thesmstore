@@ -36210,13 +36210,23 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   }
 }
 .mobile-carousel-gift-section__card-description {
-  padding: 12px 0 0 12px;
+  padding: 12px 12px 0 12px;
   width: 304px;
+}
+@media only screen and (max-width: 320px) {
+  .mobile-carousel-gift-section__card-description {
+    width: inherit;
+  }
 }
 .mobile-carousel-gift-section__card-description p {
   padding-top: 2%;
   padding-bottom: 5%;
   width: 280px;
+}
+@media only screen and (max-width: 320px) {
+  .mobile-carousel-gift-section__card-description p {
+    width: 100%;
+  }
 }
 .mobile-carousel-gift-section__card-description .red {
   color: #af111c;
