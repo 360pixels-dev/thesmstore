@@ -36277,7 +36277,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 .instore-services__card:hover {
   box-shadow: none;
   transition: 0.2s ease-out;
-  cursor: pointer;
+  cursor: auto;
 }
 .instore-services__card-icontext {
   display: flex;

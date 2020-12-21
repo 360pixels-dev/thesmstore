@@ -259,7 +259,6 @@
 
             @include respond(320px) {
                 padding: 12px 12px 0 12px;
-
                 width: inherit;
             }
 
@@ -334,7 +333,7 @@
         &:hover {
             box-shadow: none;
             transition: 0.2s ease-out;
-            cursor: pointer;
+            cursor: auto;
         }
 
         &-icontext {
