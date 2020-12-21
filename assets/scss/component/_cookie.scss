@@ -36,7 +36,7 @@
     &__btn {
         display: flex;
         justify-content: flex-end;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
 
         @include respond(mobile) {
             margin-top: 12px;
