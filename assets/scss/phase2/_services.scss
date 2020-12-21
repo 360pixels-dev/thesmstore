@@ -178,7 +178,7 @@
 
     .container {
         padding-top: 35px;
-        padding-bottom: 40px;
+        padding-bottom: 12px;
         margin: 0;
         background: #fff9f9;
 
@@ -186,6 +186,11 @@
             text-align: center;
             padding: auto;
             margin: auto;
+        }
+
+        & > button {
+            display: flex;
+            margin: 12px auto;
         }
 
         @include respond(mobile) {

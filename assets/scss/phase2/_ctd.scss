@@ -112,6 +112,7 @@
             }
 
             & > img {
+                max-width: 267px;
                 margin-right: 111px;
 
                 @include respond(tablet) {

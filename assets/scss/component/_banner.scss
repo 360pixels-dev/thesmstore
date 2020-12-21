@@ -204,6 +204,8 @@
         &--privacy-policy > div > h1 {
             margin-left: 0px;
             width: 70%;
+            padding-left: 0;
+            text-align: left;
         }
     }
 
@@ -478,8 +480,9 @@
             margin-top: 140px;
             margin-right: 200px;
             padding-bottom: 12px;
-            text-align: center;
+            text-align: left;
             color: $white;
+            padding-left: 0;
 
             @include respond(tablet) {
                 margin-top: 80px;

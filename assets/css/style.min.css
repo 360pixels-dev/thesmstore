@@ -3361,6 +3361,8 @@ body.mmactive {
   .banner-inner--privacy-policy > div > h1 {
     margin-left: 0px;
     width: 70%;
+    padding-left: 0;
+    text-align: left;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -3764,8 +3766,9 @@ body.mmactive {
   margin-top: 140px;
   margin-right: 200px;
   padding-bottom: 12px;
-  text-align: center;
+  text-align: left;
   color: #ffffff;
+  padding-left: 0;
 }
 @media only screen and (max-width: 1024px) {
   .banner-inner--privacy-policy h1 {
@@ -36140,7 +36143,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 .mobile-carousel-gift-section .container {
   padding-top: 35px;
-  padding-bottom: 40px;
+  padding-bottom: 12px;
   margin: 0;
   background: #fff9f9;
 }
@@ -36148,6 +36151,10 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   text-align: center;
   padding: auto;
   margin: auto;
+}
+.mobile-carousel-gift-section .container > button {
+  display: flex;
+  margin: 12px auto;
 }
 @media only screen and (max-width: 820px) {
   .mobile-carousel-gift-section .container {
@@ -37888,6 +37895,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   }
 }
 .ctd__header-content > img {
+  max-width: 267px;
   margin-right: 111px;
 }
 @media only screen and (max-width: 1024px) {
