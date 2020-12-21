@@ -346,6 +346,10 @@
                 float: left;
             }
 
+            ul li ul {
+                box-shadow: 0px 5px 15px rgba(131, 134, 144, 0.55);
+            }
+
             /* This hides the dropdowns */
 
             .main-navigation ul {

@@ -1525,6 +1525,9 @@ ul {
   position: relative;
   float: left;
 }
+.nav__upper .menu ul li ul {
+  box-shadow: 0px 5px 15px rgba(131, 134, 144, 0.55);
+}
 .nav__upper .menu .main-navigation ul {
   display: none;
 }
