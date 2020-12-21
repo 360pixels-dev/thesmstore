@@ -193,6 +193,18 @@
             margin: 12px auto;
         }
 
+        .owl-nav {
+            margin-top: 16px;
+        }
+
+        .owl-next {
+            margin-left: 32px;
+        }
+
+        .owl-dots {
+            display: none;
+        }
+
         @include respond(mobile) {
             max-width: inherit;
         }

@@ -36158,6 +36158,15 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   display: flex;
   margin: 12px auto;
 }
+.mobile-carousel-gift-section .container .owl-nav {
+  margin-top: 16px;
+}
+.mobile-carousel-gift-section .container .owl-next {
+  margin-left: 32px;
+}
+.mobile-carousel-gift-section .container .owl-dots {
+  display: none;
+}
 @media only screen and (max-width: 820px) {
   .mobile-carousel-gift-section .container {
     max-width: inherit;
