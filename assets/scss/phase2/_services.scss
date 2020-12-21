@@ -254,10 +254,12 @@
 
         &-description {
             // padding: 18px 0 32px 18px !important;
-            padding: 12px 12px 0 12px;
+            padding: 18px 18px 0 18px;
             width: 304px;
 
             @include respond(320px) {
+                padding: 12px 12px 0 12px;
+
                 width: inherit;
             }
 
