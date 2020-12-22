@@ -142,6 +142,101 @@
         }
     }
 
+    &__2-col {
+        margin-bottom: 18px;
+
+        width: 100%;
+        border-collapse: collapse;
+
+        & tr {
+            &:nth-child(odd) {
+                background-color: #f9fbff;
+
+                @include respond(mobile) {
+                    background-color: $white;
+                }
+            }
+        }
+
+        & th {
+            padding: 16px 24px;
+            background-color: #eff3fd;
+            border: 1px solid $mid-gray;
+        }
+
+        & td {
+            padding: 16px 0;
+            border: 1px solid $mid-gray;
+            text-align: center;
+        }
+
+        & thead {
+            & tr {
+                background: $white !important;
+
+                td {
+                    padding: 0;
+                    border: none;
+
+                    strong {
+                        display: flex;
+                    }
+                }
+            }
+        }
+
+        @include respond(mobile) {
+            & td {
+                border: 1px solid $mid-gray;
+            }
+
+            & thead {
+                display: flex;
+                justify-content: center;
+                padding: 16px 0;
+                background-color: #f9fbff;
+
+                border: 1px solid $mid-gray;
+                border-bottom: none;
+
+                & tr {
+                    background: #f9fbff !important;
+
+                    & td {
+                        border: none !important;
+                        display: flex;
+                        justify-content: space-around;
+                    }
+                }
+            }
+
+            & tbody {
+                width: 100%;
+
+                & tr {
+                    display: flex;
+
+                    &:last-child {
+                        border-bottom: 1px solid $mid-gray;
+                    }
+                    & td {
+                        border-bottom: none;
+                        width: 50%;
+                        // border: none;
+
+                        &:first-child {
+                            background: #f9fbff;
+                        }
+
+                        &:last-child {
+                            border-left: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     &--3ds {
         & tr {
             & > td {

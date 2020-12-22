@@ -7299,6 +7299,124 @@ body.mmactive {
     background-color: #f9fbff;
   }
 }
+.tbl__2-col {
+  margin-bottom: 18px;
+  width: 100%;
+  border-collapse: collapse;
+}
+.tbl__2-col tr:nth-child(odd) {
+  background-color: #f9fbff;
+}
+@media only screen and (max-width: 820px) {
+  .tbl__2-col tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .tbl__2-col tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+}
+.tbl__2-col th {
+  padding: 16px 24px;
+  background-color: #eff3fd;
+  border: 1px solid #e0e0e0;
+}
+.tbl__2-col td {
+  padding: 16px 0;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+}
+.tbl__2-col thead tr {
+  background: #ffffff !important;
+}
+.tbl__2-col thead tr td {
+  padding: 0;
+  border: none;
+}
+.tbl__2-col thead tr td strong {
+  display: flex;
+}
+@media only screen and (max-width: 820px) {
+  .tbl__2-col td {
+    border: 1px solid #e0e0e0;
+  }
+  .tbl__2-col thead {
+    display: flex;
+    justify-content: center;
+    padding: 16px 0;
+    background-color: #f9fbff;
+    border: 1px solid #e0e0e0;
+    border-bottom: none;
+  }
+  .tbl__2-col thead tr {
+    background: #f9fbff !important;
+  }
+  .tbl__2-col thead tr td {
+    border: none !important;
+    display: flex;
+    justify-content: space-around;
+  }
+  .tbl__2-col tbody {
+    width: 100%;
+  }
+  .tbl__2-col tbody tr {
+    display: flex;
+  }
+  .tbl__2-col tbody tr:last-child {
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .tbl__2-col tbody tr td {
+    border-bottom: none;
+    width: 50%;
+  }
+  .tbl__2-col tbody tr td:first-child {
+    background: #f9fbff;
+  }
+  .tbl__2-col tbody tr td:last-child {
+    border-left: none;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .tbl__2-col td {
+    border: 1px solid #e0e0e0;
+  }
+  .tbl__2-col thead {
+    display: flex;
+    justify-content: center;
+    padding: 16px 0;
+    background-color: #f9fbff;
+    border: 1px solid #e0e0e0;
+    border-bottom: none;
+  }
+  .tbl__2-col thead tr {
+    background: #f9fbff !important;
+  }
+  .tbl__2-col thead tr td {
+    border: none !important;
+    display: flex;
+    justify-content: space-around;
+  }
+  .tbl__2-col tbody {
+    width: 100%;
+  }
+  .tbl__2-col tbody tr {
+    display: flex;
+  }
+  .tbl__2-col tbody tr:last-child {
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .tbl__2-col tbody tr td {
+    border-bottom: none;
+    width: 50%;
+  }
+  .tbl__2-col tbody tr td:first-child {
+    background: #f9fbff;
+  }
+  .tbl__2-col tbody tr td:last-child {
+    border-left: none;
+  }
+}
 .tbl--3ds tr > td {
   flex-basis: 33.33%;
 }
