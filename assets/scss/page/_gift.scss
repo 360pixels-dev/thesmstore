@@ -291,6 +291,23 @@
                         height: 198.12px;
                     }
                 }
+
+                .owl-item img {
+                    @include respond(tablet) {
+                        width: 160px;
+                        height: 198.12px;
+                    }
+                }
+
+                .owl-nav {
+                    margin-top: 16px;
+                    margin: 28px 2em 0 0;
+                    float: right;
+                }
+
+                .owl-next {
+                    margin-left: 32px;
+                }
             }
         }
 
@@ -1304,41 +1321,52 @@
 
         &-slides {
             display: flex;
-            // width: 100%;
+            width: 100%;
+            position: relative;
 
-            & > div {
-                height: 429px;
-                width: 341px;
-                background-color: $white;
-                margin-right: 16px;
-                padding: 20px;
-                display: flex;
-                flex-direction: column;
+            & .owl-nav {
+                position: absolute;
+                top: 60%;
+                left: -34%;
+            }
 
-                & > img {
-                    margin-bottom: 18px;
+            & .owl-next {
+                margin-left: 32px;
+            }
+        }
 
-                    @include respond(mobile) {
-                        height: 230px;
-                        width: 230px;
-                    }
-                }
+        &-slide {
+            height: 429px;
+            width: 341px;
+            background-color: $white;
+            margin-right: 16px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
 
-                & > div {
-                    display: flex;
-                    justify-content: space-between;
-                    color: $dark-gray;
-                }
-
-                & > span {
-                    color: $gray;
-                }
+            & > img {
+                margin-bottom: 18px;
 
                 @include respond(mobile) {
-                    width: 255px;
-                    height: 320px;
-                    padding: 14px 12px 0 12px;
+                    height: 230px;
+                    width: 230px;
                 }
+            }
+
+            & > div {
+                display: flex;
+                justify-content: space-between;
+                color: $dark-gray;
+            }
+
+            & > span {
+                color: $gray;
+            }
+
+            @include respond(mobile) {
+                width: 255px;
+                height: 320px;
+                padding: 14px 12px 0 12px;
             }
         }
     }
