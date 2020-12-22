@@ -168,9 +168,6 @@
             padding: 16px 8px;
             border: 1px solid $mid-gray;
             text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
 
         & thead {
@@ -191,6 +188,9 @@
         @include respond(mobile) {
             & td {
                 border: 1px solid $mid-gray;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
 
             & thead {
