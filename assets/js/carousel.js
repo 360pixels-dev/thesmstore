@@ -1236,8 +1236,8 @@ function populateBoxSizesDetails() {
     `);
 }
 
-const right = '<img class="d-right" src="./assets/images/icons/m-carousel-arrow-right.svg" alt="right">'
-const left = '<img class="d-left" src="./assets/images/icons/m-carousel-arrow-left.svg" alt="left">'
+const right = '<img src="./assets/images/icons/m-carousel-arrow-right.svg" alt="right">'
+const left = '<img src="./assets/images/icons/m-carousel-arrow-left.svg" alt="left">'
 
 // GIFT WRAPPING - OWL CAROUSEL
 // Gift Wrappers
@@ -1255,8 +1255,9 @@ $(document).ready(function(){
 });
 
 // Box Sizes
+// Desktop
 $(document).ready(function(){
-    $('.box-sizes__slider-slides').owlCarousel({
+    $('.box-sizes__slider-slides.desktop').owlCarousel({
         margin:16,
         loop:true,
         autoWidth:true,
@@ -1264,6 +1265,23 @@ $(document).ready(function(){
         nav:true,
         navText: [
             left, right
+        ]
+    })
+});
+
+
+// Mobile
+const mRight = '<img src="./assets/images/icons/m-carousel-arrow-right-small.svg" alt="mRight">'
+
+$(document).ready(function(){
+    $('.box-sizes__slider-slides.mobile').owlCarousel({
+        margin:16,
+        loop:true,
+        autoWidth:true,
+        items:1,
+        nav:true,
+        navText: [
+            "", mRight
         ]
     })
 });

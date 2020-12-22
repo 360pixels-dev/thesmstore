@@ -22413,14 +22413,86 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   }
 }
 .box-sizes__slider-slides {
-  display: flex;
   width: 100%;
   position: relative;
+}
+@media only screen and (max-width: 820px) {
+  .box-sizes__slider-slides.desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .box-sizes__slider-slides.desktop {
+    display: none;
+  }
+}
+.box-sizes__slider-slides.mobile {
+  display: none;
+}
+@media only screen and (max-width: 820px) {
+  .box-sizes__slider-slides.mobile {
+    display: flex;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .box-sizes__slider-slides.mobile {
+    display: flex;
+  }
 }
 .box-sizes__slider-slides .owl-nav {
   position: absolute;
   top: 60%;
   left: -34%;
+}
+@media only screen and (max-width: 820px) {
+  .box-sizes__slider-slides .owl-nav {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+  }
+  .box-sizes__slider-slides .owl-nav .owl-next {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-right: 16px;
+    margin-left: 0;
+    background: #ffffff !important;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #e0e0e0 !important;
+    box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
+  }
+  .box-sizes__slider-slides .owl-nav .owl-next > img {
+    margin: auto;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .box-sizes__slider-slides .owl-nav {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+  }
+  .box-sizes__slider-slides .owl-nav .owl-next {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-right: 16px;
+    margin-left: 0;
+    background: #ffffff !important;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #e0e0e0 !important;
+    box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
+  }
+  .box-sizes__slider-slides .owl-nav .owl-next > img {
+    margin: auto;
+  }
 }
 .box-sizes__slider-slides .owl-next {
   margin-left: 32px;
