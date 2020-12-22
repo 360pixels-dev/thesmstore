@@ -466,6 +466,10 @@
                             width: 100%;
                         }
 
+                        .input-error {
+                            border: 1px solid red !important;
+                        }
+
                         & > input {
                             width: 100%;
                             background: #ffffff;
@@ -504,6 +508,10 @@
 
                         @include respond(mobile) {
                             width: 100%;
+                        }
+
+                        .input-error {
+                            border: 1px solid red !important;
                         }
 
                         & > input,

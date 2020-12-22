@@ -53,6 +53,8 @@ $(document).ready(function(){
 
 
 // SM CARES
+
+// Slick
 $(document).ready(() => {
     $('.mobile-sm-cares__cards').slick({
         arrows: true,
@@ -70,4 +72,21 @@ $(document).ready(() => {
         $('.mobile-sm-cares__cards').slickNext();
     });
 })
+
+// Owl-Carousel
+// const next = '<img src="./assets/images/icons/m-carousel-arrow-right.svg" alt="next">'
+// const prev = '<img src="./assets/images/icons/m-carousel-arrow-left.svg" alt="prev">'
+
+// $(document).ready(function(){
+//     $('.mobile-sm-cares__cards').owlCarousel({
+//         // margin:6,
+//         loop:true,
+//         autoWidth:true,
+//         items:1,
+//         nav:true,
+//         navText: [
+//             prev, next
+//         ]
+//     })
+// });
 
