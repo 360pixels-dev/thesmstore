@@ -1348,7 +1348,8 @@
                     transform: translate(-50%, -50%);
                     width: 100vw;
 
-                    & .owl-next {
+                    & .owl-next,
+                    .owl-prev {
                         position: absolute;
                         right: 0;
                         top: 50%;
@@ -1366,6 +1367,18 @@
                         & > img {
                             margin: auto;
                         }
+
+                        &.disabled {
+                            display: none;
+                        }
+                    }
+
+                    & .owl-prev {
+                        left: 0;
+                        right: auto;
+
+                        margin-right: 0;
+                        margin-left: 8px;
                     }
                 }
             }

@@ -1271,17 +1271,20 @@ $(document).ready(function(){
 
 
 // Mobile
-const mRight = '<img src="./assets/images/icons/m-carousel-arrow-right-small.svg" alt="mRight">'
+const mRight = '<img src="./assets/images/icons/control-right.svg" alt="mRight">'
+const mLeft = '<img src="./assets/images/icons/control-left.svg" alt="mLeft">'
 
 $(document).ready(function(){
+    let customLeft = "";
+
     $('.box-sizes__slider-slides.mobile').owlCarousel({
         margin:16,
-        loop:true,
+        loop:false,
         autoWidth:true,
         items:1,
         nav:true,
         navText: [
-            "", mRight
-        ]
+            mLeft, mRight
+        ],
     })
 });

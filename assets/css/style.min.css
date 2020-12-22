@@ -22451,7 +22451,8 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
     transform: translate(-50%, -50%);
     width: 100vw;
   }
-  .box-sizes__slider-slides .owl-nav .owl-next {
+  .box-sizes__slider-slides .owl-nav .owl-next,
+.box-sizes__slider-slides .owl-nav .owl-prev {
     position: absolute;
     right: 0;
     top: 50%;
@@ -22465,8 +22466,19 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
     border: 1px solid #e0e0e0 !important;
     box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
   }
-  .box-sizes__slider-slides .owl-nav .owl-next > img {
+  .box-sizes__slider-slides .owl-nav .owl-next > img,
+.box-sizes__slider-slides .owl-nav .owl-prev > img {
     margin: auto;
+  }
+  .box-sizes__slider-slides .owl-nav .owl-next.disabled,
+.box-sizes__slider-slides .owl-nav .owl-prev.disabled {
+    display: none;
+  }
+  .box-sizes__slider-slides .owl-nav .owl-prev {
+    left: 0;
+    right: auto;
+    margin-right: 0;
+    margin-left: 8px;
   }
 }
 @media only screen and (max-width: mobile) {
@@ -22476,7 +22488,8 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
     transform: translate(-50%, -50%);
     width: 100vw;
   }
-  .box-sizes__slider-slides .owl-nav .owl-next {
+  .box-sizes__slider-slides .owl-nav .owl-next,
+.box-sizes__slider-slides .owl-nav .owl-prev {
     position: absolute;
     right: 0;
     top: 50%;
@@ -22490,8 +22503,19 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
     border: 1px solid #e0e0e0 !important;
     box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
   }
-  .box-sizes__slider-slides .owl-nav .owl-next > img {
+  .box-sizes__slider-slides .owl-nav .owl-next > img,
+.box-sizes__slider-slides .owl-nav .owl-prev > img {
     margin: auto;
+  }
+  .box-sizes__slider-slides .owl-nav .owl-next.disabled,
+.box-sizes__slider-slides .owl-nav .owl-prev.disabled {
+    display: none;
+  }
+  .box-sizes__slider-slides .owl-nav .owl-prev {
+    left: 0;
+    right: auto;
+    margin-right: 0;
+    margin-left: 8px;
   }
 }
 .box-sizes__slider-slides .owl-next {
