@@ -10365,6 +10365,7 @@ header {
 
 .wrapper {
   overflow: hidden;
+  background: white;
 }
 
 .container {
@@ -37930,6 +37931,10 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   .upcoming__articles-content > .video-card {
     margin-right: 17px;
   }
+}
+
+body {
+  background: #ffffff;
 }
 
 .ctd > .featured-video__text > h1 {
