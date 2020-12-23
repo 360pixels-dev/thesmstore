@@ -1275,7 +1275,6 @@ const mRight = '<img src="./assets/images/icons/control-right.svg" alt="mRight">
 const mLeft = '<img src="./assets/images/icons/control-left.svg" alt="mLeft">'
 
 $(document).ready(function(){
-    let customLeft = "";
 
     $('.box-sizes__slider-slides.mobile').owlCarousel({
         margin:16,
@@ -1286,5 +1285,7 @@ $(document).ready(function(){
         navText: [
             mLeft, mRight
         ],
+        urlhashListener:true,
+        startPosition: 'URLHash'
     })
 });

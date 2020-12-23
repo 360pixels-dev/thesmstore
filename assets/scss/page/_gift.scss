@@ -1275,7 +1275,7 @@
         }
 
         @include respond(mobile) {
-            padding: 24px 0 49px 12px;
+            padding: 24px 0 49px 0;
             min-height: 390px;
         }
     }
@@ -1287,6 +1287,7 @@
             height: 165px;
             position: relative;
             margin-right: 64px;
+            z-index: 1;
 
             @include respond(tablet) {
                 margin-top: 0;
@@ -1302,6 +1303,7 @@
                     font-size: 20px;
                     line-height: 30px;
                     font-weight: bold;
+                    margin-left: 12px;
                 }
             }
 
@@ -1316,6 +1318,18 @@
                 @include respond(tablet) {
                     display: none;
                 }
+            }
+        }
+
+        &-bg {
+            display: none;
+            background: #f0f3fc;
+            height: 238px;
+            width: 100%;
+            position: absolute;
+
+            @include respond(mobile) {
+                display: block;
             }
         }
 

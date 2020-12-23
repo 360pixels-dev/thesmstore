@@ -7423,6 +7423,49 @@ body.mmactive {
     border-left: none;
   }
 }
+.tbl__4-col {
+  width: 100%;
+  border-collapse: collapse;
+}
+.tbl__4-col tr:nth-child(odd) {
+  background-color: #f9fbff;
+}
+@media only screen and (max-width: 820px) {
+  .tbl__4-col tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .tbl__4-col tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+}
+.tbl__4-col th {
+  padding: 16px 24px;
+  background-color: #eff3fd;
+  border: 1px solid #e0e0e0;
+}
+.tbl__4-col td {
+  padding: 16px 0;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+}
+@media only screen and (max-width: 820px) {
+  .tbl__4-col td {
+    border-bottom: none;
+  }
+  .tbl__4-col td:last-child {
+    border-bottom: 1px solid #e0e0e0;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .tbl__4-col td {
+    border-bottom: none;
+  }
+  .tbl__4-col td:last-child {
+    border-bottom: 1px solid #e0e0e0;
+  }
+}
 .tbl--3ds tr > td {
   flex-basis: 33.33%;
 }
@@ -22339,13 +22382,13 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 @media only screen and (max-width: 820px) {
   .box-sizes > div {
-    padding: 24px 0 49px 12px;
+    padding: 24px 0 49px 0;
     min-height: 390px;
   }
 }
 @media only screen and (max-width: mobile) {
   .box-sizes > div {
-    padding: 24px 0 49px 12px;
+    padding: 24px 0 49px 0;
     min-height: 390px;
   }
 }
@@ -22355,6 +22398,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   height: 165px;
   position: relative;
   margin-right: 64px;
+  z-index: 1;
 }
 @media only screen and (max-width: 1024px) {
   .box-sizes__slider-content {
@@ -22380,6 +22424,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
     font-size: 20px;
     line-height: 30px;
     font-weight: bold;
+    margin-left: 12px;
   }
 }
 @media only screen and (max-width: mobile) {
@@ -22387,6 +22432,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
     font-size: 20px;
     line-height: 30px;
     font-weight: bold;
+    margin-left: 12px;
   }
 }
 .box-sizes__slider-content > p {
@@ -22410,6 +22456,23 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 @media only screen and (max-width: tablet) {
   .box-sizes__slider-content > div {
     display: none;
+  }
+}
+.box-sizes__slider-bg {
+  display: none;
+  background: #f0f3fc;
+  height: 238px;
+  width: 100%;
+  position: absolute;
+}
+@media only screen and (max-width: 820px) {
+  .box-sizes__slider-bg {
+    display: block;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .box-sizes__slider-bg {
+    display: block;
   }
 }
 .box-sizes__slider-slides {
@@ -38860,6 +38923,22 @@ body {
 .ctd__order-form > .container > .form {
   margin-top: 26px;
 }
+.ctd__order-form > .container > .form .error-input {
+  font-weight: normal;
+  font-style: italic;
+}
+@media only screen and (max-width: 820px) {
+  .ctd__order-form > .container > .form > label span {
+    display: inline-block;
+    margin-top: 24px;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .ctd__order-form > .container > .form > label span {
+    display: inline-block;
+    margin-top: 24px;
+  }
+}
 .ctd__order-form > .container > .form input,
 .ctd__order-form > .container > .form select,
 .ctd__order-form > .container > .form textarea {
@@ -38881,7 +38960,6 @@ body {
   }
 }
 .ctd__order-form > .container > .form textarea {
-  margin-bottom: 24px;
   padding: 11px;
   height: 100%;
   width: 100%;
@@ -38896,6 +38974,7 @@ body {
 .ctd__order-form > .container > .form p {
   text-transform: none;
   width: 50%;
+  margin-top: 24px;
 }
 @media only screen and (max-width: 820px) {
   .ctd__order-form > .container > .form p {
@@ -38942,21 +39021,15 @@ body {
 .ctd__order-form > .container > .form > .row-1 > div .input-error {
   border: 1px solid red !important;
 }
+.ctd__order-form > .container > .form > .row-1 > div .error-input {
+  font-weight: normal;
+  font-style: italic;
+}
 .ctd__order-form > .container > .form > .row-1 > div > input {
   width: 100%;
   background: #ffffff;
   border: 1px solid #88898f;
   box-sizing: border-box;
-}
-@media only screen and (max-width: 820px) {
-  .ctd__order-form > .container > .form > .row-1 > div > input {
-    margin-bottom: 24px;
-  }
-}
-@media only screen and (max-width: mobile) {
-  .ctd__order-form > .container > .form > .row-1 > div > input {
-    margin-bottom: 24px;
-  }
 }
 .ctd__order-form > .container > .form > .row-1 > div > input::placeholder {
   font-style: italic;
@@ -38964,6 +39037,18 @@ body {
   line-height: 24px;
   font-weight: 400;
   color: #88898f;
+}
+@media only screen and (max-width: 820px) {
+  .ctd__order-form > .container > .form > .row-1 > div:last-child > label {
+    display: inline-block;
+    margin-top: 24px;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .ctd__order-form > .container > .form > .row-1 > div:last-child > label {
+    display: inline-block;
+    margin-top: 24px;
+  }
 }
 .ctd__order-form > .container > .form > .row-2 {
   display: flex;
@@ -38997,24 +39082,16 @@ body {
 .ctd__order-form > .container > .form > .row-2 > div .input-error {
   border: 1px solid red !important;
 }
+.ctd__order-form > .container > .form > .row-2 > div .error-input {
+  font-weight: normal;
+  font-style: italic;
+}
 .ctd__order-form > .container > .form > .row-2 > div > input,
 .ctd__order-form > .container > .form > .row-2 > div select {
   width: 100%;
   background: #ffffff;
   border: 1px solid #88898f;
   box-sizing: border-box;
-}
-@media only screen and (max-width: 820px) {
-  .ctd__order-form > .container > .form > .row-2 > div > input,
-.ctd__order-form > .container > .form > .row-2 > div select {
-    margin-bottom: 24px;
-  }
-}
-@media only screen and (max-width: mobile) {
-  .ctd__order-form > .container > .form > .row-2 > div > input,
-.ctd__order-form > .container > .form > .row-2 > div select {
-    margin-bottom: 24px;
-  }
 }
 .ctd__order-form > .container > .form > .row-2 > div > input::placeholder,
 .ctd__order-form > .container > .form > .row-2 > div select::placeholder {
@@ -39030,8 +39107,20 @@ body {
 .ctd__order-form > .container > .form > .row-2 > div > select:after {
   padding-right: 16px;
 }
+@media only screen and (max-width: 820px) {
+  .ctd__order-form > .container > .form > .row-2 > div > label {
+    display: inline-block;
+    margin-top: 24px;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .ctd__order-form > .container > .form > .row-2 > div > label {
+    display: inline-block;
+    margin-top: 24px;
+  }
+}
 .ctd__order-form > .container > .form > .radio-btns {
-  margin: 18px 0 35px 0;
+  margin: 18px 0 0 0;
 }
 @media only screen and (max-width: 820px) {
   .ctd__order-form > .container > .form > .radio-btns {

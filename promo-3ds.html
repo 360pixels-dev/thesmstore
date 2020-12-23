@@ -578,6 +578,8 @@
                     </table>
                     <!-- /SAMPLE TABLE WITHOUT HEADER -->
 
+                    <br>
+
                     <!-- SAMPLE 2-COL MOBILE TABLE WITHOUT HEADER -->
                     
                     <table class="tbl__2-col k-table">
@@ -602,6 +604,60 @@
                             <tr>
                                 <td class="text">January 1, 2021</td>
                                 <td class="text">CLOSED</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- /SAMPLE 2-COL MOBILE TABLE WITHOUT HEADER -->
+
+                    <br>
+
+                    <!-- SAMPLE 4-COL DYNAMIC MOBILE TABLE WITH HEADER & PAGINATION -->
+                    <table class="tbl__4-col k-table">
+                        <thead>
+                            <tr>
+                                <td colspan="4"><strong>4-Col Dynamic + Pagination</strong></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="4-col-row">
+                                <td class="text 4-col-col">Column 1</td>
+                                <td class="text 4-col-col">Column 2</td>
+                                <td class="text 4-col-col">Column 3</td>
+                                <td class="text 4-col-col">Column 4</td>
+                                <td class="text 4-col-col">Column 5</td>
+                                <td class="text 4-col-col">Column 6</td>
+                                <td class="text 4-col-col">Column 7</td>
+                                <td class="text 4-col-col">Column 8</td>
+                            </tr>
+                            <tr class="4-col-row">
+                                <td class="text 4-col-col">Column 1</td>
+                                <td class="text 4-col-col">Column 2</td>
+                                <td class="text 4-col-col">Column 3</td>
+                                <td class="text 4-col-col">Column 4</td>
+                                <td class="text 4-col-col">Column 5</td>
+                                <td class="text 4-col-col">Column 6</td>
+                                <td class="text 4-col-col">Column 7</td>
+                                <td class="text 4-col-col">Column 8</td>
+                            </tr>
+                            <tr class="4-col-row">
+                                <td class="text 4-col-col">Column 1</td>
+                                <td class="text 4-col-col">Column 2</td>
+                                <td class="text 4-col-col">Column 3</td>
+                                <td class="text 4-col-col">Column 4</td>
+                                <td class="text 4-col-col">Column 5</td>
+                                <td class="text 4-col-col">Column 6</td>
+                                <td class="text 4-col-col">Column 7</td>
+                                <td class="text 4-col-col">Column 8</td>
+                            </tr>
+                            <tr class="4-col-row">
+                                <td class="text 4-col-col">Column 1</td>
+                                <td class="text 4-col-col">Column 2</td>
+                                <td class="text 4-col-col">Column 3</td>
+                                <td class="text 4-col-col">Column 4</td>
+                                <td class="text 4-col-col">Column 5</td>
+                                <td class="text 4-col-col">Column 6</td>
+                                <td class="text 4-col-col">Column 7</td>
+                                <td class="text 4-col-col">Column 8</td>
                             </tr>
                         </tbody>
                     </table>
@@ -975,6 +1031,13 @@
             });
         })
     </script>
+
+    <script>
+        $(document).ready(function() {
+            console.log($(".4-col-col"))
+        })
+    </script>
+
     <script src="assets/js/plugin-mobilemenu.js"></script>
 
     <!-- CUSTOM JS -->

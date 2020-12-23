@@ -240,6 +240,41 @@
         }
     }
 
+    &__4-col {
+        width: 100%;
+        border-collapse: collapse;
+
+        & tr {
+            &:nth-child(odd) {
+                background-color: #f9fbff;
+
+                @include respond(mobile) {
+                    background-color: $white;
+                }
+            }
+        }
+
+        & th {
+            padding: 16px 24px;
+            background-color: #eff3fd;
+            border: 1px solid $mid-gray;
+        }
+
+        & td {
+            padding: 16px 0;
+            border: 1px solid $mid-gray;
+            text-align: center;
+
+            @include respond(mobile) {
+                border-bottom: none;
+
+                &:last-child {
+                    border-bottom: 1px solid $mid-gray;
+                }
+            }
+        }
+    }
+
     &--3ds {
         & tr {
             & > td {
