@@ -240,7 +240,7 @@
         }
     }
 
-    &__4-col {
+    &__multi-col {
         width: 100%;
         border-collapse: collapse;
 
@@ -264,6 +264,7 @@
             padding: 16px 0;
             border: 1px solid $mid-gray;
             text-align: center;
+            // width: 25%;
 
             @include respond(mobile) {
                 border-bottom: none;
