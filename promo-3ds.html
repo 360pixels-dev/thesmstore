@@ -619,7 +619,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                            <tr class="multi-col-row">
                                 <td class="text">Column 1</td>
                                 <td class="text">Column 2</td>
                                 <td class="text">Column 3</td>
@@ -632,7 +632,7 @@
                                 <td class="text">Column 10</td>
                                 <td class="text">Column 11</td> -->
                             </tr>
-                            <tr>
+                            <tr class="multi-col-row">
                                 <td class="text">Column 1</td>
                                 <td class="text">Column 2</td>
                                 <td class="text">Column 3</td>
@@ -642,7 +642,7 @@
                                 <td class="text">Column 7</td>
                                 <td class="text">Column 8</td> -->
                             </tr>
-                            <tr>
+                            <tr class="multi-col-row">
                                 <td class="text">Column 1</td>
                                 <td class="text">Column 2</td>
                                 <td class="text">Column 3</td>
@@ -652,7 +652,7 @@
                                 <td class="text">Column 7</td>
                                 <td class="text">Column 8</td> -->
                             </tr>
-                            <tr>
+                            <tr class="multi-col-row">
                                 <td class="text">Column 1</td>
                                 <td class="text">Column 2</td>
                                 <td class="text">Column 3</td>
@@ -676,7 +676,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                            <tr class="multi-col-row">
                                 <td class="text">Column 1</td>
                                 <td class="text">Column 2</td>
                                 <td class="text">Column 3</td>
@@ -689,7 +689,7 @@
                                 <td class="text">Column 10</td>
                                 <td class="text">Column 11</td> -->
                             </tr>
-                            <tr>
+                            <tr class="multi-col-row">
                                 <td class="text">Column 1</td>
                                 <td class="text">Column 2</td>
                                 <td class="text">Column 3</td>
@@ -699,7 +699,7 @@
                                 <td class="text">Column 7</td>
                                 <td class="text">Column 8</td> -->
                             </tr>
-                            <tr>
+                            <tr class="multi-col-row">
                                 <td class="text">Column 1</td>
                                 <td class="text">Column 2</td>
                                 <td class="text">Column 3</td>
@@ -709,7 +709,7 @@
                                 <td class="text">Column 7</td>
                                 <td class="text">Column 8</td> -->
                             </tr>
-                            <tr>
+                            <tr class="multi-col-row">
                                 <td class="text">Column 1</td>
                                 <td class="text">Column 2</td>
                                 <td class="text">Column 3</td>
@@ -733,7 +733,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                            <tr class="multi-col-row">
                                 <td class="text">Column 1</td>
                                 <td class="text">Column 2</td>
                                 <td class="text">Column 3</td>
@@ -746,7 +746,7 @@
                                 <td class="text">Column 10</td>
                                 <td class="text">Column 11</td> -->
                             </tr>
-                            <tr>
+                            <tr class="multi-col-row">
                                 <td class="text">Column 1</td>
                                 <td class="text">Column 2</td>
                                 <td class="text">Column 3</td>
@@ -756,7 +756,7 @@
                                 <!-- <td class="text">Column 7</td>
                                 <td class="text">Column 8</td> -->
                             </tr>
-                            <tr>
+                            <tr class="multi-col-row">
                                 <td class="text">Column 1</td>
                                 <td class="text">Column 2</td>
                                 <td class="text">Column 3</td>
@@ -766,7 +766,7 @@
                                 <!-- <td class="text">Column 7</td>
                                 <td class="text">Column 8</td> -->
                             </tr>
-                            <tr>
+                            <tr class="multi-col-row">
                                 <td class="text">Column 1</td>
                                 <td class="text">Column 2</td>
                                 <td class="text">Column 3</td>
@@ -1151,8 +1151,8 @@
 
     <script>
         $(document).ready(function() {
-            const totalRows = document.getElementsByClassName('row').length - 1
-            const rows = document.getElementsByClassName('row')
+            const totalRows = document.getElementsByClassName('multi-col-row').length - 1
+            const rows = document.getElementsByClassName('multi-col-row')
 
             let data = []
             let inner = []
@@ -1180,7 +1180,6 @@
                 splitter(inner, 4)
                 inner = []
             }
-
         })
     </script>
 
