@@ -430,7 +430,7 @@
             <div class="w3-overlay w3-animate-opacity" onclick="closeStoreSelector()" style="cursor: pointer; z-index: 997;" id="store-selector-overlay"></div>
             <!-- /STORE SELECTOR -->
             
-            <section class="banner-section banner-section--small banner-section--all-blogs" style="padding: 0">
+            <section class="banner-section banner-section--small" style="padding: 0">
                 <!-- <div class="banner__shadow-gradient"></div> -->
 
                 <!-- <div class="banner-section__hr"></div>
@@ -440,7 +440,15 @@
                     <a href="#">All Articles</a>
                 </nav> -->
 
-                <h1 class="font-hero banner-section__title">All the latest reads & campaigns</h1>
+                <img class="desktop-banner" src="./assets/images/banner-all-blogs.jpg" alt="">
+                <img class="mobile-banner" src="./assets/images/banner-all-blogs-m.jpg" alt="">
+
+                <nav class="banner-section__breadcrumbs">
+                    <a href="#">The SM Store</a>
+                    <a href="#">All Articles</a>
+                </nav>
+
+                <h1 class="font-hero banner-section__title two-line">All the latest reads & campaigns</h1>
             </section>
 
             
@@ -746,7 +754,25 @@
     </body>
 
     <!-- CUSTOM IMPORT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+    
+    <!-- NEW MOBILE NAV INIT -->
+    <script>
+        $(document).ready(function() {
+            $(".mobile_menu").simpleMobileMenu({
+                onMenuLoad: function(menu) {
+                    console.log(menu)
+                    console.log("menu loaded")
+                },
+                onMenuToggle: function(menu, opened) {
+                    console.log(opened)
+                }
+            });
+        })
+    </script>
+    <script src="assets/js/plugin-mobilemenu.js"></script>
+
     <script src="assets/js/footeraccordion.js"></script>
-    <script src="assets/js/mobiledropdown.js"></script>
+    <!-- <script src="assets/js/mobiledropdown.js"></script> -->
     <script src="assets/js/storeselector.js"></script>
 </html>

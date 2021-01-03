@@ -1140,6 +1140,12 @@
         top: 45%;
         left: 192px;
         width: fit-content;
+
+        @include respond(mobile) {
+            left: 28px;
+            margin-left: 0;
+            width: 80%;
+        }
     }
 
     &.desktop {
@@ -1197,6 +1203,7 @@
     &__breadcrumbs {
         position: relative;
         top: 128px;
+        left: 12px;
         height: 34px;
         display: none;
 
@@ -1238,7 +1245,7 @@
         color: $white;
         // margin-left: 18.32%;
         top: 174px;
-        text-align: center;
+        text-align: left;
 
         @include respond(tablet) {
             font-size: 32px;
@@ -1249,11 +1256,65 @@
         @include respond(mobile) {
             margin-left: calc(7.77% - 8px);
             top: 113px;
+            font-size: 24px;
+            line-height: 32px;
+        }
+
+        &.two-line {
+            width: 845px;
+
+            @include respond(tablet) {
+                width: 71%;
+            }
         }
     }
 
     &--small {
         height: 350px;
+        margin-top: 88px;
+
+        @include respond(tablet) {
+            margin-top: 56px;
+        }
+
+        @include respond(mobile) {
+            height: 200px;
+        }
+
+        & > .desktop-banner {
+            width: 100vw;
+            object-fit: cover;
+            height: 350px;
+            position: absolute;
+            left: 100%;
+            right: auto;
+            transform: translate(-100%, 0);
+
+            @include respond(mobile) {
+                display: none;
+            }
+        }
+
+        & > .mobile-banner {
+            display: none;
+            width: 100vw;
+            object-fit: cover;
+            height: 200px;
+            position: absolute;
+
+            @include respond(mobile) {
+                display: block;
+            }
+        }
+
+        & > .banner-section__title {
+            text-align: left;
+
+            @include respond(mobile) {
+                top: 90px !important;
+                text-align: left;
+            }
+        }
     }
 
     &--all-blogs {
@@ -1598,11 +1659,14 @@
         padding: 0;
 
         & > .desktop-banner {
-            width: inherit;
+            width: 100vw;
             object-fit: cover;
             height: 355px;
             position: absolute;
             overflow: hidden;
+            left: 50%;
+            right: auto;
+            transform: translate(-50%, 0);
 
             @include respond(mobile) {
                 display: none;
@@ -1611,10 +1675,13 @@
 
         & > .mobile-banner {
             display: none;
-            width: inherit;
+            width: 100vw;
             object-fit: cover;
             height: 200px;
             position: absolute;
+            left: 50%;
+            right: auto;
+            transform: translate(-50%, 0);
 
             @include respond(mobile) {
                 display: block;
