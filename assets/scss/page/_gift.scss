@@ -12,38 +12,31 @@
 .gift {
     &-header {
         position: relative;
-        min-height: 348px;
-        margin-bottom: 56px;
+        height: 298px;
+        margin-bottom: 126px;
         width: 100%;
         padding-top: 44px;
 
-        @include respond(1180px) {
-        }
-
-        @include respond(mobile) {
-            margin-bottom: 32px;
-            padding: 24px 12px 0 12px;
-            margin: 15px 0 32px 0;
-        }
-
         &--registry {
-            &:before {
-                @include headerBG;
-                background-color: #afd6e5;
-                background-image: url("../images/dots-l.svg");
-                background-size: cover;
-                background-position: center top;
-                // background-image: radial-gradient($gray 2px, #aed6e3 2px);
-                // background-size: 49px 49px;
+            // @include headerBG;
+            background-color: #afd6e5;
+            background-image: url("../images/dots-l.svg");
+            background-size: cover;
+            background-position: center top;
+            // background-image: radial-gradient($gray 2px, #aed6e3 2px);
+            // background-size: 49px 49px;
 
-                @include respond(1440px) {
-                    background-image: url("../images/dots.svg");
-                }
+            @include respond(1440px) {
+                background-image: url("../images/dots.svg");
+            }
 
-                @include respond(mobile) {
-                    background-image: url("../images/dots-m.svg");
-                    height: 271px;
-                }
+            @include respond(mobile) {
+                background-image: url("../images/dots-m.svg");
+                height: 271px;
+
+                margin-bottom: 32px;
+                padding: 24px 12px 0 12px;
+                margin: 15px 0 32px 0;
             }
 
             & > div {
@@ -63,23 +56,21 @@
         }
 
         &--card {
-            &:before {
-                @include headerBG;
-                background-color: $seafoam;
-                background-image: url("../images/dots-l.svg");
-                background-size: cover;
-                background-position: center top;
-                // background-image: radial-gradient($gray 2px, #aed6e3 2px);
-                // background-size: 49px 49px;
+            // @include headerBG;
+            background-color: $seafoam;
+            background-image: url("../images/dots-l.svg");
+            background-size: cover;
+            background-position: center top;
+            // background-image: radial-gradient($gray 2px, #aed6e3 2px);
+            // background-size: 49px 49px;
 
-                @include respond(1440px) {
-                    background-image: url("../images/dots.svg");
-                }
+            @include respond(1440px) {
+                background-image: url("../images/dots.svg");
+            }
 
-                @include respond(mobile) {
-                    background-image: url("../images/dots-m.svg");
-                    height: 271px;
-                }
+            @include respond(mobile) {
+                background-image: url("../images/dots-m.svg");
+                height: 271px;
             }
 
             & > div {
@@ -94,23 +85,21 @@
         }
 
         &--wrapping {
-            &:before {
-                @include headerBG;
-                background-color: $bee;
-                background-image: url("../images/dots-l.svg");
-                background-size: cover;
-                background-position: center top;
-                // background-image: radial-gradient($gray 2px, #aed6e3 2px);
-                // background-size: 49px 49px;
+            @include headerBG;
+            background-color: $bee;
+            background-image: url("../images/dots-l.svg");
+            background-size: cover;
+            background-position: center top;
+            // background-image: radial-gradient($gray 2px, #aed6e3 2px);
+            // background-size: 49px 49px;
 
-                @include respond(1440px) {
-                    background-image: url("../images/dots.svg");
-                }
+            @include respond(1440px) {
+                background-image: url("../images/dots.svg");
+            }
 
-                @include respond(mobile) {
-                    background-image: url("../images/dots-m.svg");
-                    height: 271px;
-                }
+            @include respond(mobile) {
+                background-image: url("../images/dots-m.svg");
+                height: 271px;
             }
 
             & > div {

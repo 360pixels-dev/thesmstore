@@ -1127,19 +1127,23 @@
     // margin-top: 88px;
     // width: 100%;
     height: 355px;
-    padding: 0 26px;
+    // padding: 0 26px;
 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    // @include respond(mobile) {
+    //     padding: 0 8px;
+    // }
+
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
+    // background-repeat: no-repeat;
 
     & > h1 {
         color: $white;
         position: relative;
         top: 45%;
         left: 192px;
-        width: fit-content;
+        // width: fit-content;
 
         @include respond(mobile) {
             left: 28px;
@@ -1177,10 +1181,6 @@
         @include respond(mobile) {
             display: block;
         }
-    }
-
-    @include respond(mobile) {
-        padding: 0 8px;
     }
 
     &__hr {
@@ -1237,6 +1237,11 @@
             &:last-child {
                 font-weight: bold;
             }
+
+            &:not(:last-child) {
+                background: url("../../assets/images/arrow-right-black.svg")
+                    no-repeat right center;
+            }
         }
     }
 
@@ -1255,7 +1260,8 @@
 
         @include respond(mobile) {
             margin-left: calc(7.77% - 8px);
-            top: 113px;
+            top: 90px !important;
+            text-align: left;
             font-size: 24px;
             line-height: 32px;
         }
@@ -1265,6 +1271,19 @@
 
             @include respond(tablet) {
                 width: 71%;
+            }
+        }
+
+        &.center {
+            left: 50% !important;
+            transform: translate(-50%, 0);
+            text-align: center;
+
+            @include respond(mobile) {
+                left: 28px !important;
+                transform: none;
+                text-align: left;
+                width: 50%;
             }
         }
     }
@@ -1286,9 +1305,6 @@
             object-fit: cover;
             height: 350px;
             position: absolute;
-            left: 100%;
-            right: auto;
-            transform: translate(-100%, 0);
 
             @include respond(mobile) {
                 display: none;
@@ -1301,18 +1317,10 @@
             object-fit: cover;
             height: 200px;
             position: absolute;
+            left: 0;
 
             @include respond(mobile) {
                 display: block;
-            }
-        }
-
-        & > .banner-section__title {
-            text-align: left;
-
-            @include respond(mobile) {
-                top: 90px !important;
-                text-align: left;
             }
         }
     }

@@ -82,3 +82,20 @@ $(document).ready(() => {
 //     })
 // });
 
+
+const next = '<img src="./assets/images/icons/m-carousel-arrow-right.svg" alt="next">'
+const prev = '<img src="./assets/images/icons/m-carousel-arrow-left.svg" alt="prev">'
+// GIFT REGISTRY - Available Registries
+$(document).ready(function(){
+    $('.gift-available__registry').owlCarousel({
+        margin:6,
+        loop:true,
+        autoWidth:true,
+        items:2,
+        nav:true,
+        navText: [
+            prev, next
+        ]
+    })
+});
+

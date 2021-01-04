@@ -424,8 +424,11 @@
             <div class="w3-overlay w3-animate-opacity" onclick="closeStoreSelector()" style="cursor: pointer; z-index: 997;" id="store-selector-overlay"></div>
             <!-- /STORE SELECTOR -->
             
-            <section class="banner-section banner-section--small banner-section--gift-registry">
+            <section class="banner-section banner-section--small">
                 <!-- <div class="banner-section__hr"></div> -->
+
+                <img class="desktop-banner" src="./assets/images/banner-gift-registry.jpg" alt="">
+                <img class="mobile-banner" src="./assets/images/banner-gift-registry-m.jpg" alt="">
 
                 <nav class="banner-section__breadcrumbs">
                     <a href="#">The SM Store</a>
@@ -433,7 +436,7 @@
                     <a href="#">Gift Registry</a>
                 </nav>
 
-                <h1 class="font-hero banner-section__title">Gift Registry</h1>
+                <h1 class="font-hero banner-section__title center">Gift Registry</h1>
             </section>
 
             
@@ -468,7 +471,7 @@
             </section>
 
             <section class="gift-mid-banner">
-                <div>
+                <div style="background-color: #faf3f0;">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                 </div>
             </section>
@@ -503,8 +506,23 @@
             <section class="gift-available">
                 <div>
                     <h2 class="font-h2-caps">Available Registries</h2>
-                    <div class="gift-available__registry">
+                    <div class="owl-carousel gift-available__registry">
                         <div>
+                            asdsad
+                        </div>
+                        <div>
+                            asdsad
+                        </div>
+                        <div>
+                            asdsad
+                        </div>
+                        <div>
+                            asdsad
+                        </div>
+                        <div>
+                            asdsad
+                        </div>
+                        <!-- <div>
                             <img src="./assets/images/cards/gift-registry1.jpg" alt="">
                             <h3 class="font-h3-caps">Baby Shower</h3>
                         </div>
@@ -535,11 +553,11 @@
                         <div>
                             <img src="./assets/images/cards/gift-registry8.jpg" alt="">
                             <h3 class="font-h3-caps">House Warming</h3>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="gift-available__controls">
-                        <button class="controls__arrow controls__arrow--left" href=""><img src="./assets/images/arrow-tail-left.svg" alt=""></button>
-                        <button class="controls__arrow controls__arrow--right" href=""><img src="./assets/images/arrow-tail-right.svg" alt=""></button>
+                        <!-- <button class="controls__arrow controls__arrow--left" href=""><img src="./assets/images/arrow-tail-left.svg" alt=""></button>
+                        <button class="controls__arrow controls__arrow--right" href=""><img src="./assets/images/arrow-tail-right.svg" alt=""></button> -->
                     </div>
                 </div>
             </section>
@@ -719,6 +737,26 @@
                         <p class="footer__copyright--text font-caption">&copy; 2020 The SM Store. All rights reserved.</p>
                     </div>
                 </div>
+
+                <div class="footer__links">
+                    <div class="footer__links--texts">
+                        <ul>
+                            <li><a class="font-caption" href="#">Terms & Conditions</a></li>
+                            <li><a class="font-caption" href="#">Privacy & Cookie Policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="hr--blue-m"></div>
+
+                    <div class="footer__links--socials">
+                        <ul>
+                            <li><a href=""><img src="./assets/images/facebook.svg" alt=""></a></li>
+                            <li><a href=""><img src="./assets/images/youtube.svg" alt=""></a></li>
+                            <li><a href=""><img src="./assets/images/instagram.svg" alt=""></a></li>
+                            <li><a href=""><img src="./assets/images/twitter.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
             </footer>
             <!-- /FOOTER -->
 
@@ -727,6 +765,24 @@
 
     <!-- IMPORTS -->
     <script src="assets/js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+
+    <script src="assets/js/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+    $('.gift-available__registry').owlCarousel({
+        margin:6,
+        loop:true,
+        autoWidth:true,
+        items:2,
+        nav:true,
+        navText: [
+            prev, next
+        ]
+    })
+});
+    </script>
 
     <!-- NEW MOBILE NAV INIT -->
     <script>
@@ -746,7 +802,7 @@
 
     <!-- CUSTOM JS -->
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/carousel.js"></script>
+    <!-- <script src="assets/js/carousel.js"></script> -->
     <script src="assets/js/footeraccordion.js"></script>
     <!-- <script src="assets/js/mobiledropdown.js"></script> -->
     <script src="assets/js/storeselector.js"></script>
