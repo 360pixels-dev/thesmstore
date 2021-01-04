@@ -3,7 +3,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
+    // z-index: -1;
     width: 100%;
     height: 290px;
     content: "";
@@ -12,86 +12,17 @@
 .gift {
     &-header {
         position: relative;
-        height: 298px;
-        margin-bottom: 126px;
+        min-height: 348px;
+        // height: 298px;
+        // margin-bottom: 126px;
         width: 100%;
         padding-top: 44px;
 
-        &--registry {
-            // @include headerBG;
-            background-color: #afd6e5;
-            background-image: url("../images/dots-l.svg");
-            background-size: cover;
-            background-position: center top;
-            // background-image: radial-gradient($gray 2px, #aed6e3 2px);
-            // background-size: 49px 49px;
-
-            @include respond(1440px) {
-                background-image: url("../images/dots.svg");
-            }
-
-            @include respond(mobile) {
-                background-image: url("../images/dots-m.svg");
-                height: 271px;
-
-                margin-bottom: 32px;
-                padding: 24px 12px 0 12px;
-                margin: 15px 0 32px 0;
-            }
-
-            & > div {
-                background-color: $blush;
-
-                & > .gift-header__text {
-                    & > h3 {
-                        &:nth-of-type(1) {
-                            color: #4495c0;
-                        }
-                        &:nth-of-type(2) {
-                            color: $coral;
-                        }
-                    }
-                }
-            }
-        }
-
-        &--card {
-            // @include headerBG;
-            background-color: $seafoam;
-            background-image: url("../images/dots-l.svg");
-            background-size: cover;
-            background-position: center top;
-            // background-image: radial-gradient($gray 2px, #aed6e3 2px);
-            // background-size: 49px 49px;
-
-            @include respond(1440px) {
-                background-image: url("../images/dots.svg");
-            }
-
-            @include respond(mobile) {
-                background-image: url("../images/dots-m.svg");
-                height: 271px;
-            }
-
-            & > div {
-                background-color: #faf3f0;
-
-                & > .gift-header__text {
-                    & > h3 {
-                        color: $teal;
-                    }
-                }
-            }
-        }
-
-        &--wrapping {
+        &:before {
             @include headerBG;
-            background-color: $bee;
             background-image: url("../images/dots-l.svg");
             background-size: cover;
             background-position: center top;
-            // background-image: radial-gradient($gray 2px, #aed6e3 2px);
-            // background-size: 49px 49px;
 
             @include respond(1440px) {
                 background-image: url("../images/dots.svg");
@@ -101,24 +32,15 @@
                 background-image: url("../images/dots-m.svg");
                 height: 271px;
             }
+        }
 
-            & > div {
-                background-color: $white;
-
-                & > .gift-header__text {
-                    & > h3 {
-                        &:nth-of-type(1) {
-                            color: #deaf3b;
-                        }
-                        &:nth-of-type(2) {
-                            color: $coral;
-                        }
-                    }
-                }
-            }
+        @include respond(mobile) {
+            margin-bottom: 32px;
+            padding: 24px 12px 0 12px;
         }
 
         & > div {
+            position: relative;
             min-height: 304px;
             max-width: 1225px;
             margin: 0 auto;
@@ -151,6 +73,52 @@
                     margin-bottom: 0;
                     height: 150px;
                     width: 278px;
+                }
+            }
+        }
+
+        &--registry {
+            & > div {
+                background-color: $blush;
+
+                & > .gift-header__text {
+                    & > h3 {
+                        &:nth-of-type(1) {
+                            color: #4495c0;
+                        }
+                        &:nth-of-type(2) {
+                            color: $coral;
+                        }
+                    }
+                }
+            }
+        }
+
+        &--card {
+            & > div {
+                background-color: #faf3f0;
+
+                & > .gift-header__text {
+                    & > h3 {
+                        color: $teal;
+                    }
+                }
+            }
+        }
+
+        &--wrapping {
+            & > div {
+                background-color: $white;
+
+                & > .gift-header__text {
+                    & > h3 {
+                        &:nth-of-type(1) {
+                            color: #deaf3b;
+                        }
+                        &:nth-of-type(2) {
+                            color: $coral;
+                        }
+                    }
                 }
             }
         }
@@ -209,11 +177,11 @@
             width: 1400px;
             min-height: 514px;
             display: flex;
-            padding: 110px 0 0 193px;
+            padding: 160px 0 0 193px;
             margin: 0 auto;
 
             @include respond(tablet) {
-                padding: 110px 32px 49px 32px;
+                padding: 160px 32px 49px 32px;
                 min-height: 593px;
                 width: 100%;
             }
