@@ -1239,6 +1239,34 @@ function populateBoxSizesDetails() {
 const right = '<img src="./assets/images/icons/m-carousel-arrow-right.svg" alt="right">'
 const left = '<img src="./assets/images/icons/m-carousel-arrow-left.svg" alt="left">'
 
+// GIFT REGISTRY - OWL CAROUSEL
+$(document).ready(function(){
+    $('.gift-available__registry.mobile').owlCarousel({
+        margin:16,
+        loop:true,
+        autoWidth:true,
+        items:1,
+        nav:true,
+        navText: [
+            left, right
+        ]
+    })
+});
+
+// GIFT CARDS - OWL CAROUSEL
+$(document).ready(function(){
+    $('.gift-card__use-cards').owlCarousel({
+        margin:16,
+        loop:true,
+        autoWidth:true,
+        items:1,
+        nav:true,
+        navText: [
+            left, right
+        ]
+    })
+});
+
 // GIFT WRAPPING - OWL CAROUSEL
 // Gift Wrappers
 $(document).ready(function(){
