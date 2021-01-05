@@ -649,9 +649,10 @@
 
             &.mobile {
                 display: none;
+                width: 1225px;
 
                 @include respond(mobile) {
-                    display: block;
+                    display: flex;
                 }
 
                 & > .owl-nav {
@@ -807,11 +808,18 @@
         }
 
         &__sleeves {
-            width: 100%;
             display: flex;
             justify-content: space-between;
             margin-left: 0px;
             transition: 0.4s;
+
+            & > img {
+                @include respond(tablet) {
+                    width: 153.22px;
+                    height: 99.06px;
+                    margin-right: 24px;
+                }
+            }
 
             &.desktop {
                 @include respond(mobile) {
@@ -821,22 +829,64 @@
 
             &.mobile {
                 display: none;
+                width: 100vw;
 
                 @include respond(mobile) {
-                    display: block;
+                    display: flex;
+                }
+
+                & div > img {
+                    width: 153.22px;
+                    height: 99.06px;
+                    margin-right: 24px;
+                }
+
+                & > .owl-nav {
+                    position: absolute;
+                    top: 50%;
+                    width: 100vw;
+
+                    & .owl-next,
+                    .owl-prev {
+                        // position: absolute;
+                        right: 0;
+                        top: 50%;
+                        transform: translate(0, -50%);
+                        margin-right: 16px;
+                        margin-left: 0;
+
+                        border-radius: 20px;
+                        height: 39.76px;
+                        width: 39.76px;
+                        background-color: #fff;
+                        border: 1px solid #e0e0e0;
+                        box-sizing: border-box;
+
+                        & > img {
+                            margin: auto;
+                        }
+
+                        &.disabled {
+                            display: none;
+                        }
+                    }
+
+                    & .owl-prev {
+                        left: 0;
+                        right: auto;
+
+                        margin-right: 0;
+                        margin-left: 8px;
+                    }
+
+                    & .owl-next {
+                        float: right;
+                    }
                 }
             }
 
             @include respond(tablet) {
                 justify-content: flex-start;
-            }
-
-            & > img {
-                @include respond(tablet) {
-                    width: 153.22px;
-                    height: 99.06px;
-                    margin-right: 24px;
-                }
             }
         }
 

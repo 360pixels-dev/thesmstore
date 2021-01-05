@@ -1235,13 +1235,15 @@ $(document).ready(function() {
 
     const right = '<img src="./assets/images/icons/m-carousel-arrow-right.svg" alt="right">'
     const left = '<img src="./assets/images/icons/m-carousel-arrow-left.svg" alt="left">'
+    const mRight = '<img src="./assets/images/icons/control-right.svg" alt="mRight">'
+    const mLeft = '<img src="./assets/images/icons/control-left.svg" alt="mLeft">';
 
     // GIFT REGISTRY - OWL CAROUSEL
     $('.gift-available__registry.mobile').owlCarousel({
         margin:16,
         loop:true,
         autoWidth:true,
-        items:2,
+        items:1,
         nav:true,
         navText: [
             left, right
@@ -1251,14 +1253,25 @@ $(document).ready(function() {
     // GIFT CARDS - OWL CAROUSEL
     // Sleeves
     $('.gift-card__sleeves.mobile').owlCarousel({
-        margin:16,
-        loop:true,
+        margin:0,
+        loop:false,
         autoWidth:true,
         items:1,
         nav:true,
         navText: [
-            left, right
+            mLeft, mRight
         ]
+
+        // margin:0,
+        // loop:false,
+        // autoWidth:true,
+        // items:1,
+        // nav:true,
+        // navText: [
+        //     mLeft, mRight
+        // ],
+        // urlhashListener:true,
+        // startPosition: 'URLHash'
     })
 
     // GIFT WRAPPING - OWL CAROUSEL
@@ -1288,9 +1301,6 @@ $(document).ready(function() {
     })
 
     // Mobile
-    const mRight = '<img src="./assets/images/icons/control-right.svg" alt="mRight">'
-    const mLeft = '<img src="./assets/images/icons/control-left.svg" alt="mLeft">';
-
     $('.box-sizes__slider-slides.mobile').owlCarousel({
         margin:16,
         loop:false,
