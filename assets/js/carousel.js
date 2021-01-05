@@ -1251,6 +1251,16 @@ $(document).ready(function() {
     })
 
     // GIFT CARDS - OWL CAROUSEL
+    // Card Denominations
+    $('.gift-card__cards.mobile').owlCarousel({
+        margin:16,
+        loop:true,
+        autoWidth:true,
+        items:1,
+        nav:false,
+        dots:false
+    })
+
     // Sleeves
     $('.gift-card__sleeves.mobile').owlCarousel({
         margin:0,
@@ -1260,7 +1270,9 @@ $(document).ready(function() {
         nav:true,
         navText: [
             mLeft, mRight
-        ]
+        ],
+        urlhashListener:true,
+        startPosition: 'first'
 
         // margin:0,
         // loop:false,

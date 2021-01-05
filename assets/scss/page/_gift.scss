@@ -781,12 +781,32 @@
                 margin-bottom: 20px;
             }
 
+            &.desktop {
+                @include respond(mobile) {
+                    display: none;
+                }
+            }
+
+            &.mobile {
+                display: none;
+
+                @include respond(mobile) {
+                    display: flex;
+                    justify-content: flex-start;
+                }
+
+                & img {
+                    width: 232px;
+                    height: 148px;
+                }
+            }
+
             & > div {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: center;
-                height: 248.85px;
+                // height: 248.85px;
 
                 @include respond(tablet) {
                     justify-content: space-between;

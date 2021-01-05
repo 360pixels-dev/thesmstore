@@ -21826,12 +21826,40 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
     margin-bottom: 20px;
   }
 }
+@media only screen and (max-width: 820px) {
+  .gift-card__cards.desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .gift-card__cards.desktop {
+    display: none;
+  }
+}
+.gift-card__cards.mobile {
+  display: none;
+}
+@media only screen and (max-width: 820px) {
+  .gift-card__cards.mobile {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .gift-card__cards.mobile {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+.gift-card__cards.mobile img {
+  width: 232px;
+  height: 148px;
+}
 .gift-card__cards > div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 248.85px;
 }
 @media only screen and (max-width: 1024px) {
   .gift-card__cards > div {
