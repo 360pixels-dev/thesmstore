@@ -21655,42 +21655,6 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 .gift-available__registry.mobile > .owl-nav > .owl-next {
   margin-left: 12px;
 }
-.gift-available__registry.mobile .item {
-  display: flex;
-  align-items: center;
-  position: relative;
-  margin-top: 24px;
-  width: 288px;
-  height: 88px;
-}
-.gift-available__registry.mobile .item > img {
-  width: 288px;
-  height: 88px;
-}
-.gift-available__registry.mobile .item > h3 {
-  position: absolute;
-  left: 16px;
-  width: 180px;
-  color: #ffffff;
-}
-@media only screen and (max-width: 1152px) {
-  .gift-available__registry.mobile .item {
-    width: 240px;
-  }
-  .gift-available__registry.mobile .item > img {
-    width: 240px;
-  }
-}
-@media only screen and (max-width: 1024px) {
-  .gift-available__registry.mobile .item {
-    margin-top: 16px;
-  }
-}
-@media only screen and (max-width: tablet) {
-  .gift-available__registry.mobile .item {
-    margin-top: 16px;
-  }
-}
 .gift-available__registry .item {
   display: flex;
   align-items: center;

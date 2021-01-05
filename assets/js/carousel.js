@@ -994,269 +994,263 @@ $(document).ready(function() {
 
     // Carousel Gift Pages 
     // Gift Card Page
-//     $('.gift__controls button').click(function() {
+    // $('.gift__controls button').click(function() {
 
-//         var slider = $('.gift-card__sleeves');
-//         var slider2 = $('.gift-card__cards');
-//         var sliderMargin = parseFloat(slider.css('margin-left').split('px')[0]);
-//         var sliderMargin2 = parseFloat(slider2.css('margin-left').split('px')[0]);
-//         var dir = $(this).attr('class').split('--')[1];
+    //     var slider = $('.gift-card__sleeves');
+    //     var slider2 = $('.gift-card__cards');
+    //     var sliderMargin = parseFloat(slider.css('margin-left').split('px')[0]);
+    //     var sliderMargin2 = parseFloat(slider2.css('margin-left').split('px')[0]);
+    //     var dir = $(this).attr('class').split('--')[1];
         
-//         if(dir == 'right') {
-//             if(isMarginValid(sliderMargin - 137.22)) {
-//                 slider.css('margin-left', `${sliderMargin - 137.22}px`);
-//             }
-//             else {
-//                 slider.css('margin-left', '0px');
-//             }
-//         }
-//         else {
-//             sliderMargin + 137.22;
-//             if(isMarginValid(sliderMargin + 137.22)) {
-//                 slider.css('margin-left', `${sliderMargin + 137.22}px`);
-//             }
-//             else {
-//                 slider.css('margin-left', '0px');
-//             }
-//         }
+    //     if(dir == 'right') {
+    //         if(isMarginValid(sliderMargin - 137.22)) {
+    //             slider.css('margin-left', `${sliderMargin - 137.22}px`);
+    //         }
+    //         else {
+    //             slider.css('margin-left', '0px');
+    //         }
+    //     }
+    //     else {
+    //         sliderMargin + 137.22;
+    //         if(isMarginValid(sliderMargin + 137.22)) {
+    //             slider.css('margin-left', `${sliderMargin + 137.22}px`);
+    //         }
+    //         else {
+    //             slider.css('margin-left', '0px');
+    //         }
+    //     }
 
-//         function isMarginValid(val) {
-//             if(val < 0 && val >= -411.66) { 
-//                 $('.gift__controls--left').css('visibility', 'visible');
-//                 return true;
-//             }
-//             else {
-//                 $('.gift__controls--left').css('visibility', 'hidden');
-//                 return false;
-//             }
-//         }
-//     });
+    //     function isMarginValid(val) {
+    //         if(val < 0 && val >= -411.66) { 
+    //             $('.gift__controls--left').css('visibility', 'visible');
+    //             return true;
+    //         }
+    //         else {
+    //             $('.gift__controls--left').css('visibility', 'hidden');
+    //             return false;
+    //         }
+    //     }
+    // });
 
 
 
-//     var dragItem = $('.gift-card__cards div');
-//     var container = $('.gift-card__cards');
+    var dragItem = $('.gift-card__cards div');
+    var container = $('.gift-card__cards');
 
-//     var active = false;
-//     var currentX;
-//     var currentY;
-//     var initialX;
-//     var initialY;
-//     var xOffset = 0;
-//     var yOffset = 0;
+    var active = false;
+    var currentX;
+    var currentY;
+    var initialX;
+    var initialY;
+    var xOffset = 0;
+    var yOffset = 0;
 
-//     container.mousedown(dragStart);
-//     container.mousemove(drag);
-//     container.mouseup(dragEnd);
+    container.mousedown(dragStart);
+    container.mousemove(drag);
+    container.mouseup(dragEnd);
 
-//     function dragStart(e) {
-//         initialX = e.clientX - xOffset;
-//         initialY = e.clientY - yOffset;
+    function dragStart(e) {
+        initialX = e.clientX - xOffset;
+        initialY = e.clientY - yOffset;
   
-//         if (e.target === dragItem) {
-//           active = true;
-//         }
-//     }
+        if (e.target === dragItem) {
+          active = true;
+        }
+    }
 
-//     function dragEnd(e) {
-//         initialX = currentX;
-//         initialY = currentY;
+    function dragEnd(e) {
+        initialX = currentX;
+        initialY = currentY;
   
-//         active = false;
-//       }
+        active = false;
+      }
   
-//       function drag(e) {
-//         if (active) {
+      function drag(e) {
+        if (active) {
         
-//             e.preventDefault();
+            e.preventDefault();
 
-//             currentX = e.clientX - initialX;
-//             currentY = e.clientY - initialY;
+            currentX = e.clientX - initialX;
+            currentY = e.clientY - initialY;
 
-//             xOffset = currentX;
-//             yOffset = currentY;
+            xOffset = currentX;
+            yOffset = currentY;
             
-//             console.log(currentX);
+            console.log(currentX);
   
-//             setTranslate(currentX, currentY, dragItem);
-//         }
-//       }
+            setTranslate(currentX, currentY, dragItem);
+        }
+      }
   
-//       function setTranslate(xPos, yPos, el) {
-//         el.style.marginLeft = xPos + 'px';
-//       }
-    
-// });
+      function setTranslate(xPos, yPos, el) {
+        el.style.marginLeft = xPos + 'px';
+      }
 
 
+    // WHATS NEW CAROUSEL - PROMOS
+    var whatsNewPromos = [
+        {
+            title: 'SMAC Sale',
+            content: 'Score up to 50% off on selected items, and enjoy discounts.',
+            imageUrl: './assets/images/whatsnew-promo1.png',
+        },
+        {
+            title: '0% Interest, Easy Payment Plan',
+            content: 'Kick-off the new decade with an awesome start!',
+            imageUrl: './assets/images/whatsnew-promo2.png',
+        },
+        {
+            title: 'SMAC Sale 2',
+            content: 'Score up to 50% off on selected items, and enjoy discounts.',
+            imageUrl: './assets/images/whatsnew-promo1.png',
+        },
+        {
+            title: '0% Interest, Easy Payment Plan 2',
+            content: 'Kick-off the new decade with an awesome start!',
+            imageUrl: './assets/images/whatsnew-promo2.png',
+        },
+    ];
 
-// WHATS NEW CAROUSEL - PROMOS
-var whatsNewPromos = [
-    {
-        title: 'SMAC Sale',
-        content: 'Score up to 50% off on selected items, and enjoy discounts.',
-        imageUrl: './assets/images/whatsnew-promo1.png',
-    },
-    {
-        title: '0% Interest, Easy Payment Plan',
-        content: 'Kick-off the new decade with an awesome start!',
-        imageUrl: './assets/images/whatsnew-promo2.png',
-    },
-    {
-        title: 'SMAC Sale 2',
-        content: 'Score up to 50% off on selected items, and enjoy discounts.',
-        imageUrl: './assets/images/whatsnew-promo1.png',
-    },
-    {
-        title: '0% Interest, Easy Payment Plan 2',
-        content: 'Kick-off the new decade with an awesome start!',
-        imageUrl: './assets/images/whatsnew-promo2.png',
-    },
-];
+    populateWhatsNewPromosDetails();
+    // populateVideoSlider();
+    // populateTemporaryVideoSlider()
 
-populateWhatsNewPromosDetails();
-// populateVideoSlider();
-// populateTemporaryVideoSlider()
+    $('.whats-new__promos-controls .controls__arrow').click(function() {
+        var dir = $(this).attr('class').split('--')[1];
+        
+        // REARRANGE EVENT ARRAY
+        whatsNewPromos[0].isActive = false;
+        if(dir == 'right') { //to the right
+            whatsNewPromos.push(whatsNewPromos.shift());
+        }
+        else { //to the left
+            whatsNewPromos.unshift(whatsNewPromos.pop());
+        }
+        whatsNewPromos[0].isActive = true;
+        
+        populateWhatsNewPromosDetails(); // CHANGE EVENT DETAILS
+        // populateVideoSlider(); // REARRANGE EVENT SLIDER
+        // populateTemporaryVideoSlider(); // TEMPORARY VIDEO SLIDER
 
-$('.whats-new__promos-controls .controls__arrow').click(function() {
-    var dir = $(this).attr('class').split('--')[1];
-    
-    // REARRANGE EVENT ARRAY
-    whatsNewPromos[0].isActive = false;
-    if(dir == 'right') { //to the right
-        whatsNewPromos.push(whatsNewPromos.shift());
-    }
-    else { //to the left
-        whatsNewPromos.unshift(whatsNewPromos.pop());
-    }
-    whatsNewPromos[0].isActive = true;
-    
-    populateWhatsNewPromosDetails(); // CHANGE EVENT DETAILS
-    // populateVideoSlider(); // REARRANGE EVENT SLIDER
-    // populateTemporaryVideoSlider(); // TEMPORARY VIDEO SLIDER
+    });
 
-});
-
-function populateWhatsNewPromosDetails() {
-    
-    $('.whats-new__promos-cards').html(`
-        <div class="card--promo">
-            <img class="card--promo-image" src="${whatsNewPromos[0].imageUrl}" alt="">
-            <h4 class="card--promo-title font-h4">${whatsNewPromos[0].title}</h4>
-            <p class="card--promo-details">${whatsNewPromos[0].content}.</p>
-            <a href="" class="btn--text-link font-cta">View</a>
-        </div>
-        <div class="card--promo">
-            <img class="card--promo-image" src="${whatsNewPromos[1].imageUrl}" alt="">
-            <h4 class="card--promo-title font-h4">${whatsNewPromos[1].title}</h4>
-            <p class="card--promo-details">${whatsNewPromos[1].content}.</p>
-            <a href="" class="btn--text-link font-cta">View</a>
-        </div>
-    `);
-}
-
-// BOX SIZES CAROUSEL
-const boxSizesArr = [
-    {
-        imgUrl: './assets/images/box-size-s.jpg',
-        size: 'Small',
-        price: '₱29.00',
-        dimensions: 'Dimensions: 5” (H) x 11”(W) x 6”(D)'
-    },
-    {
-        imgUrl: './assets/images/box-size-m.jpg',
-        size: 'Medium',
-        price: '₱29.00',
-        dimensions: 'Dimensions: 11.5” (H) x 15.5”(W) x 10”(D)'
-    },
-    {
-        imgUrl: './assets/images/box-size-m.jpg',
-        size: 'Large',
-        price: '₱29.00',
-        dimensions: 'Dimensions: 23” (H) x 15”(W) x 9”(D)'
-    },
-    {
-        imgUrl: './assets/images/box-size-m.jpg',
-        size: 'Extra Large',
-        price: '₱29.00',
-        dimensions: 'Dimensions: 32” (H) x 15”(W) x 9”(D)'
-    },
-];
-
-populateBoxSizesDetails();
-// populateVideoSlider();
-// populateTemporaryVideoSlider()
-
-$('.box-sizes__controls .controls__arrow').click(function() {
-    var dir = $(this).attr('class').split('--')[1];
-    
-    // REARRANGE EVENT ARRAY
-    boxSizesArr[0].isActive = false;
-    if(dir == 'right') { //to the right
-        boxSizesArr.push(boxSizesArr.shift());
-    }
-    else { //to the left
-        boxSizesArr.unshift(boxSizesArr.pop());
-    }
-    boxSizesArr[0].isActive = true;
-    
-    populateBoxSizesDetails(); // CHANGE EVENT DETAILS
-    // populateVideoSlider(); // REARRANGE EVENT SLIDER
-    // populateTemporaryVideoSlider(); // TEMPORARY VIDEO SLIDER
-
-});
-
-function populateBoxSizesDetails() {
-    
-    $('.box-sizes__slider-slides').html(`
-        <div class="box-sizes__slider-slide">
-            <img src="${boxSizesArr[0].imgUrl}" alt="">
-            <div>
-                <h4 class="font-h4-caps">${boxSizesArr[0].size}</h4>
-                <h4 class="font-h4 text-bold">${boxSizesArr[0].price}</h4>
+    function populateWhatsNewPromosDetails() {
+        
+        $('.whats-new__promos-cards').html(`
+            <div class="card--promo">
+                <img class="card--promo-image" src="${whatsNewPromos[0].imageUrl}" alt="">
+                <h4 class="card--promo-title font-h4">${whatsNewPromos[0].title}</h4>
+                <p class="card--promo-details">${whatsNewPromos[0].content}.</p>
+                <a href="" class="btn--text-link font-cta">View</a>
             </div>
-            <span class="font-caption">${boxSizesArr[0].dimensions}</span>
-        </div>
-        <div class="box-sizes__slider-slide">
-            <img src="${boxSizesArr[1].imgUrl}" alt="">
-            <div>
-                <h4 class="font-h4-caps">${boxSizesArr[1].size}</h4>
-                <h4 class="font-h4 text-bold">${boxSizesArr[1].price}</h4>
+            <div class="card--promo">
+                <img class="card--promo-image" src="${whatsNewPromos[1].imageUrl}" alt="">
+                <h4 class="card--promo-title font-h4">${whatsNewPromos[1].title}</h4>
+                <p class="card--promo-details">${whatsNewPromos[1].content}.</p>
+                <a href="" class="btn--text-link font-cta">View</a>
             </div>
-            <span class="font-caption">${boxSizesArr[1].dimensions}</span>
-        </div>
-        <div class="box-sizes__slider-slide">
-            <img src="${boxSizesArr[2].imgUrl}" alt="">
-            <div>
-                <h4 class="font-h4-caps">${boxSizesArr[2].size}</h4>
-                <h4 class="font-h4 text-bold">${boxSizesArr[2].price}</h4>
+        `);
+    }
+
+    // BOX SIZES CAROUSEL
+    const boxSizesArr = [
+        {
+            imgUrl: './assets/images/box-size-s.jpg',
+            size: 'Small',
+            price: '₱29.00',
+            dimensions: 'Dimensions: 5” (H) x 11”(W) x 6”(D)'
+        },
+        {
+            imgUrl: './assets/images/box-size-m.jpg',
+            size: 'Medium',
+            price: '₱29.00',
+            dimensions: 'Dimensions: 11.5” (H) x 15.5”(W) x 10”(D)'
+        },
+        {
+            imgUrl: './assets/images/box-size-m.jpg',
+            size: 'Large',
+            price: '₱29.00',
+            dimensions: 'Dimensions: 23” (H) x 15”(W) x 9”(D)'
+        },
+        {
+            imgUrl: './assets/images/box-size-m.jpg',
+            size: 'Extra Large',
+            price: '₱29.00',
+            dimensions: 'Dimensions: 32” (H) x 15”(W) x 9”(D)'
+        },
+    ];
+
+    populateBoxSizesDetails();
+    // populateVideoSlider();
+    // populateTemporaryVideoSlider()
+
+    $('.box-sizes__controls .controls__arrow').click(function() {
+        var dir = $(this).attr('class').split('--')[1];
+        
+        // REARRANGE EVENT ARRAY
+        boxSizesArr[0].isActive = false;
+        if(dir == 'right') { //to the right
+            boxSizesArr.push(boxSizesArr.shift());
+        }
+        else { //to the left
+            boxSizesArr.unshift(boxSizesArr.pop());
+        }
+        boxSizesArr[0].isActive = true;
+        
+        populateBoxSizesDetails(); // CHANGE EVENT DETAILS
+        // populateVideoSlider(); // REARRANGE EVENT SLIDER
+        // populateTemporaryVideoSlider(); // TEMPORARY VIDEO SLIDER
+
+    });
+
+    function populateBoxSizesDetails() {
+        
+        $('.box-sizes__slider-slides').html(`
+            <div class="box-sizes__slider-slide">
+                <img src="${boxSizesArr[0].imgUrl}" alt="">
+                <div>
+                    <h4 class="font-h4-caps">${boxSizesArr[0].size}</h4>
+                    <h4 class="font-h4 text-bold">${boxSizesArr[0].price}</h4>
+                </div>
+                <span class="font-caption">${boxSizesArr[0].dimensions}</span>
             </div>
-            <span class="font-caption">${boxSizesArr[2].dimensions}</span>
-        </div>
-    `);
-}
+            <div class="box-sizes__slider-slide">
+                <img src="${boxSizesArr[1].imgUrl}" alt="">
+                <div>
+                    <h4 class="font-h4-caps">${boxSizesArr[1].size}</h4>
+                    <h4 class="font-h4 text-bold">${boxSizesArr[1].price}</h4>
+                </div>
+                <span class="font-caption">${boxSizesArr[1].dimensions}</span>
+            </div>
+            <div class="box-sizes__slider-slide">
+                <img src="${boxSizesArr[2].imgUrl}" alt="">
+                <div>
+                    <h4 class="font-h4-caps">${boxSizesArr[2].size}</h4>
+                    <h4 class="font-h4 text-bold">${boxSizesArr[2].price}</h4>
+                </div>
+                <span class="font-caption">${boxSizesArr[2].dimensions}</span>
+            </div>
+        `);
+    }
 
-const right = '<img src="./assets/images/icons/m-carousel-arrow-right.svg" alt="right">'
-const left = '<img src="./assets/images/icons/m-carousel-arrow-left.svg" alt="left">'
+    const right = '<img src="./assets/images/icons/m-carousel-arrow-right.svg" alt="right">'
+    const left = '<img src="./assets/images/icons/m-carousel-arrow-left.svg" alt="left">'
 
-// GIFT REGISTRY - OWL CAROUSEL
-$(document).ready(function(){
+    // GIFT REGISTRY - OWL CAROUSEL
     $('.gift-available__registry.mobile').owlCarousel({
         margin:16,
         loop:true,
         autoWidth:true,
-        items:1,
+        items:2,
         nav:true,
         navText: [
             left, right
         ]
     })
-});
 
-// GIFT CARDS - OWL CAROUSEL
-// Sleeves
-$(document).ready(function(){
-    $('.gift-card__cards').owlCarousel({
+    // GIFT CARDS - OWL CAROUSEL
+    // Sleeves
+    $('.gift-card__sleeves.mobile').owlCarousel({
         margin:16,
         loop:true,
         autoWidth:true,
@@ -1266,11 +1260,9 @@ $(document).ready(function(){
             left, right
         ]
     })
-});
 
-// GIFT WRAPPING - OWL CAROUSEL
-// Gift Wrappers
-$(document).ready(function(){
+    // GIFT WRAPPING - OWL CAROUSEL
+    // Gift Wrappers
     $('.gift-wrapping__slider-slides').owlCarousel({
         margin:16,
         loop:true,
@@ -1281,11 +1273,9 @@ $(document).ready(function(){
             left, right
         ]
     })
-});
 
-// Box Sizes
-// Desktop
-$(document).ready(function(){
+    // Box Sizes
+    // Desktop
     $('.box-sizes__slider-slides.desktop').owlCarousel({
         margin:16,
         loop:true,
@@ -1296,14 +1286,10 @@ $(document).ready(function(){
             left, right
         ]
     })
-});
 
-
-// Mobile
-const mRight = '<img src="./assets/images/icons/control-right.svg" alt="mRight">'
-const mLeft = '<img src="./assets/images/icons/control-left.svg" alt="mLeft">'
-
-$(document).ready(function(){
+    // Mobile
+    const mRight = '<img src="./assets/images/icons/control-right.svg" alt="mRight">'
+    const mLeft = '<img src="./assets/images/icons/control-left.svg" alt="mLeft">';
 
     $('.box-sizes__slider-slides.mobile').owlCarousel({
         margin:16,
@@ -1318,3 +1304,6 @@ $(document).ready(function(){
         startPosition: 'URLHash'
     })
 });
+
+
+
