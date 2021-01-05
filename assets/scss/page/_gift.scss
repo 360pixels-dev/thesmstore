@@ -14,9 +14,9 @@
         position: relative;
         min-height: 348px;
         // height: 298px;
-        // margin-bottom: 126px;
         width: 100%;
         padding-top: 44px;
+        margin-bottom: 32px;
 
         &:before {
             @include headerBG;
@@ -35,7 +35,6 @@
         }
 
         @include respond(mobile) {
-            margin-bottom: 32px;
             padding: 24px 12px 0 12px;
         }
 
