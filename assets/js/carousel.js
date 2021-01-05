@@ -994,99 +994,99 @@ $(document).ready(function() {
 
     // Carousel Gift Pages 
     // Gift Card Page
-    $('.gift__controls button').click(function() {
+//     $('.gift__controls button').click(function() {
 
-        var slider = $('.gift-card__sleeves');
-        var slider2 = $('.gift-card__cards');
-        var sliderMargin = parseFloat(slider.css('margin-left').split('px')[0]);
-        var sliderMargin2 = parseFloat(slider2.css('margin-left').split('px')[0]);
-        var dir = $(this).attr('class').split('--')[1];
+//         var slider = $('.gift-card__sleeves');
+//         var slider2 = $('.gift-card__cards');
+//         var sliderMargin = parseFloat(slider.css('margin-left').split('px')[0]);
+//         var sliderMargin2 = parseFloat(slider2.css('margin-left').split('px')[0]);
+//         var dir = $(this).attr('class').split('--')[1];
         
-        if(dir == 'right') {
-            if(isMarginValid(sliderMargin - 137.22)) {
-                slider.css('margin-left', `${sliderMargin - 137.22}px`);
-            }
-            else {
-                slider.css('margin-left', '0px');
-            }
-        }
-        else {
-            sliderMargin + 137.22;
-            if(isMarginValid(sliderMargin + 137.22)) {
-                slider.css('margin-left', `${sliderMargin + 137.22}px`);
-            }
-            else {
-                slider.css('margin-left', '0px');
-            }
-        }
+//         if(dir == 'right') {
+//             if(isMarginValid(sliderMargin - 137.22)) {
+//                 slider.css('margin-left', `${sliderMargin - 137.22}px`);
+//             }
+//             else {
+//                 slider.css('margin-left', '0px');
+//             }
+//         }
+//         else {
+//             sliderMargin + 137.22;
+//             if(isMarginValid(sliderMargin + 137.22)) {
+//                 slider.css('margin-left', `${sliderMargin + 137.22}px`);
+//             }
+//             else {
+//                 slider.css('margin-left', '0px');
+//             }
+//         }
 
-        function isMarginValid(val) {
-            if(val < 0 && val >= -411.66) { 
-                $('.gift__controls--left').css('visibility', 'visible');
-                return true;
-            }
-            else {
-                $('.gift__controls--left').css('visibility', 'hidden');
-                return false;
-            }
-        }
-    });
+//         function isMarginValid(val) {
+//             if(val < 0 && val >= -411.66) { 
+//                 $('.gift__controls--left').css('visibility', 'visible');
+//                 return true;
+//             }
+//             else {
+//                 $('.gift__controls--left').css('visibility', 'hidden');
+//                 return false;
+//             }
+//         }
+//     });
 
 
 
-    var dragItem = $('.gift-card__cards div');
-    var container = $('.gift-card__cards');
+//     var dragItem = $('.gift-card__cards div');
+//     var container = $('.gift-card__cards');
 
-    var active = false;
-    var currentX;
-    var currentY;
-    var initialX;
-    var initialY;
-    var xOffset = 0;
-    var yOffset = 0;
+//     var active = false;
+//     var currentX;
+//     var currentY;
+//     var initialX;
+//     var initialY;
+//     var xOffset = 0;
+//     var yOffset = 0;
 
-    container.mousedown(dragStart);
-    container.mousemove(drag);
-    container.mouseup(dragEnd);
+//     container.mousedown(dragStart);
+//     container.mousemove(drag);
+//     container.mouseup(dragEnd);
 
-    function dragStart(e) {
-        initialX = e.clientX - xOffset;
-        initialY = e.clientY - yOffset;
+//     function dragStart(e) {
+//         initialX = e.clientX - xOffset;
+//         initialY = e.clientY - yOffset;
   
-        if (e.target === dragItem) {
-          active = true;
-        }
-    }
+//         if (e.target === dragItem) {
+//           active = true;
+//         }
+//     }
 
-    function dragEnd(e) {
-        initialX = currentX;
-        initialY = currentY;
+//     function dragEnd(e) {
+//         initialX = currentX;
+//         initialY = currentY;
   
-        active = false;
-      }
+//         active = false;
+//       }
   
-      function drag(e) {
-        if (active) {
+//       function drag(e) {
+//         if (active) {
         
-            e.preventDefault();
+//             e.preventDefault();
 
-            currentX = e.clientX - initialX;
-            currentY = e.clientY - initialY;
+//             currentX = e.clientX - initialX;
+//             currentY = e.clientY - initialY;
 
-            xOffset = currentX;
-            yOffset = currentY;
+//             xOffset = currentX;
+//             yOffset = currentY;
             
-            console.log(currentX);
+//             console.log(currentX);
   
-            setTranslate(currentX, currentY, dragItem);
-        }
-      }
+//             setTranslate(currentX, currentY, dragItem);
+//         }
+//       }
   
-      function setTranslate(xPos, yPos, el) {
-        el.style.marginLeft = xPos + 'px';
-      }
+//       function setTranslate(xPos, yPos, el) {
+//         el.style.marginLeft = xPos + 'px';
+//       }
     
-});
+// });
 
 
 
@@ -1254,8 +1254,9 @@ $(document).ready(function(){
 });
 
 // GIFT CARDS - OWL CAROUSEL
+// Sleeves
 $(document).ready(function(){
-    $('.gift-card__use-cards').owlCarousel({
+    $('.gift-card__cards').owlCarousel({
         margin:16,
         loop:true,
         autoWidth:true,

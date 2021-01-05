@@ -613,6 +613,39 @@
                 @include respond(mobile) {
                     display: none;
                 }
+
+                & > div {
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    margin-top: 24px;
+                    width: 288px;
+                    height: 88px;
+
+                    & > img {
+                        width: 288px;
+                        height: 88px;
+                    }
+
+                    & > h3 {
+                        position: absolute;
+                        left: 16px;
+                        width: 180px;
+                        color: $white;
+                    }
+
+                    @include respond(1152px) {
+                        width: 240px;
+
+                        & > img {
+                            width: 240px;
+                        }
+                    }
+
+                    @include respond(tablet) {
+                        margin-top: 16px;
+                    }
+                }
             }
 
             &.mobile {
@@ -628,6 +661,39 @@
 
                     & > .owl-next {
                         margin-left: 12px;
+                    }
+                }
+
+                & .item {
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    margin-top: 24px;
+                    width: 288px;
+                    height: 88px;
+
+                    & > img {
+                        width: 288px;
+                        height: 88px;
+                    }
+
+                    & > h3 {
+                        position: absolute;
+                        left: 16px;
+                        width: 180px;
+                        color: $white;
+                    }
+
+                    @include respond(1152px) {
+                        width: 240px;
+
+                        & > img {
+                            width: 240px;
+                        }
+                    }
+
+                    @include respond(tablet) {
+                        margin-top: 16px;
                     }
                 }
             }
@@ -780,6 +846,20 @@
             justify-content: space-between;
             margin-left: 0px;
             transition: 0.4s;
+
+            &.desktop {
+                @include respond(mobile) {
+                    display: none;
+                }
+            }
+
+            &.mobile {
+                display: none;
+
+                @include respond(mobile) {
+                    display: block;
+                }
+            }
 
             @include respond(tablet) {
                 justify-content: flex-start;
