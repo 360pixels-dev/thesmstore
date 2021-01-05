@@ -1157,7 +1157,7 @@
                 &:nth-of-type(1) {
                     width: fit-content;
                     @include respond(mobile) {
-                        // display: none;
+                        display: none;
                     }
                 }
 
