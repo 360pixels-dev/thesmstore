@@ -793,6 +793,7 @@
                 @include respond(mobile) {
                     display: flex;
                     justify-content: flex-start;
+                    width: fit-content;
                 }
 
                 & img {
@@ -916,7 +917,7 @@
             position: relative;
 
             &-content {
-                width: 1400px;
+                width: fit-content;
                 min-height: 428px;
                 margin: 0 auto;
                 display: flex;
@@ -972,26 +973,86 @@
 
             &-cards {
                 height: 324px;
-                width: 600px;
+                width: 1224px;
                 display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
+                // flex-wrap: wrap;
+                // justify-content: space-between;
+
+                &.desktop {
+                    @include respond(mobile) {
+                        display: none;
+                    }
+                }
+
+                &.mobile {
+                    display: none;
+
+                    @include respond(mobile) {
+                        display: flex;
+                    }
+                }
 
                 @include respond(mobile) {
                     justify-content: flex-start;
                     height: 248px;
+                    width: 100vw;
                 }
 
-                & > img {
+                & > div > img {
                     height: 150px;
                     width: 288px;
-                    margin-bottom: 24px;
+                    margin: 0 24px 24px 0;
                     box-shadow: 0px 5px 15px rgba(189, 193, 202, 0.3);
 
                     @include respond(mobile) {
                         height: 114.81px;
                         width: 230.4px;
                         margin: 0 18px 18px 0;
+                    }
+                }
+
+                & .owl-item > div > img {
+                    height: 150px;
+                    width: 288px;
+                    margin: 0 24px 24px 0;
+
+                    box-shadow: 0px 5px 15px rgba(189, 193, 202, 0.3);
+
+                    @include respond(mobile) {
+                        height: 114.81px;
+                        width: 230.4px;
+                        margin: 0 18px 18px 0;
+                    }
+                }
+
+                & .owl-nav > .owl-next {
+                    margin-left: 12px;
+                }
+
+                & .owl-nav {
+                    @include respond(mobile) {
+                        position: absolute;
+                        top: 50%;
+                        width: 100vw;
+
+                        & > .owl-prev,
+                        .owl-next {
+                            right: 0;
+                            top: 50%;
+                            transform: translate(0, -50%);
+                            margin-right: 16px;
+                            margin-left: 0;
+                            border-radius: 20px;
+                            height: 39.76px;
+                            width: 39.76px;
+                            background-color: #fff !important;
+                            border: 1px solid #e0e0e0 !important;
+                            box-sizing: border-box;
+                        }
+
+                        & > .owl-next {
+                            float: right;
+                        }
                     }
                 }
             }
@@ -1040,7 +1101,7 @@
             }
 
             &-content {
-                width: 1400px;
+                width: fit-content;
                 min-height: 524px;
                 margin: 0 auto;
                 display: flex;
@@ -1057,6 +1118,7 @@
                 @include respond(mobile) {
                     min-height: 430px;
                     padding: 32px 0 0px 12px;
+                    width: 100vw;
                 }
             }
 
@@ -1067,7 +1129,7 @@
                 margin-top: 31px;
 
                 @include respond(tablet) {
-                    margin-bottom: 8px;
+                    margin-bottom: 60px;
                     margin-top: 0px;
                     height: 86px;
                     order: 1;
@@ -1106,11 +1168,25 @@
 
             &-cards {
                 height: 324px;
-                width: 600px;
+                width: 1224px;
                 display: flex;
                 // flex-wrap: wrap;
-                justify-content: space-between;
+                // justify-content: space-between;
                 margin-top: 31px;
+
+                &.desktop {
+                    @include respond(mobile) {
+                        display: none;
+                    }
+                }
+
+                &.mobile {
+                    display: none;
+
+                    @include respond(mobile) {
+                        display: flex;
+                    }
+                }
 
                 @include respond(tablet) {
                     order: 3;
@@ -1119,9 +1195,16 @@
                 @include respond(mobile) {
                     justify-content: flex-start;
                     height: 248px;
+                    width: 100vw;
                 }
 
-                & > img {
+                & .fake-col-wrapper {
+                    & > img {
+                        margin-bottom: 24px;
+                    }
+                }
+
+                & > div > img {
                     height: 150px;
                     width: 288px;
                     margin: 0 24px 24px 0px;
@@ -1131,6 +1214,51 @@
                         height: 114.81px;
                         width: 230.4px;
                         margin: 0 18px 18px 0;
+                    }
+                }
+
+                & .owl-item > div > img {
+                    width: 288px;
+                    height: 150px;
+                    margin: 0 24px 24px 0px;
+                    box-shadow: 0px 5px 15px rgba(189, 193, 202, 0.3);
+                    border-radius: 4px;
+
+                    @include respond(mobile) {
+                        height: 114.81px;
+                        width: 230.4px;
+                        margin: 0 18px 18px 0;
+                    }
+                }
+
+                & .owl-nav > .owl-next {
+                    margin-left: 12px;
+                }
+
+                & .owl-nav {
+                    @include respond(mobile) {
+                        position: absolute;
+                        top: 50%;
+                        width: 100vw;
+
+                        & > .owl-prev,
+                        .owl-next {
+                            right: 0;
+                            top: 50%;
+                            transform: translate(0, -50%);
+                            margin-right: 16px;
+                            margin-left: 0;
+                            border-radius: 20px;
+                            height: 39.76px;
+                            width: 39.76px;
+                            background-color: #fff !important;
+                            border: 1px solid #e0e0e0 !important;
+                            box-sizing: border-box;
+                        }
+
+                        & > .owl-next {
+                            float: right;
+                        }
                     }
                 }
             }

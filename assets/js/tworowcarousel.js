@@ -1,29 +1,29 @@
 $(document).ready(function() {
-    var el = $('.gift-available__registry.mobile');
+    var el = $('.gift-card__use-cards');
 
     var right = '<img src="./assets/images/icons/m-carousel-arrow-right.svg" alt="right">'
     var left = '<img src="./assets/images/icons/m-carousel-arrow-left.svg" alt="left">'
 
     var carousel;
     var carouselOptions = {
-      margin:16,
-      loop:true,
+      margin:24,
+      loop:false,
       nav:true,
       navText: [
         left, right
       ],
       slideBy: 'page',
       responsive: {
-        // 0: {
-        //   items: 1,
-        //   rows: 2 //custom option not used by Owl Carousel, but used by the algorithm below
-        // },
+        0: {
+          items: 3,
+          rows: 2 //custom option not used by Owl Carousel, but used by the algorithm below
+        },
         // 768: {
         //   items: 2,
         //   rows: 3 //custom option not used by Owl Carousel, but used by the algorithm below
         // },
-        0: {
-          items: 4,
+        822: {
+          items: 3,
           rows: 2 //custom option not used by Owl Carousel, but used by the algorithm below
         }
       }

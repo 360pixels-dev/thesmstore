@@ -502,7 +502,7 @@
                     </div>
 
                     <div class="owl-carousel gift-card__sleeves mobile">
-                        <div >
+                        <div data-hash="first">
                             <img src="./assets/images/cards/gift-card-sleeve1.png" alt="">
                         </div>
                         <div>
@@ -529,17 +529,28 @@
                         <p>Get your SM Gift Card at cashier counters of The SM Store branch nearest you.</p>
                         <span><img src="./assets/images/icons/Info-Outline.svg" alt="">For store information, visit our <a href="">Stores</a> page.</span>
                     </div>
-                    <div class="gift-card__buy-cards">
+                    <div class="owl-carousel gift-card__buy-cards desktop">
                         <img src="./assets/images/cards/gift-card-where1.jpg" alt="">
                         <img src="./assets/images/cards/gift-card-where2.jpg" alt="">
                         <img src="./assets/images/cards/gift-card-where3.jpg" alt="">
                         <img src="./assets/images/cards/gift-card-where4.jpg" alt="">
+                        <img src="./assets/images/cards/gift-card-where2.jpg" alt="">
+                        <img src="./assets/images/cards/gift-card-where3.jpg" alt="">
+                    </div>
+
+                    <div class="owl-carousel gift-card__buy-cards mobile">
+                        <img src="./assets/images/cards/gift-card-where1.jpg" alt="">
+                        <img src="./assets/images/cards/gift-card-where2.jpg" alt="">
+                        <img src="./assets/images/cards/gift-card-where3.jpg" alt="">
+                        <img src="./assets/images/cards/gift-card-where4.jpg" alt="">
+                        <img src="./assets/images/cards/gift-card-where2.jpg" alt="">
+                        <img src="./assets/images/cards/gift-card-where3.jpg" alt="">
                     </div>
                 </div>
-                <div class="gift__controls gift__controls--buy">
+                <!-- <div class="gift__controls gift__controls--buy">
                     <button class="gift__controls--left"></button>
                     <button class="gift__controls--right"></button>
-                </div>
+                </div> -->
             </section>
 
             
@@ -566,12 +577,25 @@
                         <h2 class="font-h2-caps">Where to use</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
-                    <div class="gift-card__use-cards">
+                    <div class="owl-carousel gift-card__use-cards desktop">
                         <img src="./assets/images/cards/gift-card-where1.jpg" alt="">
                         <img src="./assets/images/cards/gift-card-use2.jpg" alt="">
                         <img src="./assets/images/cards/gift-card-use3.jpg" alt="">
+                        <img src="./assets/images/cards/gift-card-use4.jpg" alt="">
+                        <img src="./assets/images/cards/gift-card-use3.jpg" alt="">
+                        <img src="./assets/images/cards/gift-card-use2.jpg" alt="">
+                        <img src="./assets/images/cards/gift-card-use4.jpg" alt="">
+                        <img src="./assets/images/cards/gift-card-use3.jpg" alt="">
+                        <img src="./assets/images/cards/gift-card-use2.jpg" alt="">
                     </div>
-                    <div class="gift-card__use-cards" style="position: absolute; margin: 370px 0 0 423px;">
+
+                    <div class="owl-carousel gift-card__use-cards mobile">
+                        <img src="./assets/images/cards/gift-card-where1.jpg" alt="">
+                        <img src="./assets/images/cards/gift-card-use2.jpg" alt="">
+                        <img src="./assets/images/cards/gift-card-use3.jpg" alt="">
+                        <img src="./assets/images/cards/gift-card-use4.jpg" alt="">
+                        <img src="./assets/images/cards/gift-card-use3.jpg" alt="">
+                        <img src="./assets/images/cards/gift-card-use2.jpg" alt="">
                         <img src="./assets/images/cards/gift-card-use4.jpg" alt="">
                         <img src="./assets/images/cards/gift-card-use3.jpg" alt="">
                         <img src="./assets/images/cards/gift-card-use2.jpg" alt="">
@@ -770,16 +794,18 @@
 
     <script src="assets/js/owl.carousel.min.js"></script>
 
+    
+
     <!-- NEW MOBILE NAV INIT -->
     <script>
         $(document).ready(function() {
             $(".mobile_menu").simpleMobileMenu({
                 onMenuLoad: function(menu) {
-                    console.log(menu)
-                    console.log("menu loaded")
+                    // console.log(menu)
+                    // console.log("menu loaded")
                 },
                 onMenuToggle: function(menu, opened) {
-                    console.log(opened)
+                    // console.log(opened)
                 }
             });
         })
@@ -789,6 +815,7 @@
     <!-- CUSTOM JS -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/carousel.js"></script>
+    <!-- <script src="assets/js/tworowcarousel.js"></script> -->
     <script src="assets/js/footeraccordion.js"></script>
     <!-- <script src="assets/js/mobiledropdown.js"></script> -->
     <script src="assets/js/storeselector.js"></script>
