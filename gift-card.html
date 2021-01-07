@@ -446,8 +446,8 @@
                     background-color: #baeedc;
                 }
             </style>
-            <section class="gift-header gift-header--card">
-                <div>
+            <section class="gift-header">
+                <div style="background: #faf3f0;">
                     <img src="./assets/images/icon-gift-card.png" alt="">
 
                     <div class="gift-header__text">
@@ -560,18 +560,18 @@
             <section class="gift-card__use">
                 <div class="gift-card__use-content">
                     <div class="gift-card__use-filter">
-                        <span class="active">All</span>
-                        <span>Retail</span>
-                        <span>Home</span>
-                        <span>Health & Beauty</span>
-                        <span>Markets</span>
+                        <span value="All" onclick="filterImages()" class="activeFilter">All</span>
+                        <span value="Retail" onclick="filterImages()">Retail</span>
+                        <span value="Home" onclick="filterImages()">Home</span>
+                        <span value="Beauty" onclick="filterImages()">Health & Beauty</span>
+                        <span value="Markets" onclick="filterImages()">Markets</span>
                         <div class="blog-filter-m blog-filter-dropdown">
                             <p class="font-metadata text-bold">Filter</p>
                             <select class="font-caption text-semibold">
                                 <option value="All">All</option>
                                 <option value="Retail">Retail</option>
                                 <option value="Home">Home</option>
-                                <option value="All">Health & Beauty</option>
+                                <option value="Beauty">Health & Beauty</option>
                                 <option value="Markets">Markets</option>
                             </select>
                         </div>
@@ -581,27 +581,27 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                     <div class="owl-carousel gift-card__use-cards desktop">
-                        <img src="./assets/images/cards/gift-card-where1.jpg" alt="">
-                        <img src="./assets/images/cards/gift-card-use2.jpg" alt="">
-                        <img src="./assets/images/cards/gift-card-use3.jpg" alt="">
-                        <img src="./assets/images/cards/gift-card-use4.jpg" alt="">
-                        <img src="./assets/images/cards/gift-card-use3.jpg" alt="">
-                        <img src="./assets/images/cards/gift-card-use2.jpg" alt="">
-                        <img src="./assets/images/cards/gift-card-use4.jpg" alt="">
-                        <img src="./assets/images/cards/gift-card-use3.jpg" alt="">
-                        <img src="./assets/images/cards/gift-card-use2.jpg" alt="">
+                        <img class="home" src="./assets/images/cards/gift-card-where1.jpg" alt="">
+                        <img class="retail" src="./assets/images/cards/gift-card-use2.jpg" alt="">
+                        <img class="home" src="./assets/images/cards/gift-card-use3.jpg" alt="">
+                        <img class="retail" src="./assets/images/cards/gift-card-use4.jpg" alt="">
+                        <img class="retail" src="./assets/images/cards/gift-card-use3.jpg" alt="">
+                        <img class="markets" src="./assets/images/cards/gift-card-use2.jpg" alt="">
+                        <img class="retail"src="./assets/images/cards/gift-card-use4.jpg" alt="">
+                        <img class="retail" src="./assets/images/cards/gift-card-use3.jpg" alt="">
+                        <img class="retail" src="./assets/images/cards/gift-card-use2.jpg" alt="">
                     </div>
 
                     <div class="owl-carousel gift-card__use-cards mobile">
-                        <img src="./assets/images/cards/gift-card-where1.jpg" alt="">
-                        <img src="./assets/images/cards/gift-card-use2.jpg" alt="">
-                        <img src="./assets/images/cards/gift-card-use3.jpg" alt="">
-                        <img src="./assets/images/cards/gift-card-use4.jpg" alt="">
-                        <img src="./assets/images/cards/gift-card-use3.jpg" alt="">
-                        <img src="./assets/images/cards/gift-card-use2.jpg" alt="">
-                        <img src="./assets/images/cards/gift-card-use4.jpg" alt="">
-                        <img src="./assets/images/cards/gift-card-use3.jpg" alt="">
-                        <img src="./assets/images/cards/gift-card-use2.jpg" alt="">
+                        <img class="home" src="./assets/images/cards/gift-card-where1.jpg" alt="">
+                        <img class="retail" src="./assets/images/cards/gift-card-use2.jpg" alt="">
+                        <img class="home" src="./assets/images/cards/gift-card-use3.jpg" alt="">
+                        <img class="retail" src="./assets/images/cards/gift-card-use4.jpg" alt="">
+                        <img class="retail" src="./assets/images/cards/gift-card-use3.jpg" alt="">
+                        <img class="markets" src="./assets/images/cards/gift-card-use2.jpg" alt="">
+                        <img class="retail" src="./assets/images/cards/gift-card-use4.jpg" alt="">
+                        <img class="retail" src="./assets/images/cards/gift-card-use3.jpg" alt="">
+                        <img class="retail" src="./assets/images/cards/gift-card-use2.jpg" alt="">
                     </div>
                 </div>
                 <!-- <div class="gift__controls gift__controls--use">

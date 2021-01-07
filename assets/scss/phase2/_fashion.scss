@@ -47,97 +47,6 @@
     }
 }
 
-.sale {
-    background-color: $white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 474px;
-
-    &__image {
-        position: relative;
-        bottom: 10%;
-        width: 1238px;
-        height: 250px;
-        background-image: url("../images/new-sale-banner.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-
-        &-content {
-            color: $white;
-            padding: 1.5% 0 0 58%;
-
-            h5 {
-                margin-bottom: 0;
-                font-weight: 500;
-                font-size: 16px;
-                letter-spacing: 3px;
-                line-height: 21.79px;
-            }
-
-            h1 {
-                font-size: 48px;
-                line-height: 58px;
-                letter-spacing: 1.6px;
-                font-weight: 700;
-            }
-
-            p {
-                color: $white;
-                font-size: 14px;
-                line-height: 22px;
-                font-weight: 500;
-                margin-bottom: 20px;
-            }
-        }
-    }
-
-    @include respond(tablet) {
-        height: 274px;
-
-        &__image {
-            margin: 12px;
-            width: 100%;
-            height: 80%;
-
-            background-size: cover;
-            background-position: center;
-            bottom: 0%;
-            display: flex;
-            justify-content: flex-end;
-
-            &-content {
-                color: $white;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                padding: 0% 5% 0 2%;
-
-                h5 {
-                    margin-bottom: 0;
-                    font-size: 12px;
-                    line-height: 18px;
-                    letter-spacing: 2px;
-                }
-
-                h1 {
-                    margin: 0;
-                    font-size: 20px;
-                    line-height: 28px;
-                }
-
-                p {
-                    color: $white;
-                    font-size: 12px;
-                    line-height: 18px;
-                    margin-bottom: 10px;
-                }
-            }
-        }
-    }
-}
-
 .about-fashion {
     // background: #faf3f0;
     display: flex;
@@ -237,6 +146,8 @@
         width: 100vw;
         align-items: center;
         justify-content: space-between;
+        margin-top: 80px;
+        background: #fff9f9;
 
         &__left {
             justify-content: flex-start;
