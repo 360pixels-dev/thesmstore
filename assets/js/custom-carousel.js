@@ -115,10 +115,11 @@ function filterCarousel(container) {
 filterCarousel('gift-card__buy-cards')
 filterCarousel('gift-card__use-cards')
 
-function filterImages() {
 
     // change activeFilter
-    $(document).click(function(event) {
+    $(document).click(function filterImages(event) {
+        event.preventDefault()
+
         var selection = $(event.target);
         var currentActiveFilter = $('.activeFilter')
 
@@ -165,5 +166,3 @@ function filterImages() {
         filteredImages = []
 
     });
-    
-}
