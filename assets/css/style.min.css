@@ -23149,6 +23149,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 .free-wrapping-note > div > h3 {
   color: #deaf3b;
   margin-bottom: 8px;
+  text-align: center;
 }
 .free-wrapping-note > div > p {
   width: 684px;
