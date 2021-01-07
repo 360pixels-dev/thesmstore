@@ -143,18 +143,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 
     &__mobile-container {
         display: none;
         height: 522px;
         width: 100%;
-        justify-content: space-evenly;
         padding: 10% 0;
         flex-direction: column;
 
         img {
             width: 160px;
             height: 245px;
+
+            @include respond(320px) {
+                width: 128px;
+                height: auto;
+            }
         }
 
         button {
@@ -165,12 +170,24 @@
             text-align: left;
         }
 
-        &__content {
+        & > .bg {
+            height: 380px;
+            position: absolute;
             background: #faf3f0;
+            width: 100vw;
+            z-index: 1;
+            top: 0;
+        }
+
+        &__content {
+            background: transparent;
             text-align: center;
             flex-grow: 2;
             justify-content: center;
             align-items: flex-start;
+            position: relative;
+
+            z-index: 2;
 
             span {
                 color: #656565;
@@ -182,19 +199,24 @@
 
             p {
                 color: #2c2e2f;
+                padding: 0 12px;
             }
 
             &-link-container {
                 width: 100%;
-                padding-top: 8%;
                 display: flex;
                 justify-content: center;
-                align-items: center;
+                margin-top: 24px;
 
                 &__left,
                 &__right {
                     margin: 8px;
                     width: 160px;
+
+                    @include respond(320px) {
+                        margin: 12px;
+                        width: 128px;
+                    }
                 }
 
                 &__left {
@@ -203,6 +225,7 @@
 
                 &__right {
                     justify-content: flex-end !important;
+                    margin-top: 80px;
                 }
             }
         }
@@ -295,6 +318,10 @@
 .fashion-categories {
     background: $white;
 
+    @include respond(mobile) {
+        margin-top: 88px;
+    }
+
     h2,
     h3,
     h5 {
@@ -369,6 +396,18 @@
             h2 {
                 font-size: 16px;
                 line-height: 22px;
+            }
+        }
+    }
+
+    @include respond(320px) {
+        &__card {
+            width: 110px;
+            margin: 0 20px;
+
+            img {
+                width: 110px;
+                height: 110px;
             }
         }
     }
