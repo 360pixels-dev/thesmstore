@@ -19962,6 +19962,26 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
     padding-bottom: 58px;
   }
 }
+@media only screen and (max-width: 820px) {
+  .services--forex {
+    padding-top: 40px;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .services--forex {
+    padding-top: 40px;
+  }
+}
+@media only screen and (max-width: 820px) {
+  .services--forex > .font-headline > br {
+    display: none;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .services--forex > .font-headline > br {
+    display: none;
+  }
+}
 .services--forex > p {
   text-align: center;
 }
