@@ -116,53 +116,79 @@ filterCarousel('gift-card__buy-cards')
 filterCarousel('gift-card__use-cards')
 
 
-    // change activeFilter
-    $(document).click(function filterImages(event) {
-        event.preventDefault()
+// change activeFilter
+$(document).click(function filterImages(event) {
+    event.preventDefault()
 
-        var selection = $(event.target);
-        var currentActiveFilter = $('.activeFilter')
+    var selection = $(event.target);
+    var currentActiveFilter = $('.activeFilter')
+    var parent = $('.gift-card__use-cards')
 
-        if (selection[0].tagName === "SPAN") {
+
+    // Main Filtering
+    function executeMainFiltering() {
+
+        for (let pi = 0; pi < parent.length; pi++) {
+            $('.gift-card__use-cards.desktop').owlCarousel('destroy');
+            $('.gift-card__use-cards.mobile').owlCarousel('destroy');
+
+            function removeAllChild() {
+                while (parent[pi].firstChild) {
+                    parent[pi].removeChild(parent[pi].firstChild);
+                }
+            }
+
+            removeAllChild()
+
+            for (let i = 0; i < useCardsAllData.length; i++) { 
+
+                var child = useCardsAllData[i];
+
+                // select only <img>
+                if (child.nodeType == 1 && child.attributes[0].value === activeFilter) { 
+                    filteredImages.push(child)         
+                }
+
+                if (child.nodeType == 1 && activeFilter === 'all') { 
+                    filteredImages.push(child)         
+                }
+            }
+
+            for (let i = 0; i < filteredImages.length; i++) {
+                parent[pi].appendChild(filteredImages[i])
+            }
+
+
+            filterCarousel('gift-card__use-cards')
+
+            filteredImages = []
+        }
+
+    }
+
+    switch(selection[0].tagName) {
+        case "SPAN":
             currentActiveFilter.removeClass('activeFilter')
             selection.addClass('activeFilter')
+            activeFilter =  selection[0].attributes[0].value.toLowerCase()
 
-            activeFilter = selection[0].attributes[0].value.toLowerCase()
-        }
+            executeMainFiltering()
+            break;
 
-        // Main Filtering
-        var parent = $('.gift-card__use-cards.desktop')[0]
+        case "SELECT":
+            activeFilter = selection[0].value.length !== undefined ? selection[0].value.toLowerCase() : 'all'
+            
+            executeMainFiltering()
+            break;
 
-        $('.gift-card__use-cards.desktop').owlCarousel('destroy'); 
+        default:
+            activeFilter = activeFilter
+            break;
+    }
 
-        function removeAllChild() {
-            while (parent.firstChild) {
-                parent.removeChild(parent.firstChild);
-            }
-        }
+    console.log('activeFilter', activeFilter)
 
-        removeAllChild()
+    // console.log("DESKTOP", parent[0].className, parent[0].childNodes)
+    // console.log("MOBILE", parent[1].className, parent[1].childNodes)
 
-        for (let i = 0; i < useCardsAllData.length; i++) { 
-
-            var child = useCardsAllData[i];
-
-            // select only <img>
-            if (child.nodeType == 1 && child.attributes[0].value === activeFilter) { 
-                filteredImages.push(child)         
-            }
-
-            if (child.nodeType == 1 && activeFilter === 'all') { 
-                filteredImages.push(child)         
-            }
-        }
-
-        for (let i = 0; i < filteredImages.length; i++) {
-            parent.appendChild(filteredImages[i])
-        }
-
-        filterCarousel('gift-card__use-cards')
-
-        filteredImages = []
-
-    });
+});
