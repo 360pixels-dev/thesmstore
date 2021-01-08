@@ -22546,6 +22546,9 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 .gift-card__use-filter > span {
   color: #88898f;
 }
+.gift-card__use-filter > span:hover {
+  cursor: pointer;
+}
 @media only screen and (max-width: 820px) {
   .gift-card__use-filter > span {
     display: none;

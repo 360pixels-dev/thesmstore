@@ -116,79 +116,116 @@ filterCarousel('gift-card__buy-cards')
 filterCarousel('gift-card__use-cards')
 
 
-// change activeFilter
-$(document).click(function filterImages(event) {
-    event.preventDefault()
+// Main Filtering
+function executeDesktopFiltering() {
 
-    var selection = $(event.target);
-    var currentActiveFilter = $('.activeFilter')
-    var parent = $('.gift-card__use-cards')
+    var parent = $('.gift-card__use-cards.desktop')
 
+    console.log(parent)
 
-    // Main Filtering
-    function executeMainFiltering() {
+    $('.gift-card__use-cards.desktop').owlCarousel('destroy')
 
-        for (let pi = 0; pi < parent.length; pi++) {
-            $('.gift-card__use-cards.desktop').owlCarousel('destroy');
-            $('.gift-card__use-cards.mobile').owlCarousel('destroy');
-
-            function removeAllChild() {
-                while (parent[pi].firstChild) {
-                    parent[pi].removeChild(parent[pi].firstChild);
-                }
-            }
-
-            removeAllChild()
-
-            for (let i = 0; i < useCardsAllData.length; i++) { 
-
-                var child = useCardsAllData[i];
-
-                // select only <img>
-                if (child.nodeType == 1 && child.attributes[0].value === activeFilter) { 
-                    filteredImages.push(child)         
-                }
-
-                if (child.nodeType == 1 && activeFilter === 'all') { 
-                    filteredImages.push(child)         
-                }
-            }
-
-            for (let i = 0; i < filteredImages.length; i++) {
-                parent[pi].appendChild(filteredImages[i])
-            }
-
-
-            filterCarousel('gift-card__use-cards')
-
-            filteredImages = []
+    function removeAllChild() {
+        while (parent[0].firstChild) {
+            parent[0].removeChild(parent[0].firstChild);
         }
-
     }
 
+    removeAllChild()
+
+
+    for (let i = 0; i < useCardsAllData.length; i++) { 
+
+        var child = useCardsAllData[i];
+
+        // select only <img>
+        if (child.nodeType == 1 && child.attributes[0].value === activeFilter) { 
+            filteredImages.push(child)         
+        }
+
+        if (child.nodeType == 1 && activeFilter === 'all') { 
+            filteredImages.push(child)         
+        }
+    }
+
+    for (let i = 0; i < filteredImages.length; i++) {
+        parent[0].appendChild(filteredImages[i])
+    }
+
+    filterCarousel('gift-card__use-cards')
+
+    filteredImages = []
+
+}
+
+function executeMobileFiltering() {
+
+    var parent = $('.gift-card__use-cards.mobile')
+
+    console.log(parent[0].children)
+
+    $('.gift-card__use-cards.mobile').owlCarousel('destroy')
+
+    console.log(parent[0].children)
+    
+
+
+    function removeAllChild() {
+        while (parent[0].firstChild) {
+            parent[0].removeChild(parent[0].firstChild);
+        }
+    }
+
+    removeAllChild()
+
+    console.log(parent[0].children)
+    
+
+    for (let i = 0; i < useCardsAllData.length; i++) { 
+
+        var child = useCardsAllData[i];
+
+        // select only <img>
+        if (child.nodeType == 1 && child.attributes[0].value === activeFilter) { 
+            filteredImages.push(child)         
+        }
+
+        if (child.nodeType == 1 && activeFilter === 'all') { 
+            filteredImages.push(child)         
+        }
+    }
+
+    for (let i = 0; i < filteredImages.length; i++) {
+        parent[0].appendChild(filteredImages[i])
+    }
+
+    filterCarousel('gift-card__use-cards')
+
+    filteredImages = []
+
+}
+
+// change activeFilter
+$(document).click(function(event) {
+    // event.preventDefault()
+    var selection = $(event.target);
+    var currentActiveFilter = $('.activeFilter')
     switch(selection[0].tagName) {
         case "SPAN":
             currentActiveFilter.removeClass('activeFilter')
             selection.addClass('activeFilter')
             activeFilter =  selection[0].attributes[0].value.toLowerCase()
-
-            executeMainFiltering()
+    
+            executeDesktopFiltering()
             break;
-
+    
         case "SELECT":
             activeFilter = selection[0].value.length !== undefined ? selection[0].value.toLowerCase() : 'all'
             
-            executeMainFiltering()
+            executeMobileFiltering()
             break;
-
+    
         default:
-            activeFilter = activeFilter
             break;
     }
-
-    console.log('activeFilter', activeFilter)
-
-    // console.log("DESKTOP", parent[0].className, parent[0].childNodes)
-    // console.log("MOBILE", parent[1].className, parent[1].childNodes)
-
 });

@@ -1162,6 +1162,10 @@
                 & > span {
                     color: $gray;
 
+                    &:hover {
+                        cursor: pointer;
+                    }
+
                     @include respond(mobile) {
                         display: none;
                     }
