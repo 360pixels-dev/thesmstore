@@ -36,6 +36,7 @@
 
         @include respond(mobile) {
             padding: 24px 12px 0 12px;
+            margin: 40px 0;
         }
 
         & > div {
@@ -72,6 +73,7 @@
                     margin-bottom: 0;
                     height: 119px;
                     width: 278px;
+                    object-fit: contain;
                 }
             }
         }
@@ -123,6 +125,12 @@
         }
 
         &__text {
+            & > .center-m {
+                @include respond(mobile) {
+                    text-align: center;
+                }
+            }
+
             & > h3 {
                 margin-bottom: 3px;
 
@@ -980,7 +988,7 @@
             position: relative;
 
             &-content {
-                width: fit-content;
+                // width: fit-content;
                 min-height: 428px;
                 margin: 0 auto;
                 display: flex;
@@ -1018,6 +1026,7 @@
                 }
 
                 & > h2 {
+                    width: inherit;
                     @include respond(mobile) {
                         font-size: 20px;
                         line-height: 30px;
@@ -1139,9 +1148,9 @@
                 position: absolute;
                 top: 64px;
                 display: flex;
-                justify-content: space-between;
+                // justify-content: space-between;
                 left: 608px;
-                width: 462px;
+                width: fit-content;
 
                 @include respond(tablet) {
                     position: relative;
@@ -1164,6 +1173,10 @@
 
                     &:hover {
                         cursor: pointer;
+                    }
+
+                    &:not(:first-child) {
+                        margin-left: 40px;
                     }
 
                     @include respond(mobile) {
@@ -1230,6 +1243,10 @@
                     @include respond(tablet) {
                         margin-bottom: 8px;
                     }
+                }
+
+                & > ol {
+                    margin-left: 18px;
                 }
 
                 & > span {

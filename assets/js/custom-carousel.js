@@ -24,7 +24,7 @@ function storeAllImageData(container) {
 
 }
 
-storeAllImageData('gift-card__use-cards')
+storeAllImageData('carousel-2row-filtering-cards')
 
 function filterCarousel(container) {
 
@@ -113,17 +113,17 @@ function filterCarousel(container) {
 }
 
 filterCarousel('gift-card__buy-cards')
-filterCarousel('gift-card__use-cards')
+filterCarousel('carousel-2row-filtering-cards')
 
 
 // Main Filtering
 function executeDesktopFiltering() {
 
-    var parent = $('.gift-card__use-cards.desktop')
+    var parent = $('.carousel-2row-filtering-cards.desktop')
 
     console.log(parent)
 
-    $('.gift-card__use-cards.desktop').owlCarousel('destroy')
+    $('.carousel-2row-filtering-cards.desktop').owlCarousel('destroy')
 
     function removeAllChild() {
         while (parent[0].firstChild) {
@@ -152,7 +152,7 @@ function executeDesktopFiltering() {
         parent[0].appendChild(filteredImages[i])
     }
 
-    filterCarousel('gift-card__use-cards')
+    filterCarousel('carousel-2row-filtering-cards')
 
     filteredImages = []
 
@@ -160,11 +160,11 @@ function executeDesktopFiltering() {
 
 function executeMobileFiltering() {
 
-    var parent = $('.gift-card__use-cards.mobile')
+    var parent = $('.carousel-2row-filtering-cards.mobile')
 
     console.log(parent[0].children)
 
-    $('.gift-card__use-cards.mobile').owlCarousel('destroy')
+    $('.carousel-2row-filtering-cards.mobile').owlCarousel('destroy')
 
     console.log(parent[0].children)
     
@@ -199,7 +199,7 @@ function executeMobileFiltering() {
         parent[0].appendChild(filteredImages[i])
     }
 
-    filterCarousel('gift-card__use-cards')
+    filterCarousel('carousel-2row-filtering-cards')
 
     filteredImages = []
 

@@ -1,8 +1,6 @@
 .carousel {
     display: flex;
 
-
-
     &__container {
         display: flex;
         position: relative;
@@ -33,52 +31,50 @@
         display: flex;
         flex-direction: column;
 
-       /* &:last-child {
+        /* &:last-child {
             margin-right: 0;
         } */
 
-       &:nth-child(4n) {
-        margin-right: 0;
-       }
+        &:nth-child(4n) {
+            margin-right: 0;
+        }
 
-       @include respond(1200px) {
+        @include respond(1200px) {
             &:nth-child(4n) {
                 display: none;
-           }
+            }
 
-           &:nth-child(3n) {
-            margin-right: 0;
-           }
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
         }
 
         @include respond(980px) {
             &:nth-child(3n) {
                 display: none;
-           }
+            }
 
-           &:nth-child(2n) {
-            margin-right: 0;
-           }
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
         }
 
         @include respond(mobile) {
             &:nth-child(2n) {
                 display: none;
-           }
+            }
 
-           &:nth-child(1n) {
-            margin-right: 0;
-           }
+            &:nth-child(1n) {
+                margin-right: 0;
+            }
         }
     }
 
     &__control {
-        
-
         &--left {
-           margin-top: 12%;
+            margin-top: 12%;
 
-           @include respond(mobile) {
+            @include respond(mobile) {
                 margin-top: 32%;
             }
         }
@@ -95,7 +91,7 @@
             align-self: center;
         }
     }
-    
+
     &__image {
         width: auto;
 
@@ -103,10 +99,231 @@
             width: 187.67px;
         }
 
-
         @include respond(mobile) {
             width: 187.67px;
         }
+    }
+}
 
+.carousel-2row-filtering {
+    width: 100%;
+    position: relative;
+
+    &-filter {
+        position: absolute;
+        top: 64px;
+        display: flex;
+        // justify-content: space-between;
+        left: 608px;
+        width: fit-content;
+
+        @include respond(tablet) {
+            position: relative;
+            top: 0;
+            left: 0;
+            order: 2;
+        }
+
+        & > .blog-filter-m {
+            display: none;
+            margin-left: 0;
+
+            @include respond(mobile) {
+                display: flex;
+            }
+        }
+
+        & > span {
+            color: $gray;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &:not(:first-child) {
+                margin-left: 40px;
+            }
+
+            @include respond(mobile) {
+                display: none;
+            }
+
+            &.activeFilter {
+                color: $black;
+                font-weight: bold;
+            }
+        }
+    }
+
+    &-content {
+        min-height: 524px;
+        margin: 0 auto;
+        display: flex;
+        padding: 64px 0 68px 185px;
+        align-items: center;
+        position: relative;
+
+        @include respond(tablet) {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 52px 0 52px 32px;
+        }
+
+        @include respond(mobile) {
+            min-height: 430px;
+            padding: 32px 0 0px 12px;
+            width: 100vw;
+        }
+    }
+
+    &-text {
+        height: 148px;
+        width: 359px;
+        margin-right: 64px;
+        margin-top: 31px;
+
+        @include respond(tablet) {
+            margin-bottom: 60px;
+            margin-top: 0px;
+            height: 86px;
+            order: 1;
+        }
+
+        @include respond(320px) {
+            width: 100%;
+        }
+
+        & > h2 {
+            width: inherit;
+            @include respond(mobile) {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+
+        & > p {
+            color: $black;
+            margin-bottom: 31px;
+
+            @include respond(tablet) {
+                margin-bottom: 8px;
+            }
+        }
+
+        & > ol {
+            margin-left: 18px;
+        }
+
+        & > span {
+            color: $dark-gray;
+
+            & > img {
+                vertical-align: middle;
+            }
+
+            & > a {
+                color: $dark-gray;
+                font-weight: bold;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &-cards {
+        height: 324px;
+        width: 1224px;
+        display: flex;
+        // flex-wrap: wrap;
+        // justify-content: space-between;
+        margin-top: 31px;
+
+        &.desktop {
+            @include respond(mobile) {
+                display: none !important;
+            }
+        }
+
+        &.mobile {
+            display: none !important;
+
+            @include respond(mobile) {
+                display: flex !important;
+            }
+        }
+
+        @include respond(tablet) {
+            order: 3;
+        }
+
+        @include respond(mobile) {
+            justify-content: flex-start;
+            height: 248px;
+            width: 100vw;
+            margin-top: 0;
+        }
+
+        & .fake-col-wrapper {
+            & > img {
+                margin-bottom: 24px;
+            }
+        }
+
+        & > div > img {
+            height: 150px;
+            width: 288px;
+            margin: 0 24px 24px 0px;
+            box-shadow: 0px 5px 15px rgba(189, 193, 202, 0.3);
+
+            @include respond(mobile) {
+                height: 114.81px;
+                width: 230.4px;
+                margin: 0 18px 18px 0;
+            }
+        }
+
+        & .owl-item > div > img {
+            width: 288px;
+            height: 150px;
+            margin: 0 24px 24px 0px;
+            box-shadow: 0px 5px 15px rgba(189, 193, 202, 0.3);
+            border-radius: 4px;
+
+            @include respond(mobile) {
+                height: 114.81px;
+                width: 230.4px;
+                margin: 0 18px 18px 0;
+            }
+        }
+
+        & .owl-nav > .owl-next {
+            margin-left: 12px;
+        }
+
+        & .owl-nav {
+            @include respond(mobile) {
+                position: absolute;
+                top: 50%;
+                width: 100vw;
+
+                & > .owl-prev,
+                .owl-next {
+                    right: 0;
+                    top: 50%;
+                    transform: translate(0, -50%);
+                    margin-right: 16px;
+                    margin-left: 0;
+                    border-radius: 20px;
+                    height: 39.76px;
+                    width: 39.76px;
+                    background-color: #fff !important;
+                    border: 1px solid #e0e0e0 !important;
+                    box-sizing: border-box;
+                }
+
+                & > .owl-next {
+                    float: right;
+                }
+            }
+        }
     }
 }
