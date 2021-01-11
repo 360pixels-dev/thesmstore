@@ -11,10 +11,6 @@ $(document).ready(function() {
     window.addEventListener("load",function() {
         var slides = $('.main-carousel')
         var slideDots = $('.pagination-dot__activator')
-        var slideNum = $('.pagination-dot__indicator').attr('for');
-        slideNum = slideNum.substr(slideNum.length - 1);
-        // showSlides(slideIndex);
-        // myTimer = setInterval(function(){plusSlides(1)}, 4000);
 
         if (slides.length > 1) {
             clearInterval(interval)
