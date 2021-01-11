@@ -8,6 +8,35 @@ $(document).ready(function() {
     const mLeft = '<img src="./assets/images/icons/control-left.svg" alt="mLeft">'
 
     // INDEX CAROUSEL - BANNER
+    window.addEventListener("load",function() {
+        var slides = $('.main-carousel')
+        var slideDots = $('.pagination-dot__activator')
+        var slideNum = $('.pagination-dot__indicator').attr('for');
+        slideNum = slideNum.substr(slideNum.length - 1);
+        // showSlides(slideIndex);
+        // myTimer = setInterval(function(){plusSlides(1)}, 4000);
+
+        if (slides.length > 1) {
+            clearInterval(interval)
+
+            var counter = 1;
+
+
+            var interval = setInterval(function() {
+                slides.each(function() {
+                    $(this).removeClass('active');
+                });
+                slides.eq(counter).addClass('active');
+                slideDots[counter].checked = true
+                counter += 1
+
+                if (counter > slides.length - 1) {
+                    counter = 0
+                }
+            }, 5000)   
+        }
+    })
+    
     $('.pagination-dot__indicator').click(function() {
         var slideNum = $(this).attr('for');
         slideNum = slideNum.substr(slideNum.length - 1);
@@ -17,6 +46,8 @@ $(document).ready(function() {
         });
         $('.main-carousel').eq(slideNum - 1).addClass('active');
     });
+
+
 
     // GIFT REGISTRY - OWL CAROUSEL
     $('.gift-available__registry.mobile').owlCarousel({
