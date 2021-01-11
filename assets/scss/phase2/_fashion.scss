@@ -161,9 +161,12 @@
             position: relative;
             left: 0;
             top: 15%;
-            background-image: url("../images/about-fashion1.png");
-            width: 376px;
-            height: 556px;
+            // background-image: url("../images/about-fashion1.png");
+
+            & > img {
+                width: 376px;
+                height: 556px;
+            }
 
             & > button {
                 position: absolute;
@@ -179,7 +182,7 @@
             position: relative;
             right: 0;
             bottom: 15%;
-            background-image: url("../images/about-fashion2.png");
+            // background-image: url("../images/about-fashion2.png");
             width: 376px;
             height: 556px;
 
@@ -197,11 +200,11 @@
             position: relative;
 
             & > div {
-                padding: 23%;
+                width: 500px;
                 text-align: center;
 
                 & > h1 {
-                    font-size: 52px;
+                    // font-size: 52px;
                     letter-spacing: 4px;
                     color: $blush-pink;
                     margin: 5% 0;

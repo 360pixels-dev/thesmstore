@@ -6444,22 +6444,8 @@ body.mmactive {
   position: absolute;
   width: 325px;
   right: 17px;
-  top: 70px;
+  top: 50px;
   color: #ffffff;
-}
-@media only screen and (max-width: 820px) {
-  .card--sale-md > .card--sale-text {
-    width: 190px;
-    margin-right: 13px;
-    top: 17px;
-  }
-}
-@media only screen and (max-width: mobile) {
-  .card--sale-md > .card--sale-text {
-    width: 190px;
-    margin-right: 13px;
-    top: 17px;
-  }
 }
 .card--sale-md > .card--sale-text > p {
   color: #ffffff;
@@ -6513,8 +6499,7 @@ body.mmactive {
   line-height: 40px;
   letter-spacing: 1.6px;
   text-transform: uppercase;
-  white-space: nowrap;
-  width: min-content;
+  width: 100%;
 }
 @media only screen and (max-width: 820px) {
   .card--sale-md > .card--sale-text > h1 {
@@ -6564,6 +6549,7 @@ body.mmactive {
     width: 190px;
     right: 26px;
     top: 17px;
+    margin-right: 13px;
   }
 }
 @media only screen and (max-width: mobile) {
@@ -6571,6 +6557,7 @@ body.mmactive {
     width: 190px;
     right: 26px;
     top: 17px;
+    margin-right: 13px;
   }
 }
 .card--sale-text > p {
@@ -10018,6 +10005,18 @@ body.mmactive {
   object-fit: cover;
   overflow: hidden;
 }
+@media only screen and (max-width: 1024px) {
+  .sale-banner__image > .desktop-banner {
+    padding: 12px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: tablet) {
+  .sale-banner__image > .desktop-banner {
+    padding: 12px;
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 820px) {
   .sale-banner__image > .desktop-banner {
     display: none;
@@ -10033,7 +10032,7 @@ body.mmactive {
   z-index: -1;
   width: 100%;
   object-fit: cover;
-  height: 177px;
+  padding: 12px;
 }
 @media only screen and (max-width: 820px) {
   .sale-banner__image > .mobile-banner {
@@ -10071,11 +10070,7 @@ body.mmactive {
   margin-bottom: 20px;
 }
 @media only screen and (max-width: 1024px) {
-  .sale-banner {
-    margin-top: 20px !important;
-  }
   .sale-banner__image {
-    margin: 12px;
     display: flex;
     justify-content: flex-end;
   }
@@ -10106,11 +10101,7 @@ body.mmactive {
   }
 }
 @media only screen and (max-width: tablet) {
-  .sale-banner {
-    margin-top: 20px !important;
-  }
   .sale-banner__image {
-    margin: 12px;
     display: flex;
     justify-content: flex-end;
   }
@@ -19811,11 +19802,23 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
     padding: 16px 0 24px 0 !important;
     min-height: min-content;
   }
+  .sale .owl-next {
+    margin-left: 32px;
+  }
+  .sale .owl-nav {
+    margin: 24px 0 0 12px;
+  }
 }
 @media only screen and (max-width: mobile) {
   .sale {
     padding: 16px 0 24px 0 !important;
     min-height: min-content;
+  }
+  .sale .owl-next {
+    margin-left: 32px;
+  }
+  .sale .owl-nav {
+    margin: 24px 0 0 12px;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -19844,6 +19847,29 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   padding: 34px 0 32px 0;
 }
 @media only screen and (max-width: 820px) {
+  .sale--three-cards.desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .sale--three-cards.desktop {
+    display: none;
+  }
+}
+.sale--three-cards.mobile {
+  display: none;
+}
+@media only screen and (max-width: 820px) {
+  .sale--three-cards.mobile {
+    display: block;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .sale--three-cards.mobile {
+    display: block;
+  }
+}
+@media only screen and (max-width: 820px) {
   .sale--three-cards {
     padding: 16px 0 24px 0;
   }
@@ -19858,6 +19884,29 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 .sale--four-cards {
   padding: 34px 0 32px 0;
+}
+@media only screen and (max-width: 820px) {
+  .sale--four-cards.desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .sale--four-cards.desktop {
+    display: none;
+  }
+}
+.sale--four-cards.mobile {
+  display: none;
+}
+@media only screen and (max-width: 820px) {
+  .sale--four-cards.mobile {
+    display: block;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .sale--four-cards.mobile {
+    display: block;
+  }
 }
 @media only screen and (max-width: 820px) {
   .sale--four-cards {
@@ -37051,7 +37100,8 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   position: relative;
   left: 0;
   top: 15%;
-  background-image: url("../images/about-fashion1.png");
+}
+.about-fashion__desktop-container__left > img {
   width: 376px;
   height: 556px;
 }
@@ -37067,7 +37117,6 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   position: relative;
   right: 0;
   bottom: 15%;
-  background-image: url("../images/about-fashion2.png");
   width: 376px;
   height: 556px;
 }
@@ -37083,11 +37132,10 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   position: relative;
 }
 .about-fashion__desktop-container__content > div {
-  padding: 23%;
+  width: 500px;
   text-align: center;
 }
 .about-fashion__desktop-container__content > div > h1 {
-  font-size: 52px;
   letter-spacing: 4px;
   color: #ea8c8c;
   margin: 5% 0;

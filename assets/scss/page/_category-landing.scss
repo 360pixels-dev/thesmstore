@@ -5,7 +5,6 @@
     }
 
     &__content {
-
         &__h2 {
             margin-bottom: 28px;
         }
@@ -21,6 +20,14 @@
     @include respond(mobile) {
         padding: 16px 0 24px 0 !important;
         min-height: min-content;
+
+        & .owl-next {
+            margin-left: 32px;
+        }
+
+        & .owl-nav {
+            margin: 24px 0 0 12px;
+        }
     }
 
     &--with-controls {
@@ -37,6 +44,20 @@
     &--three-cards {
         padding: 34px 0 32px 0;
 
+        &.desktop {
+            @include respond(mobile) {
+                display: none;
+            }
+        }
+
+        &.mobile {
+            display: none;
+
+            @include respond(mobile) {
+                display: block;
+            }
+        }
+
         @include respond(mobile) {
             padding: 16px 0 24px 0;
         }
@@ -51,12 +72,27 @@
     &--four-cards {
         padding: 34px 0 32px 0;
 
+        &.desktop {
+            @include respond(mobile) {
+                display: none;
+            }
+        }
+
+        &.mobile {
+            display: none;
+
+            @include respond(mobile) {
+                display: block;
+            }
+        }
+
         @include respond(mobile) {
             padding: 16px 0 24px 0;
         }
 
         & > .card--sale {
-            &:nth-child(1), &:nth-child(2) {
+            &:nth-child(1),
+            &:nth-child(2) {
                 margin-bottom: 24px;
             }
         }
@@ -69,25 +105,20 @@
 
         @include respond(tablet) {
             display: block;
-           
         }
     }
 }
-
 
 .others {
     &-video {
         position: relative;
         min-height: 584px;
         background-color: $blush;
-        
-        
+
         @include respond(tablet) {
-            
         }
-        
+
         @include respond(mobile) {
-            
         }
 
         &__bg {
@@ -151,7 +182,7 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
             }
-            
+
             &-file {
                 position: absolute;
                 z-index: 50;
@@ -161,7 +192,7 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
             }
-            
+
             &-btn {
                 position: absolute;
                 top: 50%;
@@ -188,7 +219,7 @@
                 color: $white;
                 letter-spacing: 3px;
                 white-space: nowrap;
-            
+
                 @include respond(tablet) {
                     letter-spacing: 2px;
                 }
@@ -206,7 +237,7 @@
                 & span {
                     &:nth-of-type(1) {
                         color: $white;
-            
+
                         @include respond(1290px) {
                             text-align: left;
                         }
@@ -221,17 +252,14 @@
 
             & p {
                 color: $white;
-            
+
                 @include respond(1290px) {
-                    
                 }
 
                 @include respond(tablet) {
-                    
                 }
 
                 @include respond(mobile) {
-                    
                 }
             }
         }
@@ -240,11 +268,10 @@
             position: absolute;
             right: 20px;
             align-self: flex-end;
-            
+
             @include respond(1290px) {
                 text-align: right;
             }
-
         }
     }
 }
@@ -261,7 +288,7 @@
                 max-width: 100%;
                 padding: 0 24px;
             }
-    
+
             @include respond(mobile) {
                 padding: 0 12px;
             }
@@ -289,7 +316,7 @@
                     }
                 }
             }
-    
+
             & > p {
                 color: #000;
                 text-align: center;
@@ -326,7 +353,7 @@
             min-height: 253px;
             margin-bottom: 32px;
 
-            @include respond(mobile){
+            @include respond(mobile) {
                 margin-bottom: 0;
             }
 
@@ -365,13 +392,13 @@
             &:not(.active) {
                 @include respond(mobile) {
                     min-height: min-content;
-                    
+
                     & > .viber-main__location-content {
                         display: none;
                     }
                 }
             }
-            
+
             &-header {
                 background-color: $silver;
                 height: 53px;
@@ -434,7 +461,6 @@
                 }
             }
         }
-        
     }
 }
 

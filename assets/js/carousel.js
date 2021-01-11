@@ -1,6 +1,3 @@
-
-
-
 $(document).ready(function() {
     const right = '<img src="./assets/images/icons/m-carousel-arrow-right.svg" alt="right">'
     const left = '<img src="./assets/images/icons/m-carousel-arrow-left.svg" alt="left">'
@@ -16,7 +13,6 @@ $(document).ready(function() {
             clearInterval(interval)
 
             var counter = 1;
-
 
             var interval = setInterval(function() {
                 slides.each(function() {
@@ -157,5 +153,32 @@ $(document).ready(function() {
         urlhashListener:true,
         startPosition: 'URLHash'
     })
+
+
+    // CATEGORY PAGES
+    $('.sale--three-cards.mobile').owlCarousel({
+        margin:0,
+        loop:true,
+        autoWidth:false,
+        center: true,
+        items:1,
+        nav:true,
+        navText: [
+            left, right
+        ]
+    })
+
+    $('.sale--four-cards.mobile').owlCarousel({
+        margin:0,
+        loop:true,
+        autoWidth:false,
+        center: true,
+        items:1,
+        nav:true,
+        navText: [
+            left, right
+        ]
+    })
+
 })
 
