@@ -39,7 +39,81 @@ $(document).ready(function() {
         $('.main-carousel').eq(slideNum - 1).addClass('active');
     });
 
+    // INDEX - FEATURED VIDEO
+    $('.featured-video__controls--index .controls__arrow').click(function() {
+        var dir = $(this).attr('class').split('--')[1];
+        var indexVids = $('.featured-video__content')
+        var activeVid = $('.featured-video__content.active').attr('id')
 
+        if(dir == 'right') { //to the right
+            $('.featured-video__content').each(function() {
+                $(this).removeClass('active');
+            });
+            $('.featured-video__content').eq(Number(activeVid) + 1).addClass('active');
+
+            // if counter exceeds the number of videos, returns to first index
+            if ((Number(activeVid) + 1) > indexVids.length - 1) {
+                $('.featured-video__content').eq(0).addClass('active');
+            }
+        }
+        else { //to the left
+            $('.featured-video__content').each(function() {
+                $(this).removeClass('active');
+            });
+            $('.featured-video__content').eq(Number(activeVid) - 1).addClass('active');
+        }
+
+    });
+
+    // ABOUT US - FEATURED VIDEO
+    $('.about-carousel__controls .controls__arrow').click(function() {
+        var dir = $(this).attr('class').split('--')[1];
+        var aboutFeatured = $('.about-carousel__content')
+        var activeDiv = $('.about-carousel__content.active').attr('id')
+
+        if(dir == 'right') { //to the right
+            aboutFeatured.each(function() {
+                $(this).removeClass('active');
+            });
+            aboutFeatured.eq(Number(activeDiv) + 1).addClass('active');
+
+            // if counter exceeds the number of videos, returns to first index
+            if ((Number(activeDiv) + 1) > aboutFeatured.length - 1) {
+                aboutFeatured.eq(0).addClass('active');
+            }
+        }
+        else { //to the left
+            aboutFeatured.each(function() {
+                $(this).removeClass('active');
+            });
+            aboutFeatured.eq(Number(activeDiv) - 1).addClass('active');
+        }
+    });
+
+    // ABOUT US - PRESS RELEASES
+    $('.about-carousel-lg__controls .controls__arrow').click(function() {
+        var dir = $(this).attr('class').split('--')[1];
+        var aboutFeatured = $('.about-carousel-lg__inner-content')
+        var activeDiv = $('.about-carousel-lg__inner-content.active').attr('id')
+
+        if(dir == 'right') { //to the right
+            aboutFeatured.each(function() {
+                $(this).removeClass('active');
+            });
+            aboutFeatured.eq(Number(activeDiv) + 1).addClass('active');
+
+            // if counter exceeds the number of videos, returns to first index
+            if ((Number(activeDiv) + 1) > aboutFeatured.length - 1) {
+                aboutFeatured.eq(0).addClass('active');
+            }
+        }
+        else { //to the left
+            aboutFeatured.each(function() {
+                $(this).removeClass('active');
+            });
+            aboutFeatured.eq(Number(activeDiv) - 1).addClass('active');
+        }
+    });
 
     // GIFT REGISTRY - OWL CAROUSEL
     

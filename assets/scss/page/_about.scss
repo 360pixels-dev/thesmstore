@@ -76,7 +76,7 @@
 
             @include respond(mobile) {
                 margin-top: 56px;
-                width: 336px;
+                width: 100%;
             }
 
             & > h1 {
@@ -114,13 +114,13 @@
             // display: flex;
             display: none;
 
+            &.active {
+                display: flex;
+            }
+
             @include respond(1250px) {
                 // margin: 0 auto 0 auto;
                 padding-bottom: 60px;
-            }
-
-            &.active {
-                display: flex;
             }
         }
 
@@ -162,6 +162,11 @@
                     font-size: 32px;
                     line-height: 40px;
                     letter-spacing: 1.6px;
+                }
+
+                @include respond(320px) {
+                    font-size: 28px;
+                    line-height: 36px;
                 }
 
                 & > span {
@@ -207,14 +212,17 @@
                 left: 88px;
                 top: 64px;
                 z-index: 40;
+                height: 500px;
+                width: 806px;
+                object-fit: cover;
+                object-position: center;
 
                 @include respond(1340px) {
                     width: 57.5%;
                 }
 
-                @include respond(1250px) {
-                    width: 500px;
-                    height: auto;
+                @include respond(tablet) {
+                    height: 300px;
                     left: 50%;
                     top: 24px;
                     transform: translateX(-50%);
@@ -225,6 +233,10 @@
                     height: 215px;
                     top: 16px;
                 }
+
+                @include respond(320px) {
+                    width: 300px;
+                }
             }
         }
 
@@ -234,8 +246,12 @@
             bottom: 64px;
             right: 40px;
 
-            @include respond(1250px) {
-                display: none;
+            @include respond(tablet) {
+                bottom: 104px;
+            }
+
+            @include respond(mobile) {
+                bottom: 34px;
             }
         }
     }
@@ -250,13 +266,9 @@
             min-height: min-content;
             margin: 0 auto;
             padding: 64px 88px 68px 88px;
-            // display: flex;
-            display: none;
+            display: flex;
+            // display: none;
             flex-direction: column;
-
-            &.active {
-                display: flex;
-            }
 
             @include respond(tablet) {
                 padding: 36px 24px;
@@ -264,6 +276,14 @@
 
             @include respond(mobile) {
                 padding: 36px 12px;
+            }
+        }
+
+        &__inner-content {
+            display: none;
+
+            &.active {
+                display: flex;
             }
         }
 
@@ -284,22 +304,49 @@
 
         &__img {
             margin-bottom: 24px;
-            border: 24px solid #397cee;
+            // border: 24px solid #397cee;
             box-sizing: border-box;
             width: 100%;
-            background-image: url("../../assets/images/press-release.png");
-            background-repeat: no-repeat;
-            background-size: cover;
+            // background-image: url("../../assets/images/press-release.png");
+            // background-repeat: no-repeat;
+            // background-size: cover;
             height: 584px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             padding: 0 0 0 78px;
 
+            & > img {
+                position: absolute;
+                z-index: 1;
+                border: 24px solid #397cee;
+                left: 50%;
+                height: 584px;
+                transform: translate(-50%, 0);
+                object-fit: cover;
+                object-position: center;
+
+                @include respond(tablet) {
+                    border: 16px solid #397cee;
+                    height: 442px;
+                }
+
+                @include respond(mobile) {
+                    height: 268px;
+                    width: 336px;
+                }
+
+                @include respond(mobile) {
+                    border: 12px solid #397cee;
+                    height: 248px;
+                    width: 316px;
+                }
+            }
+
             @include respond(tablet) {
                 height: 442px;
-                border: 16px solid #397cee;
-                background-image: url("../../assets/images/press-release-m.jpg");
+                // border: 16px solid #397cee;
+                // background-image: url("../../assets/images/press-release-m.jpg");
                 align-items: center;
                 padding: 0;
             }
@@ -312,6 +359,7 @@
                 width: 534px;
                 color: $white;
                 margin-bottom: 24px;
+                z-index: 2;
 
                 @include respond(tablet) {
                     width: 260px;
@@ -325,11 +373,28 @@
 
             & > a {
                 width: 117px;
+                z-index: 2;
             }
         }
 
         &__controls {
             height: 10px;
+            position: absolute;
+            bottom: 64px;
+            right: 90px;
+
+            @include respond(1280px) {
+                right: 25px;
+            }
+
+            @include respond(tablet) {
+                bottom: 35px;
+                right: 45px;
+            }
+
+            @include respond(mobile) {
+                bottom: 34px;
+            }
         }
     }
 
