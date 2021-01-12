@@ -114,8 +114,23 @@
         top: 64px;
         display: flex;
         // justify-content: space-between;
-        left: 608px;
         width: fit-content;
+
+        @include respond(2560px) {
+            left: 1198px;
+        }
+
+        @include respond(1920px) {
+            left: 868px;
+        }
+
+        @include respond(1400px) {
+            left: 608px;
+        }
+
+        @include respond(1280px) {
+            left: 558px;
+        }
 
         @include respond(tablet) {
             position: relative;

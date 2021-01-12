@@ -12770,8 +12770,27 @@ header {
   position: absolute;
   top: 64px;
   display: flex;
-  left: 608px;
   width: fit-content;
+}
+@media only screen and (max-width: 2560px) {
+  .carousel-2row-filtering-filter {
+    left: 1198px;
+  }
+}
+@media only screen and (max-width: 1920px) {
+  .carousel-2row-filtering-filter {
+    left: 868px;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .carousel-2row-filtering-filter {
+    left: 608px;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .carousel-2row-filtering-filter {
+    left: 558px;
+  }
 }
 @media only screen and (max-width: 1024px) {
   .carousel-2row-filtering-filter {
