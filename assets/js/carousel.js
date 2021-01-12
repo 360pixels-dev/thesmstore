@@ -42,143 +42,125 @@ $(document).ready(function() {
 
 
     // GIFT REGISTRY - OWL CAROUSEL
-    $('.gift-available__registry.mobile').owlCarousel({
-        margin:16,
-        loop:true,
-        autoWidth:true,
-        items:1,
-        nav:true,
-        navText: [
-            left, right
-        ]
-    })
+    
+    if ($('.gift-available__registry.mobile').length !== 0) {
+        $('.gift-available__registry.mobile').owlCarousel({
+            margin:16,
+            loop:true,
+            autoWidth:true,
+            items:1,
+            nav:true,
+            navText: [
+                left, right
+            ]
+        })
+    }
 
     // GIFT CARDS - OWL CAROUSEL
     // Card Denominations
-    $('.gift-card__cards.mobile').owlCarousel({
-        margin:16,
-        loop:true,
-        autoWidth:true,
-        items:1,
-        nav:false,
-        dots:false
-    })
+
+    if ($('.gift-card__cards.mobile').length !== 0) {
+        $('.gift-card__cards.mobile').owlCarousel({
+            margin:16,
+            loop:true,
+            autoWidth:true,
+            items:1,
+            nav:false,
+            dots:false
+        })
+    }
+
 
     // Sleeves
-    $('.gift-card__sleeves.mobile').owlCarousel({
-        margin:0,
-        loop:false,
-        autoWidth:true,
-        items:1,
-        nav:true,
-        navText: [
-            mLeft, mRight
-        ],
-        urlhashListener:true,
-        startPosition: 'first'
-
-        // margin:0,
-        // loop:false,
-        // autoWidth:true,
-        // items:1,
-        // nav:true,
-        // navText: [
-        //     mLeft, mRight
-        // ],
-        // urlhashListener:true,
-        // startPosition: 'URLHash'
-    })
-
-    // Where to Use
-    // $('.gift-card__use-cards').owlCarousel({
-    //     margin:16,
-    //     loop:true,
-    //     autoWidth:true,
-    //     items:1,
-    //     nav:true,
-    //     navText: [
-    //         left, right
-    //     ],
-    //     dots:false
-    // })
-
-    // $('.gift-card__buy-cards').owlCarousel({
-    //     margin:0,
-    //     loop:true,
-    //     autoWidth:true,
-    //     items:1,
-    //     nav:true,
-    //     navText: [
-    //         left, right
-    //     ],
-    //     dots:false
-    // })
+    if ($('.gift-card__sleeves.mobile').length !== 0) {
+        $('.gift-card__sleeves.mobile').owlCarousel({
+            margin:0,
+            loop:false,
+            autoWidth:true,
+            items:1,
+            nav:true,
+            navText: [
+                mLeft, mRight
+            ],
+            urlhashListener:true,
+            startPosition: 'first'
+        })
+    }
 
     // GIFT WRAPPING - OWL CAROUSEL
     // Gift Wrappers
-    $('.gift-wrapping__slider-slides').owlCarousel({
-        margin:16,
-        loop:true,
-        autoWidth:true,
-        items:1,
-        nav:true,
-        navText: [
-            left, right
-        ]
-    })
+    if ($('.gift-wrapping__slider-slides').length !== 0) {
+        $('.gift-wrapping__slider-slides').owlCarousel({
+            margin:16,
+            loop:true,
+            autoWidth:true,
+            items:1,
+            nav:true,
+            navText: [
+                left, right
+            ]
+        })
+    }
 
     // Box Sizes
     // Desktop
-    $('.box-sizes__slider-slides.desktop').owlCarousel({
-        margin:16,
-        loop:true,
-        autoWidth:true,
-        items:1,
-        nav:true,
-        navText: [
-            left, right
-        ]
-    })
+    if ($('.box-sizes__slider-slides.desktop').length !== 0) {
+        $('.box-sizes__slider-slides.desktop').owlCarousel({
+            margin:16,
+            loop:true,
+            autoWidth:true,
+            items:1,
+            nav:true,
+            navText: [
+                left, right
+            ]
+        })
+    }
 
     // Mobile
-    $('.box-sizes__slider-slides.mobile').owlCarousel({
-        margin:16,
-        loop:false,
-        autoWidth:true,
-        items:1,
-        nav:true,
-        navText: [
-            mLeft, mRight
-        ],
-        urlhashListener:true,
-        startPosition: 'URLHash'
-    })
+    if ($('.box-sizes__slider-slides.mobile').length !== 0) {
+        $('.box-sizes__slider-slides.mobile').owlCarousel({
+            margin:16,
+            loop:false,
+            autoWidth:true,
+            items:1,
+            nav:true,
+            navText: [
+                mLeft, mRight
+            ],
+            urlhashListener:true,
+            startPosition: 'URLHash'
+        })
+    }
 
 
     // CATEGORY PAGES
-    $('.sale--three-cards.mobile').owlCarousel({
-        margin:0,
-        loop:true,
-        autoWidth:false,
-        center: true,
-        items:1,
-        nav:true,
-        navText: [
-            left, right
-        ]
-    })
+    if ($('.sale--three-cards.mobile').length !== 0) {
+        $('.sale--three-cards.mobile').owlCarousel({
+            margin:0,
+            loop:true,
+            autoWidth:false,
+            center: true,
+            items:1,
+            nav:true,
+            navText: [
+                left, right
+            ]
+        })
+    }
 
-    $('.sale--four-cards.mobile').owlCarousel({
-        margin:0,
-        loop:true,
-        autoWidth:false,
-        center: true,
-        items:1,
-        nav:true,
-        navText: [
-            left, right
-        ]
-    })
-
+    if ($('.sale--four-cards.mobile').length !== 0) {
+        $('.sale--four-cards.mobile').owlCarousel({
+            margin:0,
+            loop:true,
+            autoWidth:false,
+            center: true,
+            items:1,
+            nav:true,
+            navText: [
+                left, right
+            ]
+        })
+    }
 })
 
