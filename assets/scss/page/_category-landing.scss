@@ -33,6 +33,7 @@
         display: flex;
         flex-wrap: wrap;
         max-width: 1272px;
+        justify-content: center;
 
         @include respond(mobile) {
             padding: 0 12px;
@@ -40,13 +41,30 @@
     }
 
     &__card-4-col {
-        flex: 1 1 254px;
+        // flex: 1 1 254px;
         padding: 0;
         margin: 0 25px;
         transition: 0.3s ease-in;
 
         @include respond(mobile) {
             flex: 1 1 150px;
+            width: 150px;
+            margin: 0 8px;
+
+            & img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+
+        @include respond(320px) {
+            flex: 1 1 132px;
+            width: 132px;
+
+            & img {
+                width: 132px;
+                height: 132px;
+            }
         }
 
         &-description {
@@ -56,6 +74,20 @@
                 text-align: center;
                 color: $dark-gray;
                 letter-spacing: normal;
+            }
+
+            @include respond(mobile) {
+                width: 150px;
+                margin-right: 0;
+
+                & h2 {
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+
+            @include respond(320px) {
+                width: 132px;
             }
         }
 
@@ -73,7 +105,7 @@
     }
 
     &__card-3-col {
-        flex: 1 1 376px;
+        // flex: 1 1 376px;
         padding: 0;
         margin: 0 24px;
         transition: 0.3s ease-in;
@@ -137,32 +169,16 @@
     }
 
     &__card-5-item {
-        flex: 1 1 376px;
+        width: 376px;
         padding: 0;
         margin: 0 24px;
         transition: 0.3s ease-in;
 
-        &:nth-child(4n),
-        &:nth-child(5n) {
-            & img {
-                width: 576px;
-                height: 576px;
-            }
-
-            @include respond(mobile) {
-                & img {
-                    width: 150px;
-                    height: 150px;
-                }
-            }
-
-            @include respond(320px) {
-                & img {
-                    width: 132px;
-                    height: 132px;
-                }
-            }
-        }
+        // &:nth-child(4n),
+        // &:nth-child(5n) {
+        //     flex: 0;
+        //     // margin-left: 2em;
+        // }
 
         @include respond(mobile) {
             flex: 1 1 150px;
