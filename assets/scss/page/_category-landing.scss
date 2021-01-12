@@ -136,6 +136,92 @@
         }
     }
 
+    &__card-5-item {
+        flex: 1 1 376px;
+        padding: 0;
+        margin: 0 24px;
+        transition: 0.3s ease-in;
+
+        &:nth-child(4n),
+        &:nth-child(5n) {
+            & img {
+                width: 576px;
+                height: 576px;
+            }
+
+            @include respond(mobile) {
+                & img {
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+
+            @include respond(320px) {
+                & img {
+                    width: 132px;
+                    height: 132px;
+                }
+            }
+        }
+
+        @include respond(mobile) {
+            flex: 1 1 150px;
+            width: 150px;
+            margin: 0 8px;
+
+            & img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+
+        @include respond(320px) {
+            flex: 1 1 132px;
+            width: 132px;
+
+            & img {
+                width: 132px;
+                height: 132px;
+            }
+        }
+
+        &-description {
+            h2 {
+                font-size: 22px;
+                margin: 20px 0 40px 0;
+                text-align: center;
+                color: $dark-gray;
+                letter-spacing: normal;
+            }
+
+            @include respond(mobile) {
+                width: 150px;
+                margin-right: 0;
+
+                & h2 {
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+
+            @include respond(320px) {
+                width: 132px;
+            }
+        }
+
+        & > a,
+        a:hover,
+        a:visited {
+            text-decoration: none;
+            color: $black;
+        }
+
+        &:hover {
+            opacity: 0.7;
+            transition: 0.3s ease-out;
+        }
+    }
+
     // @include respond(tablet) {
     //     &__cards {
     //         padding: 10% 0;
