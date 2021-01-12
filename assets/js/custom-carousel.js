@@ -121,8 +121,6 @@ function executeDesktopFiltering() {
 
     var parent = $('.carousel-2row-filtering-cards.desktop')
 
-    console.log(parent)
-
     $('.carousel-2row-filtering-cards.desktop').owlCarousel('destroy')
 
     function removeAllChild() {
@@ -139,7 +137,7 @@ function executeDesktopFiltering() {
         var child = useCardsAllData[i];
 
         // select only <img>
-        if (child.nodeType == 1 && child.attributes[0].value === activeFilter) { 
+        if (child.nodeType == 1 && child.attributes[0].value.toLowerCase() === activeFilter) { 
             filteredImages.push(child)         
         }
 
@@ -162,13 +160,7 @@ function executeMobileFiltering() {
 
     var parent = $('.carousel-2row-filtering-cards.mobile')
 
-    console.log(parent[0].children)
-
     $('.carousel-2row-filtering-cards.mobile').owlCarousel('destroy')
-
-    console.log(parent[0].children)
-    
-
 
     function removeAllChild() {
         while (parent[0].firstChild) {
@@ -177,8 +169,6 @@ function executeMobileFiltering() {
     }
 
     removeAllChild()
-
-    console.log(parent[0].children)
     
 
     for (let i = 0; i < useCardsAllData.length; i++) { 
