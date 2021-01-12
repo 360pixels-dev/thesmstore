@@ -229,103 +229,104 @@
     }
 }
 
-.fashion-categories {
-    background: $white;
+// .fashion-categories {
+//     background: $white;
 
-    @include respond(mobile) {
-        margin-top: 88px;
-    }
+//     @include respond(mobile) {
+//         margin-top: 88px;
+//     }
 
-    h2,
-    h3,
-    h5 {
-        margin: 0;
-    }
+//     h2,
+//     h3,
+//     h5 {
+//         margin: 0;
+//     }
 
-    .container {
-        padding: 8% 0 5% 0;
+//     .container {
+//         padding: 8% 0 5% 0;
 
-        & .center {
-            text-align: center;
-            padding: auto;
-            margin: auto;
-        }
-    }
+//         & .center {
+//             text-align: center;
+//             padding: auto;
+//             margin: auto;
+//         }
+//     }
 
-    &__heading {
-        padding-bottom: 3.5%;
-    }
+//     &__heading {
+//         padding-bottom: 3.5%;
+//     }
 
-    &__cards {
-        display: flex;
-        flex-wrap: wrap;
-    }
+//     &__cards {
+//         display: flex;
+//         flex-wrap: wrap;
+//     }
 
-    &__card {
-        width: 254px;
-        border-radius: 4px;
-        padding: 0;
-        margin: 0 25px;
-        transition: 0.3s ease-in;
+//     &__card-8 {
+//         flex: 1 1 254px;
+//         // width: 254px;
+//         border-radius: 4px;
+//         padding: 0;
+//         margin: 0 25px;
+//         transition: 0.3s ease-in;
 
-        &-description {
-            h2 {
-                font-size: 22px;
-                margin: 8% 0 30% 0;
-                text-align: center;
-                color: $dark-gray;
-                letter-spacing: normal;
-            }
-        }
+//         &-description {
+//             h2 {
+//                 font-size: 22px;
+//                 margin: 8% 0 30% 0;
+//                 text-align: center;
+//                 color: $dark-gray;
+//                 letter-spacing: normal;
+//             }
+//         }
 
-        & > a,
-        a:hover,
-        a:visited {
-            text-decoration: none;
-            color: $black;
-        }
-    }
+//         & > a,
+//         a:hover,
+//         a:visited {
+//             text-decoration: none;
+//             color: $black;
+//         }
+//     }
 
-    &__card:hover {
-        opacity: 0.7;
-        transition: 0.3s ease-out;
-    }
+//     &__card:hover {
+//         opacity: 0.7;
+//         transition: 0.3s ease-out;
+//     }
 
-    @include respond(tablet) {
-        &__cards {
-            padding: 10% 0;
+//     @include respond(tablet) {
+//         &__cards {
+//             padding: 10% 0;
 
-            justify-content: center;
-        }
+//             justify-content: center;
+//         }
 
-        &__card {
-            width: 150px;
-            margin: 0 7.5px;
+//         &__card {
+//             width: 150px;
+//             margin: 0 7.5px;
 
-            img {
-                height: 150px;
-                width: 150px;
-            }
+//             img {
+//                 height: 150px;
+//                 width: 150px;
+//             }
 
-            h2 {
-                font-size: 16px;
-                line-height: 22px;
-            }
-        }
-    }
+//             h2 {
+//                 font-size: 16px;
+//                 line-height: 22px;
+//             }
+//         }
+//     }
 
-    @include respond(320px) {
-        &__card {
-            width: 110px;
-            margin: 0 20px;
+//     @include respond(320px) {
+//         &__card {
+//             width: 110px;
+//             margin: 0 20px;
 
-            img {
-                width: 110px;
-                height: 110px;
-            }
-        }
-    }
-}
+//             img {
+//                 width: 110px;
+//                 height: 110px;
+//             }
+//         }
+//     }
+// }
 
 .fashion-featured-video {
     height: 584px !important;

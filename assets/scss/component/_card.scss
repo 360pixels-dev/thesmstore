@@ -476,6 +476,10 @@
             margin-left: auto;
             margin-right: auto;
         }
+
+        @include respond(320px) {
+            max-width: 300px;
+        }
     }
 
     &-md {
@@ -565,6 +569,10 @@
         object-position: 28%;
         height: 100%;
         width: 100%;
+
+        @include respond(320px) {
+            width: 300px;
+        }
     }
 
     &-text {
@@ -648,6 +656,10 @@
             @include respond(mobile) {
                 font-size: 20px;
                 line-height: 28px;
+            }
+
+            @include respond(320px) {
+                margin: 0;
             }
         }
 
