@@ -236,5 +236,20 @@ $(document).ready(function() {
             ]
         })
     }
+
+    // SM CARES - FEATURED ADVOCACY
+    if ($('.featured-advocacy__slider').length !== 0) {
+        $('.featured-advocacy__slider').owlCarousel({
+            margin:24,
+            loop:true,
+            autoWidth:true,
+            dots:false,
+            items:1,
+            nav:true,
+            navText: [
+                left, right
+            ]
+        })
+    }
 })
 

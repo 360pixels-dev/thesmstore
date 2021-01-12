@@ -12,7 +12,6 @@
     <body>
         <div class="wrapper">
 
-            <!-- COLORED -->
             <!-- HEADER -->
             <header>
                 <nav class="mobile-search-open">
@@ -333,11 +332,14 @@
             </header>
             <!-- /HEADER -->
 
+            <div id="mobile-menu-overlay" onclick="closeMobileMenu()"></div>
+            <div class="mobile-search-overlay" onclick="closeMobileSearch()"></div>
+
             <!-- STORE SELECTOR -->
-            <div id="store-selector-drawer" class="make-store-selector-drawer  w3-bar-block w3-animate-top">
+            <div id="store-selector-drawer" class="make-store-selector-drawer w3-bar-block w3-animate-top">
                 <ul>
                     <li>
-                        <div>
+                        <div class="make-store-selector-drawer__title">
                             <span class="font-h4 font-h4--center" style="padding-top: 20px; width: 100%;"><strong>Select a store</strong></span>
                         </div>
                         
@@ -345,74 +347,93 @@
                             <input type="text" placeholder="Find your nearest store">
                         </div>
             
-                        <div style="justify-content: center; margin-bottom: 21px;">
+                        <div class="make-store-selector-drawer__location">
                             <img src="./assets/images/target-location.svg" alt="" style="padding-right: 8px;"> <span class="font-metadata">Use Current Location</span>
                         </div>
                     </li>
                     <li>
-                        <div>
-                            <span class="font-headline" style="padding: 14px 8px 9px 14px;"><strong>The SM Store Cubao</strong></span>
+                        <div class="make-store-selector-drawer__store">
+                            <span class="font-headline store-title"><strong>The SM Store Cubao</strong></span>
                             <span class="selected-store">My Store</span>
                         </div>
-                        <div style="padding-left: 14px; margin-bottom: 8px;"><p>SM Cubao, Times Square Avenue, Cubao, Quezon City</p></div>
-                        <div style="padding-left: 14px; margin-bottom: 16px;">
-                            <span class="font-caption-bold" style="color: #55c9a5; letter-spacing: 1.6px;">Open Today Until 9PM</span>
+                        <div class="make-store-selector-drawer__description">
+                            <p>SM Cubao, Times Square Avenue, Cubao, Quezon City</p>
                         </div>
-    
-                        <div><span class="font-cta btn--primary" style="padding-left: 14px;">Store Info</span></div>
+                        <div class="make-store-selector-drawer__availability">
+                            <span class="font-caption-bold">Open Today Until 9PM</span>
+                        </div>
+
+                        <div><span class="font-cta btn--primary" style="padding-left: 14px; color: #161720;">Store Info</span></div>
                     </li>
                     <li>
-                        <div>
-                            <span class="font-headline" style="padding: 14px 8px 9px 14px;"><strong>The SM Store Cubao</strong></span>
+                        <div class="make-store-selector-drawer__store">
+                            <span class="font-headline store-title"><strong>The SM Store Cubao</strong></span>
                         </div>
-                        <div style="padding-left: 14px; margin-bottom: 8px;"><p>SM Cubao, Times Square Avenue, Cubao, Quezon City</p></div>
-                        <div style="padding-left: 14px; margin-bottom: 16px;">
-                            <span class="font-caption-bold" style="color: #55c9a5; letter-spacing: 1.6px;">Open Today Until 9PM</span>
+                        <div class="make-store-selector-drawer__description">
+                            <p>SM Cubao, Times Square Avenue, Cubao, Quezon City</p>
                         </div>
-    
-                        <div><span class="font-cta btn--primary" style="padding-left: 14px;">Store Info</span><span class="font-cta btn--primary" style="padding-left: 0;">Make My Store</span></div>
+                        <div class="make-store-selector-drawer__availability">
+                            <span class="font-caption-bold">Open Today Until 9PM</span>
+                        </div>
+
+                        <div><span class="font-cta btn--primary" style="padding-left: 14px; color: #161720;">Store Info</span></div>
                     </li>
                     <li>
-                        <div>
-                            <span class="font-headline" style="padding: 14px 8px 9px 14px;"><strong>The SM Store Cubao</strong></span>
+                        <div class="make-store-selector-drawer__store">
+                            <span class="font-headline store-title"><strong>The SM Store Cubao</strong></span>
                         </div>
-                        <div style="padding-left: 14px; margin-bottom: 8px;"><p>SM Cubao, Times Square Avenue, Cubao, Quezon City</p></div>
-                        <div style="padding-left: 14px; margin-bottom: 16px;">
-                            <span class="font-caption-bold" style="color: #55c9a5; letter-spacing: 1.6px;">Open Today Until 9PM</span>
+                        <div class="make-store-selector-drawer__description">
+                            <p>SM Cubao, Times Square Avenue, Cubao, Quezon City</p>
                         </div>
-    
-                        <div><span class="font-cta btn--primary" style="padding-left: 14px;">Store Info</span><span class="font-cta btn--primary" style="padding-left: 0;">Make My Store</span></div>
+                        <div class="make-store-selector-drawer__availability">
+                            <span class="font-caption-bold">Open Today Until 9PM</span>
+                        </div>
+
+                        <div><span class="font-cta btn--primary" style="padding-left: 14px; color: #161720;">Store Info</span></div>
                     </li>
                     <li>
-                        <div>
-                            <span class="font-headline" style="padding: 14px 8px 9px 14px;"><strong>The SM Store Cubao</strong></span>
+                        <div class="make-store-selector-drawer__store">
+                            <span class="font-headline store-title"><strong>The SM Store Cubao</strong></span>
                         </div>
-                        <div style="padding-left: 14px; margin-bottom: 8px;"><p>SM Cubao, Times Square Avenue, Cubao, Quezon City</p></div>
-                        <div style="padding-left: 14px; margin-bottom: 16px;">
-                            <span class="font-caption-bold" style="color: #55c9a5; letter-spacing: 1.6px;">Open Today Until 9PM</span>
+                        <div class="make-store-selector-drawer__description">
+                            <p>SM Cubao, Times Square Avenue, Cubao, Quezon City</p>
                         </div>
-    
-                        <div><span class="font-cta btn--primary" style="padding-left: 14px;">Store Info</span><span class="font-cta btn--primary" style="padding-left: 0;">Make My Store</span></div>
+                        <div class="make-store-selector-drawer__availability">
+                            <span class="font-caption-bold">Open Today Until 9PM</span>
+                        </div>
+
+                        <div><span class="font-cta btn--primary" style="padding-left: 14px; color: #161720;">Store Info</span></div>
                     </li>
                     <li>
-                        <div>
-                            <span class="font-headline" style="padding: 14px 8px 9px 14px;"><strong>The SM Store Cubao</strong></span>
+                        <div class="make-store-selector-drawer__store">
+                            <span class="font-headline store-title"><strong>The SM Store Cubao</strong></span>
                         </div>
-                        <div style="padding-left: 14px; margin-bottom: 8px;"><p>SM Cubao, Times Square Avenue, Cubao, Quezon City</p></div>
-                        <div style="padding-left: 14px; margin-bottom: 16px;">
-                            <span class="font-caption-bold" style="color: #55c9a5; letter-spacing: 1.6px;">Open Today Until 9PM</span>
+                        <div class="make-store-selector-drawer__description">
+                            <p>SM Cubao, Times Square Avenue, Cubao, Quezon City</p>
                         </div>
-    
-                        <div><span class="font-cta btn--primary" style="padding-left: 14px;">Store Info</span><span class="font-cta btn--primary" style="padding-left: 0;">Make My Store</span></div>
+                        <div class="make-store-selector-drawer__availability">
+                            <span class="font-caption-bold">Open Today Until 9PM</span>
+                        </div>
+
+                        <div><span class="font-cta btn--primary" style="padding-left: 14px; color: #161720;">Store Info</span></div>
                     </li>
                 </ul>
             </div>
-    
-            <div class="w3-overlay w3-animate-opacity" onclick="closeStoreSelector()" style="cursor: pointer; z-index: 20;" id="store-selector-overlay"></div>
+
+            <div class="w3-overlay w3-animate-opacity" onclick="closeStoreSelector()" style="cursor: pointer; z-index: 997;" id="store-selector-overlay"></div>
             <!-- /STORE SELECTOR -->
 
             
-            <section class="banner-section banner-section--small banner-section--sm-cares">
+            <!-- <section class="banner-section banner-section--small banner-section--sm-cares">
+                <h1 class="font-hero banner-section__title">SM Cares</h1>
+            </section> -->
+
+            <section class="banner-section banner-section--small">
+                <!-- <div class="banner-section__hr"></div> -->
+    
+                <img class="desktop-banner" src="./assets/images/banner-sm-cares.png" alt="">
+                <img class="mobile-banner" src="./assets/images/banner-sm-cares-m.png" alt="">
+    
                 <h1 class="font-hero banner-section__title">SM Cares</h1>
             </section>
 
@@ -427,15 +448,15 @@
                         <a href="" class="btn--primary font-cta">View</a>
                     </div>
                     
-                    <div class="featured-advocacy__slider">
+                    <div class="owl-carousel owl-theme featured-advocacy__slider">
                         <img src="./assets/images/sm-cares-slide1.jpg" alt="">
                         <img src="./assets/images/sm-cares-slide1.jpg" alt="">
                     </div>
 
-                    <div class="featured-advocacy__controls controls">
+                    <!-- <div class="featured-advocacy__controls controls">
                         <button class="controls__arrow controls__arrow--left"><img src="./assets/images/icons/m-carousel-arrow-left.svg" alt=""></button>
                         <button class="controls__arrow controls__arrow--right"><img src="./assets/images/icons/m-carousel-arrow-right.svg" alt=""></button>
-                    </div> 
+                    </div>  -->
                 </div>
                 
             </section>
@@ -746,6 +767,23 @@
 
     <!-- IMPORTS -->
     <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+
+    <!-- NEW MOBILE NAV INIT -->
+    <script>
+        $(document).ready(function() {
+            $(".mobile_menu").simpleMobileMenu({
+                onMenuLoad: function(menu) {
+                    console.log(menu)
+                    console.log("menu loaded")
+                },
+                onMenuToggle: function(menu, opened) {
+                    console.log(opened)
+                }
+            });
+        })
+    </script>
+    <script src="assets/js/plugin-mobilemenu.js"></script>
 
     <!-- CUSTOM JS -->
     <script src="assets/js/main.js"></script>

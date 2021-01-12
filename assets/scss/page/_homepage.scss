@@ -1024,6 +1024,7 @@
             position: relative;
             display: flex;
             margin-left: 35%;
+            max-height: 628px;
 
             @include respond(tablet) {
                 position: absolute;
@@ -1031,7 +1032,7 @@
                 margin-left: 0;
             }
 
-            & img {
+            & .owl-item > img {
                 margin-right: 24px;
 
                 @include respond(tablet) {

@@ -17507,6 +17507,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   position: relative;
   display: flex;
   margin-left: 35%;
+  max-height: 628px;
 }
 @media only screen and (max-width: 1024px) {
   .featured-advocacy__slider {
@@ -17522,28 +17523,28 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
     margin-left: 0;
   }
 }
-.featured-advocacy__slider img {
+.featured-advocacy__slider .owl-item > img {
   margin-right: 24px;
 }
 @media only screen and (max-width: 1024px) {
-  .featured-advocacy__slider img {
+  .featured-advocacy__slider .owl-item > img {
     height: 284px;
     margin-right: 18px;
   }
 }
 @media only screen and (max-width: tablet) {
-  .featured-advocacy__slider img {
+  .featured-advocacy__slider .owl-item > img {
     height: 284px;
     margin-right: 18px;
   }
 }
 @media only screen and (max-width: 820px) {
-  .featured-advocacy__slider img {
+  .featured-advocacy__slider .owl-item > img {
     height: 184px;
   }
 }
 @media only screen and (max-width: mobile) {
-  .featured-advocacy__slider img {
+  .featured-advocacy__slider .owl-item > img {
     height: 184px;
   }
 }
