@@ -243,7 +243,6 @@ $(document).ready(function() {
             margin:24,
             loop:false,
             autoWidth:false,
-            rewind:true,
             dots:false,
             items:1,
             nav:true,
