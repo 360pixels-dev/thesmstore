@@ -241,8 +241,9 @@ $(document).ready(function() {
     if ($('.featured-advocacy__slider').length !== 0) {
         $('.featured-advocacy__slider').owlCarousel({
             margin:24,
-            loop:true,
-            autoWidth:true,
+            loop:false,
+            autoWidth:false,
+            rewind:true,
             dots:false,
             items:1,
             nav:true,

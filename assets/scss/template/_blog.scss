@@ -23,6 +23,10 @@
         justify-content: center;
         width: 100%;
 
+        @include respond(mobile) {
+            display: none;
+        }
+
         &-item {
             margin: 0 20px;
             display: flex;
@@ -394,6 +398,28 @@
 
     &__content {
         padding: 66px 0;
+
+        @include respond(mobile) {
+            padding: 36px 0;
+        }
+    }
+
+    &__header-m {
+        display: none;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 12px;
+
+        & > p {
+            font-weight: 600;
+            text-align: center;
+        }
+
+        @include respond(mobile) {
+            display: flex;
+        }
     }
 
     &__row {
