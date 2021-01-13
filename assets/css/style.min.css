@@ -12962,12 +12962,12 @@ header {
 }
 @media only screen and (max-width: 820px) {
   .featured-content__slider {
-    top: 278px;
+    top: 300px;
   }
 }
 @media only screen and (max-width: mobile) {
   .featured-content__slider {
-    top: 278px;
+    top: 300px;
   }
 }
 .featured-content__slider img {
