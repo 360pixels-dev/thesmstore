@@ -105,6 +105,420 @@
     }
 }
 
+.featured {
+    &-content {
+        position: relative;
+        background-color: $seafoam;
+        min-height: 756px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @include respond(mobile) {
+            min-height: 530px;
+        }
+
+        &__container {
+            position: relative;
+            min-height: 628px;
+            background-color: $blush;
+            margin-top: 64px;
+            display: flex;
+            align-items: center;
+
+            @include respond(tablet) {
+                align-items: flex-start;
+                padding-top: 20px;
+                width: 328px;
+            }
+
+            @include respond(mobile) {
+                min-height: 530px;
+                margin-top: 16px;
+            }
+
+            @include respond(320px) {
+                width: 298px;
+            }
+        }
+
+        &__details {
+            position: absolute;
+            margin: 48px 0 0 60px;
+            z-index: 99;
+
+            @include respond(tablet) {
+                position: relative;
+                margin: 0 0 24px 0;
+                // top: 20px;
+            }
+
+            & h1 {
+                margin-bottom: 16px;
+
+                @include respond(tablet) {
+                    font-size: 24px;
+                    line-height: 32px;
+                    letter-spacing: 1.6px;
+                }
+
+                & span {
+                    display: block;
+
+                    @include respond(tablet) {
+                        display: inline-block;
+                    }
+
+                    &:nth-of-type(1) {
+                        color: $teal;
+
+                        @include respond(tablet) {
+                            display: block;
+                        }
+                    }
+
+                    &:nth-of-type(2) {
+                        margin-left: 100px;
+
+                        @include respond(tablet) {
+                            margin-left: 30px;
+                        }
+                    }
+
+                    &:nth-of-type(3) {
+                        margin-left: 55px;
+
+                        @include respond(tablet) {
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+
+            & p {
+                width: 340px;
+                text-align: right;
+                margin-bottom: 53px;
+
+                @include respond(tablet) {
+                    text-align: left;
+                    margin-bottom: 24px;
+                    width: inherit;
+                }
+            }
+
+            & a {
+                display: inline-block;
+                margin-left: 220px;
+                border: 1px solid $black;
+                color: $black;
+
+                @include respond(tablet) {
+                    margin-left: 0px;
+                }
+            }
+        }
+
+        &__slider {
+            position: relative;
+            display: flex;
+            margin-left: 35%;
+            max-height: 628px;
+            // width: 100%;
+
+            @include respond(tablet) {
+                position: absolute !important;
+                top: 288px;
+                margin-left: 0;
+            }
+
+            @include respond(mobile) {
+                top: 278px;
+            }
+
+            & img {
+                margin-right: 24px;
+
+                @include respond(tablet) {
+                    height: 284px;
+                    margin-right: 18px;
+                }
+
+                @include respond(mobile) {
+                    height: 187px;
+                    margin-right: 12px;
+                }
+
+                @include respond(320px) {
+                    height: 169px;
+                }
+            }
+
+            & .owl-item > img {
+                width: auto !important;
+            }
+
+            & .owl-stage-outer {
+                @include respond(tablet) {
+                    overflow: initial !important;
+                }
+            }
+
+            & .owl-nav {
+                & img {
+                    height: auto;
+                }
+            }
+        }
+
+        &__controls {
+            position: absolute;
+            align-items: center;
+            display: flex;
+            justify-content: flex-end;
+            z-index: 120;
+            right: 60px;
+            bottom: 0;
+        }
+    }
+
+    &-video {
+        position: relative;
+        min-height: 584px;
+        background-color: $lightyellow;
+
+        &--index {
+            background-color: #ffd95a;
+        }
+
+        &__bg {
+            background-color: $bee;
+            width: 49.18%;
+            height: 75%;
+            position: absolute;
+            right: 0;
+            z-index: 50;
+
+            @include respond(tablet) {
+                height: 88.23%;
+                width: 90%;
+            }
+
+            @include respond(mobile) {
+                width: 77%;
+            }
+
+            @include respond(320px) {
+                width: 83%;
+            }
+        }
+
+        &__content {
+            position: relative;
+            // display: flex;
+            display: none;
+            z-index: 50;
+            padding-top: 48px;
+            padding-bottom: 48px;
+            justify-content: space-between;
+
+            @include respond(1280px) {
+                height: 600px;
+                justify-content: flex-end;
+            }
+
+            @include respond(tablet) {
+                padding-top: 24px;
+                padding-bottom: 24px;
+            }
+
+            &.active {
+                display: flex;
+            }
+        }
+
+        &__video {
+            position: relative;
+            height: 456px;
+            flex: 0 0 60%;
+
+            @include respond(1280px) {
+                position: absolute;
+                width: auto;
+                height: 75%;
+                left: 33%;
+                transform: translateX(-50%);
+            }
+
+            // @include respond(1000px) {
+            //     left: 30%;
+            //     width: 335px;
+            //     height: 215px;
+            // }
+
+            @include respond(tablet) {
+                top: 30%;
+                left: 50%;
+                width: 335px;
+                height: 215px;
+                transform: translate(-50%, -50%);
+            }
+
+            @include respond(mobile) {
+                top: 28%;
+                z-index: 100;
+            }
+
+            &-file {
+                position: absolute;
+                z-index: 50;
+                height: 456px;
+                width: 808px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                @include respond(1280px) {
+                    height: 456px;
+                    width: 740px;
+                }
+
+                @include respond(tablet) {
+                    height: 100%;
+                    width: auto;
+                }
+
+                // @include respond(1000px) {
+                //     height: 100%;
+                //     width: auto;
+                // }
+            }
+
+            &-btn {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                cursor: pointer;
+                z-index: 99;
+                height: 36.7%;
+                width: 24%;
+            }
+        }
+
+        &__text {
+            flex: 0 0 34%;
+            z-index: 99;
+            margin-top: 30px;
+
+            @include respond(tablet) {
+                margin-top: 0;
+                text-align: right;
+
+                & > h1,
+                p {
+                    text-align: left;
+                }
+            }
+
+            @include respond(mobile) {
+                flex: 0 0 250px;
+            }
+
+            @include respond(340px) {
+                flex: 0 0 200px;
+            }
+
+            & h1 > span {
+                display: block;
+                margin-bottom: 8px;
+                color: $white;
+                letter-spacing: 3px;
+                white-space: nowrap;
+
+                &:nth-of-type(2) {
+                    margin-left: 50px;
+                }
+
+                @include respond(tablet) {
+                    letter-spacing: 2px;
+                }
+
+                @include respond(mobile) {
+                }
+            }
+
+            & > h1 {
+                white-space: nowrap;
+                width: auto;
+                font-size: 48px;
+                line-height: 58px;
+                letter-spacing: 1.6px;
+                color: $white;
+                margin-top: 30px;
+
+                @include respond(tablet) {
+                    font-size: 32px;
+                    line-height: 40px;
+                    margin-top: 270px;
+                }
+
+                @include respond(mobile) {
+                    margin-top: 240px;
+                    font-size: 26px;
+                }
+
+                // & span {
+                //     &:nth-of-type(1) {
+                //         color: $white;
+
+                //         @include respond(1290px) {
+                //             text-align: left;
+                //         }
+
+                //         @include respond(mobile) {
+                //             color: $dark-gray;
+                //         }
+                //     }
+
+                //     &:nth-of-type(2) {
+                //         color: $coral;
+                //         text-align: right;
+
+                //         @include respond(mobile) {
+                //             margin-right: 30px;
+                //         }
+                //     }
+                // }
+            }
+
+            & p {
+                color: $white;
+
+                @include respond(1290px) {
+                }
+
+                @include respond(tablet) {
+                }
+
+                @include respond(mobile) {
+                }
+            }
+        }
+
+        &__controls {
+            position: absolute;
+            right: 20px;
+            align-self: flex-end;
+            z-index: 100;
+
+            @include respond(1290px) {
+                text-align: right;
+            }
+        }
+    }
+}
+
 .carousel-2row-filtering {
     width: 100%;
     position: relative;

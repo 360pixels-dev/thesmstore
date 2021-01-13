@@ -238,11 +238,26 @@ $(document).ready(function() {
     }
 
     // SM CARES - FEATURED ADVOCACY
-    if ($('.featured-advocacy__slider').length !== 0) {
-        $('.featured-advocacy__slider').owlCarousel({
-            margin:24,
+    if ($('.featured-content__slider').length !== 0) {
+        $('.featured-content__slider').owlCarousel({
+            margin:0,
             loop:false,
-            autoWidth:false,
+            autoWidth:true,
+            dots:false,
+            items:1,
+            nav:true,
+            navText: [
+                left, right
+            ]
+        })
+    }
+
+    // PRESS RELEASE - FEATURED PRESS
+    if ($('.featured-press__slider').length !== 0) {
+        $('.featured-press__slider').owlCarousel({
+            margin:0,
+            loop:false,
+            autoWidth:true,
             dots:false,
             items:1,
             nav:true,
