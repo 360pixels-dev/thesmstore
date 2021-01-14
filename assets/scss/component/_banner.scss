@@ -609,18 +609,46 @@
         }
     }
 
-    &--help {
-        background: url("../../assets/images/banner-help.jpg") no-repeat;
+    &--search {
+        // background: url("../../assets/images/banner-help.jpg") no-repeat;
+        // margin-top: 88px;
         height: 350px;
-        background-size: cover;
-        background-position: top right;
+        // background-size: cover;
+        // background-position: top right;
         flex-direction: column;
 
+        & > .desktop-banner {
+            width: 100%;
+            object-fit: cover;
+            object-position: right;
+            height: 100%;
+            overflow: hidden;
+            position: absolute;
+
+            @include respond(mobile) {
+                display: none;
+            }
+        }
+
+        & > .mobile-banner {
+            display: none;
+            width: inherit;
+            object-fit: cover;
+            object-position: right;
+            height: 100%;
+            position: absolute;
+
+            @include respond(mobile) {
+                display: block;
+            }
+        }
+
         & > div {
-            width: 90%;
+            width: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
+            z-index: 2;
 
             & h2 {
                 color: $white;
@@ -648,7 +676,7 @@
             padding: 0 20px;
 
             @include respond(tablet) {
-                width: 90%;
+                width: 100%;
                 height: 56px;
             }
 
@@ -753,8 +781,8 @@
     & > .desktop-banner {
         width: 100%;
         object-fit: cover;
+        object-position: center;
         height: 100%;
-        // position: absolute;
         overflow: hidden;
 
         @include respond(mobile) {
@@ -766,6 +794,7 @@
         display: none;
         width: inherit;
         object-fit: cover;
+        object-position: center;
         height: 220px;
         position: absolute;
 

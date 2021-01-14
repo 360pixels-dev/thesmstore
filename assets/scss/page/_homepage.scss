@@ -199,74 +199,74 @@
             }
         }
 
-        // &__video {
-        //     position: relative;
-        //     height: 456px;
-        //     flex: 0 0 60%;
+        &__video {
+            position: relative;
+            height: 456px;
+            flex: 0 0 60%;
 
-        //     @include respond(1280px) {
-        //         position: absolute;
-        //         width: auto;
-        //         height: 75%;
-        //         left: 33%;
-        //         transform: translateX(-50%);
-        //     }
+            @include respond(1280px) {
+                position: absolute;
+                width: auto;
+                height: 75%;
+                left: 33%;
+                transform: translateX(-50%);
+            }
 
-        //     // @include respond(1000px) {
-        //     //     left: 30%;
-        //     //     width: 335px;
-        //     //     height: 215px;
-        //     // }
+            // @include respond(1000px) {
+            //     left: 30%;
+            //     width: 335px;
+            //     height: 215px;
+            // }
 
-        //     @include respond(tablet) {
-        //         top: 30%;
-        //         left: 50%;
-        //         width: 335px;
-        //         height: 215px;
-        //         transform: translate(-50%, -50%);
-        //     }
+            @include respond(tablet) {
+                top: 30%;
+                left: 50%;
+                width: 335px;
+                height: 215px;
+                transform: translate(-50%, -50%);
+            }
 
-        //     @include respond(mobile) {
-        //         top: 28%;
-        //         z-index: 100;
-        //     }
+            @include respond(mobile) {
+                top: 28%;
+                z-index: 100;
+            }
 
-        //     &-file {
-        //         position: absolute;
-        //         z-index: 50;
-        //         height: 456px;
-        //         width: 808px;
-        //         top: 50%;
-        //         left: 50%;
-        //         transform: translate(-50%, -50%);
+            &-file {
+                position: absolute;
+                z-index: 50;
+                height: 456px;
+                width: 808px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
 
-        //         @include respond(1280px) {
-        //             height: 456px;
-        //             width: 740px;
-        //         }
+                @include respond(1280px) {
+                    height: 456px;
+                    width: 740px;
+                }
 
-        //         @include respond(tablet) {
-        //             height: 100%;
-        //             width: auto;
-        //         }
+                @include respond(tablet) {
+                    height: 100%;
+                    width: auto;
+                }
 
-        //         // @include respond(1000px) {
-        //         //     height: 100%;
-        //         //     width: auto;
-        //         // }
-        //     }
+                // @include respond(1000px) {
+                //     height: 100%;
+                //     width: auto;
+                // }
+            }
 
-        //     &-btn {
-        //         position: absolute;
-        //         top: 50%;
-        //         left: 50%;
-        //         transform: translate(-50%, -50%);
-        //         cursor: pointer;
-        //         z-index: 99;
-        //         height: 36.7%;
-        //         width: 24%;
-        //     }
-        // }
+            &-btn {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                cursor: pointer;
+                z-index: 99;
+                height: 36.7%;
+                width: 24%;
+            }
+        }
 
         &__text {
             flex: 0 0 34%;

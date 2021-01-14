@@ -5,7 +5,6 @@ accordionHeaders.forEach(currentHeader => {
 
         // to close any open accordions
         const openHeader = document.querySelector('.ctd-accordion__item-header.active')
-        console.log("OPEN", openHeader)
         if (openHeader && openHeader !== currentHeader) {
             openHeader.classList.toggle("active") //removes "active" class
             const openBody = openHeader.nextElementSibling;
@@ -19,4 +18,10 @@ accordionHeaders.forEach(currentHeader => {
             ? body.style.maxHeight = body.scrollHeight + "px"
             : body.style.maxHeight = 0;
     })
+})
+
+$(document).ready(function() {
+    $('.faq-accordion__header').click(function(e) {
+        $(e.target).closest('.faq-accordion').hasClass('active') ? $(e.target).closest('.faq-accordion').removeClass('active') : $(e.target).closest('.faq-accordion').addClass('active');
+    });
 })

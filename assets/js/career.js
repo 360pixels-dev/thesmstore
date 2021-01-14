@@ -74,6 +74,8 @@ $(document).ready(function() {
 
     // CAREER ACCORDION
     $('.faq-accordion__header').click(function(e) {
+        console.log(e.target)
+        console.log($(e.target).closest('.faq-accordion').hasClass('active'))
         $(e.target).closest('.faq-accordion').hasClass('active') ? $(e.target).closest('.faq-accordion').removeClass('active') : $(e.target).closest('.faq-accordion').addClass('active');
     });
 });
