@@ -1223,6 +1223,16 @@ button {
   margin-left: 13px;
   margin-right: 37px;
 }
+@media only screen and (max-width: 1024px) {
+  .form__group--radio label:not(:last-child) {
+    margin-right: 18px;
+  }
+}
+@media only screen and (max-width: tablet) {
+  .form__group--radio label:not(:last-child) {
+    margin-right: 18px;
+  }
+}
 .form__group--radio input {
   vertical-align: middle;
 }

@@ -50,6 +50,12 @@
             & label {
                 margin-left: 13px;
                 margin-right: 37px;
+
+                &:not(:last-child) {
+                    @include respond(tablet) {
+                        margin-right: 18px;
+                    }
+                }
             }
 
             & input {
