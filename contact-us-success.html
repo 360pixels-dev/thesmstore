@@ -439,27 +439,35 @@
                 <button class="btn--icon text-semibold"><img src="./assets/images/messenger.svg"> Chat With Us</button>
             </section>
 
-            <section class="contacts__form desktop container">
+            <section class="contacts__form container">
                 <h2 class="font-h2-caps">Email us</h2>
                 <p>Send us a message, and we'll aim to get back to you as soon as possible</p>
 
                 <form class="form__container form--contacts">
                     <div class="form__group">
-                        <label class="form__group--label font-caption">Full Name <span class="font-validation">*</span></label>
+                        <label class="form__group--label font-caption">Full Name*</label>
                         <input class="form__group--input" type="text">
                         <p class="font-validation">*This is a required field</p>
                     </div>
                     <div class="form__group">
-                        <label class="form__group--label font-caption">Email Address <span class="font-validation">*</span></label>
+                        <label class="form__group--label font-caption">Email Address*</label>
                         <input class="form__group--input" type="text">
                         <p class="font-validation">*This is a required field</p>
                     </div>
                     <div class="form__group">
-                        <label class="form__group--label font-caption">Mobile Number <span class="font-validation">*</span></label>
+                        <label class="form__group--label font-caption">Contact Number*</label>
                         <input class="form__group--input" type="text">
                         <p class="font-validation">*This is a required field</p>
                         
-                        <label class="form__group--label font-caption">How do you want to be contacted? <span class="font-validation">*</span></label>
+                        <label class="form__group--label font-caption">How do you want to be contacted?*</label>
+                        <!-- <div class="form__group--radio">
+                            <input id="byPhone" class="form__group--input" type="radio" name="contactBy">
+                            <label for="byPhone" class="font-caption">By phone</label>
+                            <input id="byEmail" class="form__group--input" type="radio" name="contactBy">
+                            <label for="byEmail" class="font-caption">By email</label>
+                            <p class="font-validation">*This is a required field</p>
+                        </div> -->
+
                         <div class="form__group--radio">
                             <label class="radio" for="moc">By Email
                                 <input type="radio" name="moc">
@@ -473,9 +481,10 @@
                             <p class="font-validation">*This is a required field</p>
                         </div>
                     </div>
-
+                    <!-- <div class="form__group">
+                    </div> -->
                     <div class="form__group">
-                        <label class="form__group--label font-caption">What does your enquiry relate to? <span class="font-validation">*</span></label>
+                        <label class="form__group--label font-caption">What does your enquiry relate to? *</label>
                         <select class="form__group--input">
                             <option value="">thesmstore.com</option>
                             <option value="">thesmstore.com</option>
@@ -483,7 +492,7 @@
                         <p class="font-validation">*This is a required field</p>
                     </div>
                     <div class="form__group">
-                        <label class="form__group--label font-caption">Choose your topic <span class="font-validation">*</span></label>
+                        <label class="form__group--label font-caption">Choose your topic *</label>
                         <select class="form__group--input">
                             <option value="">Customer Support</option>
                             <option value="">Customer Support</option>
@@ -491,87 +500,13 @@
                         <p class="font-validation">*This is a required field</p>
                     </div>
                     <div class="form__group">
-                        <label class="form__group--label font-caption">Your Message <span class="font-validation">*</span></label>
+                        <label class="form__group--label font-caption">Your Message*</label>
                         <textarea class="form__group--textarea"></textarea>
                         <p class="font-validation">*This is a required field</p>
                     </div>
                 </form>
 
-                <button class="btn--primary font-cta" onclick="showSubmitResult()">Submit</button>
-            </section>
-
-            <section class="contacts__form mobile container">
-                <h2 class="font-h2-caps">Email us</h2>
-                <p>Send us a message, and we'll aim to get back to you as soon as possible</p>
-
-                <form class="form__container">
-                    <div class="form__group">
-                        <label class="form__group--label font-caption">Full Name <span class="font-validation"><strong>*</strong></span></label>
-                        <input class="form__group--input" type="text">
-                        <p class="font-validation">*This is a required field</p>
-                    </div>
-
-                    <div class="form__group">
-                        <label class="form__group--label font-caption">What does your enquiry relate to? <span class="font-validation">*</span></label>
-                        <select class="form__group--input">
-                            <option value="">thesmstore.com</option>
-                            <option value="">thesmstore.com</option>
-                        </select>
-                        <p class="font-validation">*This is a required field</p>
-                    </div>
-
-                    <div class="form__group">
-                        <label class="form__group--label font-caption">Choose your topic <span class="font-validation">*</span></label>
-                        <select class="form__group--input">
-                            <option value="">Customer Support</option>
-                            <option value="">Customer Support</option>
-                        </select>
-                        <p class="font-validation">*This is a required field</p>
-                    </div>
-
-                    <div class="form__group">
-                        <label class="form__group--label font-caption">Email Address <span class="font-validation">*</span></label>
-                        <input class="form__group--input" type="text">
-                        <p class="font-validation">*This is a required field</p>
-                    </div>
-
-                    <div class="form__group">
-                        <label class="form__group--label font-caption">Mobile Number <span class="font-validation">*</span></label>
-                        <input class="form__group--input" type="text">
-                        <p class="font-validation">*This is a required field</p>
-                    </div>
-                    
-                    <div class="form__group">
-                        <label class="form__group--label font-caption">How do you want to be contacted? <span class="font-validation">*</span></label>
-                        <div class="form__group--radio">
-                            <label class="radio" for="moc">By Email
-                                <input type="radio" name="moc">
-                                <span class="circle"></span>
-                                
-                            </label>
-                            <label class="radio" for="moc">By Phone
-                                <input type="radio" name="moc">
-                                <span class="circle"></span>
-                            </label>
-                            <p class="font-validation">*This is a required field</p>
-                        </div>
-                    </div>
-
-                    <div class="form__group">
-                        <label class="form__group--label font-caption">Your Message <span class="font-validation">*</span></label>
-                        <textarea class="form__group--textarea"></textarea>
-                        <p class="font-validation">*This is a required field</p>
-                    </div>
-                </form>
-
-                <button class="btn--primary font-cta" onclick="showSubmitResult()">Submit</button>
-            </section>
-
-            <section class="contacts__success container">
-                <img src="./assets/images/icons/icon-contact-us-success.svg" alt="">
-                <p class="normal-text">We've received your message!</p>
-                <p class="font-caption">A confirmation message has been sent to <strong>maan.parafina@gmail.com.</strong><br>
-                    Expect a response from our customer service team within 24 - 48 hours.</p>
+                <button class="btn--primary font-cta">Submit</button>
             </section>
 
             <section class="contacts-alt">
@@ -818,15 +753,6 @@
         })
     </script>
     <script src="assets/js/plugin-mobilemenu.js"></script>
-
-    <!-- SAMPLE SUCCESS SUBMIT -->
-    <script>
-        function showSubmitResult() {
-            $('.contacts__intro').css("display", "none")
-            $('.contacts__form').css("display", "none")
-            $('.contacts__success').css("display", "flex")
-        }
-    </script>
 
     <!-- CUSTOM JS -->
     <script src="assets/js/main.js"></script>

@@ -1,7 +1,14 @@
 .contacts {
     &__intro {
         padding-top: 40px;
-        padding-bottom: 40px;
+        padding-bottom: 32px;
+
+        & > h2 {
+            @include respond(mobile) {
+                font-size: 24px;
+                line-height: 32px;
+            }
+        }
 
         & > p {
             margin-top: 8px;
@@ -39,6 +46,8 @@
         }
 
         & > button {
+            padding: 16px auto;
+            border-radius: 0;
             display: none;
             width: 189px;
             height: 56px;
@@ -46,13 +55,16 @@
             border: 1px solid $mid-gray;
             box-sizing: border-box;
             box-shadow: 0px 5px 5px rgba(231, 234, 244, 0.35);
-            color: #007FFF;
+            color: #007fff;
             font-weight: 600;
             line-height: 24px;
             font-size: 16px;
-            
+
             & > img {
                 vertical-align: middle;
+                margin: 0 12px 0 0;
+                height: 20px;
+                width: 20px;
             }
 
             @include respond(tablet) {
@@ -60,9 +72,30 @@
             }
         }
     }
-    
+
     &__form {
         padding-bottom: 40px;
+
+        &.desktop {
+            @include respond(mobile) {
+                display: none;
+            }
+        }
+
+        &.mobile {
+            display: none;
+
+            @include respond(mobile) {
+                display: block;
+            }
+        }
+
+        & > h2 {
+            @include respond(mobile) {
+                font-size: 24px;
+                line-height: 32px;
+            }
+        }
 
         & > p {
             margin-top: 8px;
@@ -80,6 +113,26 @@
         }
     }
 
+    &__success {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 450px;
+
+        @include respond(mobile) {
+            height: 418px;
+        }
+
+        & > img {
+            margin-bottom: 25px;
+        }
+
+        & p {
+            text-align: center;
+        }
+    }
+
     &-alt {
         width: 100%;
 
@@ -91,18 +144,24 @@
             margin: 0 auto;
             display: flex;
             flex-direction: column;
-                
+
             @include respond(tablet) {
                 max-width: 100%;
                 padding: 37px 24px;
             }
-                
+
             @include respond(mobile) {
                 padding: 37px 17px;
             }
 
             & > p {
                 text-align: center;
+
+                & > a {
+                    color: $dark-gray;
+                    text-decoration: none;
+                    font-weight: bold;
+                }
             }
         }
 
@@ -111,7 +170,7 @@
             justify-content: center;
             margin-bottom: 32px;
             align-items: center;
-                
+
             @include respond(tablet) {
                 margin-bottom: 24px;
             }
@@ -139,18 +198,18 @@
                 flex-direction: column;
                 flex-basis: 33.33%;
                 align-items: center;
-                
+
                 @include respond(tablet) {
                     padding: 32px 0;
                 }
 
                 &:not(:nth-of-type(3)) {
-                    border-right: 1px solid #E0E0E0;   
+                    border-right: 1px solid #e0e0e0;
 
                     @include respond(tablet) {
                         border-right: none;
-                        border-bottom: 1px solid #E0E0E0;  
-                    } 
+                        border-bottom: 1px solid #e0e0e0;
+                    }
                 }
 
                 & > span {
@@ -194,18 +253,17 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-                
+
             @include respond(tablet) {
                 max-width: 100%;
                 padding: 37px 24px;
             }
-                
+
             @include respond(mobile) {
                 padding: 37px 19px;
             }
         }
 
-        
         &__header {
             display: flex;
             margin-bottom: 15px;
@@ -234,7 +292,7 @@
             & > span {
                 white-space: nowrap;
                 flex-basis: 175.32px;
-                
+
                 @include respond(tablet) {
                     margin-bottom: 24px;
                 }

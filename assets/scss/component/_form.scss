@@ -15,17 +15,23 @@
 
         @include respond(mobile) {
             flex-basis: 100%;
+            margin-bottom: 24px;
         }
 
         &--label {
             margin-bottom: 6px;
             text-transform: capitalize;
+            font-weight: 600;
+        }
+
+        &--input::after {
+            padding-right: 16px;
         }
 
         &--input,
         &--textarea {
-            padding: 15px 8px !important;
-            height: fit-content;
+            padding: 8px 15px !important;
+            height: 40px;
             border: 1px solid $gray;
             font-weight: 600;
             color: $dark-gray;
