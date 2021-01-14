@@ -47,187 +47,187 @@
     }
 }
 
-.about-fashion {
-    // background: #faf3f0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
+// .about-fashion {
+//     // background: #faf3f0;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     position: relative;
 
-    &__mobile-container {
-        display: none;
-        height: 522px;
-        width: 100%;
-        padding: 10% 0;
-        flex-direction: column;
+//     &__mobile-container {
+//         display: none;
+//         height: 522px;
+//         width: 100%;
+//         padding: 10% 0;
+//         flex-direction: column;
 
-        img {
-            width: 160px;
-            height: 245px;
+//         img {
+//             width: 160px;
+//             height: 245px;
 
-            @include respond(320px) {
-                width: 128px;
-                height: auto;
-            }
-        }
+//             @include respond(320px) {
+//                 width: 128px;
+//                 height: auto;
+//             }
+//         }
 
-        button {
-            background: transparent;
-            border: none;
-            width: 160px;
-            padding: 0;
-            text-align: left;
-        }
+//         button {
+//             background: transparent;
+//             border: none;
+//             width: 160px;
+//             padding: 0;
+//             text-align: left;
+//         }
 
-        & > .bg {
-            height: 380px;
-            position: absolute;
-            background: #faf3f0;
-            width: 100vw;
-            z-index: 1;
-            top: 0;
-        }
+//         & > .bg {
+//             height: 380px;
+//             position: absolute;
+//             background: #faf3f0;
+//             width: 100vw;
+//             z-index: 1;
+//             top: 0;
+//         }
 
-        &__content {
-            background: transparent;
-            text-align: center;
-            flex-grow: 2;
-            justify-content: center;
-            align-items: flex-start;
-            position: relative;
+//         &__content {
+//             background: transparent;
+//             text-align: center;
+//             flex-grow: 2;
+//             justify-content: center;
+//             align-items: flex-start;
+//             position: relative;
 
-            z-index: 2;
+//             z-index: 2;
 
-            span {
-                color: #656565;
-            }
+//             span {
+//                 color: #656565;
+//             }
 
-            h1 {
-                color: $blush-pink;
-            }
+//             h1 {
+//                 color: $blush-pink;
+//             }
 
-            p {
-                color: #2c2e2f;
-                padding: 0 12px;
-            }
+//             p {
+//                 color: #2c2e2f;
+//                 padding: 0 12px;
+//             }
 
-            &-link-container {
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                margin-top: 24px;
+//             &-link-container {
+//                 width: 100%;
+//                 display: flex;
+//                 justify-content: center;
+//                 margin-top: 24px;
 
-                &__left,
-                &__right {
-                    margin: 8px;
-                    width: 160px;
+//                 &__left,
+//                 &__right {
+//                     margin: 8px;
+//                     width: 160px;
 
-                    @include respond(320px) {
-                        margin: 12px;
-                        width: 128px;
-                    }
-                }
+//                     @include respond(320px) {
+//                         margin: 12px;
+//                         width: 128px;
+//                     }
+//                 }
 
-                &__left {
-                    justify-content: flex-start !important;
-                }
+//                 &__left {
+//                     justify-content: flex-start !important;
+//                 }
 
-                &__right {
-                    justify-content: flex-end !important;
-                    margin-top: 80px;
-                }
-            }
-        }
-    }
+//                 &__right {
+//                     justify-content: flex-end !important;
+//                     margin-top: 80px;
+//                 }
+//             }
+//         }
+//     }
 
-    &__desktop-container {
-        display: flex;
-        height: 584px;
-        width: 100vw;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 80px;
-        background: #fff9f9;
+//     &__desktop-container {
+//         display: flex;
+//         height: 584px;
+//         width: 100vw;
+//         align-items: center;
+//         justify-content: space-between;
+//         margin-top: 80px;
+//         background: #fff9f9;
 
-        &__left {
-            justify-content: flex-start;
-        }
+//         &__left {
+//             justify-content: flex-start;
+//         }
 
-        &__right {
-            justify-content: flex-end;
-        }
+//         &__right {
+//             justify-content: flex-end;
+//         }
 
-        &__left {
-            position: relative;
-            left: 0;
-            top: 15%;
-            // background-image: url("../images/about-fashion1.png");
+//         &__left {
+//             position: relative;
+//             left: 0;
+//             top: 15%;
+//             // background-image: url("../images/about-fashion1.png");
 
-            & > img {
-                width: 376px;
-                height: 556px;
-            }
+//             & > img {
+//                 width: 376px;
+//                 height: 556px;
+//             }
 
-            & > button {
-                position: absolute;
-                bottom: 0;
-                left: 50%;
-                right: auto;
-                transform: translate(-50%, 0);
-                margin-bottom: 10%;
-            }
-        }
+//             & > button {
+//                 position: absolute;
+//                 bottom: 0;
+//                 left: 50%;
+//                 right: auto;
+//                 transform: translate(-50%, 0);
+//                 margin-bottom: 10%;
+//             }
+//         }
 
-        &__right {
-            position: relative;
-            right: 0;
-            bottom: 15%;
-            // background-image: url("../images/about-fashion2.png");
-            width: 376px;
-            height: 556px;
+//         &__right {
+//             position: relative;
+//             right: 0;
+//             bottom: 15%;
+//             // background-image: url("../images/about-fashion2.png");
+//             width: 376px;
+//             height: 556px;
 
-            & > button {
-                position: absolute;
-                bottom: 0;
-                left: 50%;
-                right: auto;
-                transform: translate(-50%, 0);
-                margin-bottom: 10%;
-            }
-        }
+//             & > button {
+//                 position: absolute;
+//                 bottom: 0;
+//                 left: 50%;
+//                 right: auto;
+//                 transform: translate(-50%, 0);
+//                 margin-bottom: 10%;
+//             }
+//         }
 
-        &__content {
-            position: relative;
+//         &__content {
+//             position: relative;
 
-            & > div {
-                width: 500px;
-                text-align: center;
+//             & > div {
+//                 width: 500px;
+//                 text-align: center;
 
-                & > h1 {
-                    // font-size: 52px;
-                    letter-spacing: 4px;
-                    color: $blush-pink;
-                    margin: 5% 0;
-                }
+//                 & > h1 {
+//                     // font-size: 52px;
+//                     letter-spacing: 4px;
+//                     color: $blush-pink;
+//                     margin: 5% 0;
+//                 }
 
-                & > span,
-                p {
-                    color: #656565;
-                }
-            }
-        }
-    }
+//                 & > span,
+//                 p {
+//                     color: #656565;
+//                 }
+//             }
+//         }
+//     }
 
-    @include respond(tablet) {
-        &__desktop-container {
-            display: none;
-        }
+//     @include respond(tablet) {
+//         &__desktop-container {
+//             display: none;
+//         }
 
-        &__mobile-container {
-            display: flex;
-        }
-    }
-}
+//         &__mobile-container {
+//             display: flex;
+//         }
+//     }
+// }
 
 // .fashion-categories {
 //     background: $white;
