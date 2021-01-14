@@ -1198,7 +1198,8 @@ button {
   text-transform: capitalize;
 }
 .form__group--input, .form__group--textarea {
-  height: 40px;
+  padding: 15px 8px !important;
+  height: fit-content;
   border: 1px solid #88898f;
   font-weight: 600;
   color: #403f47;

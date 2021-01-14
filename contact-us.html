@@ -460,11 +460,24 @@
                         <p class="font-validation">*This is a required field</p>
                         
                         <label class="form__group--label font-caption">How do you want to be contacted?*</label>
-                        <div class="form__group--radio">
+                        <!-- <div class="form__group--radio">
                             <input id="byPhone" class="form__group--input" type="radio" name="contactBy">
                             <label for="byPhone" class="font-caption">By phone</label>
                             <input id="byEmail" class="form__group--input" type="radio" name="contactBy">
                             <label for="byEmail" class="font-caption">By email</label>
+                            <p class="font-validation">*This is a required field</p>
+                        </div> -->
+
+                        <div class="form__group--radio">
+                            <label class="radio" for="moc">By Email
+                                <input type="radio" name="moc">
+                                <span class="circle"></span>
+                                
+                            </label>
+                            <label class="radio" for="moc">By Phone
+                                <input type="radio" name="moc">
+                                <span class="circle"></span>
+                            </label>
                             <p class="font-validation">*This is a required field</p>
                         </div>
                     </div>
@@ -472,12 +485,18 @@
                     </div> -->
                     <div class="form__group">
                         <label class="form__group--label font-caption">What does your enquiry relate to? *</label>
-                        <select class="form__group--input"></select>
+                        <select class="form__group--input">
+                            <option value="">thesmstore.com</option>
+                            <option value="">thesmstore.com</option>
+                        </select>
                         <p class="font-validation">*This is a required field</p>
                     </div>
                     <div class="form__group">
                         <label class="form__group--label font-caption">Choose your topic *</label>
-                        <select class="form__group--input"></select>
+                        <select class="form__group--input">
+                            <option value="">Customer Support</option>
+                            <option value="">Customer Support</option>
+                        </select>
                         <p class="font-validation">*This is a required field</p>
                     </div>
                     <div class="form__group">

@@ -24,7 +24,8 @@
 
         &--input,
         &--textarea {
-            height: 40px;
+            padding: 15px 8px !important;
+            height: fit-content;
             border: 1px solid $gray;
             font-weight: 600;
             color: $dark-gray;
@@ -49,12 +50,10 @@
                 vertical-align: middle;
             }
         }
-
     }
 
     &--contacts {
         & > .form__group {
-            
             // ORDERING
             &:nth-child(1) {
                 order: 1;
@@ -66,13 +65,13 @@
 
             &:nth-child(3) {
                 order: 5;
-                
+
                 & > label:nth-of-type(2) {
                     margin-top: 20px;
                     margin-bottom: 0;
                 }
             }
-            
+
             &:nth-child(4) {
                 order: 2;
             }
@@ -86,6 +85,4 @@
             }
         }
     }
-
-
 }
