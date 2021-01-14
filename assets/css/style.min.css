@@ -13352,26 +13352,7 @@ header {
   top: 64px;
   display: flex;
   width: fit-content;
-}
-@media only screen and (max-width: 2560px) {
-  .carousel-2row-filtering-filter {
-    left: 1198px;
-  }
-}
-@media only screen and (max-width: 1920px) {
-  .carousel-2row-filtering-filter {
-    left: 868px;
-  }
-}
-@media only screen and (max-width: 1400px) {
-  .carousel-2row-filtering-filter {
-    left: 608px;
-  }
-}
-@media only screen and (max-width: 1280px) {
-  .carousel-2row-filtering-filter {
-    left: 558px;
-  }
+  left: 423px;
 }
 @media only screen and (max-width: 1024px) {
   .carousel-2row-filtering-filter {
@@ -13433,34 +13414,18 @@ header {
   align-items: center;
   position: relative;
 }
-.carousel-2row-filtering-content > .owl-carousel {
-  width: 75%;
+.carousel-2row-filtering-content .owl-carousel {
+  border-radius: 4px;
 }
-@media only screen and (max-width: 2560px) {
-  .carousel-2row-filtering-content {
-    padding: 52px 0 52px 775px;
-  }
-}
-@media only screen and (max-width: 1920px) {
-  .carousel-2row-filtering-content {
-    padding: 52px 0 52px 445px;
-  }
-}
-@media only screen and (max-width: 1400px) {
-  .carousel-2row-filtering-content {
-    padding: 52px 0 52px 185px;
-  }
-}
-@media only screen and (max-width: 1280px) {
-  .carousel-2row-filtering-content {
-    padding: 52px 0 52px 135px;
+@media only screen and (max-width: 2588px) {
+  .carousel-2row-filtering-content .owl-carousel {
+    width: 922px;
   }
 }
 @media only screen and (max-width: 1024px) {
   .carousel-2row-filtering-content {
     flex-direction: column;
     align-items: flex-start;
-    padding: 52px 0 52px 32px;
   }
   .carousel-2row-filtering-content > .owl-carousel {
     width: 100%;
@@ -13470,7 +13435,6 @@ header {
   .carousel-2row-filtering-content {
     flex-direction: column;
     align-items: flex-start;
-    padding: 52px 0 52px 32px;
   }
   .carousel-2row-filtering-content > .owl-carousel {
     width: 100%;
@@ -13479,14 +13443,12 @@ header {
 @media only screen and (max-width: 820px) {
   .carousel-2row-filtering-content {
     min-height: 430px;
-    padding: 32px 0 0px 12px;
     width: 100vw;
   }
 }
 @media only screen and (max-width: mobile) {
   .carousel-2row-filtering-content {
     min-height: 430px;
-    padding: 32px 0 0px 12px;
     width: 100vw;
   }
 }
@@ -23888,34 +23850,18 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   display: flex;
   align-items: center;
 }
-.gift-card__buy-content > .owl-carousel {
-  width: 75%;
+.gift-card__buy-content .owl-carousel {
+  border-radius: 4px;
 }
-@media only screen and (max-width: 2560px) {
-  .gift-card__buy-content {
-    padding: 52px 0 52px 775px;
-  }
-}
-@media only screen and (max-width: 1920px) {
-  .gift-card__buy-content {
-    padding: 52px 0 52px 445px;
-  }
-}
-@media only screen and (max-width: 1400px) {
-  .gift-card__buy-content {
-    padding: 52px 0 52px 185px;
-  }
-}
-@media only screen and (max-width: 1280px) {
-  .gift-card__buy-content {
-    padding: 52px 0 52px 135px;
+@media only screen and (max-width: 2588px) {
+  .gift-card__buy-content .owl-carousel {
+    width: 922px;
   }
 }
 @media only screen and (max-width: 1024px) {
   .gift-card__buy-content {
     flex-direction: column;
     align-items: flex-start;
-    padding: 52px 0 52px 32px;
   }
   .gift-card__buy-content > .owl-carousel {
     width: 100%;
@@ -23925,20 +23871,9 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   .gift-card__buy-content {
     flex-direction: column;
     align-items: flex-start;
-    padding: 52px 0 52px 32px;
   }
   .gift-card__buy-content > .owl-carousel {
     width: 100%;
-  }
-}
-@media only screen and (max-width: 820px) {
-  .gift-card__buy-content {
-    padding: 24px 0 24px 12px;
-  }
-}
-@media only screen and (max-width: mobile) {
-  .gift-card__buy-content {
-    padding: 24px 0 24px 12px;
   }
 }
 .gift-card__buy-text {
@@ -24607,7 +24542,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 .gift-support > div > p > span {
   font-weight: bold;
 }
-.gift-support > div > p > a {
+.gift-support > div > p a {
   text-decoration: none;
   font-weight: bold;
   color: #403f47;

@@ -529,22 +529,7 @@
         display: flex;
         // justify-content: space-between;
         width: fit-content;
-
-        @include respond(2560px) {
-            left: 1198px;
-        }
-
-        @include respond(1920px) {
-            left: 868px;
-        }
-
-        @include respond(1400px) {
-            left: 608px;
-        }
-
-        @include respond(1280px) {
-            left: 558px;
-        }
+        left: 423px;
 
         @include respond(tablet) {
             position: relative;
@@ -591,30 +576,16 @@
         align-items: center;
         position: relative;
 
-        & > .owl-carousel {
-            width: 75%;
-        }
-
-        @include respond(2560px) {
-            padding: 52px 0 52px 775px;
-        }
-
-        @include respond(1920px) {
-            padding: 52px 0 52px 445px;
-        }
-
-        @include respond(1400px) {
-            padding: 52px 0 52px 185px;
-        }
-
-        @include respond(1280px) {
-            padding: 52px 0 52px 135px;
+        & .owl-carousel {
+            border-radius: 4px;
+            @include respond(2588px) {
+                width: 922px;
+            }
         }
 
         @include respond(tablet) {
             flex-direction: column;
             align-items: flex-start;
-            padding: 52px 0 52px 32px;
 
             & > .owl-carousel {
                 width: 100%;
@@ -623,7 +594,6 @@
 
         @include respond(mobile) {
             min-height: 430px;
-            padding: 32px 0 0px 12px;
             width: 100vw;
         }
     }
