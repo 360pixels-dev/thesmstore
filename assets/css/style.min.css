@@ -13413,6 +13413,7 @@ header {
   display: flex;
   align-items: center;
   position: relative;
+  width: 1014px;
 }
 .carousel-2row-filtering-content .owl-carousel {
   border-radius: 4px;
@@ -23845,6 +23846,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   position: relative;
 }
 .gift-card__buy-content {
+  width: 1014px;
   min-height: 428px;
   margin: 0 auto;
   display: flex;
