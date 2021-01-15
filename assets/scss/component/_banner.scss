@@ -1329,6 +1329,7 @@
 
         @include respond(mobile) {
             height: 200px;
+            max-width: fit-content;
         }
 
         & > .desktop-banner {

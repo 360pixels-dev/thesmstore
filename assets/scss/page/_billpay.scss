@@ -1,107 +1,4 @@
 .billpay {
-    &__header {
-        position: relative;
-        width: 100%;
-
-        &:before {
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -1;
-            width: 100%;
-            height: 290px;
-            content: "";
-            background-color: $silver;
-            background-image: url("../images/dots-l.svg");
-            background-size: cover;
-            background-position: center top;
-            // background-image: radial-gradient($gray 2px, #aed6e3 2px);
-            // background-size: 49px 49px;
-
-            @include respond(1440px) {
-                background-image: url("../images/dots.svg");
-            }
-
-            @include respond(mobile) {
-                background-image: url("../images/dots-m.svg");
-                height: 271px;
-            }
-        }
-
-        & > div {
-            min-height: 348px;
-            width: 1400px;
-            margin: 0 auto;
-            padding: 44px 0 0 0;
-
-            @include respond(1400px) {
-                width: 100%;
-                padding: 44px 32px 0 32px;
-            }
-
-            @include respond(tablet) {
-                padding: 24px 32px 0 32px;
-            }
-
-            @include respond(mobile) {
-                padding: 24px 12px 0 12px;
-                margin: 15px 0;
-            }
-        }
-
-        &-content {
-            width: 87.5%;
-            min-height: 304px;
-            background-color: $aqua;
-            display: flex;
-            margin: 0 auto;
-            justify-content: center;
-            align-items: center;
-
-            @include respond(tablet) {
-                flex-direction: column;
-                margin: 0;
-                width: 100%;
-                padding: 54px 23px 48px 23px;
-            }
-
-            & > img {
-                margin-right: 111px;
-
-                @include respond(tablet) {
-                    margin-right: 0;
-                    margin-bottom: 36px;
-                    height: 73px;
-                }
-            }
-
-            & > div {
-                width: 48.24%;
-
-                @include respond(tablet) {
-                    width: 100%;
-                }
-
-                & > h3 {
-                    color: $white;
-
-                    @include respond(tablet) {
-                        margin-bottom: 16px;
-                        text-align: center;
-                    }
-                }
-
-                & > p {
-                    color: $white;
-
-                    @include respond(tablet) {
-                        text-align: center;
-                    }
-                }
-            }
-        }
-    }
-
     &__content {
         & > div {
             width: 1400px;
@@ -290,17 +187,14 @@
                 & > span {
                     font-weight: bold;
                 }
-
-                & > a {
-                    text-decoration: none;
-                    font-weight: bold;
-                    color: $dark-gray;
-                }
             }
 
-            & > a {
+            & a {
                 margin: 0 auto;
                 width: 205px;
+                text-decoration: none;
+                font-weight: bold;
+                color: $dark-gray;
             }
         }
     }
