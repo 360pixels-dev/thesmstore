@@ -54,6 +54,10 @@
             flex-direction: column;
             width: 598px;
 
+            @include respond(1280px) {
+                width: 538px;
+            }
+
             @include respond(tablet) {
                 width: 100%;
             }
@@ -131,6 +135,10 @@
             min-height: 1302px;
             height: fit-content;
             padding: 80px 0;
+
+            & > a {
+                width: fit-content;
+            }
 
             &.no-result {
                 min-height: 472px;
