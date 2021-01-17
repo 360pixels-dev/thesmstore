@@ -463,6 +463,7 @@
                 top: -46px;
                 // margin: auto;
                 width: 95%;
+                height: 200px;
                 right: auto;
                 left: 50%;
                 transform: translate(-50%, 0);
@@ -844,10 +845,15 @@
                 @include respond(tablet) {
                     flex-direction: column;
                     align-items: flex-start;
+                    padding: 25px 25px 80px 25px;
 
                     & > .owl-carousel {
-                        width: 100%;
+                        width: 100vw;
                     }
+                }
+
+                @include respond(mobile) {
+                    padding: 24px 12px;
                 }
             }
 

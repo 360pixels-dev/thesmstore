@@ -121,6 +121,27 @@
     margin-left: -40px;
 }
 
+.p-16-25 {
+    padding: 16px 25px;
+}
+
+.p-20-16 {
+    padding: 20px 16px;
+}
+
+.p-25-18 {
+    padding: 25px 18px;
+}
+
+.p-32-24 {
+    padding: 32px 24px;
+}
+
+.mh-48 {
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+}
 
 .hide {
     visibility: hidden;
@@ -132,7 +153,6 @@
     display: block;
 }
 
-    
 .centered {
     margin-left: auto;
     margin-right: auto;
@@ -150,7 +170,6 @@
     text-align: left;
 }
 
-
 .mobile-hide {
     display: block;
     @include respond(mobile) {
@@ -165,7 +184,6 @@
     }
 }
 
-
 .tablet-hide {
     display: block;
     @include respond(tablet) {
@@ -174,7 +192,7 @@
 }
 
 .br-mhide {
-    display: none; 
+    display: none;
 
     @include respond(mobile) {
         display: block;

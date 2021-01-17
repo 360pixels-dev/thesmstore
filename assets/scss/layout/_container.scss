@@ -97,6 +97,17 @@
     }
 }
 
+.container-1016 {
+    position: relative;
+    width: 1016px;
+    // padding: 0 $gutter-desktop;
+    margin: 0 auto;
+
+    @include respond(mobile) {
+        width: 100%;
+    }
+}
+
 .container-colored {
     position: relative;
     z-index: 9;

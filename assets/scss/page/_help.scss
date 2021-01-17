@@ -16,6 +16,11 @@
         }
 
         @include respond(mobile) {
+            padding: 15px 16px 36px 16px;
+            min-height: 100%;
+        }
+
+        @include respond(320px) {
             padding: 15px 12px 36px 12px;
         }
 
@@ -70,11 +75,8 @@
 
                 &.active {
                     max-height: 1000px;
-                    transition: 0.3s ease-in;
 
                     & > .faq-accordion__header {
-                        margin-bottom: 16px;
-
                         & > img {
                             transform: rotate(180deg);
                         }
@@ -103,7 +105,7 @@
                     }
 
                     & > img {
-                        transition: all ease-in 0.2s;
+                        transition: all ease-in 0.1s;
                         transform: rotate(0deg);
                     }
                 }
@@ -121,6 +123,218 @@
                     box-shadow: inset 0px 5px 10px rgba(189, 193, 202, 0.15);
                 }
             }
+        }
+    }
+
+    &__search {
+        &-container {
+            min-height: 1302px;
+            height: fit-content;
+            padding: 80px 0;
+
+            &.no-result {
+                min-height: 472px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+
+                & > img {
+                    margin-bottom: 16px;
+                }
+
+                & > p {
+                    margin-bottom: 4px;
+                }
+
+                & > span {
+                    color: $dark-gray;
+                }
+            }
+
+            @include respond(tablet) {
+                min-height: max-content;
+                width: 640px;
+            }
+
+            @include respond(mobile) {
+                width: auto;
+                margin: 0 16px;
+            }
+        }
+
+        &--faq-category {
+            &:nth-of-type(2) {
+                margin-top: 114px;
+            }
+
+            margin: 56px 0 40px 0;
+
+            & > span {
+                margin-bottom: 4px;
+            }
+            & > p {
+                margin-bottom: 32px;
+            }
+
+            & > .faq-accordion {
+                background-color: $white;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 24px;
+                border: 1px solid #e3e8ee;
+                border-radius: 4px;
+                width: 100%;
+                max-height: 98px;
+                box-shadow: 0px 5px 10px rgba(189, 193, 202, 0.1);
+
+                &.active {
+                    max-height: 1000px;
+
+                    & > .faq-accordion__header {
+                        & > img {
+                            transform: rotate(180deg);
+                        }
+                    }
+
+                    & > .faq-accordion__content {
+                        display: block;
+                    }
+                }
+
+                & > .faq-accordion__header {
+                    min-height: 42.38px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    cursor: pointer;
+                    padding: 20px 16px;
+
+                    & > img {
+                        transition: all ease-in 0.1s;
+                        transform: rotate(0deg);
+                    }
+
+                    & > span {
+                        width: 87%;
+                    }
+                }
+
+                & > .faq-accordion__content {
+                    display: none;
+                    padding: 20px 16px;
+                    padding-top: 16px;
+                    border-top: 1px solid #e0e0e0;
+                    box-shadow: inset 0px 5px 10px rgba(189, 193, 202, 0.15);
+                }
+            }
+        }
+    }
+
+    &__inner {
+        &-container {
+            margin-top: 88px !important;
+            padding: 80px 0 120px 0;
+
+            @include respond(tablet) {
+                margin-top: 56px !important;
+                min-height: max-content;
+                width: 640px;
+            }
+
+            @include respond(mobile) {
+                width: auto;
+                margin: 0 16px;
+            }
+        }
+
+        &--topic {
+            display: flex;
+            align-items: center;
+            margin-bottom: 28px;
+
+            & img {
+                margin-right: 18px;
+            }
+        }
+
+        &--question-count {
+            margin-bottom: 24px;
+
+            &.smac {
+                margin-bottom: 34px;
+
+                @include respond(mobile) {
+                    & > span {
+                        font-size: 16px;
+                        line-height: 22px;
+                    }
+                }
+            }
+        }
+
+        &-smac {
+            display: flex;
+            justify-content: space-between;
+
+            @include respond(mobile) {
+                display: block;
+            }
+        }
+
+        &--left {
+            max-width: 180px;
+
+            @include respond(mobile) {
+                display: none;
+            }
+
+            &-list {
+                list-style: none;
+                margin-top: 34px;
+
+                & > .filter-list-item {
+                    margin-bottom: 24px;
+
+                    &.activeFilter {
+                        & > a {
+                            font-weight: bold;
+                        }
+                    }
+
+                    & > a {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        &--mobile-dropdown-filter {
+            display: none;
+            width: 100%;
+
+            & > select {
+                border: 1px solid #88898f;
+                padding: 8px 15px;
+                width: inherit;
+                margin: 6px 0 45px 0;
+                word-break: normal;
+
+                & > option {
+                    width: inherit;
+                }
+            }
+
+            @include respond(mobile) {
+                display: block;
+            }
+        }
+
+        &--right {
+            max-width: 770px;
+            justify-content: flex-end;
         }
     }
 

@@ -1,0 +1,107 @@
+.accordion {
+    width: 70%;
+
+    @include respond(mobile) {
+        width: 95%;
+    }
+
+    max-width: 1400px;
+    margin-bottom: 2rem auto;
+    padding: 2rem 0;
+
+    &__item {
+        background: $white;
+        color: $black;
+        margin-bottom: 24px;
+        border: 1px solid #ebeef8;
+        border-radius: 4px;
+
+        &-header {
+            // padding: 20px 16px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            font-weight: bold;
+            line-height: 24px;
+            cursor: pointer;
+
+            &:after {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                content: url("../images/icons/angle-down-black.svg");
+                height: 12px;
+                width: 12px;
+                position: absolute;
+                right: 1rem;
+                transition: 0.2s ease-in;
+            }
+
+            &.active:after {
+                display: flex;
+                align-items: center;
+                transform: rotate(180deg);
+                transition: 0.2s ease-out;
+            }
+
+            & > span {
+                width: 87%;
+            }
+        }
+
+        &-body {
+            box-shadow: inset 0px 2px 5px rgba(235, 239, 250, 0.5);
+
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+
+            &-content {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                border-top: 1px solid #ebeef8;
+
+                // padding: 16px 24px;
+
+                max-height: 300px;
+                overflow-y: scroll;
+
+                & span {
+                    line-height: 64px;
+                }
+
+                & > ul {
+                    list-style-type: disc;
+                    margin-left: 40px;
+                }
+
+                & > a {
+                    margin-top: 16px;
+                }
+
+                & em {
+                    color: $gray;
+                }
+
+                & .desktop-emphasis {
+                    @include respond(mobile) {
+                        display: none;
+                    }
+                }
+
+                & .mobile-emphasis {
+                    display: none;
+
+                    @include respond(mobile) {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        // &-header.active + &-body {
+        //     display: flex;
+        // }
+    }
+}
