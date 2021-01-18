@@ -23716,12 +23716,12 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 @media only screen and (max-width: 820px) {
   .gift-video__content > ul {
-    width: 282px;
+    width: 100%;
   }
 }
 @media only screen and (max-width: mobile) {
   .gift-video__content > ul {
-    width: 282px;
+    width: 100%;
   }
 }
 .gift-video__content > ul > li {
@@ -23817,7 +23817,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
     align-items: center;
     top: -46px;
     width: 95%;
-    height: 200px;
+    height: 250px;
     right: auto;
     left: 50%;
     transform: translate(-50%, 0);
@@ -23831,7 +23831,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
     align-items: center;
     top: -46px;
     width: 95%;
-    height: 200px;
+    height: 250px;
     right: auto;
     left: 50%;
     transform: translate(-50%, 0);

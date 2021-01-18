@@ -385,7 +385,7 @@
                 width: 380px;
 
                 @include respond(mobile) {
-                    width: 282px;
+                    width: 100%;
                 }
 
                 & > li {
@@ -463,7 +463,7 @@
                 top: -46px;
                 // margin: auto;
                 width: 95%;
-                height: 200px;
+                height: 250px;
                 right: auto;
                 left: 50%;
                 transform: translate(-50%, 0);
