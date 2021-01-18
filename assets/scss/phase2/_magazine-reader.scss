@@ -1,0 +1,79 @@
+.magazine-reader {
+    width: 100%;
+
+    &__header {
+        background: #f0f3fc;
+        height: 72px;
+        display: flex;
+        align-items: center;
+
+        &--back {
+            justify-content: flex-start;
+            margin-left: 25px;
+
+            & > a {
+                text-decoration: none;
+                color: $black;
+
+                & > img {
+                    margin-right: 16px;
+                }
+            }
+        }
+
+        & > h3 {
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            width: 100%;
+        }
+    }
+
+    &__content {
+        background: $gray;
+        width: 100%;
+        height: 780px;
+
+        & > img {
+            height: 699px;
+            width: 681px;
+
+            position: relative;
+            float: right;
+
+            margin: 40px 88px;
+        }
+
+        &--sample-page {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            float: right;
+
+            margin: 40px 88px;
+        }
+    }
+
+    &__nav {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -45%);
+        width: 100%;
+        padding: 0 16px;
+
+        &--prev,
+        &--next {
+            text-decoration: none;
+            height: fit-content;
+
+            &.disabled {
+                display: none;
+            }
+        }
+
+        &--next {
+            float: right;
+        }
+    }
+}
