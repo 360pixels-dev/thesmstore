@@ -41846,6 +41846,7 @@ body {
 
 .magazine-reader {
   width: 100%;
+  max-height: 852px;
 }
 .magazine-reader__header {
   background: #f0f3fc;
@@ -41885,15 +41886,15 @@ body {
 .magazine-reader__content--sample-page {
   display: flex;
   justify-content: center;
-  position: relative;
-  float: right;
-  margin: 40px 88px;
+  align-items: center;
+  padding: 40px 0;
+  position: absolute;
 }
 .magazine-reader__nav {
-  position: absolute;
-  top: 55%;
+  position: relative;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, -45%);
+  transform: translate(-50%, -50%);
   width: 100%;
   padding: 0 16px;
 }
