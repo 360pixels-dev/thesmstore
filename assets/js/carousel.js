@@ -162,49 +162,56 @@ $(document).ready(function() {
     }
 
     // GIFT WRAPPING - OWL CAROUSEL
-    // Gift Wrappers
-        $('.gift-wrapping__slider-slides').owlCarousel({
-            margin:16,
-            loop:true,
-            autoWidth:true,
-            items:1,
-            dots:false,
-            nav:true,
-            navText: [
-                left, right
-            ]
-        })
+    async function asyncCarouselExec() {
+        // Gift Wrappers
+        if ($('.gift-wrapping__slider-slides')) {
+            await $('.gift-wrapping__slider-slides').owlCarousel({
+                margin:16,
+                loop:true,
+                autoWidth:true,
+                items:1,
+                dots:false,
+                nav:true,
+                navText: [
+                    left, right
+                ]
+            })
+        }
 
-    // Box Sizes
-    // Desktop
-    if ($('.box-sizes__slider-slides.desktop').length !== 0) {
-        $('.box-sizes__slider-slides.desktop').owlCarousel({
-            margin:16,
-            loop:true,
-            autoWidth:true,
-            items:1,
-            nav:true,
-            navText: [
-                left, right
-            ]
-        })
+        // Box Sizes
+        // Desktop
+        if ($('.box-sizes__slider-slides.desktop')) {
+            await $('.box-sizes__slider-slides.desktop').owlCarousel({
+                margin:16,
+                loop:true,
+                autoWidth:true,
+                items:1,
+                nav:true,
+                navText: [
+                    left, right
+                ]
+            })
+        }
+
+        // Mobile
+        if ($('.box-sizes__slider-slides.mobile')) {
+            await $('.box-sizes__slider-slides.mobile').owlCarousel({
+                margin:16,
+                loop:false,
+                autoWidth:true,
+                items:1,
+                nav:true,
+                navText: [
+                    mLeft, mRight
+                ],
+                urlhashListener:true,
+                startPosition: 'URLHash'
+            })
+        }
     }
 
-    // Mobile
-    if ($('.box-sizes__slider-slides.mobile').length !== 0) {
-        $('.box-sizes__slider-slides.mobile').owlCarousel({
-            margin:16,
-            loop:false,
-            autoWidth:true,
-            items:1,
-            nav:true,
-            navText: [
-                mLeft, mRight
-            ],
-            urlhashListener:true,
-            startPosition: 'URLHash'
-        })
-    }
+    asyncCarouselExec()
+    
 
 
     // CATEGORY PAGES
