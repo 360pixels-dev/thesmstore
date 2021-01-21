@@ -1,8 +1,8 @@
 $(document).ready(function() {
-    const right = '<img src="/assets/images/icons/m-carousel-arrow-right.svg" alt="right">'
-    const left = '<img src="/assets/images/icons/m-carousel-arrow-left.svg" alt="left">'
-    const mRight = '<img src="/assets/images/icons/control-right.svg" alt="mRight">'
-    const mLeft = '<img src="/assets/images/icons/control-left.svg" alt="mLeft">'
+    const right = '<img src="./assets/images/icons/m-carousel-arrow-right.svg" alt="right">'
+    const left = '<img src="./assets/images/icons/m-carousel-arrow-left.svg" alt="left">'
+    const mRight = '<img src="./assets/images/icons/control-right.svg" alt="mRight">'
+    const mLeft = '<img src="./assets/images/icons/control-left.svg" alt="mLeft">'
 
     // INDEX CAROUSEL - BANNER
     window.addEventListener("load",function() {
@@ -163,9 +163,10 @@ $(document).ready(function() {
 
     // GIFT WRAPPING - OWL CAROUSEL
     async function asyncCarouselExec() {
+        console.log($('.gift-wrapping__slider-slides')[0].children.length)
         // Gift Wrappers
-        if ($('.gift-wrapping__slider-slides')) {
-            await $('.gift-wrapping__slider-slides').owlCarousel({
+        // Desktop
+            await $('.gift-wrapping__slider-slides.desktop').owlCarousel({
                 margin:16,
                 loop:true,
                 autoWidth:true,
@@ -176,11 +177,22 @@ $(document).ready(function() {
                     left, right
                 ]
             })
-        }
+
+        // Mobile
+            await $('.gift-wrapping__slider-slides.mobile').owlCarousel({
+                margin:16,
+                loop:true,
+                autoWidth:true,
+                items:1,
+                dots:false,
+                nav:true,
+                navText: [
+                    left, right
+                ]
+            })
 
         // Box Sizes
         // Desktop
-        if ($('.box-sizes__slider-slides.desktop')) {
             await $('.box-sizes__slider-slides.desktop').owlCarousel({
                 margin:16,
                 loop:true,
@@ -191,10 +203,8 @@ $(document).ready(function() {
                     left, right
                 ]
             })
-        }
 
         // Mobile
-        if ($('.box-sizes__slider-slides.mobile')) {
             await $('.box-sizes__slider-slides.mobile').owlCarousel({
                 margin:16,
                 loop:false,
@@ -207,7 +217,6 @@ $(document).ready(function() {
                 urlhashListener:true,
                 startPosition: 'URLHash'
             })
-        }
     }
 
     asyncCarouselExec()

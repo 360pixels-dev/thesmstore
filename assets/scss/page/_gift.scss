@@ -75,14 +75,29 @@
             &-slides {
                 display: flex;
                 width: 100%;
+                position: relative;
+
+                &.desktop {
+                    @include respond(mobile) {
+                        display: none;
+                    }
+                }
+
+                &.mobile {
+                    display: none;
+
+                    @include respond(mobile) {
+                        display: flex;
+                    }
+                }
 
                 @include respond(tablet) {
-                    position: absolute;
-                    top: 250px;
+                    top: 170px;
+                    left: -350px;
                 }
 
                 @include respond(mobile) {
-                    top: 410px;
+                    top: 230px;
                 }
 
                 & > img {
@@ -109,15 +124,9 @@
                     left: -34%;
 
                     @include respond(tablet) {
-                        margin: 24px 1.5em 0 0;
-                        position: relative;
+                        right: 0;
+                        top: 220px;
                         left: unset;
-                        top: unset;
-                    }
-
-                    @include respond(mobile) {
-                        margin: 24px 3em 0 0;
-                        float: right;
                     }
                 }
 
