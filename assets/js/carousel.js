@@ -163,7 +163,6 @@ $(document).ready(function() {
 
     // GIFT WRAPPING - OWL CAROUSEL
     async function asyncCarouselExec() {
-        console.log($('.gift-wrapping__slider-slides')[0].children.length)
         // Gift Wrappers
         // Desktop
             await $('.gift-wrapping__slider-slides.desktop').owlCarousel({
@@ -181,7 +180,7 @@ $(document).ready(function() {
         // Mobile
             await $('.gift-wrapping__slider-slides.mobile').owlCarousel({
                 margin:16,
-                loop:true,
+                loop:false,
                 autoWidth:true,
                 items:1,
                 dots:false,
