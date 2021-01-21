@@ -120,6 +120,9 @@
 
                 @include respond(tablet) {
                     border: none;
+                    background-size: auto;
+                    width: auto;
+                    padding: 9px 40px 9px 16px;
                 }
             }
         }

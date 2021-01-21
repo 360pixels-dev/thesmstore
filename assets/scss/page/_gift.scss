@@ -184,12 +184,24 @@
             width: 100%;
 
             & > img {
-                @include respond(tablet) {
-                    height: 250px;
+                @include respond(1280px) {
+                    width: 540px;
+                    height: 340px;
                 }
+
+                @include respond(tablet) {
+                    width: 470px;
+                    height: 370px;
+                }
+
                 @include respond(mobile) {
-                    width: 159.75px;
+                    width: 160px;
                     height: 142px;
+                }
+
+                @include respond(320px) {
+                    width: 140px;
+                    height: 122px;
                 }
             }
         }
@@ -215,16 +227,37 @@
 
         &__img {
             z-index: 50;
-            margin-left: 87px;
-            height: 497px;
-            width: 624px;
-            background: url("../images/gift-registry-img.jpg");
 
-            @include respond(714px) {
-                background: url("../images/gift-registry-img-m.png");
+            & > .desktop,
+            & > .mobile {
+                object-fit: contain;
+            }
+
+            & > .desktop {
+                margin-left: 87px;
+                height: 497px;
+                width: 624px;
+
+                @include respond(mobile) {
+                    display: none;
+                }
+            }
+
+            & > .mobile {
+                display: none;
+
                 margin-left: 13px;
                 width: 348px;
                 height: 400px;
+
+                @include respond(mobile) {
+                    display: block;
+                }
+
+                @include respond(320px) {
+                    width: 308px;
+                    height: 360px;
+                }
             }
         }
 
@@ -236,10 +269,15 @@
             top: 43px;
             left: 0;
 
-            @include respond(714px) {
+            @include respond(mobile) {
                 width: 347px;
                 height: 416px;
                 top: 32px;
+            }
+
+            @include respond(320px) {
+                width: 308px;
+                height: 360px;
             }
         }
 
@@ -681,6 +719,12 @@
                 & img {
                     width: 232px;
                     height: 148px;
+                }
+
+                & h3 {
+                    font-size: 14px;
+                    line-height: 20px;
+                    text-align: center;
                 }
             }
 

@@ -1,8 +1,8 @@
 $(document).ready(function() {
-    const right = '<img src="./assets/images/icons/m-carousel-arrow-right.svg" alt="right">'
-    const left = '<img src="./assets/images/icons/m-carousel-arrow-left.svg" alt="left">'
-    const mRight = '<img src="./assets/images/icons/control-right.svg" alt="mRight">'
-    const mLeft = '<img src="./assets/images/icons/control-left.svg" alt="mLeft">'
+    const right = '<img src="/assets/images/icons/m-carousel-arrow-right.svg" alt="right">'
+    const left = '<img src="/assets/images/icons/m-carousel-arrow-left.svg" alt="left">'
+    const mRight = '<img src="/assets/images/icons/control-right.svg" alt="mRight">'
+    const mLeft = '<img src="/assets/images/icons/control-left.svg" alt="mLeft">'
 
     // INDEX CAROUSEL - BANNER
     window.addEventListener("load",function() {
@@ -181,6 +181,7 @@ $(document).ready(function() {
             await $('.gift-wrapping__slider-slides.mobile').owlCarousel({
                 margin:16,
                 loop:false,
+                rewind:true,
                 autoWidth:true,
                 items:1,
                 dots:false,

@@ -505,7 +505,7 @@
             position: absolute;
             width: 325px;
             right: 17px;
-            top: 50px;
+            top: 0;
             color: $white;
 
             & > p {
@@ -577,21 +577,24 @@
 
     &-text {
         position: absolute;
-        top: 40px;
+        top: 0;
         right: 10px;
         width: 500px;
         color: $white;
 
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
         @include respond(tablet) {
             width: 325px;
             right: 17px;
-            top: 70px;
         }
 
         @include respond(mobile) {
             width: 190px;
             right: 26px;
-            top: 10px;
             margin-right: 13px;
         }
 
@@ -656,6 +659,7 @@
             @include respond(mobile) {
                 font-size: 20px;
                 line-height: 28px;
+                margin: 0;
             }
 
             @include respond(320px) {
