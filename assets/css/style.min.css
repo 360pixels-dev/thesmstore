@@ -7294,9 +7294,9 @@ body.mmactive {
 }
 
 .tbl {
-  width: 100%;
-  max-width: 1016px;
   border-collapse: collapse;
+  table-layout: fixed;
+  width: 1016px;
 }
 .tbl h4 {
   text-align: left;
@@ -7330,18 +7330,19 @@ body.mmactive {
 .tbl-container {
   width: 1016px !important;
   max-width: 1016px !important;
-  overflow: scroll;
 }
 @media only screen and (max-width: 1024px) {
   .tbl-container {
     margin: 0 12px !important;
     width: auto !important;
+    overflow-x: auto;
   }
 }
 @media only screen and (max-width: tablet) {
   .tbl-container {
     margin: 0 12px !important;
     width: auto !important;
+    overflow-x: auto;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -7368,30 +7369,118 @@ body.mmactive {
     display: table;
   }
 }
-.tbl__4-col {
-  width: 100%;
+.tbl__set-col {
+  overflow-x: scroll;
+  border: 1px solid #e0e0e0;
+  border-bottom: none;
 }
-.tbl__4-col-title {
+.tbl__set-col-title {
   padding: 16px 24px;
   background: #ebeef8;
-  border: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  position: sticky;
+  left: 0;
 }
-.tbl__4-col-dates {
-  background: #f9fbff;
-  width: 100%;
+.tbl__set-col-dates, .tbl__set-col-hours {
   height: 64px;
-  display: inline-flex;
-  justify-content: space-evenly;
+  width: auto;
 }
-.tbl__4-col-date {
-  border: 1px solid #e0e0e0;
-  width: 100%;
-  display: flex;
+.tbl__set-col--4-col > .tbl__set-col-dates > div {
+  width: 254px;
+}
+.tbl__set-col--4-col > .tbl__set-col-hours > div {
+  width: 254px;
+}
+.tbl__set-col--5-col > .tbl__set-col-dates > div {
+  width: 203.2px;
+}
+.tbl__set-col--5-col > .tbl__set-col-hours > div {
+  width: 203.2px;
+}
+.tbl__set-col--6-col > .tbl__set-col-dates > div {
+  width: 169.3px;
+}
+.tbl__set-col--6-col > .tbl__set-col-hours > div {
+  width: 169.3px;
+}
+.tbl__set-col-dates {
+  background: #f9fbff;
+  display: inline-flex;
+}
+.tbl__set-col-dates > div {
+  display: inline-flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid #e0e0e0;
+  border-top: none;
+}
+.tbl__set-col-dates > div:first-child {
+  border-left: none;
+}
+.tbl__set-col-dates > div:last-child {
+  border-right: none;
+}
+.tbl__set-col-dates > div:not(:first-child) {
+  border-left: none;
+}
+.tbl__set-col-dates > div > p {
   text-align: center;
-  padding: 10px 0;
+  width: 100px;
+}
+.tbl__set-col-dates > div.fixed {
+  border-right: 3px solid #e0e0e0;
+  background: #f9fbff;
+  position: sticky;
+  left: 0;
+}
+.tbl__set-col-dates > div.fixed > p {
+  width: 100%;
+}
+.tbl__set-col-hours {
+  display: inline-flex;
+}
+.tbl__set-col-hours > div {
+  display: inline-flex;
+  justify-content: center;
   align-items: center;
+  border: 1px solid #e0e0e0;
+  border-top: none;
+}
+.tbl__set-col-hours > div:first-child {
+  border-left: none;
+}
+.tbl__set-col-hours > div:last-child {
+  border-right: none;
+}
+.tbl__set-col-hours > div:not(:first-child) {
+  border-left: none;
+}
+.tbl__set-col-hours > div > p {
+  text-align: center;
+  width: 100px;
+}
+.tbl__set-col-hours > div.fixed {
+  border-right: 3px solid #e0e0e0;
+  position: sticky;
+  left: 0;
+}
+.tbl__set-col-hours > div.fixed > p {
+  width: 100%;
+}
+.tbl__set-col-hours:nth-of-type(even) {
+  background: #ffffff;
+}
+.tbl__set-col-hours:nth-of-type(even) > .fixed {
+  background: #ffffff;
+}
+.tbl__set-col-hours:nth-of-type(odd) {
+  background: #f9fbff;
+}
+.tbl__set-col-hours:nth-of-type(odd) > .fixed {
+  background: #f9fbff;
 }
 .tbl__no-head {
   width: 100%;
