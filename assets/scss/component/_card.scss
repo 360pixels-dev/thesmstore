@@ -550,6 +550,7 @@
                 text-transform: uppercase;
                 // white-space: nowrap;
                 width: 100%;
+                margin: 0;
 
                 @include respond(mobile) {
                     font-size: 20px;
@@ -649,6 +650,7 @@
             line-height: 58px;
             letter-spacing: 1.6px;
             text-transform: uppercase;
+            margin: 0;
 
             @include respond(tablet) {
                 font-size: 32px;
@@ -659,11 +661,6 @@
             @include respond(mobile) {
                 font-size: 20px;
                 line-height: 28px;
-                margin: 0;
-            }
-
-            @include respond(320px) {
-                margin: 0;
             }
         }
 

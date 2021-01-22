@@ -1,13 +1,12 @@
 .accordion {
     width: 70%;
+    margin: auto;
+    max-width: 1400px;
+    padding: 2rem 0;
 
     @include respond(mobile) {
         width: 95%;
     }
-
-    max-width: 1400px;
-    margin-bottom: 2rem auto;
-    padding: 2rem 0;
 
     &__item {
         background: $white;
