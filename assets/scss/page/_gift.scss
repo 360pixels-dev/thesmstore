@@ -228,30 +228,16 @@
         &__img {
             z-index: 50;
 
-            & > .desktop,
-            & > .mobile {
-                object-fit: contain;
-            }
-
-            & > .desktop {
+            & > img {
+                object-fit: cover;
                 margin-left: 87px;
                 height: 497px;
                 width: 624px;
 
                 @include respond(mobile) {
-                    display: none;
-                }
-            }
-
-            & > .mobile {
-                display: none;
-
-                margin-left: 13px;
-                width: 348px;
-                height: 400px;
-
-                @include respond(mobile) {
-                    display: block;
+                    margin-left: 13px;
+                    width: 348px;
+                    height: 400px;
                 }
 
                 @include respond(320px) {

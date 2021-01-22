@@ -23539,42 +23539,28 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 .gift-registry__img {
   z-index: 50;
 }
-.gift-registry__img > .desktop, .gift-registry__img > .mobile {
-  object-fit: contain;
-}
-.gift-registry__img > .desktop {
+.gift-registry__img > img {
+  object-fit: cover;
   margin-left: 87px;
   height: 497px;
   width: 624px;
 }
 @media only screen and (max-width: 820px) {
-  .gift-registry__img > .desktop {
-    display: none;
+  .gift-registry__img > img {
+    margin-left: 13px;
+    width: 348px;
+    height: 400px;
   }
 }
 @media only screen and (max-width: mobile) {
-  .gift-registry__img > .desktop {
-    display: none;
-  }
-}
-.gift-registry__img > .mobile {
-  display: none;
-  margin-left: 13px;
-  width: 348px;
-  height: 400px;
-}
-@media only screen and (max-width: 820px) {
-  .gift-registry__img > .mobile {
-    display: block;
-  }
-}
-@media only screen and (max-width: mobile) {
-  .gift-registry__img > .mobile {
-    display: block;
+  .gift-registry__img > img {
+    margin-left: 13px;
+    width: 348px;
+    height: 400px;
   }
 }
 @media only screen and (max-width: 320px) {
-  .gift-registry__img > .mobile {
+  .gift-registry__img > img {
     width: 308px;
     height: 360px;
   }
