@@ -10465,6 +10465,9 @@ body.mmactive {
     width: 100%;
   }
 }
+.gift-header > div > img {
+  width: fit-content;
+}
 @media only screen and (max-width: 1180px) {
   .gift-header > div > img {
     margin-bottom: 46px;

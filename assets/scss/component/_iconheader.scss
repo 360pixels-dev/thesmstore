@@ -168,6 +168,8 @@
             }
 
             & > img {
+                width: fit-content;
+
                 @include respond(1180px) {
                     margin-bottom: 46px;
                 }
