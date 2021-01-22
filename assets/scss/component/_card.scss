@@ -650,7 +650,6 @@
             line-height: 58px;
             letter-spacing: 1.6px;
             text-transform: uppercase;
-            margin: 0;
 
             @include respond(tablet) {
                 font-size: 32px;
@@ -667,6 +666,7 @@
         & > a {
             display: block;
             width: 182px;
+            margin-top: 12px;
         }
     }
 }

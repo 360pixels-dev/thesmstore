@@ -6729,7 +6729,6 @@ body.mmactive {
   line-height: 58px;
   letter-spacing: 1.6px;
   text-transform: uppercase;
-  margin: 0;
 }
 @media only screen and (max-width: 1024px) {
   .card--sale-text > h1 {
@@ -6760,6 +6759,7 @@ body.mmactive {
 .card--sale-text > a {
   display: block;
   width: 182px;
+  margin-top: 12px;
 }
 
 .card-mobile--events {
@@ -7295,7 +7295,11 @@ body.mmactive {
 
 .tbl {
   width: 100%;
+  max-width: 1016px;
   border-collapse: collapse;
+}
+.tbl h4 {
+  text-align: left;
 }
 .tbl tr:nth-child(odd) {
   background-color: #f9fbff;
@@ -7310,6 +7314,9 @@ body.mmactive {
     background-color: #ffffff;
   }
 }
+.tbl tbody tr:nth-child(odd) {
+  background-color: #f9fbff;
+}
 .tbl th {
   padding: 16px 24px;
   background-color: #eff3fd;
@@ -7320,103 +7327,71 @@ body.mmactive {
   border: 1px solid #e0e0e0;
   text-align: center;
 }
-@media only screen and (max-width: 820px) {
-  .tbl td {
-    border-bottom: none;
-  }
-  .tbl td:last-child {
-    border-bottom: 1px solid #e0e0e0;
+.tbl-container {
+  width: 1016px !important;
+  max-width: 1016px !important;
+  overflow: scroll;
+}
+@media only screen and (max-width: 1024px) {
+  .tbl-container {
+    margin: 0 12px !important;
+    width: auto !important;
   }
 }
-@media only screen and (max-width: mobile) {
-  .tbl td {
-    border-bottom: none;
-  }
-  .tbl td:last-child {
-    border-bottom: 1px solid #e0e0e0;
+@media only screen and (max-width: tablet) {
+  .tbl-container {
+    margin: 0 12px !important;
+    width: auto !important;
   }
 }
-@media only screen and (max-width: 820px) {
-  .tbl > thead,
-.tbl tbody tr:first-child {
+@media only screen and (max-width: 1024px) {
+  .tbl__3-store.desktop {
     display: none;
   }
-  .tbl > tr,
-.tbl td {
-    display: block;
-  }
-  .tbl > tbody tr:not(:last-child) {
-    border-bottom: 2px solid #e0e0e0;
-  }
-  .tbl > tbody td {
-    padding-left: 50%;
-    position: relative;
-    font-family: "Open Sans", "Open Sans", Helvetica, Arial, sans-serif !important;
-  }
-  .tbl > tbody td > span {
-    font-family: "Open Sans", "Open Sans", Helvetica, Arial, sans-serif !important;
-  }
-  .tbl > tbody td:before {
-    position: absolute;
-    padding: 16px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    left: 0;
-    top: 50%;
-    bottom: 0;
-    width: 50%;
-    height: 100%;
-    content: attr(data-col-title);
-    transform: translate(0, -50%);
-    border-right: 1px solid #e0e0e0;
-    font-weight: bold;
-    font-family: "Open Sans", "Open Sans", Helvetica, Arial, sans-serif !important;
-  }
-  .tbl > tbody tr td:nth-of-type(odd) {
-    background-color: #f9fbff;
-  }
 }
-@media only screen and (max-width: mobile) {
-  .tbl > thead,
-.tbl tbody tr:first-child {
+@media only screen and (max-width: tablet) {
+  .tbl__3-store.desktop {
     display: none;
   }
-  .tbl > tr,
-.tbl td {
-    display: block;
+}
+.tbl__3-store.mobile {
+  display: none;
+  margin: auto;
+}
+@media only screen and (max-width: 1024px) {
+  .tbl__3-store.mobile {
+    display: table;
   }
-  .tbl > tbody tr:not(:last-child) {
-    border-bottom: 2px solid #e0e0e0;
+}
+@media only screen and (max-width: tablet) {
+  .tbl__3-store.mobile {
+    display: table;
   }
-  .tbl > tbody td {
-    padding-left: 50%;
-    position: relative;
-    font-family: "Open Sans", "Open Sans", Helvetica, Arial, sans-serif !important;
-  }
-  .tbl > tbody td > span {
-    font-family: "Open Sans", "Open Sans", Helvetica, Arial, sans-serif !important;
-  }
-  .tbl > tbody td:before {
-    position: absolute;
-    padding: 16px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    left: 0;
-    top: 50%;
-    bottom: 0;
-    width: 50%;
-    height: 100%;
-    content: attr(data-col-title);
-    transform: translate(0, -50%);
-    border-right: 1px solid #e0e0e0;
-    font-weight: bold;
-    font-family: "Open Sans", "Open Sans", Helvetica, Arial, sans-serif !important;
-  }
-  .tbl > tbody tr td:nth-of-type(odd) {
-    background-color: #f9fbff;
-  }
+}
+.tbl__4-col {
+  width: 100%;
+}
+.tbl__4-col-title {
+  padding: 16px 24px;
+  background: #ebeef8;
+  border: 1px solid #e0e0e0;
+}
+.tbl__4-col-dates {
+  background: #f9fbff;
+  width: 100%;
+  height: 64px;
+  display: inline-flex;
+  justify-content: space-evenly;
+}
+.tbl__4-col-date {
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px 0;
+  align-items: center;
 }
 .tbl__no-head {
   width: 100%;
@@ -7670,7 +7645,7 @@ body.mmactive {
   width: 100% !important;
   margin-bottom: 8px;
 }
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 1024px) {
   .tbl__m {
     display: flex;
     flex-direction: column;
@@ -7678,7 +7653,7 @@ body.mmactive {
     width: 100%;
   }
 }
-@media only screen and (max-width: mobile) {
+@media only screen and (max-width: tablet) {
   .tbl__m {
     display: flex;
     flex-direction: column;
@@ -7687,10 +7662,11 @@ body.mmactive {
   }
 }
 .tbl__m-title {
-  background-color: #e7eaf4;
+  background: #ebeef8;
   padding: 16px 24px;
   color: #161720;
   border: 1px solid #e0e0e0;
+  border-bottom: none;
 }
 .tbl__m-date {
   background-color: #ffffff;
