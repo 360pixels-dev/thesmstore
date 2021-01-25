@@ -4,6 +4,35 @@ $(document).ready(function() {
     const mRight = '<img src="./assets/images/icons/control-right.svg" alt="mRight">'
     const mLeft = '<img src="./assets/images/icons/control-left.svg" alt="mLeft">'
 
+
+    if ($('.tbl__set-col--m-store')) {
+        $('.m-store--right').click(function() {
+        
+            const table = document.querySelector('.tbl__set-col--m-store')
+            table.scrollBy(164, 0)
+        })
+    
+        $('.m-store--left').click(function() {
+            
+            const table = document.querySelector('.tbl__set-col--m-store')
+            table.scrollBy(-164, 0)
+        })
+    }
+
+    if ($('.tbl__set-col--m-dates')) {
+        $('.m-dates--right').click(function() {
+        
+            const table = document.querySelector('.tbl__set-col--m-dates')
+            table.scrollBy(164, 0)
+        })
+    
+        $('.m-dates--left').click(function() {
+            
+            const table = document.querySelector('.tbl__set-col--m-dates')
+            table.scrollBy(-164, 0)
+        })
+    }
+
     // INDEX CAROUSEL - BANNER
     window.addEventListener("load",function() {
         var slides = $('.main-carousel')

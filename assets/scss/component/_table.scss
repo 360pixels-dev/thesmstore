@@ -3,6 +3,10 @@
     table-layout: fixed;
     width: 1016px;
 
+    @include respond(mobile) {
+        width: 100% !important;
+    }
+
     & h4 {
         text-align: left;
     }
@@ -50,6 +54,16 @@
             width: auto !important;
             overflow-x: auto;
         }
+
+        & > .nav {
+            display: none;
+
+            @include respond(mobile) {
+                display: block;
+
+                float: right;
+            }
+        }
     }
 
     &__3-store {
@@ -94,6 +108,12 @@
         }
 
         &--4-col {
+            &.desktop {
+                @include respond(tablet) {
+                    display: none;
+                }
+            }
+
             & > .tbl__set-col-dates {
                 & > div {
                     width: 254px;
@@ -107,6 +127,12 @@
         }
 
         &--5-col {
+            &.desktop {
+                @include respond(tablet) {
+                    display: none;
+                }
+            }
+
             & > .tbl__set-col-dates {
                 & > div {
                     width: 203.2px;
@@ -120,6 +146,12 @@
         }
 
         &--6-col {
+            &.desktop {
+                @include respond(tablet) {
+                    display: none;
+                }
+            }
+
             & > .tbl__set-col-dates {
                 & > div {
                     width: 169.3px;
@@ -128,6 +160,50 @@
             & > .tbl__set-col-hours {
                 & > div {
                     width: 169.3px;
+                }
+            }
+        }
+
+        &--m-store {
+            display: none;
+
+            width: 327px;
+            margin: auto;
+
+            @include respond(mobile) {
+                display: block;
+            }
+
+            & > .tbl__set-col-dates {
+                & > div {
+                    width: 163.5px;
+                }
+            }
+            & > .tbl__set-col-hours {
+                & > div {
+                    width: 163.5px;
+                }
+            }
+        }
+
+        &--m-dates {
+            display: none;
+
+            width: 327px;
+            margin: auto;
+
+            @include respond(mobile) {
+                display: block;
+            }
+
+            & > .tbl__set-col-dates {
+                & > div {
+                    width: 163.5px;
+                }
+            }
+            & > .tbl__set-col-hours {
+                & > div {
+                    width: 163.5px;
                 }
             }
         }
