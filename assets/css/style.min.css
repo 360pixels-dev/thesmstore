@@ -5027,6 +5027,9 @@ body.mmactive {
     display: block;
   }
 }
+.banner-section--small > h1 {
+  display: inline-block;
+}
 .banner-section--all-blogs {
   background-image: url("../../assets/images/banner-all-blogs.jpg");
 }
