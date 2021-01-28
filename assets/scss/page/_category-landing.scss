@@ -227,9 +227,15 @@
 
     &__card-4-col {
         // flex: 1 1 254px;
+        // width: 254px;
         padding: 0;
         margin: 0 25px;
         transition: 0.3s ease-in;
+
+        & img {
+            width: 254px;
+            height: 254px;
+        }
 
         @include respond(mobile) {
             flex: 1 1 150px;
@@ -291,9 +297,15 @@
 
     &__card-3-col {
         // flex: 1 1 376px;
+        // width: 376px;
         padding: 0;
         margin: 0 24px;
         transition: 0.3s ease-in;
+
+        & img {
+            width: 376px;
+            height: 376px;
+        }
 
         @include respond(mobile) {
             flex: 1 1 150px;
@@ -354,7 +366,7 @@
     }
 
     &__card-5-item {
-        width: 376px;
+        // width: 376px;
         padding: 0;
         margin: 0 24px;
         transition: 0.3s ease-in;
@@ -364,6 +376,11 @@
         //     flex: 0;
         //     // margin-left: 2em;
         // }
+
+        & img {
+            width: 376px;
+            height: 376px;
+        }
 
         @include respond(mobile) {
             flex: 1 1 150px;
