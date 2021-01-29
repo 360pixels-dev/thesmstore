@@ -1962,6 +1962,9 @@ ul {
     display: none;
   }
 }
+.nav__upper .search-container {
+  display: none;
+}
 @media only screen and (max-width: 1024px) {
   .nav__upper .search-container {
     display: none;
@@ -6510,7 +6513,7 @@ body.mmactive {
 }
 .card--sale-md {
   height: 275px;
-  max-width: 607px;
+  width: 607px;
   display: inline-block;
 }
 .card--sale-md:nth-of-type(1) {
@@ -6765,12 +6768,14 @@ body.mmactive {
   .card--sale-text > h1 {
     font-size: 20px;
     line-height: 28px;
+    margin: 0;
   }
 }
 @media only screen and (max-width: mobile) {
   .card--sale-text > h1 {
     font-size: 20px;
     line-height: 28px;
+    margin: 0;
   }
 }
 .card--sale-text > a {
@@ -7313,7 +7318,7 @@ body.mmactive {
 .tbl {
   border-collapse: collapse;
   table-layout: fixed;
-  width: 1016px;
+  width: 100%;
 }
 @media only screen and (max-width: 820px) {
   .tbl {

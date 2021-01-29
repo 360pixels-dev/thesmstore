@@ -1,7 +1,7 @@
 .tbl {
     border-collapse: collapse;
     table-layout: fixed;
-    width: 1016px;
+    width: 100%;
 
     @include respond(mobile) {
         width: 100% !important;

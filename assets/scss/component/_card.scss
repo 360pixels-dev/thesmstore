@@ -484,7 +484,7 @@
 
     &-md {
         height: 275px;
-        max-width: 607px;
+        width: 607px;
         display: inline-block;
 
         &:nth-of-type(1) {
@@ -660,6 +660,7 @@
             @include respond(mobile) {
                 font-size: 20px;
                 line-height: 28px;
+                margin: 0;
             }
         }
 
