@@ -6,7 +6,7 @@ const mLeft = '<img src="/assets/images/icons/control-left.svg" alt="mLeft">'
 var useCardsAllData = [];
 var filterData = [];
 var filteredImages = [];
-let activeFilter = $('.activeFilter').text().toLowerCase();
+let activeFilter = $('.blog-filter-m').css("display") === "flex" ? $('.blog-filter-m.blog-filter-dropdown').children('select').val().toLowerCase() : $('.activeFilter').text().toLowerCase();
 
 function storeAllImageData(container) {
     var parent = document.getElementsByClassName(container)
@@ -43,7 +43,6 @@ function filterCarousel(container) {
                     if (child.nodeType === 1) {     
                         filterData.push(child)
                     }
-                    console.log(true)
                 } else {
                     if (child.nodeType === 1 && child.className.toLowerCase() === activeFilter) {     
                         filterData.push(child)
