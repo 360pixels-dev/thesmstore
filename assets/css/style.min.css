@@ -9893,6 +9893,18 @@ body.mmactive {
   margin-top: 30px;
   width: fit-content;
 }
+@media only screen and (max-width: 820px) {
+  .predictive-search__results > a {
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .predictive-search__results > a {
+    width: 100%;
+    justify-content: center;
+  }
+}
 
 .predictive-search::after {
   content: " ";
