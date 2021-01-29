@@ -16,8 +16,6 @@
     justify-content: center;
 
     @include respond(mobile) {
-        display: block;
-
         top: 66px;
         right: 12px;
 
