@@ -19,27 +19,58 @@
                     <h3 class="font-h3-caps">Real Beauty</h3>
                 </div>
 
-                <div class="magazine-reader__content">
-                    <img src="./assets/images/magazine1.png" alt="">
+                <div id="flipbook" class="magazine-reader__content">
 
-                    <div class="magazine-reader__nav">
+                        <img src="./assets/images/magazine1.png" alt="">
+
+            
+                        <img src="./assets/images/magazine1.png" alt="">
+
+                        <img src="./assets/images/magazine1.png" alt="">
+      
+
+      
+                        <img src="./assets/images/magazine1.png" alt="">
+     
+
+                    
+
+                    <!-- <div class="magazine-reader__nav">
                         <a class="magazine-reader__nav--prev disabled" href="#">
                             <img src="./assets/images/mr-button-left.png" alt="">
                         </a>
                         <a class="magazine-reader__nav--next"  href="#">
                             <img src="./assets/images/mr-button-right.png" alt="">
                         </a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
+
+            
+            
+
         </div> <!-- /wrapper -->
     </body>
+
+
 
     <!-- IMPORTS -->
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
-
+    <script src="assets/js/turn.min.js"></script>
+    <script src="assets/js/page-flip.browser.min.js"></script>
     <!-- CUSTOM JS -->
     <script src="assets/js/carousel.js"></script>
+
+    <script type="text/javascript">
+        $("#flipbook").turn({
+            gradients: true,
+            acceleration: true,
+            autoCenter: true
+        });
+
+        $("#flipbook").width(1224)
+        $("#flipbook").height(699)
+    </script>
 
 </html>

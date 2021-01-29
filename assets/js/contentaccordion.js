@@ -42,8 +42,6 @@ if (listFilter) {
                 }
             }
     
-            console.log()
-    
             accordionItems.forEach(item => {
                 item.addEventListener("load", event => {
                     console.log(item)
@@ -76,6 +74,30 @@ if (accordionHeaders) {
         })
     })
 }
+
+// For CTD -- temporary fix
+const ctdAccordionHeaders = document.querySelectorAll('.ctd-accordion__item-header')
+
+if (ctdAccordionHeaders) {
+    ctdAccordionHeaders.forEach(currentHeader => {
+        currentHeader.addEventListener("click", event => {
+    
+            // to close any open accordions
+            const openHeader = document.querySelector('.ctd-accordion__item-header.active')
+            if (openHeader && openHeader !== currentHeader) {
+                openHeader.classList.toggle("active") //removes "active" class
+                const openBody = openHeader.nextElementSibling;
+                openBody.style.maxHeight = 0;
+            }
+            currentHeader.classList.toggle("active")
+            const body = currentHeader.nextElementSibling;
+            currentHeader.classList.contains("active")
+                ? body.style.maxHeight = body.scrollHeight + "px"
+                : body.style.maxHeight = 0;
+        })
+    })
+}
+// /For CTD -- temporary fix
 
 $(document).ready(function() {
     $('.faq-accordion__header').click(function(e) {
