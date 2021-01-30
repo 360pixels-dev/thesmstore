@@ -22,14 +22,14 @@
         & > div {
             position: relative;
             width: 1400px;
-            height: 541px;
+            min-height: 541px;
             display: flex;
             padding: 160px 0 0 193px;
             margin: 0 auto;
 
             @include respond(tablet) {
                 padding: 160px 32px 49px 32px;
-                height: 593px;
+                min-height: 593px;
                 width: 100%;
             }
 
@@ -101,7 +101,7 @@
                     top: 230px;
                 }
 
-                & img {
+                & div > img {
                     height: 325px;
                     width: 262px;
                     margin-right: 16px;
