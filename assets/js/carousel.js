@@ -193,27 +193,12 @@ $(document).ready(function() {
     // GIFT WRAPPING - OWL CAROUSEL
     async function asyncCarouselExec() {
         // Gift Wrappers
-        // Desktop
-            await $('.gift-wrapping__slider-slides.desktop').owlCarousel({
+        // Desktop & Mobile
+            await $('.gift-wrapping__slider-slides').owlCarousel({
                 margin:16,
                 loop:true,
                 autoWidth:true,
                 items:1,
-                dots:false,
-                nav:true,
-                navText: [
-                    left, right
-                ]
-            })
-
-        // Mobile
-            await $('.gift-wrapping__slider-slides.mobile').owlCarousel({
-                margin:16,
-                loop:false,
-                rewind:true,
-                autoWidth:true,
-                items:1,
-                dots:false,
                 nav:true,
                 navText: [
                     left, right

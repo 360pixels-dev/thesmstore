@@ -22,14 +22,14 @@
         & > div {
             position: relative;
             width: 1400px;
-            min-height: 514px;
+            height: 541px;
             display: flex;
             padding: 160px 0 0 193px;
             margin: 0 auto;
 
             @include respond(tablet) {
                 padding: 160px 32px 49px 32px;
-                min-height: 593px;
+                height: 593px;
                 width: 100%;
             }
 
@@ -45,6 +45,7 @@
                 height: 165px;
                 position: relative;
                 margin-right: 64px;
+                z-index: 1;
 
                 @include respond(tablet) {
                     margin-top: 0;
@@ -73,7 +74,7 @@
             }
 
             &-slides {
-                display: flex;
+                // display: flex;
                 width: 100%;
                 position: relative;
 
@@ -100,7 +101,7 @@
                     top: 230px;
                 }
 
-                & > img {
+                & img {
                     height: 325px;
                     width: 262px;
                     margin-right: 16px;
