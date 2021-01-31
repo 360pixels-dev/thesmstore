@@ -141,6 +141,11 @@
             border: 10px solid $beauty-pink;
             padding: 14px;
         }
+
+        @include respond(mobile) {
+            margin: 0px auto 40px auto;
+            padding: 21px 21px 41px 21px;
+        }
     }
 
     &--freshmint {

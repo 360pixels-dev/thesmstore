@@ -799,7 +799,7 @@
         object-fit: cover;
         object-position: center;
         height: 220px;
-        position: absolute;
+        position: relative;
 
         @include respond(mobile) {
             display: block;

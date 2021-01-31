@@ -194,43 +194,49 @@ $(document).ready(function() {
     async function asyncCarouselExec() {
         // Gift Wrappers
         // Desktop & Mobile
-            await $('.gift-wrapping__slider-slides').owlCarousel({
-                margin:16,
-                loop:true,
-                autoWidth:true,
-                items:1,
-                nav:true,
-                navText: [
-                    left, right
-                ]
-            })
+            if ($('.gift-wrapping__slider-slides').length !== 0) {
+                await $('.gift-wrapping__slider-slides').owlCarousel({
+                    margin:16,
+                    loop:true,
+                    autoWidth:true,
+                    items:1,
+                    nav:true,
+                    navText: [
+                        left, right
+                    ]
+                })
+            }
 
         // Box Sizes
         // Desktop
-            await $('.box-sizes__slider-slides.desktop').owlCarousel({
-                margin:16,
-                loop:true,
-                autoWidth:true,
-                items:1,
-                nav:true,
-                navText: [
-                    left, right
-                ]
-            })
+            if ($('.box-sizes__slider-slides.desktop').length !== 0) {
+                await $('.box-sizes__slider-slides.desktop').owlCarousel({
+                    margin:16,
+                    loop:true,
+                    autoWidth:true,
+                    items:1,
+                    nav:true,
+                    navText: [
+                        left, right
+                    ]
+                })
+            }
 
         // Mobile
-            await $('.box-sizes__slider-slides.mobile').owlCarousel({
-                margin:16,
-                loop:false,
-                autoWidth:true,
-                items:1,
-                nav:true,
-                navText: [
-                    mLeft, mRight
-                ],
-                urlhashListener:true,
-                startPosition: 'URLHash'
-            })
+            if ($('.box-sizes__slider-slides.mobile').length !== 0) {
+                await $('.box-sizes__slider-slides.mobile').owlCarousel({
+                    margin:16,
+                    loop:false,
+                    autoWidth:true,
+                    items:1,
+                    nav:true,
+                    navText: [
+                        mLeft, mRight
+                    ],
+                    urlhashListener:true,
+                    startPosition: 'URLHash'
+                })
+            }
     }
 
     asyncCarouselExec()
@@ -294,6 +300,46 @@ $(document).ready(function() {
                 left, right
             ]
         })
+    }
+
+    // PRESS RELEASE - FEATURED PRESS
+    if ($('.quiz-carousel__products').length !== 0) {
+        $('.quiz-carousel__products').owlCarousel({
+            margin:32,
+            loop:true,
+            autoWidth:true,
+            nav:true,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true,
+                    navText: [
+                        mLeft, mRight
+                    ],
+                },
+                822:{
+                    items:2,
+                    nav:true,
+                    navText: [
+                        left, right
+                    ],
+                },
+                1024:{
+                    items:4,
+                    nav:true,
+                    navText: [
+                        left, right
+                    ],
+                }
+            }
+        })
+
+        // to fix disabled nav
+        $('.owl-carousel').find('.owl-nav').removeClass('disabled');
+        $('.owl-carousel').on('changed.owl.carousel', function(event) {
+            $(this).find('.owl-nav').removeClass('disabled');
+        });
     }
 })
 
