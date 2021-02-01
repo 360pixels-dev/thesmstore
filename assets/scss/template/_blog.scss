@@ -62,9 +62,23 @@
         }
 
         & h5,
-        & a,
-        & img {
+        & a {
             width: 100%;
+        }
+
+        & img {
+            max-width: 288px;
+            max-height: 375px;
+
+            @include respond(mobile) {
+                max-width: 160px;
+                max-height: 208.33px;
+            }
+
+            @include respond(320px) {
+                max-width: 148px;
+                max-height: 192.7px;
+            }
         }
 
         &:nth-child(2n) {
