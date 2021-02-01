@@ -314,6 +314,8 @@ $(document).ready(function() {
                 0:{
                     items:1,
                     nav:true,
+                    autoWidth:true,
+                    center:true,
                     navText: [
                         mLeft, mRight
                     ],

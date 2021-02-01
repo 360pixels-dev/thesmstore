@@ -365,6 +365,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
 
     padding: 48px 0 24px 0;
 
@@ -373,6 +374,10 @@
         display: flex;
         margin: 14px 0 55px 0;
         max-width: 1056px;
+
+        @include respond(mobile) {
+            max-width: 240px;
+        }
 
         & .owl-nav {
             position: absolute;
