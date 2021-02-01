@@ -29,13 +29,13 @@
                         </div>
                     </div>
                 </nav>
-
+    
                 <nav class="nav__upper nav__upper--default nav__upper--index container-fluid">
-
+    
                     <div class="logo">
                         <img src="./assets/images/logo.svg" alt="SM Store">
                     </div>
-
+    
                     <div class="menu">
                         <ul class="main-navigation">
                             <li class="nav__upper-menu-item"><a href="#">Categories</a>
@@ -122,14 +122,14 @@
                             </li>
                         </ul>
                     </div>
-
+    
                     <!-- <div id="mobile-menu-button" class="mobile-menu-button">
                         <ul>
                             <li><a href="#" class="font-headline" ><img src="./assets/images/icons/hamburger.svg" alt=""></a></li>
                         </ul>
                     </div> -->
-
-
+    
+    
                     <div class="mobile-logo">
                         <img src="./assets/images/logo.svg" alt="SM Store">
                     </div>
@@ -142,7 +142,7 @@
                             </button>
                         </div>
                     </div>
-
+    
                     <div class="mobile-search-container">
                         <div class="mobile-search-main">
                             <input class="mobile-search-term" type="search" placeholder="Search">
@@ -151,15 +151,15 @@
                             </button>
                         </div>
                     </div>
-
+    
                     <div class="mobile-search-button" onclick="toggleSearch()">
                         <img src="./assets/images/search.svg" style="fill: red" alt="">
                     </div>
-
+    
                 </nav>
-
+    
                 
-
+    
                 <nav class="nav__lower nav_lower--default nav__lower--index container-fluid nav-blue">
                     <div class="store-selector">
                         <p class="white">
@@ -168,7 +168,7 @@
                             <div onclick="openStoreSelector()" style="cursor: pointer;"><span class="white font-headline">The SM Store Cubao</span><img id="store-selector-arrow" src="./assets/images/angle-down.svg" alt=""></div>
                         </p>
                     </div>
-
+    
                     <div class="menu">
                         <ul class="nav__lower-menu">
                             <li class="nav__lower-menu-item">
@@ -179,7 +179,7 @@
                             </li>
                         </ul>
                     </div>
-
+    
                     <div class="mobile-store-selector" onclick="openStoreSelector()">
                         <p>
                             <span class="white normal-text">Please select a store</span>
@@ -219,7 +219,7 @@
                         </li>
                     </ul>
                 </div>
-
+    
                 <!-- <div id="mobile-menu">
                     <ul id="mobile-menu-list" class="mobile_menu">
                         <li><a href="#">Categories <img class="arrow-right" src="./assets/images/black-arrow-right.svg" alt=""></a>
@@ -299,7 +299,7 @@
                         </li>
                     </ul>
                     
-
+    
                     <ul id="mobile-menu-services-list" class="mobile-menu-item submenu">
                         <li style="padding-left: 12px;">
                             <div onclick="toggleServicesSubMenu()"><img src="./assets/images/icons/menu-dropdown-back-icon.svg" alt="" > <span class="font-eyebrow-medium" style="color: #403f47; margin-left: 12px;">Back</span></div>
@@ -311,7 +311,7 @@
                         <li><a href="#">Gift Wrapping</a></li>
                         <li><a href="#">Prepaid Reloading Services</a></li>
                     </ul>
-
+    
 
                     <ul id="mobile-menu-whatsnew-list" class="mobile-menu-item submenu">
                         <li style="padding-left: 12px;"><div onclick="toggleWhatsNewSubMenu();"><img src="./assets/images/icons/menu-dropdown-back-icon.svg" alt="" > <span class="font-eyebrow-medium" style="color: #403f47; margin-left: 12px;">Back</span></div></li>
@@ -422,9 +422,19 @@
 
             <div class="w3-overlay w3-animate-opacity" onclick="closeStoreSelector()" style="cursor: pointer; z-index: 997;" id="store-selector-overlay"></div>
             <!-- /STORE SELECTOR -->
-            
-            <section class="banner-section banner-section--small banner-section--all-magazine">
-                <div class="banner-section__hr"></div>
+
+            <section class="banner-section banner-section--small" style="padding: 0">
+                <!-- <div class="banner__shadow-gradient"></div> -->
+
+                <!-- <div class="banner-section__hr"></div>
+
+                <nav class="banner-section__breadcrumbs" style="margin-top: 20px;">
+                    <a href="#">The SM Store</a>
+                    <a href="#">All Articles</a>
+                </nav> -->
+
+                <img class="desktop-banner" src="./assets/images/banner-all-magazine.jpg" alt="">
+                <img class="mobile-banner" src="./assets/images/banner-all-magazine-m.jpg" alt="">
 
                 <nav class="banner-section__breadcrumbs">
                     <a href="#">The SM Store</a>
@@ -482,13 +492,6 @@
 
                         <div class="blog__item col-4">
                             <a href="#"><img src="./assets/images/press-blog7.jpg" alt="blog title"> </a>
-                            <h5 class="font-h5--uppercase">FASHION</h5>  
-                            <a class="link__heading" href="#"><h4 class="font-h4">Real Beauty</h4></a>
-                            <a class="btn--text-link font-cta" href="#">Read</a>
-                        </div> 
-
-                        <div class="blog__item blog__item--align col-4">
-                            <a href="#"><img src="./assets/images/press-blog8.jpg" alt="blog title"> </a>
                             <h5 class="font-h5--uppercase">FASHION</h5>  
                             <a class="link__heading" href="#"><h4 class="font-h4">Real Beauty</h4></a>
                             <a class="btn--text-link font-cta" href="#">Read</a>

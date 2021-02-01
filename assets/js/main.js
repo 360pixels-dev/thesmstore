@@ -285,40 +285,42 @@ $(document).ready(function () {
     });
 
     // FEATURED PRODUCT CAROUSEL
-    $('.delivery__featured-slider').slick({
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 3,
-        variableWidth: true,
-        responsive: [
-            {
-                breakpoint: 1345,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 2,
-                    infinite: true,
-                    variableWidth: true,
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    variableWidth: true,
-                }
-            },
-        ]
-    });
-
-    $('.delivery__featured-controls--left').click(function () {
-        $('.slick-prev').click();
-    });
-
-    $('.delivery__featured-controls--right').click(function () {
-        $('.slick-next').click();
-    });
+    if ($('.delivery__featured-slider').length !== 0) {
+        $('.delivery__featured-slider').slick({
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 3,
+            variableWidth: true,
+            responsive: [
+                {
+                    breakpoint: 1345,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 2,
+                        infinite: true,
+                        variableWidth: true,
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        variableWidth: true,
+                    }
+                },
+            ]
+        });
+    
+        $('.delivery__featured-controls--left').click(function () {
+            $('.slick-prev').click();
+        });
+    
+        $('.delivery__featured-controls--right').click(function () {
+            $('.slick-next').click();
+        });
+    }
 
 
     // TOGGLE FILTER ACCORDION

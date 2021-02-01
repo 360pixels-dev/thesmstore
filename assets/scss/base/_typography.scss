@@ -382,6 +382,14 @@ p {
     &-center {
         text-align: center;
     }
+
+    &-white {
+        color: $white;
+    }
+
+    &-black {
+        color: $black;
+    }
 }
 
 .content {

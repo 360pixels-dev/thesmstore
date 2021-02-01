@@ -149,7 +149,8 @@
 
             @include respond(tablet) {
                 position: relative;
-                margin: 0 0 24px 0;
+                margin: 0 100vw 24px 0;
+                flex: 0 0 100%;
                 // top: 20px;
             }
 

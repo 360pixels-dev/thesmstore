@@ -272,20 +272,20 @@ $(document).ready(function() {
         })
     }
 
-    // SM CARES - FEATURED ADVOCACY
-    if ($('.featured-content__slider').length !== 0) {
-        $('.featured-content__slider').owlCarousel({
-            margin:0,
-            loop:false,
-            autoWidth:true,
-            dots:false,
-            items:1,
-            nav:true,
-            navText: [
-                left, right
-            ]
-        })
-    }
+    // // SM CARES - FEATURED ADVOCACY
+    // if ($('.featured-content__slider').length !== 0) {
+    //     $('.featured-content__slider').owlCarousel({
+    //         margin:0,
+    //         loop:false,
+    //         autoWidth:true,
+    //         dots:false,
+    //         items:1,
+    //         nav:true,
+    //         navText: [
+    //             left, right
+    //         ]
+    //     })
+    // }
 
     // PRESS RELEASE - FEATURED PRESS
     if ($('.featured-press__slider').length !== 0) {
@@ -342,6 +342,89 @@ $(document).ready(function() {
         $('.owl-carousel').on('changed.owl.carousel', function(event) {
             $(this).find('.owl-nav').removeClass('disabled');
         });
+    }
+
+    // SM CARES - FEATURED CONTENT
+
+    var featuredContents = []
+
+     
+    $('.featured-content__details').each(function() {
+        var $this = $(this);
+
+        function convertRGB(rgb) {
+            if (/^#[0-9A-F]{6}$/i.test($this.find('span.title2').text())) return rgb;
+        
+            rgb = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
+            function hex(x) {
+                return ("0" + parseInt(x).toString(16)).slice(-2);
+            }
+            return "#" + hex(rgb[1]) + hex(rgb[2]) + hex(rgb[3]);
+        }
+
+        featuredContents.push({
+            isActive : false,
+            title1 : $this.find('span.title1').text(),
+            title1color : convertRGB($this.find('span.title1').css("color")),
+            title2 : $this.find('span.title2').text(),
+            title2color : convertRGB($this.find('span.title2').css("color")),
+            description : $this.find('p').text(),
+            pageUrl : ''
+        });
+    });
+
+    for (let i = 0; i < featuredContents.length; i++) {
+        featuredContents[i].image = $('.featured-content__slider').children()[i].src
+    }
+
+    console.log(featuredContents)
+
+    populateFeaturedContentDetails();
+    // populateFeaturedContentSlider();
+    
+    $('.featured-content__controls .controls__arrow').click(function() {
+        var dir = $(this).attr('class').split('--')[1];
+
+        // REARRANGE EVENT ARRAY
+        featuredContents[0].isActive = false;
+        if(dir == 'right') { //to the right
+            featuredContents.push(featuredContents.shift());
+        }
+        else { //to the left
+            featuredContents.unshift(featuredContents.pop());
+        }
+        featuredContents[0].isActive = true;
+    
+        populateFeaturedContentDetails(); // CHANGE EVENT DETAILS
+        populateFeaturedContentSlider(); // REARRANGE EVENT SLIDER
+
+    });
+
+    console.log(featuredContents)
+
+    function populateFeaturedContentDetails() {
+        $('.featured-content__details').html(`
+        <h1 class="font-hero">
+            <span class="title1" style="color: ${featuredContents[0].title1color};">${featuredContents[0].title1}</span>
+            <span class="title2" style="color: ${featuredContents[0].title2color};">${featuredContents[0].title2}</span>
+        </h1>
+        <p>${featuredContents[0].description}</p>
+        <a href="" class="btn--primary font-cta">View</a>
+        `);
+    }
+
+    function populateFeaturedContentSlider() {
+        // $('.featured-content__slider').html(`
+        // <img src="${featuredContents[0].image}" alt="">
+        // <img src="${featuredContents[1].image}" alt="">
+        // `);
+        $('.featured-content__slider').html('');
+        for(x = 0; x < featuredContents.length; x++) {
+            $('.featured-content__slider').append(`
+                <img src="${featuredContents[x].image}" alt="">
+                <img src="${featuredContents[x+1].image}" alt="">
+            `);
+        }
     }
 })
 
