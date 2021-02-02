@@ -23639,6 +23639,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 .contacts__success > div {
   margin: 42px 0;
+  width: 100%;
 }
 .contacts__success > div > p:first-child {
   color: #88898f;
@@ -23648,6 +23649,10 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 .contacts__success p {
   text-align: center;
+}
+.contacts__success > p:last-child {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 26px;
 }
 .contacts-alt {
   width: 100%;
