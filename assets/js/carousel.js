@@ -362,15 +362,19 @@ $(document).ready(function() {
             return "#" + hex(rgb[1]) + hex(rgb[2]) + hex(rgb[3]);
         }
 
+
         featuredContents.push({
             isActive : false,
             title1 : $this.find('span.title1').text(),
             title1color : convertRGB($this.find('span.title1').css("color")),
             title2 : $this.find('span.title2').text(),
             title2color : convertRGB($this.find('span.title2').css("color")),
+            title3 : $this.find('span.title3').length !== 0 ? $this.find('span.title3').text() : null,
+            title3color : $this.find('span.title3').length !== 0 ? convertRGB($this.find('span.title3').css("color")): null,
             description : $this.find('p').text(),
             pageUrl : ''
         });
+
     });
 
     for (let i = 0; i < featuredContents.length; i++) {
@@ -407,6 +411,7 @@ $(document).ready(function() {
         <h1 class="font-hero">
             <span class="title1" style="color: ${featuredContents[0].title1color};">${featuredContents[0].title1}</span>
             <span class="title2" style="color: ${featuredContents[0].title2color};">${featuredContents[0].title2}</span>
+            ${featuredContents[0].title3 !== null ? (`<span class="title3" style="color: ${featuredContents[0].title3color};">${featuredContents[0].title3}</span>`) : ''}
         </h1>
         <p>${featuredContents[0].description}</p>
         <a href="" class="btn--primary font-cta">View</a>
