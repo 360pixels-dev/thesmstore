@@ -239,7 +239,7 @@
 
         @include respond(mobile) {
             flex: 1 1 150px;
-            width: 150px;
+            max-width: 150px;
             margin: 0 8px;
 
             & img {
@@ -250,7 +250,7 @@
 
         @include respond(320px) {
             flex: 1 1 132px;
-            width: 132px;
+            max-width: 132px;
 
             & img {
                 width: 132px;
@@ -309,7 +309,7 @@
 
         @include respond(mobile) {
             flex: 1 1 150px;
-            width: 150px;
+            max-width: 150px;
             margin: 0 8px;
 
             & img {
@@ -320,7 +320,7 @@
 
         @include respond(320px) {
             flex: 1 1 132px;
-            width: 132px;
+            max-width: 132px;
 
             & img {
                 width: 132px;
@@ -384,7 +384,7 @@
 
         @include respond(mobile) {
             flex: 1 1 150px;
-            width: 150px;
+            max-width: 150px;
             margin: 0 8px;
 
             & img {
@@ -395,7 +395,7 @@
 
         @include respond(320px) {
             flex: 1 1 132px;
-            width: 132px;
+            max-width: 132px;
 
             & img {
                 width: 132px;
