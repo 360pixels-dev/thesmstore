@@ -91,6 +91,8 @@
         }
 
         & > h2 {
+            padding-top: 40px;
+
             @include respond(mobile) {
                 font-size: 24px;
                 line-height: 32px;
@@ -126,6 +128,18 @@
 
         & > img {
             margin-bottom: 25px;
+        }
+
+        & > div {
+            margin: 42px 0;
+
+            & > p:first-child {
+                color: $gray;
+            }
+
+            & > .ref-num {
+                margin-top: 8px;
+            }
         }
 
         & p {
@@ -214,8 +228,12 @@
 
                 & > span {
                     color: $dark-gray;
-                    margin-bottom: 32px;
+                    margin-bottom: 8px;
                     text-align: center;
+
+                    @include respond(mobile) {
+                        margin-bottom: 0;
+                    }
 
                     & > img {
                         vertical-align: middle;

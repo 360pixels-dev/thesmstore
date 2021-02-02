@@ -68,16 +68,13 @@
 
         & img {
             max-width: 288px;
-            max-height: 375px;
 
             @include respond(mobile) {
                 max-width: 160px;
-                max-height: 208.33px;
             }
 
             @include respond(320px) {
                 max-width: 148px;
-                max-height: 192.7px;
             }
         }
 
@@ -454,8 +451,19 @@
 }
 
 .sm-cares-blog {
-    max-height: 2000px;
+    max-height: max-content;
     position: relative;
+
+    & .gradient.gradient--white {
+        background: transparent;
+        position: relative;
+        height: max-content;
+        margin-bottom: 100px;
+
+        @include respond(mobile) {
+            margin-bottom: 50px;
+        }
+    }
 
     &__content {
         padding: 66px 0;
