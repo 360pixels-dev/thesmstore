@@ -192,7 +192,7 @@
             align-items: center;
 
             @include respond(tablet) {
-                margin-bottom: 24px;
+                margin-bottom: 0;
             }
 
             & > h2 {
