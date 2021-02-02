@@ -1695,6 +1695,11 @@
             @include respond(tablet) {
                 width: 100%;
             }
+
+            & > img {
+                vertical-align: middle;
+                margin-right: 10px;
+            }
         }
     }
 }

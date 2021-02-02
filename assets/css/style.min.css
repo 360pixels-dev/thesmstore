@@ -26314,6 +26314,10 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
     width: 100%;
   }
 }
+.free-wrapping-note > div > p > img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
 
 .signup {
   width: 100%;
