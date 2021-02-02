@@ -190,6 +190,7 @@
             justify-content: center;
             margin-bottom: 32px;
             align-items: center;
+            text-align: center;
 
             @include respond(tablet) {
                 margin-bottom: 0;
