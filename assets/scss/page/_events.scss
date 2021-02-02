@@ -122,13 +122,26 @@
 
         & .big-image {
             position: relative;
-            height: 100%;
+            height: auto;
             z-index: 50;
             width: 1224px;
             left: 50%;
             right: auto;
             transform: translate(-50%, 0);
             margin: 40px 0;
+
+            @include respond(tablet) {
+                width: 100vw;
+
+                & > img {
+                    width: inherit;
+                }
+            }
+
+            @include respond(mobile) {
+                max-height: 171px;
+                margin-bottom: 15px;
+            }
         }
 
         & .get-direction-text {
@@ -140,21 +153,6 @@
             @include respond(tablet) {
                 position: relative;
                 margin: 16px 0 0 24px;
-            }
-        }
-
-        & .btn--primary {
-            color: $black;
-            border: 1px solid $black;
-
-            &:hover {
-                color: $white;
-                background-color: $black;
-            }
-
-            &:nth-of-type(2) {
-                color: $white;
-                margin-left: 12px;
             }
         }
 
@@ -187,30 +185,14 @@
                 margin-bottom: 17px;
             }
 
-            & > .divider {
-                border-left: 1px solid #e0e0e0;
-                height: 130px;
-                display: block;
-                width: 1px;
-
-                position: relative;
-                left: 46.5%;
-                top: -135px;
-            }
-
-            & > div {
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-
-                max-height: 200px;
+            & > .itinerary {
                 width: 100%;
 
-                & > p {
-                    width: 341px;
-                    margin-bottom: 18px;
+                & > .schedule {
+                    display: flex;
 
-                    & > span {
+                    & > .timeblock {
+                        width: fit-content;
                         margin-right: 12px;
                     }
                 }
@@ -264,6 +246,36 @@
             display: flex;
             flex-direction: column;
             position: relative;
+
+            & > .buttons {
+                @include respond(mobile) {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    align-items: center;
+
+                    & button {
+                        width: fit-content;
+
+                        color: $black;
+                        border: 1px solid $black;
+
+                        &:hover {
+                            color: $white;
+                            background-color: $black;
+                        }
+
+                        &:nth-of-type(2) {
+                            color: $white;
+                            margin-left: 12px;
+
+                            @include respond(mobile) {
+                                margin-left: 0;
+                                margin-bottom: 12px;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 

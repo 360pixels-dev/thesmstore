@@ -130,12 +130,17 @@
 
     & > p:first-child {
         font-weight: bold !important;
+
+        @include respond(mobile) {
+            font-size: 12px;
+            line-height: 16.34px;
+        }
     }
 
     @include respond(mobile) {
         margin: -124px 0 40px 0;
         width: 100% !important;
-        padding: 20px;
+        padding: 15px;
     }
 
     &--pink {
@@ -147,6 +152,8 @@
         }
 
         @include respond(mobile) {
+            border: 10px solid $beauty-pink;
+
             margin: 0px auto 40px auto;
             padding: 21px 21px 41px 21px;
         }
@@ -154,18 +161,34 @@
 
     &--freshmint {
         border: 15px solid $freshmint;
+
+        @include respond(mobile) {
+            border: 10px solid $freshmint;
+        }
     }
 
     &--pacific {
         border: 15px solid $pacific;
+
+        @include respond(mobile) {
+            border: 10px solid $pacific;
+        }
     }
 
     &--yolk {
         border: 15px solid $yolk;
+
+        @include respond(mobile) {
+            border: 10px solid $yolk;
+        }
     }
 
     &--blue {
         border: 15px solid $blue;
+
+        @include respond(mobile) {
+            border: 10px solid $blue;
+        }
     }
 
     &--lemon {
@@ -176,6 +199,8 @@
         }
 
         @include respond(mobile) {
+            border: 10px solid $lemon;
+
             & > h1 {
                 font-size: 24px;
                 line-height: 32px;
@@ -207,6 +232,7 @@
 
         @include respond(mobile) {
             padding: 21px;
+            border: 10px solid $dark-orange;
 
             & > h1 {
                 font-size: 24px;
