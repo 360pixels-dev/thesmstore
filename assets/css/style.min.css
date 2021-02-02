@@ -11925,6 +11925,9 @@ header {
   list-style-type: disc;
   margin-left: 12px;
 }
+.container-colored > p:first-child {
+  font-weight: bold !important;
+}
 @media only screen and (max-width: 820px) {
   .container-colored {
     margin: -124px 0 40px 0;
@@ -20570,11 +20573,13 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 @media only screen and (max-width: 1024px) {
   .events-fl .container-colored > h1 {
     font-size: 50px;
+    line-height: 58px;
   }
 }
 @media only screen and (max-width: tablet) {
   .events-fl .container-colored > h1 {
     font-size: 50px;
+    line-height: 58px;
   }
 }
 @media only screen and (max-width: 820px) {
@@ -20594,12 +20599,12 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 .events-fl .container-colored > h1 > .container-colored__h1--block {
   margin-left: 120px;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 820px) {
   .events-fl .container-colored > h1 > .container-colored__h1--block {
     margin-left: 0px;
   }
 }
-@media only screen and (max-width: tablet) {
+@media only screen and (max-width: mobile) {
   .events-fl .container-colored > h1 > .container-colored__h1--block {
     margin-left: 0px;
   }

@@ -101,6 +101,7 @@
 
                 @include respond(tablet) {
                     font-size: 50px;
+                    line-height: 58px;
                 }
 
                 @include respond(mobile) {
@@ -112,7 +113,7 @@
                 & > .container-colored__h1--block {
                     margin-left: 120px;
 
-                    @include respond(tablet) {
+                    @include respond(mobile) {
                         margin-left: 0px;
                     }
                 }
