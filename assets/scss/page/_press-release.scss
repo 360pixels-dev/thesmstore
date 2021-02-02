@@ -1,11 +1,24 @@
 .press-release {
+    & .text-container {
+        padding: 62px 80px;
+        max-width: 857px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
     & .container-colored {
         & > h1 {
             letter-spacing: 4px;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            text-align: left;
+            width: fit-content;
 
             @include respond(tablet) {
                 font-size: 50px;
-                line-height: 45px;
+                line-height: 58px;
             }
 
             @include respond(mobile) {
@@ -17,7 +30,7 @@
             & > .container-colored__h1--block {
                 margin-left: 120px;
 
-                @include respond(tablet) {
+                @include respond(mobile) {
                     margin-left: 0px;
                 }
             }
@@ -44,6 +57,10 @@
         & > img {
             width: 100%;
             margin-bottom: 16px;
+        }
+
+        & > .text-container {
+            top: -16px;
         }
     }
 

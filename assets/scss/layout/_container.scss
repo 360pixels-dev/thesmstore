@@ -138,7 +138,7 @@
     }
 
     @include respond(mobile) {
-        margin: -124px 0 40px 0;
+        margin: 0 0 40px 0;
         width: 100% !important;
         padding: 15px;
     }
@@ -188,6 +188,14 @@
 
         @include respond(mobile) {
             border: 10px solid $blue;
+        }
+    }
+
+    &--cerulean {
+        border: 15px solid $cerulean;
+
+        @include respond(mobile) {
+            border: 10px solid $cerulean;
         }
     }
 
