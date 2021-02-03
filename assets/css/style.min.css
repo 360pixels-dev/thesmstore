@@ -12071,11 +12071,13 @@ header {
 @media only screen and (max-width: 820px) {
   .container-colored--violet {
     border: 10px solid #b4278c;
+    margin-bottom: 0;
   }
 }
 @media only screen and (max-width: mobile) {
   .container-colored--violet {
     border: 10px solid #b4278c;
+    margin-bottom: 0;
   }
 }
 .container-colored--lemon {
@@ -20827,6 +20829,23 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   .events-fl .get-direction-text {
     position: relative;
     margin: 16px 0 0 24px;
+  }
+}
+.events-fl .store-branches {
+  position: relative;
+  width: 100%;
+  background: #ffffff;
+  z-index: 20;
+  margin-top: -120px;
+}
+@media only screen and (max-width: 820px) {
+  .events-fl .store-branches {
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .events-fl .store-branches {
+    margin-top: 0;
   }
 }
 .events-fl ol {

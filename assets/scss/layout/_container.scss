@@ -204,6 +204,7 @@
 
         @include respond(mobile) {
             border: 10px solid $violet;
+            margin-bottom: 0;
         }
     }
 

@@ -156,6 +156,19 @@
             }
         }
 
+        & .store-branches {
+            position: relative;
+            width: 100%;
+            background: $white;
+            z-index: 20;
+
+            margin-top: -120px;
+
+            @include respond(mobile) {
+                margin-top: 0;
+            }
+        }
+
         & ol {
             margin-top: 16px;
             margin-left: 20px;
