@@ -9167,12 +9167,27 @@ body.mmactive {
 
 .section-quiz {
   background-color: #f9fbff;
+  margin-top: 88px !important;
+}
+.section-quiz .container-quiz {
+  padding: 35px 0;
+}
+@media only screen and (max-width: 1024px) {
+  .section-quiz {
+    margin-top: 56px !important;
+  }
+}
+@media only screen and (max-width: tablet) {
+  .section-quiz {
+    margin-top: 56px !important;
+  }
 }
 
 .quiz-progress {
   width: 809px;
   margin: auto;
   background-color: #fdbfce;
+  margin-top: 48px;
   margin-bottom: 16px;
 }
 @media only screen and (max-width: 976px) {
@@ -9238,7 +9253,6 @@ body.mmactive {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 100px;
 }
 @media only screen and (max-width: 976px) {
   .quiz-grid {

@@ -56,12 +56,22 @@
 
 .section-quiz {
     background-color: $light-periwinkle;
+    margin-top: 88px !important;
+
+    & .container-quiz {
+        padding: 35px 0;
+    }
+
+    @include respond(tablet) {
+        margin-top: 56px !important;
+    }
 }
 
 .quiz-progress {
     width: 809px;
     margin: auto;
     background-color: $rosa;
+    margin-top: 48px;
     margin-bottom: 16px;
 
     @include respond(976px) {
@@ -127,7 +137,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 100px;
+    // margin-bottom: 100px;
 
     @include respond(976px) {
         width: 100%;
