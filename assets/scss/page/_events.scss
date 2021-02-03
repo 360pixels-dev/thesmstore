@@ -162,7 +162,7 @@
             background: $white;
             z-index: 20;
 
-            margin-top: -120px;
+            margin-top: -80px;
 
             @include respond(mobile) {
                 margin-top: 0;
