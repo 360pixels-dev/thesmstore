@@ -329,6 +329,47 @@
     }
 }
 
+.featured-voucher {
+    display: flex;
+    justify-content: center;
+    max-height: max-content;
+
+    @include respond(mobile) {
+        flex-direction: column;
+    }
+
+    &__image {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+
+        max-width: 286px;
+
+        & > img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__details {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+
+        max-width: 312px;
+
+        margin-left: 51px;
+
+        & > p {
+            font-weight: normal;
+        }
+
+        @include respond(mobile) {
+            margin-left: 0;
+        }
+    }
+}
+
 .voucher {
     width: 1016px;
     margin: auto;

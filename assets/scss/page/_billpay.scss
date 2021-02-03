@@ -25,6 +25,43 @@
                 margin-bottom: 32px;
                 text-align: center;
             }
+
+            & .table-split {
+                width: 100%;
+
+                display: flex;
+                justify-content: space-between;
+
+                @include respond(mobile) {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                }
+            }
+
+            & .straight-table {
+                width: 100%;
+
+                padding: 32px 24px;
+
+                @include respond(mobile) {
+                    padding: 24px 32px;
+                }
+
+                & > ul {
+                    min-height: min-content;
+                    column-fill: auto;
+                    column-count: 6;
+
+                    & > li {
+                        margin-bottom: 16px;
+                    }
+
+                    @include respond(mobile) {
+                        column-count: 2;
+                    }
+                }
+            }
         }
 
         &-search {
@@ -65,6 +102,25 @@
         margin-bottom: 32px;
         box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
 
+        &.half {
+            display: inline-flex;
+
+            width: 48%;
+            align-self: flex-start;
+
+            & > .billpay__category-content ul {
+                column-count: 3;
+            }
+
+            @include respond(mobile) {
+                width: 100%;
+
+                & > .billpay__category-content ul {
+                    column-count: 2;
+                }
+            }
+        }
+
         @include respond(mobile) {
             margin-bottom: 0;
         }
@@ -96,6 +152,10 @@
             padding: 0 24px;
             justify-content: space-between;
 
+            &.half {
+                width: 50%;
+            }
+
             @include respond(mobile) {
                 height: 60px;
                 padding: 0 19px;
@@ -117,6 +177,10 @@
         &-content {
             padding: 32px 24px;
             background-color: $white;
+
+            &.half {
+                width: 50%;
+            }
 
             @include respond(mobile) {
                 padding: 24px 32px;
