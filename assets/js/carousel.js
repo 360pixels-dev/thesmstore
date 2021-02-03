@@ -381,8 +381,6 @@ $(document).ready(function() {
         featuredContents[i].image = $('.featured-content__slider').children()[i].src
     }
 
-    console.log(featuredContents)
-
     populateFeaturedContentDetails();
     // populateFeaturedContentSlider();
     

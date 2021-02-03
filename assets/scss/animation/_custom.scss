@@ -1,8 +1,8 @@
-@mixin  hide {
-   display: inline;
+@mixin hide {
+    display: inline;
 }
 
-@mixin  show {
+@mixin show {
     visibility: show;
 }
 
@@ -12,19 +12,31 @@
     animation-timing-function: ease;
 }
 
-@mixin  opacityFillMode {
+@mixin opacityFillMode {
     opacity: 0;
     animation-fill-mode: forwards !important;
 }
 
+@media screen and (max-width: 1366px) and (min-width: 1280px) {
+    body {
+        zoom: 0.9;
+    }
 
+    .banner-section--small .desktop-banner {
+        width: 100%;
+    }
+
+    .about-section__desktop-container {
+        width: 100%;
+    }
+}
 
 .animated-logo {
     position: absolute;
     //top: 47px;
     //left: 25px;
-    top:45%;
-    left:45%;
+    top: 45%;
+    left: 45%;
     z-index: 99;
 
     animation-name: moveFromCenter;
@@ -32,21 +44,16 @@
     animation-delay: 0.5s;
     animation-fill-mode: forwards;
 
-
     &__image {
-        
-
-        @media only screen and (max-width: 1024px){
+        @media only screen and (max-width: 1024px) {
             width: 175px;
         }
-    
     }
 
-    
     @include respond(mobile) {
-        top:48%;
-        left:50%;
-      }
+        top: 48%;
+        left: 50%;
+    }
 }
 
 .moiveInLeft {
@@ -95,26 +102,21 @@
     animation-name: moveInUp;
     animation-duration: 0.2s;
     animation-delay: 0.2s;
-    
 }
 
 .fade-up {
     @include opacityFillMode();
     animation-name: fadeUp;
     animation-duration: 0.3s;
-   // animation-delay: 0.2s;
+    // animation-delay: 0.2s;
 }
 
 .fade-down {
     @include opacityFillMode();
     animation-name: fadeDown;
     animation-duration: 0.3s;
-   // animation-delay: 0.2s;
+    // animation-delay: 0.2s;
 }
-
-
-
-
 
 /*.nav__lower {
     background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 0%);
@@ -143,11 +145,8 @@
     }
 }*/
 
-
-
 .navanimate {
-
-   /* &__item {
+    /* &__item {
         opacity: 0;
         animation-fill-mode: forwards !important;
         
@@ -195,8 +194,6 @@
     */
 
     &__item {
-        
-        
         &--1 {
             @include opacityFillMode();
             @include navMoveInUp();
@@ -224,7 +221,7 @@
         &--5 {
             @include opacityFillMode();
             @include navMoveInUp();
-            animation-delay: 1.30s;
+            animation-delay: 1.3s;
         }
 
         &--6 {
@@ -236,7 +233,7 @@
         &--7 {
             @include opacityFillMode();
             @include navMoveInUp();
-            animation-delay: 1.40s;
+            animation-delay: 1.4s;
         }
 
         &--8 {
@@ -244,23 +241,14 @@
             @include navMoveInUp();
             animation-delay: 1.45s;
         }
-
     }
-
-   
-   
 }
 
-
 .services-animate {
-
     animation: moveInUp;
     animation-duration: 1s;
     animation-timing-function: ease;
-       
 }
-
-
 
 @keyframes moveFromCenter {
     0% {
@@ -275,7 +263,6 @@
         top: 47px;
         left: 25px;
         transition: 1s;
-
     }
 }
 
@@ -291,14 +278,21 @@
     }
 }
 
-
 @keyframes bgFade {
     0% {
-        background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 0%);
+        background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.2) 0%,
+            rgba(0, 0, 0, 0) 0%
+        );
     }
 
     100% {
-        background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 100%);
+        background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.2) 0%,
+            rgba(0, 0, 0, 0) 100%
+        );
     }
 }
 
@@ -313,7 +307,6 @@
         transform: translate(0);
     }
 }
-
 
 @keyframes moveInDown {
     0% {
@@ -330,19 +323,17 @@
 @keyframes moveInTopCornerLeft {
     0% {
         opacity: 0;
-        transform: translateX(-1000px);    
+        transform: translateX(-1000px);
         position: absolute;
         top: -500px;
         left: -500px;
     }
 
-   
     100% {
         opacity: 1;
         transform: translate(0);
     }
 }
-
 
 @keyframes moveInLeft {
     0% {
@@ -410,6 +401,3 @@
         visibility: hidden;
     }
 }
-
-
-

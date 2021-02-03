@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+    
     // Input for numbers 
     $('.minus').click(function () {
         var $input = $(this).parent().find('input');
