@@ -196,8 +196,11 @@
     display: flex;
     justify-content: center;
 
+    margin-top: 88px !important;
+
     @include respond(tablet) {
         min-height: 200px;
+        margin-top: 56px !important;
     }
 
     @include respond(mobile) {

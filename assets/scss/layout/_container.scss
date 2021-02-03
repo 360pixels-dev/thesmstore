@@ -199,6 +199,14 @@
         }
     }
 
+    &--violet {
+        border: 15px solid $violet;
+
+        @include respond(mobile) {
+            border: 10px solid $violet;
+        }
+    }
+
     &--lemon {
         border: 15px solid $lemon;
         @include respond(tablet) {

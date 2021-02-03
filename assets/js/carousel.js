@@ -346,87 +346,86 @@ $(document).ready(function() {
 
     // SM CARES - FEATURED CONTENT
 
-    var featuredContents = []
-
-     
-    $('.featured-content__details').each(function() {
-        var $this = $(this);
-
-        function convertRGB(rgb) {
-            if (/^#[0-9A-F]{6}$/i.test($this.find('span.title2').text())) return rgb;
+    if ($('.featured-content__details').length !== 0) {
+        var featuredContents = []
         
-            rgb = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
-            function hex(x) {
-                return ("0" + parseInt(x).toString(16)).slice(-2);
+        $('.featured-content__details').each(function() {
+            var $this = $(this);
+
+            function convertRGB(rgb) {
+                if (/^#[0-9A-F]{6}$/i.test($this.find('span.title2').text())) return rgb;
+            
+                rgb = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
+                function hex(x) {
+                    return ("0" + parseInt(x).toString(16)).slice(-2);
+                }
+                return "#" + hex(rgb[1]) + hex(rgb[2]) + hex(rgb[3]);
             }
-            return "#" + hex(rgb[1]) + hex(rgb[2]) + hex(rgb[3]);
-        }
 
 
-        featuredContents.push({
-            isActive : false,
-            title1 : $this.find('span.title1').text(),
-            title1color : convertRGB($this.find('span.title1').css("color")),
-            title2 : $this.find('span.title2').text(),
-            title2color : convertRGB($this.find('span.title2').css("color")),
-            title3 : $this.find('span.title3').length !== 0 ? $this.find('span.title3').text() : null,
-            title3color : $this.find('span.title3').length !== 0 ? convertRGB($this.find('span.title3').css("color")): null,
-            description : $this.find('p').text(),
-            pageUrl : ''
+            featuredContents.push({
+                isActive : false,
+                title1 : $this.find('span.title1').text(),
+                title1color : convertRGB($this.find('span.title1').css("color")),
+                title2 : $this.find('span.title2').text(),
+                title2color : convertRGB($this.find('span.title2').css("color")),
+                title3 : $this.find('span.title3').length !== 0 ? $this.find('span.title3').text() : null,
+                title3color : $this.find('span.title3').length !== 0 ? convertRGB($this.find('span.title3').css("color")): null,
+                description : $this.find('p').text(),
+                pageUrl : ''
+            });
+
         });
 
-    });
-
-    for (let i = 0; i < featuredContents.length; i++) {
-        featuredContents[i].image = $('.featured-content__slider').children()[i].src
-    }
-
-    populateFeaturedContentDetails();
-    // populateFeaturedContentSlider();
-    
-    $('.featured-content__controls .controls__arrow').click(function() {
-        var dir = $(this).attr('class').split('--')[1];
-
-        // REARRANGE EVENT ARRAY
-        featuredContents[0].isActive = false;
-        if(dir == 'right') { //to the right
-            featuredContents.push(featuredContents.shift());
+        for (let i = 0; i < featuredContents.length; i++) {
+            featuredContents[i].image = $('.featured-content__slider').children()[i].src
         }
-        else { //to the left
-            featuredContents.unshift(featuredContents.pop());
-        }
-        featuredContents[0].isActive = true;
-    
-        populateFeaturedContentDetails(); // CHANGE EVENT DETAILS
-        populateFeaturedContentSlider(); // REARRANGE EVENT SLIDER
 
-    });
+        populateFeaturedContentDetails();
+        // populateFeaturedContentSlider();
+        
+        $('.featured-content__controls .controls__arrow').click(function() {
+            var dir = $(this).attr('class').split('--')[1];
 
-    console.log(featuredContents)
+            // REARRANGE EVENT ARRAY
+            featuredContents[0].isActive = false;
+            if(dir == 'right') { //to the right
+                featuredContents.push(featuredContents.shift());
+            }
+            else { //to the left
+                featuredContents.unshift(featuredContents.pop());
+            }
+            featuredContents[0].isActive = true;
+        
+            populateFeaturedContentDetails(); // CHANGE EVENT DETAILS
+            populateFeaturedContentSlider(); // REARRANGE EVENT SLIDER
 
-    function populateFeaturedContentDetails() {
-        $('.featured-content__details').html(`
-        <h1 class="font-hero">
-            <span class="title1" style="color: ${featuredContents[0].title1color};">${featuredContents[0].title1}</span>
-            <span class="title2" style="color: ${featuredContents[0].title2color};">${featuredContents[0].title2}</span>
-            ${featuredContents[0].title3 !== null ? (`<span class="title3" style="color: ${featuredContents[0].title3color};">${featuredContents[0].title3}</span>`) : ''}
-        </h1>
-        <p>${featuredContents[0].description}</p>
-        <a href="" class="btn--primary font-cta">View</a>
-        `);
-    }
+        });
 
-    function populateFeaturedContentSlider() {
-        // $('.featured-content__slider').html(`
-        // <img src="${featuredContents[0].image}" alt="">
-        // <img src="${featuredContents[1].image}" alt="">
-        // `);
-        $('.featured-content__slider').html('');
-        for(x = 0; x < featuredContents.length; x++) {
-            $('.featured-content__slider').append(`
-                <img src="${featuredContents[x].image}" alt="">
-                <img src="${featuredContents[x+1].image}" alt="">
+        function populateFeaturedContentDetails() {
+            $('.featured-content__details').html(`
+            <h1 class="font-hero">
+                <span class="title1" style="color: ${featuredContents[0].title1color};">${featuredContents[0].title1}</span>
+                <span class="title2" style="color: ${featuredContents[0].title2color};">${featuredContents[0].title2}</span>
+                ${featuredContents[0].title3 !== null ? (`<span class="title3" style="color: ${featuredContents[0].title3color};">${featuredContents[0].title3}</span>`) : ''}
+            </h1>
+            <p>${featuredContents[0].description}</p>
+            <a href="" class="btn--primary font-cta">View</a>
             `);
+        }
+
+        function populateFeaturedContentSlider() {
+            // $('.featured-content__slider').html(`
+            // <img src="${featuredContents[0].image}" alt="">
+            // <img src="${featuredContents[1].image}" alt="">
+            // `);
+            $('.featured-content__slider').html('');
+            for(x = 0; x < featuredContents.length; x++) {
+                $('.featured-content__slider').append(`
+                    <img src="${featuredContents[x].image}" alt="">
+                    <img src="${featuredContents[x+1].image}" alt="">
+                `);
+            }
         }
     }
 })

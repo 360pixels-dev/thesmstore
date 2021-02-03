@@ -3402,15 +3402,18 @@ body.mmactive {
   height: auto;
   display: flex;
   justify-content: center;
+  margin-top: 88px !important;
 }
 @media only screen and (max-width: 1024px) {
   .banner-inner {
     min-height: 200px;
+    margin-top: 56px !important;
   }
 }
 @media only screen and (max-width: tablet) {
   .banner-inner {
     min-height: 200px;
+    margin-top: 56px !important;
   }
 }
 @media only screen and (max-width: 820px) {
@@ -12046,6 +12049,19 @@ header {
 @media only screen and (max-width: mobile) {
   .container-colored--cerulean {
     border: 10px solid #0797ff;
+  }
+}
+.container-colored--violet {
+  border: 15px solid #b4278c;
+}
+@media only screen and (max-width: 820px) {
+  .container-colored--violet {
+    border: 10px solid #b4278c;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .container-colored--violet {
+    border: 10px solid #b4278c;
   }
 }
 .container-colored--lemon {
