@@ -30630,13 +30630,11 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 @media only screen and (max-width: 820px) {
   .topics__boxes > a > div {
-    width: 100%;
     margin: 0 0px 24px 0;
   }
 }
 @media only screen and (max-width: mobile) {
   .topics__boxes > a > div {
-    width: 100%;
     margin: 0 0px 24px 0;
   }
 }
