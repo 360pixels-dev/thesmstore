@@ -465,6 +465,20 @@
         height: 250px;
         max-width: 1238px;
 
+        & > .desktop {
+            @include respond(mobile) {
+                display: none;
+            }
+        }
+
+        & > .mobile {
+            display: none;
+
+            @include respond(mobile) {
+                display: block;
+            }
+        }
+
         @include respond(tablet) {
             height: 275px;
             max-width: 607px;
