@@ -223,9 +223,17 @@
         height: auto;
     }
 
+    @include respond(320px) {
+        width: 306px;
+    }
+
     &--row {
         display: flex;
         width: 100%;
+
+        @include respond(mobile) {
+            justify-content: space-between;
+        }
     }
 
     &--col1 {
@@ -262,6 +270,11 @@
         @include respond(mobile) {
             width: 160px;
         }
+
+        @include respond(320px) {
+            width: 150px;
+            margin-right: 0;
+        }
     }
 
     &__caption {
@@ -288,6 +301,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+
+        @include respond(320px) {
+            width: 306px;
         }
 
         h4 {

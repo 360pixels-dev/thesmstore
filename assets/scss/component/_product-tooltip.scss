@@ -7,8 +7,8 @@
 
     & > img {
         @include respond(mobile) {
-            width: 336px;
-            height: 368px;
+            width: 100%;
+            height: auto;
         }
     }
 
