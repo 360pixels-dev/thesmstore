@@ -162,7 +162,7 @@
             z-index: 50;
 
             @include respond(tablet) {
-                height: 88.23%;
+                height: 93%;
                 width: 90%;
             }
 
@@ -192,6 +192,7 @@
             @include respond(tablet) {
                 padding-top: 24px;
                 padding-bottom: 24px;
+                max-width: 1224px;
             }
 
             &.active {
@@ -221,13 +222,12 @@
             @include respond(tablet) {
                 top: 30%;
                 left: 50%;
-                width: 335px;
-                height: 215px;
+                width: 90%;
+                height: 256px;
                 transform: translate(-50%, -50%);
             }
 
             @include respond(mobile) {
-                top: 28%;
                 z-index: 100;
             }
 
@@ -247,7 +247,7 @@
 
                 @include respond(tablet) {
                     height: 100%;
-                    width: auto;
+                    width: 100%;
                 }
 
                 // @include respond(1000px) {
@@ -274,8 +274,14 @@
             margin-top: 30px;
 
             @include respond(tablet) {
-                margin-top: 0;
+                margin-top: 300px;
                 text-align: right;
+                width: 100%;
+                flex: 0 0 88%;
+                height: 92%;
+                align-items: flex-start;
+                display: flex;
+                flex-direction: column;
 
                 & > h1,
                 p {
@@ -284,11 +290,12 @@
             }
 
             @include respond(mobile) {
+                margin-top: 0;
                 flex: 0 0 250px;
             }
 
-            @include respond(340px) {
-                flex: 0 0 200px;
+            @include respond(320px) {
+                flex: 0 0 240px;
             }
 
             & > span {
@@ -318,12 +325,12 @@
                 @include respond(tablet) {
                     font-size: 32px;
                     line-height: 40px;
-                    margin-top: 270px;
                 }
 
                 @include respond(mobile) {
-                    margin-top: 240px;
                     font-size: 26px;
+                    margin-top: 270px;
+                    margin-bottom: 0;
                 }
 
                 // & span {

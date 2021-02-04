@@ -436,9 +436,15 @@
 
         @include respond(1280px) {
             width: 100%;
+            display: flex;
+            justify-content: center;
         }
 
-        & > div {
+        & > a {
+            text-decoration: none;
+        }
+
+        & > a > div {
             background: $white;
             height: 112px;
             width: 288px;

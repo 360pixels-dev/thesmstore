@@ -38,6 +38,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        & > img {
+            margin-bottom: 16px;
+        }
     }
 
     &__header {
