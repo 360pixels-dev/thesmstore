@@ -164,6 +164,10 @@
 
             margin-top: -80px;
 
+            & .billpay__category-header p {
+                font-weight: bold;
+            }
+
             @include respond(mobile) {
                 margin-top: 0;
             }

@@ -141,6 +141,7 @@
 
     @include respond(976px) {
         width: 100%;
+        justify-content: space-evenly;
     }
 
     &__col {
@@ -160,6 +161,10 @@
 
         @include respond(480px) {
             width: 159.79px;
+        }
+
+        @include respond(320px) {
+            width: 139.79px;
         }
 
         &__thumbnail {
