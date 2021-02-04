@@ -515,11 +515,33 @@
         position: relative;
         width: 1238px;
         height: 250px;
-        background-image: url("../images/shop-online-banner.png");
-        background-size: contain;
-        background-repeat: no-repeat;
+        // background-image: url("../images/shop-online-banner.png");
+        // background-size: contain;
+        // background-repeat: no-repeat;
+
+        & img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        & > .desktop {
+            @include respond(mobile) {
+                display: none;
+            }
+        }
+
+        & > .mobile {
+            display: none;
+
+            @include respond(mobile) {
+                display: block;
+            }
+        }
 
         &-content {
+            position: relative;
             color: $white;
             padding: 2% 0 0 58%;
 

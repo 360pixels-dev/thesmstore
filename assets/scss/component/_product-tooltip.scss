@@ -60,7 +60,7 @@
             display: flex;
 
             right: 10px;
-            top: 35px;
+            top: -10px;
         }
 
         &::after {
@@ -115,11 +115,8 @@
 
             @include respond(mobile) {
                 top: -8px;
-                right: 105px;
+                right: 113px;
                 left: unset;
-
-                width: 32.71px;
-                height: 32.71px;
             }
         }
 

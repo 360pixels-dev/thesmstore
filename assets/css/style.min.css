@@ -1208,6 +1208,10 @@ button {
   margin-top: 24px;
   margin-bottom: 40px;
 }
+.form__container .error-input {
+  font-weight: normal;
+  font-style: italic;
+}
 .form__group {
   flex-basis: 48.77%;
   display: flex;
@@ -9798,14 +9802,14 @@ body.mmactive {
   .product-tooltip__box {
     display: flex;
     right: 10px;
-    top: 35px;
+    top: -10px;
   }
 }
 @media only screen and (max-width: mobile) {
   .product-tooltip__box {
     display: flex;
     right: 10px;
-    top: 35px;
+    top: -10px;
   }
 }
 .product-tooltip__box::after {
@@ -9874,19 +9878,15 @@ body.mmactive {
 @media only screen and (max-width: 820px) {
   .product-tooltip__content::after {
     top: -8px;
-    right: 105px;
+    right: 113px;
     left: unset;
-    width: 32.71px;
-    height: 32.71px;
   }
 }
 @media only screen and (max-width: mobile) {
   .product-tooltip__content::after {
     top: -8px;
-    right: 105px;
+    right: 113px;
     left: unset;
-    width: 32.71px;
-    height: 32.71px;
   }
 }
 .product-tooltip__content--show {
@@ -40191,11 +40191,38 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   position: relative;
   width: 1238px;
   height: 250px;
-  background-image: url("../images/shop-online-banner.png");
-  background-size: contain;
-  background-repeat: no-repeat;
+}
+.shop-online__image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media only screen and (max-width: 820px) {
+  .shop-online__image > .desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .shop-online__image > .desktop {
+    display: none;
+  }
+}
+.shop-online__image > .mobile {
+  display: none;
+}
+@media only screen and (max-width: 820px) {
+  .shop-online__image > .mobile {
+    display: block;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .shop-online__image > .mobile {
+    display: block;
+  }
 }
 .shop-online__image-content {
+  position: relative;
   color: #ffffff;
   padding: 2% 0 0 58%;
 }
