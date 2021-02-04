@@ -465,13 +465,13 @@
         height: 250px;
         max-width: 1238px;
 
-        & > .desktop {
+        & .desktop {
             @include respond(mobile) {
                 display: none;
             }
         }
 
-        & > .mobile {
+        & .mobile {
             display: none;
 
             @include respond(mobile) {

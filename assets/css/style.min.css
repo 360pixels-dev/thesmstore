@@ -6502,25 +6502,25 @@ body.mmactive {
   max-width: 1238px;
 }
 @media only screen and (max-width: 820px) {
-  .card--sale-lg > .desktop {
+  .card--sale-lg .desktop {
     display: none;
   }
 }
 @media only screen and (max-width: mobile) {
-  .card--sale-lg > .desktop {
+  .card--sale-lg .desktop {
     display: none;
   }
 }
-.card--sale-lg > .mobile {
+.card--sale-lg .mobile {
   display: none;
 }
 @media only screen and (max-width: 820px) {
-  .card--sale-lg > .mobile {
+  .card--sale-lg .mobile {
     display: block;
   }
 }
 @media only screen and (max-width: mobile) {
-  .card--sale-lg > .mobile {
+  .card--sale-lg .mobile {
     display: block;
   }
 }
