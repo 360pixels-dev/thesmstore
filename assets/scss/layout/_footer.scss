@@ -365,7 +365,8 @@
                     border: none;
                     background-color: $coral;
 
-                    @include respond(mobile) {
+                    @include respond(tablet) {
+                        padding: 16px;
                     }
 
                     &:hover {

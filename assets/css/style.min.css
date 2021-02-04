@@ -12974,6 +12974,16 @@ header {
   border: none;
   background-color: #f86a6a;
 }
+@media only screen and (max-width: 1024px) {
+  .footer__content--col-items .footer__input-group button {
+    padding: 16px;
+  }
+}
+@media only screen and (max-width: tablet) {
+  .footer__content--col-items .footer__input-group button {
+    padding: 16px;
+  }
+}
 .footer__content--col-items .footer__input-group button:hover {
   color: #ffffff;
   background-color: #bf5353;
