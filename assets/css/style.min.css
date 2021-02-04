@@ -14060,6 +14060,16 @@ header {
 .press-release-blog__content {
   padding: 66px 0;
 }
+@media only screen and (max-width: 820px) {
+  .press-release-blog__content {
+    padding: 0 0 66px 0;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .press-release-blog__content {
+    padding: 0 0 66px 0;
+  }
+}
 .press-release-blog__row {
   margin-top: 53px;
 }
