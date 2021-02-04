@@ -565,6 +565,10 @@
         margin-top: 53px;
         width: inherit;
 
+        @include respond(tablet) {
+            width: 625px;
+        }
+
         @include respond(mobile) {
             width: 100%;
         }

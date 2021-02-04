@@ -1,7 +1,7 @@
 .footer {
     position: relative;
-    // min-height: 468px;
-    min-height: fit-content; // FOR PHASE 1
+    min-height: 468px;
+    // min-height: fit-content; // FOR PHASE 1
     background: $dark-blue;
     display: flex;
     flex-direction: column;
@@ -100,7 +100,7 @@
     // /FOR PHASE 1
 
     &__forex {
-        display: none;
+        // display: none;
         position: relative;
         background: rgba(0, 103, 179, 0.3);
         height: 32px;
@@ -194,7 +194,7 @@
     }
 
     &__content {
-        display: none;
+        // display: none;
         padding: 48px 72px 50px 72px;
         color: $white;
 
@@ -335,6 +335,10 @@
                     }
                 }
 
+                @include respond(tablet) {
+                    margin-bottom: 44px;
+                }
+
                 @include respond(mobile) {
                     width: 85%;
                 }
@@ -394,19 +398,19 @@
     }
 
     &__mobile-content {
+        display: none;
         padding: 48px 72px 50px 72px;
         color: $white;
-        display: none;
         width: inherit;
 
         @include respond(1199px) {
             padding: 24px 0 28px 0;
-            // display: flex;
+            display: flex;
         }
 
         @include respond(tablet) {
-            // display: flex;
-            padding: 24px 0 28px 0;
+            display: flex;
+            padding: 0 0 28px 0;
         }
 
         & .accordion {
@@ -434,6 +438,10 @@
         }
 
         & .row {
+            @include respond(tablet) {
+                width: 100%;
+            }
+
             @include respond(360px) {
                 max-width: 360px;
             }
@@ -445,12 +453,17 @@
                 &:nth-child(1) {
                     flex: 1;
 
-                    @include respond(tablet) {
-                        flex: 0 0 66.66% !important;
-                    }
+                    // @include respond(tablet) {
+                    //     flex: 0 0 66.66% !important;
+                    // }
 
-                    @include respond(mobile) {
+                    @include respond(tablet) {
                         flex: 0 0 100% !important;
+
+                        & > p {
+                            padding: 16px 0;
+                            margin-bottom: 0;
+                        }
                     }
 
                     & .footer__content--col-items {
@@ -463,12 +476,17 @@
                 &:nth-child(2) {
                     flex: 2;
 
-                    @include respond(tablet) {
-                        flex: 0 0 33.33% !important;
-                    }
+                    // @include respond(tablet) {
+                    //     flex: 0 0 33.33% !important;
+                    // }
 
-                    @include respond(mobile) {
+                    @include respond(tablet) {
                         flex: 0 0 100% !important;
+
+                        & > p {
+                            padding: 16px 0;
+                            margin-bottom: 0;
+                        }
                     }
 
                     & .footer__content--col-items {
@@ -482,12 +500,17 @@
                 &:nth-child(3) {
                     flex: 1;
 
-                    @include respond(tablet) {
-                        flex: 0 0 33.33% !important;
-                    }
+                    // @include respond(tablet) {
+                    //     flex: 0 0 33.33% !important;
+                    // }
 
-                    @include respond(mobile) {
+                    @include respond(tablet) {
                         flex: 0 0 100% !important;
+
+                        & > p {
+                            padding: 16px 0;
+                            margin-bottom: 0;
+                        }
                     }
 
                     & .footer__content--col-items {
@@ -501,13 +524,18 @@
                     flex: 1;
                     padding-right: 20px;
 
-                    @include respond(tablet) {
-                        flex: 0 0 33.33% !important;
-                        padding-right: 0;
-                    }
+                    // @include respond(tablet) {
+                    //     flex: 0 0 33.33% !important;
+                    //     padding-right: 0;
+                    // }
 
-                    @include respond(mobile) {
+                    @include respond(tablet) {
                         flex: 0 0 100% !important;
+                        padding-right: 0;
+
+                        & > p {
+                            padding: 16px 0;
+                        }
                     }
 
                     & .footer__content--col-items {
@@ -520,12 +548,20 @@
                 &:nth-child(5) {
                     flex: 2;
 
-                    @include respond(tablet) {
-                        flex: 0 0 66.66% !important;
-                    }
+                    // @include respond(tablet) {
+                    //     flex: 0 0 66.66% !important;
+                    // }
 
-                    @include respond(mobile) {
+                    @include respond(tablet) {
                         flex: 0 0 100% !important;
+
+                        & > p {
+                            margin-bottom: 0;
+                        }
+
+                        & .footer__content--col-items p {
+                            padding-top: 0;
+                        }
                     }
                 }
             }
