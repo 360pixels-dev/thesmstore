@@ -12955,6 +12955,16 @@ header {
   color: #161720;
   font-weight: 600;
 }
+@media only screen and (max-width: 1024px) {
+  .footer__content--col-items .footer__input-group input {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: tablet) {
+  .footer__content--col-items .footer__input-group input {
+    width: 100%;
+  }
+}
 .footer__content--col-items .footer__input-group input::placeholder {
   color: #88898f;
   font-weight: 400;
@@ -13184,6 +13194,7 @@ header {
 @media only screen and (max-width: 1024px) {
   .footer__mobile-content .row div:nth-child(5) {
     flex: 0 0 100% !important;
+    width: 100%;
   }
   .footer__mobile-content .row div:nth-child(5) > p {
     margin-bottom: 0;
@@ -13195,6 +13206,7 @@ header {
 @media only screen and (max-width: tablet) {
   .footer__mobile-content .row div:nth-child(5) {
     flex: 0 0 100% !important;
+    width: 100%;
   }
   .footer__mobile-content .row div:nth-child(5) > p {
     margin-bottom: 0;

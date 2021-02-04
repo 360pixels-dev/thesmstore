@@ -350,6 +350,10 @@
                     color: $black;
                     font-weight: 600;
 
+                    @include respond(tablet) {
+                        width: 100%;
+                    }
+
                     &::placeholder {
                         color: $gray;
                         font-weight: 400;
@@ -554,6 +558,7 @@
 
                     @include respond(tablet) {
                         flex: 0 0 100% !important;
+                        width: 100%;
 
                         & > p {
                             margin-bottom: 0;
