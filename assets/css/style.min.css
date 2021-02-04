@@ -13001,13 +13001,13 @@ header {
 @media only screen and (max-width: 1024px) {
   .footer__mobile-content {
     display: flex;
-    padding: 0 0 28px 0;
+    padding: 0;
   }
 }
 @media only screen and (max-width: tablet) {
   .footer__mobile-content {
     display: flex;
-    padding: 0 0 28px 0;
+    padding: 0;
   }
 }
 .footer__mobile-content .accordion {
