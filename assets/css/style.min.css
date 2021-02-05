@@ -7289,6 +7289,9 @@ body.mmactive {
   color: #fff;
   padding: 8px 8px 8px 12px;
 }
+.social-share__facebook:hover {
+  background-color: #0c55b1;
+}
 .social-share__facebook img {
   margin-right: 12px;
 }
@@ -7310,6 +7313,9 @@ body.mmactive {
   text-decoration: none;
   color: #fff;
   padding: 8px 8px 8px 12px;
+}
+.social-share__twitter:hover {
+  background-color: #097bc1;
 }
 .social-share__twitter img {
   margin-right: 12px;
@@ -7334,6 +7340,9 @@ body.mmactive {
   text-decoration: none;
   color: #fff;
   padding: 8px 8px 8px 12px;
+}
+.social-share__copy:hover {
+  background-color: #bcc5e3;
 }
 .social-share__copy img {
   margin-right: 12px;
@@ -21096,6 +21105,17 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   right: 0;
   text-decoration: none;
   color: #403f47;
+}
+.events-fl .get-direction-text:hover {
+  color: #0067b3;
+}
+.events-fl .get-direction-text::after {
+  display: none;
+  content: url("../images/icons/get-directions-arrow.svg");
+  padding-left: 12px;
+}
+.events-fl .get-direction-text:hover:after {
+  display: inline;
 }
 @media only screen and (max-width: 1024px) {
   .events-fl .get-direction-text {
