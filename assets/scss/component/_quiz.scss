@@ -144,21 +144,20 @@
         justify-content: center;
     }
 
-    @include respond(425px) {
+    @include respond(480px) {
         justify-content: space-evenly;
     }
 
     &__col {
         width: 258px;
         margin-bottom: 16px;
-        margin-right: 16px;
+        margin-right: 0;
         display: flex;
         flex-direction: column;
-        justify-content: center;
 
         @include respond(mobile) {
+            margin-right: 16px;
             width: 159.79px;
-            margin-right: 0;
         }
 
         @include respond(500px) {
@@ -166,6 +165,7 @@
         }
 
         @include respond(480px) {
+            margin-right: 0;
             width: 159.79px;
         }
 
