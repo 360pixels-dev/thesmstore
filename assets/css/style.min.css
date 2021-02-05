@@ -13957,7 +13957,7 @@ header {
 .voucher {
   width: 1016px;
   margin: auto;
-  padding: 38px 66px;
+  padding: 24px 66px;
   position: relative;
   height: 200px;
   background: url("../../assets/images/voucher-horizontal.png") no-repeat center, linear-gradient(180deg, #ff6372 0%, #ff9c90 100%);
@@ -14012,6 +14012,7 @@ header {
   font-weight: bold;
   font-size: 20px;
   line-height: 30px;
+  margin: 0;
 }
 @media only screen and (max-width: 970px) {
   .voucher__h5 {
