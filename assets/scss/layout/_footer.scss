@@ -1,7 +1,7 @@
 .footer {
     position: relative;
-    min-height: 468px;
-    // min-height: fit-content; // FOR PHASE 1
+    // min-height: 468px;
+    min-height: fit-content; // FOR PHASE 1
     background: $dark-blue;
     display: flex;
     flex-direction: column;
@@ -194,7 +194,7 @@
     }
 
     &__content {
-        // display: none;
+        display: none;
         padding: 48px 72px 50px 72px;
         color: $white;
 
@@ -410,11 +410,11 @@
 
         @include respond(1199px) {
             padding: 24px 0 28px 0;
-            display: flex;
+            // display: flex;
         }
 
         @include respond(tablet) {
-            display: flex;
+            // display: flex;
             padding: 0;
         }
 
