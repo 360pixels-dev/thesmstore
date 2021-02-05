@@ -4,11 +4,12 @@
         align-items: flex-start;
 
         @include respond(1250px) {
-            width: 625px;
+            width: 660px;
             margin: auto;
         }
 
-        @include respond(610px) {
+        @include respond(mobile) {
+            max-width: 344px;
             width: 100%;
             margin: 0;
         }
@@ -52,14 +53,24 @@
         margin-bottom: 10px;
         margin-right: 24px;
 
-        @include respond(610px) {
+        @include respond(1250px) {
+            max-width: 194px;
+        }
+
+        @include respond(mobile) {
+            margin-right: 0 !important;
+            margin-left: 12px;
+            max-width: 160px;
+        }
+
+        @include respond(360px) {
             width: 160px !important;
             margin-right: 0 !important;
             margin-left: 12px;
         }
 
         @include respond(320px) {
-            width: 148px !important;
+            width: 146px !important;
             margin-left: 8px;
         }
 
@@ -69,6 +80,7 @@
         }
 
         & img {
+            width: 100%;
             max-width: 288px;
 
             @include respond(mobile) {
@@ -87,6 +99,8 @@
             @include respond(610px) {
                 margin-top: 20px;
                 margin-bottom: 30px;
+                margin-right: 0 !important;
+                margin-left: 12px;
             }
         }
 
@@ -101,6 +115,18 @@
                 @include respond(mobile) {
                     margin-top: 24px;
                     margin-bottom: 0;
+                }
+            }
+
+            @include respond(1250px) {
+                &:nth-child(4n) {
+                    margin-right: 24px !important;
+                }
+            }
+
+            @include respond(mobile) {
+                &:nth-child(4n) {
+                    margin-right: 0 !important;
                 }
             }
         }
@@ -581,8 +607,13 @@
     &__content {
         padding: 66px 0;
 
+        @include respond(tablet) {
+            max-width: 648px;
+        }
+
         @include respond(mobile) {
             padding: 0 0 66px 0;
+            max-width: 360px;
         }
     }
 

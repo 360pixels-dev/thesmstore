@@ -322,7 +322,9 @@
                 border: 24px solid #397cee;
                 left: 50%;
                 width: 100%;
+                max-width: 1224px;
                 height: 584px;
+
                 transform: translate(-50%, 0);
                 object-fit: cover;
                 object-position: center;
@@ -330,6 +332,7 @@
                 @include respond(tablet) {
                     border: 16px solid #397cee;
                     height: 442px;
+                    width: 976px;
                 }
 
                 @include respond(mobile) {
@@ -337,10 +340,10 @@
                     width: 336px;
                 }
 
-                @include respond(mobile) {
+                @include respond(320px) {
                     border: 12px solid #397cee;
                     height: 248px;
-                    width: 316px;
+                    width: 296px;
                 }
             }
 
@@ -373,7 +376,7 @@
             }
 
             & > a {
-                width: 117px;
+                width: fit-content;
                 z-index: 2;
             }
         }
