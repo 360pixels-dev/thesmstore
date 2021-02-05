@@ -139,20 +139,26 @@
     flex-wrap: wrap;
     // margin-bottom: 100px;
 
-    @include respond(976px) {
+    @include respond(mobile) {
         width: 100%;
+        justify-content: center;
+    }
+
+    @include respond(425px) {
         justify-content: space-evenly;
     }
 
     &__col {
         width: 258px;
         margin-bottom: 16px;
+        margin-right: 16px;
         display: flex;
         flex-direction: column;
         justify-content: center;
 
-        @include respond(960px) {
+        @include respond(mobile) {
             width: 159.79px;
+            margin-right: 0;
         }
 
         @include respond(500px) {
