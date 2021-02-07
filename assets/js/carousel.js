@@ -1,8 +1,8 @@
 $(document).ready(function() {
     const right = '<img src="/assets/images/icons/m-carousel-arrow-right.svg" alt="right">'
     const left = '<img src="/assets/images/icons/m-carousel-arrow-left.svg" alt="left">'
-    const mRight = '<img src="/assets/images/icons/control-right.svg" alt="mRight">'
-    const mLeft = '<img src="/assets/images/icons/control-left.svg" alt="mLeft">'
+    const mRight = '<img src="./assets/images/icons/control-right.svg" alt="mRight">'
+    const mLeft = '<img src="./assets/images/icons/control-left.svg" alt="mLeft">'
 
 
     if ($('.tbl__set-col--m-store')) {
@@ -427,6 +427,119 @@ $(document).ready(function() {
                 `);
             }
         }
+    }
+
+
+    // EVENT RECAP - CAROUSEL
+
+    if ($('.event-recap-carousel__thumbnail-slider.desktop').length !== 0) {
+        var thumbnails = []
+        var slider = $('.event-recap-carousel__thumbnail-slider.desktop');
+
+        slider.children().each(function() {
+            var $this = $(this)
+
+            thumbnails.push({
+                imageUrl : $this.find('img').attr("src")
+            });
+        })
+
+        populateThumbnail();
+        
+        $('.event-recap-carousel__controls .controls__arrow').click(function() {
+            var dir = $(this).attr('class').split('--')[1];
+
+            // REARRANGE THUMBNAIL ARRAY
+            thumbnails[0].isActive = false;
+            if(dir == 'right') { //to the right
+                thumbnails.push(thumbnails.shift());
+            }
+            else { //to the left
+                thumbnails.unshift(thumbnails.pop());
+            }
+            thumbnails[0].isActive = true;
+        
+            populateThumbnail();
+
+        });
+
+        function populateThumbnail() {
+            $('.event-recap-carousel__thumbnail-slider.desktop').html(`
+                <div class="event-recap-carousel__thumbnail">
+                    <img src="${thumbnails[0].imageUrl}" alt="">
+                </div>
+                <div class="event-recap-carousel__thumbnail">
+                    <img src="${thumbnails[1].imageUrl}" alt="">
+                </div>
+                <div class="event-recap-carousel__thumbnail">
+                    <img src="${thumbnails[2].imageUrl}" alt="">
+                </div>
+                <div class="event-recap-carousel__thumbnail">
+                    <img src="${thumbnails[3].imageUrl}" alt="">
+                </div>
+                <div class="event-recap-carousel__thumbnail">
+                    <img src="${thumbnails[4].imageUrl}" alt="">
+                </div>
+                <div class="event-recap-carousel__thumbnail">
+                    <img src="${thumbnails[5].imageUrl}" alt="">
+                </div>
+            `);
+        }
+    }
+
+    // EVENT RECAP - CAROUSEL MOBILE
+    if ($('.event-recap-carousel__thumbnail-slider.mobile').length !== 0) {
+        $('.event-recap-carousel__thumbnail-slider.mobile').owlCarousel({
+            margin:10,
+            loop:false,
+            autoWidth:true,
+            dots:false,
+            items:1,
+            nav:true,
+            navText: [
+                mLeft, mRight
+            ],
+        })
+    }
+
+    // EVENT RECAP - IMAGE GALLERY
+    if ($('.event-recap-image-gallery__slider').length !== 0) {
+        $('.event-recap-image-gallery__slider').owlCarousel({
+            margin:24,
+            loop:false,
+            autoWidth:true,
+            dots:false,
+            items:1,
+            nav:true,
+            navText: [
+                mLeft, mRight
+            ],
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    margin:16,
+                    loop:false,
+                    autoWidth:true,
+                    dots:false,
+                    items:1,
+                    nav:true,
+                    navText: [
+                        mLeft, mRight
+                    ],
+                },
+                361:{
+                    margin:24,
+                    loop:true,
+                    autoWidth:true,
+                    dots:false,
+                    items:1,
+                    nav:true,
+                    navText: [
+                        mLeft, mRight
+                    ],
+                }
+            }
+        })
     }
 })
 

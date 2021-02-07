@@ -4,12 +4,21 @@
         align-items: flex-start;
 
         @include respond(1250px) {
-            width: 660px;
+            // width: 660px;
+            width: 844px;
             margin: auto;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%, 0);
         }
 
-        @include respond(mobile) {
-            max-width: 344px;
+        @include respond(768px) {
+            // width: 516px;
+            width: 688px;
+        }
+
+        @include respond(767px) {
+            // max-width: 344px;
             width: 100%;
             margin: 0;
         }
@@ -632,10 +641,14 @@
         width: inherit;
 
         @include respond(tablet) {
-            width: 625px;
+            width: 844px;
         }
 
-        @include respond(mobile) {
+        @include respond(768px) {
+            width: 688px;
+        }
+
+        @include respond(767px) {
             width: 100%;
         }
     }
@@ -651,7 +664,11 @@
             max-width: 648px;
         }
 
-        @include respond(mobile) {
+        @include respond(768px) {
+            max-width: 688px;
+        }
+
+        @include respond(767px) {
             padding: 0 0 66px 0;
             max-width: 360px;
         }
