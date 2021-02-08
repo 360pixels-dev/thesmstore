@@ -150,7 +150,6 @@
 
             & span {
                 color: $dark-gray;
-                margin-bottom: 18px;
             }
 
             & h1 {
@@ -171,6 +170,7 @@
 
                 & > span {
                     white-space: nowrap;
+                    // display: block;
 
                     &:nth-of-type(1) {
                         margin-left: -141px;
@@ -184,6 +184,7 @@
                     &:nth-of-type(2) {
                         margin-left: 67px;
                         color: $white;
+                        margin-bottom: 0;
                     }
 
                     &:nth-of-type(3) {
@@ -296,9 +297,9 @@
             & > h2 {
                 color: $dark-gray;
 
-                @include respond(mobile) {
-                    width: 200px;
-                }
+                // @include respond(mobile) {
+                //     width: 200px;
+                // }
             }
         }
 
@@ -337,7 +338,7 @@
 
                 @include respond(mobile) {
                     height: 268px;
-                    width: 336px;
+                    width: 96%;
                 }
 
                 @include respond(320px) {

@@ -98,7 +98,13 @@
                     justify-content: space-between;
                     align-items: center;
                     cursor: pointer;
-                    padding: 25px 18px;
+                    padding: 32px 24px;
+
+                    & > span {
+                        min-height: 48px;
+                        display: flex;
+                        align-items: center;
+                    }
 
                     @include respond(mobile) {
                         padding: 16px;
@@ -115,14 +121,18 @@
                 }
 
                 & > .faq-accordion__content {
-                    padding: 25px 18px;
+                    padding: 32px 24px;
+
+                    &.active {
+                        display: block;
+                    }
 
                     @include respond(mobile) {
                         padding: 16px;
                     }
 
                     display: none;
-                    padding-top: 16px;
+                    // padding-top: 16px;
                     border-top: 1px solid $mid-gray;
                     box-shadow: inset 0px 5px 10px rgba(189, 193, 202, 0.15);
                 }

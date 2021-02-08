@@ -2,10 +2,11 @@
     &__row {
         flex-wrap: wrap;
         align-items: flex-start;
+        min-height: 654px;
 
         @include respond(1250px) {
             // width: 660px;
-            width: 844px;
+            width: 872px;
             margin: auto;
             position: relative;
             left: 50%;

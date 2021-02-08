@@ -73,9 +73,25 @@ $(document).ready(function() {
 
 
     // CAREER ACCORDION
-    $('.faq-accordion__header').click(function(e) {
-        console.log(e.target)
-        console.log($(e.target).closest('.faq-accordion').hasClass('active'))
-        $(e.target).closest('.faq-accordion').hasClass('active') ? $(e.target).closest('.faq-accordion').removeClass('active') : $(e.target).closest('.faq-accordion').addClass('active');
-    });
+    if ($('.faq-accordion').length !== 0) {
+        
+    const faqAccordionHeaders = document.querySelectorAll('.faq-accordion')
+
+    faqAccordionHeaders.forEach(currentHeader => {
+        currentHeader.addEventListener("click", event => {
+            // to close any open accordions
+            const openHeader = document.querySelector('.faq-accordion.active')
+
+            if (openHeader && openHeader !== currentHeader) {
+                openHeader.classList.toggle("active") //removes "active" class
+            }
+
+            currentHeader.classList.toggle("active")
+
+            currentHeader.classList.contains("active")
+                ? body.style.maxHeight = body.scrollHeight + "px"
+                : body.style.maxHeight = 0;
+        })
+    })
+    }
 });

@@ -99,8 +99,11 @@ if (ctdAccordionHeaders) {
 }
 // /For CTD -- temporary fix
 
-$(document).ready(function() {
-    $('.faq-accordion__header').click(function(e) {
-        $(e.target).closest('.faq-accordion').hasClass('active') ? $(e.target).closest('.faq-accordion').removeClass('active') : $(e.target).closest('.faq-accordion').addClass('active');
-    });
-})
+// $(document).ready(function() {
+//     $('.faq-accordion__header').click(function(e) {
+//         console.log($(e.target).closest('.faq-accordion__content').hasClass('active'))
+//         $(e.target).closest('.faq-accordion__content').toggleClass('active') ?
+//         $(e.target).closest('.faq-accordion__content').removeClass('active') :
+//         $(e.target).closest('.faq-accordion__content').addClass('active');
+//     });
+// })
