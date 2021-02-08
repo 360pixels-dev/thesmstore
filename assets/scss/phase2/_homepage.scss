@@ -164,6 +164,10 @@
         width: auto;
         margin: 0 12px;
 
+        @include respond(768px) {
+            width: 400px;
+        }
+
         &-image1,
         &-image2 {
             cursor: pointer;

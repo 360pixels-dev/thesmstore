@@ -547,6 +547,7 @@
 
             @include respond(tablet) {
                 display: block;
+                max-width: 95vw;
             }
         }
 
@@ -575,6 +576,7 @@
 
             @include respond(tablet) {
                 display: block;
+                max-width: 95vw;
             }
         }
 

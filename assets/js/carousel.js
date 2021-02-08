@@ -262,7 +262,7 @@ $(document).ready(function() {
         $('.sale--four-cards.mobile').owlCarousel({
             margin:0,
             loop:true,
-            autoWidth:false,
+            autoWidth:true,
             center: true,
             items:1,
             nav:true,
