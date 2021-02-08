@@ -118,6 +118,32 @@
         }
     }
 
+    & .expanded-image {
+        &.active {
+            display: flex;
+        }
+
+        & > .modal__close {
+            top: 44px;
+            right: 44px;
+        }
+
+        & > .modal__content {
+            width: 537px;
+            height: 649px;
+
+            @include respond(mobile) {
+                width: 287px;
+                height: 349px;
+            }
+
+            & > img {
+                height: inherit;
+                width: inherit;
+            }
+        }
+    }
+
     & .event-recap {
         &-carousel {
             display: flex;
@@ -235,10 +261,11 @@
 
                     & .owl-nav {
                         position: absolute;
-                        top: 50%;
-                        transform: translate(0, -50%);
+                        top: 35%;
+                        transform: translate(0, -35%);
                         width: 100%;
-                        padding: 0 41px;
+                        height: 0;
+                        padding: 0 21px;
 
                         & .owl-next,
                         & .owl-prev {
@@ -432,9 +459,10 @@
 
             & .owl-nav {
                 position: absolute;
-                top: 50%;
-                transform: translate(0, -50%);
+                top: 40%;
+                transform: translate(0, -40%);
                 width: 100%;
+                height: 0;
 
                 @include respond(360px) {
                     padding: 0 41px 0 29px;
