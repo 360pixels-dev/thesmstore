@@ -24556,6 +24556,35 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
     margin: -50px 0 15px 0;
   }
 }
+.press-release .get-direction-text {
+  position: absolute;
+  right: 0;
+  text-decoration: none;
+  color: #403f47;
+}
+.press-release .get-direction-text:hover {
+  color: #0067b3;
+}
+.press-release .get-direction-text::after {
+  display: none;
+  content: url("../images/icons/get-directions-arrow.svg");
+  padding-left: 12px;
+}
+.press-release .get-direction-text:hover:after {
+  display: inline;
+}
+@media only screen and (max-width: 1024px) {
+  .press-release .get-direction-text {
+    position: relative;
+    margin: 16px 0 0 24px;
+  }
+}
+@media only screen and (max-width: tablet) {
+  .press-release .get-direction-text {
+    position: relative;
+    margin: 16px 0 0 24px;
+  }
+}
 .press-release .event-recap-carousel {
   display: flex;
   align-items: center;
@@ -24619,6 +24648,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   width: 288px;
   height: 393px;
   position: relative;
+  cursor: pointer;
 }
 @media only screen and (max-width: 1024px) {
   .press-release .event-recap-carousel__featured {
@@ -24736,6 +24766,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   width: 184px;
   height: 184px;
   margin-bottom: 25px;
+  cursor: pointer;
 }
 @media only screen and (max-width: 1024px) {
   .press-release .event-recap-carousel__thumbnail {

@@ -92,6 +92,32 @@
         }
     }
 
+    & .get-direction-text {
+        position: absolute;
+        right: 0;
+        text-decoration: none;
+        color: $dark-gray;
+
+        &:hover {
+            color: #0067b3;
+        }
+
+        &::after {
+            display: none;
+            content: url("../images/icons/get-directions-arrow.svg");
+            padding-left: 12px;
+        }
+
+        &:hover:after {
+            display: inline;
+        }
+
+        @include respond(tablet) {
+            position: relative;
+            margin: 16px 0 0 24px;
+        }
+    }
+
     & .event-recap {
         &-carousel {
             display: flex;
@@ -147,6 +173,8 @@
                 width: 288px;
                 height: 393px;
                 position: relative;
+
+                cursor: pointer;
 
                 @include respond(tablet) {
                     width: 238px;
@@ -258,6 +286,8 @@
                 width: 184px;
                 height: 184px;
                 margin-bottom: 25px;
+
+                cursor: pointer;
 
                 @include respond(tablet) {
                     width: 164px;
