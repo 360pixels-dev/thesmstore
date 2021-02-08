@@ -555,6 +555,19 @@ $(document).ready(function() {
         })
     }
 
+    $('.event-recap-carousel__featured').ready(function() {
+        $('.event-recap-carousel__featured').click(function() {
+            var $this = $(this)
+
+            var imageUrl = $this.find('img').attr("src")
+
+            $('.modal__content').html(`
+                <img src="${imageUrl}" alt="">
+            `);
+            $('.modal').toggleClass("active")
+        })
+    })
+
     $('.event-recap-image-gallery__image').ready(function() {
         $('.event-recap-image-gallery__image').click(function() {
             var $this = $(this)
