@@ -481,10 +481,10 @@
 
         @include respond(tablet) {
             height: 275px;
-            max-width: 607px;
+            width: 95vw;
         }
 
-        @include respond(mobile) {
+        @include respond(767px) {
             height: 177px;
             max-width: 336px;
             margin-left: auto;
@@ -607,7 +607,11 @@
             right: 17px;
         }
 
-        @include respond(mobile) {
+        @include respond(768px) {
+            width: 240px;
+        }
+
+        @include respond(767px) {
             width: 190px;
             right: 26px;
             margin-right: 13px;
@@ -671,9 +675,12 @@
                 letter-spacing: 1.6px;
             }
 
-            @include respond(mobile) {
+            @include respond(768px) {
                 font-size: 20px;
                 line-height: 28px;
+            }
+
+            @include respond(767px) {
                 margin: 0;
             }
         }
