@@ -683,7 +683,7 @@
             width: 182px;
             margin-top: 12px;
 
-            @include respond(mobile) {
+            @include respond(767px) {
                 margin-top: 0;
             }
         }

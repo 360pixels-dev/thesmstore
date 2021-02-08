@@ -278,11 +278,6 @@
         height: 700px;
         margin: auto;
 
-        @include respond(tablet) {
-            width: 100%;
-            height: auto;
-        }
-
         @include respond(mobile) {
             width: 336px;
             height: 392px;
