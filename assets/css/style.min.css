@@ -14539,6 +14539,7 @@ header {
 .featured-content__slider img {
   margin-right: 24px;
   min-width: 806px;
+  object-fit: cover;
 }
 @media only screen and (max-width: 1024px) {
   .featured-content__slider img {
@@ -40076,9 +40077,6 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 .gift-section__card-description .red {
   color: #af111c;
 }
-.gift-section__card-description > a {
-  display: none;
-}
 @media only screen and (max-width: 820px) {
   .gift-section__card-description {
     display: block;
@@ -43953,6 +43951,27 @@ body {
 }
 .magazine-reader__nav--next {
   float: right;
+}
+
+.store-selector__container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 88px;
+}
+@media only screen and (max-width: 1024px) {
+  .store-selector__container {
+    margin-top: 56px;
+  }
+}
+@media only screen and (max-width: tablet) {
+  .store-selector__container {
+    margin-top: 56px;
+  }
+}
+.store-selector__details {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 500px;
 }
 
 /*# sourceMappingURL=style.min.css.map */

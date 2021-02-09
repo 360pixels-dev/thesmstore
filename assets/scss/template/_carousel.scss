@@ -280,6 +280,7 @@
             & img {
                 margin-right: 24px;
                 min-width: 806px;
+                object-fit: cover;
 
                 @include respond(tablet) {
                     height: 408px;

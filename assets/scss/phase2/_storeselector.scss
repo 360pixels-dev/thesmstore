@@ -1,0 +1,18 @@
+.store-selector {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+
+        margin-top: 88px;
+
+        @include respond(tablet) {
+            margin-top: 56px;
+        }
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 500px;
+    }
+}

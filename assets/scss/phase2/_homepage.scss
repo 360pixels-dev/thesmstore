@@ -91,9 +91,9 @@
                 color: $blood-red;
             }
 
-            & > a {
-                display: none;
-            }
+            // & > a {
+            //     display: none;
+            // }
 
             @include respond(mobile) {
                 display: block;
