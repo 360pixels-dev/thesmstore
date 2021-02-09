@@ -114,8 +114,16 @@
         flex-direction: column;
         justify-content: space-between;
 
+        @include respond(tablet) {
+            min-height: 636px;
+        }
+
+        @include respond(768px) {
+            min-height: 586px;
+        }
+
         @include respond(767px) {
-            min-height: 530px;
+            min-height: 560px;
         }
 
         &__container {
@@ -485,7 +493,7 @@
             }
 
             & h1 > span {
-                display: block;
+                // display: block;
                 margin-bottom: 8px;
                 color: $white;
                 letter-spacing: 3px;

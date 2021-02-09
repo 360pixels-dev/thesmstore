@@ -14329,9 +14329,24 @@ header {
   flex-direction: column;
   justify-content: space-between;
 }
+@media only screen and (max-width: 1024px) {
+  .featured-content {
+    min-height: 636px;
+  }
+}
+@media only screen and (max-width: tablet) {
+  .featured-content {
+    min-height: 636px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .featured-content {
+    min-height: 586px;
+  }
+}
 @media only screen and (max-width: 767px) {
   .featured-content {
-    min-height: 530px;
+    min-height: 560px;
   }
 }
 .featured-content__container {
@@ -14798,7 +14813,6 @@ header {
   }
 }
 .featured-video__text h1 > span {
-  display: block;
   margin-bottom: 8px;
   color: #ffffff;
   letter-spacing: 3px;
