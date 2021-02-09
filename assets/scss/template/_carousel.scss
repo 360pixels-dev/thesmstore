@@ -15,7 +15,7 @@
             width: 500px;
         }
 
-        @include respond(tablet) {
+        @include respond(767px) {
             width: 400px;
         }
 
@@ -95,7 +95,7 @@
     &__image {
         width: auto;
 
-        @include respond(tablet) {
+        @include respond(767px) {
             width: 187.67px;
         }
 
@@ -114,7 +114,7 @@
         flex-direction: column;
         justify-content: space-between;
 
-        @include respond(mobile) {
+        @include respond(767px) {
             min-height: 530px;
         }
 
@@ -127,12 +127,18 @@
             align-items: center;
 
             @include respond(tablet) {
+                max-width: 90%;
+                min-height: 508px;
+            }
+
+            @include respond(768px) {
+                min-height: 458px;
+            }
+
+            @include respond(767px) {
                 align-items: flex-start;
                 padding-top: 20px;
                 width: 328px;
-            }
-
-            @include respond(mobile) {
                 min-height: 530px;
                 margin-top: 16px;
             }
@@ -148,6 +154,10 @@
             z-index: 99;
 
             @include respond(tablet) {
+                margin: 48px 0 0 0;
+            }
+
+            @include respond(767px) {
                 position: relative;
                 margin: 0 150% 24px 0;
                 flex: 0 0 100%;
@@ -158,6 +168,16 @@
                 margin-bottom: 16px;
 
                 @include respond(tablet) {
+                    font-size: 48px;
+                    line-height: 56px;
+                }
+
+                @include respond(768px) {
+                    font-size: 36px;
+                    line-height: 44px;
+                }
+
+                @include respond(767px) {
                     font-size: 24px;
                     line-height: 32px;
                     letter-spacing: 1.6px;
@@ -166,14 +186,14 @@
                 & span {
                     display: block;
 
-                    @include respond(tablet) {
+                    @include respond(767px) {
                         display: inline-block;
                     }
 
                     &:nth-of-type(1) {
                         color: $teal;
 
-                        @include respond(tablet) {
+                        @include respond(767px) {
                             display: block;
                         }
                     }
@@ -182,6 +202,14 @@
                         margin-left: 100px;
 
                         @include respond(tablet) {
+                            margin-left: 80px;
+                        }
+
+                        @include respond(768px) {
+                            margin-left: 60px;
+                        }
+
+                        @include respond(767px) {
                             margin-left: 30px;
                         }
                     }
@@ -189,7 +217,7 @@
                     &:nth-of-type(3) {
                         margin-left: 55px;
 
-                        @include respond(tablet) {
+                        @include respond(767px) {
                             margin-left: 0;
                         }
                     }
@@ -202,6 +230,14 @@
                 margin-bottom: 53px;
 
                 @include respond(tablet) {
+                    width: 290px;
+                }
+
+                @include respond(768px) {
+                    width: 220px;
+                }
+
+                @include respond(767px) {
                     text-align: left;
                     margin-bottom: 24px;
                     width: inherit;
@@ -215,6 +251,14 @@
                 color: $black;
 
                 @include respond(tablet) {
+                    margin-left: 170px;
+                }
+
+                @include respond(768px) {
+                    margin-left: 100px;
+                }
+
+                @include respond(767px) {
                     margin-left: 0px;
                 }
             }
@@ -227,13 +271,9 @@
             max-height: 628px;
             // width: 100%;
 
-            @include respond(tablet) {
+            @include respond(767px) {
                 position: absolute !important;
-                top: 288px;
                 margin-left: 0;
-            }
-
-            @include respond(mobile) {
                 top: 300px;
             }
 
@@ -242,14 +282,21 @@
                 min-width: 806px;
 
                 @include respond(tablet) {
-                    height: 284px;
-                    margin-right: 18px;
-                    min-width: 303px;
+                    height: 408px;
+                    width: 100%;
+                    min-width: 616px;
                 }
 
-                @include respond(mobile) {
+                @include respond(768px) {
+                    height: 348px;
+                    min-width: 466px;
+                    margin-right: 16px;
+                }
+
+                @include respond(767px) {
                     height: 187px;
                     margin-right: 12px;
+                    min-width: 303px;
                 }
 
                 @include respond(320px) {
@@ -262,7 +309,7 @@
             }
 
             & .owl-stage-outer {
-                @include respond(tablet) {
+                @include respond(767px) {
                     overflow: initial !important;
                 }
             }

@@ -291,12 +291,12 @@
 
             @include respond(mobile) {
                 margin-top: 0;
-                flex: 0 0 250px;
+                flex: 0 0 76%;
             }
 
-            @include respond(320px) {
-                flex: 0 0 240px;
-            }
+            // @include respond(320px) {
+            //     flex: 0 0 240px;
+            // }
 
             & > span {
                 // display: block;
