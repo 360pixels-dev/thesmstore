@@ -3,10 +3,21 @@
         display: flex;
         justify-content: space-between;
 
+        padding: 46px 0;
         margin-top: 88px;
 
         @include respond(tablet) {
             margin-top: 56px;
+            padding: 46px;
+
+            max-width: 100%;
+        }
+
+        @include respond(767px) {
+            flex-direction: column-reverse;
+
+            padding: 0;
+            background-color: $light-gray;
         }
     }
 
@@ -14,5 +25,144 @@
         display: flex;
         flex-direction: column;
         flex: 0 0 500px;
+
+        @include respond(tablet) {
+            flex: 0 0 48%;
+        }
+
+        @include respond(767px) {
+            margin: 16px 12px;
+            padding: 25px 16px;
+            box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
+            background-color: $white;
+        }
+
+        & .toggle-view {
+            display: none;
+
+            @include respond(767px) {
+                display: block;
+
+                text-align: center;
+                margin-top: 24px;
+                color: $gray;
+
+                &:after {
+                    content: url("../images/icons/expand-arrow-up-gray.svg");
+                    padding-left: 12px;
+                    padding-bottom: 4px;
+                    vertical-align: middle;
+                }
+            }
+        }
+
+        & .events-fl__details > div {
+            margin-bottom: 8px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        & .events-fl__details > .get-direction-text {
+            text-decoration: none;
+
+            &:hover {
+                color: #0067b3;
+            }
+
+            &::after {
+                display: none;
+                content: url("../images/icons/get-directions-arrow.svg");
+                padding-left: 12px;
+            }
+
+            &:hover:after {
+                display: inline;
+            }
+        }
+
+        & .hr {
+            margin: 16px 0;
+        }
+    }
+
+    &__map {
+        display: flex;
+
+        width: 624px;
+        height: 456px;
+        background-image: url("../images/map-624w.png");
+
+        @include respond(tablet) {
+            width: 48%;
+            height: 374px;
+        }
+
+        @include respond(767px) {
+            width: 100%;
+            height: 204px;
+        }
+    }
+
+    &__contacts {
+        & > div {
+            display: flex;
+
+            margin-bottom: 10px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            & > p {
+                margin-left: 12px;
+            }
+        }
+    }
+
+    &__store-hours {
+        & > div {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            height: 160px;
+            width: 500px;
+
+            margin: 8px 0 24px 0;
+
+            @include respond(tablet) {
+                width: 462px;
+            }
+
+            @include respond(768px) {
+                width: 322px;
+                height: auto;
+            }
+
+            @include respond(767px) {
+                width: 100%;
+                align-items: center;
+            }
+
+            & > div {
+                display: flex;
+                justify-content: space-between;
+
+                width: 212px;
+                margin-bottom: 8px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        @include respond(767px) {
+            & > p:last-child {
+                text-align: center;
+            }
+        }
     }
 }
