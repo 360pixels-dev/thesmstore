@@ -90,10 +90,6 @@
                 &::placeholder {
                     color: $dark-gray;
                 }
-
-                & .highlight {
-                    background-color: yellow;
-                }
             }
         }
     }
@@ -213,6 +209,10 @@
 
                     @include respond(mobile) {
                         margin-bottom: 24px;
+                    }
+
+                    & .highlight {
+                        background-color: yellow;
                     }
                 }
             }

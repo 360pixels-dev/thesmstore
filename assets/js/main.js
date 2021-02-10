@@ -1,23 +1,84 @@
 $(document).ready(function () {
 
-    console.log($('.billpay__content-search').find('input'))
+    if ($('.billpay__content-search').length !== 0) {
+        var billpayInput = document.querySelector('.billpay__content-search').querySelector('input')
+        var billpayText = document.querySelectorAll('.billpay__category-content ul li')
 
-    $('.billpay__content-search').find('input').on('keyup', function(event) {
-        var keyword = event.currentTarget.value;
-        highlight('li', keyword);
-    });
-      
-    function highlight(selector, keyword) {
-        $(selector).each(function(index, element) {
-            var $element = $(element);
-            var original = $element.data('originalText');
-            if (original == undefined) {
-            original = $element.html();
-            $element.data('originalText', original);
+        function highlight(e) {
+            var regex = new RegExp(e.target.value, 'gi')
+            
+            for (let i = 0; i < billpayText.length; i++) {
+                var response = billpayText[i].innerText.replace(regex, function(str) {
+                    return "<span style='background-color: yellow;'>" + str + "</span>"
+                })
+                billpayText[i].innerHTML = response
             }
-            $element.html(original.replace(keyword, '<span class="highlight">' + keyword + '</span>'));
-        });
+        }
+
+        billpayInput.addEventListener('change', highlight)
+        billpayInput.addEventListener('keyup', highlight)
     }
+
+    if ($('.banner-inner--search__input-group').length !== 0) {
+        var helpSupportInput = document.querySelector('.banner-inner--search__input-group').querySelector('input')
+        var helpSupportHeaderText = document.querySelectorAll('.accordion__item-header span')
+        var helpSupportBodyText = document.querySelectorAll('.accordion__item-body-content p')
+
+        function highlight() {
+            var regex = new RegExp(helpSupportInput.value, 'gi')
+            
+            for (let i = 0; i < helpSupportHeaderText.length; i++) {
+                var response = helpSupportHeaderText[i].innerText.replace(regex, function(str) {
+                    return "<span style='background-color: yellow;'>" + str + "</span>"
+                })
+                helpSupportHeaderText[i].innerHTML = response
+            }
+
+            for (let i = 0; i < helpSupportBodyText.length; i++) {
+                var response = helpSupportBodyText[i].innerText.replace(regex, function(str) {
+                    return "<span style='background-color: yellow;'>" + str + "</span>"
+                })
+                helpSupportBodyText[i].innerHTML = response
+            }
+        }
+
+        highlight()
+    }
+
+    // $('.billpay__content-search').find('input').on('keyup', function(event) {
+    //     var keyword = event.currentTarget.value;
+    //     highlight('.billpay__category-content', keyword);
+    // });
+
+    // $('.banner-inner--search__input-group').find('input').val()
+    //     ? highlight('.accordion__item-header', )
+
+    // $('.banner-inner--search__input-group').find('input').ready(function(event) {
+    //     var keyword = $('.banner-inner--search__input-group').find('input').val()
+    //     // keyword ? highlight('.accordion__item-header', keyword) : null
+
+    //     $('.accordion__item-header').each(function(index, element) {
+    //         console.log($(element))
+    //         if (keyword === $(element).data('originalText').toLowerCase()) {
+    //             console.log('found')
+    //         }
+    //     })
+    // })
+      
+    // function highlight(selector, keyword) {
+    //     $(selector).each(function(index, element) {
+    //         var $element = $(element);
+
+    //         var original = $element.data('originalText');
+
+    //         if (original == undefined) {
+    //             original = $element.html();
+    //             $element.data('originalText', original);
+    //         }
+
+    //         $element.html(original.replace(keyword, '<span class="highlight">' + keyword + '</span>'));
+    //     });
+    // }
     
     // Input for numbers 
     $('.minus').click(function () {

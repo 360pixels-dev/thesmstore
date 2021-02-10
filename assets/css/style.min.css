@@ -30573,9 +30573,6 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 .billpay__content-search > input::placeholder {
   color: #403f47;
 }
-.billpay__content-search > input .highlight {
-  background-color: yellow;
-}
 .billpay__category {
   display: flex;
   flex-direction: column;
@@ -30735,6 +30732,9 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   .billpay__category-content > ul > li {
     margin-bottom: 24px;
   }
+}
+.billpay__category-content > ul > li .highlight {
+  background-color: yellow;
 }
 .billpay__support {
   width: 100%;
