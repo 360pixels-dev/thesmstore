@@ -684,4 +684,33 @@
     &__row {
         margin-top: 53px;
     }
+
+    &__header-m {
+        // display: none;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 12px;
+        margin-bottom: 53px;
+
+        & > p {
+            font-weight: 600;
+            text-align: center;
+        }
+
+        @include respond(mobile) {
+            display: flex;
+
+            margin-bottom: 28px;
+        }
+    }
+
+    & .blog-filter-m.blog-filter-dropdown {
+        display: none !important;
+
+        @include respond(767px) {
+            display: flex !important;
+        }
+    }
 }
