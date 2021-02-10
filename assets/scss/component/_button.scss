@@ -112,6 +112,18 @@ button {
             margin-left: 8px;
         }
     }
+
+    &.loading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 141px;
+
+        &::after {
+            content: "";
+        }
+    }
 }
 
 .button--cancel {
