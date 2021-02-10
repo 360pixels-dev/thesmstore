@@ -206,7 +206,8 @@
         @include respond(tablet) {
             width: 100%;
             height: min-content;
-            margin-bottom: -70px;
+            margin-bottom: -85px;
+            top: -85px;
         }
 
         & > img {

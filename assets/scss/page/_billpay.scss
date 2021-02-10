@@ -90,6 +90,10 @@
                 &::placeholder {
                     color: $dark-gray;
                 }
+
+                & .highlight {
+                    background-color: yellow;
+                }
             }
         }
     }

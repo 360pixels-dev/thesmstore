@@ -1,4 +1,23 @@
 $(document).ready(function () {
+
+    console.log($('.billpay__content-search').find('input'))
+
+    $('.billpay__content-search').find('input').on('keyup', function(event) {
+        var keyword = event.currentTarget.value;
+        highlight('li', keyword);
+    });
+      
+    function highlight(selector, keyword) {
+        $(selector).each(function(index, element) {
+            var $element = $(element);
+            var original = $element.data('originalText');
+            if (original == undefined) {
+            original = $element.html();
+            $element.data('originalText', original);
+            }
+            $element.html(original.replace(keyword, '<span class="highlight">' + keyword + '</span>'));
+        });
+    }
     
     // Input for numbers 
     $('.minus').click(function () {

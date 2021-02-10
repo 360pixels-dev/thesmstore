@@ -12320,7 +12320,7 @@ header {
   }
   .container-colored--smart-yellow:last-child {
     margin: -120px auto 0 auto;
-    padding: 12px !important;
+    padding: 21px 12px 12px 12px !important;
   }
 }
 @media only screen and (max-width: tablet) {
@@ -12333,7 +12333,7 @@ header {
   }
   .container-colored--smart-yellow:last-child {
     margin: -120px auto 0 auto;
-    padding: 12px !important;
+    padding: 21px 12px 12px 12px !important;
   }
 }
 @media only screen and (max-width: 820px) {
@@ -20336,14 +20336,16 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   .whats-new .large-image {
     width: 100%;
     height: min-content;
-    margin-bottom: -70px;
+    margin-bottom: -85px;
+    top: -85px;
   }
 }
 @media only screen and (max-width: tablet) {
   .whats-new .large-image {
     width: 100%;
     height: min-content;
-    margin-bottom: -70px;
+    margin-bottom: -85px;
+    top: -85px;
   }
 }
 .whats-new .large-image > img {
@@ -30571,6 +30573,9 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 .billpay__content-search > input::placeholder {
   color: #403f47;
 }
+.billpay__content-search > input .highlight {
+  background-color: yellow;
+}
 .billpay__category {
   display: flex;
   flex-direction: column;
@@ -40090,6 +40095,10 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 .gift-section__card-description .red {
   color: #af111c;
+}
+.gift-section__card-description > a {
+  display: block;
+  margin-top: 40px;
 }
 @media only screen and (max-width: 820px) {
   .gift-section__card-description {
