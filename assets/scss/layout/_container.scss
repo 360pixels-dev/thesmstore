@@ -137,10 +137,19 @@
         }
     }
 
-    @include respond(mobile) {
+    @include respond(tablet) {
+        width: 96%;
+    }
+
+    @include respond(767px) {
+        padding: 21px 21px 51px 21px !important;
         margin: 0 0 40px 0;
         width: 100% !important;
         padding: 15px;
+
+        &:last-child {
+            padding: 41px 12px 12px 12px !important;
+        }
     }
 
     &--pink {
@@ -151,7 +160,7 @@
             padding: 14px;
         }
 
-        @include respond(mobile) {
+        @include respond(767px) {
             border: 10px solid $beauty-pink;
 
             margin: 0px auto 40px auto;
@@ -162,7 +171,7 @@
     &--freshmint {
         border: 15px solid $freshmint;
 
-        @include respond(mobile) {
+        @include respond(767px) {
             border: 10px solid $freshmint;
         }
     }
@@ -170,7 +179,7 @@
     &--pacific {
         border: 15px solid $pacific;
 
-        @include respond(mobile) {
+        @include respond(767px) {
             border: 10px solid $pacific;
         }
     }
@@ -178,7 +187,7 @@
     &--yolk {
         border: 15px solid $yolk;
 
-        @include respond(mobile) {
+        @include respond(767px) {
             border: 10px solid $yolk;
         }
     }
@@ -186,7 +195,7 @@
     &--blue {
         border: 15px solid $blue;
 
-        @include respond(mobile) {
+        @include respond(767px) {
             border: 10px solid $blue;
         }
     }
@@ -194,7 +203,7 @@
     &--cerulean {
         border: 15px solid $cerulean;
 
-        @include respond(mobile) {
+        @include respond(767px) {
             border: 10px solid $cerulean;
         }
     }
@@ -202,7 +211,7 @@
     &--violet {
         border: 15px solid $violet;
 
-        @include respond(mobile) {
+        @include respond(767px) {
             border: 10px solid $violet;
             margin-bottom: 0;
         }
@@ -215,7 +224,7 @@
             padding: 21px 21px 41px 21px;
         }
 
-        @include respond(mobile) {
+        @include respond(767px) {
             border: 10px solid $lemon;
 
             & > h1 {
@@ -247,7 +256,7 @@
             }
         }
 
-        @include respond(mobile) {
+        @include respond(767px) {
             padding: 21px;
             border: 10px solid $dark-orange;
 
@@ -288,7 +297,7 @@
             }
         }
 
-        @include respond(mobile) {
+        @include respond(767px) {
             border: 10px solid #000;
             padding: 21px;
 
@@ -328,7 +337,7 @@
             line-height: 24px;
             margin: 0 0 45px 20px !important;
 
-            @include respond(mobile) {
+            @include respond(767px) {
                 font-size: 14px;
                 line-height: 22px;
 
@@ -359,7 +368,7 @@
             }
         }
 
-        @include respond(mobile) {
+        @include respond(767px) {
             border: 10px solid $smart-yellow;
 
             & > h1 {
@@ -372,15 +381,12 @@
             & > p:last-child {
                 text-align: justify;
             }
+
+            &:last-child {
+                margin: -120px auto 0 auto;
+                padding: 41px 12px 12px 12px !important;
+            }
         }
-    }
-
-    @include respond(1040px) {
-        width: 96%;
-    }
-
-    @include respond(mobile) {
-        width: 336px;
     }
 }
 

@@ -9,7 +9,7 @@ $(document).ready(function () {
             
             for (let i = 0; i < billpayText.length; i++) {
                 var response = billpayText[i].innerText.replace(regex, function(str) {
-                    return "<span style='background-color: yellow;'>" + str + "</span>"
+                    return "<span style='background-color: #FFCD4E;'>" + str + "</span>"
                 })
                 billpayText[i].innerHTML = response
             }
@@ -19,7 +19,9 @@ $(document).ready(function () {
         billpayInput.addEventListener('keyup', highlight)
     }
 
-    if ($('.banner-inner--search__input-group').length !== 0) {
+    if ($('.banner-inner--search__input-group').length !== 0 && $('.banner-inner--search__input-group').find('input').val()) {
+        console.log($('.banner-inner--search__input-group').find('input').val())
+        
         var helpSupportInput = document.querySelector('.banner-inner--search__input-group').querySelector('input')
         var helpSupportHeaderText = document.querySelectorAll('.accordion__item-header span')
         var helpSupportBodyText = document.querySelectorAll('.accordion__item-body-content p')
@@ -29,14 +31,14 @@ $(document).ready(function () {
             
             for (let i = 0; i < helpSupportHeaderText.length; i++) {
                 var response = helpSupportHeaderText[i].innerText.replace(regex, function(str) {
-                    return "<span style='background-color: yellow;'>" + str + "</span>"
+                    return "<span style='background-color: #FFCD4E;'>" + str + "</span>"
                 })
                 helpSupportHeaderText[i].innerHTML = response
             }
 
             for (let i = 0; i < helpSupportBodyText.length; i++) {
                 var response = helpSupportBodyText[i].innerText.replace(regex, function(str) {
-                    return "<span style='background-color: yellow;'>" + str + "</span>"
+                    return "<span style='background-color: #FFCD4E;'>" + str + "</span>"
                 })
                 helpSupportBodyText[i].innerHTML = response
             }
@@ -44,6 +46,33 @@ $(document).ready(function () {
 
         highlight()
     }
+
+    // if ($('.banner-inner--search__input-group').length !== 0) {
+    //     var helpSupportInput = document.querySelector('.banner-inner--search__input-group').querySelector('input')
+    //     var helpSupportHeaderText = document.querySelectorAll('.accordion__item-header span')
+    //     var helpSupportBodyText = document.querySelectorAll('.accordion__item-body-content p')
+
+    //     function highlight(e) {
+    //         var regex = new RegExp(e.target.value, 'gi')
+            
+    //         for (let i = 0; i < helpSupportHeaderText.length; i++) {
+    //             var response = helpSupportHeaderText[i].innerText.replace(regex, function(str) {
+    //                 return "<span style='background-color: #FFCD4E;'>" + str + "</span>"
+    //             })
+    //             helpSupportHeaderText[i].innerHTML = response
+    //         }
+
+    //         for (let i = 0; i < helpSupportBodyText.length; i++) {
+    //             var response = helpSupportBodyText[i].innerText.replace(regex, function(str) {
+    //                 return "<span style='background-color: #FFCD4E;'>" + str + "</span>"
+    //             })
+    //             helpSupportBodyText[i].innerHTML = response
+    //         }
+    //     }
+
+    //     helpSupportInput.addEventListener('change', highlight)
+    //     helpSupportInput.addEventListener('keyup', highlight)
+    // }
 
     // $('.billpay__content-search').find('input').on('keyup', function(event) {
     //     var keyword = event.currentTarget.value;

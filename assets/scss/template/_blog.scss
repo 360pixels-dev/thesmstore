@@ -34,7 +34,7 @@
         justify-content: center;
         width: 100%;
 
-        @include respond(mobile) {
+        @include respond(767px) {
             display: none;
         }
 
@@ -596,6 +596,14 @@
         }
     }
 
+    & .blog-filter-m.blog-filter-dropdown {
+        display: none !important;
+
+        @include respond(767px) {
+            display: flex !important;
+        }
+    }
+
     &__content {
         padding: 66px 0;
 
@@ -615,12 +623,13 @@
     }
 
     &__header-m {
-        display: none;
+        // display: none;
 
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin: 0 12px;
+        margin-bottom: 53px;
 
         & > p {
             font-weight: 600;
@@ -629,6 +638,8 @@
 
         @include respond(mobile) {
             display: flex;
+
+            margin-bottom: 28px;
         }
     }
 
