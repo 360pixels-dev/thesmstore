@@ -1289,7 +1289,6 @@
 
                 &:nth-child(5) {
                     flex: 2;
-
                     // @include respond(tablet) {
                     //     flex: 0 0 66.66% !important;
                     // }
@@ -1299,6 +1298,8 @@
                         width: 100%;
                         margin-top: 16px;
 
+                        border-bottom: 0;
+
                         & > p {
                             margin-bottom: 0;
                         }
@@ -1307,6 +1308,10 @@
                             padding-top: 0;
                         }
                     }
+                }
+
+                &:last-child {
+                    border-bottom: 0;
                 }
             }
         }

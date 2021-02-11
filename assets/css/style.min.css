@@ -14162,6 +14162,7 @@ header {
     flex: 0 0 100% !important;
     width: 100%;
     margin-top: 16px;
+    border-bottom: 0;
   }
   .footer-new__mobile-content .row div:nth-child(5) > p {
     margin-bottom: 0;
@@ -14175,6 +14176,7 @@ header {
     flex: 0 0 100% !important;
     width: 100%;
     margin-top: 16px;
+    border-bottom: 0;
   }
   .footer-new__mobile-content .row div:nth-child(5) > p {
     margin-bottom: 0;
@@ -14182,6 +14184,9 @@ header {
   .footer-new__mobile-content .row div:nth-child(5) .footer-new__content--col-items p {
     padding-top: 0;
   }
+}
+.footer-new__mobile-content .row div:last-child {
+  border-bottom: 0;
 }
 .footer-new__mobile-content--col-header {
   margin-bottom: 16px;
