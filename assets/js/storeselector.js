@@ -9,19 +9,19 @@ window.addEventListener("scroll", () => {
     let lowerNavMenu = document.getElementsByClassName("nav__lower-2")
 // let shadowGradient = document.querySelector(".banner__shadow-gradient")
 
-    storeSelectorDrawer.classList.toggle("sticky-store-selector", pageYOffset > 88)
-    mobileMenuDiv.classList.toggle("sticky-mobile-menu", pageYOffset > 88)
-    mobileHam.classList.toggle("sticky", pageYOffset > 88)
-    mobileSearch[0].classList.toggle("sticky", pageYOffset > 88)
-    upperNavMenu[0].classList.toggle("sticky", pageYOffset > 88)
-    lowerNavMenu[0].classList.toggle("sticky2", pageYOffset > 88)
-    // shadowGradient.classList.toggle("sticky3", pageYOffset > 88)
+    storeSelectorDrawer.classList.toggle("sticky-store-selector", pageYOffset > 2)
+    mobileMenuDiv.classList.toggle("sticky-mobile-menu", pageYOffset > 2)
+    mobileHam.classList.toggle("sticky-hamburger", pageYOffset > 2)
+    mobileSearch[0].classList.toggle("sticky", pageYOffset > 2)
+    upperNavMenu[0].classList.toggle("sticky", pageYOffset > 2)
+    lowerNavMenu[0].classList.toggle("sticky2", pageYOffset > 2)
+    // shadowGradient.classList.toggle("sticky3", pageYOffset > 2)
 
     if ($(document).width() === 1024) {
-        lowerNavMenu[0].classList.toggle("sticky3", pageYOffset > 56)
+        lowerNavMenu[0].classList.toggle("sticky3", pageYOffset > 2)
     }
     
-    lowerNavMenu[0].classList.toggle("colorize", pageYOffset > 88)
+    lowerNavMenu[0].classList.toggle("colorize", pageYOffset > 2)
 })
 
 function openStoreSelector() {

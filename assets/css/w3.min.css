@@ -969,8 +969,20 @@ a {
         opacity: 0;
     }
     to {
-        top: 120px;
+        top: 164px;
         opacity: 1;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    @keyframes animatetop {
+        from {
+            top: -300px;
+            opacity: 0;
+        }
+        to {
+            top: 112px;
+            opacity: 1;
+        }
     }
 }
 .w3-animate-top-nav {

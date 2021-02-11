@@ -232,6 +232,18 @@
     }
 }
 
+.sticky-hamburger {
+    position: fixed !important;
+    animation-name: catchup-hamburger;
+    animation-duration: 0.5s;
+    transition: 0.3s ease-out !important;
+    width: 100%;
+
+    @include respond(mobile) {
+        animation-duration: 0.3s;
+    }
+}
+
 .sticky2 {
     position: fixed !important;
     animation-name: catchup2;
@@ -266,6 +278,15 @@
     }
     to {
         top: 0px;
+    }
+}
+
+@keyframes catchup-hamburger {
+    from {
+        top: -88px;
+    }
+    to {
+        top: 18px;
     }
 }
 
