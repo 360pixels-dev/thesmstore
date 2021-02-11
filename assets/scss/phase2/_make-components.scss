@@ -1349,3 +1349,146 @@
         }
     }
 }
+
+#store-selector-drawer-2 {
+    display: none;
+    z-index: 998;
+    width: 399px !important;
+    overflow-x: hidden;
+
+    @include respond(tablet) {
+        width: 300px !important;
+    }
+}
+
+.make-store-selector-drawer {
+    position: fixed;
+    top: 163px;
+    left: 0;
+    height: 83%;
+    width: 399px;
+    background: white;
+
+    @include respond(tablet) {
+        width: 300px;
+    }
+
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #e0e0e0;
+        border-radius: 5px;
+    }
+
+    &__title {
+        @include respond(mobile) {
+            & > span {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+
+    &__location {
+        justify-content: center;
+        margin-bottom: 21px;
+
+        @include respond(mobile) {
+            justify-content: flex-start;
+
+            @include respond(mobile) {
+                & > span {
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+
+    &__store {
+        & > .store-title {
+            padding: 14px 8px 9px 14px;
+
+            @include respond(mobile) {
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+    }
+
+    &__description {
+        padding-left: 14px;
+        margin-bottom: 8px;
+
+        @include respond(mobile) {
+            & > p {
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+    }
+
+    &__availability {
+        padding-left: 14px;
+        margin-bottom: 16px;
+
+        & > span {
+            color: #55c9a5;
+            letter-spacing: 1.6px;
+        }
+    }
+
+    & ul li > div {
+        display: flex;
+
+        input {
+            flex-wrap: inherit;
+            border: 1px solid #cacaca;
+            color: $dark-gray;
+            width: 326px;
+            margin: 12px auto;
+
+            @include respond(mobile) {
+                width: 296px;
+            }
+        }
+    }
+
+    li {
+        border-bottom: 1px solid #ececec;
+        margin: 0 9px;
+    }
+
+    & .selected-store {
+        margin-top: 14px;
+        padding: 4px 8px;
+        background: #55c9a5;
+        border-radius: 4px;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 2px;
+        color: $white;
+        text-transform: uppercase;
+        height: 26px;
+    }
+
+    @include respond(tablet) {
+        width: 312px;
+        top: 110px;
+
+        & ul li > div {
+            input {
+                flex-wrap: inherit;
+                border: 1px solid #cacaca;
+                color: $dark-gray;
+                width: 266px;
+                font-size: 16px;
+                margin: 12px auto;
+            }
+        }
+    }
+}

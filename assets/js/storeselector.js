@@ -2,9 +2,11 @@ window.addEventListener("scroll", () => {
     let mobileSearch = document.getElementsByClassName("mobile-search-open")
     let mobileMenuDiv = document.getElementById('mobile-menu')
     let mobileHam = document.getElementById('sm_menu_ham')
-    let storeSelectorDrawer = document.getElementById('store-selector-drawer')
+    // let storeSelectorDrawer = document.getElementById('store-selector-drawer')
+    let storeSelectorDrawer = document.getElementById('store-selector-drawer-2')
     let upperNavMenu = document.getElementsByClassName("nav__upper")
-    let lowerNavMenu = document.getElementsByClassName("nav__lower")
+    // let lowerNavMenu = document.getElementsByClassName("nav__lower")
+    let lowerNavMenu = document.getElementsByClassName("nav__lower-2")
 // let shadowGradient = document.querySelector(".banner__shadow-gradient")
 
     storeSelectorDrawer.classList.toggle("sticky-store-selector", pageYOffset > 88)
@@ -23,11 +25,12 @@ window.addEventListener("scroll", () => {
 })
 
 function openStoreSelector() {
-    let drawer = document.getElementById("store-selector-drawer")
+    // let drawer = document.getElementById("store-selector-drawer")
+    let drawer = document.getElementById("store-selector-drawer-2")
     let overlay = document.getElementById("store-selector-overlay")
     let storeSelectorArrow = document.getElementById("store-selector-arrow")
     let mobileStoreSelectorArrow = document.getElementById("mobile-store-selector-arrow")
-    let lowerNav = document.getElementsByClassName("fashion-nav")
+    let lowerNav = document.getElementsByClassName("store-selector-nav")
 
     if (drawer.style.display === 'block' || overlay.style.display === 'block') {
 

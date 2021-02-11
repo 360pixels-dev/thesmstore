@@ -55,6 +55,10 @@
             line-height: 40px;
             letter-spacing: 4px;
         }
+
+        & > h5 {
+            padding: 0 !important;
+        }
     }
 
     &__cards {

@@ -1299,6 +1299,185 @@
         }
     }
 
+    &__lower-2 {
+        position: absolute;
+        display: flex;
+        // display: none;
+        height: 76px;
+        // background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+        background: $indigo;
+        padding: 14px 24px;
+        justify-content: space-between;
+        align-items: center;
+        top: 87px;
+        left: 0;
+        z-index: 998;
+        transition: 0.3s ease-in;
+
+        @include respond(tablet) {
+            top: 0;
+            padding: 44px 20px 0;
+            background: linear-gradient(
+                180deg,
+                rgba(0, 0, 0, 0.25) 0%,
+                rgba(0, 0, 0, 0) 100%
+            );
+        }
+
+        &--index {
+            @include respond(tablet) {
+                top: 56px;
+                height: 56px;
+                padding: 16px;
+            }
+        }
+
+        & .store-selector {
+            font-family: "Open Sans";
+
+            // @include respond(tablet) {
+            //     display: none;
+            // }
+
+            span {
+                margin-right: 35px;
+            }
+
+            & .white {
+                color: $white !important;
+            }
+
+            & .thin-orange {
+                font-weight: 600;
+                color: $bee;
+            }
+
+            & .store-selector-arrow {
+                transform: rotate(0deg);
+                transition: transform 0.15s linear;
+            }
+
+            & .store-selector-arrow.active {
+                transform: rotate(180deg);
+                transition: transform 0.15s linear;
+            }
+        }
+
+        & .mobile-store-selector {
+            display: none;
+            padding: 0;
+
+            @include respond(tablet) {
+                display: none;
+            }
+
+            & .white {
+                color: $white !important;
+            }
+
+            & .thin-orange {
+                font-weight: 600;
+                color: $bee;
+            }
+
+            & .mobile-store-selector-arrow {
+                transform: rotate(0deg);
+                transition: transform 0.15s linear;
+            }
+
+            & .mobile-store-selector-arrow.active {
+                transform: rotate(180deg);
+                transition: transform 0.15s linear;
+            }
+        }
+
+        & .menu {
+            width: 20%;
+
+            @include respond(tablet) {
+                display: none;
+            }
+        }
+
+        &-menu {
+            display: flex;
+            flex: 0 0 766px;
+            justify-content: flex-end;
+            //   align-items: center;
+            margin: auto;
+            padding: auto;
+
+            @include respond(1160px) {
+                display: none;
+            }
+
+            &-item {
+                height: 100px;
+                display: flex;
+                align-items: center;
+                padding-left: 40px;
+
+                & > a {
+                    position: relative;
+                    font-weight: 600;
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        display: none;
+                        width: 100%;
+                        top: 36px;
+                        // border-bottom: 3px solid $white;
+                    }
+                }
+
+                &:hover {
+                    & > a {
+                        &::after {
+                            display: block;
+                        }
+                    }
+
+                    & > .nav__dropdown {
+                        display: flex;
+                        padding-left: 24px;
+                        padding-right: 24px;
+                    }
+
+                    & > ul {
+                        display: block;
+                        position: absolute;
+                    }
+                }
+
+                &:nth-of-type(4) {
+                    &:hover > .nav__dropdown--events {
+                        display: flex;
+                    }
+                }
+
+                & > a {
+                    color: $white;
+                    text-decoration: none;
+                    padding-bottom: 8px;
+                    // border-bottom: 3px solid transparent;
+
+                    @include respond(1160px) {
+                        color: $black;
+                        font-size: 16px;
+                        line-height: 24px;
+                        font-weight: normal;
+                    }
+
+                    // &:hover,
+                    // &.active {
+                    //     border-bottom: 3px solid $white;
+                    // }
+                }
+            }
+        }
+    }
+
     &__mobile {
         display: none;
         position: absolute;

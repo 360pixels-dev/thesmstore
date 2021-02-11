@@ -973,6 +973,20 @@ a {
         opacity: 1;
     }
 }
+.w3-animate-top-nav {
+    position: fixed;
+    animation: animatetopnav 0.4s;
+}
+@keyframes animatetopnav {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 164px;
+        opacity: 1;
+    }
+}
 .w3-animate-left {
     position: relative;
     animation: animateleft 0.4s;
