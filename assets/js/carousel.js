@@ -246,7 +246,7 @@ $(document).ready(function() {
     // CATEGORY PAGES
     if ($('.sale--three-cards.mobile').length !== 0) {
         $('.sale--three-cards.mobile').owlCarousel({
-            margin:0,
+            margin:4,
             loop:true,
             autoWidth:false,
             center: true,
@@ -260,7 +260,7 @@ $(document).ready(function() {
 
     if ($('.sale--four-cards.mobile').length !== 0) {
         $('.sale--four-cards.mobile').owlCarousel({
-            margin:0,
+            margin:4,
             loop:true,
             autoWidth:true,
             center: true,

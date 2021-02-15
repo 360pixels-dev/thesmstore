@@ -772,29 +772,34 @@
                 background-color: #397cee;
                 justify-content: space-between;
 
-                & > h2 {
-                    font-weight: bold;
-                    font-size: 16px;
-                    line-height: 24px;
+                & > div {
                     display: flex;
-                    align-items: center;
-                    letter-spacing: 4px;
-                    text-transform: uppercase;
-                    color: #ffffff;
+
+                    & > h2 {
+                        font-weight: bold;
+                        font-size: 16px;
+                        line-height: 24px;
+                        display: flex;
+                        align-items: center;
+                        letter-spacing: 4px;
+                        text-transform: uppercase;
+                        color: #ffffff;
+
+                        margin-left: 30px;
+                    }
                 }
 
-                & > a {
+                & > div:last-child {
                     display: flex;
                     align-content: center;
                     justify-content: center;
                     padding: 6px;
                     background-color: rgba(22, 23, 32, 0.6);
+                    z-index: 5;
+
                     & > img {
                         filter: brightness(0) invert(1);
-                    }
-
-                    &.modal__close {
-                        position: unset;
+                        z-index: 1;
                     }
                 }
             }

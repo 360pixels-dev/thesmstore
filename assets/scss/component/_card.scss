@@ -486,13 +486,13 @@
 
         @include respond(767px) {
             height: 177px;
-            max-width: 336px;
-            margin-left: auto;
-            margin-right: auto;
+            // max-width: 336px;
+            // margin-left: auto;
+            // margin-right: auto;
         }
 
         @include respond(320px) {
-            max-width: 300px;
+            // max-width: 300px;
         }
     }
 
