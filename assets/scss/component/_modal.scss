@@ -772,6 +772,10 @@
                 background-color: #397cee;
                 justify-content: space-between;
 
+                @include respond(767px) {
+                    padding-left: 16px;
+                }
+
                 & > div {
                     display: flex;
 
@@ -786,6 +790,10 @@
                         color: #ffffff;
 
                         margin-left: 30px;
+
+                        @include respond(767px) {
+                            margin-left: 8px;
+                        }
                     }
                 }
 

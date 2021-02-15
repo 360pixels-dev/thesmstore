@@ -9252,6 +9252,11 @@ body.mmactive {
   background-color: #397cee;
   justify-content: space-between;
 }
+@media only screen and (max-width: 767px) {
+  .modal--tos > .modal-content > .top-content {
+    padding-left: 16px;
+  }
+}
 .modal--tos > .modal-content > .top-content > div {
   display: flex;
 }
@@ -9265,6 +9270,11 @@ body.mmactive {
   text-transform: uppercase;
   color: #ffffff;
   margin-left: 30px;
+}
+@media only screen and (max-width: 767px) {
+  .modal--tos > .modal-content > .top-content > div > h2 {
+    margin-left: 8px;
+  }
 }
 .modal--tos > .modal-content > .top-content > div:last-child {
   display: flex;

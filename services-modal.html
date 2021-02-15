@@ -918,17 +918,11 @@
         if (event.target.classList[0] === 'modal-close') {
 
             if (event.target.nodeName === 'IMG') {
-                console.log(event.target.name)
-
                 $(`#modal-${event.target.name}`).toggleClass('active')
             }
 
             
             if (event.target.nodeName === 'DIV') {
-                // event.target.parentElement.parentElement.parentElement.parentElement.classList.toggle('active')
-
-                console.log(event.target.id)
-
                 $(`#modal-${event.target.id}`).toggleClass('active')
             }
 
