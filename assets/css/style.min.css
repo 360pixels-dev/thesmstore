@@ -8389,8 +8389,8 @@ body.mmactive {
   position: fixed;
   top: 0;
   left: 0;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   background: rgba(22, 23, 32, 0.6);
   z-index: 999;
 }
@@ -12559,7 +12559,7 @@ header {
 
 .footer {
   position: relative;
-  min-height: 468px;
+  min-height: fit-content;
   background: #18489a;
   display: flex;
   flex-direction: column;
@@ -12790,6 +12790,7 @@ header {
   padding: 0px;
 }
 .footer__content {
+  display: none;
   padding: 48px 72px 50px 72px;
   color: #ffffff;
 }
@@ -12807,6 +12808,9 @@ header {
   .footer__content {
     padding: 24px 0 28px 0;
   }
+}
+.footer__content--corporate-accordion {
+  display: none;
 }
 .footer__content .row div:nth-child(1) {
   flex: 1;
