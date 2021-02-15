@@ -875,7 +875,7 @@
                         <img src="./assets/images/icons/remittance-modal.svg" alt="">
                         <h2>Remittance</h2>
                     </div>
-                    <div class="modal-close"><img class="modal-close" src="./assets/images/icons/close-black.svg" alt=""></div>
+                    <div class="modal-close" id="remittance"><img class="modal-close" name="remittance" src="./assets/images/icons/close-black.svg" alt=""></div>
                 </div>
 
                 <div class="tos">
@@ -918,12 +918,18 @@
         if (event.target.classList[0] === 'modal-close') {
 
             if (event.target.nodeName === 'IMG') {
-                event.target.parentElement.parentElement.parentElement.parentElement.parentElement.classList.toggle('active')
+                console.log(event.target.name)
+
+                $(`#modal-${event.target.name}`).toggleClass('active')
             }
 
             
             if (event.target.nodeName === 'DIV') {
-                event.target.parentElement.parentElement.parentElement.parentElement.classList.toggle('active')
+                // event.target.parentElement.parentElement.parentElement.parentElement.classList.toggle('active')
+
+                console.log(event.target.id)
+
+                $(`#modal-${event.target.id}`).toggleClass('active')
             }
 
         }
