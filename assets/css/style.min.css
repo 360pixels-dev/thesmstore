@@ -3350,6 +3350,25 @@ body.mmactive {
   display: block;
 }
 
+.index.banner {
+  margin-top: 88px;
+}
+@media only screen and (max-width: 1366px) {
+  .index.banner {
+    height: 100vh;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .index.banner {
+    margin-top: 56px;
+  }
+}
+@media only screen and (max-width: tablet) {
+  .index.banner {
+    margin-top: 56px;
+  }
+}
+
 .banner {
   background-color: #ffa8ae;
   position: relative;
@@ -3374,33 +3393,20 @@ body.mmactive {
   width: 100%;
   height: 286px;
   position: absolute;
-  top: 64px;
-}
-@media only screen and (max-width: 1024px) {
-  .banner__yellow {
-    top: 56px;
-  }
-}
-@media only screen and (max-width: tablet) {
-  .banner__yellow {
-    top: 56px;
-  }
+  top: 0;
+  left: 0;
 }
 @media only screen and (max-width: 820px) {
   .banner__yellow {
-    left: 0;
     width: 260px;
     height: 221px;
-    top: 0;
     background-size: 200% 80%;
   }
 }
 @media only screen and (max-width: mobile) {
   .banner__yellow {
-    left: 0;
     width: 260px;
     height: 221px;
-    top: 0;
     background-size: 200% 80%;
   }
 }
@@ -3468,7 +3474,7 @@ body.mmactive {
   position: absolute;
   right: 0;
   bottom: 0;
-  top: 24px;
+  top: 0;
 }
 .banner__featured.height75 {
   height: 75%;
@@ -3498,8 +3504,6 @@ body.mmactive {
 }
 @media only screen and (max-width: 360px) {
   .banner__featured {
-    position: absolute;
-    top: 56px;
     height: 444px;
   }
 }
@@ -45131,7 +45135,11 @@ body {
 
 .magazine-reader {
   width: 100%;
-  max-height: 852px;
+  height: 100%;
+  max-height: max-content;
+}
+.magazine-reader .df-container > canvas {
+  background-color: #88898f !important;
 }
 .magazine-reader__header {
   background: #f0f3fc;

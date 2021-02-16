@@ -1,3 +1,15 @@
+.index.banner {
+    margin-top: 88px;
+
+    @include respond(1366px) {
+        height: 100vh;
+    }
+
+    @include respond(tablet) {
+        margin-top: 56px;
+    }
+}
+
 .banner {
     background-color: #ffa8ae;
     position: relative;
@@ -18,17 +30,12 @@
         width: 100%;
         height: 286px;
         position: absolute;
-        top: 64px;
-
-        @include respond(tablet) {
-            top: 56px;
-        }
+        top: 0;
+        left: 0;
 
         @include respond(mobile) {
-            left: 0;
             width: 260px;
             height: 221px;
-            top: 0;
             background-size: 200% 80%;
         }
     }
@@ -95,7 +102,7 @@
         position: absolute;
         right: 0;
         bottom: 0;
-        top: 24px;
+        top: 0;
 
         &.height75 {
             height: 75%;
@@ -118,8 +125,6 @@
         @include respond(360px) {
             // right: -28px;
             //height: 378px;
-            position: absolute;
-            top: 56px;
             height: 444px;
         }
     }

@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Magazine Reader | SM Store</title>
         <link rel="stylesheet" href="./assets/css/style.min.css">
+        <link rel="stylesheet" href="./assets/dflip/css/dflip.css">
+        <link rel="stylesheet" href="./assets/dflip/css/themify-icons.css">
     </head>
 
     <body>
@@ -19,31 +21,9 @@
                     <h3 class="font-h3-caps">Real Beauty</h3>
                 </div>
 
-                <div id="flipbook" class="magazine-reader__content">
+                <div class="_df_book" id="book_pdf"></div>
 
-                        <img src="./assets/images/magazine1.png" alt="">
-
-            
-                        <img src="./assets/images/magazine1.png" alt="">
-
-                        <img src="./assets/images/magazine1.png" alt="">
-      
-
-      
-                        <img src="./assets/images/magazine1.png" alt="">
-     
-
-                    
-
-                    <!-- <div class="magazine-reader__nav">
-                        <a class="magazine-reader__nav--prev disabled" href="#">
-                            <img src="./assets/images/mr-button-left.png" alt="">
-                        </a>
-                        <a class="magazine-reader__nav--next"  href="#">
-                            <img src="./assets/images/mr-button-right.png" alt="">
-                        </a>
-                    </div> -->
-                </div>
+                
             </div>
 
             
@@ -61,16 +41,30 @@
     <script src="assets/js/page-flip.browser.min.js"></script>
     <!-- CUSTOM JS -->
     <script src="assets/js/carousel.js"></script>
+    <script src="assets/dflip/js/dflip.min.js"></script>
 
-    <script type="text/javascript">
+    <script>
+        var option_book_pdf = {
+            source:'assets/sample.pdf',
+            webgl:true,
+            webglShadow:true,
+            openPage:2,
+            height: 852
+            //we recommend using default auto height
+        };
+    </script>
+
+    <!-- <script type="text/javascript">
         $("#flipbook").turn({
             gradients: true,
             acceleration: true,
-            autoCenter: true
+            autoCenter: true,
+            width: 1224,
+            height: 1224
         });
 
-        $("#flipbook").width(1224)
-        $("#flipbook").height(699)
-    </script>
+        // $("#flipbook").width(1224)
+        // $("#flipbook").height(699)
+    </script> -->
 
 </html>
