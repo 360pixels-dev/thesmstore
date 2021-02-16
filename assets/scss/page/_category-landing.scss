@@ -227,14 +227,30 @@
 
     &__card-4-col {
         // flex: 1 1 254px;
-        // width: 254px;
+        width: 254px;
+
         padding: 0;
         margin: 0 25px;
         transition: 0.3s ease-in;
 
+        overflow: hidden;
+
+        &:hover {
+            & img {
+                -webkit-transform: scale3d(1.02, 1.01, 1.1);
+                transform: scale3d(1.02, 1.01, 1.1);
+            }
+        }
+
         & img {
             width: 254px;
             height: 254px;
+
+            transition: transform 0.5s ease;
+            -webkit-transition: -webkit-transform 1s, -webkit-overflow 1s;
+            transition: transform 1s, overflow 1s;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
         }
 
         @include respond(mobile) {
@@ -297,14 +313,29 @@
 
     &__card-3-col {
         // flex: 1 1 376px;
-        // width: 376px;
+        width: 376px;
         padding: 0;
         margin: 0 24px;
         transition: 0.3s ease-in;
 
+        overflow: hidden;
+
+        &:hover {
+            & img {
+                -webkit-transform: scale3d(1.02, 1.01, 1.1);
+                transform: scale3d(1.02, 1.01, 1.1);
+            }
+        }
+
         & img {
             width: 376px;
             height: 376px;
+
+            transition: transform 0.5s ease;
+            -webkit-transition: -webkit-transform 1s, -webkit-overflow 1s;
+            transition: transform 1s, overflow 1s;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
         }
 
         @include respond(mobile) {
@@ -366,10 +397,12 @@
     }
 
     &__card-5-item {
-        // width: 376px;
+        width: 376px;
         padding: 0;
         margin: 0 24px;
         transition: 0.3s ease-in;
+
+        overflow: hidden;
 
         // &:nth-child(4n),
         // &:nth-child(5n) {
@@ -377,9 +410,22 @@
         //     // margin-left: 2em;
         // }
 
+        &:hover {
+            & img {
+                -webkit-transform: scale3d(1.02, 1.01, 1.1);
+                transform: scale3d(1.02, 1.01, 1.1);
+            }
+        }
+
         & img {
             width: 376px;
             height: 376px;
+
+            transition: transform 0.5s ease;
+            -webkit-transition: -webkit-transform 1s, -webkit-overflow 1s;
+            transition: transform 1s, overflow 1s;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
         }
 
         @include respond(mobile) {

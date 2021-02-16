@@ -60,10 +60,11 @@ function openStoreSelector() {
 function closeStoreSelector() {
     let storeSelectorArrow = document.getElementById("store-selector-arrow")
     let mobileStoreSelectorArrow = document.getElementById("mobile-store-selector-arrow")
-    let lowerNav = document.getElementsByClassName("fashion-nav")
+    // let lowerNav = document.getElementsByClassName("fashion-nav")
+    let lowerNav = document.getElementsByClassName("nav__lower-2")
 
     lowerNav[0].style.background = "linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%)"
-    document.getElementById("store-selector-drawer").style.display = "none";
+    document.getElementById("store-selector-drawer-2").style.display = "none";
     document.getElementById("store-selector-overlay").style.display = "none";
     storeSelectorArrow.className = "store-selector-arrow"
     mobileStoreSelectorArrow.className = "mobile-store-selector-arrow"
