@@ -396,7 +396,15 @@
         margin: 14px 0 55px 0;
         max-width: 1056px;
 
-        @include respond(mobile) {
+        @include respond(tablet) {
+            max-width: 800px;
+        }
+
+        @include respond(768px) {
+            max-width: 580px;
+        }
+
+        @include respond(767px) {
             max-width: 240px;
         }
 
@@ -414,6 +422,19 @@
                 border-radius: 50%;
                 height: 56px;
                 width: 56px;
+
+                @include respond(767px) {
+                    height: 40px;
+                    width: 40px;
+                }
+
+                @include respond(360px) {
+                    left: -50px;
+                }
+
+                @include respond(360px) {
+                    left: -30px;
+                }
             }
 
             & .owl-next {
@@ -426,6 +447,19 @@
                 border-radius: 50%;
                 height: 56px;
                 width: 56px;
+
+                @include respond(767px) {
+                    height: 40px;
+                    width: 40px;
+                }
+
+                @include respond(360px) {
+                    right: -50px;
+                }
+
+                @include respond(360px) {
+                    right: -30px;
+                }
             }
         }
     }
@@ -438,6 +472,18 @@
 
         &:not(:first-child) {
             margin-left: 32px;
+        }
+
+        @include respond(tablet) {
+            width: 175px;
+        }
+
+        @include respond(768px) {
+            width: 170px;
+        }
+
+        @include respond(767px) {
+            width: 240px;
         }
     }
 }

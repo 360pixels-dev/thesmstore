@@ -772,6 +772,10 @@
                 background-color: #397cee;
                 justify-content: space-between;
 
+                & .modal-close:hover {
+                    cursor: pointer;
+                }
+
                 @include respond(767px) {
                     padding-left: 16px;
                 }

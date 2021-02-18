@@ -370,6 +370,11 @@
             position: absolute;
             bottom: 24px;
         }
+
+        & > button {
+            position: absolute;
+            bottom: 24px;
+        }
     }
 
     @include respond(tablet) {

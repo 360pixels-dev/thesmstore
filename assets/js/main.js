@@ -402,7 +402,7 @@ $(document).ready(function () {
             variableWidth: true,
             responsive: [
                 {
-                    breakpoint: 1345,
+                    breakpoint: 1279,
                     settings: {
                         slidesToShow: 3,
                         slidesToScroll: 2,
@@ -411,8 +411,9 @@ $(document).ready(function () {
                     }
                 },
                 {
-                    breakpoint: 600,
+                    breakpoint: 767,
                     settings: {
+                        centerMode: true,
                         slidesToShow: 1,
                         slidesToScroll: 1,
                         infinite: true,

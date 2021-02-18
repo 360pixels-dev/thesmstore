@@ -1614,6 +1614,8 @@
                 color: $dark-gray;
 
                 & > h4 {
+                    font-size: 18px;
+
                     @include respond(mobile) {
                         margin-bottom: 5px;
                     }
