@@ -25199,6 +25199,9 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   border-top: 1px solid #e0e0e0;
   padding-top: 26px;
 }
+.contacts__success .button--dark-blue {
+  margin-top: 32px;
+}
 .contacts-alt {
   width: 100%;
 }
