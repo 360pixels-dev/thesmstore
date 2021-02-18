@@ -1287,17 +1287,18 @@ button {
   order: 3;
 }
 .form--contacts > .form__group:nth-child(3) {
-  order: 5;
+  order: 2;
 }
 .form--contacts > .form__group:nth-child(3) > label:nth-of-type(2) {
   margin-top: 20px;
   margin-bottom: 0;
 }
 .form--contacts > .form__group:nth-child(4) {
-  order: 2;
+  order: 4;
 }
 .form--contacts > .form__group:nth-child(5) {
-  order: 4;
+  order: 5;
+  flex: 100%;
 }
 .form--contacts > .form__group:nth-child(6) {
   order: 6;
