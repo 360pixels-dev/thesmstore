@@ -42796,10 +42796,12 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 .instore-services__card > span {
   position: absolute;
   bottom: 24px;
+  left: 24px;
 }
 .instore-services__card > button {
   position: absolute;
   bottom: 24px;
+  left: 24px;
 }
 @media only screen and (max-width: 1024px) {
   .instore-services .container {
