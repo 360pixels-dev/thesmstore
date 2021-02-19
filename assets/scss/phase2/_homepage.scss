@@ -349,7 +349,7 @@
     }
 
     .container {
-        padding: 5%;
+        padding: 5% 0;
 
         & .center {
             text-align: center;
@@ -362,14 +362,7 @@
         padding-bottom: 3.5%;
 
         & h1 {
-            margin-left: -6.5%;
-
-            @include respond(tablet) {
-                margin-left: 7%;
-            }
-
             @include respond(mobile) {
-                margin-left: 0;
                 padding: 0 2em;
 
                 font-size: 24px;
