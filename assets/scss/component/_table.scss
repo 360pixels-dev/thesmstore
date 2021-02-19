@@ -759,11 +759,15 @@
                 display: flex;
 
                 & td {
-                    flex-basis: 33.33%;
+                    flex-basis: 50%;
                     background-color: $silver;
                     padding: 18px;
                     text-align: center;
                     font-weight: bold;
+
+                    &:last-child {
+                        display: none;
+                    }
 
                     @include respond(mobile) {
                         // flex-basis: 30%;
@@ -797,8 +801,12 @@
                 }
 
                 & td {
-                    flex-basis: 33.33%;
+                    flex-basis: 50%;
                     padding: 18px 40px;
+
+                    &:last-child {
+                        display: none;
+                    }
 
                     @include respond(mobile) {
                         padding: 18px;
