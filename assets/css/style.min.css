@@ -5071,7 +5071,7 @@ body.mmactive {
   display: block;
   background: linear-gradient(90deg, white 0%, rgba(255, 255, 255, 0) 100%);
   position: relative;
-  top: 112px;
+  margin-bottom: 8px;
 }
 @media only screen and (max-width: 820px) {
   .banner-section__hr {
@@ -5088,11 +5088,9 @@ body.mmactive {
   top: 128px;
   left: 12px;
   height: 34px;
-  display: none;
 }
 @media only screen and (max-width: 820px) {
   .banner-section__breadcrumbs {
-    display: block;
     position: absolute;
     padding: 9px 0;
     top: 255px;
@@ -5101,7 +5099,6 @@ body.mmactive {
 }
 @media only screen and (max-width: mobile) {
   .banner-section__breadcrumbs {
-    display: block;
     position: absolute;
     padding: 9px 0;
     top: 255px;
@@ -5137,6 +5134,45 @@ body.mmactive {
 }
 .banner-section__breadcrumbs > a:not(:last-child) {
   background: url("../../assets/images/arrow-right-black.svg") no-repeat right center;
+}
+.banner-section__breadcrumbs.desktop {
+  top: 9px;
+  width: fit-content;
+}
+@media only screen and (max-width: 820px) {
+  .banner-section__breadcrumbs.desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .banner-section__breadcrumbs.desktop {
+    display: none;
+  }
+}
+.banner-section__breadcrumbs.desktop.white > a {
+  color: #ffffff;
+}
+.banner-section__breadcrumbs.desktop.white > a:not(:last-child) {
+  background: url("../../assets/images/arrow-right-white.svg") no-repeat right center;
+}
+.banner-section__breadcrumbs.mobile {
+  display: none;
+}
+@media only screen and (max-width: 820px) {
+  .banner-section__breadcrumbs.mobile {
+    display: block;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .banner-section__breadcrumbs.mobile {
+    display: block;
+  }
+}
+.banner-section__breadcrumbs.mobile.white > a {
+  color: #ffffff;
+}
+.banner-section__breadcrumbs.mobile.white > a:not(:last-child) {
+  background: url("../../assets/images/arrow-right-white.svg") no-repeat right center;
 }
 .banner-section__title {
   position: relative;

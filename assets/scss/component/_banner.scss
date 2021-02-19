@@ -1233,7 +1233,8 @@
             rgba(255, 255, 255, 0) 100%
         );
         position: relative;
-        top: 112px;
+        margin-bottom: 8px;
+        // top: 112px;
 
         @include respond(mobile) {
             display: none;
@@ -1245,10 +1246,10 @@
         top: 128px;
         left: 12px;
         height: 34px;
-        display: none;
+        // display: none;
 
         @include respond(mobile) {
-            display: block;
+            // display: block;
             position: absolute;
             padding: 9px 0;
             // top: 210px;
@@ -1281,6 +1282,45 @@
             &:not(:last-child) {
                 background: url("../../assets/images/arrow-right-black.svg")
                     no-repeat right center;
+            }
+        }
+
+        &.desktop {
+            top: 9px;
+            width: fit-content;
+
+            @include respond(mobile) {
+                display: none;
+            }
+
+            &.white {
+                & > a {
+                    color: $white;
+
+                    &:not(:last-child) {
+                        background: url("../../assets/images/arrow-right-white.svg")
+                            no-repeat right center;
+                    }
+                }
+            }
+        }
+
+        &.mobile {
+            display: none;
+
+            @include respond(mobile) {
+                display: block;
+            }
+
+            &.white {
+                & > a {
+                    color: $white;
+
+                    &:not(:last-child) {
+                        background: url("../../assets/images/arrow-right-white.svg")
+                            no-repeat right center;
+                    }
+                }
             }
         }
     }
