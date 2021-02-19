@@ -1,6 +1,7 @@
 window.addEventListener("scroll", () => {
     let mobileSearch = document.getElementsByClassName("mobile-search-open")
-    let mobileMenuDiv = document.getElementById('mobile-menu')
+    // let mobileMenuDiv = document.getElementById('mobile-menu')
+    let mobileMenuDiv = document.getElementsByClassName('sm_menu_outer')
     let mobileHam = document.getElementById('sm_menu_ham')
     let storeSelectorDrawer = document.getElementById('store-selector-drawer')
     
@@ -38,7 +39,7 @@ window.addEventListener("scroll", () => {
 
 
     
-    mobileMenuDiv.classList.toggle("sticky-mobile-menu", pageYOffset > 2)
+    mobileMenuDiv[0].classList.toggle("sticky3", pageYOffset > 2)
     mobileHam.classList.toggle("sticky-hamburger", pageYOffset > 2)
     mobileSearch[0].classList.toggle("sticky", pageYOffset > 2)
     // shadowGradient.classList.toggle("sticky3", pageYOffset > 2)
