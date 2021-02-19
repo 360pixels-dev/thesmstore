@@ -23616,18 +23616,20 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   padding: 0;
   margin: 0 25px;
   transition: 0.3s ease-in;
-  overflow: hidden;
 }
 .categories__card-4-col:hover img {
-  -webkit-transform: scale3d(1.02, 1.01, 1.1);
-  transform: scale3d(1.02, 1.01, 1.1);
+  -webkit-transform: scale3d(1.1, 1.1, 1.1);
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+.categories__card-4-col .imageholder {
+  overflow: hidden;
+  max-width: 254px;
+  max-height: 254px;
 }
 .categories__card-4-col img {
-  width: 254px;
-  height: 254px;
   transition: transform 0.5s ease;
-  -webkit-transition: -webkit-transform 1s, -webkit-overflow 1s;
-  transition: transform 1s, overflow 1s;
+  -webkit-transition: -webkit-transform 0.5s, -webkit-overflow 0.5s;
+  transition: transform 0.5s, overflow 0.5s;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
@@ -23710,18 +23712,20 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   padding: 0;
   margin: 0 24px;
   transition: 0.3s ease-in;
-  overflow: hidden;
 }
 .categories__card-3-col:hover img {
-  -webkit-transform: scale3d(1.02, 1.01, 1.1);
-  transform: scale3d(1.02, 1.01, 1.1);
+  -webkit-transform: scale3d(1.1, 1.1, 1.1);
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+.categories__card-3-col .imageholder {
+  overflow: hidden;
+  max-width: 376px;
+  max-height: 376px;
 }
 .categories__card-3-col img {
-  width: 376px;
-  height: 376px;
   transition: transform 0.5s ease;
-  -webkit-transition: -webkit-transform 1s, -webkit-overflow 1s;
-  transition: transform 1s, overflow 1s;
+  -webkit-transition: -webkit-transform 0.5s, -webkit-overflow 0.5s;
+  transition: transform 0.5s, overflow 0.5s;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
@@ -23804,18 +23808,20 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   padding: 0;
   margin: 0 24px;
   transition: 0.3s ease-in;
-  overflow: hidden;
 }
 .categories__card-5-item:hover img {
-  -webkit-transform: scale3d(1.02, 1.01, 1.1);
-  transform: scale3d(1.02, 1.01, 1.1);
+  -webkit-transform: scale3d(1.1, 1.1, 1.1);
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+.categories__card-5-item .imageholder {
+  overflow: hidden;
+  max-width: 376px;
+  max-height: 376px;
 }
 .categories__card-5-item img {
-  width: 376px;
-  height: 376px;
   transition: transform 0.5s ease;
-  -webkit-transition: -webkit-transform 1s, -webkit-overflow 1s;
-  transition: transform 1s, overflow 1s;
+  -webkit-transition: -webkit-transform 0.5s, -webkit-overflow 0.5s;
+  transition: transform 0.5s, overflow 0.5s;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
@@ -41810,8 +41816,8 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   letter-spacing: 1.6px;
 }
 .featured-categories__card:hover div > img {
-  -webkit-transform: scale3d(1.02, 1.02, 1.1);
-  transform: scale3d(1.02, 1.02, 1.1);
+  -webkit-transform: scale3d(1.1, 1.1, 1.1);
+  transform: scale3d(1.1, 1.1, 1.1);
 }
 .featured-categories__card .imageholder {
   overflow: hidden;
@@ -41821,8 +41827,8 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 .featured-categories__card div > img {
   transition: transform 0.5s ease;
-  -webkit-transition: -webkit-transform 1s, -webkit-overflow 1s;
-  transition: transform 1s, overflow 1s;
+  -webkit-transition: -webkit-transform 0.5s, -webkit-overflow 0.5s;
+  transition: transform 0.5s, overflow 0.5s;
 }
 @media only screen and (max-width: 1024px) {
   .featured-categories .container {

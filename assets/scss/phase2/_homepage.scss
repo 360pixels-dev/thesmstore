@@ -401,8 +401,8 @@
 
         &:hover {
             & div > img {
-                -webkit-transform: scale3d(1.02, 1.02, 1.1);
-                transform: scale3d(1.02, 1.02, 1.1);
+                -webkit-transform: scale3d(1.1, 1.1, 1.1);
+                transform: scale3d(1.1, 1.1, 1.1);
             }
         }
 
@@ -415,8 +415,8 @@
 
         & div > img {
             transition: transform 0.5s ease;
-            -webkit-transition: -webkit-transform 1s, -webkit-overflow 1s;
-            transition: transform 1s, overflow 1s;
+            -webkit-transition: -webkit-transform 0.5s, -webkit-overflow 0.5s;
+            transition: transform 0.5s, overflow 0.5s;
             // -webkit-backface-visibility: hidden;
             // backface-visibility: hidden;
         }
