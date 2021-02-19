@@ -250,7 +250,7 @@
     animation-duration: 0.5s;
     transition: 0.3s ease-out !important;
 
-    @include respond(mobile) {
+    @include respond(tablet) {
         position: fixed !important;
         animation-name: catchup2-mobile;
         animation-duration: 0.5s;
@@ -327,6 +327,10 @@
     }
     to {
         top: 56px;
+
+        @include respond(tablet) {
+            top: 56px;
+        }
     }
 }
 

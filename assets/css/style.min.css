@@ -1487,7 +1487,7 @@ ul {
   animation-duration: 0.5s;
   transition: 0.3s ease-out !important;
 }
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 1024px) {
   .sticky2 {
     position: fixed !important;
     animation-name: catchup2-mobile;
@@ -1495,7 +1495,7 @@ ul {
     transition: 0.3s ease-out !important;
   }
 }
-@media only screen and (max-width: mobile) {
+@media only screen and (max-width: tablet) {
   .sticky2 {
     position: fixed !important;
     animation-name: catchup2-mobile;
@@ -1579,6 +1579,12 @@ ul {
   }
   to {
     top: 56px;
+    @media only screen and (max-width: 1024px) {
+      top: 56px;
+    }
+    @media only screen and (max-width: tablet) {
+      top: 56px;
+    }
   }
 }
 .nav-blue {
@@ -3174,6 +3180,10 @@ body.mmactive {
   -webkit-transition: opacity 0.2s;
   -moz-transition: opacity 0.2s;
   transition: opacity 0.2s;
+}
+
+.sm_menu_outer.accordion {
+  padding: 0;
 }
 
 .sm_menu_outer.active {
