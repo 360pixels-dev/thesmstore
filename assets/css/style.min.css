@@ -9811,6 +9811,9 @@ body.mmactive {
   text-align: center;
   padding: 48px 0 24px 0;
 }
+.quiz-carousel > a {
+  margin-bottom: 20px;
+}
 .quiz-carousel__products {
   position: relative;
   display: flex;
@@ -9950,7 +9953,7 @@ body.mmactive {
 }
 @media only screen and (max-width: 767px) {
   .quiz-carousel__product {
-    width: 240px;
+    width: 160px;
   }
 }
 

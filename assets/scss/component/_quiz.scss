@@ -390,6 +390,10 @@
 
     padding: 48px 0 24px 0;
 
+    & > a {
+        margin-bottom: 20px;
+    }
+
     &__products {
         position: relative;
         display: flex;
@@ -533,7 +537,7 @@
         }
 
         @include respond(767px) {
-            width: 240px;
+            width: 160px;
         }
     }
 }
