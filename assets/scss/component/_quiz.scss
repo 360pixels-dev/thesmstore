@@ -410,7 +410,7 @@
 
         & .owl-nav {
             position: absolute;
-            top: 170px;
+            top: 21%;
             width: 100%;
 
             & .owl-prev {
@@ -469,6 +469,56 @@
         flex-direction: column;
         text-align: center;
         width: 240px;
+
+        // & > div {
+        //     display: flex;
+        //     justify-content: center;
+        // }
+
+        & > img {
+            margin-bottom: 24px;
+        }
+
+        & > h4 {
+            height: 60px;
+        }
+
+        & > .sale-tag {
+            display: none;
+
+            position: absolute;
+            top: 18px;
+            left: 23px;
+
+            padding: 2px 7px;
+
+            background-color: $san-francisco;
+            color: $white;
+            font-weight: 600;
+        }
+
+        &.on-sale {
+            & > .sale-tag {
+                display: block;
+            }
+
+            & > div {
+                display: flex;
+                justify-content: center;
+
+                & > h4 {
+                    &:first-child {
+                        text-decoration: line-through;
+                        color: $gray;
+                    }
+
+                    &:last-child {
+                        margin-left: 16px;
+                        color: $san-francisco;
+                    }
+                }
+            }
+        }
 
         &:not(:first-child) {
             margin-left: 32px;
