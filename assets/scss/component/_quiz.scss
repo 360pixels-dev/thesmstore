@@ -507,6 +507,11 @@
             background-color: $san-francisco;
             color: $white;
             font-weight: 600;
+
+            @include respond(767px) {
+                top: 10px;
+                left: 15px;
+            }
         }
 
         &.on-sale {

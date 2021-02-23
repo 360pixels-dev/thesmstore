@@ -9916,6 +9916,12 @@ body.mmactive {
   color: #ffffff;
   font-weight: 600;
 }
+@media only screen and (max-width: 767px) {
+  .quiz-carousel__product > .sale-tag {
+    top: 10px;
+    left: 15px;
+  }
+}
 .quiz-carousel__product.on-sale > .sale-tag {
   display: block;
 }
