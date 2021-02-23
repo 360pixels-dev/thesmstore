@@ -302,7 +302,7 @@ $(document).ready(function() {
         })
     }
 
-    // PRESS RELEASE - FEATURED PRESS
+    // QUIZ PRODUCTS CAROUSEL
     if ($('.quiz-carousel__products').length !== 0) {
         $('.quiz-carousel__products').owlCarousel({
             margin:32,
@@ -320,7 +320,7 @@ $(document).ready(function() {
                         mLeft, mRight
                     ],
                 },
-                822:{
+                768:{
                     items:2,
                     nav:true,
                     navText: [

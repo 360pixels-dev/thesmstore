@@ -9832,18 +9832,23 @@ body.mmactive {
 }
 @media only screen and (max-width: 768px) {
   .quiz-carousel__products {
-    max-width: 580px;
+    max-width: 500px;
   }
 }
 @media only screen and (max-width: 767px) {
   .quiz-carousel__products {
-    max-width: 240px;
+    max-width: 180px;
   }
 }
 .quiz-carousel__products .owl-nav {
   position: absolute;
   top: 21%;
   width: 100%;
+}
+@media only screen and (max-width: 767px) {
+  .quiz-carousel__products .owl-nav {
+    top: 15%;
+  }
 }
 .quiz-carousel__products .owl-nav .owl-prev {
   position: absolute;
@@ -9863,11 +9868,6 @@ body.mmactive {
 @media only screen and (max-width: 360px) {
   .quiz-carousel__products .owl-nav .owl-prev {
     left: -50px;
-  }
-}
-@media only screen and (max-width: 360px) {
-  .quiz-carousel__products .owl-nav .owl-prev {
-    left: -30px;
   }
 }
 .quiz-carousel__products .owl-nav .owl-next {
@@ -9891,11 +9891,6 @@ body.mmactive {
     right: -50px;
   }
 }
-@media only screen and (max-width: 360px) {
-  .quiz-carousel__products .owl-nav .owl-next {
-    right: -30px;
-  }
-}
 .quiz-carousel__product {
   display: flex;
   flex-direction: column;
@@ -9907,6 +9902,9 @@ body.mmactive {
 }
 .quiz-carousel__product > h4 {
   height: 60px;
+}
+.quiz-carousel__product div > .discount {
+  display: none;
 }
 .quiz-carousel__product > .sale-tag {
   display: none;
@@ -9925,31 +9923,31 @@ body.mmactive {
   display: flex;
   justify-content: center;
 }
-.quiz-carousel__product.on-sale > div > h4:first-child {
+.quiz-carousel__product.on-sale > div > .original {
   text-decoration: line-through;
   color: #88898f;
 }
-.quiz-carousel__product.on-sale > div > h4:last-child {
+.quiz-carousel__product.on-sale > div > .discount {
+  display: block;
   margin-left: 16px;
   color: #c84025;
 }
+@media only screen and (max-width: 767px) {
+  .quiz-carousel__product.on-sale > div {
+    flex-direction: column-reverse;
+  }
+  .quiz-carousel__product.on-sale > div > .original {
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 600;
+  }
+  .quiz-carousel__product.on-sale > div > .discount {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
 .quiz-carousel__product:not(:first-child) {
   margin-left: 32px;
-}
-@media only screen and (max-width: 1024px) {
-  .quiz-carousel__product {
-    width: 175px;
-  }
-}
-@media only screen and (max-width: tablet) {
-  .quiz-carousel__product {
-    width: 175px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .quiz-carousel__product {
-    width: 170px;
-  }
 }
 @media only screen and (max-width: 767px) {
   .quiz-carousel__product {
