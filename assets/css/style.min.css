@@ -9838,6 +9838,7 @@ body.mmactive {
 @media only screen and (max-width: 767px) {
   .quiz-carousel__products {
     max-width: 180px;
+    margin: 14px 0 14px 0;
   }
 }
 .quiz-carousel__products .owl-nav {

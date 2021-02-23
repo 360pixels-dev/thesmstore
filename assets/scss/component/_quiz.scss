@@ -410,6 +410,7 @@
 
         @include respond(767px) {
             max-width: 180px;
+            margin: 14px 0 14px 0;
         }
 
         & .owl-nav {
