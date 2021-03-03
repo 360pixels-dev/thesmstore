@@ -324,14 +324,14 @@ $(document).ready(function() {
                     items:2,
                     nav:true,
                     navText: [
-                        left, right
+                        mLeft, mRight
                     ],
                 },
                 1024:{
                     items:4,
                     nav:true,
                     navText: [
-                        left, right
+                        mLeft, mRight
                     ],
                 }
             }

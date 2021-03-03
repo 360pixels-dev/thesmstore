@@ -321,26 +321,29 @@ if ($('.carousel-2row-filtering-cards').length !== 0 || $('.gift-card__buy-cards
 }
 
 // change activeFilter
-$(document).click(function(event) {
-    // event.preventDefault()
-    var selection = $(event.target);
-    var currentActiveFilter = $('.activeFilter')
-    switch(selection[0].tagName) {
-        case "SPAN":
-            currentActiveFilter.removeClass('activeFilter')
-            selection.addClass('activeFilter')
-            activeFilter = selection[0].attributes[0].value.toLowerCase()
-    
-            executeDesktopFiltering()
-            break;
-    
-        case "SELECT":
-            activeFilter = selection[0].value.length !== undefined ? selection[0].value.toLowerCase() : 'all'
-            
-            executeMobileFiltering()
-            break;
-    
-        default:
-            break;
-    }
-});
+
+if ($('.carousel-2row-filtering-cards').length !== 0 || $('.gift-card__buy-cards').length !== 0) {
+    $(document).click(function(event) {
+        // event.preventDefault()
+        var selection = $(event.target);
+        var currentActiveFilter = $('.activeFilter')
+        switch(selection[0].tagName) {
+            case "SPAN":
+                currentActiveFilter.removeClass('activeFilter')
+                selection.addClass('activeFilter')
+                activeFilter = selection[0].attributes[0].value.toLowerCase()
+        
+                executeDesktopFiltering()
+                break;
+        
+            case "SELECT":
+                activeFilter = selection[0].value.length !== undefined ? selection[0].value.toLowerCase() : 'all'
+                
+                executeMobileFiltering()
+                break;
+        
+            default:
+                break;
+        }
+    });
+}

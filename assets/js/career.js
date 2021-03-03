@@ -12,54 +12,62 @@ $(document).ready(function() {
 
 
     // CAROUSEL INIT
-    $('.career__featured--slider').slick({
-        infinite: true,
-        slidesToScroll: 1,
-        variableWidth: true,
-        responsive: [
-            {
-                breakpoint: 600,
-                settings: {
-                    centerMode: true
+    if ($('.career__featured--slider').length !== 0) {
+        $('.career__featured--slider').slick({
+            infinite: true,
+            slidesToScroll: 1,
+            variableWidth: true,
+            responsive: [
+                {
+                    breakpoint: 600,
+                    settings: {
+                        centerMode: true
+                    }
                 }
-            }
-        ]
-    });
+            ]
+        });
+    }
 
-    $('.career__explore--slider').slick({
-        infinite: true,
-        slidesToScroll: 1,
-        variableWidth: true,
-        responsive: [
-            {
-                breakpoint: 600,
-                settings: {
-                    centerMode: true
+    if ($('.career__explore--slider').length !== 0) {
+        $('.career__explore--slider').slick({
+            infinite: true,
+            slidesToScroll: 1,
+            variableWidth: true,
+            responsive: [
+                {
+                    breakpoint: 600,
+                    settings: {
+                        centerMode: true
+                    }
                 }
-            }
-        ]
-    });    
+            ]
+        }); 
+    }   
 
-    $('.career__events--slider').slick({
-        infinite: true,
-        slidesToScroll: 1,
-        variableWidth: true,
-        responsive: [
-            {
-                breakpoint: 600,
-                settings: {
-                    centerMode: true
+    if ($('.career__events--slider').length !== 0) {
+        $('.career__events--slider').slick({
+            infinite: true,
+            slidesToScroll: 1,
+            variableWidth: true,
+            responsive: [
+                {
+                    breakpoint: 600,
+                    settings: {
+                        centerMode: true
+                    }
                 }
-            }
-        ]
-    });
+            ]
+        });
+    }
     
-    $('.career__video--slider').slick({
-        infinite: true,
-        slidesToScroll: 1,
-        variableWidth: true,
-        centerMode: true
-    });
+    if ($('.career__video--slider').length !== 0) {
+        $('.career__video--slider').slick({
+            infinite: true,
+            slidesToScroll: 1,
+            variableWidth: true,
+            centerMode: true
+        });
+    }
     
     // SLICK ARROW CONTROLS
     $('.career__controls .controls__arrow--right').click(function (e) {

@@ -1,5 +1,15 @@
 $(document).ready(function () {
 
+    if ($('.forex-tooltip').length !==0) {
+        $('.forex-tooltip').click(function() {
+            if ($('.font-fineprint.tooltip').css('display') === 'none') {
+                $('.font-fineprint.tooltip').css('display','block')
+            } else {
+                $('.font-fineprint.tooltip').css('display','none')
+            }
+        })
+    }
+
     if ($('.billpay__content-search').length !== 0) {
         var billpayInput = document.querySelector('.billpay__content-search').querySelector('input')
         var billpayText = document.querySelectorAll('.billpay__category-content ul li')

@@ -869,3 +869,45 @@
         }
     }
 }
+
+_:-ms-fullscreen,
+:root .tbl-forex tbody tr td {
+    width: 507px;
+
+    @include respond(tablet) {
+        width: 500px;
+    }
+
+    @include respond(1000px) {
+        width: 372px;
+    }
+
+    @include respond(360px) {
+        width: 168px;
+    }
+
+    @include respond(320px) {
+        width: 148px;
+    }
+}
+
+_:-ms-fullscreen,
+:root .tbl-forex thead tr td {
+    width: 507px;
+
+    @include respond(tablet) {
+        width: 500px;
+    }
+
+    @include respond(1000px) {
+        width: 372px;
+    }
+
+    @include respond(360px) {
+        width: 168px;
+    }
+
+    @include respond(320px) {
+        width: 148px;
+    }
+}
