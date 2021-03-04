@@ -1251,8 +1251,7 @@
     }
 
     &__location {
-        justify-content: center;
-        margin-bottom: 21px;
+        margin: 0 0 21px 41px;
 
         @include respond(mobile) {
             justify-content: flex-start;
@@ -1394,8 +1393,11 @@
     }
 
     &__location {
-        justify-content: center;
-        margin-bottom: 21px;
+        margin: 0 0 21px 41px;
+
+        & > span {
+            margin-bottom: 0 !important;
+        }
 
         @include respond(mobile) {
             justify-content: flex-start;
@@ -1450,10 +1452,18 @@
             border: 1px solid #cacaca;
             color: $dark-gray;
             width: 326px;
-            margin: 12px auto;
+            margin: 12px auto 8px auto;
 
             @include respond(mobile) {
                 width: 296px;
+            }
+        }
+
+        &:last-child {
+            & > span {
+                padding: 0;
+                height: fit-content;
+                margin-bottom: 21px;
             }
         }
     }
@@ -1474,6 +1484,7 @@
         color: $white;
         text-transform: uppercase;
         height: 26px;
+        white-space: nowrap;
     }
 
     @include respond(tablet) {
