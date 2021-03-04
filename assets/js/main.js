@@ -1,6 +1,5 @@
 $(document).ready(function () {
-
-    if ($('.forex-tooltip').length !==0) {
+    if ($('.forex-tooltip').length !== 0) {
         $('.forex-tooltip').click(function() {
             if ($('.font-fineprint.tooltip').css('display') === 'none') {
                 $('.font-fineprint.tooltip').css('display','block')

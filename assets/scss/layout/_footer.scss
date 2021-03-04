@@ -184,39 +184,6 @@
                     left: 87.3%;
                 }
             }
-
-            // & > i {
-            //     position: absolute;
-            //     top: 31%;
-            //     left: 5%;
-            //     width: 24px;
-            //     height: 12px;
-
-            //     transform: translate(-50%, 50%) rotate(45deg);
-
-            //     @include respond(960px) {
-            //         left: 86%;
-            //     }
-
-            //     &::after {
-            //         content: "";
-            //         position: absolute;
-            //         width: 24px;
-            //         height: 24px;
-            //         top: 100%;
-            //         left: 50%;
-            //         transform: translate(-50%, 50%) rotate(45deg);
-            //         background-color: rgba(0, 0, 0, 0.8);
-
-            //         // content: " ";
-            //         // position: absolute;
-            //         // left: 50%;
-            //         // margin-left: -5px;
-            //         // border-width: 5px;
-            //         // border-style: solid;
-            //         // border-color: black transparent transparent transparent;
-            //     }
-            // }
         }
 
         @include respond(tablet) {
@@ -508,11 +475,11 @@
 
         @include respond(1199px) {
             padding: 24px 0 28px 0;
-            display: flex;
+            // display: flex;
         }
 
         @include respond(tablet) {
-            display: flex;
+            // display: flex;
             padding: 0;
         }
 
@@ -937,36 +904,95 @@
         position: relative;
         background: rgba(0, 103, 179, 0.3);
         height: 32px;
-        padding-left: 96px;
+        padding-left: 84px;
 
-        p {
+        & > p {
             position: absolute;
             top: 5px;
 
-            .tooltip {
+            & > span {
+                word-spacing: 15px;
+            }
+
+            & > img {
                 position: absolute;
-                width: 371px;
-                padding: 16px;
+            }
+
+            & > .forex-tooltip:hover {
+                cursor: pointer;
             }
         }
 
-        span {
-            word-spacing: 15px;
-        }
+        & .tooltip {
+            display: none;
 
-        img {
             position: absolute;
+            width: 371px;
+            padding: 16px 28px 16px 16px;
+
+            background-color: rgba(0, 0, 0, 0.8);
+
+            top: -110px;
+            left: 60px;
+            word-spacing: normal !important;
+
+            @include respond(tablet) {
+                left: 10px;
+            }
+
+            @include respond(360px) {
+                left: -12px;
+                width: 100vw;
+                padding-right: 28px;
+            }
+
+            & > .close-button {
+                height: 12px;
+                width: 12px;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+
+            & > a {
+                text-decoration: none;
+            }
+
+            &::after {
+                content: " ";
+                position: absolute;
+                left: 74%;
+                right: auto;
+                bottom: -15.5px;
+                border-bottom: none;
+                border-right: 15px solid transparent;
+                border-left: 15px solid transparent;
+                border-top: 15px solid rgba(0, 0, 0, 0.8);
+                transform: translate(-50%, 50%) rotate(-180);
+
+                @include respond(tablet) {
+                    left: 69%;
+                }
+
+                @include respond(360px) {
+                    left: 77.5%;
+                }
+
+                @include respond(320px) {
+                    left: 87.3%;
+                }
+            }
         }
 
         @include respond(tablet) {
             padding: 7px 12px;
 
-            p {
+            & > p {
                 font-size: 12px;
-            }
 
-            span {
-                word-spacing: 8px;
+                & > span {
+                    word-spacing: 8px;
+                }
             }
         }
     }

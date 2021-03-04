@@ -517,6 +517,7 @@
 
         & > h4 {
             height: auto;
+            min-height: 60px;
 
             @include respond(tablet) {
                 font-size: 16px;

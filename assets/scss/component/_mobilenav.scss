@@ -190,6 +190,11 @@ body.mmactive {
         display: none;
     }
 }
+@media (max-width: 1024px) {
+    #sm_menu_ham {
+        position: fixed;
+    }
+}
 .sm_menu_outer.accordion li {
     display: block;
 }

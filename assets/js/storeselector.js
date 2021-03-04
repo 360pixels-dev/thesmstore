@@ -1,48 +1,50 @@
 window.addEventListener("scroll", () => {
-    let mobileSearch = document.getElementsByClassName("mobile-search-open")
-    // let mobileMenuDiv = document.getElementById('mobile-menu')
-    let mobileMenuDiv = document.getElementsByClassName('sm_menu_outer')
-    let mobileHam = document.getElementById('sm_menu_ham')
-    let storeSelectorDrawer = document.getElementById('store-selector-drawer')
-    
-    let upperNavMenu = document.getElementsByClassName("nav__upper")
-    upperNavMenu[0].classList.toggle("sticky", pageYOffset > 2)
-
-    let lowerNavMenu = document.getElementsByClassName("nav__lower")
     
 
-
-    // let shadowGradient = document.querySelector(".banner__shadow-gradient")
-
-    let storeSelectorDrawer2 = document.getElementById('store-selector-drawer-2')
-    let lowerNavMenu2 = document.getElementsByClassName("nav__lower-2")
-
-
-
-    if (storeSelectorDrawer !== null) {
-        storeSelectorDrawer.classList.toggle("sticky-store-selector", pageYOffset > 2)
-    }
-
-    if (storeSelectorDrawer2 !== null) {
-        storeSelectorDrawer2.classList.toggle("sticky-store-selector", pageYOffset > 2)
-    }
-
-    if (lowerNavMenu.length !== 0) {
-        lowerNavMenu[0].classList.toggle("sticky2", pageYOffset > 2)
-        lowerNavMenu[0].classList.toggle("colorize", pageYOffset > 2)
-    }
-
-    if (lowerNavMenu2.length !== 0) {
-        lowerNavMenu2[0].classList.toggle("sticky2", pageYOffset > 2)
-        lowerNavMenu2[0].classList.toggle("colorize", pageYOffset > 2)
-    }
-
-
+    if ($(window).width() > 1024) {
+        let mobileSearch = document.getElementsByClassName("mobile-search-open")
+        // let mobileMenuDiv = document.getElementById('mobile-menu')
+        let mobileMenuDiv = document.getElementsByClassName('sm_menu_outer')
+        let mobileHam = document.getElementById('sm_menu_ham')
+        let storeSelectorDrawer = document.getElementById('store-selector-drawer')
+        
+        let upperNavMenu = document.getElementsByClassName("nav__upper")
+        upperNavMenu[0].classList.toggle("sticky", pageYOffset > 2)
     
-    mobileMenuDiv[0].classList.toggle("sticky3", pageYOffset > 2)
-    mobileHam.classList.toggle("sticky-hamburger", pageYOffset > 2)
-    mobileSearch[0].classList.toggle("sticky", pageYOffset > 2)
-    // shadowGradient.classList.toggle("sticky3", pageYOffset > 2)
+        let lowerNavMenu = document.getElementsByClassName("nav__lower")
+        
+    
+    
+        // let shadowGradient = document.querySelector(".banner__shadow-gradient")
+    
+        let storeSelectorDrawer2 = document.getElementById('store-selector-drawer-2')
+        let lowerNavMenu2 = document.getElementsByClassName("nav__lower-2")
+    
+    
+    
+        if (storeSelectorDrawer !== null) {
+            storeSelectorDrawer.classList.toggle("sticky-store-selector", pageYOffset > 2)
+        }
+    
+        if (storeSelectorDrawer2 !== null) {
+            storeSelectorDrawer2.classList.toggle("sticky-store-selector", pageYOffset > 2)
+        }
+    
+        if (lowerNavMenu.length !== 0) {
+            lowerNavMenu[0].classList.toggle("sticky2", pageYOffset > 2)
+            lowerNavMenu[0].classList.toggle("colorize", pageYOffset > 2)
+        }
+    
+        if (lowerNavMenu2.length !== 0) {
+            lowerNavMenu2[0].classList.toggle("sticky2", pageYOffset > 2)
+            lowerNavMenu2[0].classList.toggle("colorize", pageYOffset > 2)
+        }
+        
+        // mobileMenuDiv[0].classList.toggle("sticky3", pageYOffset > 2)
+        // mobileHam.classList.toggle("sticky-hamburger", pageYOffset > 2)
+        mobileSearch[0].classList.toggle("sticky", pageYOffset > 2)
+        // shadowGradient.classList.toggle("sticky3", pageYOffset > 2)
+    }
     
 })
 

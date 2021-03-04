@@ -1,6 +1,6 @@
 .services-header-banner {
     height: 355px;
-    margin-top: 88px;
+    margin-top: 163px;
     width: 100%;
     overflow: hidden;
     // background-image: url("../images/services-header-banner.png");
@@ -18,24 +18,8 @@
     & > .desktop-banner {
         width: inherit;
         object-fit: cover;
-        height: 355px;
+        height: inherit;
         position: absolute;
-
-        // @include respond(2560px) {
-        //     width: 2560px;
-        // }
-
-        // @include respond(1920px) {
-        //     width: 1920px;
-        // }
-
-        // @include respond(1400px) {
-        //     width: 1400px;
-        // }
-
-        // @include respond(1280px) {
-        //     width: 1280px;
-        // }
 
         @include respond(1024px) {
             height: 200px;
@@ -50,7 +34,7 @@
         display: none;
         width: inherit;
         object-fit: cover;
-        height: 200px;
+        height: inherit;
         position: absolute;
 
         @include respond(mobile) {
@@ -59,8 +43,8 @@
     }
 
     @include respond(tablet) {
-        margin-top: 56px;
-        height: 167px;
+        margin-top: 112px;
+        height: 200px;
         background-size: contain auto;
 
         & > h1 {
@@ -70,9 +54,9 @@
         }
 
         & > img {
-            width: 100%;
+            width: inherit;
             object-fit: cover;
-            height: 167px;
+            height: inherit;
             position: absolute;
         }
     }

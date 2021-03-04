@@ -649,6 +649,8 @@
         @include respond(tablet) {
             height: 56px;
             padding: 15px;
+            position: fixed;
+            top: 0;
 
             & .mobile-menu-button {
                 display: block;
@@ -1344,7 +1346,7 @@
         transition: 0.3s ease-in;
 
         @include respond(tablet) {
-            top: 0;
+            position: fixed;
             padding: 44px 20px 0;
             background: linear-gradient(
                 180deg,

@@ -86,6 +86,17 @@
     padding-top: 88px;
 }
 
+.container-600 {
+    position: relative;
+    width: 600px;
+    // padding: 0 $gutter-desktop;
+    margin: 0 auto;
+
+    @include respond(mobile) {
+        width: 100%;
+    }
+}
+
 .container-1014 {
     position: relative;
     width: 1014px;
