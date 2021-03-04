@@ -1,4 +1,22 @@
 $(document).ready(function () {
+    if ($('.selected-store.active').length !== 0) {
+
+        $('.selected-store.active').ready(function() {
+            $('#selected-store').text($('.selected-store.active').parent().parent().find('.store-title').text())
+        })
+
+        $('.make-store').click(function() {
+            $('.selected-store.active').toggleClass('active')
+            $('.make-store.disabled').toggleClass('disabled')
+
+            $(this).parent().parent().find('.selected-store').toggleClass('active')
+            $(this).parent().find('.make-store').toggleClass('disabled')
+
+            $('#selected-store').text($(this).parent().parent().find('.store-title').text())
+
+        })
+    }
+
     if ($('.forex-tooltip').length !== 0) {
         $('.forex-tooltip').click(function() {
             if ($('.font-fineprint.tooltip').css('display') === 'none') {

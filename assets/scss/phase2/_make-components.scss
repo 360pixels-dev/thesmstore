@@ -1320,6 +1320,8 @@
     }
 
     & .selected-store {
+        display: none;
+
         margin-top: 14px;
         padding: 4px 8px;
         background: #55c9a5;
@@ -1330,6 +1332,10 @@
         color: $white;
         text-transform: uppercase;
         height: 26px;
+
+        &.active {
+            display: block;
+        }
     }
 
     @include respond(tablet) {
@@ -1355,7 +1361,7 @@
     width: 399px !important;
     overflow-x: hidden;
 
-    @include respond(tablet) {
+    @include respond(767px) {
         width: 300px !important;
     }
 }
@@ -1368,7 +1374,7 @@
     width: 399px;
     background: white;
 
-    @include respond(tablet) {
+    @include respond(767px) {
         width: 300px;
     }
 
@@ -1394,6 +1400,7 @@
 
     &__location {
         margin: 0 0 21px 41px;
+        flex-direction: row !important;
 
         & > span {
             margin-bottom: 0 !important;
@@ -1459,11 +1466,21 @@
             }
         }
 
+        & .make-store {
+            &.disabled {
+                display: none;
+            }
+        }
+
         &:last-child {
             & > span {
                 padding: 0;
                 height: fit-content;
                 margin-bottom: 21px;
+            }
+
+            @include respond(767px) {
+                flex-direction: column;
             }
         }
     }

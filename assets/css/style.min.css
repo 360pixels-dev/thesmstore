@@ -41316,6 +41316,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   margin: 0 9px;
 }
 .make-store-selector-drawer .selected-store {
+  display: none;
   margin-top: 14px;
   padding: 4px 8px;
   background: #55c9a5;
@@ -41326,6 +41327,9 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   color: #ffffff;
   text-transform: uppercase;
   height: 26px;
+}
+.make-store-selector-drawer .selected-store.active {
+  display: block;
 }
 @media only screen and (max-width: 1024px) {
   .make-store-selector-drawer {
@@ -41362,12 +41366,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   width: 399px !important;
   overflow-x: hidden;
 }
-@media only screen and (max-width: 1024px) {
-  #store-selector-drawer-2 {
-    width: 300px !important;
-  }
-}
-@media only screen and (max-width: tablet) {
+@media only screen and (max-width: 767px) {
   #store-selector-drawer-2 {
     width: 300px !important;
   }
@@ -41381,12 +41380,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   width: 399px;
   background: white;
 }
-@media only screen and (max-width: 1024px) {
-  .make-store-selector-drawer {
-    width: 300px;
-  }
-}
-@media only screen and (max-width: tablet) {
+@media only screen and (max-width: 767px) {
   .make-store-selector-drawer {
     width: 300px;
   }
@@ -41415,6 +41409,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 .make-store-selector-drawer__location {
   margin: 0 0 21px 41px;
+  flex-direction: row !important;
 }
 .make-store-selector-drawer__location > span {
   margin-bottom: 0 !important;
@@ -41512,10 +41507,18 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
     width: 296px;
   }
 }
+.make-store-selector-drawer ul li > div .make-store.disabled {
+  display: none;
+}
 .make-store-selector-drawer ul li > div:last-child > span {
   padding: 0;
   height: fit-content;
   margin-bottom: 21px;
+}
+@media only screen and (max-width: 767px) {
+  .make-store-selector-drawer ul li > div:last-child {
+    flex-direction: column;
+  }
 }
 .make-store-selector-drawer li {
   border-bottom: 1px solid #ececec;
