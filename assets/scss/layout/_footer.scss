@@ -127,20 +127,22 @@
 
         & .tooltip {
             display: none;
+            z-index: 997;
 
             position: absolute;
             width: 371px;
             padding: 16px 28px 16px 16px;
 
             background-color: rgba(0, 0, 0, 0.8);
+            border: none;
 
             top: -110px;
-            left: 60px;
+            left: 0;
             word-spacing: normal !important;
 
-            @include respond(tablet) {
-                left: 10px;
-            }
+            // @include respond(tablet) {
+            //     left: 10px;
+            // }
 
             @include respond(360px) {
                 left: -12px;
@@ -163,9 +165,9 @@
             &::after {
                 content: " ";
                 position: absolute;
-                left: 74%;
+                left: 62%;
                 right: auto;
-                bottom: -15.5px;
+                bottom: -15px;
                 border-bottom: none;
                 border-right: 15px solid transparent;
                 border-left: 15px solid transparent;
@@ -173,15 +175,15 @@
                 transform: translate(-50%, 50%) rotate(-180);
 
                 @include respond(tablet) {
-                    left: 69%;
+                    left: 49%;
                 }
 
                 @include respond(360px) {
-                    left: 77.5%;
+                    left: 54%;
                 }
 
                 @include respond(320px) {
-                    left: 87.3%;
+                    left: 60.5%;
                 }
             }
         }
@@ -925,6 +927,7 @@
 
         & .tooltip {
             display: none;
+            z-index: 997;
 
             position: absolute;
             width: 371px;
@@ -934,12 +937,12 @@
             border: none;
 
             top: -110px;
-            left: 60px;
+            left: 0;
             word-spacing: normal !important;
 
-            @include respond(tablet) {
-                left: 10px;
-            }
+            // @include respond(tablet) {
+            //     left: 10px;
+            // }
 
             @include respond(360px) {
                 left: -12px;
@@ -962,7 +965,7 @@
             &::after {
                 content: " ";
                 position: absolute;
-                left: 74%;
+                left: 62%;
                 right: auto;
                 bottom: -15px;
                 border-bottom: none;
@@ -972,15 +975,15 @@
                 transform: translate(-50%, 50%) rotate(-180);
 
                 @include respond(tablet) {
-                    left: 69%;
+                    left: 49%;
                 }
 
                 @include respond(360px) {
-                    left: 77.5%;
+                    left: 54%;
                 }
 
                 @include respond(320px) {
-                    left: 87.3%;
+                    left: 60.5%;
                 }
             }
         }
