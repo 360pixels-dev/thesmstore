@@ -13036,6 +13036,9 @@ header {
 .footer__forex > p > span {
   word-spacing: 15px;
 }
+.footer__forex > p > span > strong {
+  margin-right: 16px;
+}
 .footer__forex > p > img {
   position: absolute;
 }
@@ -22192,7 +22195,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   left: 50%;
   right: auto;
   transform: translate(-50%, 0);
-  margin: 0 0 40px 0;
+  margin: 0 0 40px 0 !important;
 }
 
 .large-image {
@@ -25096,7 +25099,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 .services--forex-note > img {
   vertical-align: middle;
-  margin-right: 8px;
+  margin: auto 8px 3px auto;
 }
 
 .omnibus-intro {
@@ -41493,6 +41496,11 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 .make-store-selector-drawer ul li > div .make-store.disabled {
   display: none;
+}
+.make-store-selector-drawer ul li > div:last-child > a {
+  padding: 0;
+  height: fit-content;
+  margin-bottom: 21px;
 }
 .make-store-selector-drawer ul li > div:last-child > span {
   padding: 0;

@@ -1473,6 +1473,12 @@
         }
 
         &:last-child {
+            & > a {
+                padding: 0;
+                height: fit-content;
+                margin-bottom: 21px;
+            }
+
             & > span {
                 padding: 0;
                 height: fit-content;

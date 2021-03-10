@@ -114,6 +114,10 @@
 
             & > span {
                 word-spacing: 15px;
+
+                & > strong {
+                    margin-right: 16px;
+                }
             }
 
             & > img {
