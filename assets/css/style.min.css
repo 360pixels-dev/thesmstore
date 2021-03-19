@@ -13052,6 +13052,7 @@ header {
 .footer__forex .forex-tooltip {
   display: inline-block;
   position: relative;
+  margin-right: 16px;
 }
 .footer__forex .tooltip {
   display: none;
@@ -13062,22 +13063,25 @@ header {
   background-color: rgba(0, 0, 0, 0.8);
   border: none;
   top: -110px;
-  left: -252px;
+  left: -42px;
   word-spacing: normal !important;
 }
 @media only screen and (max-width: 1024px) {
   .footer__forex .tooltip {
-    left: -204px;
+    left: 0;
+    top: -100px;
   }
 }
 @media only screen and (max-width: tablet) {
   .footer__forex .tooltip {
-    left: -204px;
+    left: 0;
+    top: -100px;
   }
 }
 @media only screen and (max-width: 360px) {
   .footer__forex .tooltip {
-    left: -89.8vw;
+    top: -91px;
+    left: -12px;
     width: 100vw;
     padding-right: 28px;
   }
@@ -13092,10 +13096,15 @@ header {
 .footer__forex .tooltip > a {
   text-decoration: none;
 }
+@media only screen and (max-width: 320px) {
+  .footer__forex .tooltip > .break {
+    display: none;
+  }
+}
 .footer__forex .tooltip::after {
   content: " ";
   position: absolute;
-  left: 66.5%;
+  left: -20%;
   right: auto;
   bottom: -15px;
   border-bottom: none;
@@ -13106,17 +13115,12 @@ header {
 }
 @media only screen and (max-width: 1024px) {
   .footer__forex .tooltip::after {
-    left: 53.5%;
+    display: none;
   }
 }
 @media only screen and (max-width: tablet) {
   .footer__forex .tooltip::after {
-    left: 53.5%;
-  }
-}
-@media only screen and (max-width: 360px) {
-  .footer__forex .tooltip::after {
-    left: 88.4%;
+    display: none;
   }
 }
 .footer__forex .mobile-tooltip {

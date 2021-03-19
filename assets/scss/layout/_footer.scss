@@ -137,6 +137,7 @@
         & .forex-tooltip {
             display: inline-block;
             position: relative;
+            margin-right: 16px;
         }
 
         & .tooltip {
@@ -151,15 +152,17 @@
             border: none;
 
             top: -110px;
-            left: -252px;
+            left: -42px;
             word-spacing: normal !important;
 
             @include respond(tablet) {
-                left: -204px;
+                left: 0;
+                top: -100px;
             }
 
             @include respond(360px) {
-                left: -89.8vw;
+                top: -91px;
+                left: -12px;
                 width: 100vw;
                 padding-right: 28px;
             }
@@ -176,10 +179,16 @@
                 text-decoration: none;
             }
 
+            & > .break {
+                @include respond(320px) {
+                    display: none;
+                }
+            }
+
             &::after {
                 content: " ";
                 position: absolute;
-                left: 66.5%;
+                left: -20%;
                 right: auto;
                 bottom: -15px;
                 border-bottom: none;
@@ -189,11 +198,7 @@
                 transform: translate(-50%, 50%) rotate(-180);
 
                 @include respond(tablet) {
-                    left: 53.5%;
-                }
-
-                @include respond(360px) {
-                    left: 88.4%;
+                    display: none;
                 }
             }
         }
