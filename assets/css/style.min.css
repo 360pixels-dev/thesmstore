@@ -13107,7 +13107,7 @@ header {
 .footer__forex .tooltip::after {
   content: " ";
   position: absolute;
-  left: -20%;
+  left: 9.3%;
   right: auto;
   bottom: -15px;
   border-bottom: none;
