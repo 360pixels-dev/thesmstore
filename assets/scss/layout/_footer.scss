@@ -137,7 +137,11 @@
         & .forex-tooltip {
             display: inline-block;
             position: relative;
-            margin-right: 16px;
+            margin-right: 4px;
+
+            & > img {
+                height: 16px;
+            }
         }
 
         & .tooltip {

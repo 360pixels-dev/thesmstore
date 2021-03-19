@@ -13052,7 +13052,10 @@ header {
 .footer__forex .forex-tooltip {
   display: inline-block;
   position: relative;
-  margin-right: 16px;
+  margin-right: 4px;
+}
+.footer__forex .forex-tooltip > img {
+  height: 16px;
 }
 .footer__forex .tooltip {
   display: none;
