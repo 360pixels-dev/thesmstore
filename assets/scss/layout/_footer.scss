@@ -113,10 +113,15 @@
             top: 5px;
 
             & > span {
-                word-spacing: 15px;
+                word-spacing: normal;
+
+                & > text {
+                    word-spacing: 16px;
+                }
 
                 & > strong {
                     margin-right: 16px;
+                    word-spacing: normal;
                 }
             }
 
@@ -127,6 +132,11 @@
             & > .forex-tooltip:hover {
                 cursor: pointer;
             }
+        }
+
+        & .forex-tooltip {
+            display: inline-block;
+            position: relative;
         }
 
         & .tooltip {
@@ -141,15 +151,15 @@
             border: none;
 
             top: -110px;
-            left: 0;
+            left: -252px;
             word-spacing: normal !important;
 
-            // @include respond(tablet) {
-            //     left: 10px;
-            // }
+            @include respond(tablet) {
+                left: -204px;
+            }
 
             @include respond(360px) {
-                left: -12px;
+                left: -89.8vw;
                 width: 100vw;
                 padding-right: 28px;
             }
@@ -169,7 +179,7 @@
             &::after {
                 content: " ";
                 position: absolute;
-                left: 62%;
+                left: 66.5%;
                 right: auto;
                 bottom: -15px;
                 border-bottom: none;
@@ -179,16 +189,40 @@
                 transform: translate(-50%, 50%) rotate(-180);
 
                 @include respond(tablet) {
-                    left: 49%;
+                    left: 53.5%;
                 }
 
                 @include respond(360px) {
-                    left: 54%;
+                    left: 88.4%;
                 }
+            }
+        }
 
-                @include respond(320px) {
-                    left: 60.5%;
-                }
+        & .mobile-tooltip {
+            display: none;
+            z-index: 997;
+
+            position: absolute;
+            width: 100vw;
+            padding: 16px 28px 16px 16px;
+
+            background-color: rgba(0, 0, 0, 0.8);
+            border: none;
+
+            top: -91px;
+            left: -12px;
+            word-spacing: normal !important;
+
+            & > .close-button {
+                height: 12px;
+                width: 12px;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+
+            & > a {
+                text-decoration: none;
             }
         }
 

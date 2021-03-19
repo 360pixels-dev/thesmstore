@@ -1,6 +1,6 @@
 .services-header-banner {
     height: 355px;
-    margin-top: 163px;
+    margin-top: 88px;
     width: 100%;
     overflow: hidden;
     // background-image: url("../images/services-header-banner.png");
@@ -43,7 +43,7 @@
     }
 
     @include respond(tablet) {
-        margin-top: 112px;
+        margin-top: 56px;
         height: 200px;
         background-size: contain auto;
 

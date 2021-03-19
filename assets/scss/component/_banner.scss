@@ -53,7 +53,7 @@
         z-index: 5;
 
         @include respond(tablet) {
-            top: 112px;
+            top: 56px;
             left: 0;
         }
     }
@@ -1234,7 +1234,7 @@
         );
         position: relative;
         margin-bottom: 8px;
-        // top: 112px;
+        // top: 56px;
 
         @include respond(mobile) {
             display: none;

@@ -3446,13 +3446,13 @@ body.mmactive {
 }
 @media only screen and (max-width: 1024px) {
   .banner__shadow-gradient {
-    top: 112px;
+    top: 56px;
     left: 0;
   }
 }
 @media only screen and (max-width: tablet) {
   .banner__shadow-gradient {
-    top: 112px;
+    top: 56px;
     left: 0;
   }
 }
@@ -13034,16 +13034,24 @@ header {
   top: 5px;
 }
 .footer__forex > p > span {
-  word-spacing: 15px;
+  word-spacing: normal;
+}
+.footer__forex > p > span > text {
+  word-spacing: 16px;
 }
 .footer__forex > p > span > strong {
   margin-right: 16px;
+  word-spacing: normal;
 }
 .footer__forex > p > img {
   position: absolute;
 }
 .footer__forex > p > .forex-tooltip:hover {
   cursor: pointer;
+}
+.footer__forex .forex-tooltip {
+  display: inline-block;
+  position: relative;
 }
 .footer__forex .tooltip {
   display: none;
@@ -13054,12 +13062,22 @@ header {
   background-color: rgba(0, 0, 0, 0.8);
   border: none;
   top: -110px;
-  left: 0;
+  left: -252px;
   word-spacing: normal !important;
+}
+@media only screen and (max-width: 1024px) {
+  .footer__forex .tooltip {
+    left: -204px;
+  }
+}
+@media only screen and (max-width: tablet) {
+  .footer__forex .tooltip {
+    left: -204px;
+  }
 }
 @media only screen and (max-width: 360px) {
   .footer__forex .tooltip {
-    left: -12px;
+    left: -89.8vw;
     width: 100vw;
     padding-right: 28px;
   }
@@ -13077,7 +13095,7 @@ header {
 .footer__forex .tooltip::after {
   content: " ";
   position: absolute;
-  left: 62%;
+  left: 66.5%;
   right: auto;
   bottom: -15px;
   border-bottom: none;
@@ -13088,23 +13106,40 @@ header {
 }
 @media only screen and (max-width: 1024px) {
   .footer__forex .tooltip::after {
-    left: 49%;
+    left: 53.5%;
   }
 }
 @media only screen and (max-width: tablet) {
   .footer__forex .tooltip::after {
-    left: 49%;
+    left: 53.5%;
   }
 }
 @media only screen and (max-width: 360px) {
   .footer__forex .tooltip::after {
-    left: 54%;
+    left: 88.4%;
   }
 }
-@media only screen and (max-width: 320px) {
-  .footer__forex .tooltip::after {
-    left: 60.5%;
-  }
+.footer__forex .mobile-tooltip {
+  display: none;
+  z-index: 997;
+  position: absolute;
+  width: 100vw;
+  padding: 16px 28px 16px 16px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: none;
+  top: -91px;
+  left: -12px;
+  word-spacing: normal !important;
+}
+.footer__forex .mobile-tooltip > .close-button {
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.footer__forex .mobile-tooltip > a {
+  text-decoration: none;
 }
 @media only screen and (max-width: 1024px) {
   .footer__forex {
@@ -15067,7 +15102,7 @@ header {
 
 .video-placeholder {
   margin: -60px auto 10px auto;
-  z-index: 99999999999;
+  z-index: 20;
   position: relative;
   width: 1224px;
 }
@@ -22196,6 +22231,28 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   right: auto;
   transform: translate(-50%, 0);
   margin: 0 0 40px 0 !important;
+}
+
+.multi-image {
+  position: relative;
+  left: 50%;
+  right: auto;
+  transform: translate(-50%, 0);
+  margin: -80px 0 80px 0;
+  z-index: 10;
+}
+.multi-image > img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  right: auto;
+  transform: translate(-50%, 0);
+  margin: 0 0 40px 0 !important;
+}
+
+.multi-image:last-child() {
+  margin: -80px 0 0 0 !important;
 }
 
 .large-image {
@@ -42878,7 +42935,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 
 .services-header-banner {
   height: 355px;
-  margin-top: 163px;
+  margin-top: 88px;
   width: 100%;
   overflow: hidden;
 }
@@ -42928,7 +42985,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 @media only screen and (max-width: 1024px) {
   .services-header-banner {
-    margin-top: 112px;
+    margin-top: 56px;
     height: 200px;
     background-size: contain auto;
   }
@@ -42946,7 +43003,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 @media only screen and (max-width: tablet) {
   .services-header-banner {
-    margin-top: 112px;
+    margin-top: 56px;
     height: 200px;
     background-size: contain auto;
   }

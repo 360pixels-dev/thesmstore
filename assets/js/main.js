@@ -1,4 +1,20 @@
 $(document).ready(function () {
+
+    if ($('.form').length !== 0) {
+        // if ($('#btnSubmit').text().toLowerCase() === 'sent') {
+            // $('.form').find('input').each(function(event) {
+            //     $(this).val('')
+            //     $(this).text('')
+            // })
+
+            // $('.form').find('textarea').val('')
+            // $('.form').find('textarea').text('')
+        // }
+
+        $('.form').find('textarea')
+    }
+
+
     if ($('.selected-store.active').length !== 0) {
 
         $('.selected-store.active').ready(function() {
@@ -19,10 +35,25 @@ $(document).ready(function () {
 
     if ($('.forex-tooltip').length !== 0) {
         $('.forex-tooltip').click(function() {
-            if ($('.font-fineprint.tooltip').css('display') === 'none') {
-                $('.font-fineprint.tooltip').css('display','block')
+            if ($(window).width() > 360) {
+                if ($('.font-fineprint.tooltip').css('display') === 'none') {
+                    $('.font-fineprint.tooltip').css('display','block')
+                } else {
+                    $('.font-fineprint.tooltip').css('display','none')
+                }
             } else {
-                $('.font-fineprint.tooltip').css('display','none')
+                if ($('.font-fineprint.mobile-tooltip').css('display') === 'none') {
+                    $('.font-fineprint.mobile-tooltip').css('display','block')
+                } else {
+                    $('.font-fineprint.mobile-tooltip').css('display','none')
+                }
+            }
+        })
+        $('.mobile-tooltip').click(function() {
+            if ($('.font-fineprint.mobile-tooltip').css('display') === 'none') {
+                $('.font-fineprint.mobile-tooltip').css('display','block')
+            } else {
+                $('.font-fineprint.mobile-tooltip').css('display','none')
             }
         })
     }
