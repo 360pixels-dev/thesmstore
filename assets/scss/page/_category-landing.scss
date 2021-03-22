@@ -242,8 +242,8 @@
 
         & .imageholder {
             overflow: hidden;
-            max-width: 254px;
-            max-height: 254px;
+            width: 254px;
+            height: 254px;
         }
 
         & img {
@@ -252,6 +252,8 @@
             transition: transform 0.5s, overflow 0.5s;
             -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
+            width: 100%;
+            height: 100%;
         }
 
         @include respond(mobile) {
@@ -259,7 +261,7 @@
             max-width: 150px;
             margin: 0 8px;
 
-            & img {
+            & .imageholder {
                 width: 150px;
                 height: 150px;
             }
@@ -269,7 +271,7 @@
             flex: 1 1 132px;
             max-width: 132px;
 
-            & img {
+            & .imageholder {
                 width: 132px;
                 height: 132px;
             }
@@ -328,8 +330,8 @@
 
         & .imageholder {
             overflow: hidden;
-            max-width: 376px;
-            max-height: 376px;
+            width: 376px;
+            height: 376px;
         }
 
         & img {
@@ -338,6 +340,8 @@
             transition: transform 0.5s, overflow 0.5s;
             -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
+            width: 100%;
+            height: 100%;
         }
 
         @include respond(mobile) {
@@ -345,7 +349,7 @@
             max-width: 150px;
             margin: 0 8px;
 
-            & img {
+            & .imageholder {
                 width: 150px;
                 height: 150px;
             }
@@ -355,7 +359,7 @@
             flex: 1 1 132px;
             max-width: 132px;
 
-            & img {
+            & .imageholder {
                 width: 132px;
                 height: 132px;
             }
@@ -419,8 +423,8 @@
 
         & .imageholder {
             overflow: hidden;
-            max-width: 376px;
-            max-height: 376px;
+            width: 376px;
+            height: 376px;
         }
 
         & img {
@@ -429,6 +433,8 @@
             transition: transform 0.5s, overflow 0.5s;
             -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
+            width: 100%;
+            height: 100%;
         }
 
         @include respond(mobile) {
@@ -436,7 +442,7 @@
             max-width: 150px;
             margin: 0 8px;
 
-            & img {
+            & .imageholder {
                 width: 150px;
                 height: 150px;
             }
@@ -446,7 +452,7 @@
             flex: 1 1 132px;
             max-width: 132px;
 
-            & img {
+            & .imageholder {
                 width: 132px;
                 height: 132px;
             }

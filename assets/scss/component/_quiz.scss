@@ -193,12 +193,14 @@
         &--active,
         &:hover {
             border: 6px solid #fe3d6c;
+            padding: 0;
         }
     }
 
     &__boxshadow {
         background: #ffffff;
         box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
+        padding: 6;
     }
 
     &--greenbox {

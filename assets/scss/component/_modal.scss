@@ -825,6 +825,11 @@
                     color: #403f47;
                     margin-bottom: 18px;
                 }
+
+                & > ul {
+                    list-style-type: disc;
+                    margin-left: 32px;
+                }
             }
         }
     }
