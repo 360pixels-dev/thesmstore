@@ -767,7 +767,7 @@
     // padding: 88px 24px 20px 24px;
 
     &.desktop {
-        margin-top: 88px !important;
+        margin-top: 163px !important;
 
         @include respond(tablet) {
             display: none;
@@ -776,7 +776,7 @@
 
     &.mobile {
         display: none;
-        margin-top: 56px !important;
+        margin-top: 112px !important;
 
         @include respond(tablet) {
             display: block;
