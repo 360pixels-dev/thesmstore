@@ -9920,6 +9920,9 @@ _:-ms-fullscreen,
   margin: 14px 0 55px 0;
   max-width: 1056px;
 }
+.quiz-carousel__products a {
+  text-decoration: none;
+}
 @media only screen and (max-width: 1024px) {
   .quiz-carousel__products {
     max-width: 800px;

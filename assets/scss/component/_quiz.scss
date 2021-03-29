@@ -411,6 +411,10 @@
         margin: 14px 0 55px 0;
         max-width: 1056px;
 
+        & a {
+            text-decoration: none;
+        }
+
         @include respond(tablet) {
             max-width: 800px;
         }
