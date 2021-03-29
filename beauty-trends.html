@@ -849,12 +849,22 @@
                 });
 
                 $('.product-tooltip__trigger').click(function() {
-                    if ($('.product-tooltip__box').css("display") === "none") {
+                    if ($('.product-tooltip__box').css("display") === "flex") {
+                        $('.product-tooltip__box').css("display", "none")
+                        $('.product-tooltip__trigger').toggleClass('product-tooltip__trigger--active');
+                        $('.product-tooltip__content').toggleClass('product-tooltip__content--show');
+                    } else {
                         $('.product-tooltip__box').css("display", "flex")
+                        $('.product-tooltip__trigger').toggleClass('product-tooltip__trigger--active');
+                        $('.product-tooltip__content').toggleClass('product-tooltip__content--show');
                     }
-                    $('.product-tooltip__box').toggleClass('product-tooltip__box--show');
-                    $('.product-tooltip__content').toggleClass('product-tooltip__content--show');
-                    $('.product-tooltip__trigger').toggleClass('product-tooltip__trigger--active');
+
+                    // if ($('.product-tooltip__content').css("display") === "flex" && $('.product-tooltip__box').css("display") === "none") {
+                    //     $('.product-tooltip__box').css("display", "flex")
+                    //     $('.product-tooltip__content').toggleClass('product-tooltip__content--show');
+                    //     $('.product-tooltip__trigger').toggleClass('product-tooltip__trigger--active');
+                    // }
+                        
                 })
             }
         });
