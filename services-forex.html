@@ -883,6 +883,17 @@
                     console.log(opened)
                 }
             });
+
+            // on hover event for the class: font-fineprint 
+            // Dev: William 
+            // Date: March 26 2021 Issue: 0324-009
+            $(".forex-tooltip").hover(function () {
+                console.log("showme");
+                $(".font-fineprint").css("display", "block")
+            }, function () {
+                 $(".font-fineprint").css("display", "none")
+                    
+            });
         })
     </script>
     <script src="assets/js/plugin-mobilemenu.js"></script>

@@ -1148,6 +1148,12 @@
                     console.log(opened)
                 }
             });
+            // For Issue# 0324-009 Date: May 26, 2021
+            // Dev: William
+            $('.footer__forex .font-caption').css('cursor', 'pointer');
+            $(".footer__forex .font-caption").bind("click", function () {
+                $(location).prop('href', 'services-forex.html');
+            });
         })
     </script>
     <script src="assets/js/plugin-mobilemenu.js"></script>
