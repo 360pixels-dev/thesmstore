@@ -120,8 +120,11 @@
                 }
 
                 & > strong {
-                    margin-right: 16px;
                     word-spacing: normal;
+                }
+
+                & > span {
+                    word-spacing: 8px;
                 }
             }
 
@@ -242,7 +245,11 @@
                 font-size: 12px;
 
                 & > span {
-                    word-spacing: 8px;
+                    word-spacing: 8px !important;
+
+                    & > span {
+                        word-spacing: 8px !important;
+                    }
                 }
             }
         }

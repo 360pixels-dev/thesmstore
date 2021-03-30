@@ -51,6 +51,10 @@
             top: 48%;
             left: 10%;
             width: 90%;
+
+            @include respond(540px) {
+                width: 65%;
+            }
         }
 
         & > img {

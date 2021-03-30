@@ -21,6 +21,10 @@
   margin-top: 60px;
 }
 
+.m-t-40n {
+  margin-top: -40px !important;
+}
+
 .m-b-20 {
   margin-bottom: 20px;
 }
@@ -13047,8 +13051,10 @@ header {
   word-spacing: 16px;
 }
 .footer__forex > p > span > strong {
-  margin-right: 16px;
   word-spacing: normal;
+}
+.footer__forex > p > span > span {
+  word-spacing: 8px;
 }
 .footer__forex > p > img {
   position: absolute;
@@ -13163,7 +13169,10 @@ header {
     font-size: 12px;
   }
   .footer__forex > p > span {
-    word-spacing: 8px;
+    word-spacing: 8px !important;
+  }
+  .footer__forex > p > span > span {
+    word-spacing: 8px !important;
   }
 }
 @media only screen and (max-width: tablet) {
@@ -13174,7 +13183,10 @@ header {
     font-size: 12px;
   }
   .footer__forex > p > span {
-    word-spacing: 8px;
+    word-spacing: 8px !important;
+  }
+  .footer__forex > p > span > span {
+    word-spacing: 8px !important;
   }
 }
 .footer__messenger {
@@ -43014,6 +43026,13 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
     left: 10%;
     width: 90%;
   }
+}
+@media only screen and (max-width: 1024px) and (max-width: 540px) {
+  .services-header-banner > h1 {
+    width: 65%;
+  }
+}
+@media only screen and (max-width: 1024px) {
   .services-header-banner > img {
     width: inherit;
     object-fit: cover;
@@ -43032,6 +43051,13 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
     left: 10%;
     width: 90%;
   }
+}
+@media only screen and (max-width: tablet) and (max-width: 540px) {
+  .services-header-banner > h1 {
+    width: 65%;
+  }
+}
+@media only screen and (max-width: tablet) {
   .services-header-banner > img {
     width: inherit;
     object-fit: cover;
