@@ -14,6 +14,16 @@ $(document).ready(function () {
         $('.form').find('textarea')
     }
 
+    if ($('.mobile-search-button').css('display') === 'flex') {
+        $('.mobile-search-button').click(function() {
+            $('.mobile-search-open').css('display', 'block')
+        })
+
+        $('.mobile-search-open__search-button').click(function() {
+            $('.mobile-search-open').css('display', 'none')
+        })
+    }
+
 
     if ($('.selected-store.active').length !== 0) {
 

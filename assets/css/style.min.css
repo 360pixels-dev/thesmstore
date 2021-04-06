@@ -1341,6 +1341,7 @@ ul {
   z-index: 9999;
 }
 .mobile-search-open__menu-button {
+  visibility: hidden;
   float: left;
   width: 50px;
   height: inherit;
@@ -2018,16 +2019,13 @@ ul {
 }
 @media only screen and (max-width: 1024px) {
   .nav__upper .mobile-search-button {
-    display: none;
+    display: flex;
   }
 }
 @media only screen and (max-width: tablet) {
   .nav__upper .mobile-search-button {
-    display: none;
+    display: flex;
   }
-}
-.nav__upper .search-container {
-  display: none;
 }
 @media only screen and (max-width: 1024px) {
   .nav__upper .search-container {
@@ -25929,8 +25927,8 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   color: #403f47;
   text-decoration: none;
   font-weight: bold;
-  font-size: 14px;
-  line-height: 22px;
+  font-size: 12px;
+  line-height: 16px;
 }
 .contacts-alt__listing > div:not(:nth-of-type(3)) > a {
   text-transform: lowercase;

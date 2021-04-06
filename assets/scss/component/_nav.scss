@@ -112,6 +112,8 @@
     z-index: 9999;
 
     &__menu-button {
+        visibility: hidden;
+
         float: left;
         width: 50px;
         height: inherit;
@@ -873,13 +875,13 @@
             }
 
             @include respond(tablet) {
-                // display: flex;
-                display: none;
+                display: flex;
+                // display: none;
             }
         }
 
         & .search-container {
-            display: none;
+            // display: none;
 
             @include respond(tablet) {
                 display: none;
