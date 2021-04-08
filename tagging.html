@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Store Selector | SM Store</title>
+    <title>Test Tagging | SM Store</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="./assets/css/w3.min.css">
@@ -374,88 +374,83 @@
         <!-- /STORE SELECTOR -->
 
 
+        <style>
+            .flex {
+                display: flex;
 
-        <section class="container store-selector__container">
-            <div class="store-selector__details">
-                <p class="font-callout">The SM Store Makati</p>
+                margin-top: 163px;
 
-                <div class="events-fl__details">
-                    <div class="events__venue">
-                        <img src="./assets/images/icons/outline-navigation-red.svg" alt="">
-                        <div>
-                            <p class="text-semibold">SM Makati, Makati City, Metro Manila</p>
-                        </div>
-                    </div>
+                padding: 40px 60px;
+            }
 
-                    <div class="events__datetime">
-                        <img src="./assets/images/icons/outline-clock-freshmint.svg" alt="">
-                        <p class="font-eyebrow store-open" style="color: #55c9a5;">Open Today until 9PM</p>
-                        <p class="font-eyebrow store-open" style="color: #fe3d6c;">Store Closed</p>
-                    </div>
+            .image-container {
+                width: 600px;
+                height: 700px;
 
-                    <a href="" class="get-direction-text font-caption-italic">Get Directions</a>
+                background: gray;
+            }
+
+            .image-container:not(:last-child) {
+                margin-right: 16px;
+            }
+
+            .coordinates {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .input-div:not(:last-child) {
+                margin-bottom: 24px;
+            }
+
+            .input-div label input {
+                width: 100px;
+            }
+        </style>
+
+        <section class="container-fluid flex">
+            <div class="image-container"></div>
+            <div class="coordinates">
+                <div class="coordinates-1 input-div">
+                    <label for="coordinates-1-x">X:
+                        <input class="coordinates-1-x" type="text">
+                    </label>
+                    <label for="coordinates-1-y">Y:
+                        <input class="coordinates-1-y" type="text">
+                    </label>
                 </div>
-
-                <div class="hr hr--gray"></div>
-
-                <div class="store-selector__contacts">
-                    <div>
-                        <img src="./assets/images/icons/Phone.svg" alt="">
-                        <a href="tel:028107777" class="font-caption">(02) 8107777</a>
-                    </div>
-                    <div>
-                        <img src="./assets/images/icons/Mail.svg" alt="">
-                        <a href="mailto:customercare@thesmstore.com" class="font-caption">customercare@thesmstore.com</a>
-                    </div>
-                    <div>
-                        <img src="./assets/images/icons/Facebook.svg" alt="">
-                        <a href="https://www.facebook.com/SmMakatiOfficial/" target="_blank" class="font-caption">@SMMakatiOfficial</a>
-                    </div>
-                    <div>
-                        <img src="./assets/images/icons/Viber.svg" alt="">
-                        <a href="https://bit.ly/JoinSMViber" target="_blank" class="font-caption">SM Makati</a>
-                    </div>
+                <div class="coordinates-2 input-div">
+                    <label for="coordinates-2-x">X:
+                        <input class="coordinates-2-x" type="text">
+                    </label>
+                    <label for="coordinates-2-y">Y:
+                        <input class="coordinates-2-y" type="text">
+                    </label>
                 </div>
-
-                <div class="hr hr--gray"></div>
-
-                <div class="store-selector__store-hours">
-                    <p class="font-headline">Store Hours*</p>
-                    <div>
-                        <div>
-                            <p>Monday</p>
-                            <p>10AM - 9PM</p>
-                        </div>
-                        <div>
-                            <p>Tuesday</p>
-                            <p>10AM - 9PM</p>
-                        </div>
-                        <div>
-                            <p>Wednesday</p>
-                            <p>10AM - 9PM</p>
-                        </div>
-                        <div>
-                            <p>Thursday</p>
-                            <p>10AM - 9PM</p>
-                        </div>
-                        <div>
-                            <p>Friday</p>
-                            <p>10AM - 9PM</p>
-                        </div>
-                        <div>
-                            <p>Saturday</p>
-                            <p>10AM - 9PM</p>
-                        </div>
-                        <div>
-                            <p>Sunday</p>
-                            <p>10AM - 9PM</p>
-                        </div>
-                    </div>
-                    <p class="font-caption-italic">Store hours may vary.</p>
+                <div class="coordinates-3 input-div">
+                    <label for="coordinates-3-x">X:
+                        <input class="coordinates-3-x" type="text">
+                    </label>
+                    <label for="coordinates-3-y">Y:
+                        <input class="coordinates-3-y" type="text">
+                    </label>
                 </div>
-                <p class="toggle-view font-eyebrow-medium">View Less</p>
-            </div>
-            <div class="store-selector__map">
+                <div class="coordinates-4 input-div">
+                    <label for="coordinates-4-x">X:
+                        <input class="coordinates-4-x" type="text">
+                    </label>
+                    <label for="coordinates-4-y">Y:
+                        <input class="coordinates-4-y" type="text">
+                    </label>
+                </div>
+                <div class="coordinates-5 input-div">
+                    <label for="coordinates-5-x">X:
+                        <input class="coordinates-5-x" type="text">
+                    </label>
+                    <label for="coordinates-5-y">Y:
+                        <input class="coordinates-5-y" type="text">
+                    </label>
+                </div>
             </div>
         </section>
 
@@ -605,7 +600,7 @@
                         <div class="footer-new__content--col-items">
                             <p class="font-caption">Get can't miss style news, before everybody else.</p>
                             <div class="footer-new__input-group">
-                                <input class="font-caption" type="text" placeholder="Enter your email">
+                                <input class="font-caption" type="text">
                                 <button class="btn--primary font-cta white">Sign up</button>
                             </div>
                             <p class="font-caption-bold">FOR MORE DISCOUNTS AND OFFERS, FOLLOW US ON</p>
@@ -658,6 +653,22 @@
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/main.js"></script>
 
+    <script>
+        this.x = (event.offsetX * 100) / window.innerWidth;
+        this.y = (event.offsetY * 100) / window.innerHeight;
+
+        function parallax(e) {
+            this.querySelectorAll('.parallax').forEach(item => {
+            const speed = item.getAttribute('data-speed')
+
+            const x = (window.innerWidth - e.pageX*(speed * 2))/100
+            const y = (window.innerHeight - e.pageY*(speed * 2))/100
+
+            item.style.transform = `translateX(${x}px) translateY(${y}px)`
+            })
+        }
+    </script>
+
 
     <!-- NEW MOBILE NAV INIT -->
     <script>
@@ -677,8 +688,6 @@
 
     <!-- CUSTOM IMPORT -->
     <script src="assets/js/footeraccordion.js"></script>
-    <script src="assets/js/carousel.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/storeselector.js"></script>
 </body>
 </html>

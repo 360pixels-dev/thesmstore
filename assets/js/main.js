@@ -1,5 +1,11 @@
 $(document).ready(function () {
 
+    if ($('.services-header-banner').length !== 0) {
+        $('.nav__lower-2 ').css({
+            background: "linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.22) 24.21%, rgba(0, 0, 0, 0) 100%)" 
+        })
+    }
+
     if ($('.form').length !== 0) {
         // if ($('#btnSubmit').text().toLowerCase() === 'sent') {
             // $('.form').find('input').each(function(event) {

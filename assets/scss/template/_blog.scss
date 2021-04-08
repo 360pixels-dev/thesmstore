@@ -34,6 +34,8 @@
         justify-content: center;
         width: 100%;
 
+        margin-bottom: 53px;
+
         @include respond(767px) {
             display: none;
         }
@@ -663,9 +665,15 @@
 
 .press-release-blog {
     position: relative;
+    margin-bottom: 20px;
+
+    @include respond(tablet) {
+        margin-top: 40px;
+    }
 
     &__content {
-        padding: 66px 0;
+        padding: 20px 0;
+        max-width: 1312px;
 
         @include respond(tablet) {
             max-width: 648px;
@@ -682,7 +690,11 @@
     }
 
     &__row {
-        margin-top: 53px;
+        // margin-top: 53px;
+
+        & > a {
+            text-decoration: none;
+        }
     }
 
     &__header-m {

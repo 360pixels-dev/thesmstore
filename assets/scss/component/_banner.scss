@@ -1225,6 +1225,7 @@
 
     &__hr {
         width: 100%;
+        min-width: 400px;
         height: 1px;
         display: block;
         background: linear-gradient(
@@ -1243,12 +1244,12 @@
 
     &__breadcrumbs {
         position: relative;
-        top: 128px;
-        left: 12px;
+        top: 90px;
+        left: 24px;
         height: 34px;
         // display: none;
 
-        @include respond(mobile) {
+        @include respond(tablet) {
             // display: block;
             position: absolute;
             padding: 9px 0;
@@ -1286,10 +1287,9 @@
         }
 
         &.desktop {
-            top: 9px;
             width: fit-content;
 
-            @include respond(mobile) {
+            @include respond(tablet) {
                 display: none;
             }
 
@@ -1308,7 +1308,7 @@
         &.mobile {
             display: none;
 
-            @include respond(mobile) {
+            @include respond(tablet) {
                 display: block;
             }
 

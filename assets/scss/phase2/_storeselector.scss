@@ -4,7 +4,7 @@
         justify-content: space-between;
 
         padding: 46px 0;
-        margin-top: 164px;
+        margin-top: 163px;
 
         @include respond(tablet) {
             margin-top: 112px;
@@ -164,6 +164,18 @@
             & > p:last-child {
                 text-align: center;
             }
+        }
+    }
+}
+
+.find-stores {
+    &__container {
+        margin-top: 163px;
+
+        height: 100vh;
+
+        @include respond(tablet) {
+            margin-top: 112px;
         }
     }
 }
