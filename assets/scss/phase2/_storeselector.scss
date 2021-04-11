@@ -191,6 +191,8 @@
         height: 100%;
         max-height: 75vh;
 
+        border: none;
+
         transition: all 0.3s ease-in-out;
 
         &.map-off {
@@ -201,6 +203,9 @@
             margin: auto;
 
             max-width: 80%;
+
+            border: 1px solid $mid-gray;
+
             transition: all 0.3s ease-in-out;
         }
     }

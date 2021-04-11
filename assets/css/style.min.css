@@ -46276,6 +46276,7 @@ body {
   max-width: 600px;
   height: 100%;
   max-height: 75vh;
+  border: none;
   transition: all 0.3s ease-in-out;
 }
 .find-stores__widget.map-off {
@@ -46284,6 +46285,7 @@ body {
   left: auto;
   margin: auto;
   max-width: 80%;
+  border: 1px solid #e0e0e0;
   transition: all 0.3s ease-in-out;
 }
 .find-stores__search {
