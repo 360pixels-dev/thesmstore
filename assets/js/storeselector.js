@@ -85,8 +85,16 @@ function openStoreSelector() {
     if (drawer2 !== null) {
         if (drawer2.style.display === 'block' || overlay.style.display === 'block') {
 
-            if (lowerNav.length !== 0) {
-                lowerNav[0].style.background = "linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%)"
+            
+            
+            if ($('.services-header-banner').length !== 0) {
+                if (lowerNav.length !== 0) {
+                    lowerNav[0].style.background = "linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%)"
+                } else {
+                    lowerNav[0].style.background = "#397cee"
+
+                }
+
             }
             drawer2.style.display = "none";
             drawer2.className = "make-store-selector-drawer  w3-bar-block w3-animate-top"

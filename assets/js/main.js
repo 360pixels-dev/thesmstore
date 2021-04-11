@@ -1,5 +1,32 @@
 $(document).ready(function () {
 
+    if ($('.find-stores__container').length !== 0) {
+        $('.show-map-switch').click(function() {
+            $('.find-stores__widget').toggleClass('map-off')
+        })
+    }
+
+    if ($('.search-input-div').length !== 0) {
+        $('.search-input').keyup(function() {
+            if ($('.search-input').val().length !== 0) {
+                $('.show-on-type').addClass('show')
+                $('.search-input').css('padding', '13px 16px 13px 48px')
+                $('.use-current-location').hide()
+            } else {
+                $('.show-on-type').removeClass('show')
+                $('.search-input').css('padding', '13px 16px')
+                $('.use-current-location').show()
+            }
+        })
+
+        $('.search-clear').click(function() {
+            $('.show-on-type').removeClass('show')
+            $('.search-input').val('')
+            $('.search-input').css('padding', '13px 16px')
+            $('.use-current-location').show()
+        })
+    }
+
     if ($('.services-header-banner').length !== 0) {
         $('.nav__lower-2 ').css({
             background: "linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.22) 24.21%, rgba(0, 0, 0, 0) 100%)" 

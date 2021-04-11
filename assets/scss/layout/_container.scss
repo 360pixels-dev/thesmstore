@@ -148,6 +148,116 @@
         }
     }
 
+    & .events-fl__details {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        & > .buttons {
+            @include respond(mobile) {
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: center;
+            }
+
+            & .btn--primary {
+                width: fit-content;
+
+                color: $black;
+                border: 1px solid $black;
+
+                &:hover {
+                    color: $white;
+                    background-color: $black;
+                }
+
+                &:nth-of-type(2) {
+                    color: $white;
+                    margin-left: 12px;
+
+                    @include respond(mobile) {
+                        margin-left: 0;
+                        margin-bottom: 12px;
+                    }
+                }
+            }
+        }
+
+        & .get-direction-text {
+            position: absolute;
+            right: 0;
+            text-decoration: none;
+            color: $dark-gray;
+
+            &:hover {
+                color: #0067b3;
+            }
+
+            &::after {
+                display: none;
+                content: url("../images/icons/get-directions-arrow.svg");
+                padding-left: 12px;
+            }
+
+            &:hover:after {
+                display: inline;
+            }
+
+            @include respond(tablet) {
+                position: relative;
+                margin: 16px 0 0 24px;
+            }
+        }
+    }
+
+    & .events__datetime {
+        display: flex;
+        align-items: center;
+
+        & > img {
+            vertical-align: middle;
+            height: 20px;
+            width: 20px;
+        }
+
+        & > p {
+            margin-left: 12px;
+        }
+
+        & > span {
+            margin-left: 4px;
+            vertical-align: middle;
+            color: $freshmint;
+            letter-spacing: 4px;
+
+            @include respond(tablet) {
+                font-size: 16px;
+            }
+        }
+    }
+
+    & .events__venue {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 16px;
+
+        & > img {
+            vertical-align: middle;
+            height: 20px;
+            width: 20px;
+        }
+
+        & > div {
+            margin-left: 12px;
+
+            & > p {
+                font-family: $font-base;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+
     @include respond(tablet) {
         width: 96%;
     }
