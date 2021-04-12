@@ -14454,6 +14454,9 @@ header {
     display: none;
   }
 }
+.footer-new__content .row div.flex-2 {
+  flex: 2 !important;
+}
 .footer-new__content .row div:nth-child(1) {
   flex: 1;
 }
@@ -14488,7 +14491,7 @@ header {
   }
 }
 .footer-new__content .row div:nth-child(2) {
-  flex: 2;
+  flex: 1;
 }
 @media only screen and (max-width: 1024px) {
   .footer-new__content .row div:nth-child(2) {
@@ -14509,9 +14512,6 @@ header {
   .footer-new__content .row div:nth-child(2) {
     flex: 0 0 100% !important;
   }
-}
-.footer-new__content .row div:nth-child(2) .footer-new__content--col-items {
-  columns: 2;
 }
 @media only screen and (max-width: 1024px) {
   .footer-new__content .row div:nth-child(2) .footer-new__content--col-items {
@@ -14615,6 +14615,14 @@ header {
 }
 .footer-new__content--col-header {
   margin-bottom: 16px;
+}
+.footer-new__content--col-items {
+  max-height: 300px;
+}
+.footer-new__content--col-items.col-2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 .footer-new__content--col-items li {
   margin-bottom: 16px;
@@ -46310,7 +46318,6 @@ body {
 .find-stores__container {
   margin-top: 163px;
   height: 100vh;
-  background: #e0e0e0;
 }
 @media only screen and (max-width: 1024px) {
   .find-stores__container {
@@ -46320,6 +46327,34 @@ body {
 @media only screen and (max-width: tablet) {
   .find-stores__container {
     margin-top: 112px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .find-stores__container {
+    height: 100%;
+  }
+}
+.find-stores__google-api {
+  background: #e0e0e0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+.find-stores__google-api.map-off {
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+@media only screen and (max-width: 767px) {
+  .find-stores__google-api.map-off {
+    height: 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .find-stores__google-api {
+    position: relative;
+    height: 252px;
   }
 }
 .find-stores__widget {
@@ -46332,6 +46367,11 @@ body {
   border: none;
   transition: all 0.3s ease-in-out;
 }
+@media only screen and (max-width: 767px) {
+  .find-stores__widget {
+    max-height: 100%;
+  }
+}
 .find-stores__widget.map-off {
   position: relative;
   top: 8px;
@@ -46341,9 +46381,28 @@ body {
   border: 1px solid #e0e0e0;
   transition: all 0.3s ease-in-out;
 }
+@media only screen and (max-width: 767px) {
+  .find-stores__widget.map-off {
+    top: 0;
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .find-stores__widget {
+    max-width: 100%;
+    position: relative;
+    left: auto;
+    top: auto;
+  }
+}
 .find-stores__search {
   background: #eff3fd;
   padding: 24px;
+}
+@media only screen and (max-width: 767px) {
+  .find-stores__search {
+    padding-bottom: 80px;
+  }
 }
 .find-stores__search > .top {
   display: flex;
@@ -46364,6 +46423,13 @@ body {
   position: relative;
   border: 1px solid #88898f;
   color: #403f47;
+}
+@media only screen and (max-width: 767px) {
+  .find-stores__search > .bottom > .search-input-div > .use-current-location {
+    position: absolute;
+    left: 16px;
+    top: 67px;
+  }
 }
 .find-stores__search > .bottom > .search-input-div > .show-on-type {
   display: none;
@@ -46386,6 +46452,11 @@ body {
   width: 100%;
   padding-right: 210px;
 }
+@media only screen and (max-width: 767px) {
+  .find-stores__search > .bottom > .search-input-div > .search-input {
+    padding: 13px 16px;
+  }
+}
 .find-stores__search > .bottom > .search-input-div > .search-input:focus {
   outline: none;
 }
@@ -46402,6 +46473,14 @@ body {
   display: flex;
   align-items: center;
 }
+@media only screen and (max-width: 767px) {
+  .find-stores__search-results {
+    position: relative;
+    top: -24px;
+    margin: 0 24px;
+    border: 1px solid #e0e0e0;
+  }
+}
 .find-stores__search-results .store-item {
   margin-bottom: 0;
   border-radius: 0;
@@ -46409,6 +46488,11 @@ body {
 }
 .find-stores__search-results .store-item:not(:first-child) .store-item-header {
   border-top: 1px solid #e0e0e0;
+}
+@media only screen and (max-width: 767px) {
+  .find-stores__search-results .store-item:last-child {
+    border-bottom: 1px solid #e0e0e0;
+  }
 }
 .find-stores__search-results .store-item-header {
   padding: 15px 24px;
@@ -46426,6 +46510,11 @@ body {
   height: 100%;
   max-height: 50vh;
   overflow-y: scroll;
+}
+@media only screen and (max-width: 767px) {
+  .find-stores__search-results .store-item-body-content > .store-results-list {
+    max-height: 100%;
+  }
 }
 .find-stores__search-results .store-item-body-content > .store-results-list > li {
   padding: 16px 24px;

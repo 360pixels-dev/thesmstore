@@ -1,8 +1,28 @@
 $(document).ready(function () {
 
+    if ($('.footer-new__content').length !== 0) {
+        console.log($('.footer-new__content').find('.row').children()[0])
+
+        const footerLinks = $('.footer-new__content').find('.row').children()
+
+        footerLinks.each(function() {
+            const $this = $(this)
+            const linkList = $this.find('ul')
+            const linkCount = $this.find('ul').children().length
+
+            console.log(linkCount)
+            
+            if (linkCount > 7) {
+                linkList.addClass('col-2')
+                $this.addClass('flex-2')
+            }
+        })
+    }
+
     if ($('.find-stores__container').length !== 0) {
         $('.show-map-switch').click(function() {
             $('.find-stores__widget').toggleClass('map-off')
+            $('.find-stores__google-api').toggleClass('map-off')
         })
     }
 
@@ -24,6 +44,12 @@ $(document).ready(function () {
             $('.search-input').val('')
             $('.search-input').css('padding', '13px 16px')
             $('.use-current-location').show()
+        })
+    }
+
+    if ($('.banner-inner--privacy-policy').length !== 0) {
+        $('.nav__lower-2 ').css({
+            background: "linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.22) 24.21%, rgba(0, 0, 0, 0) 100%)" 
         })
     }
 

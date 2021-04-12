@@ -1186,6 +1186,10 @@
 
         & .row {
             & div {
+                &.flex-2 {
+                    flex: 2 !important;
+                }
+
                 &:nth-child(1) {
                     flex: 1;
 
@@ -1205,7 +1209,7 @@
                 }
 
                 &:nth-child(2) {
-                    flex: 2;
+                    flex: 1;
 
                     @include respond(tablet) {
                         flex: 0 0 33.33% !important;
@@ -1216,7 +1220,6 @@
                     }
 
                     & .footer-new__content--col-items {
-                        columns: 2;
                         @include respond(tablet) {
                             margin: 0 0 20px 16px;
                         }
@@ -1279,6 +1282,14 @@
         }
 
         &--col-items {
+            max-height: 300px;
+
+            &.col-2 {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+
             & li {
                 margin-bottom: 16px;
 

@@ -174,10 +174,37 @@
 
         height: 100vh;
 
-        background: $mid-gray;
-
         @include respond(tablet) {
             margin-top: 112px;
+        }
+
+        @include respond(767px) {
+            height: 100%;
+        }
+    }
+
+    &__google-api {
+        background: $mid-gray;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+
+        opacity: 1;
+
+        transition: all 0.3s ease-in-out;
+
+        &.map-off {
+            opacity: 0;
+            transition: all 0.3s ease-in-out;
+
+            @include respond(767px) {
+                height: 0;
+            }
+        }
+
+        @include respond(767px) {
+            position: relative;
+            height: 252px;
         }
     }
 
@@ -195,6 +222,10 @@
 
         transition: all 0.3s ease-in-out;
 
+        @include respond(767px) {
+            max-height: 100%;
+        }
+
         &.map-off {
             position: relative;
             top: 8px;
@@ -207,6 +238,18 @@
             border: 1px solid $mid-gray;
 
             transition: all 0.3s ease-in-out;
+
+            @include respond(767px) {
+                top: 0;
+                max-width: 100%;
+            }
+        }
+
+        @include respond(767px) {
+            max-width: 100%;
+            position: relative;
+            left: auto;
+            top: auto;
         }
     }
 
@@ -214,6 +257,10 @@
         background: #eff3fd;
 
         padding: 24px;
+
+        @include respond(767px) {
+            padding-bottom: 80px;
+        }
 
         & > .top {
             display: flex;
@@ -241,6 +288,14 @@
                 border: 1px solid #88898f;
                 color: $dark-gray;
 
+                @include respond(767px) {
+                    & > .use-current-location {
+                        position: absolute;
+                        left: 16px;
+                        top: 67px;
+                    }
+                }
+
                 & > .show-on-type {
                     display: none;
 
@@ -266,6 +321,10 @@
                     border: none;
                     width: 100%;
                     padding-right: 210px;
+
+                    @include respond(767px) {
+                        padding: 13px 16px;
+                    }
 
                     &:focus {
                         outline: none;
@@ -293,6 +352,13 @@
     }
 
     &__search-results {
+        @include respond(767px) {
+            position: relative;
+            top: -24px;
+            margin: 0 24px;
+            border: 1px solid $mid-gray;
+        }
+
         & .store-item {
             margin-bottom: 0;
             border-radius: 0;
@@ -301,6 +367,12 @@
             &:not(:first-child) {
                 & .store-item-header {
                     border-top: 1px solid $mid-gray;
+                }
+            }
+
+            @include respond(767px) {
+                &:last-child {
+                    border-bottom: 1px solid $mid-gray;
                 }
             }
         }
@@ -325,6 +397,10 @@
 
                 max-height: 50vh;
                 overflow-y: scroll;
+
+                @include respond(767px) {
+                    max-height: 100%;
+                }
 
                 & > li {
                     padding: 16px 24px;
