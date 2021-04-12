@@ -14227,13 +14227,30 @@ header {
   top: 5px;
 }
 .footer-new__forex > p > span {
-  word-spacing: 15px;
+  word-spacing: normal;
+}
+.footer-new__forex > p > span > text {
+  word-spacing: 16px;
+}
+.footer-new__forex > p > span > strong {
+  word-spacing: normal;
+}
+.footer-new__forex > p > span > span {
+  word-spacing: 8px;
 }
 .footer-new__forex > p > img {
   position: absolute;
 }
 .footer-new__forex > p > .forex-tooltip:hover {
   cursor: pointer;
+}
+.footer-new__forex .forex-tooltip {
+  display: inline-block;
+  position: relative;
+  margin-right: 4px;
+}
+.footer-new__forex .forex-tooltip > img {
+  height: 16px;
 }
 .footer-new__forex .tooltip {
   display: none;
@@ -14244,11 +14261,24 @@ header {
   background-color: rgba(0, 0, 0, 0.8);
   border: none;
   top: -110px;
-  left: 0;
+  left: -42px;
   word-spacing: normal !important;
+}
+@media only screen and (max-width: 1024px) {
+  .footer-new__forex .tooltip {
+    left: 0;
+    top: -100px;
+  }
+}
+@media only screen and (max-width: tablet) {
+  .footer-new__forex .tooltip {
+    left: 0;
+    top: -100px;
+  }
 }
 @media only screen and (max-width: 360px) {
   .footer-new__forex .tooltip {
+    top: -91px;
     left: -12px;
     width: 100vw;
     padding-right: 28px;
@@ -14264,10 +14294,15 @@ header {
 .footer-new__forex .tooltip > a {
   text-decoration: none;
 }
+@media only screen and (max-width: 320px) {
+  .footer-new__forex .tooltip > .break {
+    display: none;
+  }
+}
 .footer-new__forex .tooltip::after {
   content: " ";
   position: absolute;
-  left: 62%;
+  left: 9.3%;
   right: auto;
   bottom: -15px;
   border-bottom: none;
@@ -14278,23 +14313,35 @@ header {
 }
 @media only screen and (max-width: 1024px) {
   .footer-new__forex .tooltip::after {
-    left: 49%;
+    display: none;
   }
 }
 @media only screen and (max-width: tablet) {
   .footer-new__forex .tooltip::after {
-    left: 49%;
+    display: none;
   }
 }
-@media only screen and (max-width: 360px) {
-  .footer-new__forex .tooltip::after {
-    left: 54%;
-  }
+.footer-new__forex .mobile-tooltip {
+  display: none;
+  z-index: 997;
+  position: absolute;
+  width: 100vw;
+  padding: 16px 28px 16px 16px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: none;
+  top: -91px;
+  left: -12px;
+  word-spacing: normal !important;
 }
-@media only screen and (max-width: 320px) {
-  .footer-new__forex .tooltip::after {
-    left: 60.5%;
-  }
+.footer-new__forex .mobile-tooltip > .close-button {
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.footer-new__forex .mobile-tooltip > a {
+  text-decoration: none;
 }
 @media only screen and (max-width: 1024px) {
   .footer-new__forex {
@@ -14304,7 +14351,10 @@ header {
     font-size: 12px;
   }
   .footer-new__forex > p > span {
-    word-spacing: 8px;
+    word-spacing: 8px !important;
+  }
+  .footer-new__forex > p > span > span {
+    word-spacing: 8px !important;
   }
 }
 @media only screen and (max-width: tablet) {
@@ -14315,7 +14365,10 @@ header {
     font-size: 12px;
   }
   .footer-new__forex > p > span {
-    word-spacing: 8px;
+    word-spacing: 8px !important;
+  }
+  .footer-new__forex > p > span > span {
+    word-spacing: 8px !important;
   }
 }
 .footer-new__messenger {

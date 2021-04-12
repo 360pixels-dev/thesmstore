@@ -967,7 +967,19 @@
             top: 5px;
 
             & > span {
-                word-spacing: 15px;
+                word-spacing: normal;
+
+                & > text {
+                    word-spacing: 16px;
+                }
+
+                & > strong {
+                    word-spacing: normal;
+                }
+
+                & > span {
+                    word-spacing: 8px;
+                }
             }
 
             & > img {
@@ -976,6 +988,16 @@
 
             & > .forex-tooltip:hover {
                 cursor: pointer;
+            }
+        }
+
+        & .forex-tooltip {
+            display: inline-block;
+            position: relative;
+            margin-right: 4px;
+
+            & > img {
+                height: 16px;
             }
         }
 
@@ -991,14 +1013,16 @@
             border: none;
 
             top: -110px;
-            left: 0;
+            left: -42px;
             word-spacing: normal !important;
 
-            // @include respond(tablet) {
-            //     left: 10px;
-            // }
+            @include respond(tablet) {
+                left: 0;
+                top: -100px;
+            }
 
             @include respond(360px) {
+                top: -91px;
                 left: -12px;
                 width: 100vw;
                 padding-right: 28px;
@@ -1016,10 +1040,16 @@
                 text-decoration: none;
             }
 
+            & > .break {
+                @include respond(320px) {
+                    display: none;
+                }
+            }
+
             &::after {
                 content: " ";
                 position: absolute;
-                left: 62%;
+                left: 9.3%;
                 right: auto;
                 bottom: -15px;
                 border-bottom: none;
@@ -1029,16 +1059,36 @@
                 transform: translate(-50%, 50%) rotate(-180);
 
                 @include respond(tablet) {
-                    left: 49%;
+                    display: none;
                 }
+            }
+        }
 
-                @include respond(360px) {
-                    left: 54%;
-                }
+        & .mobile-tooltip {
+            display: none;
+            z-index: 997;
 
-                @include respond(320px) {
-                    left: 60.5%;
-                }
+            position: absolute;
+            width: 100vw;
+            padding: 16px 28px 16px 16px;
+
+            background-color: rgba(0, 0, 0, 0.8);
+            border: none;
+
+            top: -91px;
+            left: -12px;
+            word-spacing: normal !important;
+
+            & > .close-button {
+                height: 12px;
+                width: 12px;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+
+            & > a {
+                text-decoration: none;
             }
         }
 
@@ -1049,7 +1099,11 @@
                 font-size: 12px;
 
                 & > span {
-                    word-spacing: 8px;
+                    word-spacing: 8px !important;
+
+                    & > span {
+                        word-spacing: 8px !important;
+                    }
                 }
             }
         }
