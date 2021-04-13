@@ -245,11 +245,25 @@
 }
 .ti-angle-right:before {
     /* content: "\e649"; */
+
     content: url("../../images/button-right.png");
+
+    /* content: url("../../images/icons/m-carousel-arrow-right.svg"); */
+    /* background: white; */
+    display: block;
+    /* padding: 0 10px 20px 10px;
+    border-radius: 50%; */
 }
 .ti-angle-left:before {
     /* content: "\e64a"; */
+
     content: url("../../images/button-left.png");
+
+    /* content: url("../../images/icons/m-carousel-arrow-left.svg"); */
+    /* background: white; */
+    display: block;
+    /* padding: 0 10px 20px 10px;
+    border-radius: 50%; */
 }
 .ti-angle-down:before {
     content: "\e64b";

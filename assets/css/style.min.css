@@ -15165,7 +15165,7 @@ header {
   font-weight: bold;
 }
 .blog__item {
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   margin-right: 24px;
 }
 @media only screen and (max-width: 1250px) {
@@ -15202,6 +15202,13 @@ header {
 }
 .blog__item h5, .blog__item a {
   width: 100%;
+}
+.blog__item > h5 {
+  padding-bottom: 0;
+  margin-bottom: 8px;
+}
+.blog__item > .link__heading {
+  margin-bottom: 24px;
 }
 .blog__item img {
   width: 100%;
@@ -15649,7 +15656,7 @@ header {
 
 .voucher {
   width: 1016px;
-  margin: auto;
+  margin: 80px auto 0 auto;
   padding: 24px 66px;
   position: relative;
   height: 200px;
@@ -15669,6 +15676,7 @@ header {
     padding: 26px 0;
     height: auto;
     border-radius: 8px;
+    margin: 28px auto;
   }
 }
 @media only screen and (max-width: 820px) {
@@ -15763,6 +15771,11 @@ header {
   }
   .suggested-blog .blog__item--align:nth-child(4n) {
     margin-right: 0 !important;
+  }
+}
+@media only screen and (max-width: 970px) {
+  .suggested-blog {
+    padding: 0 0 110px 0;
   }
 }
 @media only screen and (max-width: 820px) {

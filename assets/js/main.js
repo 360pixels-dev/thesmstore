@@ -1,16 +1,12 @@
 $(document).ready(function () {
 
     if ($('.footer-new__content').length !== 0) {
-        console.log($('.footer-new__content').find('.row').children()[0])
-
         const footerLinks = $('.footer-new__content').find('.row').children()
 
         footerLinks.each(function() {
             const $this = $(this)
             const linkList = $this.find('ul')
             const linkCount = $this.find('ul').children().length
-
-            console.log(linkCount)
             
             if (linkCount > 7) {
                 linkList.addClass('col-2')
