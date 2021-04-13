@@ -16,6 +16,9 @@
         &--back {
             justify-content: flex-start;
             margin-left: 25px;
+            position: absolute;
+
+            z-index: 2;
 
             & > a {
                 text-decoration: none;
