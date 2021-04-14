@@ -384,10 +384,22 @@
             }
 
             .image-container {
-                width: 600px;
-                height: 700px;
+                position: relative;
+                height: fit-content;
+                width: fit-content;
+            }
 
-                background: gray;
+            .image {
+                width: 100%;
+                height: auto;
+
+                max-width: 600px;
+                max-height: 700px;
+
+
+                @media screen and (max-width: 821px) {
+                    width: 100%;
+                }
             }
 
             .image-container:not(:last-child) {
@@ -406,49 +418,108 @@
             .input-div label input {
                 width: 100px;
             }
+
+            .tag1 {
+                background: #ffffff;
+                border-radius: 100px;
+                filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.5));
+                width: 5%;
+                height: 4.2%;
+                position: absolute;
+                cursor: pointer;
+            }
+
+            .tag2 {
+                background: #f06565;
+                border-radius: 100px;
+                filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.5));
+                width: 5%;
+                height: 4.2%;
+                position: absolute;
+                cursor: pointer;
+            }
+
+            .tag3 {
+                background: #6765f0;
+                border-radius: 100px;
+                filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.5));
+                width: 5%;
+                height: 4.2%;
+                position: absolute;
+                cursor: pointer;
+            }
+
+            .tag4 {
+                background: #adba37;
+                border-radius: 100px;
+                filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.5));
+                width: 5%;
+                height: 4.2%;
+                position: absolute;
+                cursor: pointer;
+            }
+
+            .tag5 {
+                background: #c965f0;
+                border-radius: 100px;
+                filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.5));
+                width: 5%;
+                height: 4.2%;
+                position: absolute;
+                cursor: pointer;
+            }
         </style>
 
         <section class="container-fluid flex">
-            <div class="image-container"></div>
+
+            <div class="image-container">
+                <img class="image" src="./assets/images/beauty-trends-img-03.jpg" alt="">
+                <div class="tag1"></div>
+                <div class="tag2"></div>
+                <div class="tag3"></div>
+                <div class="tag4"></div>
+                <div class="tag5"></div>
+            </div>
+
             <div class="coordinates">
                 <div class="coordinates-1 input-div">
                     <label for="coordinates-1-x">X:
-                        <input class="coordinates-1-x" type="text">
+                        <input class="coordinates-1-x" type="text" value="60">
                     </label>
                     <label for="coordinates-1-y">Y:
-                        <input class="coordinates-1-y" type="text">
+                        <input class="coordinates-1-y" type="text" value="20">
                     </label>
                 </div>
                 <div class="coordinates-2 input-div">
                     <label for="coordinates-2-x">X:
-                        <input class="coordinates-2-x" type="text">
+                        <input class="coordinates-2-x" type="text" value="20">
                     </label>
                     <label for="coordinates-2-y">Y:
-                        <input class="coordinates-2-y" type="text">
+                        <input class="coordinates-2-y" type="text" value="60">
                     </label>
                 </div>
                 <div class="coordinates-3 input-div">
                     <label for="coordinates-3-x">X:
-                        <input class="coordinates-3-x" type="text">
+                        <input class="coordinates-3-x" type="text" value="30">
                     </label>
                     <label for="coordinates-3-y">Y:
-                        <input class="coordinates-3-y" type="text">
+                        <input class="coordinates-3-y" type="text" value="15">
                     </label>
                 </div>
                 <div class="coordinates-4 input-div">
                     <label for="coordinates-4-x">X:
-                        <input class="coordinates-4-x" type="text">
+                        <input class="coordinates-4-x" type="text" value="85">
                     </label>
                     <label for="coordinates-4-y">Y:
-                        <input class="coordinates-4-y" type="text">
+                        <input class="coordinates-4-y" type="text" value="45">
                     </label>
                 </div>
                 <div class="coordinates-5 input-div">
                     <label for="coordinates-5-x">X:
-                        <input class="coordinates-5-x" type="text">
+                        <input class="coordinates-5-x" type="text" value="95">
                     </label>
                     <label for="coordinates-5-y">Y:
-                        <input class="coordinates-5-y" type="text">
+                        <input class="coordinates-5-y" type="text" value="65">
                     </label>
                 </div>
             </div>
@@ -654,19 +725,86 @@
     <script src="assets/js/main.js"></script>
 
     <script>
-        this.x = (event.offsetX * 100) / window.innerWidth;
-        this.y = (event.offsetY * 100) / window.innerHeight;
 
-        function parallax(e) {
-            this.querySelectorAll('.parallax').forEach(item => {
-            const speed = item.getAttribute('data-speed')
+        // this.x = (event.offsetX * 100) / window.innerWidth;
+        // this.y = (event.offsetY * 100) / window.innerHeight;
 
-            const x = (window.innerWidth - e.pageX*(speed * 2))/100
-            const y = (window.innerHeight - e.pageY*(speed * 2))/100
+        $(document).ready(function() {
+            $('.tag1').css('left', `${$('.coordinates-1-x').val()}%`)
+            $('.tag1').css('top', `${$('.coordinates-1-y').val()}%`)
 
-            item.style.transform = `translateX(${x}px) translateY(${y}px)`
-            })
-        }
+            $('.tag2').css('left', `${$('.coordinates-2-x').val()}%`)
+            $('.tag2').css('top', `${$('.coordinates-2-y').val()}%`)
+
+            $('.tag3').css('left', `${$('.coordinates-3-x').val()}%`)
+            $('.tag3').css('top', `${$('.coordinates-3-y').val()}%`)
+
+            $('.tag4').css('left', `${$('.coordinates-4-x').val()}%`)
+            $('.tag4').css('top', `${$('.coordinates-4-y').val()}%`)
+
+            $('.tag5').css('left', `${$('.coordinates-5-x').val()}%`)
+            $('.tag5').css('top', `${$('.coordinates-5-y').val()}%`)
+        })
+
+
+
+
+        // tag1
+        $('.coordinates-1-x').on('keyup', function() {
+            $('.tag1').css('left', `${$(this).val()}%`)
+        })
+
+        $('.coordinates-1-y').on('keyup', function() {
+            $('.tag1').css('top', `${$(this).val()}%`)
+        })
+
+        // tag2
+        $('.coordinates-2-x').on('keyup', function() {
+            $('.tag2').css('left', `${$(this).val()}%`)
+        })
+
+        $('.coordinates-2-y').on('keyup', function() {
+            $('.tag2').css('top', `${$(this).val()}%`)
+        })
+
+        // tag3
+        $('.coordinates-3-x').on('keyup', function() {
+            $('.tag3').css('left', `${$(this).val()}%`)
+        })
+
+        $('.coordinates-3-y').on('keyup', function() {
+            $('.tag3').css('top', `${$(this).val()}%`)
+        })
+
+        // tag4
+        $('.coordinates-4-x').on('keyup', function() {
+            $('.tag4').css('left', `${$(this).val()}%`)
+        })
+
+        $('.coordinates-4-y').on('keyup', function() {
+            $('.tag4').css('top', `${$(this).val()}%`)
+        })
+
+        // tag5
+        $('.coordinates-5-x').on('keyup', function() {
+            $('.tag5').css('left', `${$(this).val()}%`)
+        })
+
+        $('.coordinates-5-y').on('keyup', function() {
+            $('.tag5').css('top', `${$(this).val()}%`)
+        })
+
+
+        // function parallax(e) {
+        //     this.querySelectorAll('.parallax').forEach(item => {
+        //     const speed = item.getAttribute('data-speed')
+
+        //     const x = (window.innerWidth - e.pageX*(speed * 2))/100
+        //     const y = (window.innerHeight - e.pageY*(speed * 2))/100
+
+        //     item.style.transform = `translateX(${x}px) translateY(${y}px)`
+        //     })
+        // }
     </script>
 
 
