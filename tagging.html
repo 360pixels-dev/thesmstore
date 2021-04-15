@@ -396,6 +396,7 @@
                 max-width: 600px;
                 max-height: 700px;
 
+                cursor: pointer;
 
                 @media screen and (max-width: 821px) {
                     width: 100%;
@@ -451,6 +452,8 @@
 
             .tag6 {
                 background: #34b409;
+                top: 0;
+                left: 0;
             }
         </style>
 
@@ -744,22 +747,24 @@
         // const imageContainer = document.querySelector('.image-container')
 
         // imageContainer.addEventListener('mousemove', followCursor)
+
+        // console.log(imageContainer.offsetWidth())
         
         // function followCursor(e) {
+        //     tag.style.left = ((event.offsetX - event.clientX) * 100) / imageContainer.innerWidth() + '%';
+        //     tag.style.top = ((event.offsetY - event.clientY) * 100) / imageContainer.innerHeight() + '%';
 
-        //     // tag.style.top = e.clientY - e.target.getBoundingClientRect().top + 'px';
-        //     // tag.style.left = e.clientX - e.target.getBoundingClientRect().left + 'px';
+        //     text1.innerHTML = 'Left: ' + ((event.offsetX - event.clientX) * 100) / imageContainer.width() + '%'
+        //     text2.innerHTML = 'Top: ' + ((event.offsetY - event.clientY) * 100) / imageContainer.height() + '%'
 
-        //     // text1.innerHTML = e.clientX - e.target.getBoundingClientRect().left
-        //     // text2.innerHTML = e.clientY - e.target.getBoundingClientRect().top
-
-            
         // }
 
 
-        $('.image-container').mousemove(function(event) {
-            $('.tag6').css('left', `${(event.offsetX * 100) / $(this).width()}%`)
-            $('.tag6').css('top', `${(event.offsetY * 100) / $(this).height()}%`)
+        $('.image-container').mousemove(function(event) {           
+            
+            $('.mouse-x').text(((event.offsetX - event.clientX) * 100) / $('.image-container').width() + '%')
+            $('.mouse-y').text(((event.offsetY - event.clientY) * 100) / $('.image-container').height() + '%')
+
             
             // console.log(event)
             // $('.mouse-x').text((event.offsetX * 100) / $(this).width())
@@ -771,11 +776,6 @@
             // $('.mouse-x').text(event.clientX - event.target.getBoundingClientRect().left)
             // $('.mouse-y').text(event.clientY - event.target.getBoundingClientRect().top)
 
-
-            $('.mouse-x').text((event.offsetX * 100) / $(this).width() + '%')
-            $('.mouse-y').text((event.offsetY * 100) / $(this).height() + '%')
-            
-
             // $('.tag6').css({
             //     left: `${}px`,
             //     top: `${event.clientY - event.target.getBoundingClientRect().top}px`
@@ -783,6 +783,15 @@
 
             // const clientX = ((event.clientX - event.target.getBoundingClientRect().left) * 100) / $(this).width()
             // const clientY = ((event.clientY - event.target.getBoundingClientRect().top) * 100) / $(this).height()
+
+        })
+
+        $('.image-container').click(function(event) {
+            let offsetX = event.offsetX
+            let offsetY = event.offsetY
+
+            $('.tag6').css('left', `${(offsetX * 100) / $(this).width()}%`)
+            $('.tag6').css('top', `${(offsetY * 100) / $(this).height()}%`)
         })
 
         // tag1
