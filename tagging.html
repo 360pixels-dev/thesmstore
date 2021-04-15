@@ -473,6 +473,9 @@
                 <span class="mouse-x"></span>
                 <span class="mouse-y"></span>
 
+                <span class="set-mouse-x"></span>
+                <span class="set-mouse-y"></span>
+
                 <div class="coordinates-1 input-div">
                     <label for="coordinates-1-x">X:
                         <input class="coordinates-1-x" type="text" value="60">
@@ -762,8 +765,8 @@
 
         $('.image-container').mousemove(function(event) {           
             
-            $('.mouse-x').text(((event.offsetX - event.clientX) * 100) / $('.image-container').width() + '%')
-            $('.mouse-y').text(((event.offsetY - event.clientY) * 100) / $('.image-container').height() + '%')
+            $('.mouse-x').text('Left: ' + (event.offsetX * 100) / $('.image-container').width() + '%')
+            $('.mouse-y').text('Top: ' + (event.offsetY * 100) / $('.image-container').height() + '%')
 
             
             // console.log(event)
@@ -787,11 +790,11 @@
         })
 
         $('.image-container').click(function(event) {
-            let offsetX = event.offsetX
-            let offsetY = event.offsetY
+            $('.tag6').css('left', `${(event.offsetX * 100) / $(this).width()}%`)
+            $('.tag6').css('top', `${(event.offsetY * 100) / $(this).height()}%`)
 
-            $('.tag6').css('left', `${(offsetX * 100) / $(this).width()}%`)
-            $('.tag6').css('top', `${(offsetY * 100) / $(this).height()}%`)
+            $('.set-mouse-x').text('Set Left: ' + (event.offsetX * 100) / $('.image-container').width() + '%')
+            $('.set-mouse-y').text('Set Top: ' + (event.offsetY * 100) / $('.image-container').height() + '%')
         })
 
         // tag1
