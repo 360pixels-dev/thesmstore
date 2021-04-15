@@ -451,7 +451,6 @@
 
             .tag6 {
                 background: #34b409;
-                transition: all 0.1s ease-in-out;
             }
         </style>
 
@@ -759,7 +758,6 @@
 
 
         $('.image-container').mousemove(function(event) {
-            console.log(event)
             $('.tag6').css('left', `${(event.offsetX * 100) / $(this).width()}%`)
             $('.tag6').css('top', `${(event.offsetY * 100) / $(this).height()}%`)
             
