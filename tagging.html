@@ -419,7 +419,7 @@
                 width: 100px;
             }
 
-            .tag1, .tag2, .tag3, .tag4, .tag5 {
+            .tag1, .tag2, .tag3, .tag4, .tag5, .tag6 {
                 transform: translate(-50%, -50%);
                 border-radius: 100px;
                 filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.5));
@@ -448,6 +448,11 @@
             .tag5 {
                 background: #c965f0;
             }
+
+            .tag6 {
+                background: #34b409;
+                transition: all 0.1s ease-in-out;
+            }
         </style>
 
         <section class="container-fluid flex">
@@ -459,9 +464,13 @@
                 <div class="tag3"></div>
                 <div class="tag4"></div>
                 <div class="tag5"></div>
+                <div class="tag6"></div>
             </div>
 
             <div class="coordinates">
+                <span class="mouse-x"></span>
+                <span class="mouse-y"></span>
+
                 <div class="coordinates-1 input-div">
                     <label for="coordinates-1-x">X:
                         <input class="coordinates-1-x" type="text" value="60">
@@ -709,7 +718,7 @@
         // this.x = (event.offsetX * 100) / window.innerWidth;
         // this.y = (event.offsetY * 100) / window.innerHeight;
 
-        $(document).ready(function() {
+        $(document).ready(function(event) {
             $('.tag1').css('left', `${$('.coordinates-1-x').val()}%`)
             $('.tag1').css('top', `${$('.coordinates-1-y').val()}%`)
 
@@ -724,10 +733,59 @@
 
             $('.tag5').css('left', `${$('.coordinates-5-x').val()}%`)
             $('.tag5').css('top', `${$('.coordinates-5-y').val()}%`)
+
+            // $('.tag5').css('left', '50%')
+            // $('.tag5').css('top', '50%')
+            
         })
 
+        // const tag = document.querySelector('.tag6')
+        // const text1 = document.querySelector('.mouse-x')
+        // const text2 = document.querySelector('.mouse-y')
+        // const imageContainer = document.querySelector('.image-container')
+
+        // imageContainer.addEventListener('mousemove', followCursor)
+        
+        // function followCursor(e) {
+
+        //     // tag.style.top = e.clientY - e.target.getBoundingClientRect().top + 'px';
+        //     // tag.style.left = e.clientX - e.target.getBoundingClientRect().left + 'px';
+
+        //     // text1.innerHTML = e.clientX - e.target.getBoundingClientRect().left
+        //     // text2.innerHTML = e.clientY - e.target.getBoundingClientRect().top
+
+            
+        // }
 
 
+        $('.image-container').mousemove(function(event) {
+            console.log(event)
+            $('.tag6').css('left', `${(event.offsetX * 100) / $(this).width()}%`)
+            $('.tag6').css('top', `${(event.offsetY * 100) / $(this).height()}%`)
+            
+            // console.log(event)
+            // $('.mouse-x').text((event.offsetX * 100) / $(this).width())
+            // $('.mouse-y').text((event.offsetY * 100) / $(this).height())
+
+            // $('.mouse-x').text(event.offsetX - event.target.getBoundingClientRect().left)
+            // $('.mouse-y').text(event.offsetY - event.target.getBoundingClientRect().top)
+
+            // $('.mouse-x').text(event.clientX - event.target.getBoundingClientRect().left)
+            // $('.mouse-y').text(event.clientY - event.target.getBoundingClientRect().top)
+
+
+            $('.mouse-x').text((event.offsetX * 100) / $(this).width() + '%')
+            $('.mouse-y').text((event.offsetY * 100) / $(this).height() + '%')
+            
+
+            // $('.tag6').css({
+            //     left: `${}px`,
+            //     top: `${event.clientY - event.target.getBoundingClientRect().top}px`
+            // })
+
+            // const clientX = ((event.clientX - event.target.getBoundingClientRect().left) * 100) / $(this).width()
+            // const clientY = ((event.clientY - event.target.getBoundingClientRect().top) * 100) / $(this).height()
+        })
 
         // tag1
         $('.coordinates-1-x').on('keyup', function() {
