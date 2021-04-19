@@ -248,25 +248,28 @@
 
     /* content: url("../../images/button-right.png"); */
 
-    content: url("../../images/icons/m-carousel-arrow-right.svg");
-    background: white;
+    content: url("../../images/icons/m-control-right.svg");
+
+    /* background: white;
     display: block;
     padding: 0 10px 20px 10px;
     border-radius: 50%;
-    border: 1px solid #403f47;
+    border: 1px solid #403f47; */
 }
 .ti-angle-left:before {
     /* content: "\e64a"; */
 
-    content: url("../../images/button-left.png");
+    /* content: url("../../images/button-left.png"); */
 
-    content: url("../../images/icons/m-carousel-arrow-left.svg");
-    background: white;
+    content: url("../../images/icons/m-control-left.svg");
+
+    /* background: white;
     display: block;
     padding: 0 10px 20px 10px;
     border-radius: 50%;
-    border: 1px solid #403f47;
+    border: 1px solid #403f47; */
 }
+
 .ti-angle-down:before {
     content: "\e64b";
 }

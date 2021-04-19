@@ -340,6 +340,14 @@
     background: $indigo;
 }
 
+.nav-transparent {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0) 100%
+    );
+}
+
 .nav {
     &__upper {
         // display: none;
@@ -1158,8 +1166,7 @@
         // display: flex;
         display: none;
         height: 76px;
-        // background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
-        background: $indigo;
+        // background: $indigo;
         padding: 14px 24px;
         justify-content: space-between;
         align-items: center;
@@ -1338,7 +1345,7 @@
         // display: none;
         height: 76px;
         // background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
-        background: $indigo;
+        // background: $indigo;
         padding: 14px 24px;
         justify-content: space-between;
         align-items: center;

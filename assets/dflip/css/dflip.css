@@ -967,6 +967,15 @@ span.df-share-title {
     left: 8px;
 }
 
+@media only screen and (max-width: 821px) {
+    .df-container.df-floating > .df-ui-next {
+        right: 0;
+    }
+    .df-container.df-floating > .df-ui-prev {
+        left: 0;
+    }
+}
+
 .df-container > .df-ui-next,
 .df-container > .df-ui-prev {
     margin-top: -5px;
@@ -997,6 +1006,17 @@ span.df-share-title {
     width: auto;
     /*noinspection CssOverwrittenProperties*/
     width: initial;
+}
+
+@media only screen and (max-width: 821px) {
+    .df-container > .df-ui-next,
+    .df-container > .df-ui-prev {
+        -webkit-transform: translateY(-47.5%);
+        -moz-transform: translateY(-47.5%);
+        -ms-transform: translateY(-47.5%);
+        transform: translateY(-47.5%);
+        top: 47.5%;
+    }
 }
 
 .df-container > .df-ui-next:hover,

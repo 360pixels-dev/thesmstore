@@ -1596,6 +1596,10 @@ ul {
   background: #397cee;
 }
 
+.nav-transparent {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
 .nav__upper {
   display: flex;
   height: 88px;
@@ -2306,7 +2310,6 @@ ul {
   position: absolute;
   display: none;
   height: 76px;
-  background: #397cee;
   padding: 14px 24px;
   justify-content: space-between;
   align-items: center;
@@ -2467,7 +2470,6 @@ ul {
   position: absolute;
   display: flex;
   height: 76px;
-  background: #397cee;
   padding: 14px 24px;
   justify-content: space-between;
   align-items: center;
@@ -41741,6 +41743,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 .make-store-selector-drawer__location {
   margin: 0 0 21px 41px;
   flex-direction: row !important;
+  background: transparent;
 }
 .make-store-selector-drawer__location > span {
   margin-bottom: 0 !important;
@@ -46115,6 +46118,18 @@ body {
   position: absolute;
   justify-content: center;
   width: 100%;
+}
+@media only screen and (max-width: 820px) {
+  .magazine-reader__header > h3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .magazine-reader__header > h3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 .magazine-reader__content {
   background: #88898f;

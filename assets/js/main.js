@@ -1,5 +1,34 @@
 $(document).ready(function () {
 
+    if ($('.magazine-reader__header').length !== 0) {
+
+        let magHeader = $('.magazine-reader__header').find('h3').text()
+
+        function cutMagHeader(magHeader, textLength){
+
+            if(magHeader.length > textLength){
+                magHeader = magHeader.substring(0, textLength) + '...';
+            }
+
+            return magHeader;
+
+        }
+
+        if (window.innerWidth < 767 ) {
+
+            $('.font-h3-caps').text(cutMagHeader(magHeader, 8))
+
+            
+        } else if (window.innerWidth < 1025) {
+
+            $('.font-h3-caps').text(cutMagHeader(magHeader, 20))
+            
+        } else {
+
+            $('.font-h3-caps').text(cutMagHeader(magHeader, 30))
+        }
+    }
+
     if ($('.footer-new__content').length !== 0) {
         const footerLinks = $('.footer-new__content').find('.row').children()
 

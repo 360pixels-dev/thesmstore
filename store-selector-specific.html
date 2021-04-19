@@ -223,6 +223,34 @@
                 </div>
             </nav>
 
+            <nav class="nav__lower-2 nav_lower--default nav__lower-2--index container-fluid nav-transparent store-selector-nav">
+                <div class="store-selector">
+                    <p class="white">
+                        <span class="white font-h5--uppercase font-h5--two-space">My Store <span class="thin-orange">(Closes at 9PM)</span></span>
+                        </br>
+                        <div onclick="openStoreSelector()" style="cursor: pointer;"><span id="selected-store" class="white font-headline"></span><img id="store-selector-arrow" src="./assets/images/angle-down.svg" alt=""></div>
+                    </p>
+                </div>
+
+                <div class="menu">
+                    <ul class="nav__lower-2-menu">
+                        <li class="nav__lower-2-menu-item">
+                            <a href="" class="font-headline">Find Stores</a>
+                        </li>
+                        <li class="nav__lower-2-menu-item">
+                            <a href="" class="font-headline">ShopSM</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mobile-store-selector" onclick="openStoreSelector()">
+                    <p>
+                        <span class="white normal-text">Please select a store</span>
+                        <img id="mobile-store-selector-arrow" src="./assets/images/angle-down.svg" alt="">
+                    </p>
+                </div>
+            </nav>
+
             <div id="mobile-menu">
                 <ul id="mobile-menu-list" class="mobile_menu">
                     <li>
@@ -277,9 +305,9 @@
                         <input type="text" placeholder="Find your nearest store">
                     </div>
 
-                    <div class="make-store-selector-drawer__location">
+                    <button class="make-store-selector-drawer__location">
                         <img src="./assets/images/target-location.svg" alt="" style="padding-right: 8px;"> <span class="font-metadata">Use Current Location</span>
-                    </div>
+                    </button>
                 </li>
                 <li>
                     <div class="make-store-selector-drawer__store">
@@ -394,7 +422,6 @@
                     <div class="events__datetime">
                         <img src="./assets/images/icons/outline-clock-freshmint.svg" alt="">
                         <p class="font-eyebrow store-open" style="color: #55c9a5;">Open Today until 9PM</p>
-                        <p class="font-eyebrow store-open" style="color: #fe3d6c;">Store Closed</p>
                     </div>
 
                     <a href="" class="get-direction-text font-caption-italic">Get Directions</a>
