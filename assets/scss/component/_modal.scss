@@ -78,6 +78,16 @@
         width: 500px;
         height: 543px;
 
+        @include respond(767px) {
+            width: 336px;
+            height: 460px;
+        }
+
+        @include respond(767px) {
+            width: 306px;
+            height: 440px;
+        }
+
         & .modal__content {
             height: 492px;
             margin-top: 16px;
@@ -88,6 +98,14 @@
 
             & > img:nth-of-type(2) {
                 margin: 0px 0 5px 0;
+            }
+
+            @include respond(767px) {
+                width: 100%;
+
+                & > img {
+                    width: inherit;
+                }
             }
         }
 
@@ -102,6 +120,16 @@
         width: 500px;
         height: 645px;
 
+        @include respond(767px) {
+            width: 336px;
+            height: 543px;
+        }
+
+        @include respond(767px) {
+            width: 306px;
+            height: 523px;
+        }
+
         & .modal__content {
             height: 492px;
             margin-top: 16px;
@@ -113,10 +141,22 @@
             & > img:nth-of-type(2) {
                 margin: 0px 0 5px 0;
             }
+
+            @include respond(767px) {
+                width: 100%;
+
+                & > img {
+                    width: inherit;
+                }
+            }
         }
 
         & .modal__countdown {
             background-color: rgba(190, 58, 52, 0.3);
+
+            @include respond(767px) {
+                width: 100%;
+            }
         }
 
         & > a {
