@@ -475,6 +475,12 @@
         text-transform: uppercase;
     }
 
+    &__result-category {
+        display: block;
+        margin-top: 24px;
+        color: $dark-gray;
+    }
+
     &__row {
         display: flex;
         margin-top: 24px;

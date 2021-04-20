@@ -243,31 +243,40 @@
 .ti-angle-up:before {
     content: "\e648";
 }
+
+.ti-angle-right:before,
+.ti-angle-left:before {
+    background: white;
+    display: block;
+    padding: 20px 18px;
+    border-radius: 50%;
+    border: 1px solid #403f47;
+}
+
 .ti-angle-right:before {
     /* content: "\e649"; */
 
-    /* content: url("../../images/button-right.png"); */
-
-    content: url("../../images/icons/m-control-right.svg");
-
-    /* background: white;
-    display: block;
-    padding: 0 10px 20px 10px;
-    border-radius: 50%;
-    border: 1px solid #403f47; */
+    content: url("../../images/icons/d-control-right.svg");
 }
 .ti-angle-left:before {
     /* content: "\e64a"; */
 
-    /* content: url("../../images/button-left.png"); */
+    content: url("../../images/icons/d-control-left.svg");
+}
 
-    content: url("../../images/icons/m-control-left.svg");
+@media only screen and (max-width: 821px) {
+    .ti-angle-right:before,
+    .ti-angle-left:before {
+        padding: 12px 15px 15px 15px;
+    }
 
-    /* background: white;
-    display: block;
-    padding: 0 10px 20px 10px;
-    border-radius: 50%;
-    border: 1px solid #403f47; */
+    .ti-angle-right:before {
+        content: url("../../images/icons/m-control-right.svg");
+    }
+
+    .ti-angle-left:before {
+        content: url("../../images/icons/m-control-left.svg");
+    }
 }
 
 .ti-angle-down:before {

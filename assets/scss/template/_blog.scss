@@ -62,7 +62,6 @@
     }
 
     &__item {
-        margin-bottom: 40px;
         margin-right: 24px;
 
         @include respond(1250px) {
@@ -708,6 +707,7 @@
 
         & > a {
             text-decoration: none;
+            margin-bottom: 40px;
         }
     }
 

@@ -698,7 +698,7 @@ span.df-share-title {
     width: 35px;
     right: 0;
     height: 40px;
-    font-size: 17px;
+    /* font-size: 17px; */
     cursor: pointer;
     z-index: 2;
     display: inline-block;
@@ -987,7 +987,7 @@ span.df-share-title {
     position: absolute;
     /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.35); */
     /* opacity: 0.3; */
-    font-size: 36px;
+    /* font-size: 36px; */
     color: #000;
     text-align: center;
 

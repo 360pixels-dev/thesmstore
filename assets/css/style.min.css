@@ -11075,6 +11075,11 @@ _:-ms-fullscreen,
   letter-spacing: 1.6px;
   text-transform: uppercase;
 }
+.search-result__result-category {
+  display: block;
+  margin-top: 24px;
+  color: #403f47;
+}
 .search-result__row {
   display: flex;
   margin-top: 24px;
@@ -15206,7 +15211,6 @@ header {
   font-weight: bold;
 }
 .blog__item {
-  margin-bottom: 40px;
   margin-right: 24px;
 }
 @media only screen and (max-width: 1250px) {
@@ -16006,6 +16010,7 @@ header {
 }
 .press-release-blog__row > a {
   text-decoration: none;
+  margin-bottom: 40px;
 }
 .press-release-blog__header-m {
   flex-direction: column;
@@ -46384,6 +46389,21 @@ body {
   }
 }
 
+.infoDiv h2 {
+  font-family: "Open Sans";
+  font-size: 12px;
+  line-height: 18px;
+}
+.infoDiv h4 {
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #55c9a5;
+}
+
 .find-stores__container {
   margin-top: 163px;
   height: 100vh;
@@ -46425,6 +46445,22 @@ body {
     position: relative;
     height: 252px;
   }
+}
+.find-stores__address-container {
+  background: #ffffff;
+  box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
+  max-width: 288px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.find-stores__address-container > .store-address {
+  margin-bottom: 8px;
 }
 .find-stores__widget {
   position: absolute;

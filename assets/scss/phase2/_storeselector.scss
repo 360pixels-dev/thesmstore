@@ -168,6 +168,24 @@
     }
 }
 
+.infoDiv {
+    & h2 {
+        font-family: $font-base;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    & h4 {
+        font-family: $font-base;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #55c9a5;
+    }
+}
+
 .find-stores {
     &__container {
         margin-top: 163px;
@@ -205,6 +223,26 @@
         @include respond(767px) {
             position: relative;
             height: 252px;
+        }
+    }
+
+    &__address-container {
+        background: $white;
+        box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
+        max-width: 288px;
+        padding: 8px 16px;
+        border-radius: 4px;
+
+        display: flex;
+        flex-direction: column;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        & > .store-address {
+            margin-bottom: 8px;
         }
     }
 
