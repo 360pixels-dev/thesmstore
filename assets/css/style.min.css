@@ -8601,6 +8601,12 @@ _:-ms-fullscreen,
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 767px) {
+  .modal__countdown {
+    width: 100%;
+  }
 }
 .modal__countdown-item {
   display: flex;
@@ -8656,6 +8662,7 @@ _:-ms-fullscreen,
 .modal--with-countdown {
   background-color: #f6787b;
   opacity: 1;
+  padding: 0;
   width: 500px;
   height: 645px;
 }
@@ -8665,36 +8672,66 @@ _:-ms-fullscreen,
     height: 543px;
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 320px) {
   .modal--with-countdown {
     width: 306px;
     height: 523px;
   }
 }
 .modal--with-countdown .modal__content {
-  height: 492px;
-  margin-top: 16px;
-}
-.modal--with-countdown .modal__content > img:nth-of-type(1) {
-  margin: 0px 0 24px 0;
-}
-.modal--with-countdown .modal__content > img:nth-of-type(2) {
-  margin: 0px 0 5px 0;
+  width: 100%;
 }
 @media only screen and (max-width: 767px) {
   .modal--with-countdown .modal__content {
     width: 100%;
   }
-  .modal--with-countdown .modal__content > img {
-    width: inherit;
-  }
 }
-.modal--with-countdown .modal__countdown {
-  background-color: rgba(190, 58, 52, 0.3);
+.modal--with-countdown .modal__content-top, .modal--with-countdown .modal__content-bottom {
+  width: 100%;
+  height: 100%;
+}
+.modal--with-countdown .modal__content-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 432px;
+  max-height: 432px;
 }
 @media only screen and (max-width: 767px) {
-  .modal--with-countdown .modal__countdown {
+  .modal--with-countdown .modal__content-top {
+    min-height: 362px;
+    max-height: 362px;
+  }
+  .modal--with-countdown .modal__content-top > img {
     width: 100%;
+    height: auto;
+  }
+}
+.modal--with-countdown .modal__content-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 213px;
+  max-height: 213px;
+}
+@media only screen and (max-width: 767px) {
+  .modal--with-countdown .modal__content-bottom {
+    min-height: 181px;
+    max-height: 181px;
+    padding: 0 8px;
+  }
+}
+.modal--with-countdown .modal__content-bottom > .modal__countdown {
+  background-color: rgba(190, 58, 52, 0.3);
+}
+.modal--with-countdown .modal__content-bottom > a {
+  margin-bottom: 34px;
+}
+@media only screen and (max-width: 767px) {
+  .modal--with-countdown .modal__content-bottom > a {
+    margin-bottom: 20px;
   }
 }
 .modal--with-countdown > a {
