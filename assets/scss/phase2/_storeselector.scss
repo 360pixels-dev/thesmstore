@@ -186,6 +186,11 @@
     }
 }
 
+.gm-style-iw-d div {
+    width: 300px;
+    height: 106px;
+}
+
 .find-stores {
     &__container {
         margin-top: 163px;
@@ -228,8 +233,9 @@
 
     &__address-container {
         background: $white;
-        box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
-        max-width: 288px;
+        // box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
+        // max-width: 288px;
+        width: 100%;
         padding: 8px 16px;
         border-radius: 4px;
 
@@ -243,6 +249,10 @@
 
         & > .store-address {
             margin-bottom: 8px;
+        }
+
+        & > .store-hours {
+            color: $freshmint;
         }
     }
 
@@ -325,6 +335,7 @@
 
                 border: 1px solid #88898f;
                 color: $dark-gray;
+                background: $white;
 
                 @include respond(767px) {
                     & > .use-current-location {

@@ -62,7 +62,8 @@
     }
 
     &__tag {
-        cursor: pointer;
+        // cursor: pointer;
+        text-decoration: none;
 
         padding: 8px 16px;
         background: $mid-gray;

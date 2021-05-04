@@ -884,6 +884,8 @@
 
             @include respond(tablet) {
                 display: flex;
+                position: absolute;
+                right: 12px;
                 // display: none;
             }
         }
