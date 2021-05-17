@@ -1,5 +1,26 @@
 $(document).ready(function () {
 
+    if ($('.search-header').length !== 0) {
+
+        $('.search__input').keyup(function() {
+            $('.search__close').show()
+
+            if ($(this).val() === '') {
+                $('.search__close').hide()
+            }
+        })
+        $('.search__close').click(function() {
+            $('.search__input').val('')
+            $(this).hide()
+        })
+    }
+
+    if ($('#progressLoad2').length !== 0) {
+        if ($('#progressLoad2').css('visibility') === 'hidden') {
+            $('#progressLoad2').css('margin', '0')
+        }
+    }
+
     if ($('.magazine-reader__header').length !== 0) {
 
         let magHeader = $('.magazine-reader__header').find('h3').text()

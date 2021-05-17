@@ -1483,8 +1483,13 @@
 
                     & .footer-new__content--col-items {
                         columns: 2;
+
                         @include respond(tablet) {
                             margin: 0 0 20px 16px;
+                        }
+
+                        @include respond(767px) {
+                            columns: 1;
                         }
                     }
                 }
@@ -1520,6 +1525,10 @@
                     //     flex: 0 0 33.33% !important;
                     //     padding-right: 0;
                     // }
+
+                    & #accountMessage {
+                        padding: 0 !important;
+                    }
 
                     @include respond(tablet) {
                         flex: 0 0 100% !important;

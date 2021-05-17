@@ -129,6 +129,34 @@
     padding: 58px;
     font-family: $font-base;
 
+    & .sfContentBlock > h1 {
+        letter-spacing: 4px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        text-align: left;
+        width: fit-content;
+
+        @include respond(tablet) {
+            font-size: 50px;
+            line-height: 58px;
+        }
+
+        @include respond(mobile) {
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: 1.6px;
+        }
+
+        & > .container-colored__h1--block {
+            margin-left: 120px;
+
+            @include respond(mobile) {
+                margin-left: 0px;
+            }
+        }
+    }
+
     & > ol ol[type="a"],
     ol[type="i"] {
         margin-left: 50px;

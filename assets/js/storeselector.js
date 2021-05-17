@@ -56,46 +56,36 @@ function openStoreSelector() {
     let mobileStoreSelectorArrow = document.getElementById("mobile-store-selector-arrow")
     let lowerNav = document.getElementsByClassName("store-selector-nav")
 
-    if (drawer !== null) {
-        if (drawer.style.display === 'block' || overlay.style.display === 'block') {
+    // if (drawer !== null) {
+    //     if (drawer.style.display === 'block' || overlay.style.display === 'block') {
 
-            if (lowerNav.length !== 0) {
-                lowerNav[0].style.background = "linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%)"
-            }
-            drawer.style.display = "none";
-            drawer.className = "make-store-selector-drawer  w3-bar-block w3-animate-top"
+    //         if (lowerNav.length !== 0) {
+    //             lowerNav[0].style.background = "linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%)"
+    //         }
+
+    //         drawer.style.display = "none";
+    //         drawer.className = "make-store-selector-drawer  w3-bar-block w3-animate-top"
     
-            overlay.style.display = "none";
-            storeSelectorArrow.className = "store-selector-arrow"
-            mobileStoreSelectorArrow.className = "mobile-store-selector-arrow"
+    //         overlay.style.display = "none";
+    //         storeSelectorArrow.className = "store-selector-arrow"
+    //         mobileStoreSelectorArrow.className = "mobile-store-selector-arrow"
     
-        } else {
+    //     } else {
     
-            if (lowerNav.length !== 0) {
-                lowerNav[0].style.background = "#397cee"
-            }
-            drawer.style.display = "block";
-            drawer.className = "make-store-selector-drawer  w3-bar-block w3-animate-top active"
-            overlay.style.display = "block";
-            storeSelectorArrow.className = "store-selector-arrow active"
-            mobileStoreSelectorArrow.className = "mobile-store-selector-arrow active"
-        }
-    }
+    //         if (lowerNav.length !== 0) {
+    //             lowerNav[0].style.background = "#397cee"
+    //         }
+    //         drawer.style.display = "block";
+    //         drawer.className = "make-store-selector-drawer  w3-bar-block w3-animate-top active"
+    //         overlay.style.display = "block";
+    //         storeSelectorArrow.className = "store-selector-arrow active"
+    //         mobileStoreSelectorArrow.className = "mobile-store-selector-arrow active"
+    //     }
+    // }
 
     if (drawer2 !== null) {
-        if (drawer2.style.display === 'block' || overlay.style.display === 'block') {
+        if (drawer2.style.display === 'block') {
 
-            
-            
-            if ($('.services-header-banner').length !== 0) {
-                if (lowerNav.length !== 0) {
-                    lowerNav[0].style.background = "linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%)"
-                } else {
-                    lowerNav[0].style.background = "#397cee"
-
-                }
-
-            }
             drawer2.style.display = "none";
             drawer2.className = "make-store-selector-drawer  w3-bar-block w3-animate-top"
     
@@ -104,10 +94,9 @@ function openStoreSelector() {
             mobileStoreSelectorArrow.className = "mobile-store-selector-arrow"
     
         } else {
-    
-            if (lowerNav.length !== 0) {
-                lowerNav[0].style.background = "#397cee"
-            }
+
+            lowerNav[0].style.background = "#397cee"
+
             drawer2.style.display = "block";
             drawer2.className = "make-store-selector-drawer  w3-bar-block w3-animate-top active"
             overlay.style.display = "block";
@@ -127,17 +116,23 @@ function closeStoreSelector() {
     let lowerNav2 = document.getElementsByClassName("nav__lower-2")
     let drawer2 = document.getElementById("store-selector-drawer-2")
 
-    if (drawer !== null) {
-        lowerNav[0].style.background = "linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%)"
-        drawer.style.display = "none";
+    // if (drawer !== null) {
+    //     lowerNav[0].style.background = "linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%)"
+    //     drawer.style.display = "none";
 
-        document.getElementById("store-selector-overlay").style.display = "none";
-        storeSelectorArrow.className = "store-selector-arrow"
-        mobileStoreSelectorArrow.className = "mobile-store-selector-arrow"
-    }
+    //     document.getElementById("store-selector-overlay").style.display = "none";
+    //     storeSelectorArrow.className = "store-selector-arrow"
+    //     mobileStoreSelectorArrow.className = "mobile-store-selector-arrow"
+    // }
 
     if (drawer2 !== null) {
-        lowerNav2[0].style.background = "linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%)"
+        if ($('.nav-transparent').length !== 0) {
+            lowerNav2[0].style.background = "linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%)"
+        }
+        
+        if ($('.nav-blue').length !== 0) {
+            lowerNav2[0].style.background = "#397cee"
+        }
         drawer2.style.display = "none";
 
         document.getElementById("store-selector-overlay").style.display = "none";

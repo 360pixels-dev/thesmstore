@@ -225,6 +225,9 @@
 
     &__close {
         background: transparent;
+        padding: 15px;
+        cursor: pointer;
+        display: none;
     }
 
     &__count {
@@ -426,8 +429,12 @@
 
 .search-header {
     background: $coral;
-    padding: 150px 0 46px;
+    padding: 230px 0 46px;
     //height: 350px;
+
+    @include respond(tablet) {
+        padding: 150px 0 46px;
+    }
 
     &__h2 {
         font-family: $font-heading1;
@@ -522,6 +529,7 @@
 
             @include respond(mobile) {
                 width: 72px;
+                object-fit: contain;
             }
         }
 

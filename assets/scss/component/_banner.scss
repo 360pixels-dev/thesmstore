@@ -783,12 +783,6 @@
         }
     }
 
-    // hide breadcrumbs for now
-    & > .banner-section__breadcrumbs {
-        display: none;
-    }
-    // /hide breadcrumbs for now
-
     & > .desktop-banner {
         width: 100%;
         object-fit: cover;
@@ -796,7 +790,7 @@
         height: 100%;
         overflow: hidden;
 
-        @include respond(mobile) {
+        @include respond(767px) {
             display: none;
         }
     }
@@ -814,23 +808,18 @@
         }
     }
 
-    @include respond(mobile) {
+    @include respond(767px) {
         height: 220px;
 
         & > .banner-section__breadcrumbs {
-            position: absolute;
-            top: 180px !important;
+            position: relative;
+            top: 0;
             left: 0px !important;
             padding-left: 10px !important;
             width: 100%;
-            background: linear-gradient(
-                180deg,
-                rgba(22, 23, 32, 0) 0%,
-                rgba(22, 23, 32, 0.43) 100%
-            );
 
             & > a {
-                @include respond(mobile) {
+                @include respond(767px) {
                     color: $white;
                     &:not(:last-child) {
                         background: url(../../assets/images/arrow-right.svg)
@@ -1237,26 +1226,26 @@
         margin-bottom: 8px;
         // top: 56px;
 
-        @include respond(mobile) {
+        @include respond(767px) {
             display: none;
         }
     }
 
     &__breadcrumbs {
         position: relative;
-        top: 90px;
+        top: 16px;
         left: 24px;
         height: 34px;
         // display: none;
 
-        @include respond(tablet) {
-            // display: block;
-            position: absolute;
-            padding: 9px 0;
-            // top: 210px;
-            top: 255px;
-            height: 40px;
-        }
+        // @include respond(tablet) {
+        //     // display: block;
+        //     position: absolute;
+        //     padding: 9px 0;
+        //     // top: 210px;
+        //     top: 255px;
+        //     height: 40px;
+        // }
 
         & > a {
             text-decoration: none;
@@ -1267,7 +1256,7 @@
             padding: 0 16px 0 0;
             display: inline-block;
 
-            @include respond(mobile) {
+            @include respond(767px) {
                 font-size: 14px;
                 line-height: 22px;
             }
@@ -1289,10 +1278,6 @@
         &.desktop {
             width: fit-content;
 
-            @include respond(tablet) {
-                display: none;
-            }
-
             &.white {
                 & > a {
                     color: $white;
@@ -1300,6 +1285,11 @@
                     &:not(:last-child) {
                         background: url("../../assets/images/arrow-right-white.svg")
                             no-repeat right center;
+                    }
+
+                    @include respond(767px) {
+                        font-size: 12px;
+                        line-height: 20px;
                     }
                 }
             }
@@ -1309,7 +1299,7 @@
             display: none;
 
             @include respond(tablet) {
-                display: block;
+                // display: block;
             }
 
             &.white {
