@@ -1322,8 +1322,12 @@
                     margin-bottom: 44px;
                 }
 
-                @include respond(mobile) {
-                    width: 85%;
+                @include respond(767px) {
+                    width: 100%;
+                }
+
+                @include respond(320px) {
+                    width: 87%;
                 }
 
                 & input {
@@ -1542,7 +1546,7 @@
 
                     & .footer-new__content--col-items {
                         @include respond(tablet) {
-                            margin: 0 0 20px 16px;
+                            margin: 0 0 20px 0;
                         }
                     }
                 }

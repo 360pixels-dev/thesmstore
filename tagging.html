@@ -385,16 +385,12 @@
 
             .image-container {
                 position: relative;
-                height: fit-content;
-                width: fit-content;
+                width: 600px;
+                height: 700px;
             }
 
             .image {
-                width: 100%;
-                height: auto;
-
-                max-width: 600px;
-                max-height: 700px;
+                position: absolute;
 
                 cursor: pointer;
 
@@ -455,9 +451,24 @@
                 top: 0;
                 left: 0;
             }
+
+            .product-tooltip {
+                width: 100%;
+                height: 100%;
+            }
+
+            .tag1-tooltip__box {
+                display: block;
+            }
+
+            .tag1-tooltip__content {
+                display: flex;
+            }
         </style>
 
         <section class="container-fluid flex">
+
+            
 
             <div class="image-container">
                 <img class="image" src="./assets/images/beauty-trends-img-03.jpg" alt="">
@@ -467,6 +478,23 @@
                 <div class="tag4"></div>
                 <div class="tag5"></div>
                 <div class="tag6"></div>
+
+                <div class="product-tooltip">
+                    <div class="tag1-tooltip__box product-tooltip__box"> Click to view product</div>
+    
+                    <div class="tag1-tooltip__content product-tooltip__content product-tooltip__content--hide">
+                        <div class="product-tooltip__image-container">
+                            <img src="./assets/images/product-tooltip-image.jpg" alt="product image">
+                        </div>
+    
+                        <div class="product-tooltip__text-container">
+                            <p class="product-tooltip__brand-name">Jeffree Star Cosmetics</p>
+                            <p class="product-tooltip__product-name">Supreme Frost Pro Palette</p>
+                            <p class="product-tooltip__product-price">₱4,975.00</p>
+                            <p class="product-tooltip__product-note">Item availability may vary per store.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="coordinates">
@@ -739,52 +767,20 @@
             $('.tag5').css('left', `${$('.coordinates-5-x').val()}%`)
             $('.tag5').css('top', `${$('.coordinates-5-y').val()}%`)
 
-            // $('.tag5').css('left', '50%')
-            // $('.tag5').css('top', '50%')
+
+            $('.tag1-tooltip__box').css('left', `${Number($('.coordinates-1-x').val()) + 6}%`)
+            $('.tag1-tooltip__box').css('top', `${Number($('.coordinates-1-y').val()) - 4}%`)
+
+            $('.tag1-tooltip__content').css('left', `${Number($('.coordinates-1-x').val()) + 6}%`)
+            $('.tag1-tooltip__content').css('top', `${Number($('.coordinates-1-y').val()) - 10}%`)
             
         })
-
-        // const tag = document.querySelector('.tag6')
-        // const text1 = document.querySelector('.mouse-x')
-        // const text2 = document.querySelector('.mouse-y')
-        // const imageContainer = document.querySelector('.image-container')
-
-        // imageContainer.addEventListener('mousemove', followCursor)
-
-        // console.log(imageContainer.offsetWidth())
-        
-        // function followCursor(e) {
-        //     tag.style.left = ((event.offsetX - event.clientX) * 100) / imageContainer.innerWidth() + '%';
-        //     tag.style.top = ((event.offsetY - event.clientY) * 100) / imageContainer.innerHeight() + '%';
-
-        //     text1.innerHTML = 'Left: ' + ((event.offsetX - event.clientX) * 100) / imageContainer.width() + '%'
-        //     text2.innerHTML = 'Top: ' + ((event.offsetY - event.clientY) * 100) / imageContainer.height() + '%'
-
-        // }
 
 
         $('.image-container').mousemove(function(event) {           
             
             $('.mouse-x').text('Left: ' + (event.offsetX * 100) / $('.image-container').width() + '%')
             $('.mouse-y').text('Top: ' + (event.offsetY * 100) / $('.image-container').height() + '%')
-
-            
-            // $('.mouse-x').text((event.offsetX * 100) / $(this).width())
-            // $('.mouse-y').text((event.offsetY * 100) / $(this).height())
-
-            // $('.mouse-x').text(event.offsetX - event.target.getBoundingClientRect().left)
-            // $('.mouse-y').text(event.offsetY - event.target.getBoundingClientRect().top)
-
-            // $('.mouse-x').text(event.clientX - event.target.getBoundingClientRect().left)
-            // $('.mouse-y').text(event.clientY - event.target.getBoundingClientRect().top)
-
-            // $('.tag6').css({
-            //     left: `${}px`,
-            //     top: `${event.clientY - event.target.getBoundingClientRect().top}px`
-            // })
-
-            // const clientX = ((event.clientX - event.target.getBoundingClientRect().left) * 100) / $(this).width()
-            // const clientY = ((event.clientY - event.target.getBoundingClientRect().top) * 100) / $(this).height()
 
         })
 

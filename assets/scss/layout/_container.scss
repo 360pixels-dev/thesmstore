@@ -157,6 +157,30 @@
         }
     }
 
+    & .big-image {
+        position: relative;
+        height: auto;
+        z-index: 50;
+        width: 1224px;
+        left: 50%;
+        right: auto;
+        transform: translate(-50%, 0);
+        margin: 40px 0;
+
+        @include respond(tablet) {
+            width: 100vw;
+
+            & > img {
+                width: inherit;
+            }
+        }
+
+        @include respond(mobile) {
+            max-height: 171px;
+            margin-bottom: 15px;
+        }
+    }
+
     & > ol ol[type="a"],
     ol[type="i"] {
         margin-left: 50px;

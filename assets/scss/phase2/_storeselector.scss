@@ -197,6 +197,11 @@
 
         height: 100vh;
 
+        &.map-off {
+            height: auto;
+            padding: 40px 0;
+        }
+
         @include respond(tablet) {
             margin-top: 112px;
         }
@@ -266,7 +271,8 @@
         max-width: 600px;
 
         height: 100%;
-        max-height: 75vh;
+        max-height: 90vh;
+        overflow: scroll;
 
         border: none;
 
@@ -278,15 +284,13 @@
 
         &.map-off {
             position: relative;
-            top: 40px;
             left: auto;
 
             margin: auto;
 
             height: auto;
             max-width: 80%;
-
-            overflow: scroll;
+            max-height: none;
 
             border: 1px solid $mid-gray;
 

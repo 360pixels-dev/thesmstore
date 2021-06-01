@@ -1,5 +1,28 @@
 $(document).ready(function () {
 
+    if ($('#frmPromo').length !== 0) {
+        $('#frmPromo').find('button').each(function() {
+            
+
+            if (window.innerWidth < 768 ) {
+
+                $(this).css({
+                    "position": "absolute",
+                    "bottom": "12px"
+                })
+                
+            }
+            
+            if ((window.innerWidth > 767 )) {
+
+                $(this).css({
+                    "position": "absolute",
+                    "bottom": "40px"
+                })
+            }
+        })
+    }
+
     if ($('.search-header').length !== 0) {
 
         $('.search__input').keyup(function() {
@@ -67,6 +90,7 @@ $(document).ready(function () {
 
     if ($('.find-stores__container').length !== 0) {
         $('.show-map-switch').click(function() {
+            $('.find-stores__container').toggleClass('map-off')
             $('.find-stores__widget').toggleClass('map-off')
             $('.find-stores__google-api').toggleClass('map-off')
         })
