@@ -470,7 +470,7 @@
 
             
 
-            <div class="image-container">
+            <div class="image-container" style="display: none;">
                 <img class="image" src="./assets/images/beauty-trends-img-03.jpg" alt="">
                 <div class="tag1"></div>
                 <div class="tag2"></div>
@@ -543,6 +543,140 @@
                     <label for="coordinates-5-y">Y:
                         <input class="coordinates-5-y" type="text" value="65">
                     </label>
+                </div>
+
+                <table id="productTable" style="border-collapse: collapse; border: 1px solid #ddd;">
+                    <thead>
+                        <tr>
+                            <th style="border: 1px solid #ddd;">Tag</th>
+                            <th style="border: 1px solid #ddd;">Coordinates</th>
+                            <th style="border: 1px solid #ddd;">Product</th>
+                            <th style="border: 1px solid #ddd;"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="border: 1px solid #ddd; vertical-align: middle; padding: 0 12px; height: 155px; width: fit-content;">
+                                <!-- <label ng-model="i.counter" class="wordWrap ng-pristine ng-untouched ng-valid ng-binding">1</label> -->
+                                <div style="display: flex; justify-content: center;">
+                                    <label style="padding: 8px 15px; background-color: #E6C0B4; border-radius: 50%;">1</label>
+                                </div>
+                                <div style="margin-top: 20px; display: flex; align-items: center; font-weight: bold;">
+                                    <label class="switch" style="margin-right: 8px;">
+                                        <input id="coor_0" type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                    Update Coordinates
+                                </div>
+                            </td>
+                            <td style="border: 1px solid #ddd; height: 155px;">
+                                <div style="display: flex; flex-direction: column; padding: 10px 20px;">
+                                    <label for="xCoor_0" style="margin-bottom: 12px;">
+                                        <span style="font-weight: bold;">X: </span>
+                                        <input type="text" id="xCoor_0" name="xCoor_0" style="width: 100px; font-weight: normal;" value="99.33">
+                                    </label>
+    
+                                    <label for="xCoor_0">
+                                        <span style="font-weight: bold;">Y: </span>
+                                        <input type="text" id="yCoor_0" name="yCoor_0" style="width: 100px; font-weight: normal;" value="99.33">
+                                    </label>
+                                </div>
+                            </td>
+                            <td style="border: 1px solid #ddd; height: 155px; padding: 16px 22px;">
+                                <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                                    <img src="./assets/images/image-preview.png" style="margin-right: 8px;" alt="">
+                                    <div style="background-color: #DDEBF4; border-radius: 100px; padding: 8px; font-weight: bold; text-overflow: ellipsis; height: fit-content;">
+                                        <span style="white-space: nowrap;">
+                                            Parisian Wendy Handbag
+                                        </span>
+                                    </div>
+                                </div>
+                                <button style="padding: 8px; background-color: #0067B3; border-radius: 4px; color: white;">
+                                    Change Product
+                                </button>
+                            </td>
+                            <td style="border: 1px solid #ddd; height: 155px; padding: 0 20px;">
+                                <button style="padding: 8px 15px; background-color: #C84025; border-radius: 4px; color: white;">
+                                    Delete
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; vertical-align: middle; padding: 0 12px; height: 155px; width: fit-content;">
+                                <!-- <label ng-model="i.counter" class="wordWrap ng-pristine ng-untouched ng-valid ng-binding">1</label> -->
+                                <div style="display: flex; justify-content: center;">
+                                    <label style="padding: 8px 15px; background-color: #8EA796; border-radius: 50%;">2</label>
+                                </div>
+                                <div style="margin-top: 20px; display: flex; align-items: center; font-weight: bold;">
+                                    <label class="switch" style="margin-right: 8px;">
+                                        <input id="coor_1" type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                    Update Coordinates
+                                </div>
+                            </td>
+                            <td style="border: 1px solid #ddd; height: 155px;">
+                                <div style="display: flex; flex-direction: column; padding: 10px 20px;">
+                                    <label for="xCoor_1" style="margin-bottom: 12px;">
+                                        <span style="font-weight: bold;">X: </span>
+                                        <input type="text" id="xCoor_1" name="xCoor_1" style="width: 100px; font-weight: normal;" value="99.33">
+                                    </label>
+    
+                                    <label for="xCoor_1">
+                                        <span style="font-weight: bold;">Y: </span>
+                                        <input type="text" id="yCoor_1" name="yCoor_1" style="width: 100px; font-weight: normal;" value="99.33">
+                                    </label>
+                                </div>
+                            </td>
+                            <td style="border: 1px solid #ddd; height: 155px; padding: 16px 22px;">
+                                <button style="padding: 8px; background-color: #0067B3; border-radius: 4px; color: white;">
+                                    Select Product
+                                </button>
+                            </td>
+                            <td style="border: 1px solid #ddd; height: 155px; padding: 0 20px;">
+                                <button style="padding: 8px 15px; background-color: #C84025; border-radius: 4px; color: white;">
+                                    Delete
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; vertical-align: middle; padding: 0 12px; height: 155px; width: fit-content;">
+                                <!-- <label ng-model="i.counter" class="wordWrap ng-pristine ng-untouched ng-valid ng-binding">1</label> -->
+                                <div style="display: flex; justify-content: center;">
+                                    <label style="padding: 8px 15px; background-color: #15A2B9; border-radius: 50%;">3</label>
+                                </div>
+                            </td>
+                            <td style="border: 1px solid #ddd; height: 155px;">
+                                <div style="display: flex; flex-direction: column; padding: 10px 20px;">
+                                    <label for="xCoor_1" style="margin-bottom: 12px;">
+                                        <span style="font-weight: bold;">X: </span>
+                                        <input type="text" id="xCoor_1" name="xCoor_1" style="width: 100px; font-weight: normal;" value="99.33">
+                                    </label>
+    
+                                    <label for="xCoor_1">
+                                        <span style="font-weight: bold;">Y: </span>
+                                        <input type="text" id="yCoor_1" name="yCoor_1" style="width: 100px; font-weight: normal;" value="99.33">
+                                    </label>
+                                </div>
+                            </td>
+                            <td style="border: 1px solid #ddd; height: 155px; padding: 16px 22px;">
+                                <button style="padding: 8px; background-color: #0067B3; border-radius: 4px; color: white;">
+                                    Select Product
+                                </button>
+                            </td>
+                            <td style="border: 1px solid #ddd; height: 155px; padding: 0 20px;">
+                                <button style="padding: 8px 15px; background-color: #C84025; border-radius: 4px; color: white;">
+                                    Delete
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div>
+                    <button style="padding: 8px; background-color: #0067B3; border-radius: 4px; color: white;">
+                        Add Another Tag
+                    </button>
                 </div>
             </div>
         </section>
@@ -773,7 +907,118 @@
 
             $('.tag1-tooltip__content').css('left', `${Number($('.coordinates-1-x').val()) + 6}%`)
             $('.tag1-tooltip__content').css('top', `${Number($('.coordinates-1-y').val()) - 10}%`)
-            
+
+            // 1st Coordinates
+            if ($('#coor_0').is(':checked')) {
+                $("#xCoor_0").prop('disabled', false);
+                $("#xCoor_0").css({
+                    "background-color": "white",
+                    "border": "1px solid black"
+                })
+                
+                $("#yCoor_0").prop('disabled', false);
+                $("#yCoor_0").css({
+                    "background-color": "white",
+                    "border": "1px solid black"
+                })
+            } else {
+                $("#xCoor_0").prop('disabled', true);
+                $("#xCoor_0").css({
+                    "background-color": "transparent",
+                    "border": "none"
+                })
+
+                $("#yCoor_0").prop('disabled', true);
+                $("#yCoor_0").css({
+                    "background-color": "transparent",
+                    "border": "none"
+                })
+            }
+
+            // 2nd Coordinates
+            if ($('#coor_1').is(':checked')) {
+                $("#xCoor_1").prop('disabled', false);
+                $("#xCoor_1").css({
+                    "background-color": "white",
+                    "border": "1px solid black"
+                })
+                
+                $("#yCoor_1").prop('disabled', false);
+                $("#yCoor_1").css({
+                    "background-color": "white",
+                    "border": "1px solid black"
+                })
+            } else {
+                $("#xCoor_1").prop('disabled', true);
+                $("#xCoor_1").css({
+                    "background-color": "transparent",
+                    "border": "none"
+                })
+
+                $("#yCoor_1").prop('disabled', true);
+                $("#yCoor_1").css({
+                    "background-color": "transparent",
+                    "border": "none"
+                })
+            }
+        })
+
+        // 1st Coordinates
+        $('#coor_0').click(function() {
+            if ($('#coor_0').is(':checked')) {
+                $("#xCoor_0").prop('disabled', false);
+                $("#xCoor_0").css({
+                    "background-color": "white",
+                    "border": "1px solid black"
+                })
+                
+                $("#yCoor_0").prop('disabled', false);
+                $("#yCoor_0").css({
+                    "background-color": "white",
+                    "border": "1px solid black"
+                })
+            } else {
+                $("#xCoor_0").prop('disabled', true);
+                $("#xCoor_0").css({
+                    "background-color": "transparent",
+                    "border": "none"
+                })
+
+                $("#yCoor_0").prop('disabled', true);
+                $("#yCoor_0").css({
+                    "background-color": "transparent",
+                    "border": "none"
+                })
+            }
+        })
+
+        // 2nd Coordinates
+        $('#coor_1').click(function() {
+            if ($('#coor_1').is(':checked')) {
+                $("#xCoor_1").prop('disabled', false);
+                $("#xCoor_1").css({
+                    "background-color": "white",
+                    "border": "1px solid black"
+                })
+                
+                $("#yCoor_1").prop('disabled', false);
+                $("#yCoor_1").css({
+                    "background-color": "white",
+                    "border": "1px solid black"
+                })
+            } else {
+                $("#xCoor_1").prop('disabled', true);
+                $("#xCoor_1").css({
+                    "background-color": "transparent",
+                    "border": "none"
+                })
+
+                $("#yCoor_1").prop('disabled', true);
+                $("#yCoor_1").css({
+                    "background-color": "transparent",
+                    "border": "none"
+                })
+            }
         })
 
 
