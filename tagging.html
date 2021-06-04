@@ -464,6 +464,10 @@
             .tag1-tooltip__content {
                 display: flex;
             }
+
+            button {
+                cursor: pointer;
+            }
         </style>
 
         <section class="container-fluid flex">
@@ -561,12 +565,20 @@
                                 <div style="display: flex; justify-content: center;">
                                     <label style="padding: 8px 15px; background-color: #E6C0B4; border-radius: 50%;">1</label>
                                 </div>
-                                <div style="margin-top: 20px; display: flex; align-items: center; font-weight: bold;">
+                                <div style="margin: 20px 0 18px 0; display: flex; align-items: center; font-weight: bold;">
                                     <label class="switch" style="margin-right: 8px;">
                                         <input id="coor_0" type="checkbox">
                                         <span class="slider round"></span>
                                     </label>
                                     Update Coordinates
+                                </div>
+                                <div id="coor_0_btns_div" style="margin: auto; width: fit-content;">
+                                    <button class="coor_0_btns" style="margin-right: 10px; padding: 8px 15px; background-color: #0067B3; border-radius: 4px; color: white;">
+                                        Save
+                                    </button>
+                                    <button class="coor_0_btns" style="padding: 8px 15px; background-color: #88898F; border-radius: 4px; color: white;">
+                                        Cancel
+                                    </button>
                                 </div>
                             </td>
                             <td style="border: 1px solid #ddd; height: 155px;">
@@ -613,6 +625,14 @@
                                         <span class="slider round"></span>
                                     </label>
                                     Update Coordinates
+                                </div>
+                                <div id="coor_1_btns_div" style="margin: auto; width: fit-content;">
+                                    <button class="coor_1_btns" style="margin-right: 10px; padding: 8px 15px; background-color: #0067B3; border-radius: 4px; color: white;">
+                                        Save
+                                    </button>
+                                    <button class="coor_1_btns" style="padding: 8px 15px; background-color: #88898F; border-radius: 4px; color: white;">
+                                        Cancel
+                                    </button>
                                 </div>
                             </td>
                             <td style="border: 1px solid #ddd; height: 155px;">
@@ -921,6 +941,8 @@
                     "background-color": "white",
                     "border": "1px solid black"
                 })
+
+                $("#coor_0_btns_div").show()
             } else {
                 $("#xCoor_0").prop('disabled', true);
                 $("#xCoor_0").css({
@@ -933,6 +955,8 @@
                     "background-color": "transparent",
                     "border": "none"
                 })
+
+                $("#coor_0_btns_div").hide()
             }
 
             // 2nd Coordinates
@@ -948,6 +972,8 @@
                     "background-color": "white",
                     "border": "1px solid black"
                 })
+
+                $("#coor_1_btns_div").show()
             } else {
                 $("#xCoor_1").prop('disabled', true);
                 $("#xCoor_1").css({
@@ -960,6 +986,8 @@
                     "background-color": "transparent",
                     "border": "none"
                 })
+
+                $("#coor_1_btns_div").hide()
             }
         })
 
@@ -977,6 +1005,8 @@
                     "background-color": "white",
                     "border": "1px solid black"
                 })
+
+                $("#coor_0_btns_div").show()
             } else {
                 $("#xCoor_0").prop('disabled', true);
                 $("#xCoor_0").css({
@@ -989,6 +1019,8 @@
                     "background-color": "transparent",
                     "border": "none"
                 })
+
+                $("#coor_0_btns_div").hide()
             }
         })
 
@@ -1006,6 +1038,8 @@
                     "background-color": "white",
                     "border": "1px solid black"
                 })
+
+                $("#coor_1_btns_div").show()
             } else {
                 $("#xCoor_1").prop('disabled', true);
                 $("#xCoor_1").css({
@@ -1018,7 +1052,46 @@
                     "background-color": "transparent",
                     "border": "none"
                 })
+
+                $("#coor_1_btns_div").hide()
             }
+        })
+
+        // Save/Cancel Buttons
+        // 1st Coordinates
+        $('.coor_0_btns').click(function() {
+            $("#coor_0").prop("checked", false)
+            $("#coor_0_btns_div").hide()
+
+            $("#xCoor_0").prop('disabled', true);
+            $("#xCoor_0").css({
+                "background-color": "transparent",
+                "border": "none"
+            })
+
+            $("#yCoor_0").prop('disabled', true);
+            $("#yCoor_0").css({
+                "background-color": "transparent",
+                "border": "none"
+            })
+        })
+
+        // 2nd Coordinates
+        $('.coor_1_btns').click(function() {
+            $("#coor_1").prop("checked", false)
+            $("#coor_1_btns_div").hide()
+
+            $("#xCoor_1").prop('disabled', true);
+            $("#xCoor_1").css({
+                "background-color": "transparent",
+                "border": "none"
+            })
+
+            $("#yCoor_1").prop('disabled', true);
+            $("#yCoor_1").css({
+                "background-color": "transparent",
+                "border": "none"
+            })
         })
 
 
