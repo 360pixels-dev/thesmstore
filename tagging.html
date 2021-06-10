@@ -457,11 +457,11 @@
                 height: 100%;
             }
 
-            .tag1-tooltip__box {
+            .tag1-tooltip__box, .tag2-tooltip__box {
                 display: block;
             }
 
-            .tag1-tooltip__content {
+            .tag1-tooltip__content, .tag2-tooltip__content {
                 display: flex;
             }
 
@@ -484,9 +484,25 @@
                 <div class="tag6"></div>
 
                 <div class="product-tooltip">
+
                     <div class="tag1-tooltip__box product-tooltip__box"> Click to view product</div>
     
                     <div class="tag1-tooltip__content product-tooltip__content product-tooltip__content--hide">
+                        <div class="product-tooltip__image-container">
+                            <img src="./assets/images/product-tooltip-image.jpg" alt="product image">
+                        </div>
+    
+                        <div class="product-tooltip__text-container">
+                            <p class="product-tooltip__brand-name">Jeffree Star Cosmetics</p>
+                            <p class="product-tooltip__product-name">Supreme Frost Pro Palette</p>
+                            <p class="product-tooltip__product-price">₱4,975.00</p>
+                            <p class="product-tooltip__product-note">Item availability may vary per store.</p>
+                        </div>
+                    </div>
+
+                    <div class="tag2-tooltip__box product-tooltip__box"> Click to view product</div>
+    
+                    <div class="tag2-tooltip__content product-tooltip__content product-tooltip__content--hide">
                         <div class="product-tooltip__image-container">
                             <img src="./assets/images/product-tooltip-image.jpg" alt="product image">
                         </div>
@@ -927,6 +943,12 @@
 
             $('.tag1-tooltip__content').css('left', `${Number($('.coordinates-1-x').val()) + 6}%`)
             $('.tag1-tooltip__content').css('top', `${Number($('.coordinates-1-y').val()) - 10}%`)
+
+            $('.tag2-tooltip__box').css('left', `${Number($('.coordinates-2-x').val()) + 6}%`)
+            $('.tag2-tooltip__box').css('top', `${Number($('.coordinates-2-y').val()) - 4}%`)
+
+            $('.tag2-tooltip__content').css('left', `${Number($('.coordinates-2-x').val()) + 6}%`)
+            $('.tag2-tooltip__content').css('top', `${Number($('.coordinates-2-y').val()) - 10}%`)
 
             // 1st Coordinates
             if ($('#coor_0').is(':checked')) {
