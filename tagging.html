@@ -472,50 +472,63 @@
 
         <section class="container-fluid flex">
 
+            <div class="blog-img">
+                <div class="blog-img--row">
+
+                    <div class="image-container">
+                        <img class="image" src="./assets/images/beauty-trends-img-03.jpg" alt="">
+                        <div class="tag1"></div>
+                        <div class="tag2"></div>
+                        <div class="tag3"></div>
+                        <div class="tag4"></div>
+                        <div class="tag5"></div>
+                        <div class="tag6"></div>
+        
+                        <div class="product-tooltip">
+        
+                            <div class="tag1-tooltip__box product-tooltip__box"> Click to view product</div>
             
-
-            <div class="image-container">
-                <img class="image" src="./assets/images/beauty-trends-img-03.jpg" alt="">
-                <div class="tag1"></div>
-                <div class="tag2"></div>
-                <div class="tag3"></div>
-                <div class="tag4"></div>
-                <div class="tag5"></div>
-                <div class="tag6"></div>
-
-                <div class="product-tooltip">
-
-                    <div class="tag1-tooltip__box product-tooltip__box"> Click to view product</div>
-    
-                    <div class="tag1-tooltip__content product-tooltip__content product-tooltip__content--hide">
-                        <div class="product-tooltip__image-container">
-                            <img src="./assets/images/product-tooltip-image.jpg" alt="product image">
-                        </div>
-    
-                        <div class="product-tooltip__text-container">
-                            <p class="product-tooltip__brand-name">Jeffree Star Cosmetics</p>
-                            <p class="product-tooltip__product-name">Supreme Frost Pro Palette</p>
-                            <p class="product-tooltip__product-price">₱4,975.00</p>
-                            <p class="product-tooltip__product-note">Item availability may vary per store.</p>
+                            <div class="tag1-tooltip__content product-tooltip__content product-tooltip__content--hide">
+                                <div class="product-tooltip__image-container">
+                                    <img src="./assets/images/product-tooltip-image.jpg" alt="product image">
+                                </div>
+            
+                                <div class="product-tooltip__text-container">
+                                    <p class="product-tooltip__brand-name">Jeffree Star Cosmetics</p>
+                                    <p class="product-tooltip__product-name">Supreme Frost Pro Palette</p>
+                                    <p class="product-tooltip__product-price">₱4,975.00</p>
+                                    <p class="product-tooltip__product-note">Item availability may vary per store.</p>
+                                </div>
+                            </div>
+        
+                            <div class="tag2-tooltip__box product-tooltip__box"> Click to view product</div>
+            
+                            <div class="tag2-tooltip__content product-tooltip__content product-tooltip__content--hide">
+                                <div class="product-tooltip__image-container">
+                                    <img src="./assets/images/product-tooltip-image.jpg" alt="product image">
+                                </div>
+            
+                                <div class="product-tooltip__text-container">
+                                    <p class="product-tooltip__brand-name">Jeffree Star Cosmetics</p>
+                                    <p class="product-tooltip__product-name">Supreme Frost Pro Palette</p>
+                                    <p class="product-tooltip__product-price">₱4,975.00</p>
+                                    <p class="product-tooltip__product-note">Item availability may vary per store.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="tag2-tooltip__box product-tooltip__box"> Click to view product</div>
-    
-                    <div class="tag2-tooltip__content product-tooltip__content product-tooltip__content--hide">
-                        <div class="product-tooltip__image-container">
-                            <img src="./assets/images/product-tooltip-image.jpg" alt="product image">
-                        </div>
-    
-                        <div class="product-tooltip__text-container">
-                            <p class="product-tooltip__brand-name">Jeffree Star Cosmetics</p>
-                            <p class="product-tooltip__product-name">Supreme Frost Pro Palette</p>
-                            <p class="product-tooltip__product-price">₱4,975.00</p>
-                            <p class="product-tooltip__product-note">Item availability may vary per store.</p>
-                        </div>
+                  
+                </div>
+
+                <div class="blog-img--row">
+                    <div id="product1-title" class="blog-img__caption" style="border: 4px solid #f05d6b;">
+                        <!-- <h4>2. Lorem IpsuM <span>DOLOR SIT AMET</span></h4> -->
                     </div>
                 </div>
             </div>
+
+            
 
             <div class="coordinates">
                 <span class="mouse-x"></span>
@@ -530,6 +543,12 @@
                     </label>
                     <label for="coordinates-1-y">Y:
                         <input class="coordinates-1-y" type="text" value="20">
+                    </label>
+                    <label for="tag1-title-1">Title (1st Line):
+                        <input class="tag1-title-1" type="text" value="2. Lorem Ipsum">
+                    </label>
+                    <label for="tag1-title-2">Title (2nd Line):
+                        <input class="tag1-title-2" type="text" value="Dolor Sit Amet">
                     </label>
                 </div>
                 <div class="coordinates-2 input-div">
@@ -944,11 +963,17 @@
             $('.tag1-tooltip__content').css('left', `${Number($('.coordinates-1-x').val()) + 6}%`)
             $('.tag1-tooltip__content').css('top', `${Number($('.coordinates-1-y').val()) - 10}%`)
 
+            $('#product1-title').html(`
+                <h4>${$('.tag1-title-1').val()}<span>${$('.tag1-title-2').val()}</span></h4>
+            `)
+
             $('.tag2-tooltip__box').css('left', `${Number($('.coordinates-2-x').val()) + 6}%`)
             $('.tag2-tooltip__box').css('top', `${Number($('.coordinates-2-y').val()) - 4}%`)
 
             $('.tag2-tooltip__content').css('left', `${Number($('.coordinates-2-x').val()) + 6}%`)
             $('.tag2-tooltip__content').css('top', `${Number($('.coordinates-2-y').val()) - 10}%`)
+
+            
 
             // 1st Coordinates
             if ($('#coor_0').is(':checked')) {
