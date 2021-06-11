@@ -424,6 +424,7 @@
                 height: 4.2%;
                 position: absolute;
                 cursor: pointer;
+                z-index: 1;
             }
 
             .tag1 {
@@ -457,13 +458,13 @@
                 height: 100%;
             }
 
-            .tag1-tooltip__box, .tag2-tooltip__box {
+            /* .tag1-tooltip__box, .tag2-tooltip__box {
                 display: block;
             }
 
             .tag1-tooltip__content, .tag2-tooltip__content {
                 display: flex;
-            }
+            } */
 
             button {
                 cursor: pointer;
@@ -477,12 +478,12 @@
 
                     <div class="image-container">
                         <img class="image" src="./assets/images/beauty-trends-img-03.jpg" alt="">
-                        <div class="tag1"></div>
-                        <div class="tag2"></div>
-                        <div class="tag3"></div>
-                        <div class="tag4"></div>
-                        <div class="tag5"></div>
-                        <div class="tag6"></div>
+                        <div class="tag1 product-tooltip__trigger"></div>
+                        <div class="tag2 product-tooltip__trigger"></div>
+                        <div class="tag3 product-tooltip__trigger"></div>
+                        <div class="tag4 product-tooltip__trigger"></div>
+                        <div class="tag5 product-tooltip__trigger"></div>
+                        <div class="tag6 product-tooltip__trigger"></div>
         
                         <div class="product-tooltip">
         
@@ -623,7 +624,7 @@
                                         <input type="text" id="xCoor_0" name="xCoor_0" style="width: 100px; font-weight: normal;" value="99.33">
                                     </label>
     
-                                    <label for="xCoor_0">
+                                    <label for="yCoor_0">
                                         <span style="font-weight: bold;">Y: </span>
                                         <input type="text" id="yCoor_0" name="yCoor_0" style="width: 100px; font-weight: normal;" value="99.33">
                                     </label>
@@ -677,7 +678,7 @@
                                         <input type="text" id="xCoor_1" name="xCoor_1" style="width: 100px; font-weight: normal;" value="99.33">
                                     </label>
     
-                                    <label for="xCoor_1">
+                                    <label for="yCoor_1">
                                         <span style="font-weight: bold;">Y: </span>
                                         <input type="text" id="yCoor_1" name="yCoor_1" style="width: 100px; font-weight: normal;" value="99.33">
                                     </label>
@@ -708,7 +709,7 @@
                                         <input type="text" id="xCoor_1" name="xCoor_1" style="width: 100px; font-weight: normal;" value="99.33">
                                     </label>
     
-                                    <label for="xCoor_1">
+                                    <label for="yCoor_1">
                                         <span style="font-weight: bold;">Y: </span>
                                         <input type="text" id="yCoor_1" name="yCoor_1" style="width: 100px; font-weight: normal;" value="99.33">
                                     </label>
@@ -1036,6 +1037,52 @@
 
                 $("#coor_1_btns_div").hide()
             }
+
+            // Tag Trigger for Tooltip
+            // if (window.innerWidth > 820 || document.documentElement.clientWidth > 820 || document.body.clientWidth > 820) {
+            //     $('.product-tooltip__trigger').click(function() {
+            //         $('.product-tooltip__box').toggleClass('product-tooltip__box--show');
+            //         $('.product-tooltip__trigger').toggleClass('product-tooltip__trigger--active');
+
+            //         if ($('.product-tooltip__content').css("display") === "flex") {
+            //             $('.product-tooltip__box').toggleClass('product-tooltip__box--show');
+            //             $('.product-tooltip__content').toggleClass('product-tooltip__content--show');
+            //         }
+            //     });
+
+            //     $('.product-tooltip__box').click(function() {
+            //         $('.product-tooltip__content').toggleClass('product-tooltip__content--show');
+            //         $('.product-tooltip__box').toggleClass('product-tooltip__box--show');
+            //     });
+            // } else {
+            //     $('.product-tooltip__box').click(function() {
+            //         if ($('.product-tooltip__box').css("display") === "flex") {
+            //             $('.product-tooltip__box').css("display", "none")
+            //         }
+
+            //         $('.product-tooltip__content').toggleClass('product-tooltip__content--show');
+            //         $('.product-tooltip__trigger').toggleClass('product-tooltip__trigger--active');
+            //     });
+
+            //     $('.product-tooltip__trigger').click(function() {
+            //         if ($('.product-tooltip__box').css("display") === "flex") {
+            //             $('.product-tooltip__box').css("display", "none")
+            //             $('.product-tooltip__trigger').toggleClass('product-tooltip__trigger--active');
+            //             $('.product-tooltip__content').toggleClass('product-tooltip__content--show');
+            //         } else {
+            //             $('.product-tooltip__box').css("display", "flex")
+            //             $('.product-tooltip__trigger').toggleClass('product-tooltip__trigger--active');
+            //             $('.product-tooltip__content').toggleClass('product-tooltip__content--show');
+            //         }
+
+            //         // if ($('.product-tooltip__content').css("display") === "flex" && $('.product-tooltip__box').css("display") === "none") {
+            //         //     $('.product-tooltip__box').css("display", "flex")
+            //         //     $('.product-tooltip__content').toggleClass('product-tooltip__content--show');
+            //         //     $('.product-tooltip__trigger').toggleClass('product-tooltip__trigger--active');
+            //         // }
+                        
+            //     })
+            // }
         })
 
         // 1st Coordinates
@@ -1149,13 +1196,13 @@
 
         })
 
-        $('.image-container').click(function(event) {
-            $('.tag6').css('left', `${(event.offsetX * 100) / $(this).width()}%`)
-            $('.tag6').css('top', `${(event.offsetY * 100) / $(this).height()}%`)
+        // $('.image-container').click(function(event) {
+        //     $('.tag6').css('left', `${(event.offsetX * 100) / $(this).width()}%`)
+        //     $('.tag6').css('top', `${(event.offsetY * 100) / $(this).height()}%`)
 
-            $('.set-mouse-x').text('Set Left: ' + (event.offsetX * 100) / $('.image-container').width() + '%')
-            $('.set-mouse-y').text('Set Top: ' + (event.offsetY * 100) / $('.image-container').height() + '%')
-        })
+        //     $('.set-mouse-x').text('Set Left: ' + (event.offsetX * 100) / $('.image-container').width() + '%')
+        //     $('.set-mouse-y').text('Set Top: ' + (event.offsetY * 100) / $('.image-container').height() + '%')
+        // })
 
         // tag1
         $('.coordinates-1-x').on('keyup', function() {

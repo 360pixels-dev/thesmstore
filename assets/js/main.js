@@ -1,5 +1,52 @@
 $(document).ready(function () {
 
+    if ($('.product-tooltip').length !== 0) {
+        if (window.innerWidth > 820 || document.documentElement.clientWidth > 820 || document.body.clientWidth > 820) {
+            $('.tag1').click(function() {
+                $('.tag1-tooltip__box.product-tooltip__box').toggleClass('product-tooltip__box--show');
+                $('.tag1').toggleClass('product-tooltip__trigger--active');
+
+                if ($('.tag1-tooltip__content.product-tooltip__content').css("display") === "flex") {
+                    $('.tag1-tooltip__box.product-tooltip__box').toggleClass('product-tooltip__box--show');
+                    $('.tag1-tooltip__content.product-tooltip__content').toggleClass('product-tooltip__content--show');
+                }
+            });
+
+            $('.tag1-tooltip__box.product-tooltip__box').click(function() {
+                $('.tag1-tooltip__content.product-tooltip__content').toggleClass('product-tooltip__content--show');
+                $('.tag1-tooltip__box.product-tooltip__box').toggleClass('product-tooltip__box--show');
+            });
+        } else {
+            $('.tag1-tooltip__box.product-tooltip__box').click(function() {
+                if ($('.tag1-tooltip__box.product-tooltip__box').css("display") === "flex") {
+                    $('.tag1-tooltip__box.product-tooltip__box').css("display", "none")
+                }
+
+                $('.tag1-tooltip__content.product-tooltip__content').toggleClass('product-tooltip__content--show');
+                $('.tag1').toggleClass('product-tooltip__trigger--active');
+            });
+
+            $('.tag1').click(function() {
+                if ($('.tag1-tooltip__box.product-tooltip__box').css("display") === "flex") {
+                    $('.tag1-tooltip__box.product-tooltip__box').css("display", "none")
+                    $('.tag1').toggleClass('product-tooltip__trigger--active');
+                    $('.tag1-tooltip__content.product-tooltip__content').toggleClass('product-tooltip__content--show');
+                } else {
+                    $('.tag1-tooltip__box.product-tooltip__box').css("display", "flex")
+                    $('.tag1').toggleClass('product-tooltip__trigger--active');
+                    $('.tag1-tooltip__content.product-tooltip__content').toggleClass('product-tooltip__content--show');
+                }
+
+                // if ($('.tag1-tooltip__content.product-tooltip__content').css("display") === "flex" && $('.tag1-tooltip__box.product-tooltip__box').css("display") === "none") {
+                //     $('.tag1-tooltip__box.product-tooltip__box').css("display", "flex")
+                //     $('.tag1-tooltip__content.product-tooltip__content').toggleClass('product-tooltip__content--show');
+                //     $('.tag1').toggleClass('product-tooltip__trigger--active');
+                // }
+                    
+            })
+        }
+    }
+
     if ($('#frmPromo').length !== 0) {
         $('#frmPromo').find('button').each(function() {
             
