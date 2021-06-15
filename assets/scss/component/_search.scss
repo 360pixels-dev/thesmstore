@@ -81,6 +81,8 @@
     }
 
     &__results {
+        overflow-y: scroll;
+
         &--type {
             &:not(:first-child) {
                 margin-top: 28px;
