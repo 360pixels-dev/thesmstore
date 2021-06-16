@@ -5060,9 +5060,27 @@ body.mmactive {
 }
 .banner-section__breadcrumbs {
   position: relative;
-  top: 16px;
+  top: 92px;
   left: 24px;
   height: 34px;
+}
+@media only screen and (max-width: 1024px) {
+  .banner-section__breadcrumbs {
+    top: 72px;
+    left: 12px;
+  }
+}
+@media only screen and (max-width: tablet) {
+  .banner-section__breadcrumbs {
+    top: 72px;
+    left: 12px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .banner-section__breadcrumbs {
+    top: 58px;
+    left: 16px;
+  }
 }
 .banner-section__breadcrumbs > a {
   text-decoration: none;
@@ -7286,7 +7304,7 @@ body.mmactive {
 }
 
 .breadcrumbs {
-  padding-top: 16px;
+  padding: 16px 0 0 16px;
   width: 100%;
 }
 .breadcrumbs__link {
@@ -27084,6 +27102,411 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 @media only screen and (max-width: mobile) {
   .press-release .container > .hr {
     display: none;
+  }
+}
+
+.event-recap-carousel {
+  display: flex;
+  align-items: center;
+  margin: 32px auto;
+  height: 448px;
+}
+@media only screen and (max-width: 1024px) {
+  .event-recap-carousel {
+    justify-content: center;
+    height: 408px;
+  }
+}
+@media only screen and (max-width: tablet) {
+  .event-recap-carousel {
+    justify-content: center;
+    height: 408px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .event-recap-carousel {
+    height: 348px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .event-recap-carousel {
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+.event-recap-carousel > .left-box-bg {
+  width: 184px;
+  height: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .event-recap-carousel > .left-box-bg {
+    width: 124px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .event-recap-carousel > .left-box-bg {
+    width: 235px;
+    height: 357px;
+    position: absolute;
+    left: 0;
+  }
+}
+.event-recap-carousel__slider-container {
+  display: flex;
+}
+@media only screen and (max-width: 360px) {
+  .event-recap-carousel__slider-container {
+    flex-direction: column;
+    position: relative;
+    left: 0;
+    width: 100%;
+  }
+}
+.event-recap-carousel__featured {
+  margin-left: -90px;
+  width: 288px;
+  height: 393px;
+  position: relative;
+  cursor: pointer;
+}
+@media only screen and (max-width: 1024px) {
+  .event-recap-carousel__featured {
+    width: 238px;
+    height: 353px;
+  }
+}
+@media only screen and (max-width: tablet) {
+  .event-recap-carousel__featured {
+    width: 238px;
+    height: 353px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .event-recap-carousel__featured {
+    width: 198px;
+    height: 293px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .event-recap-carousel__featured {
+    width: 278px;
+    height: 319px;
+    margin: 20px 0 0 49px;
+  }
+}
+.event-recap-carousel__featured > img {
+  position: relative;
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+.event-recap-carousel__featured-title {
+  position: absolute;
+  bottom: 0;
+  height: 80px;
+  width: 100%;
+  padding: 16px;
+}
+.event-recap-carousel__thumbnail-slider {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: hidden;
+  width: 600px;
+  height: 393px;
+  margin-left: 25px;
+}
+.event-recap-carousel__thumbnail-slider.desktop {
+  display: flex;
+}
+@media only screen and (max-width: 360px) {
+  .event-recap-carousel__thumbnail-slider.desktop {
+    display: none;
+  }
+}
+.event-recap-carousel__thumbnail-slider.mobile {
+  display: none;
+}
+@media only screen and (max-width: 360px) {
+  .event-recap-carousel__thumbnail-slider.mobile {
+    display: flex;
+  }
+}
+.event-recap-carousel__thumbnail-slider.mobile .owl-nav {
+  position: absolute;
+  top: 35%;
+  transform: translate(0, -35%);
+  width: 100%;
+  height: 0;
+  padding: 0 21px;
+}
+.event-recap-carousel__thumbnail-slider.mobile .owl-nav .owl-next, .event-recap-carousel__thumbnail-slider.mobile .owl-nav .owl-prev {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 50%;
+  padding: 12px 16px !important;
+  box-sizing: border-box;
+  box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
+}
+.event-recap-carousel__thumbnail-slider.mobile .owl-nav .owl-next.disabled, .event-recap-carousel__thumbnail-slider.mobile .owl-nav .owl-prev.disabled {
+  display: none;
+}
+.event-recap-carousel__thumbnail-slider.mobile .owl-nav > .owl-prev {
+  float: left;
+}
+.event-recap-carousel__thumbnail-slider.mobile .owl-nav > .owl-next {
+  float: right;
+}
+@media only screen and (max-width: 1024px) {
+  .event-recap-carousel__thumbnail-slider {
+    width: 540px;
+    height: 353px;
+  }
+}
+@media only screen and (max-width: tablet) {
+  .event-recap-carousel__thumbnail-slider {
+    width: 540px;
+    height: 353px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .event-recap-carousel__thumbnail-slider {
+    width: 450px;
+    height: 293px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .event-recap-carousel__thumbnail-slider {
+    margin: 44px 0 0 0;
+    flex-wrap: nowrap;
+    height: 184px;
+    width: 100%;
+  }
+}
+.event-recap-carousel__thumbnail {
+  width: 184px;
+  height: 184px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 1024px) {
+  .event-recap-carousel__thumbnail {
+    width: 164px;
+    height: 164px;
+  }
+}
+@media only screen and (max-width: tablet) {
+  .event-recap-carousel__thumbnail {
+    width: 164px;
+    height: 164px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .event-recap-carousel__thumbnail {
+    width: 134px;
+    height: 134px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .event-recap-carousel__thumbnail {
+    width: 184px;
+    height: 184px;
+    margin-bottom: 0;
+  }
+}
+.event-recap-carousel__thumbnail > img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+.event-recap-carousel__controls {
+  position: absolute;
+  width: 100%;
+}
+@media only screen and (max-width: 360px) {
+  .event-recap-carousel__controls {
+    display: none;
+  }
+}
+.event-recap-carousel__controls .controls__arrow {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 50%;
+  padding: 12px 16px;
+  box-sizing: border-box;
+  box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
+  padding: 12px 16px;
+}
+.event-recap-carousel__controls > .controls__arrow--left {
+  margin-left: -25px;
+  float: left;
+}
+@media only screen and (max-width: 1024px) {
+  .event-recap-carousel__controls > .controls__arrow--left {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: tablet) {
+  .event-recap-carousel__controls > .controls__arrow--left {
+    margin-left: 0;
+  }
+}
+.event-recap-carousel__controls > .controls__arrow--right {
+  float: right;
+  margin-right: -25px;
+}
+@media only screen and (max-width: 1024px) {
+  .event-recap-carousel__controls > .controls__arrow--right {
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: tablet) {
+  .event-recap-carousel__controls > .controls__arrow--right {
+    margin-right: 0;
+  }
+}
+.event-recap-image-gallery {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 32px auto;
+}
+@media only screen and (max-width: 1024px) {
+  .event-recap-image-gallery {
+    height: 300px;
+  }
+}
+@media only screen and (max-width: tablet) {
+  .event-recap-image-gallery {
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .event-recap-image-gallery {
+    height: 250px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .event-recap-image-gallery {
+    height: 100%;
+    padding-bottom: 24px;
+  }
+}
+.event-recap-image-gallery > .image-gallery-title {
+  margin-bottom: 24px;
+}
+@media only screen and (max-width: 360px) {
+  .event-recap-image-gallery > .image-gallery-title {
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 34px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .event-recap-image-gallery > .image-gallery-title {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+.event-recap-image-gallery__slider {
+  width: 1224px;
+}
+@media only screen and (max-width: 1024px) {
+  .event-recap-image-gallery__slider {
+    width: 872px;
+  }
+}
+@media only screen and (max-width: tablet) {
+  .event-recap-image-gallery__slider {
+    width: 872px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .event-recap-image-gallery__slider {
+    width: 612px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .event-recap-image-gallery__slider {
+    width: 100%;
+    padding-left: 12px;
+  }
+}
+.event-recap-image-gallery__image {
+  width: 288px;
+  height: 288px;
+  cursor: pointer;
+}
+.event-recap-image-gallery__image > img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+@media only screen and (max-width: 1024px) {
+  .event-recap-image-gallery__image {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media only screen and (max-width: tablet) {
+  .event-recap-image-gallery__image {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .event-recap-image-gallery__image {
+    width: 135px;
+    height: 135px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .event-recap-image-gallery__image {
+    width: 184px;
+    height: 184px;
+  }
+}
+.event-recap-image-gallery .owl-nav {
+  position: absolute;
+  top: 40%;
+  transform: translate(0, -40%);
+  width: 100%;
+  height: 0;
+}
+@media only screen and (max-width: 360px) {
+  .event-recap-image-gallery .owl-nav {
+    padding: 0 41px 0 29px;
+  }
+}
+.event-recap-image-gallery .owl-nav .owl-next, .event-recap-image-gallery .owl-nav .owl-prev {
+  padding: 12px 16px !important;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 0px 5px 7px rgba(231, 234, 244, 0.35);
+}
+.event-recap-image-gallery .owl-nav .owl-next.disabled, .event-recap-image-gallery .owl-nav .owl-prev.disabled {
+  display: none;
+}
+.event-recap-image-gallery .owl-nav > .owl-prev {
+  float: left;
+  margin-left: -25px;
+}
+@media only screen and (max-width: 360px) {
+  .event-recap-image-gallery .owl-nav > .owl-prev {
+    margin-left: 0;
+  }
+}
+.event-recap-image-gallery .owl-nav > .owl-next {
+  float: right;
+  margin-right: -25px;
+}
+@media only screen and (max-width: 360px) {
+  .event-recap-image-gallery .owl-nav > .owl-next {
+    margin-right: 0;
   }
 }
 

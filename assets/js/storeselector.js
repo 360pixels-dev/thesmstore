@@ -1,7 +1,7 @@
 window.addEventListener("scroll", () => {
     
 
-    if ($(window).width() > 1024) {
+    // if ($(window).width() > 1024) {
         let mobileSearch = document.getElementsByClassName("mobile-search-open")
         // let mobileMenuDiv = document.getElementById('mobile-menu')
         let mobileMenuDiv = document.getElementsByClassName('sm_menu_outer')
@@ -44,7 +44,7 @@ window.addEventListener("scroll", () => {
         // mobileHam.classList.toggle("sticky-hamburger", pageYOffset > 2)
         mobileSearch[0].classList.toggle("sticky", pageYOffset > 2)
         // shadowGradient.classList.toggle("sticky3", pageYOffset > 2)
-    }
+    // }
     
 })
 

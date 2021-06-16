@@ -1233,9 +1233,19 @@
 
     &__breadcrumbs {
         position: relative;
-        top: 16px;
+        top: 92px;
         left: 24px;
         height: 34px;
+
+        @include respond(tablet) {
+            top: 72px;
+            left: 12px;
+        }
+
+        @include respond(767px) {
+            top: 58px;
+            left: 16px;
+        }
         // display: none;
 
         // @include respond(tablet) {

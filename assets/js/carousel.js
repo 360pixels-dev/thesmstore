@@ -440,11 +440,14 @@ $(document).ready(function() {
             var $this = $(this)
 
             thumbnails.push({
-                imageUrl : $this.find('img').attr("src")
+                imageUrl : $this.find('img').attr("src") ? $this.find('img').attr("src") : ''
             });
         })
 
         populateThumbnail();
+        debugger
+
+        console.log(thumbnails)
         
         $('.event-recap-carousel__controls .controls__arrow').click(function() {
             var dir = $(this).attr('class').split('--')[1];
@@ -464,22 +467,22 @@ $(document).ready(function() {
         function populateThumbnail() {
             $('.event-recap-carousel__thumbnail-slider.desktop').html(`
                 <div class="event-recap-carousel__thumbnail">
-                    <img src="${thumbnails[0].imageUrl}" alt="">
+                    <img src="${thumbnails[0].imageUrl ? thumbnails[0].imageUrl : ''}" alt="">
                 </div>
                 <div class="event-recap-carousel__thumbnail">
-                    <img src="${thumbnails[1].imageUrl}" alt="">
+                    <img src="${thumbnails[1].imageUrl ? thumbnails[1].imageUrl : ''}" alt="">
                 </div>
                 <div class="event-recap-carousel__thumbnail">
-                    <img src="${thumbnails[2].imageUrl}" alt="">
+                    <img src="${thumbnails[2].imageUrl ? thumbnails[2].imageUrl : ''}" alt="">
                 </div>
                 <div class="event-recap-carousel__thumbnail">
-                    <img src="${thumbnails[3].imageUrl}" alt="">
+                    <img src="${thumbnails[3].imageUrl ? thumbnails[3].imageUrl : ''}" alt="">
                 </div>
                 <div class="event-recap-carousel__thumbnail">
-                    <img src="${thumbnails[4].imageUrl}" alt="">
+                    <img src="${thumbnails[4].imageUrl ? thumbnails[4].imageUrl : ''}" alt="">
                 </div>
                 <div class="event-recap-carousel__thumbnail">
-                    <img src="${thumbnails[5].imageUrl}" alt="">
+                    <img src="${thumbnails[5].imageUrl ? thumbnails[5].imageUrl : ''}" alt="">
                 </div>
             `);
 
