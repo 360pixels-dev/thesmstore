@@ -27105,6 +27105,45 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   }
 }
 
+.big-image {
+  position: relative;
+  height: auto;
+  z-index: 50;
+  width: 1224px;
+  left: 50%;
+  right: auto;
+  transform: translate(-50%, 0);
+  margin: -70px 0 40px 0;
+}
+@media only screen and (max-width: 1024px) {
+  .big-image {
+    width: 100%;
+  }
+  .big-image > img {
+    width: inherit;
+    object-fit: cover;
+  }
+}
+@media only screen and (max-width: tablet) {
+  .big-image {
+    width: 100%;
+  }
+  .big-image > img {
+    width: inherit;
+    object-fit: cover;
+  }
+}
+@media only screen and (max-width: 820px) {
+  .big-image {
+    margin: -50px 0 15px 0;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .big-image {
+    margin: -50px 0 15px 0;
+  }
+}
+
 .event-recap-carousel {
   display: flex;
   align-items: center;

@@ -514,6 +514,30 @@
     }
 }
 
+.big-image {
+    position: relative;
+    height: auto;
+    z-index: 50;
+    width: 1224px;
+    left: 50%;
+    right: auto;
+    transform: translate(-50%, 0);
+    margin: -70px 0 40px 0;
+
+    @include respond(tablet) {
+        width: 100%;
+
+        & > img {
+            width: inherit;
+            object-fit: cover;
+        }
+    }
+
+    @include respond(mobile) {
+        margin: -50px 0 15px 0;
+    }
+}
+
 .event-recap {
     &-carousel {
         display: flex;
