@@ -3650,6 +3650,9 @@ body.mmactive {
   justify-content: center;
   margin-top: 88px !important;
 }
+.banner-inner .banner-section__breadcrumbs {
+  position: absolute !important;
+}
 @media only screen and (max-width: 1024px) {
   .banner-inner {
     min-height: 200px;
@@ -9578,19 +9581,34 @@ _:-ms-fullscreen,
 
 .section-quiz {
   background-color: #f9fbff;
-  margin-top: 88px !important;
+  margin-top: 163px !important;
 }
 .section-quiz .container-quiz {
   padding: 35px 0;
 }
 @media only screen and (max-width: 1024px) {
   .section-quiz {
-    margin-top: 56px !important;
+    margin-top: 112px !important;
   }
 }
 @media only screen and (max-width: tablet) {
   .section-quiz {
-    margin-top: 56px !important;
+    margin-top: 112px !important;
+  }
+}
+
+.quiz1-section {
+  margin-top: 296px !important;
+  padding-top: 40px;
+}
+@media only screen and (max-width: 1024px) {
+  .quiz1-section {
+    margin-top: 112px !important;
+  }
+}
+@media only screen and (max-width: tablet) {
+  .quiz1-section {
+    margin-top: 112px !important;
   }
 }
 
@@ -9741,6 +9759,7 @@ _:-ms-fullscreen,
 .quiz-grid__col--active, .quiz-grid__col:hover {
   border: 6px solid #fe3d6c;
   padding: 0;
+  cursor: pointer;
 }
 .quiz-grid__boxshadow {
   background: #ffffff;
@@ -10312,7 +10331,9 @@ _:-ms-fullscreen,
 }
 
 .product-tooltip {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   max-width: 600px;
   margin: auto;
   display: flex;
@@ -23958,6 +23979,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 .about-carousel__text a {
   display: block;
   width: 116px;
+  margin-top: 5%;
 }
 .about-carousel__image img {
   position: absolute;
@@ -33679,13 +33701,13 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 @media only screen and (max-width: 820px) {
   .help__inner-container {
     width: auto;
-    margin: 0 16px;
+    margin-top: 88px !important;
   }
 }
 @media only screen and (max-width: mobile) {
   .help__inner-container {
     width: auto;
-    margin: 0 16px;
+    margin-top: 88px !important;
   }
 }
 .help__inner--topic {

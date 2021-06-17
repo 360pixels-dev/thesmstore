@@ -203,6 +203,10 @@
 
     margin-top: 88px !important;
 
+    & .banner-section__breadcrumbs {
+        position: absolute !important;
+    }
+
     @include respond(tablet) {
         min-height: 200px;
         margin-top: 56px !important;

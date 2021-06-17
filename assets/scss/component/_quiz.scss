@@ -56,14 +56,23 @@
 
 .section-quiz {
     background-color: $light-periwinkle;
-    margin-top: 88px !important;
+    margin-top: 163px !important;
 
     & .container-quiz {
         padding: 35px 0;
     }
 
     @include respond(tablet) {
-        margin-top: 56px !important;
+        margin-top: 112px !important;
+    }
+}
+
+.quiz1-section {
+    margin-top: 296px !important;
+    padding-top: 40px;
+
+    @include respond(tablet) {
+        margin-top: 112px !important;
     }
 }
 
@@ -194,6 +203,7 @@
         &:hover {
             border: 6px solid #fe3d6c;
             padding: 0;
+            cursor: pointer;
         }
     }
 

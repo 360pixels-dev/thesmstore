@@ -377,6 +377,7 @@
         <style>
             .flex {
                 display: flex;
+                flex-direction: column;
 
                 margin-top: 163px;
 
@@ -385,19 +386,22 @@
 
             .image-container {
                 position: relative;
-                width: 600px;
-                height: 700px;
+                width: 100%;
+                height: auto;
             }
 
             .image {
-                position: absolute;
-
                 cursor: pointer;
+                width: 100%;
+            }
 
-                @media screen and (max-width: 821px) {
+            @media only screen and (max-width: 821px) {
+                .image-container {
                     width: 100%;
+                    height: auto;
                 }
             }
+            
 
             .image-container:not(:last-child) {
                 margin-right: 16px;
@@ -426,6 +430,15 @@
                 cursor: pointer;
                 z-index: 1;
             }
+
+            @media only screen and (max-width: 821px) {
+                .tag1, .tag2, .tag3, .tag4, .tag5, .tag6 {
+                    width: 6%;
+                    height: 5.2%;
+                }
+            }
+
+            
 
             .tag1 {
                 background: #ffffff;
@@ -501,21 +514,7 @@
                                     <p class="product-tooltip__product-note">Item availability may vary per store.</p>
                                 </div>
                             </div>
-        
-                            <div class="tag2-tooltip__box product-tooltip__box"> Click to view product</div>
-            
-                            <div class="tag2-tooltip__content product-tooltip__content product-tooltip__content--hide">
-                                <div class="product-tooltip__image-container">
-                                    <img src="./assets/images/product-tooltip-image.jpg" alt="product image">
-                                </div>
-            
-                                <div class="product-tooltip__text-container">
-                                    <p class="product-tooltip__brand-name">Jeffree Star Cosmetics</p>
-                                    <p class="product-tooltip__product-name">Supreme Frost Pro Palette</p>
-                                    <p class="product-tooltip__product-price">₱4,975.00</p>
-                                    <p class="product-tooltip__product-note">Item availability may vary per store.</p>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
 
@@ -704,14 +703,14 @@
                             </td>
                             <td style="border: 1px solid #ddd; height: 155px;">
                                 <div style="display: flex; flex-direction: column; padding: 10px 20px;">
-                                    <label for="xCoor_1" style="margin-bottom: 12px;">
+                                    <label for="xCoor_2" style="margin-bottom: 12px;">
                                         <span style="font-weight: bold;">X: </span>
-                                        <input type="text" id="xCoor_1" name="xCoor_1" style="width: 100px; font-weight: normal;" value="99.33">
+                                        <input type="text" id="xCoor_2" name="xCoor_2" style="width: 100px; font-weight: normal;" value="99.33">
                                     </label>
     
-                                    <label for="yCoor_1">
+                                    <label for="yCoor_2">
                                         <span style="font-weight: bold;">Y: </span>
-                                        <input type="text" id="yCoor_1" name="yCoor_1" style="width: 100px; font-weight: normal;" value="99.33">
+                                        <input type="text" id="yCoor_2" name="yCoor_2" style="width: 100px; font-weight: normal;" value="99.33">
                                     </label>
                                 </div>
                             </td>
@@ -958,11 +957,11 @@
             $('.tag5').css('top', `${$('.coordinates-5-y').val()}%`)
 
 
-            $('.tag1-tooltip__box').css('left', `${Number($('.coordinates-1-x').val()) + 6}%`)
-            $('.tag1-tooltip__box').css('top', `${Number($('.coordinates-1-y').val()) - 4}%`)
+            // $('.tag1-tooltip__box').css('left', `${Number($('.coordinates-1-x').val()) + 6}%`)
+            // $('.tag1-tooltip__box').css('top', `${Number($('.coordinates-1-y').val()) - 4}%`)
 
-            $('.tag1-tooltip__content').css('left', `${Number($('.coordinates-1-x').val()) + 6}%`)
-            $('.tag1-tooltip__content').css('top', `${Number($('.coordinates-1-y').val()) - 10}%`)
+            // $('.tag1-tooltip__content').css('left', `${Number($('.coordinates-1-x').val()) + 6}%`)
+            // $('.tag1-tooltip__content').css('top', `${Number($('.coordinates-1-y').val()) - 10}%`)
 
             $('#product1-title').html(`
                 <h4>${$('.tag1-title-1').val()}<span>${$('.tag1-title-2').val()}</span></h4>

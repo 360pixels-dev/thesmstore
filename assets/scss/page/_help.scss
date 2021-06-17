@@ -265,7 +265,7 @@
 
             @include respond(mobile) {
                 width: auto;
-                margin: 0 16px;
+                margin-top: 88px !important;
             }
         }
 
